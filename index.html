@@ -10,12 +10,13 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.27" />
-  <link rel="stylesheet" href="styles.css?v=2.27" />
-  <link rel="stylesheet" href="editorial.css?v=2.27" />
-  <link rel="stylesheet" href="shell.css?v=2.27" />
-  <link rel="stylesheet" href="motion.css?v=2.27" />
-  <link rel="stylesheet" href="composer.css?v=2.27" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.29" />
+  <link rel="stylesheet" href="styles.css?v=2.29" />
+  <link rel="stylesheet" href="editorial.css?v=2.29" />
+  <link rel="stylesheet" href="shell.css?v=2.29" />
+  <link rel="stylesheet" href="motion.css?v=2.29" />
+  <link rel="stylesheet" href="composer.css?v=2.29" />
+  <link rel="stylesheet" href="onboarding.css?v=2.29" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},t=/^(system|light|dark)$/.test(s.theme)?s.theme:localStorage.getItem('vm.theme');if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -51,11 +52,17 @@
         <span data-i18n="side.ai">ИИ-переводчик</span>
       </button>
       <button class="side-link" id="btnDisplay" type="button" title="Отображение: тема, размер текста, контраст" aria-haspopup="dialog" data-i18n-attr="title:top.displayTitle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg><span data-i18n="side.display">Отображение</span></button>
-      <a class="side-link gh-link" href="https://github.com/iboshka24/wordex" target="_blank" rel="noopener noreferrer" title="Репозиторий на GitHub" aria-label="GitHub" data-i18n-attr="title:top.github">
+      <a class="side-link gh-link" href="https://github.com/abdurahmon-numonov" target="_blank" rel="noopener noreferrer" title="GitHub: abdurahmon-numonov" aria-label="GitHub: abdurahmon-numonov">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
         </svg>
-        <span>GitHub</span>
+        <span class="gh-handle">abdurahmon-numonov</span>
+      </a>
+      <a class="side-link gh-link" href="https://github.com/saloshka12" target="_blank" rel="noopener noreferrer" title="GitHub: saloshka12" aria-label="GitHub: saloshka12">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <span class="gh-handle">saloshka12</span>
       </a>
     </nav>
     <div class="side-card">
@@ -448,7 +455,7 @@
       </div>
     </section>
   </main>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.27</span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.29</span></footer>
   </div>
   </div>
 
@@ -551,37 +558,56 @@
   <div class="overlay onboard" id="onboarding" hidden role="dialog" aria-modal="true" aria-labelledby="tourH1">
     <div class="panel onboard-card tour" id="tourCard" data-step="1">
       <div class="tour-top">
-        <span class="eyebrow tour-eyebrow"><span class="edition-dot"></span><span id="tourCount">1 / 4</span></span>
+        <span class="tour-count" id="tourCount">1 / 4</span>
         <button class="link tour-skip" id="btnTourSkip" type="button" data-i18n="tour.skip">Пропустить</button>
       </div>
       <div class="tour-scene" id="tourScene">
         <section class="tour-step is-current" data-step="1" aria-labelledby="tourH1">
-          <div class="tour-illus tour-paste" aria-hidden="true">
-            <div class="tour-input"><span class="tour-line-1">apple</span><span class="tour-line-2">although</span><span class="tour-line-3">give up</span><i class="tour-caret"></i></div>
-            <div class="tour-minis"><span class="tour-mini">apple</span><span class="tour-mini">although</span><span class="tour-mini">give up</span></div>
-          </div>
           <h2 class="tour-h" id="tourH1" tabindex="-1" data-i18n-html="tour.s1.h">Свои слова — <em>свои карточки.</em></h2>
-          <p class="tour-p" data-i18n="tour.s1.p">Вставь список или текст — ИИ переведёт и сделает карточки.</p>
+          <p class="tour-p" data-i18n="tour.s1.p">Вставь список слов или целый абзац. ИИ переведёт, добавит примеры и соберёт колоду.</p>
+          <div class="tour-stage tour-pick" role="group" aria-labelledby="tourPickHint">
+            <p class="tour-hint" id="tourPickHint" data-i18n="tour.s1.hint">Нажми на слова, которые хочешь выучить</p>
+            <p class="tour-quote" lang="en">“I won’t <button type="button" class="tour-word" data-w="giveup" aria-pressed="false">give up</button>, <button type="button" class="tour-word" data-w="although" aria-pressed="true">although</button> the <button type="button" class="tour-word" data-w="road" aria-pressed="false">road</button> is long.”</p>
+            <div class="tour-deck" aria-live="polite">
+              <span class="tour-deck-label" data-i18n="tour.s1.deck">В колоду</span>
+              <span class="tour-deck-cards" id="tourDeckCards"></span>
+            </div>
+          </div>
         </section>
         <section class="tour-step" data-step="2" aria-labelledby="tourH2" hidden>
-          <div class="tour-illus tour-flipper" aria-hidden="true">
-            <span class="tour-card"><span class="tour-face tour-front"><span class="tour-face-top">English</span><strong>although</strong><span class="tour-face-foot" data-i18n="tour.s2.front">Сначала вспомни…</span></span><span class="tour-face tour-back"><span class="tour-face-top" data-i18n="tour.s2.backTop">Перевод</span><strong data-i18n="tour.s2.back">хотя</strong><span class="tour-face-foot" data-i18n="tour.s2.backFoot">…потом переверни</span></span></span>
-            <span class="tour-verdicts"><span class="tour-verdict is-known" data-i18n="verdict.ok">✓  В памяти</span><span class="tour-verdict is-repeat" data-i18n="verdict.no">↻  Вернётся в колоду</span></span>
+          <h2 class="tour-h" id="tourH2" tabindex="-1" data-i18n-html="tour.s2.h">Слово вернётся, <em>когда начнёшь забывать.</em></h2>
+          <p class="tour-p" data-i18n="tour.s2.p">Вспомни перевод, переверни карточку и честно ответь. Дальше Wordzone сам решит, когда показать её снова.</p>
+          <div class="tour-stage tour-recall">
+            <button type="button" class="tour-card" id="tourFlip" aria-pressed="false">
+              <span class="tour-face tour-front"><span class="tour-face-top">English</span><strong lang="en">although</strong><span class="tour-face-foot" data-i18n="tour.s2.front">Вспомни и нажми</span></span>
+              <span class="tour-face tour-back" aria-hidden="true"><span class="tour-face-top" data-i18n="tour.s2.backTop">Перевод</span><strong data-i18n="tour.s2.back">хотя</strong><span class="tour-face-foot" lang="en">although it rained, we went out</span></span>
+            </button>
+            <div class="tour-grade" id="tourGrade" role="group" data-i18n-attr="aria-label:tour.s2.gradeLabel" aria-label="Как ты справился?" hidden>
+              <button type="button" class="tour-grade-btn is-again" data-g="again" data-i18n="tour.s2.again">Забыл</button>
+              <button type="button" class="tour-grade-btn is-known" data-g="known" data-i18n="tour.s2.known">Помню</button>
+            </div>
+            <div class="tour-curve" id="tourCurve" data-g="">
+              <ol class="tour-ticks" aria-hidden="true"><li data-t="0" data-i18n="tour.s2.t0">сейчас</li><li data-t="1" data-i18n="tour.s2.t1">1 день</li><li data-t="2" data-i18n="tour.s2.t2">4 дня</li><li data-t="3" data-i18n="tour.s2.t3">2 недели</li></ol>
+              <p class="tour-curve-note" id="tourCurveNote" role="status"></p>
+            </div>
           </div>
-          <h2 class="tour-h" id="tourH2" tabindex="-1" data-i18n-html="tour.s2.h">Он спрашивает. <em>Ты вспоминаешь.</em></h2>
-          <p class="tour-p" data-i18n="tour.s2.p">Вспомни перевод и переверни карточку. Забытые слова вернутся вовремя.</p>
         </section>
         <section class="tour-step" data-step="3" aria-labelledby="tourH3" hidden>
-          <div class="tour-illus tour-chips" aria-hidden="true">
-            <span class="tour-chip"><b>Aa</b><span data-i18n="nav.grammar">Грамматика</span></span>
-            <span class="tour-chip"><b>🔊</b><span data-i18n="card.speak">Озвучить</span></span>
-            <span class="tour-chip"><b>⇄</b><span data-i18n="match.title">Найди пару</span></span>
+          <h2 class="tour-h" id="tourH3" tabindex="-1" data-i18n-html="tour.s3.h">Грамматика по шагам — <em>на четырёх языках.</em></h2>
+          <p class="tour-p" data-i18n="tour.s3.p">По 36 тем от A1 до B2: короткое правило, живые примеры и тренировка. Слова из колоды можно озвучить и прогнать в играх.</p>
+          <div class="tour-stage tour-langs">
+            <div class="tour-plates" role="group" data-i18n-attr="aria-label:tour.s3.pick" aria-label="Посмотреть курс">
+              <button type="button" class="tour-plate" data-l="en" aria-pressed="true"><b lang="en">Aa</b><span lang="en">English</span></button>
+              <button type="button" class="tour-plate" data-l="es" aria-pressed="false"><b lang="es">Ññ</b><span lang="es">Español</span></button>
+              <button type="button" class="tour-plate" data-l="fr" aria-pressed="false"><b lang="fr">Éé</b><span lang="fr">Français</span></button>
+              <button type="button" class="tour-plate" data-l="de" aria-pressed="false"><b lang="de">Ää</b><span lang="de">Deutsch</span></button>
+            </div>
+            <p class="tour-lesson" role="status"><span class="tour-lesson-k" data-i18n="tour.s3.first">Первая тема</span> <span id="tourLesson"></span></p>
+            <p class="tour-extras"><span data-i18n="tour.s3.x1">озвучка</span><span data-i18n="tour.s3.x2">3 мини-игры</span><span data-i18n="tour.s3.x3">словарный тест</span></p>
           </div>
-          <h2 class="tour-h" id="tourH3" tabindex="-1" data-i18n-html="tour.s3.h">Грамматика и игры — <em>из твоих слов.</em></h2>
-          <p class="tour-p" data-i18n="tour.s3.p">Правила, озвучка и мини-игры строятся по твоей библиотеке.</p>
         </section>
         <form class="tour-step tour-form" data-step="4" id="onboardForm" aria-labelledby="onboardTitle" hidden>
-          <h2 class="tour-h" id="onboardTitle" tabindex="-1" data-i18n="onb.title">Добро пожаловать!</h2>
+          <h2 class="tour-h" id="onboardTitle" tabindex="-1" data-i18n-html="onb.title">Последний шаг — <em>два вопроса.</em></h2>
           <p class="mini" data-i18n="onb.sub">Два вопроса — и можно начинать. Поменять можно в любой момент.</p>
           <label class="field"><span data-i18n="onb.native">Мой родной язык</span><span class="select-wrap"><select id="onbNative" required></select></span></label>
           <label class="field"><span data-i18n="onb.learn">Я хочу выучить</span><span class="select-wrap"><select id="onbLearn" required></select></span></label>
@@ -589,10 +615,9 @@
           <div class="actions tour-actions"><button class="btn primary big" type="button" id="btnTourTry5" data-i18n="tour.try5">Попробовать на 5 словах</button><button class="btn ghost big" type="submit" id="btnOnboardGo" data-i18n="tour.own">Добавить свои слова</button></div>
         </form>
       </div>
-      <svg class="tour-thread" width="100%" height="12" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path id="tourThread" d="M2 6 C 60 1, 110 11, 150 6 S 240 1, 298 6" pathLength="100" /></svg>
+      <svg class="tour-thread" width="100%" height="12" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path class="tour-thread-track" d="M2 6 C 60 1, 110 11, 150 6 S 240 1, 298 6" pathLength="100" /><path id="tourThread" class="tour-thread-fill" d="M2 6 C 60 1, 110 11, 150 6 S 240 1, 298 6" pathLength="100" /></svg>
       <div class="tour-nav" id="tourNav">
         <button class="link tour-prev" id="btnTourBack" type="button" data-i18n="tour.back" hidden>← Назад</button>
-        <span class="tour-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span>
         <button class="btn primary tour-next" id="btnTourNext" type="button" data-i18n="tour.next">Дальше →</button>
       </div>
       <p class="sr-only" id="tourLive" aria-live="polite"></p>
@@ -729,18 +754,18 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer src="display.js?v=2.27"></script>
-  <script defer src="i18n.js?v=2.27"></script>
-  <script defer src="motion.js?v=2.27"></script>
-  <script defer src="languages.js?v=2.27"></script>
-  <script defer src="grammar.js?v=2.27"></script>
-  <script defer src="learning.js?v=2.27"></script>
-  <script defer src="writing.js?v=2.27"></script>
-  <script defer src="ai-core.js?v=2.27"></script>
-  <script defer src="share.js?v=2.27"></script>
-  <script defer src="games.js?v=2.27"></script>
-  <script defer src="course.js?v=2.27"></script>
-  <script defer src="account.js?v=2.27"></script>
-  <script defer src="app.js?v=2.27"></script>
+  <script defer src="display.js?v=2.29"></script>
+  <script defer src="i18n.js?v=2.29"></script>
+  <script defer src="motion.js?v=2.29"></script>
+  <script defer src="languages.js?v=2.29"></script>
+  <script defer src="grammar.js?v=2.29"></script>
+  <script defer src="learning.js?v=2.29"></script>
+  <script defer src="writing.js?v=2.29"></script>
+  <script defer src="ai-core.js?v=2.29"></script>
+  <script defer src="share.js?v=2.29"></script>
+  <script defer src="games.js?v=2.29"></script>
+  <script defer src="course.js?v=2.29"></script>
+  <script defer src="account.js?v=2.29"></script>
+  <script defer src="app.js?v=2.29"></script>
 </body>
 </html>

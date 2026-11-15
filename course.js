@@ -30,6 +30,12 @@
     for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
     return a;
   }
+  // A repeatable random source keyed by a string, so a question keeps the same option order when its step re-renders.
+  function seeded(key) {
+    var h = 2166136261;
+    for (var i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return function () { h = Math.imul(h ^ (h >>> 15), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); h ^= h >>> 16; return (h >>> 0) / 4294967296; };
+  }
   function checkType(ex, value) {
     var v = norm(value);
     return !!v && (ex.a || []).some(function (a) { return norm(a) === v; });
@@ -429,6 +435,10 @@
     }
     // A multiple-choice question inside the lesson: answer, see why, then move on.
     function lessonQuestion(stage, opts, answer, onAnswered, whyRight, whyWrong) {
+      // Data lists the right option anywhere (often first), so show the options in a stable shuffled order.
+      var order = shuffle(opts.map(function (_, i) { return i; }), seeded(opts.join('|')));
+      answer = order.indexOf(answer);
+      opts = order.map(function (i) { return opts[i]; });
       var area = h('div', { className: 'practice-area is-pills lesson-q-opts' });
       var fb = h('div', { className: 'practice-feedback', role: 'status', 'aria-live': 'polite' });
       opts.forEach(function (o, i) {

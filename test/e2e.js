@@ -1157,7 +1157,7 @@ run.server(server);
     await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
     await pg.click('#navGrammar');
     await pg.locator('.plate').first().waitFor();
-    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 4, 'one plate per ready course (English, Spanish, French, German)');
+    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 6, 'one plate per ready course (English, Spanish, French, German, Italian, Korean)');
     assert.equal(await pg.getAttribute('.plate.on', 'data-code'), 'en');
     await pg.locator('.stop').first().waitFor();
     assert.equal(await pg.locator('.stop:not(.checkpoint)').count(), lessons.topics.length, 'the English path lists every topic');
@@ -1167,16 +1167,16 @@ run.server(server);
     await pg.waitForFunction(n => document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === n && document.querySelector('.plate.on').dataset.code === 'de', deTopics);
     assert.equal(await pg.locator('.stop.checkpoint').count(), 4, 'German has its own ready course with four levels');
     // v2.28: Spanish and French are full 36-topic courses too.
-    for (const code of ['es', 'fr']) {
+    for (const code of ['es', 'fr', 'it', 'ko']) {
       const n = JSON.parse(fs.readFileSync(path.join(root, 'course/' + code + '.json'), 'utf8')).topics.length;
       assert.equal(n, 36, code + ': 36 topics');
       await pg.click('.plate[data-code="' + code + '"]');
       await pg.waitForFunction(([c, k]) => document.querySelector('.plate.on').dataset.code === c && document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === k, [code, n]);
       assert.equal(await pg.locator('.stop.checkpoint').count(), 4, code + ': four level checkpoints');
     }
-    assert.equal(await pg.locator('.plate[data-code="it"]').count(), 0, 'languages without lessons are not plates');
-    assert.match(await pg.locator('.plate-more').innerText(), /Italiano/, 'they are listed on one "coming soon" tile');
-    assert.doesNotMatch(await pg.locator('.plate-more').innerText(), /Español|Français/, 'ready courses left the coming-soon tile');
+    assert.equal(await pg.locator('.plate[data-code="uz"]').count(), 0, 'languages without lessons are not plates');
+    assert.match(await pg.locator('.plate-more').innerText(), /Oʻzbekcha/, 'they are listed on one "coming soon" tile');
+    assert.doesNotMatch(await pg.locator('.plate-more').innerText(), /Español|Français|Italiano|한국어/, 'ready courses left the coming-soon tile');
     assert.equal(await pg.locator('.plate[data-code="ja"], .plate[data-code="zh"]').count(), 0);
     await pg.click('.plate[data-code="en"]');
     await pg.click('.stop:has-text("to be")');

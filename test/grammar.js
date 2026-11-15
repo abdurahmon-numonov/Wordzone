@@ -62,7 +62,7 @@ const same = G.validateRule({ ruleId: 'en.other.same', category: 'other', concep
 assert.equal(same.pitfall, undefined, 'a pitfall whose mistake equals the correction is dropped');
 const uz = G.validateRule({ ruleId: 'uz.suffix.locative-da', category: 'suffix', concept: "O'rin-payt kelishigi", explanation: 'Суффикс -da отвечает на вопрос «где?».',
   patterns: [{ pattern: 'ot + -da', example: 'Мактабда', translation: 'В школе' }] }, 'uz', 'ru');
-assert.equal(uz.patterns[0].example, 'Maktabda', 'Uzbek examples become Latin');
+assert.equal(uz, null, 'Uzbek is a native language now, not one to learn: its grammar rules are rejected (v2.32)');
 assert.equal(G.validateRule({ ruleId: 'uz.suffix.x1', category: 'suffix', concept: "o'g'il", explanation: 'e' }, 'en', 'uz'), null, 'prefix must match the learning language');
 assert.equal(G.validateRule({ ruleId: 'en.suffix.x1', category: 'suffix', concept: "o'g'il", explanation: 'e' }, 'en', 'uz').concept, 'o' + OK + 'g' + OK + 'il', 'Uzbek explanations normalised');
 console.log('✓ grammar parser: whitelist, id/prefix checks, clamps, CEFR, Uzbek normalisation, invented words dropped');

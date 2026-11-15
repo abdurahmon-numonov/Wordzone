@@ -7,17 +7,17 @@ const S = require('../share.js');
 const G = require('../games.js');
 
 // --- registry ---
-assert.deepEqual(Lg.LEARN_CODES.slice().sort(), ['de', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'uz', 'zh']);
+assert.deepEqual(Lg.LEARN_CODES.slice().sort(), ['de', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'zh']);
 assert.deepEqual(Lg.NATIVE_CODES.slice().sort(), ['de', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'ru', 'uz', 'zh']);
 assert.equal(Lg.KNOWN_CODES.length, 20, 'all 20 historic codes stay known');
 assert.equal(new Set(Lg.KNOWN_CODES).size, 20, 'no duplicate codes');
-assert(Lg.canLearn('uz') && Lg.canBeNative('uz'), 'Uzbek is both');
+assert(!Lg.canLearn('uz') && Lg.canBeNative('uz'), 'Uzbek is a native and interface language, not one to learn (v2.32)');
 assert(!Lg.canLearn('ru') && Lg.canBeNative('ru'), 'Russian is native-only');
 assert(Lg.isLegacy('tr') && !Lg.canLearn('tr') && !Lg.canBeNative('tr') && Lg.isKnown('tr'));
 assert(!Lg.isKnown('xx') && !Lg.isKnown('__proto__') && Lg.get('xx') === null);
 assert(Lg.isArchivedPair('ru', 'en'), 'learning Russian is archived');
 assert(Lg.isArchivedPair('en', 'tr') && Lg.isArchivedPair('tr', 'ru'));
-assert(!Lg.isArchivedPair('en', 'ru') && !Lg.isArchivedPair('uz', 'ru') && !Lg.isArchivedPair('en', 'uz'));
+assert(!Lg.isArchivedPair('en', 'ru') && !Lg.isArchivedPair('en', 'uz'));
 assert.equal(Lg.get('zh').reading, 'pinyin');
 Lg.LIST.forEach(l => {
   assert(/^[a-z]{2}-[A-Z]{2}$/.test(l.voice), l.code + ' has a BCP-47 voice');

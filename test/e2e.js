@@ -1177,8 +1177,7 @@ run.server(server);
       assert.equal(await pg.locator('.stop.checkpoint').count(), 4, code + ': four level checkpoints');
     }
     assert.equal(await pg.locator('.plate[data-code="uz"]').count(), 0, 'languages without lessons are not plates');
-    assert.match(await pg.locator('.plate-more').innerText(), /Oʻzbekcha/, 'they are listed on one "coming soon" tile');
-    assert.doesNotMatch(await pg.locator('.plate-more').innerText(), /Español|Français|Italiano|한국어/, 'ready courses left the coming-soon tile');
+    assert.equal(await pg.locator('.plate-more').count(), 0, 'no "coming soon" tile once every planned course is ready (v2.32)');
     assert.equal(await pg.locator('.plate[data-code="ja"], .plate[data-code="zh"]').count(), 0);
     await pg.click('.plate[data-code="en"]');
     await pg.click('.stop:has-text("to be")');

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.31'; // the one place the shown version lives (footer)
+  var VERSION = '2.32'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -63,7 +63,7 @@
     'tour.s2.backTop': ['Перевод', 'Meaning', 'Tarjima'],
     'tour.s2.back': ['хотя', 'even though', 'garchi'],
     'tour.s2.backFoot': ['…потом переверни', '…then flip', '…keyin aylantiring'],
-    'tour.s3.h': ['Грамматика по шагам — <em>на четырёх языках.</em>', 'Step-by-step grammar — <em>in four languages.</em>', "Bosqichma-bosqich grammatika — <em>to'rt tilda.</em>"],
+    'tour.s3.h': ['Грамматика по шагам — <em>на шести языках.</em>', 'Step-by-step grammar — <em>in six languages.</em>', "Bosqichma-bosqich grammatika — <em>olti tilda.</em>"],
     'tour.s3.p': ['По 36 тем от A1 до B2: короткое правило, живые примеры и тренировка. Слова из колоды можно озвучить и прогнать в играх.', '36 topics each, A1 to B2: a short rule, real examples and practice. Your deck words can be read aloud and played in games.', "Har birida A1 dan B2 gacha 36 ta mavzu: qisqa qoida, jonli misollar va mashq. To'plamdagi so'zlarni tinglash va o'yinlarda takrorlash mumkin."],
     'tour.s1.hint': ['Нажми на слова, которые хочешь выучить', 'Tap the words you want to learn', "O'rganmoqchi bo'lgan so'zlarni bosing"],
     'tour.s1.deck': ['В колоду', 'Into the deck', "To'plamga"],
@@ -89,6 +89,8 @@
     'tour.s3.es': ['ser — я есть, ты есть', 'ser — to be', "ser — bo'lmoq"],
     'tour.s3.fr': ['être и avoir — быть и иметь', 'être and avoir — to be and to have', "être va avoir — bo'lmoq va ega bo'lmoq"],
     'tour.s3.de': ['sein — быть', 'sein — to be', "sein — bo'lmoq"],
+    'tour.s3.it': ['essere и avere — быть и иметь', 'essere and avere — to be and to have', "essere va avere — bo'lmoq va ega bo'lmoq"],
+    'tour.s3.ko': ['хангыль — буквы и слоги', 'Hangul — letters and syllables', "hangul — harflar va bo'g'inlar"],
     'tour.s3.x1': ['озвучка', 'pronunciation', 'talaffuz'],
     'tour.s3.x2': ['3 мини-игры', '3 mini-games', "3 ta mini-o'yin"],
     'tour.s3.x3': ['словарный тест', 'vocabulary test', "lug'at testi"],
@@ -481,7 +483,7 @@
     'gram.noAi': ['Для грамматики нужен ИИ-провайдер: бесплатный переводчик правил не объясняет. Подключи бесплатный ключ Gemini — это минута.', "Grammar needs an AI provider: the free translator can't explain rules. Connect a free Gemini key — it takes a minute.", "Grammatika uchun AI provayder kerak: bepul tarjimon qoidalarni tushuntirmaydi. Bepul Gemini kalitini ulang — bir daqiqa."],
     'gram.noDecks': ['Сначала добавь слова — правила появятся из них.', 'Add some words first — the rules come from them.', "Avval so'z qo'shing — qoidalar ulardan paydo bo'ladi."],
     'gram.empty': ['Правил пока нет. Нажми «Собрать грамматику для колоды» или добавь больше слов, чтобы собрать свою карту грамматики.', 'No rules yet. Press "Build grammar for this deck", or add more words to build your grammar map.', "Hozircha qoidalar yo'q. «Koloda uchun grammatikani yig'ish»ni bosing yoki grammatika xaritang uchun ko'proq so'z qo'sh."],
-    'gram.unsupported': ['Грамматика доступна для 9 языков изучения, а эта колода — {l}.', 'Grammar is available for the 9 learning languages; this deck is {l}.', "Grammatika 9 ta o'rganish tili uchun mavjud, bu koloda esa — {l}."],
+    'gram.unsupported': ['Грамматика доступна для 8 языков изучения, а эта колода — {l}.', 'Grammar is available for the 8 learning languages; this deck is {l}.', "Grammatika 8 ta o'rganish tili uchun mavjud, bu koloda esa — {l}."],
     'gram.none': ['Под фильтры не подошло ни одно правило.', 'No rule matches the filters.', "Filtrlarga mos qoida yo'q."],
     'gram.search': ['Найти правило или слово…', 'Find a rule or word…', "Qoida yoki so'zni topish…"],
     'gram.searchAria': ['Поиск по правилам', 'Search rules', "Qoidalar bo'yicha qidiruv"],
@@ -528,7 +530,7 @@
     'lang.swapOff': ['Поменять нельзя: {l} — только родной язык, его нельзя выбрать для изучения', "Can't swap: {l} is a native-only language and can't be learned here", "Almashtirib bo'lmaydi: {l} faqat ona tili sifatida tanlanadi"],
     'lang.archived': ['архив', 'archived', 'arxiv'],
     'lang.archivedTitle': ['Этот язык больше не предлагается для новых колод. Колоду можно повторять, пополнять, экспортировать и делиться ею.', 'This language is no longer offered for new decks. You can still review, extend, export and share this deck.', "Bu til yangi kolodalar uchun taklif qilinmaydi. Kolodani takrorlash, to'ldirish, eksport qilish va ulashish mumkin."],
-    'lang.archivedNew': ['Для новых колод доступны 9 языков изучения. Выбери язык из списка «Я изучаю».', 'New decks use one of the 9 learning languages. Pick one under "I\'m learning".', "Yangi kolodalar uchun 9 ta o'rganish tili mavjud. «O'rganayapman» ro'yxatidan tanlang."],
+    'lang.archivedNew': ['Для новых колод доступны 8 языков изучения. Выбери язык из списка «Я изучаю».', 'New decks use one of the 8 learning languages. Pick one under "I\'m learning".', "Yangi kolodalar uchun 8 ta o'rganish tili mavjud. «O'rganayapman» ro'yxatidan tanlang."],
     'lang.archivedNote': ['Некоторые твои колоды на языках, которые больше не предлагаются. Они никуда не делись: их можно повторять, пополнять и экспортировать.', 'Some of your decks use languages that are no longer offered. Nothing is lost: you can still review, extend and export them.', "Ba'zi kolodalaringiz endi taklif qilinmaydigan tillarda. Hech narsa yo'qolmadi: ularni takrorlash, to'ldirish va eksport qilish mumkin."],
     'lang.archivedOk': ['Понятно', 'Got it', 'Tushunarli'],
     'dir.label': ['Направление карточек', 'Card direction', "Karta yo'nalishi"],

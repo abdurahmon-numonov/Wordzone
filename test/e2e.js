@@ -841,8 +841,18 @@ run.server(server);
   await onb.locator('#onboarding:not([hidden])').waitFor();
   await onb.keyboard.press('Escape');
   assert(await onb.locator('#onboarding').isVisible(), 'the first-run questions cannot be skipped with Escape');
-  assert.match(await onb.locator('#tourH1').innerText(), /Свои слова/, 'the tour starts with what the site does');
+  assert.match(await onb.locator('#tourH1').innerText(), /Любой текст/, 'the tour starts with what the site does');
+  // v2.29: every screen lets you try the thing once.
+  assert.equal(await onb.locator('#tourDeckCards .tour-mini').count(), 1, 'one word is already picked');
+  await onb.click('.tour-word[data-w="road"]');
+  assert.equal(await onb.locator('#tourDeckCards .tour-mini').count(), 2, 'tapping a word puts it in the deck');
+  assert.equal(await onb.getAttribute('.tour-word[data-w="road"]', 'aria-pressed'), 'true');
   await onb.click('#btnTourNext'); assert(await onb.locator('#tourH2').isVisible());
+  assert(await onb.locator('#tourGrade').isHidden(), 'grading waits for the flip');
+  await onb.click('#tourFlip');
+  assert.equal(await onb.getAttribute('#tourFlip', 'aria-pressed'), 'true');
+  await onb.click('.tour-grade-btn[data-g="known"]');
+  assert.match(await onb.locator('#tourCurveNote').innerText(), /4 дня/, 'grading shows when the card comes back');
   await onb.click('#btnTourBack'); assert(await onb.locator('#tourH1').isVisible(), 'back returns to the first screen');
   await onb.keyboard.press('ArrowRight'); await onb.keyboard.press('ArrowRight');
   assert(await onb.locator('#tourH3').isVisible(), 'arrow keys move through the tour');
@@ -1147,7 +1157,7 @@ run.server(server);
     await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
     await pg.click('#navGrammar');
     await pg.locator('.plate').first().waitFor();
-    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 4, 'one plate per ready course (English, German, Italian, Korean)');
+    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 6, 'one plate per ready course (English, Spanish, French, German, Italian, Korean)');
     assert.equal(await pg.getAttribute('.plate.on', 'data-code'), 'en');
     await pg.locator('.stop').first().waitFor();
     assert.equal(await pg.locator('.stop:not(.checkpoint)').count(), lessons.topics.length, 'the English path lists every topic');
@@ -1156,8 +1166,17 @@ run.server(server);
     const deTopics = JSON.parse(fs.readFileSync(path.join(root, 'course/de.json'), 'utf8')).topics.length;
     await pg.waitForFunction(n => document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === n && document.querySelector('.plate.on').dataset.code === 'de', deTopics);
     assert.equal(await pg.locator('.stop.checkpoint').count(), 4, 'German has its own ready course with four levels');
-    assert.equal(await pg.locator('.plate[data-code="es"]').count(), 0, 'languages without lessons are not plates');
-    assert.match(await pg.locator('.plate-more').innerText(), /Español/, 'they are listed on one "coming soon" tile');
+    // v2.28: Spanish and French are full 36-topic courses too.
+    for (const code of ['es', 'fr', 'it', 'ko']) {
+      const n = JSON.parse(fs.readFileSync(path.join(root, 'course/' + code + '.json'), 'utf8')).topics.length;
+      assert.equal(n, 36, code + ': 36 topics');
+      await pg.click('.plate[data-code="' + code + '"]');
+      await pg.waitForFunction(([c, k]) => document.querySelector('.plate.on').dataset.code === c && document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === k, [code, n]);
+      assert.equal(await pg.locator('.stop.checkpoint').count(), 4, code + ': four level checkpoints');
+    }
+    assert.equal(await pg.locator('.plate[data-code="uz"]').count(), 0, 'languages without lessons are not plates');
+    assert.match(await pg.locator('.plate-more').innerText(), /Oʻzbekcha/, 'they are listed on one "coming soon" tile');
+    assert.doesNotMatch(await pg.locator('.plate-more').innerText(), /Español|Français|Italiano|한국어/, 'ready courses left the coming-soon tile');
     assert.equal(await pg.locator('.plate[data-code="ja"], .plate[data-code="zh"]').count(), 0);
     await pg.click('.plate[data-code="en"]');
     await pg.click('.stop:has-text("to be")');
@@ -1166,7 +1185,10 @@ run.server(server);
     assert.match(await pg.locator('#lessonStepLabel').innerText(), /^1 \/ 7/, 'notice · 3 rule parts · build · fix · write');
     assert(await pg.locator('.mark-line mark').count() >= 3, 'the pattern is highlighted in the examples');
     assert(await pg.locator('#btnStepNext').isDisabled(), 'the first question has to be answered before moving on');
-    await pg.locator('.lesson-q-opts .answer-opt').nth(1).click();
+    // Options are shown shuffled, so pick one that is wrong by its text.
+    const discoverRight = toBe.discover.o[toBe.discover.a].ru;
+    const discoverOpts = await pg.locator('.lesson-q-opts .answer-opt').allInnerTexts();
+    await pg.locator('.lesson-q-opts .answer-opt').nth(discoverOpts.findIndex(o => o !== discoverRight)).click();
     assert(await pg.locator('.lesson-q-opts .answer-opt.right').count() === 1 && await pg.locator('.fb-why').isVisible(), 'a wrong guess shows the right answer and why');
     await pg.click('#btnStepNext');
     for (let i = 0; i < toBe.checks.length; i++) {

@@ -1,28 +1,8 @@
 {
   "languages": [
     { "code": "en", "glyph": "Aa", "native": "English", "ready": true },
-    { "code": "es", "glyph": "Ññ", "native": "Español", "ready": false, "topics": [
-      { "id": "ser-estar", "level": "A1", "title": { "ru": "Ser и estar", "en": "Ser and estar", "uz": "Ser va estar" } },
-      { "id": "gender", "level": "A1", "title": { "ru": "Род и артикли: el, la, un, una", "en": "Gender and articles: el, la, un, una", "uz": "Rod va artikllar: el, la, un, una" } },
-      { "id": "present", "level": "A1", "title": { "ru": "Настоящее время: -ar, -er, -ir", "en": "Present tense: -ar, -er, -ir", "uz": "Hozirgi zamon: -ar, -er, -ir" } },
-      { "id": "irregular", "level": "A1", "title": { "ru": "Неправильные глаголы: tener, ir, hacer", "en": "Irregular verbs: tener, ir, hacer", "uz": "Noto'g'ri fe'llar: tener, ir, hacer" } },
-      { "id": "gustar", "level": "A2", "title": { "ru": "Me gusta: как сказать «мне нравится»", "en": "Me gusta: saying what you like", "uz": "Me gusta: «menga yoqadi»" } },
-      { "id": "reflexive", "level": "A2", "title": { "ru": "Возвратные глаголы", "en": "Reflexive verbs", "uz": "O'zlik fe'llari" } },
-      { "id": "preterite", "level": "A2", "title": { "ru": "Прошедшее: pretérito indefinido", "en": "Past: the preterite", "uz": "O'tgan zamon: pretérito indefinido" } },
-      { "id": "imperfect", "level": "B1", "title": { "ru": "Pretérito imperfecto или indefinido", "en": "Imperfect or preterite", "uz": "Imperfecto yoki indefinido" } },
-      { "id": "subjunctive", "level": "B1", "title": { "ru": "Subjuntivo: первые шаги", "en": "The subjunctive: first steps", "uz": "Subjuntivo: ilk qadamlar" } }
-    ] },
-    { "code": "fr", "glyph": "Éé", "native": "Français", "ready": false, "topics": [
-      { "id": "etre-avoir", "level": "A1", "title": { "ru": "Être и avoir", "en": "Être and avoir", "uz": "Être va avoir" } },
-      { "id": "articles", "level": "A1", "title": { "ru": "Артикли: le, la, un, une, du", "en": "Articles: le, la, un, une, du", "uz": "Artikllar: le, la, un, une, du" } },
-      { "id": "present", "level": "A1", "title": { "ru": "Настоящее время глаголов на -er", "en": "Present tense of -er verbs", "uz": "-er fe'llarining hozirgi zamoni" } },
-      { "id": "negation", "level": "A1", "title": { "ru": "Отрицание ne … pas", "en": "Negation: ne … pas", "uz": "Inkor: ne … pas" } },
-      { "id": "passe-compose", "level": "A2", "title": { "ru": "Passé composé", "en": "Passé composé", "uz": "Passé composé" } },
-      { "id": "futur-proche", "level": "A2", "title": { "ru": "Futur proche: aller + глагол", "en": "Futur proche: aller + verb", "uz": "Futur proche: aller + fe'l" } },
-      { "id": "pronouns", "level": "A2", "title": { "ru": "Местоимения le, la, lui, y, en", "en": "Pronouns le, la, lui, y, en", "uz": "Olmoshlar le, la, lui, y, en" } },
-      { "id": "imparfait", "level": "B1", "title": { "ru": "Imparfait или passé composé", "en": "Imparfait or passé composé", "uz": "Imparfait yoki passé composé" } },
-      { "id": "subjonctif", "level": "B1", "title": { "ru": "Subjonctif после il faut que", "en": "The subjunctive after il faut que", "uz": "Il faut que dan keyin subjonctif" } }
-    ] },
+    { "code": "es", "glyph": "Ññ", "native": "Español", "ready": true },
+    { "code": "fr", "glyph": "Éé", "native": "Français", "ready": true },
     { "code": "de", "glyph": "Ää", "native": "Deutsch", "ready": true },
     { "code": "it", "glyph": "Ii", "native": "Italiano", "ready": true },
     { "code": "ko", "glyph": "한", "native": "한국어", "ready": true },

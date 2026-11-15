@@ -807,6 +807,8 @@ run.server(server);
   assert(await page.locator('#sourceLang').isDisabled(), 'languages come from the working deck');
   assert.match(await page.locator('#homeDeckNote').innerText(), /Deutsch A2/, 'the home screen says where new words go');
   assert.match(await page.locator('[data-deck-bar="home"]').innerText(), /Deutsch A2/);
+  assert(await page.locator('#sourceLang').isHidden(), 'with a deck chosen the locked language fields are not shown');
+  assert.match(await page.locator('[data-deck-bar="home"]').innerText(), /Deutsch → Русский/, 'the card shows the pair once, under the deck name');
   await page.fill('#input', 'Tisch - стол');
   await startWords(page);
   await page.locator('#screen-train.active').waitFor();
@@ -814,7 +816,7 @@ run.server(server);
   libD = await libNow();
   assert.equal(libD.decks[a2d[0]].cards.length, 5, 'new words land in the chosen deck'); assert.equal(libD.decks[b1[0]].cards.length, 4);
   assert(await page.locator('#btnHomePractice').isVisible(), 'the chosen deck can be practised from the home screen');
-  await page.click('#btnOtherLangs');
+  await page.click('#btnHomeNewDeck'); // v2.30: one "+ New" button on the deck card (the duplicate link is hidden)
   assert(await page.locator('#deckDialog').isVisible(), 'another language pair means a new deck');
   await page.keyboard.press('Escape');
   await page.click('#navLibrary');

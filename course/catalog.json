@@ -5,16 +5,6 @@
     { "code": "fr", "glyph": "Éé", "native": "Français", "ready": true },
     { "code": "de", "glyph": "Ää", "native": "Deutsch", "ready": true },
     { "code": "it", "glyph": "Ii", "native": "Italiano", "ready": true },
-    { "code": "ko", "glyph": "한", "native": "한국어", "ready": true },
-    { "code": "uz", "glyph": "Oʻ", "native": "Oʻzbekcha", "ready": false, "topics": [
-      { "id": "suffix-order", "level": "A1", "title": { "ru": "Аффиксы: порядок окончаний", "en": "Suffixes: the order of endings", "uz": "Qo'shimchalar tartibi" } },
-      { "id": "personal", "level": "A1", "title": { "ru": "Личные окончания: -man, -san", "en": "Personal endings: -man, -san", "uz": "Shaxs qo'shimchalari: -man, -san" } },
-      { "id": "plural", "level": "A1", "title": { "ru": "Множественное число: -lar", "en": "Plural: -lar", "uz": "Ko'plik: -lar" } },
-      { "id": "possessive", "level": "A1", "title": { "ru": "Притяжательные: -im, -ing", "en": "Possessive endings: -im, -ing", "uz": "Egalik qo'shimchalari: -im, -ing" } },
-      { "id": "cases", "level": "A2", "title": { "ru": "Падежи: -ni, -ga, -da, -dan", "en": "Cases: -ni, -ga, -da, -dan", "uz": "Kelishiklar: -ni, -ga, -da, -dan" } },
-      { "id": "present", "level": "A2", "title": { "ru": "Настоящее-будущее: -a, -y", "en": "Present-future: -a, -y", "uz": "Hozirgi-kelasi zamon: -a, -y" } },
-      { "id": "past", "level": "A2", "title": { "ru": "Прошедшее: -di", "en": "Past: -di", "uz": "O'tgan zamon: -di" } },
-      { "id": "continuous", "level": "B1", "title": { "ru": "Длительное: -yap", "en": "Continuous: -yap", "uz": "Davomli zamon: -yap" } }
-    ] }
+    { "code": "ko", "glyph": "한", "native": "한국어", "ready": true }
   ]
 }

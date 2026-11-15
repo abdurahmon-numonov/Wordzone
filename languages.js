@@ -1,6 +1,6 @@
 /* The one list of languages. Every other module (app, AI contract, server, backup, share links, tests) reads it.
    role: 'learn'  — can be learned and can be the native (translation) language;
-         'native' — native / interface language only (Russian); switch to 'learn' to make it learnable;
+         'native' — native / interface language only (Russian, Uzbek: most learners are Uzbek speakers, v2.32); switch to 'learn' to make it learnable;
          'legacy' — no longer offered for new decks, but every validator still accepts it so old data keeps loading.
    Also holds the Uzbek text helpers (apostrophes, Cyrillic → Latin). Shared by the browser and Node. */
 (function (root, factory) {
@@ -26,7 +26,7 @@
       grammarFeatures: ['measure words', 'aspect particles', 'tones'] },
     { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹', voice: 'it-IT', script: 'latin', role: 'learn', reading: null,
       grammarFeatures: ['conjugation', 'gender and articles', 'prepositions after verbs', 'essere / avere'] },
-    { code: 'uz', name: 'Uzbek', nativeName: "O'zbekcha", flag: '🇺🇿', voice: 'uz-UZ', script: 'latin', role: 'learn', reading: null,
+    { code: 'uz', name: 'Uzbek', nativeName: "O'zbekcha", flag: '🇺🇿', voice: 'uz-UZ', script: 'latin', role: 'native', reading: null,
       grammarFeatures: ['agglutinative suffix order', 'case suffixes', 'possessive suffixes', 'tense and aspect suffixes', 'postpositions', 'no grammatical gender'] },
     { code: 'ru', name: 'Russian', nativeName: 'Русский', flag: '🇷🇺', voice: 'ru-RU', script: 'cyrillic', role: 'native', reading: null, grammarFeatures: [] },
     { code: 'tr', name: 'Turkish', nativeName: 'Türkçe', flag: '🇹🇷', voice: 'tr-TR', script: 'latin', role: 'legacy', reading: null, grammarFeatures: [] },

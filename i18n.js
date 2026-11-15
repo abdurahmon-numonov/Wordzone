@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.29'; // the one place the shown version lives (footer)
+  var VERSION = '2.30'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -203,6 +203,10 @@
     'decks.change': ['Сменить', 'Change', "O'zgartirish"],
     'decks.working': ['Колода', 'Deck', "To'plam"],
     'decks.changeAria': ['Сменить рабочую колоду (сейчас «{n}»)', 'Change the working deck (now “{n}”)', "Ishchi to'plamni o'zgartirish (hozir «{n}»)"],
+    'decks.autoName': ['Новая колода «{p}»', 'New deck “{p}”', "Yangi to'plam «{p}»"],
+    'decks.autoMeta': ['появится сама с первыми словами', 'appears with your first words', "birinchi so'zlar bilan o'zi paydo bo'ladi"],
+    'decks.nameIt': ['Дать название', 'Name it', 'Nom berish'],
+    'composer.s1hLocked': ['Новые слова сохранятся в эту колоду. Для другой пары языков создай новую.', 'New words go into this deck. For another language pair, start a new one.', "Yangi so'zlar shu to'plamga tushadi. Boshqa tillar uchun yangisini yarating."],
     'decks.noneYet': ['Колода не выбрана', 'No deck yet', "To'plam tanlanmagan"],
     'decks.create': ['Создать колоду', 'Create a deck', "To'plam yaratish"],
     'decks.pairLocked': ['Языки берутся из колоды.', 'The languages come from the deck.', "Tillar to'plamdan olinadi."],

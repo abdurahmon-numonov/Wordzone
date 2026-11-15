@@ -331,6 +331,7 @@
       b.disabled = !ok;
       b.setAttribute('title', ok ? tr('lang.swap') : tr('lang.swapOff', { l: langByCode(state.cfg.target).label }));
     }
+    if (library && library.decks) renderDeckBars(); // the home bar names the deck the chosen pair will create
   }
 
   function saveCfg() {
@@ -2041,13 +2042,15 @@
   function renderDeckBars() {
     var d = activeDeck();
     document.querySelectorAll('[data-deck-bar]').forEach(function (bar) {
+      var home = bar.dataset.deckBar === 'home';
       bar.textContent = '';
       var info = h('span', { className: 'deck-bar-info' }, [
         h('span', { className: 'deck-bar-label', text: tr('decks.working') }),
-        h('strong', { className: 'deck-bar-name', text: d ? deckLabel(d) : tr('decks.noneYet') }),
-        h('span', { className: 'deck-bar-meta', text: d ? pairLabel(d) + ' · ' + trn('words.count', d.cards.length) : '' })
+        h('strong', { className: 'deck-bar-name', text: d ? deckLabel(d) : home ? tr('decks.autoName', { p: pairLabel(state.cfg) }) : tr('decks.noneYet') }),
+        // The pair is shown once: a deck named after its pair gets only the word count underneath.
+        h('span', { className: 'deck-bar-meta', text: d ? (deckLabel(d) === pairLabel(d) ? '' : pairLabel(d) + ' · ') + trn('words.count', d.cards.length) : home ? tr('decks.autoMeta') : '' })
       ]);
-      var b = h('button', { className: 'chip-btn deck-bar-btn', type: 'button', text: d ? tr('decks.change') : tr('decks.create') });
+      var b = h('button', { className: 'chip-btn deck-bar-btn', type: 'button', text: d ? tr('decks.change') : home ? tr('decks.nameIt') : tr('decks.create') });
       if (d) b.setAttribute('aria-label', tr('decks.changeAria', { n: deckLabel(d) }));
       b.onclick = function () { if (d) openDeckPicker(this); else openDeckDialog(); };
       bar.appendChild(info); bar.appendChild(b);

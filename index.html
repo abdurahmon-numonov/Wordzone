@@ -10,13 +10,13 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.29" />
-  <link rel="stylesheet" href="styles.css?v=2.29" />
-  <link rel="stylesheet" href="editorial.css?v=2.29" />
-  <link rel="stylesheet" href="shell.css?v=2.29" />
-  <link rel="stylesheet" href="motion.css?v=2.29" />
-  <link rel="stylesheet" href="composer.css?v=2.29" />
-  <link rel="stylesheet" href="onboarding.css?v=2.29" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.30" />
+  <link rel="stylesheet" href="styles.css?v=2.30" />
+  <link rel="stylesheet" href="editorial.css?v=2.30" />
+  <link rel="stylesheet" href="shell.css?v=2.30" />
+  <link rel="stylesheet" href="motion.css?v=2.30" />
+  <link rel="stylesheet" href="composer.css?v=2.30" />
+  <link rel="stylesheet" href="onboarding.css?v=2.30" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},t=/^(system|light|dark)$/.test(s.theme)?s.theme:localStorage.getItem('vm.theme');if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -119,9 +119,9 @@
         <section class="c-step c-step-deck" aria-labelledby="cStep1">
           <span class="c-mark" aria-hidden="true"><span class="c-num">1</span><svg class="c-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
           <div class="c-body">
-            <header class="c-head"><h3 id="cStep1" data-i18n="composer.s1">Колода и языки</h3><p class="c-hint" data-i18n="composer.s1h">Куда сохранить слова и с какого языка на какой переводить.</p></header>
+            <header class="c-head"><h3 id="cStep1" data-i18n="composer.s1">Колода и языки</h3><p class="c-hint"><span class="c-hint-free" data-i18n="composer.s1h">Куда сохранить слова и с какого языка на какой переводить.</span><span class="c-hint-locked" data-i18n="composer.s1hLocked">Новые слова сохранятся в эту колоду. Для другой пары языков создай новую.</span></p></header>
             <div class="c-deck">
-              <div class="deck-row"><div class="deck-bar deck-bar-home" data-deck-bar="home"></div><span class="select-wrap deck-synced"><select id="homeDeck" aria-label="Колода" tabindex="-1" data-i18n-attr="aria-label:home.deck"></select></span><button class="chip-btn" id="btnHomeNewDeck" type="button" data-i18n="deck.newShort">+ Новая</button></div>
+              <div class="deck-row"><div class="deck-bar deck-bar-home" data-deck-bar="home"></div><span class="select-wrap deck-synced"><select id="homeDeck" aria-label="Колода" tabindex="-1" data-i18n-attr="aria-label:home.deck"></select></span><button class="chip-btn" id="btnHomeNewDeck" type="button" data-i18n="deck.newShort" data-i18n-attr="title:decks.otherLangs" title="Другие языки → новая колода">+ Новая</button></div>
               <div class="lang-pair">
             <label class="field"><span data-i18n="lang.learn">Я изучаю</span><span class="select-wrap"><select id="sourceLang"></select></span></label>
             <button class="swap-btn" id="btnSwapLang" type="button" title="Поменять языки местами (Alt+X)" aria-label="Поменять языки местами" data-i18n-attr="title:lang.swap,aria-label:lang.swapAria">
@@ -455,7 +455,7 @@
       </div>
     </section>
   </main>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.29</span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.30</span></footer>
   </div>
   </div>
 
@@ -754,18 +754,18 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer src="display.js?v=2.29"></script>
-  <script defer src="i18n.js?v=2.29"></script>
-  <script defer src="motion.js?v=2.29"></script>
-  <script defer src="languages.js?v=2.29"></script>
-  <script defer src="grammar.js?v=2.29"></script>
-  <script defer src="learning.js?v=2.29"></script>
-  <script defer src="writing.js?v=2.29"></script>
-  <script defer src="ai-core.js?v=2.29"></script>
-  <script defer src="share.js?v=2.29"></script>
-  <script defer src="games.js?v=2.29"></script>
-  <script defer src="course.js?v=2.29"></script>
-  <script defer src="account.js?v=2.29"></script>
-  <script defer src="app.js?v=2.29"></script>
+  <script defer src="display.js?v=2.30"></script>
+  <script defer src="i18n.js?v=2.30"></script>
+  <script defer src="motion.js?v=2.30"></script>
+  <script defer src="languages.js?v=2.30"></script>
+  <script defer src="grammar.js?v=2.30"></script>
+  <script defer src="learning.js?v=2.30"></script>
+  <script defer src="writing.js?v=2.30"></script>
+  <script defer src="ai-core.js?v=2.30"></script>
+  <script defer src="share.js?v=2.30"></script>
+  <script defer src="games.js?v=2.30"></script>
+  <script defer src="course.js?v=2.30"></script>
+  <script defer src="account.js?v=2.30"></script>
+  <script defer src="app.js?v=2.30"></script>
 </body>
 </html>

@@ -3286,6 +3286,7 @@
       c.querySelectorAll('.tour-dots i').forEach(function (d, i) { d.className = i + 1 === step ? 'on' : i + 1 < step ? 'done' : ''; });
       $('onboarding').setAttribute('aria-labelledby', heading(step).id);
       $('tourLive').textContent = tr('tour.stepOf', { n: step, t: TOTAL });
+      $('tourThread').style.strokeDashoffset = String(100 - step / TOTAL * 100); // the thread is the one progress bar
     }
     function show(n, dir) {
       if (n < 1 || n > TOTAL || n === step) return;
@@ -3307,7 +3308,6 @@
       play(to, fwd
         ? [{ opacity: 0, transform: 'scale(.72) translateY(18px)', filter: 'blur(4px)' }, { opacity: 1, transform: 'scale(1) translateY(0)', filter: 'blur(0)' }]
         : [{ opacity: 0, transform: 'scale(1.35)', filter: 'blur(6px)' }, { opacity: 1, transform: 'scale(1)', filter: 'blur(0)' }], { delay: 120 });
-      play($('tourThread'), [{ strokeDashoffset: fwd ? 100 : -100 }, { strokeDashoffset: 0 }], { duration: 700, easing: 'cubic-bezier(.65,0,.35,1)' });
       var clean = function () { from.classList.remove('is-leaving'); done(); };
       if (out) out.finished.then(clean, clean); else clean();
     }
@@ -3331,7 +3331,7 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
     function down(e) {
-      if (e.pointerType === 'mouse' || (e.target.closest && e.target.closest('select,input,button,.tour-illus'))) return;
+      if (e.pointerType === 'mouse' || (e.target.closest && e.target.closest('select,input,button,.tour-stage'))) return;
       swipeX = e.clientX; swipeY = e.clientY;
     }
     function up(e) {
@@ -3341,10 +3341,40 @@
       if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
       if (dx < 0) next(); else back();
     }
+    /* Each screen lets the newcomer do the thing once: pick words from a line, recall and grade a card, open a course. */
+    var demo = { words: { although: true }, flipped: false, grade: '', lang: 'en' };
+    function renderDemo() {
+      var c = card();
+      c.querySelectorAll('.tour-word').forEach(function (b) { b.setAttribute('aria-pressed', String(!!demo.words[b.dataset.w])); });
+      var box = $('tourDeckCards'); box.textContent = '';
+      var picked = Array.prototype.filter.call(c.querySelectorAll('.tour-word'), function (b) { return demo.words[b.dataset.w]; });
+      if (!picked.length) box.appendChild(Object.assign(document.createElement('span'), { className: 'tour-deck-empty', textContent: tr('tour.s1.empty') }));
+      picked.forEach(function (b) {
+        var chip = document.createElement('span'); chip.className = 'tour-mini';
+        var w = document.createElement('b'); w.lang = 'en'; w.textContent = b.textContent;
+        var g = document.createElement('span'); g.textContent = tr('tour.w.' + b.dataset.w);
+        chip.appendChild(w); chip.appendChild(g); box.appendChild(chip);
+      });
+      var flip = $('tourFlip');
+      flip.setAttribute('aria-pressed', String(demo.flipped)); flip.classList.toggle('is-flipped', demo.flipped);
+      flip.querySelector('.tour-front').setAttribute('aria-hidden', String(demo.flipped));
+      flip.querySelector('.tour-back').setAttribute('aria-hidden', String(!demo.flipped));
+      $('tourGrade').hidden = !demo.flipped;
+      c.querySelectorAll('.tour-grade-btn').forEach(function (b) { b.setAttribute('aria-pressed', String(demo.grade === b.dataset.g)); });
+      $('tourCurve').dataset.g = demo.grade;
+      $('tourCurveNote').textContent = tr(demo.grade === 'known' ? 'tour.s2.noteKnown' : demo.grade === 'again' ? 'tour.s2.noteAgain' : demo.flipped ? 'tour.s2.noteFlip' : 'tour.s2.noteIdle');
+      c.querySelectorAll('.tour-plate').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.l === demo.lang)); });
+      $('tourLesson').textContent = tr('tour.s3.' + demo.lang);
+    }
     var wired = false;
     function open() {
       if (!wired) {
         wired = true;
+        card().querySelectorAll('.tour-word').forEach(function (b) { b.onclick = function () { demo.words[b.dataset.w] = !demo.words[b.dataset.w]; renderDemo(); }; });
+        $('tourFlip').onclick = function () { demo.flipped = !demo.flipped; if (!demo.flipped) demo.grade = ''; renderDemo(); };
+        card().querySelectorAll('.tour-grade-btn').forEach(function (b) { b.onclick = function () { demo.grade = b.dataset.g; renderDemo(); }; });
+        card().querySelectorAll('.tour-plate').forEach(function (b) { b.onclick = function () { demo.lang = b.dataset.l; renderDemo(); }; });
+        if (I18N && I18N.onChange) I18N.onChange(function () { if (!$('onboarding').hidden) renderDemo(); });
         $('btnTourNext').onclick = next;
         $('btnTourBack').onclick = back;
         $('btnTourSkip').onclick = function () { show(TOTAL, 1); };
@@ -3354,6 +3384,8 @@
       }
       document.addEventListener('keydown', onKey, true);
       step = 1;
+      demo = { words: { although: true }, flipped: false, grade: '', lang: 'en' };
+      renderDemo();
       steps().forEach(function (s) { var n = Number(s.dataset.step); s.hidden = n !== 1; s.classList.toggle('is-current', n === 1); s.inert = false; });
       sync();
       $('onboarding').hidden = false;

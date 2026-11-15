@@ -10,11 +10,12 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.26" />
-  <link rel="stylesheet" href="styles.css?v=2.26" />
-  <link rel="stylesheet" href="editorial.css?v=2.26" />
-  <link rel="stylesheet" href="shell.css?v=2.26" />
-  <link rel="stylesheet" href="motion.css?v=2.26" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.27" />
+  <link rel="stylesheet" href="styles.css?v=2.27" />
+  <link rel="stylesheet" href="editorial.css?v=2.27" />
+  <link rel="stylesheet" href="shell.css?v=2.27" />
+  <link rel="stylesheet" href="motion.css?v=2.27" />
+  <link rel="stylesheet" href="composer.css?v=2.27" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},t=/^(system|light|dark)$/.test(s.theme)?s.theme:localStorage.getItem('vm.theme');if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -73,7 +74,7 @@
       <button class="acc-btn" id="btnAccount" type="button" hidden aria-haspopup="dialog"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span id="accountLabel">Войти</span></button>
       <div class="lang-pills" id="uiLang" role="group" aria-label="Язык интерфейса" data-i18n-attr="aria-label:top.uiLang"><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="uz" lang="uz" aria-pressed="false">UZ</button><button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button></div>
       <button class="icon-btn" id="btnInstall" type="button" hidden title="Установить приложение" aria-label="Установить приложение" data-i18n-attr="title:top.install,aria-label:top.install"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></svg></button>
-      <button class="icon-btn" id="btnTheme" type="button" title="Сменить тему" aria-label="Сменить тему" data-i18n-attr="title:top.theme,aria-label:top.theme">◐</button>
+      <button class="icon-btn" id="btnTheme" type="button" title="Сменить тему" aria-label="Сменить тему" data-i18n-attr="title:top.theme,aria-label:top.theme"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
       <button class="icon-btn motion-toggle" id="btnMotion" type="button" title="3D-анимации" aria-label="Настроить анимации" aria-pressed="true">3D</button>
       <span class="pill" id="topPill" hidden></span>
       <button class="icon-btn" id="btnSound" type="button" title="Звуки и озвучка (M)" data-i18n-attr="title:top.sound" aria-label="Выключить звук">
@@ -106,71 +107,77 @@
           <span class="scene-caption" data-i18n="hero.caption">Нажми. Переверни. Запомни.</span>
         </div>
       </div>
-      <div class="workspace-heading"><h2 data-i18n="setup.heading">Начнём с твоих слов</h2><p data-i18n="setup.step">01 / Собери свою колоду</p></div>
-      <div class="setup-grid">
-        <div class="panel panel-words">
-          <div class="panel-head">
-            <h2><span class="dot"></span><span data-i18n="words.title">Твои слова</span></h2>
-            <div class="row-gap">
-              <button class="chip-btn" id="btnPaste" type="button">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /></svg>
-                <span data-i18n="words.paste">Вставить</span>
-              </button>
-              <button class="chip-btn" id="btnClear" type="button" data-i18n="words.clear">Очистить</button>
-            </div>
-          </div>
-
-          <div class="presets-row">
-            <span class="presets-label" data-i18n="words.examples">Примеры</span>
-            <button class="preset-chip" type="button" data-preset="verbs" data-i18n="preset.verbs">Глаголы</button>
-            <button class="preset-chip" type="button" data-preset="travel" data-i18n="preset.travel">Путешествия</button>
-            <button class="preset-chip" type="button" data-preset="it">IT &amp; Dev</button>
-            <button class="preset-chip" type="button" data-preset="advanced" data-i18n="preset.advanced">Продвинутые</button>
-          </div>
-
-          <textarea id="input" spellcheck="false" data-i18n-attr="placeholder:words.placeholder" placeholder="Введи или вставь слова (например: resilient, give up, depend on)…&#10;или готовые пары: apple — яблоко"></textarea>
-
-          <div class="input-meta">
-            <span class="count-chip" id="inputStat">0 слов</span>
-            <span class="hint-text" id="inputStat2" data-i18n="words.hint">по одному в строке, через запятую или готовые пары «слово — перевод»</span>
-          </div>
-        </div>
-
-        <div class="panel panel-session">
-          <div class="panel-head">
-            <h2><span class="dot"></span><span data-i18n="session.title">Настройки сессии</span></h2>
-            <div class="row-gap"><span class="status-indicator" id="statusIndicator">● Готов к работе</span><button class="chip-btn gear-btn" id="btnSessionSettings" type="button" aria-haspopup="dialog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span data-i18n="set.open">Настройки</span></button></div>
-          </div>
-
-          <div class="field deck-field">
-            <span data-i18n="home.deck">Колода</span>
-            <div class="deck-row"><div class="deck-bar deck-bar-home" data-deck-bar="home"></div><span class="select-wrap deck-synced"><select id="homeDeck" aria-label="Колода" tabindex="-1" data-i18n-attr="aria-label:home.deck"></select></span><button class="chip-btn" id="btnHomeNewDeck" type="button" data-i18n="deck.newShort">+ Новая</button></div>
-            <p class="mini deck-note" id="homeDeckNote" hidden></p>
-            <button class="btn block deck-practice" id="btnHomePractice" type="button" hidden></button>
-          </div>
-          <div class="lang-pair">
+      <div class="workspace-heading composer-heading"><h2 data-i18n="composer.title">Новая тренировка</h2><p data-i18n="composer.sub">Три шага — и карточки готовы.</p></div>
+      <div class="composer" id="composer">
+        <section class="c-step c-step-deck" aria-labelledby="cStep1">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">1</span><svg class="c-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
+          <div class="c-body">
+            <header class="c-head"><h3 id="cStep1" data-i18n="composer.s1">Колода и языки</h3><p class="c-hint" data-i18n="composer.s1h">Куда сохранить слова и с какого языка на какой переводить.</p></header>
+            <div class="c-deck">
+              <div class="deck-row"><div class="deck-bar deck-bar-home" data-deck-bar="home"></div><span class="select-wrap deck-synced"><select id="homeDeck" aria-label="Колода" tabindex="-1" data-i18n-attr="aria-label:home.deck"></select></span><button class="chip-btn" id="btnHomeNewDeck" type="button" data-i18n="deck.newShort">+ Новая</button></div>
+              <div class="lang-pair">
             <label class="field"><span data-i18n="lang.learn">Я изучаю</span><span class="select-wrap"><select id="sourceLang"></select></span></label>
             <button class="swap-btn" id="btnSwapLang" type="button" title="Поменять языки местами (Alt+X)" aria-label="Поменять языки местами" data-i18n-attr="title:lang.swap,aria-label:lang.swapAria">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 3 4 4-4 4" /><path d="M20 7H4" /><path d="m8 21-4-4 4-4" /><path d="M4 17h16" /></svg>
             </button>
             <label class="field"><span data-i18n="lang.native">Мой родной язык</span><span class="select-wrap"><select id="targetLang"></select></span></label>
           </div>
-          <p class="mini pair-locked" id="pairLocked" hidden><span data-i18n="decks.pairLocked">Языки берутся из колоды.</span> <button class="link" type="button" id="btnOtherLangs" data-i18n="decks.otherLangs">Другие языки → новая колода</button></p>
-
-          <div class="actions">
-            <button class="btn primary big" id="btnStart" type="button">
+            </div>
+            <div class="c-deck-foot">
+              <p class="mini deck-note" id="homeDeckNote" hidden></p>
+              <p class="mini pair-locked" id="pairLocked" hidden><span data-i18n="decks.pairLocked">Языки берутся из колоды.</span> <button class="link" type="button" id="btnOtherLangs" data-i18n="decks.otherLangs">Другие языки → новая колода</button></p>
+              <button class="btn deck-practice" id="btnHomePractice" type="button" hidden></button>
+            </div>
+          </div>
+        </section>
+        <section class="c-step c-step-words" aria-labelledby="cStep2">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">2</span><svg class="c-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
+          <div class="c-body">
+            <header class="c-head c-head-row">
+              <div><h3 id="cStep2" data-i18n="composer.s2">Слова</h3><p class="c-hint" id="cStep2Hint" data-i18n="composer.s2h">Слова, фразы или целый текст. Можно сразу с переводом: apple — яблоко.</p></div>
+              <div class="row-gap c-tools">
+                <button class="chip-btn" id="btnPaste" type="button">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /></svg>
+                <span data-i18n="words.paste">Вставить</span>
+              </button>
+                <button class="chip-btn" id="btnClear" type="button" data-i18n="words.clear">Очистить</button>
+              </div>
+            </header>
+            <textarea id="input" aria-labelledby="cStep2" aria-describedby="cStep2Hint inputStat" spellcheck="false" data-i18n-attr="placeholder:words.placeholder" placeholder="Введи или вставь слова (например: resilient, give up, depend on)…&#10;или готовые пары: apple — яблоко"></textarea>
+            <div class="c-words-foot">
+              <div class="input-meta">
+            <span class="count-chip" id="inputStat">0 слов</span>
+            <span class="hint-text" id="inputStat2" data-i18n="words.hint">по одному в строке, через запятую или готовые пары «слово — перевод»</span>
+          </div>
+              <div class="presets-row">
+            <span class="presets-label" data-i18n="words.examples">Примеры</span>
+            <button class="preset-chip" type="button" data-preset="verbs" data-i18n="preset.verbs">Глаголы</button>
+            <button class="preset-chip" type="button" data-preset="travel" data-i18n="preset.travel">Путешествия</button>
+            <button class="preset-chip" type="button" data-preset="it">IT &amp; Dev</button>
+            <button class="preset-chip" type="button" data-preset="advanced" data-i18n="preset.advanced">Продвинутые</button>
+          </div>
+            </div>
+          </div>
+        </section>
+        <section class="c-step c-step-go" aria-labelledby="cStep3">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">3</span></span>
+          <div class="c-body">
+            <header class="c-head"><h3 id="cStep3" data-i18n="composer.s3">Запуск</h3><p class="c-hint" data-i18n="composer.s3h">ИИ переведёт слова, добавит примеры и соберёт тренировку.</p></header>
+            <div class="actions c-go">
+              <button class="btn primary big" id="btnStart" type="button">
               <span data-i18n="setup.start">Создать тренировку</span>
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
             </button>
-            <button class="btn block quick-start" id="btnQuick5" type="button" title="Пять слов с переводом — тренировка начнётся сразу, даже без интернета" data-i18n="quick.btn" data-i18n-attr="title:quick.title">⚡ Попробовать на 5 словах</button>
-            <button class="btn ghost block" id="btnDemo" type="button" data-i18n="setup.demo">Попробовать демо-колоду (14 слов)</button>
+              <div class="c-go-meta"><span class="status-indicator" id="statusIndicator">● Готов к работе</span><button class="chip-btn gear-btn" id="btnSessionSettings" type="button" aria-haspopup="dialog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span data-i18n="set.open">Настройки</span></button></div>
+            </div>
+            <div class="c-alt"><span class="c-alt-label" data-i18n="composer.alt">Нет слов под рукой?</span><button class="btn alt-btn quick-start" id="btnQuick5" type="button" title="Пять слов с переводом — тренировка начнётся сразу, даже без интернета" data-i18n="quick.btn" data-i18n-attr="title:quick.title">⚡ Попробовать на 5 словах</button><button class="btn alt-btn" id="btnDemo" type="button" data-i18n="setup.demo">Попробовать демо-колоду (14 слов)</button></div>
+            <p class="mini resume" id="resumeBox" hidden><span data-i18n="setup.resume">Продолжить прошлую сессию — </span><button class="link" id="btnResume" type="button" data-i18n="setup.resumeLink">открыть сохранённую колоду</button></p>
           </div>
-          <p class="mini resume" id="resumeBox" hidden><span data-i18n="setup.resume">Продолжить прошлую сессию — </span><button class="link" id="btnResume" type="button" data-i18n="setup.resumeLink">открыть сохранённую колоду</button></p>
-        </div>
+        </section>
       </div>
 
       <p class="foot-note" data-i18n="setup.foot">Прогресс хранится на этом устройстве. Слова для перевода отправляются выбранному сервису.</p>
-      <div class="welcome-copy"><h2 data-i18n="welcome.h">Welcome to Wordzone!</h2><p data-i18n="welcome.p">Paste your words — AI turns them into flashcards and explains the grammar, and smart reviews bring tricky words back at the right time.</p></div>
+      <div class="welcome-copy sr-only"><h2 data-i18n="welcome.h">Welcome to Wordzone!</h2><p data-i18n="welcome.p">Paste your words — AI turns them into flashcards and explains the grammar, and smart reviews bring tricky words back at the right time.</p></div>
     </section>
 
     <!-- ============ LOADING ============ -->
@@ -441,7 +448,7 @@
       </div>
     </section>
   </main>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.26</span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.27</span></footer>
   </div>
   </div>
 
@@ -722,18 +729,18 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer src="display.js?v=2.26"></script>
-  <script defer src="i18n.js?v=2.26"></script>
-  <script defer src="motion.js?v=2.26"></script>
-  <script defer src="languages.js?v=2.26"></script>
-  <script defer src="grammar.js?v=2.26"></script>
-  <script defer src="learning.js?v=2.26"></script>
-  <script defer src="writing.js?v=2.26"></script>
-  <script defer src="ai-core.js?v=2.26"></script>
-  <script defer src="share.js?v=2.26"></script>
-  <script defer src="games.js?v=2.26"></script>
-  <script defer src="course.js?v=2.26"></script>
-  <script defer src="account.js?v=2.26"></script>
-  <script defer src="app.js?v=2.26"></script>
+  <script defer src="display.js?v=2.27"></script>
+  <script defer src="i18n.js?v=2.27"></script>
+  <script defer src="motion.js?v=2.27"></script>
+  <script defer src="languages.js?v=2.27"></script>
+  <script defer src="grammar.js?v=2.27"></script>
+  <script defer src="learning.js?v=2.27"></script>
+  <script defer src="writing.js?v=2.27"></script>
+  <script defer src="ai-core.js?v=2.27"></script>
+  <script defer src="share.js?v=2.27"></script>
+  <script defer src="games.js?v=2.27"></script>
+  <script defer src="course.js?v=2.27"></script>
+  <script defer src="account.js?v=2.27"></script>
+  <script defer src="app.js?v=2.27"></script>
 </body>
 </html>

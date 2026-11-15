@@ -1,0 +1,224 @@
+/* v2.27 — "Composer": the start screen as one clear, ordered task.
+   1 · deck & languages → 2 · words → 3 · start. Same elements and IDs as before; only the
+   arrangement, hierarchy and states change. Loaded last, so it refines the earlier layers. */
+
+:root {
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --c-radius: 24px;
+  --c-rail: color-mix(in srgb, var(--stroke) 90%, transparent);
+  --c-go-bg: linear-gradient(160deg, var(--navy) 0%, #142042 100%);
+  --c-shadow: 0 1px 0 #ffffff inset, 0 24px 60px -28px #1c2a5240, 0 2px 6px #1c2a520d;
+  --c-field: #fbf8f1;
+}
+:root[data-theme="dark"] {
+  --c-go-bg: linear-gradient(160deg, #263a72 0%, #1a2850 100%);
+  --c-shadow: 0 1px 0 #ffffff0d inset, 0 24px 60px -30px #00000099;
+  --c-field: #171c2a;
+}
+
+/* ---------- the intro steps strip is replaced by the numbered composer itself ---------- */
+#screen-setup #howSteps { display: none; }
+
+/* Returning learners (at least one deck) go straight to work: no marketing banner. */
+body:has(#sideDecks > li) #screen-setup .hero-banner { display: none; }
+body:has(#sideDecks > li) #screen-setup .composer-heading { margin-top: 6px; }
+
+/* ---------- a tighter hero for first visits ---------- */
+#screen-setup .hero.hero-banner { margin: 0 0 34px; padding: 34px 40px; min-height: 0; }
+#screen-setup .hero-banner h1 { font-size: clamp(32px, 3.6vw, 48px); line-height: 1.04; text-wrap: balance; }
+#screen-setup .hero-banner .sub { max-width: 46ch; text-wrap: pretty; }
+#screen-setup .hero-banner .hero-actions { margin-top: 22px; }
+
+/* ---------- heading ---------- */
+#screen-setup .composer-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 20px; flex-wrap: wrap; margin: 0 0 18px; }
+#screen-setup .composer-heading h2 { font-size: clamp(28px, 2.6vw, 36px); letter-spacing: -.02em; text-wrap: balance; }
+#screen-setup .composer-heading p { margin: 0; font: 400 15px/1.5 var(--font-ui); letter-spacing: 0; text-transform: none; color: var(--muted); }
+
+/* ---------- the composer: one surface, three ordered sections ---------- */
+.composer {
+  position: relative; display: flex; flex-direction: column;
+  border: 1px solid var(--stroke); border-radius: var(--c-radius);
+  background: var(--surface); box-shadow: var(--c-shadow); overflow: hidden;
+}
+.c-step {
+  position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 0 20px;
+  padding: 28px 32px 28px 28px;
+}
+.c-step + .c-step { border-top: 1px solid var(--stroke-soft); }
+.c-body { min-width: 0; }
+
+/* step marker + the rail that ties the three steps together */
+.c-mark {
+  position: relative; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  border: 1.5px solid var(--stroke); background: var(--surface); color: var(--muted);
+  font: 600 18px/1 var(--font-display); transition: background-color .25s var(--ease-out), border-color .25s var(--ease-out), color .25s var(--ease-out), box-shadow .25s var(--ease-out);
+}
+.c-step:not(.c-step-go) .c-mark::after {
+  content: ""; position: absolute; left: 50%; top: calc(100% + 6px); width: 2px; height: 400px; transform: translateX(-50%);
+  background: linear-gradient(var(--c-rail), var(--c-rail)) top / 100% 100% no-repeat; pointer-events: none; z-index: -1;
+}
+.c-step { overflow: hidden; }
+.c-check { display: none; }
+
+/* where the learner is: the focused step lights up */
+.c-step:focus-within .c-mark { border-color: var(--amber); color: var(--amber); box-shadow: 0 0 0 5px color-mix(in srgb, var(--amber) 14%, transparent); }
+
+/* done: a deck is chosen (languages lock to it) / there are words in the box */
+.c-step-deck:has(#pairLocked:not([hidden])) .c-mark,
+.c-step-words:has(#input:not(:placeholder-shown)) .c-mark { background: var(--amber); border-color: var(--amber); color: var(--surface); box-shadow: none; }
+.c-step-deck:has(#pairLocked:not([hidden])) .c-num,
+.c-step-words:has(#input:not(:placeholder-shown)) .c-num { display: none; }
+.c-step-deck:has(#pairLocked:not([hidden])) .c-check,
+.c-step-words:has(#input:not(:placeholder-shown)) .c-check { display: block; }
+.c-step-deck:has(#pairLocked:not([hidden])) .c-mark::after,
+.c-step-words:has(#input:not(:placeholder-shown)) .c-mark::after { --c-rail: var(--amber); }
+
+.c-head { margin: 7px 0 18px; }
+.c-head h3 { margin: 0; font: 600 19px/1.25 var(--font-ui); letter-spacing: -.01em; color: var(--text); }
+.c-hint { margin: 5px 0 0; max-width: 62ch; font: 400 14px/1.5 var(--font-ui); color: var(--muted); text-wrap: pretty; }
+.c-head-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; }
+.c-tools { flex: none; }
+
+/* ---------- step 1: deck + languages side by side ---------- */
+.c-deck { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 14px 18px; align-items: end; }
+.c-deck .deck-row { min-width: 0; }
+.c-deck .deck-bar { min-height: 52px; border-radius: 14px; background: var(--c-field); }
+.c-deck .deck-row > .chip-btn { min-height: 52px; padding: 0 16px; border-radius: 14px; }
+.c-deck .lang-pair { margin: 0; gap: 10px; align-items: end; }
+.c-deck .lang-pair .field { margin: 0; }
+.c-deck .lang-pair .field > span:first-child { margin-bottom: 6px; font: 500 12.5px var(--font-ui); color: var(--muted); }
+.c-deck .lang-pair select { min-height: 52px; border-radius: 14px; background-color: var(--c-field); font-weight: 500; }
+.c-deck .swap-btn { width: 44px; height: 44px; margin-bottom: 4px; }
+
+/* languages follow the chosen deck: show them as a read-only pair, not as broken dropdowns */
+.c-deck .lang-pair select:disabled { opacity: 1; cursor: default; background-color: transparent; border-style: dashed; color: var(--text); }
+.c-deck .lang-pair .select-wrap:has(select:disabled)::after { opacity: 0; }
+.c-deck .lang-pair:has(select:disabled) .swap-btn { opacity: .45; pointer-events: none; }
+
+.c-deck-foot { display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap; margin-top: 14px; }
+.c-deck-foot:not(:has(> :not([hidden]))) { display: none; }
+.c-deck-foot .mini { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.c-deck-foot .pair-locked { flex: 1 1 260px; }
+.c-deck-foot .deck-note { flex: 1 1 100%; }
+.c-deck-foot .deck-practice {
+  min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--amber) 40%, var(--stroke));
+  background: color-mix(in srgb, var(--amber) 9%, var(--surface)); color: var(--amber); font: 600 13.5px var(--font-ui);
+}
+.c-deck-foot .deck-practice:hover { background: color-mix(in srgb, var(--amber) 16%, var(--surface)); }
+
+/* ---------- step 2: the words box ---------- */
+.c-step-words textarea#input {
+  min-height: 210px; padding: 18px 20px; border-radius: 16px; border: 1px solid var(--stroke);
+  background: var(--c-field); color: var(--text); font: 400 15.5px/1.7 var(--font-mono); resize: vertical;
+  transition: border-color .2s var(--ease-out), box-shadow .2s var(--ease-out), background-color .2s var(--ease-out);
+}
+.c-step-words textarea#input::placeholder { color: color-mix(in srgb, var(--muted) 82%, transparent); opacity: 1; }
+.c-step-words textarea#input:focus { outline: none; border-color: var(--amber); background: var(--surface); box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 15%, transparent); }
+.c-words-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px 18px; flex-wrap: wrap; margin-top: 12px; }
+.c-words-foot .input-meta { margin: 0; gap: 10px; flex-wrap: nowrap; min-width: 0; }
+.c-words-foot .count-chip { flex: none; }
+.c-words-foot .hint-text { display: none; } /* the step hint already explains the format */
+.c-words-foot .presets-row { margin: 0; gap: 6px; }
+.c-words-foot .presets-label { font: 500 12.5px var(--font-ui); letter-spacing: 0; text-transform: none; }
+.c-words-foot .preset-chip { min-height: 34px; border-radius: 999px; padding: 0 13px; font-size: 13px; }
+
+/* ---------- step 3: the one place to act — a drenched band ---------- */
+.c-step-go { background: var(--c-go-bg); border-top: 0 !important; color: var(--on-navy); }
+.c-step-go .c-mark { border-color: #f6f1e755; background: transparent; color: var(--gold); }
+.c-step-go .c-head h3 { color: var(--on-navy); }
+.c-step-go .c-hint { color: #f6f1e7c4; }
+.c-go { display: flex; align-items: center; gap: 12px 18px; flex-wrap: wrap; margin: 0; }
+.c-step-go #btnStart.btn.primary.big {
+  min-height: 58px; padding: 0 30px; border-radius: 16px; border: 0;
+  background: var(--gold); color: #17203a; font: 700 16px var(--font-ui); letter-spacing: .005em;
+  box-shadow: 0 10px 30px -10px #c8a35acc, 0 1px 0 #ffffff66 inset;
+  transition: transform .2s var(--ease-out), box-shadow .25s var(--ease-out), background-color .2s;
+}
+.c-step-go #btnStart.btn.primary.big:hover { background: #d4b06a; transform: translateY(-1px); box-shadow: 0 16px 36px -12px #c8a35ae6, 0 1px 0 #ffffff66 inset; }
+.c-step-go #btnStart.btn.primary.big:active { transform: translateY(0) scale(.99); }
+.c-step-go #btnStart svg { transition: transform .25s var(--ease-out); }
+.c-step-go #btnStart:hover svg { transform: translateX(3px); }
+/* words are in: the start button is clearly the next move */
+.composer:has(#input:not(:placeholder-shown)) #btnStart.btn.primary.big { box-shadow: 0 0 0 4px #c8a35a40, 0 14px 34px -10px #c8a35ae6, 0 1px 0 #ffffff66 inset; }
+
+.c-go-meta { display: flex; align-items: center; gap: 10px; margin-left: auto; flex-wrap: wrap; }
+.c-step-go .status-indicator { border-color: #f6f1e733; background: #ffffff10; color: #f6f1e7d9; }
+.c-step-go .gear-btn { min-height: 38px; border-color: #f6f1e740; background: transparent; color: var(--on-navy); }
+.c-step-go .gear-btn:hover { background: #ffffff14; color: var(--on-navy); }
+.c-step-go .gear-btn svg { color: var(--gold); }
+
+.c-alt { display: flex; align-items: center; gap: 8px 10px; flex-wrap: wrap; margin-top: 18px; padding-top: 16px; border-top: 1px solid #f6f1e71f; }
+.c-alt-label { font: 500 13.5px var(--font-ui); color: #f6f1e7b8; margin-right: 4px; }
+.c-step-go .alt-btn {
+  width: auto; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1px solid #f6f1e740;
+  background: transparent; color: var(--on-navy); font: 600 13.5px var(--font-ui); box-shadow: none;
+}
+.c-step-go .alt-btn:hover { background: #ffffff14; border-color: #f6f1e766; transform: none; }
+.c-step-go .resume { margin: 14px 0 0; color: #f6f1e7c4; font-size: 13px; }
+.c-step-go .resume .link { color: var(--gold); }
+
+/* keyboard focus: clearly visible on light, dark and navy */
+.composer :is(button, select, textarea, a):focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.c-step-go :is(button, a):focus-visible { outline-color: var(--gold); }
+
+#screen-setup .foot-note { margin-top: 22px; text-align: center; }
+
+/* ---------- entrance: one calm reveal for the composer, steps follow in order ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  :root:not([data-motion="off"]) .composer .c-step { animation: c-rise .5s var(--ease-out) both; }
+  :root:not([data-motion="off"]) .composer .c-step:nth-child(2) { animation-delay: .06s; }
+  :root:not([data-motion="off"]) .composer .c-step:nth-child(3) { animation-delay: .12s; }
+}
+@keyframes c-rise { from { opacity: .001; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* ---------- top bar: clearer theme icon ---------- */
+#btnTheme svg { display: block; }
+
+/* ---------- smaller screens ---------- */
+@media (max-width: 980px) {
+  .c-deck { grid-template-columns: 1fr; align-items: stretch; }
+}
+@media (max-width: 720px) {
+  #screen-setup .hero.hero-banner { padding: 26px 22px; margin-bottom: 26px; }
+  #screen-setup .composer-heading { margin-bottom: 14px; }
+  .composer { border-radius: 20px; }
+  .c-step { grid-template-columns: 30px minmax(0, 1fr); gap: 0 14px; padding: 22px 18px 22px 16px; }
+  .c-mark { width: 30px; height: 30px; font-size: 15px; }
+  .c-head { margin: 3px 0 14px; }
+  .c-head h3 { font-size: 17px; }
+  .c-hint { font-size: 13.5px; }
+  .c-deck .deck-row { flex-wrap: nowrap; }
+  .c-deck .deck-row .deck-bar { flex: 1 1 auto; }
+  .c-deck .deck-row > .chip-btn { flex: none; min-height: 52px; padding: 0 12px; }
+  .c-deck .deck-bar .deck-bar-info { flex-direction: column; align-items: flex-start; gap: 1px; }
+  .c-step-words textarea#input { min-height: 170px; font-size: 15px; }
+  .c-words-foot { flex-direction: column; align-items: stretch; }
+  .c-go { flex-direction: column; align-items: stretch; }
+  .c-step-go #btnStart.btn.primary.big { width: 100%; justify-content: center; }
+  .c-go-meta { margin-left: 0; justify-content: space-between; }
+  .c-alt-label { flex: 1 1 100%; }
+  .c-step-go .alt-btn { flex: 1 1 auto; }
+}
+
+/* ---------- refinements after the first render ---------- */
+/* no deck yet: the deck tile's own "Create deck" is enough */
+.c-step-deck:has(#homeDeck:disabled) #btnHomeNewDeck { display: none; }
+
+/* sidebar: the active deck is a tinted row with a dot, not a coloured stripe */
+.side-deck.active::before { left: 6px; top: 50%; bottom: auto; width: 6px; height: 6px; border-radius: 50%; transform: translateY(-50%); }
+.side-deck.active { background: color-mix(in srgb, var(--amber) 9%, var(--surface)); }
+
+/* callouts elsewhere: full tinted boxes instead of side stripes */
+.server-ai-note { border-left-width: 1px; border-color: color-mix(in srgb, var(--gold) 55%, var(--stroke)); background: color-mix(in srgb, var(--gold) 8%, var(--bg)); }
+.fb-why { border-left: 0; border-radius: 10px; }
+
+@media (max-width: 720px) {
+  #screen-setup .composer-heading { flex-direction: column; align-items: flex-start; gap: 4px; }
+  #screen-setup .composer-heading p { font-size: 14px; }
+  .c-deck .deck-row { flex-wrap: wrap; }
+  .c-deck .deck-row .deck-bar { flex: 1 1 100%; }
+  .c-deck .deck-row > .chip-btn { flex: 1 1 100%; min-height: 42px; }
+  .c-deck .deck-bar .deck-bar-info { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
+  .c-step-go .alt-btn { flex: 1 1 100%; }
+}
+@media (max-width: 720px) { #screen-setup .composer-heading p { max-width: none; text-align: left; } }

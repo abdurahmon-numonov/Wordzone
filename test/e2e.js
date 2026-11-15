@@ -1147,7 +1147,7 @@ run.server(server);
     await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
     await pg.click('#navGrammar');
     await pg.locator('.plate').first().waitFor();
-    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 2, 'one plate per ready course (English, German)');
+    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 4, 'one plate per ready course (English, German, Italian, Korean)');
     assert.equal(await pg.getAttribute('.plate.on', 'data-code'), 'en');
     await pg.locator('.stop').first().waitFor();
     assert.equal(await pg.locator('.stop:not(.checkpoint)').count(), lessons.topics.length, 'the English path lists every topic');

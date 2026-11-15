@@ -24,27 +24,8 @@
       { "id": "subjonctif", "level": "B1", "title": { "ru": "Subjonctif после il faut que", "en": "The subjunctive after il faut que", "uz": "Il faut que dan keyin subjonctif" } }
     ] },
     { "code": "de", "glyph": "Ää", "native": "Deutsch", "ready": true },
-    { "code": "it", "glyph": "Ii", "native": "Italiano", "ready": false, "topics": [
-      { "id": "essere-avere", "level": "A1", "title": { "ru": "Essere и avere", "en": "Essere and avere", "uz": "Essere va avere" } },
-      { "id": "articles", "level": "A1", "title": { "ru": "Артикли: il, lo, la, un, uno", "en": "Articles: il, lo, la, un, uno", "uz": "Artikllar: il, lo, la, un, uno" } },
-      { "id": "present", "level": "A1", "title": { "ru": "Настоящее время: -are, -ere, -ire", "en": "Present tense: -are, -ere, -ire", "uz": "Hozirgi zamon: -are, -ere, -ire" } },
-      { "id": "plurals", "level": "A1", "title": { "ru": "Множественное число", "en": "Plurals", "uz": "Ko'plik" } },
-      { "id": "prepositions", "level": "A2", "title": { "ru": "Слитные предлоги: al, del, nel", "en": "Articulated prepositions: al, del, nel", "uz": "Qo'shma predloglar: al, del, nel" } },
-      { "id": "passato", "level": "A2", "title": { "ru": "Passato prossimo", "en": "Passato prossimo", "uz": "Passato prossimo" } },
-      { "id": "reflexive", "level": "A2", "title": { "ru": "Возвратные глаголы", "en": "Reflexive verbs", "uz": "O'zlik fe'llari" } },
-      { "id": "imperfetto", "level": "B1", "title": { "ru": "Imperfetto или passato prossimo", "en": "Imperfetto or passato prossimo", "uz": "Imperfetto yoki passato prossimo" } },
-      { "id": "condizionale", "level": "B1", "title": { "ru": "Condizionale: vorrei, potrei", "en": "The conditional: vorrei, potrei", "uz": "Shart mayli: vorrei, potrei" } }
-    ] },
-    { "code": "ko", "glyph": "한", "native": "한국어", "ready": false, "topics": [
-      { "id": "hangul", "level": "A1", "title": { "ru": "Хангыль: как читать", "en": "Hangul: how to read", "uz": "Hangul: qanday o'qish" } },
-      { "id": "imnida", "level": "A1", "title": { "ru": "입니다 и 이에요/예요", "en": "입니다 and 이에요/예요", "uz": "입니다 va 이에요/예요" } },
-      { "id": "particles", "level": "A1", "title": { "ru": "Частицы 은/는, 이/가, 을/를", "en": "Particles 은/는, 이/가, 을/를", "uz": "Yuklamalar 은/는, 이/가, 을/를" } },
-      { "id": "present", "level": "A1", "title": { "ru": "Вежливое настоящее: 아요/어요", "en": "Polite present: 아요/어요", "uz": "Hurmat hozirgi zamon: 아요/어요" } },
-      { "id": "past", "level": "A2", "title": { "ru": "Прошедшее: 았어요/었어요", "en": "Past: 았어요/었어요", "uz": "O'tgan zamon: 았어요/었어요" } },
-      { "id": "negation", "level": "A2", "title": { "ru": "Отрицание: 안 и 지 않다", "en": "Negation: 안 and 지 않다", "uz": "Inkor: 안 va 지 않다" } },
-      { "id": "future", "level": "A2", "title": { "ru": "Будущее: (으)ㄹ 거예요", "en": "Future: (으)ㄹ 거예요", "uz": "Kelasi zamon: (으)ㄹ 거예요" } },
-      { "id": "want", "level": "B1", "title": { "ru": "Хочу: 고 싶다", "en": "Wanting: 고 싶다", "uz": "Xohish: 고 싶다" } }
-    ] },
+    { "code": "it", "glyph": "Ii", "native": "Italiano", "ready": true },
+    { "code": "ko", "glyph": "한", "native": "한국어", "ready": true },
     { "code": "uz", "glyph": "Oʻ", "native": "Oʻzbekcha", "ready": false, "topics": [
       { "id": "suffix-order", "level": "A1", "title": { "ru": "Аффиксы: порядок окончаний", "en": "Suffixes: the order of endings", "uz": "Qo'shimchalar tartibi" } },
       { "id": "personal", "level": "A1", "title": { "ru": "Личные окончания: -man, -san", "en": "Personal endings: -man, -san", "uz": "Shaxs qo'shimchalari: -man, -san" } },

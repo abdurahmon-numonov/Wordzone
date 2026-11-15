@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.26'; // the one place the shown version lives (footer)
+  var VERSION = '2.27'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -282,6 +282,15 @@
     'hero.caption': ['Нажми. Переверни. Запомни.', 'Click. Flip. Remember.', 'Bos. Aylantir. Esla.'],
 
     'setup.heading': ['Начнём с твоих слов', "Let's start with your words", "Sening so'zlaringdan boshlaymiz"],
+    'composer.title': ['Новая тренировка', 'New practice', 'Yangi mashg\'ulot'],
+    'composer.sub': ['Три шага — и карточки готовы.', 'Three steps and your cards are ready.', 'Uch qadam — va kartochkalar tayyor.'],
+    'composer.s1': ['Колода и языки', 'Deck and languages', 'To\'plam va tillar'],
+    'composer.s1h': ['Куда сохранить слова и с какого языка на какой переводить.', 'Where to save the words and which languages to translate between.', 'So\'zlar qayerga saqlanadi va qaysi tildan qaysi tilga tarjima qilinadi.'],
+    'composer.s2': ['Слова', 'Words', 'So\'zlar'],
+    'composer.s2h': ['Слова, фразы или целый текст. Можно сразу с переводом: apple — яблоко.', 'Words, phrases or a whole text. Pairs work too: apple — яблоко.', 'So\'zlar, iboralar yoki butun matn. Tarjimasi bilan ham bo\'ladi: apple — olma.'],
+    'composer.s3': ['Запуск', 'Start', 'Boshlash'],
+    'composer.s3h': ['ИИ переведёт слова, добавит примеры и соберёт тренировку.', 'The AI translates the words, adds examples and builds your practice.', 'AI so\'zlarni tarjima qiladi, misollar qo\'shadi va mashg\'ulot tuzadi.'],
+    'composer.alt': ['Нет слов под рукой?', 'No words at hand?', 'So\'zlar yo\'qmi?'],
     'setup.step': ['01 / Собери свою колоду', '01 / Build your deck', "01 / Kolodangni yig'"],
     'words.title': ['Твои слова', 'Your words', "So'zlaring"],
     'words.paste': ['Вставить', 'Paste', 'Joylash'],

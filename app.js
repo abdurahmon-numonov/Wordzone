@@ -144,7 +144,26 @@
     if (kind === 'crit') { [660, 880, 1320].forEach(function (f, i) { setTimeout(function () { playTone(f, 'square', 0.09, 0.1); }, i * 55); }); return; }
     if (kind === 'chest') { [523, 784, 1047, 1568].forEach(function (f, i) { setTimeout(function () { playTone(f, 'triangle', 0.14, 0.1); }, i * 70); }); return; }
     if (kind === 'win') { [523, 659, 784, 1047, 1319].forEach(function (f, i) { setTimeout(function () { playTone(f, 'triangle', 0.22, 0.12); }, i * 110); }); return; }
-    if (kind === 'lose') { [330, 262, 196].forEach(function (f, i) { setTimeout(function () { playTone(f, 'sine', 0.3, 0.12); }, i * 160); }); }
+    if (kind === 'lose') { [330, 262, 196].forEach(function (f, i) { setTimeout(function () { playTone(f, 'sine', 0.3, 0.12); }, i * 160); }); return; }
+    if (kind === 'cast') return playNoise(0.35, 900, 3200, 0.07);
+    if (kind === 'splash') return playNoise(0.28, 400, 1600, 0.09);
+    if (kind === 'bite') { playTone(740, 'triangle', 0.07, 0.09); setTimeout(function () { playTone(980, 'triangle', 0.09, 0.09); }, 90); return; }
+    if (kind === 'reel') { [392, 494, 587, 784].forEach(function (f, i) { setTimeout(function () { playTone(f, 'square', 0.06, 0.05); }, i * 60); }); }
+  }
+  // Filtered white noise for water sounds: a sweep from `from` to `to` Hz over `dur` seconds.
+  function playNoise(dur, from, to, gainVal) {
+    if (!state.soundEnabled) return;
+    try {
+      var ctx = getAudioCtx(); if (!ctx) return;
+      if (ctx.state === 'suspended') ctx.resume();
+      var len = Math.floor(ctx.sampleRate * dur), buf = ctx.createBuffer(1, len, ctx.sampleRate), data = buf.getChannelData(0);
+      for (var i = 0; i < len; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+      var src = ctx.createBufferSource(), bp = ctx.createBiquadFilter(), gain = ctx.createGain();
+      src.buffer = buf; bp.type = 'bandpass'; bp.Q.value = 0.8;
+      bp.frequency.setValueAtTime(from, ctx.currentTime); bp.frequency.exponentialRampToValueAtTime(to, ctx.currentTime + dur);
+      gain.gain.setValueAtTime(gainVal, ctx.currentTime); gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + dur);
+      src.connect(bp); bp.connect(gain); gain.connect(ctx.destination); src.start(); src.stop(ctx.currentTime + dur);
+    } catch (e) {}
   }
 
   function toggleSound() {
@@ -1531,7 +1550,7 @@
   /* ---------------- Library, daily practice and lexical resource ---------------- */
   var LIBRARY_KEY = 'vocabulary-master.library.v2';
   var library = { decks: {}, history: {}, goal: 10, streak: { count: 0, last: null, freezes: 2, enabled: true } };
-  var pendingTypedAnswer = null, lexical = null, games = null, account = null;
+  var pendingTypedAnswer = null, lexical = null, games = null, fishing = null, account = null;
   var CONTEXT = {
     serendipity: ['The chance occurrence of a happy discovery.', 'Finding this little bookshop was pure serendipity.'],
     'to remember': ['To keep something in your memory.', 'I try to remember one new word every day.'],
@@ -2023,8 +2042,8 @@
     syncDeckSelects();
     var screen = document.querySelector('.screen.active'), id = screen && screen.id;
     if (id === 'screen-library') renderLibrary();
-    else if (id === 'screen-test') fillQuizDecks();
-    else if (id === 'screen-games') { if (games) games.refresh(); }
+    else if (id === 'screen-test') { fillQuizDecks(); if (games) games.refresh(); }
+    else if (id === 'screen-games') renderArcade();
     else if (id === 'screen-progress') renderProgress();
     else if (id === 'screen-grammar') renderGrammar();
   }
@@ -2038,6 +2057,13 @@
       }
       sel.value = key;
     });
+  }
+  // The Games screen needs a working deck with at least 4 words; otherwise it offers the demo deck.
+  function renderArcade() {
+    var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
+    if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
+    if ($('arcadeHub')) $('arcadeHub').classList.toggle('locked', !ready);
+    if (fishing) fishing.refresh();
   }
   function renderDeckBars() {
     var d = activeDeck();
@@ -2478,11 +2504,12 @@
     if (state.answers && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); }
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-    if (games && id !== 'screen-games') games.leave();
+    if (games && id !== 'screen-test') games.leave();
+    if (fishing && id !== 'screen-games') fishing.leave();
     show(id); renderDaily();
-    if (id === 'screen-games' && games) games.refresh();
+    if (id === 'screen-games') renderArcade();
     if (id === 'screen-library') renderLibrary();
-    if (id === 'screen-test') fillQuizDecks();
+    if (id === 'screen-test') { fillQuizDecks(); if (games) games.refresh(); }
     if (id === 'screen-progress') renderProgress();
     if (id === 'screen-grammar') { drill = null; renderGrammar(); if (grammarTab === 'course' && course) course.open(); }
   }
@@ -3055,7 +3082,7 @@
     });
     $('vaultSort').onchange = renderVault;
     $('btnVaultMore').onclick = function () { vaultShown += VAULT_PAGE; renderVault(); };
-    $('btnGamesDemo').onclick = function () { if (!addDemoDeck()) return; if (games) games.refresh(); toast(tr('toast.demoAdded'), 'ok'); };
+    $('btnGamesDemo').onclick = function () { if (!addDemoDeck()) return; renderArcade(); toast(tr('toast.demoAdded'), 'ok'); };
     if (window.VMGames) games = window.VMGames.mount({
       decks: function () { return library.decks; },
       activeKey: function () { return hasDeck(state.cfg.deck) ? state.cfg.deck : ''; },
@@ -3065,7 +3092,15 @@
       sound: function (ok) { if (ok) playSuccessSound(); else playForgotSound(); }, fx: playArcadeFx,
       complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); },
       moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; },
-      openMatch: function (key) { navigateLearning('screen-test'); if (library.decks[key]) $('quizDeck').value = key; $('btnMatchStart').click(); }
+      openMatch: function (key) { if (library.decks[key]) $('quizDeck').value = key; $('btnMatchStart').click(); var mp = document.querySelector('.match-panel'); if (mp) mp.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+    });
+    // v2.35: the Games screen holds the big arcade games; the quick trainers moved to the Lexical test.
+    if (window.VMFishing) fishing = window.VMFishing.mount({
+      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+      tr: tr, toast: toast, fx: playArcadeFx,
+      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); },
+      moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; }
     });
     $('btnProgEmpty').onclick = function () { navigateLearning('screen-setup'); $('input').focus(); };
     var progressResize = null;

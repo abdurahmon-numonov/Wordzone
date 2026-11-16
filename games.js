@@ -206,15 +206,19 @@
       // With a working deck (v2.22) the games need at least 4 of its words; the empty state offers the demo deck.
       var active = api.activeKey ? decks[api.activeKey()] : null;
       var ready = api.activeKey ? !!(active && active.cards.length >= 4) : keys.length > 0;
-      $('gamesEmpty').hidden = ready;
+      if ($('gamesEmpty')) $('gamesEmpty').hidden = ready;
       $('gamesHub').hidden = !ready;
+      if ($('trainers')) $('trainers').hidden = !ready;
       document.querySelectorAll('#gamesHub [data-game]').forEach(function (b) {
         var k = b.dataset.game, rec = b.querySelector('.game-best');
         if (rec) rec.textContent = k === 'factory' ? api.tr('arc.tokensShort', { n: loadFactory().tokens }) : best(k) ? api.tr('game.best', { n: best(k) }) : '';
       });
     }
     function stop() { clearInterval(timer); timer = null; doc.removeEventListener('keydown', onKey); }
-    function leave() { stop(); game = null; $('gameStage').className = 'panel game-stage'; $('gameStage').hidden = true; $('gamesHub').hidden = false; $('gamesPick').hidden = false; fillDecks(); }
+    // v2.35: the trainers live on the Lexical test screen; while one runs, the rest of that screen steps aside.
+    function focusMode(on) { var host = $('gameStage').closest('.screen'); if (host) host.classList.toggle('game-on', on); if (on) $('gameStage').scrollIntoView({ block: 'start' }); }
+    function showPick(on) { if ($('gamesPick')) $('gamesPick').hidden = !on; }
+    function leave() { stop(); game = null; $('gameStage').className = 'panel game-stage'; $('gameStage').hidden = true; $('gamesHub').hidden = false; showPick(true); focusMode(false); fillDecks(); }
 
     function start(kind) {
       if (kind === 'match') { api.openMatch(deckKey()); return; }
@@ -226,7 +230,7 @@
       if (!items.length) { api.toast(api.tr(kind === 'context' ? 'game.needExamples' : kind === 'scramble' ? 'game.needWords' : 'toast.needMatch'), 'err', 5000); return; }
       stop();
       game = { kind: kind, items: items, i: 0, score: 0, answered: 0, deck: d, ends: kind === 'truefalse' ? Date.now() + ROUNDS.truefalse * 1000 : 0 };
-      $('gamesHub').hidden = true; $('gamesPick').hidden = true; $('gameStage').hidden = false;
+      $('gamesHub').hidden = true; showPick(false); $('gameStage').hidden = false; focusMode(true);
       $('gameTitle').textContent = api.tr('game.' + kind);
       doc.addEventListener('keydown', onKey);
       if (game.ends) timer = setInterval(tick, 250);
@@ -451,7 +455,7 @@
       if (kind === 'heist') { game.coins = 0; game.mult = 1; game.shield = 0; game.lockUntil = 0; }
       if (kind === 'boss') { game.bossHp = BOSS.hp; game.playerHp = BOSS.playerHp; }
       if (kind === 'factory') { game.factory = loadFactory(); game.tokens = 0; game.hintIn = HINT_EVERY; game.hintUsed = false; }
-      $('gamesHub').hidden = true; $('gamesPick').hidden = true; $('gameStage').hidden = false;
+      $('gamesHub').hidden = true; showPick(false); $('gameStage').hidden = false; focusMode(true);
       $('gameStage').classList.add('arcade', 'arc-' + kind);
       $('gameTitle').textContent = api.tr('game.' + kind);
       doc.addEventListener('keydown', onKey);

@@ -884,6 +884,31 @@ run.server(server);
   await onb.click('#navGames');
   assert.equal(await onb.locator('#crumbHere').innerText(), 'Игры');
   await onb.click('#btnGamesDemo');
+  // v2.35: the Games screen holds «Клёв»; the quick trainers moved to the Lexical test screen
+  const answersOf = () => onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));
+  await onb.locator('#arcadeEmpty').waitFor({ state: 'hidden' });
+  await onb.click('[data-arcade="fishing"]');
+  await onb.locator('.fx-start').waitFor();
+  const fishBefore = await answersOf();
+  await onb.click('.fx-start .fx-btn.primary');
+  await onb.locator('.fx-ask.biting').waitFor({ timeout: 8000 });
+  assert.equal(await onb.locator('.fx-opt').count(), 4, 'a bite asks a four-option question');
+  await onb.evaluate(() => window.fishPick(true));
+  await onb.locator('.fx-catch:not([hidden])').waitFor({ timeout: 4000 });
+  assert.match(await onb.locator('.fx-catch .fx-rarity').innerText(), /\S/, 'the catch card names the rarity');
+  await onb.locator('.fx-ask.biting').waitFor({ timeout: 8000 });
+  await onb.evaluate(() => window.fishPick(false));
+  await onb.locator('.fx-opt.wrong').waitFor();
+  assert.match(await onb.locator('.fx-feedback').innerText(), /Правильно:/, 'a miss shows the right word');
+  await onb.keyboard.press('Escape');
+  await onb.locator('.fx-end').waitFor();
+  const fish = await onb.evaluate(() => JSON.parse(localStorage.getItem('vm.fish')));
+  assert.equal(fish.rounds, 1, 'the round is saved');
+  assert.equal(await answersOf() - fishBefore, 2, 'fishing answers count toward the daily goal');
+  await onb.click('.fx-end .fx-link');
+  await onb.locator('#arcadeHub:not([hidden])').waitFor();
+  assert.match(await onb.locator('[data-fish-meta]').innerText(), /Видов/, 'the hub shows the record and the journal');
+  await onb.click('#navTest');
   await onb.locator('#gamesHub:not([hidden])').waitFor();
   const answersBefore = await onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));
   await onb.click('[data-game="context"]');
@@ -982,7 +1007,7 @@ run.server(server);
   assert.match(await onb.locator('#gameProgress').innerText(), /осталось \d+ с/i, 'the sprint shows the seconds left');
   assert(Number((await onb.locator('#gameScore').innerText()).match(/\d+/)[0]) >= 0);
   await onb.click('#navLibrary');
-  assert(await onb.locator('#gameStage').isHidden() || !(await onb.locator('#screen-games.active').count()), 'leaving the screen stops the game');
+  assert(await onb.locator('#gameStage').isHidden() || !(await onb.locator('#screen-test.active').count()), 'leaving the screen stops the game');
 
   await onb.click('#tabVault');
   const vaultRows = await onb.locator('#vaultBody tr').count();
@@ -1116,7 +1141,7 @@ run.server(server);
     assert.equal(await pg.inputValue('#input'), 'Tisch', 'every deck keeps its own draft');
     await pg.reload(); await pg.locator('#screen-setup.active').waitFor();
     assert(await pg.locator('#deckPicker').isHidden(), 'a reload of the same tab does not ask again');
-    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navGames', '#gameDeck'], ['#navProgress', '#progDeck'], ['#navGrammar', '#gramDeck']]) {
+    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck'], ['#navGrammar', '#gramDeck']]) {
       await pg.click(nav);
       assert.equal(await pg.inputValue(id), 'de-ru:a2', nav + ' works with the working deck');
     }

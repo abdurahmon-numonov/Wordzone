@@ -884,6 +884,43 @@ run.server(server);
   await onb.click('#navGames');
   assert.equal(await onb.locator('#crumbHere').innerText(), 'Игры');
   await onb.click('#btnGamesDemo');
+  // v2.35: the Games screen holds «Клёв»; the quick trainers moved to the Lexical test screen
+  const answersOf = () => onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));
+  await onb.locator('#arcadeEmpty').waitFor({ state: 'hidden' });
+  await onb.click('[data-arcade="fishing"]');
+  // first visit: Ota's intro, then the map; the first quest opens with the host's dialog
+  await onb.locator('.fx-dialog').waitFor();
+  await onb.click('.fx-dialog .fx-btn.primary'); await onb.click('.fx-dialog .fx-btn.primary');
+  await onb.locator('.fx-map').waitFor();
+  assert.equal(await onb.locator('.fx-place').count(), 3, 'three places on the map');
+  assert(await onb.locator('.fx-place').nth(1).evaluate(n => n.classList.contains('locked')), 'the river waits for the lake boss');
+  await onb.click('.fx-map .fx-actions .fx-btn.primary');
+  await onb.click('.fx-dialog .fx-btn.primary'); await onb.click('.fx-dialog .fx-btn.primary');
+  await onb.locator('.fx-quest').waitFor();
+  const fishBefore = await answersOf();
+  await onb.click('.fx-quest .fx-btn.primary');
+  await onb.waitForFunction(() => document.querySelectorAll('.fx-tag:not(.gone)').length === 4);
+  assert.equal(await onb.locator('.fx-tag').count(), 4, 'four fish carry four words');
+  await onb.evaluate(() => window.fishPick(true));
+  await onb.locator('.fx-reel:not([hidden])').waitFor({ timeout: 4000 });
+  await onb.keyboard.down(' '); await onb.waitForTimeout(300);
+  assert.equal(await onb.locator('.fx-reelbtn').getAttribute('aria-pressed'), 'true', 'Space reels in');
+  await onb.keyboard.up(' ');
+  await onb.evaluate(() => window.fishLand());
+  await onb.locator('.fx-catch:not([hidden])').waitFor({ timeout: 4000 });
+  assert.match(await onb.locator('.fx-goal strong').innerText(), /^1 \/ 5/, 'the quest counts the catch');
+  await onb.waitForFunction(() => document.querySelectorAll('.fx-tag:not(.gone)').length === 4, null, { timeout: 8000 });
+  await onb.evaluate(() => window.fishPick(false));
+  await onb.locator('.fx-tag.show-right').waitFor();
+  assert.match(await onb.locator('.fx-feedback').innerText(), /Правильно:/, 'a wrong fish shows the right word');
+  assert.equal(await answersOf() - fishBefore, 2, 'fishing answers count toward the daily goal');
+  await onb.keyboard.press('Escape');
+  await onb.locator('.fx-map').waitFor();
+  assert.equal(await onb.evaluate(() => JSON.parse(localStorage.getItem('vm.fish')).seen ? Object.keys(JSON.parse(localStorage.getItem('vm.fish')).seen).length : 0), 1, 'the catch is in the journal');
+  await onb.click('.fx-map .fx-link');
+  await onb.locator('#arcadeHub:not([hidden])').waitFor();
+  assert.match(await onb.locator('[data-fish-meta]').innerText(), /Видов 1/, 'the hub shows the journey and the journal');
+  await onb.click('#navTest');
   await onb.locator('#gamesHub:not([hidden])').waitFor();
   const answersBefore = await onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));
   await onb.click('[data-game="context"]');
@@ -982,7 +1019,7 @@ run.server(server);
   assert.match(await onb.locator('#gameProgress').innerText(), /осталось \d+ с/i, 'the sprint shows the seconds left');
   assert(Number((await onb.locator('#gameScore').innerText()).match(/\d+/)[0]) >= 0);
   await onb.click('#navLibrary');
-  assert(await onb.locator('#gameStage').isHidden() || !(await onb.locator('#screen-games.active').count()), 'leaving the screen stops the game');
+  assert(await onb.locator('#gameStage').isHidden() || !(await onb.locator('#screen-test.active').count()), 'leaving the screen stops the game');
 
   await onb.click('#tabVault');
   const vaultRows = await onb.locator('#vaultBody tr').count();
@@ -1116,7 +1153,7 @@ run.server(server);
     assert.equal(await pg.inputValue('#input'), 'Tisch', 'every deck keeps its own draft');
     await pg.reload(); await pg.locator('#screen-setup.active').waitFor();
     assert(await pg.locator('#deckPicker').isHidden(), 'a reload of the same tab does not ask again');
-    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navGames', '#gameDeck'], ['#navProgress', '#progDeck'], ['#navGrammar', '#gramDeck']]) {
+    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck'], ['#navGrammar', '#gramDeck']]) {
       await pg.click(nav);
       assert.equal(await pg.inputValue(id), 'de-ru:a2', nav + ' works with the working deck');
     }

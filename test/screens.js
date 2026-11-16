@@ -112,7 +112,8 @@ function layoutProblems() {
     await page.click('#btnMatchStart');
     await page.locator('.match-tile').first().waitFor();
     await shot('5-test');
-    await nav('#navGames'); await page.locator('#gamesHub:not([hidden])').waitFor(); await shot('5b-games');
+    await nav('#navGames'); await page.locator('#arcadeHub:not([hidden])').waitFor(); await shot('5a-arcade');
+    await nav('#navTest'); await page.locator('#gamesHub:not([hidden])').waitFor(); await shot('5b-games');
     await page.click('[data-game="context"]'); await page.locator('.context-sentence').waitFor(); await page.keyboard.press('1'); await shot('5c-context');
     await page.keyboard.press('Escape');
     await page.click('[data-game="scramble"]'); await page.locator('.scramble-clue').waitFor(); await shot('5d-scramble'); await page.keyboard.press('Escape');

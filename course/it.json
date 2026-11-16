@@ -2639,6 +2639,531 @@
    }
   },
   {
+   "id": "questo-quello",
+   "level": "A1",
+   "title": {
+    "ru": "Questo и quello: этот и тот",
+    "en": "Questo and quello: this and that",
+    "uz": "Questo va quello: bu va u"
+   },
+   "sum": {
+    "ru": "Quello меняется как артикль.",
+    "en": "Quello changes like the article.",
+    "uz": "Quello artikl kabi o'zgaradi."
+   },
+   "explain": {
+    "ru": [
+     "questo (этот, рядом): questo libro, questa casa, questi libri, queste case. Перед гласной: quest’anno.",
+     "quello (тот, далеко) меняется как определённый артикль: il → quel, lo → quello, l’ → quell’, i → quei, gli → quegli, la → quella, le → quelle.",
+     "Без существительного: Questo è mio. Quello è tuo. Prendo quello rosso."
+    ],
+    "en": [
+     "questo (this, near): questo libro, questa casa, questi libri, queste case. Before a vowel: quest’anno.",
+     "quello (that, far) changes like the definite article: il → quel, lo → quello, l’ → quell’, i → quei, gli → quegli, la → quella, le → quelle.",
+     "Without a noun: Questo è mio. Quello è tuo. Prendo quello rosso."
+    ],
+    "uz": [
+     "questo (bu, yaqin): questo libro, questa casa, questi libri, queste case. Unli oldidan: quest’anno.",
+     "quello (u, uzoq) aniq artikl kabi o'zgaradi: il → quel, lo → quello, l’ → quell’, i → quei, gli → quegli, la → quella, le → quelle.",
+     "Otsiz: Questo è mio. Quello è tuo. Prendo quello rosso."
+    ]
+   },
+   "formula": [
+    "questo / questa / questi / queste",
+    "il → quel · lo → quello · l’ → quell’",
+    "i → quei · gli → quegli · la → quella · le → quelle"
+   ],
+   "examples": [
+    {
+     "s": "Questa pizza è buonissima.",
+     "t": {
+      "ru": "Эта пицца очень вкусная.",
+      "en": "This pizza is delicious.",
+      "uz": "Bu pitsa juda mazali."
+     }
+    },
+    {
+     "s": "Chi è quel ragazzo?",
+     "t": {
+      "ru": "Кто тот парень?",
+      "en": "Who is that boy?",
+      "uz": "Ana u yigit kim?"
+     }
+    },
+    {
+     "s": "Quegli studenti sono spagnoli.",
+     "t": {
+      "ru": "Те студенты — испанцы.",
+      "en": "Those students are Spanish.",
+      "uz": "Ana u talabalar ispan."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Quello libro è interessante.",
+    "right": "Quel libro è interessante.",
+    "note": {
+     "ru": "il libro → quel libro.",
+     "en": "il libro → quel libro.",
+     "uz": "il libro → quel libro."
+    }
+   },
+   "tip": {
+    "ru": "Подставь артикль: il → quel, lo → quello, gli → quegli.",
+    "en": "Think of the article: il → quel, lo → quello, gli → quegli.",
+    "uz": "Artiklni o'ylang: il → quel, lo → quello, gli → quegli."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ borsa è nuova. (this)",
+     "o": [
+      "Questa",
+      "Questo",
+      "Quella di"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "borsa — жен. → questa.",
+      "en": "Feminine → questa.",
+      "uz": "Ayol → questa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ti piace ___ quadro? (that, il quadro)",
+     "o": [
+      "quel",
+      "quello",
+      "quell’"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "il → quel.",
+      "en": "il → quel.",
+      "uz": "il → quel."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ zaini sono pesanti. (those, gli zaini)",
+     "o": [
+      "Quegli",
+      "Quei",
+      "Quelli"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "gli → quegli.",
+      "en": "gli → quegli.",
+      "uz": "gli → quegli."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Quell’albero è altissimo.",
+      "Quello albero è altissimo."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "l’albero → quell’albero.",
+      "en": "l’albero → quell’albero.",
+      "uz": "l’albero → quell’albero."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Queste scarpe sono comode.",
+      "Questi scarpe sono comode."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "scarpe — жен. мн. → queste.",
+      "en": "Feminine plural → queste.",
+      "uz": "Ayol, ko'plik → queste."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Questo",
+      "caffè",
+      "è",
+      "molto",
+      "forte."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Quella",
+      "ragazza",
+      "è",
+      "mia",
+      "sorella."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Chi sono ___ signori? (those, i signori)",
+     "a": [
+      "quei"
+     ],
+     "e": {
+      "ru": "i → quei.",
+      "en": "i → quei.",
+      "uz": "i → quei."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*il* libro → *quel* libro",
+     "*lo* zaino → *quello* zaino",
+     "*gli* amici → *quegli* amici"
+    ],
+    "q": {
+     "ru": "На что похож quello?",
+     "en": "What does quello look like?",
+     "uz": "quello nimaga o'xshaydi?"
+    },
+    "o": [
+     {
+      "ru": "На определённый артикль",
+      "en": "The definite article",
+      "uz": "Aniq artiklga"
+     },
+     {
+      "ru": "На questo",
+      "en": "questo",
+      "uz": "questo ga"
+     },
+     {
+      "ru": "Ни на что",
+      "en": "Nothing",
+      "uz": "Hech narsaga"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ settimana sono molto occupato. (this)",
+     "o": [
+      "Questa",
+      "Questo",
+      "Quella"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "settimana — жен., рядом во времени → questa.",
+      "en": "Feminine, this one → questa.",
+      "uz": "Ayol, shu → questa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Vedi ___ studentesse? (those)",
+     "o": [
+      "quelle",
+      "quei",
+      "quegli"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "le → quelle.",
+      "en": "le → quelle.",
+      "uz": "le → quelle."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Non questo, ___ blu! (that one)",
+     "o": [
+      "quello",
+      "quel",
+      "quegli"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Без существительного → quello.",
+      "en": "No noun → quello.",
+      "uz": "Otsiz → quello."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши 4 предмета в комнате: 2 рядом (questo) и 2 далеко (quello).",
+    "en": "Describe 4 things in the room: 2 near (questo), 2 far (quello).",
+    "uz": "Xonadagi 4 ta narsani tasvirlang: 2 tasi yaqin (questo), 2 tasi uzoq (quello)."
+   }
+  },
+  {
+   "id": "preposizioni-luogo",
+   "level": "A1",
+   "title": {
+    "ru": "Предлоги места: a, in, da",
+    "en": "Prepositions of place: a, in, da",
+    "uz": "Joy predloglari: a, in, da"
+   },
+   "sum": {
+    "ru": "В Риме, в Италии, у врача.",
+    "en": "In Rome, in Italy, at the doctor’s.",
+    "uz": "Rimda, Italiyada, shifokorda."
+   },
+   "explain": {
+    "ru": [
+     "Город — a: Vivo a Milano. Vado a Roma. Страна, регион, остров (большой) — in: in Italia, in Toscana, in Sicilia.",
+     "in без артикля в устойчивых местах: in banca, in ufficio, in farmacia, in centro, in cucina. a: a casa, a scuola, a teatro, al cinema.",
+     "К человеку / у человека — da: Vado dal medico. Sono da Marco. Откуда — da: Vengo da Tashkent. Происхождение — di: Sono di Samarcanda."
+    ],
+    "en": [
+     "City — a: Vivo a Milano. Country, region, big island — in: in Italia, in Toscana.",
+     "in without article for set places: in banca, in ufficio, in centro. a: a casa, a scuola, al cinema.",
+     "To/at a person’s — da: Vado dal medico. From — da: Vengo da Tashkent. Origin — di: Sono di Samarcanda."
+    ],
+    "uz": [
+     "Shahar — a: Vivo a Milano. Mamlakat, viloyat, katta orol — in: in Italia, in Toscana.",
+     "in artiklsiz turg'un joylar: in banca, in ufficio, in centro. a: a casa, a scuola, al cinema.",
+     "Odamga / odamnikida — da: Vado dal medico. Qayerdan — da: Vengo da Tashkent. Kelib chiqish — di: Sono di Samarcanda."
+    ]
+   },
+   "formula": [
+    "a + città · in + paese / regione",
+    "in banca · in ufficio · a casa · a scuola",
+    "da + persona · vengo da · sono di"
+   ],
+   "examples": [
+    {
+     "s": "Abito a Firenze, in Toscana.",
+     "t": {
+      "ru": "Я живу во Флоренции, в Тоскане.",
+      "en": "I live in Florence, in Tuscany.",
+      "uz": "Toskanadagi Florensiyada yashayman."
+     }
+    },
+    {
+     "s": "Stasera vado da mia nonna.",
+     "t": {
+      "ru": "Сегодня вечером я иду к бабушке.",
+      "en": "Tonight I am going to my grandmother’s.",
+      "uz": "Bugun kechqurun buvimnikiga boraman."
+     }
+    },
+    {
+     "s": "Lavoro in ufficio dalle nove.",
+     "t": {
+      "ru": "Я работаю в офисе с девяти.",
+      "en": "I work at the office from nine.",
+      "uz": "To'qqizdan ofisda ishlayman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Vado in Roma domani.",
+    "right": "Vado a Roma domani.",
+    "note": {
+     "ru": "Город → a.",
+     "en": "A city → a.",
+     "uz": "Shahar → a."
+    }
+   },
+   "tip": {
+    "ru": "Город — a, страна — in, человек — da.",
+    "en": "City — a, country — in, person — da.",
+    "uz": "Shahar — a, mamlakat — in, odam — da."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Mia sorella studia ___ Spagna.",
+     "o": [
+      "in",
+      "a",
+      "da"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Страна → in.",
+      "en": "Country → in.",
+      "uz": "Mamlakat → in."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Domani vado ___ dentista.",
+     "o": [
+      "dal",
+      "al",
+      "in"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "К человеку → da + il = dal.",
+      "en": "To a person → dal.",
+      "uz": "Odamga → dal."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Siamo ___ Napoli per tre giorni.",
+     "o": [
+      "a",
+      "in",
+      "da"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Город → a.",
+      "en": "City → a.",
+      "uz": "Shahar → a."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Stasera resto a casa.",
+      "Stasera resto in la casa."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "a casa — устойчиво.",
+      "en": "a casa is fixed.",
+      "uz": "a casa — turg'un."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Sono di Bukhara.",
+      "Sono da Bukhara."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Происхождение с essere → di.",
+      "en": "Origin with essere → di.",
+      "uz": "essere bilan kelib chiqish → di."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mio",
+      "padre",
+      "lavora",
+      "in",
+      "banca."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Andiamo",
+      "da",
+      "Luca",
+      "stasera."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Vengo ___ Tashkent. (from)",
+     "a": [
+      "da"
+     ],
+     "e": {
+      "ru": "Откуда (город) → da.",
+      "en": "From (a city) → da.",
+      "uz": "Qayerdan (shahar) → da."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Vado *a* Roma.",
+     "Vado *in* Italia.",
+     "Vado *dal* medico."
+    ],
+    "q": {
+     "ru": "Отчего зависит предлог?",
+     "en": "What decides the preposition?",
+     "uz": "Predlog nimaga bog'liq?"
+    },
+    "o": [
+     {
+      "ru": "Город, страна или человек",
+      "en": "City, country or person",
+      "uz": "Shahar, mamlakat yoki odam"
+     },
+     {
+      "ru": "От времени",
+      "en": "Time",
+      "uz": "Vaqtga"
+     },
+     {
+      "ru": "Случайно",
+      "en": "At random",
+      "uz": "Tasodifan"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Il sabato vado ___ piscina.",
+     "o": [
+      "in",
+      "a",
+      "da"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "in piscina — устойчиво.",
+      "en": "in piscina is fixed.",
+      "uz": "in piscina — turg'un."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Andiamo ___ cinema?",
+     "o": [
+      "al",
+      "in",
+      "da"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "a + il = al cinema.",
+      "en": "a + il = al.",
+      "uz": "a + il = al."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Domenica pranziamo ___ zia Anna.",
+     "o": [
+      "da",
+      "a",
+      "in"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "У человека → da.",
+      "en": "At a person’s → da.",
+      "uz": "Odamnikida → da."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, откуда ты, где живёшь и куда ходишь на неделе (a, in, da, di).",
+    "en": "Write where you are from, where you live and where you go during the week (a, in, da, di).",
+    "uz": "Qayerdan ekaningiz, qayerda yashashingiz va hafta davomida qayerga borishingizni yozing (a, in, da, di)."
+   }
+  },
+  {
    "id": "prepositions",
    "level": "A2",
    "title": {
@@ -5261,6 +5786,532 @@
     "ru": "Напиши 3 предложения о своих планах на следующий год (futuro semplice).",
     "en": "Write 3 sentences about your plans for next year (futuro semplice).",
     "uz": "Kelasi yilgi rejalaringiz haqida 3 ta gap yozing (futuro semplice)."
+   }
+  },
+  {
+   "id": "indefiniti",
+   "level": "A2",
+   "title": {
+    "ru": "Qualcosa, niente, qualcuno, nessuno",
+    "en": "Qualcosa, niente, qualcuno, nessuno",
+    "uz": "Qualcosa, niente, qualcuno, nessuno"
+   },
+   "sum": {
+    "ru": "Что-то, ничего, кто-то, никто, каждый.",
+    "en": "Something, nothing, someone, no one, every.",
+    "uz": "Nimadir, hech narsa, kimdir, hech kim, har bir."
+   },
+   "explain": {
+    "ru": [
+     "qualcosa (что-то) ↔ niente / nulla (ничего); qualcuno (кто-то) ↔ nessuno (никто): Vuoi qualcosa? Non voglio niente.",
+     "После глагола с non — двойное отрицание: Non vedo nessuno. В начале фразы non не нужен: Nessuno è venuto.",
+     "ogni (каждый) — всегда ед. ч.: ogni giorno. qualche (несколько) — тоже ед. ч.: qualche libro (= alcuni libri). tutti / tutte + артикль: tutti i giorni."
+    ],
+    "en": [
+     "qualcosa ↔ niente / nulla; qualcuno ↔ nessuno: Vuoi qualcosa? Non voglio niente.",
+     "After the verb with non — double negative: Non vedo nessuno. At the start, no non: Nessuno è venuto.",
+     "ogni (every) and qualche (some) take the singular: ogni giorno, qualche libro. tutti + article: tutti i giorni."
+    ],
+    "uz": [
+     "qualcosa ↔ niente / nulla; qualcuno ↔ nessuno: Vuoi qualcosa? Non voglio niente.",
+     "Fe'ldan keyin non bilan — qo'sh inkor: Non vedo nessuno. Gap boshida non kerak emas: Nessuno è venuto.",
+     "ogni (har bir) va qualche (bir nechta) birlik bilan: ogni giorno, qualche libro. tutti + artikl: tutti i giorni."
+    ]
+   },
+   "formula": [
+    "qualcosa ↔ niente · qualcuno ↔ nessuno",
+    "non … nessuno · Nessuno + verbo",
+    "ogni / qualche + singolare · tutti i …"
+   ],
+   "examples": [
+    {
+     "s": "C’è qualcuno in casa?",
+     "t": {
+      "ru": "Дома кто-нибудь есть?",
+      "en": "Is anyone at home?",
+      "uz": "Uyda kimdir bormi?"
+     }
+    },
+    {
+     "s": "Non ho mangiato niente oggi.",
+     "t": {
+      "ru": "Я сегодня ничего не ел.",
+      "en": "I have not eaten anything today.",
+      "uz": "Bugun hech narsa yemadim."
+     }
+    },
+    {
+     "s": "Vado in palestra ogni mattina.",
+     "t": {
+      "ru": "Я хожу в спортзал каждое утро.",
+      "en": "I go to the gym every morning.",
+      "uz": "Har kuni ertalab sport zaliga boraman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ogni giorni studio italiano.",
+    "right": "Ogni giorno studio italiano.",
+    "note": {
+     "ru": "ogni + ед. ч.",
+     "en": "ogni + singular.",
+     "uz": "ogni + birlik."
+    }
+   },
+   "tip": {
+    "ru": "В отрицании non + niente/nessuno; ogni и qualche — с ед. ч.",
+    "en": "In negatives non + niente/nessuno; ogni and qualche take the singular.",
+    "uz": "Inkorda non + niente/nessuno; ogni va qualche — birlik bilan."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Hai bisogno di ___? (something)",
+     "o": [
+      "qualcosa",
+      "niente",
+      "nessuno"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Что-нибудь → qualcosa.",
+      "en": "Something → qualcosa.",
+      "uz": "Nimadir → qualcosa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Non conosco ___ qui.",
+     "o": [
+      "nessuno",
+      "qualcuno",
+      "niente"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Никого → nessuno.",
+      "en": "No one → nessuno.",
+      "uz": "Hech kim → nessuno."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ho letto ___ libro di Calvino.",
+     "o": [
+      "qualche",
+      "qualche libri",
+      "alcuni"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "qualche + ед. ч.",
+      "en": "qualche + singular.",
+      "uz": "qualche + birlik."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Nessuno ha telefonato.",
+      "Nessuno non ha telefonato."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В начале — без non.",
+      "en": "At the start — no non.",
+      "uz": "Boshida — non siz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Non ho capito niente.",
+      "Ho capito niente."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Нужен non перед глаголом.",
+      "en": "You need non before the verb.",
+      "uz": "Fe'ldan oldin non kerak."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Qualcuno",
+      "ha",
+      "visto",
+      "le",
+      "mie",
+      "chiavi?"
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Non",
+      "c’è",
+      "niente",
+      "nel",
+      "frigo."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Non ho visto ___ al parco. (no one)",
+     "a": [
+      "nessuno"
+     ],
+     "e": {
+      "ru": "→ nessuno.",
+      "en": "→ nessuno.",
+      "uz": "→ nessuno."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "C’è *qualcuno*?",
+     "Non c’è *nessuno*.",
+     "*Nessuno* risponde."
+    ],
+    "q": {
+     "ru": "Когда нужен non?",
+     "en": "When do you need non?",
+     "uz": "non qachon kerak?"
+    },
+    "o": [
+     {
+      "ru": "Когда nessuno стоит после глагола",
+      "en": "When nessuno comes after the verb",
+      "uz": "nessuno fe'ldan keyin kelganda"
+     },
+     {
+      "ru": "Всегда",
+      "en": "Always",
+      "uz": "Doim"
+     },
+     {
+      "ru": "Никогда",
+      "en": "Never",
+      "uz": "Hech qachon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ settimana vado a trovare i nonni.",
+     "o": [
+      "Ogni",
+      "Tutti",
+      "Qualche"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Каждую → ogni.",
+      "en": "Every → ogni.",
+      "uz": "Har bir → ogni."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Vuoi bere ___? — No, grazie, niente.",
+     "o": [
+      "qualcosa",
+      "qualcuno",
+      "nessuno"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ qualcosa.",
+      "en": "→ qualcosa.",
+      "uz": "→ qualcosa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Lavoro ___ i giorni.",
+     "o": [
+      "tutti",
+      "ogni",
+      "qualche"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "tutti + i + мн. ч.",
+      "en": "tutti + i + plural.",
+      "uz": "tutti + i + ko'plik."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своей неделе с ogni, qualcosa/niente, qualcuno/nessuno.",
+    "en": "Write 3 sentences about your week with ogni, qualcosa/niente, qualcuno/nessuno.",
+    "uz": "Haftangiz haqida ogni, qualcosa/niente, qualcuno/nessuno bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "da-fa-per",
+   "level": "A2",
+   "title": {
+    "ru": "Da, fa, per: время",
+    "en": "Da, fa, per: time",
+    "uz": "Da, fa, per: vaqt"
+   },
+   "sum": {
+    "ru": "С какого времени, сколько назад, как долго.",
+    "en": "Since/for, ago, for (finished).",
+    "uz": "…dan beri, … oldin, … davomida."
+   },
+   "explain": {
+    "ru": [
+     "da + настоящее = действие началось и идёт до сих пор: Studio italiano da due anni / dal 2023. (не passato prossimo!)",
+     "fa = «тому назад», ставится после времени: Sono arrivato tre giorni fa.",
+     "per = «в течение» (законченный отрезок): Ho vissuto a Roma per cinque anni. Вопрос: Da quanto tempo…? Da quando…?"
+    ],
+    "en": [
+     "da + present = started and still going: Studio italiano da due anni / dal 2023.",
+     "fa = ago, placed after the time: Sono arrivato tre giorni fa.",
+     "per = for a finished period: Ho vissuto a Roma per cinque anni. Question: Da quanto tempo…?"
+    ],
+    "uz": [
+     "da + hozirgi zamon = boshlangan va davom etmoqda: Studio italiano da due anni / dal 2023.",
+     "fa = «… oldin», vaqtdan keyin: Sono arrivato tre giorni fa.",
+     "per = tugagan davr davomida: Ho vissuto a Roma per cinque anni. Savol: Da quanto tempo…?"
+    ]
+   },
+   "formula": [
+    "da + presente = still going",
+    "tempo + fa = ago",
+    "per = finished period"
+   ],
+   "examples": [
+    {
+     "s": "Abito qui da sei mesi.",
+     "t": {
+      "ru": "Я живу здесь уже полгода.",
+      "en": "I have lived here for six months.",
+      "uz": "Bu yerda olti oydan beri yashayman."
+     }
+    },
+    {
+     "s": "L’ho visto un’ora fa.",
+     "t": {
+      "ru": "Я видел его час назад.",
+      "en": "I saw him an hour ago.",
+      "uz": "Uni bir soat oldin ko'rdim."
+     }
+    },
+    {
+     "s": "Abbiamo aspettato per due ore.",
+     "t": {
+      "ru": "Мы ждали два часа.",
+      "en": "We waited for two hours.",
+      "uz": "Ikki soat kutdik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ho studiato italiano da due anni e studio ancora.",
+    "right": "Studio italiano da due anni.",
+    "note": {
+     "ru": "Ещё учу → presente.",
+     "en": "Still studying → present.",
+     "uz": "Hali o'rganyapman → presente."
+    }
+   },
+   "tip": {
+    "ru": "Ещё идёт → da + presente; назад → fa; отрезок → per.",
+    "en": "Still going → da + present; ago → fa; a period → per.",
+    "uz": "Davom etmoqda → da + presente; oldin → fa; davr → per."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Lavoro in questa azienda ___ 2020.",
+     "o": [
+      "dal",
+      "fa",
+      "per"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С 2020 → dal.",
+      "en": "Since 2020 → dal.",
+      "uz": "2020 dan beri → dal."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ho finito l’università due anni ___.",
+     "o": [
+      "fa",
+      "da",
+      "per"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Назад → fa.",
+      "en": "Ago → fa.",
+      "uz": "Oldin → fa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ha dormito ___ dieci ore.",
+     "o": [
+      "per",
+      "da",
+      "fa"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Законченный отрезок → per.",
+      "en": "A finished period → per.",
+      "uz": "Tugagan davr → per."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Da quanto tempo aspetti?",
+      "Per quanto tempo aspetti da?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Длится до сих пор → da quanto tempo.",
+      "en": "Up to now → da quanto tempo.",
+      "uz": "Hozirgacha → da quanto tempo."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ci conosciamo da dieci anni.",
+      "Ci siamo conosciuti da dieci anni."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Знакомы до сих пор → presente.",
+      "en": "Still know each other → present.",
+      "uz": "Hali tanishmiz → presente."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Piove",
+      "da",
+      "stamattina."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Sono",
+      "tornato",
+      "a",
+      "casa",
+      "una",
+      "settimana",
+      "fa."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Siamo arrivati due ore ___. (ago)",
+     "a": [
+      "fa"
+     ],
+     "e": {
+      "ru": "→ fa.",
+      "en": "→ fa.",
+      "uz": "→ fa."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Abito qui *da* 3 anni.",
+     "Ho abitato qui *per* 3 anni."
+    ],
+    "q": {
+     "ru": "Живёт ли он здесь сейчас?",
+     "en": "Does he still live here?",
+     "uz": "U hozir ham shu yerda yashaydimi?"
+    },
+    "o": [
+     {
+      "ru": "В первом да, во втором — уже нет",
+      "en": "First yes, second no longer",
+      "uz": "Birinchisida ha, ikkinchisida endi yo'q"
+     },
+     {
+      "ru": "В обоих да",
+      "en": "Yes in both",
+      "uz": "Ikkalasida ha"
+     },
+     {
+      "ru": "В обоих нет",
+      "en": "No in both",
+      "uz": "Ikkalasida yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Non lo vedo ___ molto tempo.",
+     "o": [
+      "da",
+      "fa",
+      "per"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "До сих пор → da.",
+      "en": "Up to now → da.",
+      "uz": "Hozirgacha → da."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ho fatto colazione mezz’ora ___.",
+     "o": [
+      "fa",
+      "da",
+      "per"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Назад → fa.",
+      "en": "Ago → fa.",
+      "uz": "Oldin → fa."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Abbiamo ballato ___ tutta la notte.",
+     "o": [
+      "per",
+      "da",
+      "fa"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В течение → per.",
+      "en": "For a period → per.",
+      "uz": "Davomida → per."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о себе с da, fa и per.",
+    "en": "Write 3 sentences about yourself with da, fa and per.",
+    "uz": "O'zingiz haqida da, fa va per bilan 3 ta gap yozing."
    }
   },
   {
@@ -7903,6 +8954,537 @@
    }
   },
   {
+   "id": "condizionale-passato",
+   "level": "B1",
+   "title": {
+    "ru": "Condizionale passato: avrei voluto",
+    "en": "Past conditional: avrei voluto",
+    "uz": "O'tgan shart mayli: avrei voluto"
+   },
+   "sum": {
+    "ru": "«Сделал бы, но не сделал» и будущее в прошлом.",
+    "en": "“Would have done” and the future seen from the past.",
+    "uz": "«Qilgan bo'lardim, lekin qilmadim» va o'tmishdan qaralgan kelajak."
+   },
+   "explain": {
+    "ru": [
+     "avere/essere в condizionale + причастие: avrei mangiato, sarei andato/a.",
+     "Нереализованное желание или сожаление: Avrei voluto venire, ma ero malato. Sarebbe stato bello.",
+     "Важная особенность: «будущее в прошлом» — тоже condizionale passato (в отличие от русского и английского): Ha detto che sarebbe venuto. (Он сказал, что придёт.)"
+    ],
+    "en": [
+     "avere/essere in the conditional + participle: avrei mangiato, sarei andato/a.",
+     "An unfulfilled wish or regret: Avrei voluto venire, ma ero malato. Sarebbe stato bello.",
+     "Key point: the future seen from the past also uses it: Ha detto che sarebbe venuto. (He said he would come.)"
+    ],
+    "uz": [
+     "condizionale dagi avere/essere + sifatdosh: avrei mangiato, sarei andato/a.",
+     "Amalga oshmagan istak yoki afsus: Avrei voluto venire, ma ero malato. Sarebbe stato bello.",
+     "Muhim: o'tmishdan qaralgan kelajak ham shu shakl: Ha detto che sarebbe venuto. (U kelishini aytdi.)"
+    ]
+   },
+   "formula": [
+    "avrei / sarei + participio",
+    "Avrei voluto…, ma…",
+    "Ha detto che sarebbe venuto"
+   ],
+   "examples": [
+    {
+     "s": "Ti avrei chiamato, ma non avevo il tuo numero.",
+     "t": {
+      "ru": "Я бы тебе позвонил, но у меня не было твоего номера.",
+      "en": "I would have called you, but I didn’t have your number.",
+      "uz": "Senga qo'ng'iroq qilgan bo'lardim, lekin raqaming yo'q edi."
+     }
+    },
+    {
+     "s": "Saremmo partiti prima, ma pioveva.",
+     "t": {
+      "ru": "Мы бы уехали раньше, но шёл дождь.",
+      "en": "We would have left earlier, but it was raining.",
+      "uz": "Ertaroq ketgan bo'lardik, lekin yomg'ir yog'ayotgan edi."
+     }
+    },
+    {
+     "s": "Mi ha promesso che mi avrebbe aiutato.",
+     "t": {
+      "ru": "Он обещал, что поможет мне.",
+      "en": "He promised he would help me.",
+      "uz": "U menga yordam berishini va'da qildi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ha detto che verrebbe.",
+    "right": "Ha detto che sarebbe venuto.",
+    "note": {
+     "ru": "Будущее в прошлом → condizionale passato.",
+     "en": "Future in the past → past conditional.",
+     "uz": "O'tmishdagi kelajak → condizionale passato."
+    }
+   },
+   "tip": {
+    "ru": "Не случилось — avrei/sarei + причастие; «сказал, что сделает» — тоже.",
+    "en": "Didn’t happen — avrei/sarei + participle; “said he would” — the same.",
+    "uz": "Bo'lmadi — avrei/sarei + sifatdosh; «qilishini aytdi» — ham shunday."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ volentieri, ma ero stanco. (venire, io)",
+     "o": [
+      "Sarei venuto",
+      "Avrei venuto",
+      "Verrei"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "venire → essere: sarei venuto.",
+      "en": "venire takes essere: sarei venuto.",
+      "uz": "venire → essere: sarei venuto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Mi ha scritto che ___ in ritardo. (arrivare, lei)",
+     "o": [
+      "sarebbe arrivata",
+      "arriverebbe",
+      "arriverà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Будущее в прошлом.",
+      "en": "Future in the past.",
+      "uz": "O'tmishdagi kelajak."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Con più tempo, ___ il libro. (finire, noi)",
+     "o": [
+      "avremmo finito",
+      "saremmo finiti",
+      "finiremmo stati"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "finire → avere.",
+      "en": "finire takes avere.",
+      "uz": "finire → avere."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Avrei voluto studiare medicina.",
+      "Vorrei studiato medicina."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сожаление о прошлом → avrei voluto.",
+      "en": "Regret about the past → avrei voluto.",
+      "uz": "O'tmish afsusi → avrei voluto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Pensavo che saresti venuto.",
+      "Pensavo che verresti."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Будущее в прошлом → saresti venuto.",
+      "en": "Future in the past → saresti venuto.",
+      "uz": "O'tmishdagi kelajak → saresti venuto."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Sarebbe",
+      "stato",
+      "meglio",
+      "partire",
+      "presto."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Avrei",
+      "comprato",
+      "quella",
+      "casa",
+      "con",
+      "più",
+      "soldi."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Hanno detto che ___ ___ alle otto. (partire, loro)",
+     "a": [
+      "sarebbero partiti"
+     ],
+     "e": {
+      "ru": "→ sarebbero partiti.",
+      "en": "→ sarebbero partiti.",
+      "uz": "→ sarebbero partiti."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Vorrei* venire.",
+     "*Avrei voluto* venire."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Хочу сейчас / хотел, но уже поздно",
+      "en": "I want now / I wanted, but it is too late",
+      "uz": "Hozir xohlayman / xohlagandim, lekin kech"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Первое — прошлое",
+      "en": "The first is past",
+      "uz": "Birinchisi o'tmish"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Al tuo posto non lo ___ . (fare)",
+     "o": [
+      "avrei fatto",
+      "sarei fatto",
+      "facevo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ avrei fatto.",
+      "en": "→ avrei fatto.",
+      "uz": "→ avrei fatto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ero sicuro che tu ___ . (vincere)",
+     "o": [
+      "avresti vinto",
+      "vinceresti",
+      "vincerai"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Будущее в прошлом.",
+      "en": "Future in the past.",
+      "uz": "O'tmishdagi kelajak."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Lei ___ restata, ma doveva lavorare.",
+     "o": [
+      "sarebbe",
+      "avrebbe",
+      "sarà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "restare → essere.",
+      "en": "restare takes essere.",
+      "uz": "restare → essere."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что бы ты сделал иначе в прошлом году (avrei…, sarei…), 3 предложения.",
+    "en": "Write 3 things you would have done differently last year (avrei…, sarei…).",
+    "uz": "O'tgan yili nimani boshqacha qilgan bo'lardingiz — 3 ta gap (avrei…, sarei…)."
+   }
+  },
+  {
+   "id": "connettivi",
+   "level": "B1",
+   "title": {
+    "ru": "Причина и следствие: perché, siccome, quindi",
+    "en": "Cause and consequence: perché, siccome, quindi",
+    "uz": "Sabab va natija: perché, siccome, quindi"
+   },
+   "sum": {
+    "ru": "Почему и поэтому.",
+    "en": "Why and so.",
+    "uz": "Nega va shuning uchun."
+   },
+   "explain": {
+    "ru": [
+     "Причина: perché (потому что — после главного), siccome / dato che (так как — в начале фразы): Siccome pioveva, siamo rimasti a casa.",
+     "С существительным: a causa di (из-за), grazie a (благодаря), per (по причине): Grazie a te ho trovato lavoro.",
+     "Следствие: quindi, perciò, allora (разговорное), per questo, così: Ero stanco, quindi sono andato a letto."
+    ],
+    "en": [
+     "Cause: perché (after the main clause), siccome / dato che (at the start): Siccome pioveva, siamo rimasti a casa.",
+     "With a noun: a causa di, grazie a, per: Grazie a te ho trovato lavoro.",
+     "Consequence: quindi, perciò, allora (spoken), per questo, così: Ero stanco, quindi sono andato a letto."
+    ],
+    "uz": [
+     "Sabab: perché (bosh gapdan keyin), siccome / dato che (gap boshida): Siccome pioveva, siamo rimasti a casa.",
+     "Ot bilan: a causa di, grazie a, per: Grazie a te ho trovato lavoro.",
+     "Natija: quindi, perciò, allora (og'zaki), per questo, così: Ero stanco, quindi sono andato a letto."
+    ]
+   },
+   "formula": [
+    "perché · siccome (inizio) · dato che",
+    "a causa di · grazie a + nome",
+    "quindi · perciò · per questo"
+   ],
+   "examples": [
+    {
+     "s": "Non sono uscito perché avevo la febbre.",
+     "t": {
+      "ru": "Я не вышел, потому что у меня была температура.",
+      "en": "I did not go out because I had a fever.",
+      "uz": "Isitmam borligi uchun tashqariga chiqmadim."
+     }
+    },
+    {
+     "s": "Siccome è tardi, prendiamo un taxi.",
+     "t": {
+      "ru": "Так как поздно, возьмём такси.",
+      "en": "Since it is late, let’s take a taxi.",
+      "uz": "Kech bo'lgani uchun taksi olamiz."
+     }
+    },
+    {
+     "s": "Ho studiato molto, perciò ho superato l’esame.",
+     "t": {
+      "ru": "Я много учился, поэтому сдал экзамен.",
+      "en": "I studied a lot, so I passed the exam.",
+      "uz": "Ko'p o'qidim, shuning uchun imtihondan o'tdim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Perché pioveva, siamo rimasti a casa.",
+    "right": "Siccome pioveva, siamo rimasti a casa.",
+    "note": {
+     "ru": "Причина в начале фразы → siccome.",
+     "en": "Cause at the start → siccome.",
+     "uz": "Gap boshida sabab → siccome."
+    }
+   },
+   "tip": {
+    "ru": "В начале — siccome; после — perché; итог — quindi / perciò.",
+    "en": "At the start — siccome; after — perché; result — quindi / perciò.",
+    "uz": "Boshida — siccome; keyin — perché; natija — quindi / perciò."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ non avevo fame, non ho mangiato. (at the start)",
+     "o": [
+      "Siccome",
+      "Perché",
+      "Quindi"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В начале → Siccome.",
+      "en": "At the start → Siccome.",
+      "uz": "Boshida → Siccome."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Il treno è in ritardo ___ della neve.",
+     "o": [
+      "a causa",
+      "grazie",
+      "perché"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Плохое + существительное → a causa di.",
+      "en": "Bad + noun → a causa di.",
+      "uz": "Yomon + ot → a causa di."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Non ho soldi, ___ non vado in vacanza.",
+     "o": [
+      "quindi",
+      "perché",
+      "siccome"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → quindi.",
+      "en": "Consequence → quindi.",
+      "uz": "Natija → quindi."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Perché ridi? — Perché è divertente.",
+      "Perché ridi? — Siccome è divertente."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ответ на вопрос → perché.",
+      "en": "Answering a question → perché.",
+      "uz": "Savolga javob → perché."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Grazie al tuo aiuto, ho finito in tempo.",
+      "A causa del tuo aiuto, ho finito in tempo."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Хорошее → grazie a.",
+      "en": "Something good → grazie a.",
+      "uz": "Yaxshi narsa → grazie a."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Siccome",
+      "faceva",
+      "freddo,",
+      "ho",
+      "messo",
+      "il",
+      "cappotto."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ho",
+      "perso",
+      "l’autobus,",
+      "quindi",
+      "sono",
+      "arrivato",
+      "tardi."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "___ a te, ho capito tutto. (thanks)",
+     "a": [
+      "Grazie"
+     ],
+     "e": {
+      "ru": "→ Grazie a.",
+      "en": "→ Grazie a.",
+      "uz": "→ Grazie a."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Siccome* piove, resto.",
+     "Resto *perché* piove.",
+     "Piove, *quindi* resto."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Мысль та же, порядок разный",
+      "en": "Same idea, different order",
+      "uz": "Fikr bir xil, tartibi har xil"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Il volo è stato cancellato ___ dello sciopero.",
+     "o": [
+      "a causa",
+      "grazie",
+      "quindi"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ a causa dello sciopero.",
+      "en": "→ a causa dello sciopero.",
+      "uz": "→ a causa dello sciopero."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sono stanchissimo, ___ vado a dormire.",
+     "o": [
+      "perciò",
+      "perché",
+      "siccome"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → perciò.",
+      "en": "Consequence → perciò.",
+      "uz": "Natija → perciò."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Non vengo ___ devo lavorare.",
+     "o": [
+      "perché",
+      "quindi",
+      "siccome"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина после главного → perché.",
+      "en": "Cause after → perché.",
+      "uz": "Keyin sabab → perché."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Объясни 3 своих решения: почему (siccome, perché) и что вышло (quindi, perciò).",
+    "en": "Explain 3 of your decisions: why (siccome, perché) and the result (quindi, perciò).",
+    "uz": "3 ta qaroringizni tushuntiring: nega (siccome, perché) va natijasi (quindi, perciò)."
+   }
+  },
+  {
    "id": "trapassato",
    "level": "B2",
    "title": {
@@ -9486,6 +11068,1065 @@
     "ru": "Напиши 3 предложения о знаменитых людях или событиях прошлого с passato remoto.",
     "en": "Write 3 sentences about famous people or past events using the passato remoto.",
     "uz": "O'tmishdagi mashhur odamlar yoki voqealar haqida passato remoto bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "futuro-anteriore",
+   "level": "B2",
+   "title": {
+    "ru": "Futuro anteriore: avrò finito",
+    "en": "Future perfect: avrò finito",
+    "uz": "Futuro anteriore: avrò finito"
+   },
+   "sum": {
+    "ru": "Будет сделано к моменту — и догадка о прошлом.",
+    "en": "Done by a future moment — and a guess about the past.",
+    "uz": "Kelajakdagi paytgacha bajarilgan — va o'tmish haqida taxmin."
+   },
+   "explain": {
+    "ru": [
+     "avere/essere в futuro + причастие: avrò finito, sarà partita, ci saremo sposati.",
+     "Действие закончится раньше другого будущего, часто после quando, dopo che, appena: Appena avrò finito, ti chiamerò.",
+     "Догадка о прошлом: Non risponde. Sarà uscito (наверное, вышел). Avrà dimenticato il telefono."
+    ],
+    "en": [
+     "avere/essere in the future + participle: avrò finito, sarà partita.",
+     "An action done before another future one, often after quando, dopo che, appena: Appena avrò finito, ti chiamerò.",
+     "A guess about the past: Non risponde. Sarà uscito. Avrà dimenticato il telefono."
+    ],
+    "uz": [
+     "futuro dagi avere/essere + sifatdosh: avrò finito, sarà partita.",
+     "Boshqa kelajak harakatidan oldin tugaydi, ko'pincha quando, dopo che, appena dan keyin: Appena avrò finito, ti chiamerò.",
+     "O'tmish haqida taxmin: Non risponde. Sarà uscito. Avrà dimenticato il telefono."
+    ]
+   },
+   "formula": [
+    "avrò / sarò + participio",
+    "appena / quando + futuro anteriore, … futuro",
+    "Sarà uscito = probably"
+   ],
+   "examples": [
+    {
+     "s": "Quando arriverai, avremo già cenato.",
+     "t": {
+      "ru": "Когда ты приедешь, мы уже поужинаем.",
+      "en": "When you arrive, we will already have had dinner.",
+      "uz": "Sen kelganingda biz kechki ovqatni yeb bo'lgan bo'lamiz."
+     }
+    },
+    {
+     "s": "Dopo che avrai letto il libro, dimmi cosa ne pensi.",
+     "t": {
+      "ru": "Когда прочитаешь книгу, скажи, что думаешь.",
+      "en": "After you have read the book, tell me what you think.",
+      "uz": "Kitobni o'qib bo'lgach, nima deb o'ylashingni ayt."
+     }
+    },
+    {
+     "s": "Marco è in ritardo. Avrà perso il treno.",
+     "t": {
+      "ru": "Марко опаздывает. Наверное, опоздал на поезд.",
+      "en": "Marco is late. He must have missed the train.",
+      "uz": "Marko kechikyapti. Poyezddan qolgan bo'lsa kerak."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Appena ho finito, ti chiamerò.",
+    "right": "Appena avrò finito, ti chiamerò.",
+    "note": {
+     "ru": "Будущее после appena → futuro anteriore.",
+     "en": "Future after appena → futuro anteriore.",
+     "uz": "appena dan keyin kelajak → futuro anteriore."
+    }
+   },
+   "tip": {
+    "ru": "Что будет готово раньше → avrò/sarò + причастие.",
+    "en": "What will be done first → avrò/sarò + participle.",
+    "uz": "Avvalroq tayyor bo'ladigani → avrò/sarò + sifatdosh."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Entro giugno ___ la tesi. (scrivere, io)",
+     "o": [
+      "avrò scritto",
+      "scriverò stato",
+      "ho scritto"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "К июню → avrò scritto.",
+      "en": "By June → avrò scritto.",
+      "uz": "Iyungacha → avrò scritto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Quando ___ , partiremo. (arrivare, lei)",
+     "o": [
+      "sarà arrivata",
+      "avrà arrivato",
+      "arriva"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "arrivare → essere, жен.",
+      "en": "arrivare takes essere, feminine.",
+      "uz": "arrivare → essere, ayol."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Luca non è qui. ___ a casa. (tornare, guess)",
+     "o": [
+      "Sarà tornato",
+      "Avrà tornato",
+      "Tornerà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Догадка, tornare → essere.",
+      "en": "Guess, tornare → essere.",
+      "uz": "Taxmin, tornare → essere."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Appena avrò ricevuto la risposta, ti scriverò.",
+      "Appena ho ricevuto la risposta, ti scriverò."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Будущее → avrò ricevuto.",
+      "en": "Future → avrò ricevuto.",
+      "uz": "Kelajak → avrò ricevuto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Saranno partiti prima di mezzogiorno.",
+      "Avranno partiti prima di mezzogiorno."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "partire → essere.",
+      "en": "partire takes essere.",
+      "uz": "partire → essere."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Quando",
+      "tornerai,",
+      "avrò",
+      "pulito",
+      "la",
+      "casa."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Domani",
+      "a",
+      "quest’ora",
+      "saremo",
+      "arrivati",
+      "a",
+      "Roma."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ti chiamo appena ___ ___ . (finire, io)",
+     "a": [
+      "avrò finito"
+     ],
+     "e": {
+      "ru": "→ avrò finito.",
+      "en": "→ avrò finito.",
+      "uz": "→ avrò finito."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Quando *arriverai*, *avrò finito*.",
+     "Non risponde: *sarà uscito*."
+    ],
+    "q": {
+     "ru": "Что выражает avrò finito / sarà uscito?",
+     "en": "What do avrò finito / sarà uscito express?",
+     "uz": "avrò finito / sarà uscito nimani bildiradi?"
+    },
+    "o": [
+     {
+      "ru": "Раньше другого будущего / догадку",
+      "en": "Before another future action / a guess",
+      "uz": "Boshqa kelajakdan oldin / taxmin"
+     },
+     {
+      "ru": "Только прошлое",
+      "en": "Only the past",
+      "uz": "Faqat o'tmish"
+     },
+     {
+      "ru": "Приказ",
+      "en": "An order",
+      "uz": "Buyruq"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Dopo che ___ , usciremo. (mangiare, noi)",
+     "o": [
+      "avremo mangiato",
+      "saremo mangiati",
+      "mangiamo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "mangiare → avere.",
+      "en": "mangiare takes avere.",
+      "uz": "mangiare → avere."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Fra un anno ___ l’università. (finire, loro)",
+     "o": [
+      "avranno finito",
+      "saranno finiti",
+      "finivano"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ avranno finito.",
+      "en": "→ avranno finito.",
+      "uz": "→ avranno finito."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Giulia è felice. ___ l’esame. (superare, guess)",
+     "o": [
+      "Avrà superato",
+      "Sarà superata",
+      "Supera"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Догадка → avrà superato.",
+      "en": "A guess → avrà superato.",
+      "uz": "Taxmin → avrà superato."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что ты успеешь сделать к концу года (avrò…) и одну догадку о друге (Sarà… / Avrà…).",
+    "en": "Write what you will have done by the end of the year (avrò…) and one guess about a friend (Sarà… / Avrà…).",
+    "uz": "Yil oxirigacha nimani tugatishingiz (avrò…) va do'stingiz haqida bitta taxmin (Sarà… / Avrà…) yozing."
+   }
+  },
+  {
+   "id": "congiuntivo-passato",
+   "level": "B2",
+   "title": {
+    "ru": "Congiuntivo passato: che abbia fatto",
+    "en": "Past subjunctive: che abbia fatto",
+    "uz": "Congiuntivo passato: che abbia fatto"
+   },
+   "sum": {
+    "ru": "Мнение или чувство о том, что уже случилось.",
+    "en": "An opinion or feeling about something that already happened.",
+    "uz": "Allaqachon bo'lgan narsa haqida fikr yoki his."
+   },
+   "explain": {
+    "ru": [
+     "avere/essere в congiuntivo presente + причастие: che io abbia finito, che tu sia venuto, che lei si sia svegliata.",
+     "Главное предложение в настоящем, а действие уже в прошлом: Penso che abbia ragione (сейчас) — Penso che abbia avuto ragione (тогда). Sono contento che tu sia venuto.",
+     "После тех же выражений: credo che, mi dispiace che, è possibile che, dubito che, benché…: Mi dispiace che non abbiate potuto venire."
+    ],
+    "en": [
+     "avere/essere in the present subjunctive + participle: che io abbia finito, che tu sia venuto.",
+     "Main clause in the present, action already in the past: Penso che abbia avuto ragione. Sono contento che tu sia venuto.",
+     "After the same triggers: credo che, mi dispiace che, è possibile che, dubito che…: Mi dispiace che non abbiate potuto venire."
+    ],
+    "uz": [
+     "congiuntivo presente dagi avere/essere + sifatdosh: che io abbia finito, che tu sia venuto.",
+     "Bosh gap hozirgi zamonda, harakat o'tmishda: Penso che abbia avuto ragione. Sono contento che tu sia venuto.",
+     "Xuddi shu iboralardan keyin: credo che, mi dispiace che, è possibile che, dubito che…: Mi dispiace che non abbiate potuto venire."
+    ]
+   },
+   "formula": [
+    "che + abbia / sia + participio",
+    "presente … che + azione passata",
+    "mi dispiace che · credo che · dubito che"
+   ],
+   "examples": [
+    {
+     "s": "Credo che Paolo sia già partito.",
+     "t": {
+      "ru": "Думаю, что Паоло уже уехал.",
+      "en": "I think Paolo has already left.",
+      "uz": "Menimcha, Paolo allaqachon ketgan."
+     }
+    },
+    {
+     "s": "È strano che non abbia telefonato.",
+     "t": {
+      "ru": "Странно, что он не позвонил.",
+      "en": "It is strange that he has not called.",
+      "uz": "Qo'ng'iroq qilmagani g'alati."
+     }
+    },
+    {
+     "s": "Sono felice che vi siate divertiti.",
+     "t": {
+      "ru": "Я рад, что вам было весело.",
+      "en": "I am glad you had fun.",
+      "uz": "Sizlar maza qilganingizdan xursandman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Penso che lui ha già mangiato.",
+    "right": "Penso che lui abbia già mangiato.",
+    "note": {
+     "ru": "penso che + прошлое → abbia mangiato.",
+     "en": "penso che + past → abbia mangiato.",
+     "uz": "penso che + o'tmish → abbia mangiato."
+    }
+   },
+   "tip": {
+    "ru": "Чувство сейчас о прошлом → che + abbia/sia + причастие.",
+    "en": "A feeling now about the past → che + abbia/sia + participle.",
+    "uz": "Hozirgi his o'tmish haqida → che + abbia/sia + sifatdosh."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Mi dispiace che tu ___ male ieri. (stare)",
+     "o": [
+      "sia stato",
+      "abbia stato",
+      "stia"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "stare → essere: sia stato.",
+      "en": "stare takes essere: sia stato.",
+      "uz": "stare → essere: sia stato."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Non credo che loro ___ il messaggio. (leggere)",
+     "o": [
+      "abbiano letto",
+      "hanno letto",
+      "leggano stato"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сомнение о прошлом → abbiano letto.",
+      "en": "Doubt about the past → abbiano letto.",
+      "uz": "O'tmish haqida shubha → abbiano letto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "È possibile che Anna ___ il treno. (perdere)",
+     "o": [
+      "abbia perso",
+      "sia persa",
+      "ha perso"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "perdere → avere.",
+      "en": "perdere takes avere.",
+      "uz": "perdere → avere."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Sono contento che siate arrivati.",
+      "Sono contento che abbiate arrivati."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "arrivare → essere.",
+      "en": "arrivare takes essere.",
+      "uz": "arrivare → essere."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Benché abbia studiato, non ha passato l’esame.",
+      "Benché ha studiato, non ha passato l’esame."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "benché → congiuntivo.",
+      "en": "benché → subjunctive.",
+      "uz": "benché → congiuntivo."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Penso",
+      "che",
+      "abbiano",
+      "già",
+      "finito."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mi",
+      "sembra",
+      "che",
+      "lei",
+      "sia",
+      "partita",
+      "ieri."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Spero che tu ___ ___ bene. (dormire)",
+     "a": [
+      "abbia dormito"
+     ],
+     "e": {
+      "ru": "→ abbia dormito.",
+      "en": "→ abbia dormito.",
+      "uz": "→ abbia dormito."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Penso che *sia* a casa.",
+     "Penso che *sia stato* a casa."
+    ],
+    "q": {
+     "ru": "В чём разница?",
+     "en": "What is the difference?",
+     "uz": "Farqi nimada?"
+    },
+    "o": [
+     {
+      "ru": "Сейчас дома / был дома раньше",
+      "en": "At home now / was at home earlier",
+      "uz": "Hozir uyda / avval uyda edi"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Второе — будущее",
+      "en": "The second is future",
+      "uz": "Ikkinchisi kelajak"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Dubito che lui ___ la verità. (dire)",
+     "o": [
+      "abbia detto",
+      "ha detto",
+      "sia detto"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ abbia detto.",
+      "en": "→ abbia detto.",
+      "uz": "→ abbia detto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Peccato che voi non ___ venuti.",
+     "o": [
+      "siate",
+      "abbiate",
+      "siete"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "venire → essere: siate venuti.",
+      "en": "venire → essere: siate venuti.",
+      "uz": "venire → essere: siate venuti."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sembra che si ___ sposati in segreto.",
+     "o": [
+      "siano",
+      "abbiano",
+      "sono"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Возвратный → essere: siano.",
+      "en": "Reflexive → essere: siano.",
+      "uz": "O'zlik → essere: siano."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о прошлой неделе: чему ты рад, о чём жалеешь, в чём сомневаешься (che + congiuntivo passato).",
+    "en": "Write 3 sentences about last week: glad, sorry, doubtful (che + past subjunctive).",
+    "uz": "O'tgan hafta haqida 3 ta gap yozing: xursandlik, afsus, shubha (che + congiuntivo passato)."
+   }
+  },
+  {
+   "id": "discorso-indiretto",
+   "level": "B2",
+   "title": {
+    "ru": "Косвенная речь",
+    "en": "Reported speech",
+    "uz": "O'zlashtirma gap"
+   },
+   "sum": {
+    "ru": "Как пересказать чужие слова в прошлом.",
+    "en": "How to report what someone said in the past.",
+    "uz": "Birovning so'zlarini o'tmishda qanday aytib berish."
+   },
+   "explain": {
+    "ru": [
+     "Если «сказал» в прошлом (ha detto, disse), времена сдвигаются: presente → imperfetto, passato prossimo → trapassato, futuro → condizionale passato.",
+     "«Sono stanco» → Ha detto che era stanco. «Ho perso le chiavi» → Ha detto che aveva perso le chiavi. «Verrò» → Ha detto che sarebbe venuto.",
+     "Приказ → di + инфинитив: «Chiudi la porta» → Mi ha detto di chiudere la porta. Меняются слова: oggi → quel giorno, domani → il giorno dopo, qui → lì, questo → quello."
+    ],
+    "en": [
+     "If the reporting verb is past, tenses shift: present → imperfetto, passato prossimo → trapassato, future → past conditional.",
+     "«Sono stanco» → Ha detto che era stanco. «Verrò» → Ha detto che sarebbe venuto.",
+     "Command → di + infinitive: Mi ha detto di chiudere la porta. Words change: oggi → quel giorno, domani → il giorno dopo, qui → lì."
+    ],
+    "uz": [
+     "Aytish fe'li o'tmishda bo'lsa, zamonlar suriladi: presente → imperfetto, passato prossimo → trapassato, futuro → condizionale passato.",
+     "«Sono stanco» → Ha detto che era stanco. «Verrò» → Ha detto che sarebbe venuto.",
+     "Buyruq → di + infinitiv: Mi ha detto di chiudere la porta. So'zlar: oggi → quel giorno, domani → il giorno dopo, qui → lì."
+    ]
+   },
+   "formula": [
+    "presente → imperfetto",
+    "passato prossimo → trapassato · futuro → condizionale passato",
+    "ordine → di + infinito · domani → il giorno dopo"
+   ],
+   "examples": [
+    {
+     "s": "Maria ha detto che aveva fame.",
+     "t": {
+      "ru": "Мария сказала, что голодна.",
+      "en": "Maria said she was hungry.",
+      "uz": "Mariya och qolganini aytdi."
+     }
+    },
+    {
+     "s": "Mi ha spiegato che aveva perso l’autobus.",
+     "t": {
+      "ru": "Он объяснил мне, что опоздал на автобус.",
+      "en": "He explained that he had missed the bus.",
+      "uz": "U menga avtobusni o'tkazib yuborganini tushuntirdi."
+     }
+    },
+    {
+     "s": "Il medico mi ha detto di riposare.",
+     "t": {
+      "ru": "Врач сказал мне отдыхать.",
+      "en": "The doctor told me to rest.",
+      "uz": "Shifokor menga dam olishimni aytdi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ha detto che verrà domani.",
+    "right": "Ha detto che sarebbe venuto il giorno dopo.",
+    "note": {
+     "ru": "futuro → condizionale passato; domani → il giorno dopo.",
+     "en": "future → past conditional; domani → il giorno dopo.",
+     "uz": "futuro → condizionale passato; domani → il giorno dopo."
+    }
+   },
+   "tip": {
+    "ru": "Сказал в прошлом → шаг назад; приказ → di + инфинитив.",
+    "en": "Said in the past → one step back; command → di + infinitive.",
+    "uz": "O'tmishda aytdi → bir qadam orqaga; buyruq → di + infinitiv."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "«Lavoro in banca.» → Ha detto che ___ in banca.",
+     "o": [
+      "lavorava",
+      "lavora ora",
+      "ha lavorato"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "presente → imperfetto.",
+      "en": "present → imperfetto.",
+      "uz": "presente → imperfetto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "«Arriverò tardi.» → Ha detto che ___ tardi.",
+     "o": [
+      "sarebbe arrivato",
+      "arriverebbe",
+      "arriverà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "futuro → condizionale passato.",
+      "en": "future → past conditional.",
+      "uz": "futuro → condizionale passato."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "«Aspettami!» → Mi ha chiesto ___ aspettarlo.",
+     "o": [
+      "di",
+      "che",
+      "a"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Приказ → di + инфинитив.",
+      "en": "Command → di + infinitive.",
+      "uz": "Buyruq → di + infinitiv."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ha detto che aveva visto il film.",
+      "Ha detto che ha visto ieri il film."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "«L’ho visto» → aveva visto.",
+      "en": "«L’ho visto» → aveva visto.",
+      "uz": "«L’ho visto» → aveva visto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Mi ha chiesto se volevo un caffè.",
+      "Mi ha chiesto che se voglio un caffè."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вопрос да/нет → se + imperfetto.",
+      "en": "Yes/no question → se + imperfetto.",
+      "uz": "Ha/yo'q savol → se + imperfetto."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Luca",
+      "ha",
+      "detto",
+      "che",
+      "era",
+      "molto",
+      "stanco."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mi",
+      "ha",
+      "chiesto",
+      "dove",
+      "abitavo."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "«Sono a casa.» → Ha detto che ___ a casa.",
+     "a": [
+      "era"
+     ],
+     "e": {
+      "ru": "presente → imperfetto.",
+      "en": "present → imperfetto.",
+      "uz": "presente → imperfetto."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "«*Ho* freddo.»",
+     "Ha detto che *aveva* freddo."
+    ],
+    "q": {
+     "ru": "Что изменилось?",
+     "en": "What changed?",
+     "uz": "Nima o'zgardi?"
+    },
+    "o": [
+     {
+      "ru": "Глагол сдвинулся на шаг в прошлое",
+      "en": "The verb moved one step into the past",
+      "uz": "Fe'l bir qadam o'tmishga surildi"
+     },
+     {
+      "ru": "Ничего",
+      "en": "Nothing",
+      "uz": "Hech narsa"
+     },
+     {
+      "ru": "Стал будущим",
+      "en": "It became future",
+      "uz": "Kelajakka aylandi"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "«Domani vado dal medico.» → Ha detto che ___ dal medico il giorno dopo.",
+     "o": [
+      "andava",
+      "va",
+      "è andato"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "presente → imperfetto.",
+      "en": "present → imperfetto.",
+      "uz": "presente → imperfetto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "«Non toccarlo!» → Mi ha detto ___ toccarlo.",
+     "o": [
+      "di non",
+      "non di",
+      "che non"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ di non + инфинитив.",
+      "en": "→ di non + infinitive.",
+      "uz": "→ di non + infinitiv."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "«L’ho comprato ieri.» → Ha detto che l’aveva comprato ___ .",
+     "o": [
+      "il giorno prima",
+      "ieri",
+      "il giorno dopo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ieri → il giorno prima.",
+      "en": "ieri → il giorno prima.",
+      "uz": "ieri → il giorno prima."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Перескажи короткий разговор с другом: 3 фразы (ha detto che…, mi ha chiesto se…, mi ha detto di…).",
+    "en": "Report a short conversation: 3 lines (ha detto che…, mi ha chiesto se…, mi ha detto di…).",
+    "uz": "Qisqa suhbatni aytib bering: 3 ta jumla (ha detto che…, mi ha chiesto se…, mi ha detto di…)."
+   }
+  },
+  {
+   "id": "concessive",
+   "level": "B2",
+   "title": {
+    "ru": "Уступка: benché, sebbene, nonostante, anche se",
+    "en": "Concession: benché, sebbene, nonostante, anche se",
+    "uz": "To'siqsizlik: benché, sebbene, nonostante, anche se"
+   },
+   "sum": {
+    "ru": "«Хотя» с congiuntivo и без.",
+    "en": "“Although” with and without the subjunctive.",
+    "uz": "«Garchi» — congiuntivo bilan va siz."
+   },
+   "explain": {
+    "ru": [
+     "benché, sebbene, nonostante (che), malgrado (che) + congiuntivo: Benché sia stanco, continuo a lavorare.",
+     "anche se + indicativo (разговорнее): Anche se piove, esco. С существительным — nonostante / malgrado + сущ.: Nonostante la pioggia, siamo usciti.",
+     "Между двумя предложениями — però, tuttavia, comunque: Era tardi; tuttavia, ha voluto continuare. В прошлом: Benché avesse studiato, non ha superato l’esame."
+    ],
+    "en": [
+     "benché, sebbene, nonostante (che), malgrado (che) + subjunctive: Benché sia stanco, continuo a lavorare.",
+     "anche se + indicative (more conversational): Anche se piove, esco. With a noun: nonostante / malgrado + noun.",
+     "Between sentences — però, tuttavia, comunque: Era tardi; tuttavia, ha voluto continuare. In the past: Benché avesse studiato…"
+    ],
+    "uz": [
+     "benché, sebbene, nonostante (che), malgrado (che) + congiuntivo: Benché sia stanco, continuo a lavorare.",
+     "anche se + indicativo (og'zakiroq): Anche se piove, esco. Ot bilan: nonostante / malgrado + ot.",
+     "Gaplar orasida — però, tuttavia, comunque: Era tardi; tuttavia, ha voluto continuare. O'tmishda: Benché avesse studiato…"
+    ]
+   },
+   "formula": [
+    "benché / sebbene / nonostante + congiuntivo",
+    "anche se + indicativo · nonostante + nome",
+    "però · tuttavia · comunque"
+   ],
+   "examples": [
+    {
+     "s": "Sebbene faccia freddo, i bambini giocano fuori.",
+     "t": {
+      "ru": "Хотя холодно, дети играют на улице.",
+      "en": "Although it is cold, the children are playing outside.",
+      "uz": "Sovuq bo'lsa ham, bolalar tashqarida o'ynashyapti."
+     }
+    },
+    {
+     "s": "Anche se sono stanco, ti aiuto.",
+     "t": {
+      "ru": "Хотя я устал, я тебе помогу.",
+      "en": "Even though I am tired, I will help you.",
+      "uz": "Charchagan bo'lsam ham, senga yordam beraman."
+     }
+    },
+    {
+     "s": "Nonostante il traffico, siamo arrivati in tempo.",
+     "t": {
+      "ru": "Несмотря на пробки, мы приехали вовремя.",
+      "en": "Despite the traffic, we arrived on time.",
+      "uz": "Tirbandlikka qaramay, vaqtida yetib keldik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Benché è tardi, resto ancora un po’.",
+    "right": "Benché sia tardi, resto ancora un po’.",
+    "note": {
+     "ru": "benché → congiuntivo: sia.",
+     "en": "benché → subjunctive: sia.",
+     "uz": "benché → congiuntivo: sia."
+    }
+   },
+   "tip": {
+    "ru": "benché/sebbene → congiuntivo; anche se → indicativo.",
+    "en": "benché/sebbene → subjunctive; anche se → indicative.",
+    "uz": "benché/sebbene → congiuntivo; anche se → indicativo."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Sebbene ___ molto, non dimagrisce. (correre, lui)",
+     "o": [
+      "corra",
+      "corre",
+      "correrà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sebbene → congiuntivo.",
+      "en": "sebbene → subjunctive.",
+      "uz": "sebbene → congiuntivo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Anche se ___ , andiamo al mare. (piovere)",
+     "o": [
+      "piove",
+      "piova",
+      "piovesse"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "anche se → indicativo.",
+      "en": "anche se → indicative.",
+      "uz": "anche se → indicativo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ la pioggia, la partita è continuata.",
+     "o": [
+      "Nonostante",
+      "Benché",
+      "Anche se"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С существительным → nonostante.",
+      "en": "With a noun → nonostante.",
+      "uz": "Ot bilan → nonostante."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Benché avesse fretta, si è fermato ad aiutarmi.",
+      "Benché aveva fretta, si è fermato ad aiutarmi."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → congiuntivo imperfetto.",
+      "en": "Past → imperfect subjunctive.",
+      "uz": "O'tmish → congiuntivo imperfetto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Era caro; tuttavia l’abbiamo comprato.",
+      "Era caro; benché l’abbiamo comprato."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Между предложениями → tuttavia.",
+      "en": "Between sentences → tuttavia.",
+      "uz": "Gaplar orasida → tuttavia."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Benché",
+      "sia",
+      "giovane,",
+      "è",
+      "molto",
+      "saggio."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Anche",
+      "se",
+      "non",
+      "mi",
+      "piace,",
+      "lo",
+      "mangio."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Nonostante ___ stanca, ha finito il lavoro. (essere, lei)",
+     "a": [
+      "fosse",
+      "sia"
+     ],
+     "e": {
+      "ru": "nonostante → congiuntivo.",
+      "en": "nonostante → subjunctive.",
+      "uz": "nonostante → congiuntivo."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Benché piova*, esco.",
+     "*Anche se piove*, esco."
+    ],
+    "q": {
+     "ru": "Почему piova и piove?",
+     "en": "Why piova and piove?",
+     "uz": "Nega piova va piove?"
+    },
+    "o": [
+     {
+      "ru": "benché требует congiuntivo, anche se — indicativo",
+      "en": "benché needs the subjunctive, anche se the indicative",
+      "uz": "benché congiuntivo, anche se indicativo talab qiladi"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Разные лица",
+      "en": "Different persons",
+      "uz": "Turli shaxslar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Malgrado ___ molti soldi, non è felice. (avere, lui)",
+     "o": [
+      "abbia",
+      "ha",
+      "avrà"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "malgrado → congiuntivo.",
+      "en": "malgrado → subjunctive.",
+      "uz": "malgrado → congiuntivo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Fa freddo; ___ , esco senza giacca.",
+     "o": [
+      "comunque",
+      "benché",
+      "nonostante che"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Между предложениями → comunque.",
+      "en": "Between sentences → comunque.",
+      "uz": "Gaplar orasida → comunque."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Anche se ___ tardi, guardiamo un altro film. (essere)",
+     "o": [
+      "è",
+      "sia",
+      "fosse"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "anche se → indicativo.",
+      "en": "anche se → indicative.",
+      "uz": "anche se → indicativo."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о плюсах и минусах своего города (benché, anche se, nonostante).",
+    "en": "Write 3 sentences on the pros and cons of your city (benché, anche se, nonostante).",
+    "uz": "Shahringizning afzallik va kamchiliklari haqida 3 ta gap yozing (benché, anche se, nonostante)."
    }
   }
  ],

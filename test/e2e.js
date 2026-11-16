@@ -1171,7 +1171,7 @@ run.server(server);
     // v2.28: Spanish and French are full 36-topic courses too.
     for (const code of ['es', 'fr', 'it', 'ko']) {
       const n = JSON.parse(fs.readFileSync(path.join(root, 'course/' + code + '.json'), 'utf8')).topics.length;
-      assert(n >= 36, code + ': at least 36 topics (en/de/fr have 46 since v2.33)');
+      assert.equal(n, 46, code + ': 46 topics (v2.34)');
       await pg.click('.plate[data-code="' + code + '"]');
       await pg.waitForFunction(([c, k]) => document.querySelector('.plate.on').dataset.code === c && document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === k, [code, n]);
       assert.equal(await pg.locator('.stop.checkpoint').count(), 4, code + ': four level checkpoints');

@@ -2599,6 +2599,525 @@
    }
   },
   {
+   "id": "counters",
+   "level": "A1",
+   "title": {
+    "ru": "Счётные слова: 개, 명, 마리, 잔, 권",
+    "en": "Counters: 개, 명, 마리, 잔, 권",
+    "uz": "Sanoq so'zlari: 개, 명, 마리, 잔, 권"
+   },
+   "sum": {
+    "ru": "Как сказать «три яблока» и «два человека».",
+    "en": "How to say “three apples” and “two people”.",
+    "uz": "«Uchta olma» va «ikki kishi» qanday aytiladi."
+   },
+   "explain": {
+    "ru": [
+     "Порядок: предмет + число + счётное слово: 사과 세 개 (три яблока), 학생 두 명 (два студента).",
+     "С счётными словами — корейские числа, и они сокращаются: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네, 스물 → 스무: 한 개, 두 명, 스무 살.",
+     "Частые: 개 (вещи), 명 (люди; вежливо 분), 마리 (животные), 잔 (чашки, стаканы), 권 (книги), 살 (возраст). Деньги — китайско-корейские числа: 오천 원."
+    ],
+    "en": [
+     "Order: thing + number + counter: 사과 세 개 (three apples), 학생 두 명 (two students).",
+     "Counters use native numbers, shortened: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네, 스물 → 스무: 한 개, 두 명, 스무 살.",
+     "Common: 개 (things), 명 (people; polite 분), 마리 (animals), 잔 (cups), 권 (books), 살 (age). Money uses Sino-Korean numbers: 오천 원."
+    ],
+    "uz": [
+     "Tartib: narsa + son + sanoq so'zi: 사과 세 개 (uchta olma), 학생 두 명 (ikki talaba).",
+     "Sanoq so'zlari bilan koreys sonlari qisqaradi: 하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네, 스물 → 스무: 한 개, 두 명, 스무 살.",
+     "Ko'p uchraydigan: 개 (narsa), 명 (odam; hurmat — 분), 마리 (hayvon), 잔 (piyola), 권 (kitob), 살 (yosh). Pul — xitoy-koreys sonlari: 오천 원."
+    ]
+   },
+   "formula": [
+    "명사 + 숫자 + 단위",
+    "하나→한 · 둘→두 · 셋→세 · 넷→네 · 스물→스무",
+    "개 · 명 · 마리 · 잔 · 권 · 살"
+   ],
+   "examples": [
+    {
+     "s": "커피 한 잔 주세요.",
+     "t": {
+      "ru": "Одну чашку кофе, пожалуйста.",
+      "en": "One coffee, please.",
+      "uz": "Bitta qahva bering."
+     }
+    },
+    {
+     "s": "우리 반에 학생이 스무 명 있어요.",
+     "t": {
+      "ru": "В нашем классе двадцать учеников.",
+      "en": "There are twenty students in our class.",
+      "uz": "Sinfimizda yigirma o'quvchi bor."
+     }
+    },
+    {
+     "s": "고양이 두 마리를 키워요.",
+     "t": {
+      "ru": "Я держу двух кошек.",
+      "en": "I keep two cats.",
+      "uz": "Ikkita mushuk boqaman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "사과 둘 개 주세요.",
+    "right": "사과 두 개 주세요.",
+    "note": {
+     "ru": "Перед счётным словом 둘 → 두.",
+     "en": "둘 becomes 두 before a counter.",
+     "uz": "Sanoq so'zi oldidan 둘 → 두."
+    }
+   },
+   "tip": {
+    "ru": "Предмет → число (한/두/세/네) → счётное слово.",
+    "en": "Thing → number (한/두/세/네) → counter.",
+    "uz": "Narsa → son (한/두/세/네) → sanoq so'zi."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "책 세 ___ 샀어요.",
+     "o": [
+      "권",
+      "명",
+      "마리"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Книги → 권.",
+      "en": "Books → 권.",
+      "uz": "Kitob → 권."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "친구 ___ 명이 왔어요. (2)",
+     "o": [
+      "두",
+      "둘",
+      "이"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Перед счётным → 두.",
+      "en": "Before a counter → 두.",
+      "uz": "Sanoq so'zi oldidan → 두."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "물 한 ___ 주세요.",
+     "o": [
+      "잔",
+      "개",
+      "권"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Стакан → 잔.",
+      "en": "A glass → 잔.",
+      "uz": "Stakan → 잔."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "저는 스무 살이에요.",
+      "저는 스물 살이에요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "스물 → 스무 перед 살.",
+      "en": "스물 → 스무 before 살.",
+      "uz": "살 oldidan 스물 → 스무."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "강아지 한 마리가 있어요.",
+      "강아지 한 명이 있어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Животные → 마리.",
+      "en": "Animals → 마리.",
+      "uz": "Hayvon → 마리."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "사과",
+      "다섯",
+      "개",
+      "주세요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "우리",
+      "가족은",
+      "네",
+      "명이에요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "맥주 세 ___ 주세요. (glasses)",
+     "a": [
+      "잔"
+     ],
+     "e": {
+      "ru": "Стаканы → 잔.",
+      "en": "Glasses → 잔.",
+      "uz": "Stakan → 잔."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "사과 *한 개*",
+     "사과 *두 개*",
+     "사과 *세 개*"
+    ],
+    "q": {
+     "ru": "Почему не 하나 개, 둘 개?",
+     "en": "Why not 하나 개, 둘 개?",
+     "uz": "Nega 하나 개, 둘 개 emas?"
+    },
+    "o": [
+     {
+      "ru": "Перед счётным словом числа сокращаются",
+      "en": "Numbers shorten before a counter",
+      "uz": "Sanoq so'zi oldidan sonlar qisqaradi"
+     },
+     {
+      "ru": "Это другие числа",
+      "en": "They are different numbers",
+      "uz": "Bular boshqa sonlar"
+     },
+     {
+      "ru": "Это ошибка",
+      "en": "It is a mistake",
+      "uz": "Bu xato"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "연필 ___ 개 있어요? (4)",
+     "o": [
+      "네",
+      "넷",
+      "사"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "넷 → 네.",
+      "en": "넷 → 네.",
+      "uz": "넷 → 네."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "선생님 두 ___이 오셨어요. (polite)",
+     "o": [
+      "분",
+      "명",
+      "마리"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вежливо о людях → 분.",
+      "en": "Polite for people → 분.",
+      "uz": "Odamlar haqida hurmat → 분."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "이 가방은 삼만 ___이에요.",
+     "o": [
+      "원",
+      "개",
+      "잔"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Деньги → 원.",
+      "en": "Money → 원.",
+      "uz": "Pul → 원."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Посчитай вещи у себя на столе и людей в семье (개, 명, 권), 3 предложения.",
+    "en": "Count things on your desk and people in your family (개, 명, 권), 3 sentences.",
+    "uz": "Stolingizdagi narsalarni va oilangizdagi odamlarni sanang (개, 명, 권), 3 ta gap."
+   }
+  },
+  {
+   "id": "question-words",
+   "level": "A1",
+   "title": {
+    "ru": "Вопросительные слова: 뭐, 누구, 어디, 언제, 왜",
+    "en": "Question words: 뭐, 누구, 어디, 언제, 왜",
+    "uz": "So'roq so'zlari: 뭐, 누구, 어디, 언제, 왜"
+   },
+   "sum": {
+    "ru": "Что, кто, где, когда, почему, сколько.",
+    "en": "What, who, where, when, why, how many.",
+    "uz": "Nima, kim, qayerda, qachon, nega, nechta."
+   },
+   "explain": {
+    "ru": [
+     "Вопросительное слово стоит там, где был бы ответ, порядок слов не меняется: 뭐 먹어요? (Что ешь?) — 김밥 먹어요.",
+     "뭐 / 무엇 (что), 누구 (кто; как подлежащее — 누가), 어디 (где, куда), 언제 (когда), 왜 (почему), 어떻게 (как), 몇 (сколько + счётное), 얼마 (сколько стоит).",
+     "С частицами: 어디에 가요? (куда), 어디에서 일해요? (где работаешь), 누구를 만나요? (кого). 이게 얼마예요? — Сколько это стоит?"
+    ],
+    "en": [
+     "The question word sits where the answer would be; word order does not change: 뭐 먹어요? — 김밥 먹어요.",
+     "뭐 / 무엇 (what), 누구 (who; as subject 누가), 어디 (where), 언제 (when), 왜 (why), 어떻게 (how), 몇 (how many + counter), 얼마 (how much).",
+     "With particles: 어디에 가요?, 어디에서 일해요?, 누구를 만나요? 이게 얼마예요? — How much is this?"
+    ],
+    "uz": [
+     "So'roq so'zi javob turadigan joyda, so'z tartibi o'zgarmaydi: 뭐 먹어요? — 김밥 먹어요.",
+     "뭐 / 무엇 (nima), 누구 (kim; ega sifatida 누가), 어디 (qayerda), 언제 (qachon), 왜 (nega), 어떻게 (qanday), 몇 (nechta + sanoq so'zi), 얼마 (qancha turadi).",
+     "Yuklamalar bilan: 어디에 가요?, 어디에서 일해요?, 누구를 만나요? 이게 얼마예요? — Bu qancha turadi?"
+    ]
+   },
+   "formula": [
+    "뭐 · 누구 / 누가 · 어디 · 언제 · 왜 · 어떻게",
+    "몇 + 단위 · 얼마예요?",
+    "어디에 가요? · 어디에서 …?"
+   ],
+   "examples": [
+    {
+     "s": "이름이 뭐예요?",
+     "t": {
+      "ru": "Как тебя зовут?",
+      "en": "What is your name?",
+      "uz": "Isming nima?"
+     }
+    },
+    {
+     "s": "누가 왔어요?",
+     "t": {
+      "ru": "Кто пришёл?",
+      "en": "Who came?",
+      "uz": "Kim keldi?"
+     }
+    },
+    {
+     "s": "이 사과는 얼마예요?",
+     "t": {
+      "ru": "Сколько стоит это яблоко?",
+      "en": "How much is this apple?",
+      "uz": "Bu olma qancha turadi?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "누구가 전화했어요?",
+    "right": "누가 전화했어요?",
+    "note": {
+     "ru": "누구 + 가 → 누가.",
+     "en": "누구 + 가 → 누가.",
+     "uz": "누구 + 가 → 누가."
+    }
+   },
+   "tip": {
+    "ru": "Вопросительное слово — на место ответа; «кто» как подлежащее — 누가.",
+    "en": "The question word goes where the answer goes; “who” as subject is 누가.",
+    "uz": "So'roq so'zi javob o'rnida; ega bo'lgan «kim» — 누가."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ 가요? — 학교에 가요.",
+     "o": [
+      "어디에",
+      "언제",
+      "누가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Куда → 어디에.",
+      "en": "Where to → 어디에.",
+      "uz": "Qayerga → 어디에."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "생일이 ___예요? — 5월 3일이에요.",
+     "o": [
+      "언제",
+      "어디",
+      "뭐"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Когда → 언제.",
+      "en": "When → 언제.",
+      "uz": "Qachon → 언제."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "형제가 ___ 명이에요? — 두 명이에요.",
+     "o": [
+      "몇",
+      "얼마",
+      "뭐"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сколько + счётное → 몇.",
+      "en": "How many + counter → 몇.",
+      "uz": "Nechta + sanoq → 몇."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "왜 한국어를 공부해요?",
+      "어떻게 한국어를 공부해요? — 재미있어서요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина → 왜.",
+      "en": "A reason → 왜.",
+      "uz": "Sabab → 왜."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "이 가방은 얼마예요?",
+      "이 가방은 몇이에요?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Цена → 얼마.",
+      "en": "Price → 얼마.",
+      "uz": "Narx → 얼마."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "주말에",
+      "뭐",
+      "해요?"
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "어디에서",
+      "한국어를",
+      "배워요?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "___ 지냈어요? — 잘 지냈어요. (how)",
+     "a": [
+      "어떻게"
+     ],
+     "e": {
+      "ru": "Как → 어떻게.",
+      "en": "How → 어떻게.",
+      "uz": "Qanday → 어떻게."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*뭐* 먹어요? — *김밥* 먹어요.",
+     "*어디* 가요? — *학교에* 가요."
+    ],
+    "q": {
+     "ru": "Где стоит вопросительное слово?",
+     "en": "Where does the question word go?",
+     "uz": "So'roq so'zi qayerda turadi?"
+    },
+    "o": [
+     {
+      "ru": "На месте ответа, порядок не меняется",
+      "en": "Where the answer goes; word order stays",
+      "uz": "Javob o'rnida, tartib o'zgarmaydi"
+     },
+     {
+      "ru": "Всегда в начале",
+      "en": "Always first",
+      "uz": "Doim boshida"
+     },
+     {
+      "ru": "Всегда в конце",
+      "en": "Always last",
+      "uz": "Doim oxirida"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___를 만났어요? — 친구를 만났어요.",
+     "o": [
+      "누구",
+      "누가",
+      "뭐"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Дополнение «кого» → 누구를.",
+      "en": "Object “whom” → 누구를.",
+      "uz": "To'ldiruvchi «kimni» → 누구를."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "지금 몇 ___예요? — 세 시예요.",
+     "o": [
+      "시",
+      "개",
+      "살"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Время → 몇 시.",
+      "en": "Time → 몇 시.",
+      "uz": "Vaqt → 몇 시."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ 늦었어요? — 버스가 안 와서요.",
+     "o": [
+      "왜",
+      "언제",
+      "어디"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Почему → 왜.",
+      "en": "Why → 왜.",
+      "uz": "Nega → 왜."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 4 вопроса новому другу (뭐, 어디, 언제, 왜).",
+    "en": "Write 4 questions for a new friend (뭐, 어디, 언제, 왜).",
+    "uz": "Yangi do'stga 4 ta savol yozing (뭐, 어디, 언제, 왜)."
+   }
+  },
+  {
    "id": "past",
    "level": "A2",
    "title": {
@@ -5208,6 +5727,526 @@
     "ru": "Напиши свой распорядок дня: во сколько ты встаёшь, учишься/работаешь (부터 … 까지) и ложишься спать.",
     "en": "Write your daily routine: when you get up, study/work (부터 … 까지) and go to bed.",
     "uz": "Kun tartibingizni yozing: soat nechada turasiz, o'qiysiz/ishlaysiz (부터 … 까지) va yotasiz."
+   }
+  },
+  {
+   "id": "jiman",
+   "level": "A2",
+   "title": {
+    "ru": "-지만: но",
+    "en": "-지만: but",
+    "uz": "-지만: lekin"
+   },
+   "sum": {
+    "ru": "Соединяем два противоположных факта.",
+    "en": "Joining two contrasting facts.",
+    "uz": "Ikki qarama-qarshi faktni bog'lash."
+   },
+   "explain": {
+    "ru": [
+     "Основа + 지만 = «…, но …»: 비싸지만 맛있어요 (дорого, но вкусно). Работает с глаголами и прилагательными.",
+     "Прошедшее ставится в первую часть: 갔지만, 먹었지만. С существительным: 학생이지만 / 의사지만.",
+     "Отдельным словом в начале нового предложения — 하지만 / 그렇지만: 한국어는 어려워요. 하지만 재미있어요."
+    ],
+    "en": [
+     "Stem + 지만 = “…, but …”: 비싸지만 맛있어요. Works with verbs and adjectives.",
+     "Past tense goes into the first part: 갔지만, 먹었지만. With a noun: 학생이지만 / 의사지만.",
+     "As a separate word starting a new sentence — 하지만 / 그렇지만: 한국어는 어려워요. 하지만 재미있어요."
+    ],
+    "uz": [
+     "O'zak + 지만 = «…, lekin …»: 비싸지만 맛있어요. Fe'l va sifatlar bilan ishlaydi.",
+     "O'tgan zamon birinchi qismga: 갔지만, 먹었지만. Ot bilan: 학생이지만 / 의사지만.",
+     "Yangi gap boshida alohida so'z — 하지만 / 그렇지만: 한국어는 어려워요. 하지만 재미있어요."
+    ]
+   },
+   "formula": [
+    "어간 + 지만",
+    "았/었지만 · 이지만 / 지만 (명사)",
+    "하지만 · 그렇지만 (새 문장)"
+   ],
+   "examples": [
+    {
+     "s": "이 식당은 작지만 아주 유명해요.",
+     "t": {
+      "ru": "Этот ресторан маленький, но очень известный.",
+      "en": "This restaurant is small but very famous.",
+      "uz": "Bu restoran kichik, lekin juda mashhur."
+     }
+    },
+    {
+     "s": "어제 공부했지만 시험이 어려웠어요.",
+     "t": {
+      "ru": "Вчера я занимался, но экзамен был трудным.",
+      "en": "I studied yesterday, but the exam was hard.",
+      "uz": "Kecha o'qidim, lekin imtihon qiyin edi."
+     }
+    },
+    {
+     "s": "저는 학생이지만 일도 해요.",
+     "t": {
+      "ru": "Я студент, но ещё и работаю.",
+      "en": "I am a student, but I also work.",
+      "uz": "Men talabaman, lekin ishlayman ham."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "비싸요지만 좋아요.",
+    "right": "비싸지만 좋아요.",
+    "note": {
+     "ru": "지만 присоединяется к основе, а не к 요.",
+     "en": "지만 attaches to the stem, not to 요.",
+     "uz": "지만 o'zakka qo'shiladi, 요 ga emas."
+    }
+   },
+   "tip": {
+    "ru": "Основа + 지만; прошлое — 았/었지만.",
+    "en": "Stem + 지만; past — 았/었지만.",
+    "uz": "O'zak + 지만; o'tmish — 았/었지만."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "김치는 맵___ 맛있어요.",
+     "o": [
+      "지만",
+      "아서",
+      "고"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Противопоставление → 지만.",
+      "en": "Contrast → 지만.",
+      "uz": "Qarama-qarshilik → 지만."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "어제 친구를 ___ 이야기는 많이 못 했어요. (만나다, past)",
+     "o": [
+      "만났지만",
+      "만나지만",
+      "만나서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → 만났지만.",
+      "en": "Past → 만났지만.",
+      "uz": "O'tmish → 만났지만."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "저는 외국인___ 한국어를 잘해요.",
+     "o": [
+      "이지만",
+      "지만",
+      "이고"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное на согласную → 이지만.",
+      "en": "Noun ending in a consonant → 이지만.",
+      "uz": "Undosh bilan tugagan ot → 이지만."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "날씨가 춥지만 기분이 좋아요.",
+      "날씨가 추워지만 기분이 좋아요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "춥다 → 춥지만 (основа + 지만).",
+      "en": "춥다 → 춥지만 (stem + 지만).",
+      "uz": "춥다 → 춥지만 (o'zak + 지만)."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "피곤해요. 하지만 운동하러 가요.",
+      "피곤해요. 지만 운동하러 가요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В начале предложения → 하지만.",
+      "en": "At the start of a sentence → 하지만.",
+      "uz": "Gap boshida → 하지만."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "한국어는",
+      "어렵지만",
+      "재미있어요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "비가",
+      "왔지만",
+      "산에",
+      "갔어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "이 옷은 예쁘___ 너무 비싸요.",
+     "a": [
+      "지만"
+     ],
+     "e": {
+      "ru": "→ 예쁘지만.",
+      "en": "→ 예쁘지만.",
+      "uz": "→ 예쁘지만."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "비싸*지만* 맛있어요.",
+     "비싸요. *하지만* 맛있어요."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Одно предложение / два предложения",
+      "en": "One sentence / two sentences",
+      "uz": "Bitta gap / ikkita gap"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Разное время",
+      "en": "Different tense",
+      "uz": "Turli zamon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "집은 ___ 깨끗해요. (작다)",
+     "o": [
+      "작지만",
+      "작아지만",
+      "작고"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "작다 → 작지만.",
+      "en": "작다 → 작지만.",
+      "uz": "작다 → 작지만."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "열심히 ___ 시험에 떨어졌어요. (공부하다, past)",
+     "o": [
+      "공부했지만",
+      "공부하지만",
+      "공부해서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ 공부했지만.",
+      "en": "→ 공부했지만.",
+      "uz": "→ 공부했지만."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "배가 고파요. ___ 시간이 없어요.",
+     "o": [
+      "하지만",
+      "그래서",
+      "그리고"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Противопоставление → 하지만.",
+      "en": "Contrast → 하지만.",
+      "uz": "Qarama-qarshilik → 하지만."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своём городе или школе с -지만.",
+    "en": "Write 3 sentences about your city or school with -지만.",
+    "uz": "Shahringiz yoki maktabingiz haqida -지만 bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "ttae",
+   "level": "A2",
+   "title": {
+    "ru": "-(으)ㄹ 때: когда",
+    "en": "-(으)ㄹ 때: when",
+    "uz": "-(으)ㄹ 때: …ganda"
+   },
+   "sum": {
+    "ru": "Время, когда что-то происходит.",
+    "en": "The time when something happens.",
+    "uz": "Biror narsa bo'ladigan vaqt."
+   },
+   "explain": {
+    "ru": [
+     "Основа на гласную + ㄹ 때, на согласную + 을 때: 갈 때 (когда иду), 먹을 때 (когда ем). Основа на ㄹ: 살다 → 살 때.",
+     "Прошлое — 았/었을 때: 한국에 갔을 때 (когда я ездил в Корею). Прилагательные тоже: 어릴 때 (в детстве), 바쁠 때.",
+     "С существительным — 때 сразу после него: 방학 때, 점심 때. Но 어제, 오늘, 내일 — без 때."
+    ],
+    "en": [
+     "Vowel stem + ㄹ 때, consonant stem + 을 때: 갈 때, 먹을 때. ㄹ-stems: 살다 → 살 때.",
+     "Past — 았/었을 때: 한국에 갔을 때. Adjectives too: 어릴 때 (as a child), 바쁠 때.",
+     "With a noun — 때 right after it: 방학 때, 점심 때. But not with 어제, 오늘, 내일."
+    ],
+    "uz": [
+     "Unli o'zak + ㄹ 때, undosh o'zak + 을 때: 갈 때, 먹을 때. ㄹ-o'zak: 살다 → 살 때.",
+     "O'tmish — 았/었을 때: 한국에 갔을 때. Sifatlar ham: 어릴 때 (bolaligimda), 바쁠 때.",
+     "Ot bilan — 때 darhol keyin: 방학 때, 점심 때. Lekin 어제, 오늘, 내일 bilan emas."
+    ]
+   },
+   "formula": [
+    "모음 어간 + ㄹ 때 · 자음 어간 + 을 때",
+    "았/었을 때 (과거)",
+    "명사 + 때 · 어릴 때"
+   ],
+   "examples": [
+    {
+     "s": "밥을 먹을 때 텔레비전을 봐요.",
+     "t": {
+      "ru": "Когда я ем, смотрю телевизор.",
+      "en": "I watch TV when I eat.",
+      "uz": "Ovqatlanayotganda televizor ko'raman."
+     }
+    },
+    {
+     "s": "어릴 때 시골에 살았어요.",
+     "t": {
+      "ru": "В детстве я жил в деревне.",
+      "en": "I lived in the countryside as a child.",
+      "uz": "Bolaligimda qishloqda yashardim."
+     }
+    },
+    {
+     "s": "한국에 갔을 때 비빔밥을 먹었어요.",
+     "t": {
+      "ru": "Когда я был в Корее, ел пибимпап.",
+      "en": "When I went to Korea, I ate bibimbap.",
+      "uz": "Koreyaga borganimda bibimbap yedim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "저는 먹을 때 때 음악을 들어요.",
+    "right": "저는 먹을 때 음악을 들어요.",
+    "note": {
+     "ru": "때 один раз после 을.",
+     "en": "때 once, after 을.",
+     "uz": "때 bir marta, 을 dan keyin."
+    }
+   },
+   "tip": {
+    "ru": "Гласная → ㄹ 때, согласная → 을 때, прошлое → 았/었을 때.",
+    "en": "Vowel → ㄹ 때, consonant → 을 때, past → 았/었을 때.",
+    "uz": "Unli → ㄹ 때, undosh → 을 때, o'tmish → 았/었을 때."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "시간이 ___ 때 책을 읽어요. (있다)",
+     "o": [
+      "있을",
+      "있",
+      "있는"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Согласная → 있을 때.",
+      "en": "Consonant → 있을 때.",
+      "uz": "Undosh → 있을 때."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "학교에 ___ 때 버스를 타요. (가다)",
+     "o": [
+      "갈",
+      "가을",
+      "갔"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Гласная → 갈 때.",
+      "en": "Vowel → 갈 때.",
+      "uz": "Unli → 갈 때."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "처음 서울에 ___ 때 길을 잃었어요. (오다, past)",
+     "o": [
+      "왔을",
+      "올",
+      "와"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → 왔을 때.",
+      "en": "Past → 왔을 때.",
+      "uz": "O'tmish → 왔을 때."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "방학 때 여행을 가요.",
+      "방학을 때 여행을 가요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное + 때.",
+      "en": "Noun + 때.",
+      "uz": "Ot + 때."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "서울에 살 때 지하철을 많이 탔어요.",
+      "서울에 살을 때 지하철을 많이 탔어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄹ-основа: 살다 → 살 때.",
+      "en": "ㄹ-stem: 살다 → 살 때.",
+      "uz": "ㄹ-o'zak: 살다 → 살 때."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "피곤할",
+      "때",
+      "커피를",
+      "마셔요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "어릴",
+      "때",
+      "축구를",
+      "좋아했어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "날씨가 좋을 ___ 산책해요.",
+     "a": [
+      "때"
+     ],
+     "e": {
+      "ru": "→ 좋을 때.",
+      "en": "→ 좋을 때.",
+      "uz": "→ 좋을 때."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*갈 때*",
+     "*먹을 때*",
+     "*갔을 때*"
+    ],
+    "q": {
+     "ru": "Что меняется в форме?",
+     "en": "What changes in the form?",
+     "uz": "Shaklda nima o'zgaradi?"
+    },
+    "o": [
+     {
+      "ru": "ㄹ / 을 по основе; 았/었을 — прошлое",
+      "en": "ㄹ / 을 by the stem; 았/었을 for the past",
+      "uz": "O'zakka ko'ra ㄹ / 을; o'tmish — 았/었을"
+     },
+     {
+      "ru": "Ничего",
+      "en": "Nothing",
+      "uz": "Hech narsa"
+     },
+     {
+      "ru": "Вежливость",
+      "en": "Politeness",
+      "uz": "Hurmat"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ 때 뭐 해요? (심심하다)",
+     "o": [
+      "심심할",
+      "심심을",
+      "심심해"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Гласная → 심심할 때.",
+      "en": "Vowel → 심심할 때.",
+      "uz": "Unli → 심심할 때."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "점심 ___ 친구를 만나요.",
+     "o": [
+      "때",
+      "을 때",
+      "할 때"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное + 때.",
+      "en": "Noun + 때.",
+      "uz": "Ot + 때."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "대학생___ 때 한국어를 배웠어요.",
+     "o": [
+      "이었을",
+      "일",
+      "이을"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное, прошлое → 이었을 때.",
+      "en": "Noun, past → 이었을 때.",
+      "uz": "Ot, o'tmish → 이었을 때."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения: что ты делаешь, когда устал, когда свободен и что было в детстве (-(으)ㄹ 때).",
+    "en": "Write 3 sentences: what you do when tired, when free, and something from childhood (-(으)ㄹ 때).",
+    "uz": "3 ta gap yozing: charchaganda, bo'sh bo'lganda nima qilasiz va bolalikdan bir narsa (-(으)ㄹ 때)."
    }
   },
   {
@@ -7823,6 +8862,524 @@
    }
   },
   {
+   "id": "irregular",
+   "level": "B1",
+   "title": {
+    "ru": "Неправильные основы: ㅂ, ㄷ, 르",
+    "en": "Irregular stems: ㅂ, ㄷ, 르",
+    "uz": "Noto'g'ri o'zaklar: ㅂ, ㄷ, 르"
+   },
+   "sum": {
+    "ru": "Почему 덥다 → 더워요, 듣다 → 들어요.",
+    "en": "Why 덥다 → 더워요, 듣다 → 들어요.",
+    "uz": "Nega 덥다 → 더워요, 듣다 → 들어요."
+   },
+   "explain": {
+    "ru": [
+     "ㅂ-неправильные: перед гласной ㅂ → 우: 덥다 → 더워요, 쉽다 → 쉬워요, 춥다 → 추워요. Исключение: 돕다 → 도와요. Правильные: 입다 → 입어요, 좁다 → 좁아요.",
+     "ㄷ-неправильные: перед гласной ㄷ → ㄹ: 듣다 → 들어요, 걷다 → 걸어요, 묻다 (спрашивать) → 물어요. Правильные: 받다 → 받아요, 닫다 → 닫아요.",
+     "르-неправильные: 르 + 아/어 → ㄹ라 / ㄹ러: 모르다 → 몰라요, 빠르다 → 빨라요, 부르다 → 불러요. Перед согласной (지만, 고) основа не меняется: 덥지만, 듣고."
+    ],
+    "en": [
+     "ㅂ-irregular: before a vowel ㅂ → 우: 덥다 → 더워요, 쉽다 → 쉬워요. Exception: 돕다 → 도와요. Regular: 입다 → 입어요.",
+     "ㄷ-irregular: before a vowel ㄷ → ㄹ: 듣다 → 들어요, 걷다 → 걸어요. Regular: 받다 → 받아요, 닫다 → 닫아요.",
+     "르-irregular: 르 + 아/어 → ㄹ라 / ㄹ러: 모르다 → 몰라요, 부르다 → 불러요. Before a consonant the stem does not change: 덥지만, 듣고."
+    ],
+    "uz": [
+     "ㅂ-noto'g'ri: unli oldidan ㅂ → 우: 덥다 → 더워요, 쉽다 → 쉬워요. Istisno: 돕다 → 도와요. To'g'ri: 입다 → 입어요.",
+     "ㄷ-noto'g'ri: unli oldidan ㄷ → ㄹ: 듣다 → 들어요, 걷다 → 걸어요. To'g'ri: 받다 → 받아요, 닫다 → 닫아요.",
+     "르-noto'g'ri: 르 + 아/어 → ㄹ라 / ㄹ러: 모르다 → 몰라요, 부르다 → 불러요. Undosh oldidan o'zak o'zgarmaydi: 덥지만, 듣고."
+    ]
+   },
+   "formula": [
+    "ㅂ → 우 + 어요: 덥다 → 더워요 (돕다 → 도와요)",
+    "ㄷ → ㄹ: 듣다 → 들어요",
+    "르 → ㄹ라/ㄹ러: 모르다 → 몰라요"
+   ],
+   "examples": [
+    {
+     "s": "오늘은 정말 더워요.",
+     "t": {
+      "ru": "Сегодня очень жарко.",
+      "en": "It is really hot today.",
+      "uz": "Bugun juda issiq."
+     }
+    },
+    {
+     "s": "저는 매일 음악을 들어요.",
+     "t": {
+      "ru": "Я каждый день слушаю музыку.",
+      "en": "I listen to music every day.",
+      "uz": "Har kuni musiqa tinglayman."
+     }
+    },
+    {
+     "s": "그 사람 이름을 몰라요.",
+     "t": {
+      "ru": "Я не знаю, как его зовут.",
+      "en": "I don’t know that person’s name.",
+      "uz": "U odamning ismini bilmayman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "한국어는 쉽어요.",
+    "right": "한국어는 쉬워요.",
+    "note": {
+     "ru": "쉽다 — ㅂ-неправильный: 쉬워요.",
+     "en": "쉽다 is ㅂ-irregular: 쉬워요.",
+     "uz": "쉽다 — ㅂ-noto'g'ri: 쉬워요."
+    }
+   },
+   "tip": {
+    "ru": "Перед гласной: ㅂ → 우, ㄷ → ㄹ, 르 → ㄹㄹ.",
+    "en": "Before a vowel: ㅂ → 우, ㄷ → ㄹ, 르 → ㄹㄹ.",
+    "uz": "Unli oldidan: ㅂ → 우, ㄷ → ㄹ, 르 → ㄹㄹ."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "겨울에는 너무 ___. (춥다)",
+     "o": [
+      "추워요",
+      "춥어요",
+      "추와요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㅂ → 우: 추워요.",
+      "en": "ㅂ → 우: 추워요.",
+      "uz": "ㅂ → 우: 추워요."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "공원에서 한 시간 ___. (걷다, past)",
+     "o": [
+      "걸었어요",
+      "걷었어요",
+      "걸랐어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄷ → ㄹ: 걸었어요.",
+      "en": "ㄷ → ㄹ: 걸었어요.",
+      "uz": "ㄷ → ㄹ: 걸었어요."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "이 기차는 정말 ___. (빠르다)",
+     "o": [
+      "빨라요",
+      "빠라요",
+      "빠르어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "르 → ㄹ라: 빨라요.",
+      "en": "르 → ㄹ라: 빨라요.",
+      "uz": "르 → ㄹ라: 빨라요."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "친구가 이사를 해서 도와줬어요.",
+      "친구가 이사를 해서 도워줬어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "돕다 → 도와.",
+      "en": "돕다 → 도와.",
+      "uz": "돕다 → 도와."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "선물을 받았어요.",
+      "선물을 발았어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "받다 — правильный.",
+      "en": "받다 is regular.",
+      "uz": "받다 — to'g'ri."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "이",
+      "문제는",
+      "너무",
+      "어려워요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "노래를",
+      "불러",
+      "주세요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "선생님께 질문을 ___ 봤어요. (묻다)",
+     "a": [
+      "물어"
+     ],
+     "e": {
+      "ru": "ㄷ → ㄹ: 물어.",
+      "en": "ㄷ → ㄹ: 물어.",
+      "uz": "ㄷ → ㄹ: 물어."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "덥*다* → 더*워요*",
+     "덥*다* → 덥*지만*"
+    ],
+    "q": {
+     "ru": "Когда ㅂ меняется?",
+     "en": "When does ㅂ change?",
+     "uz": "ㅂ qachon o'zgaradi?"
+    },
+    "o": [
+     {
+      "ru": "Только перед окончанием на гласную",
+      "en": "Only before an ending that starts with a vowel",
+      "uz": "Faqat unli bilan boshlanadigan qo'shimcha oldidan"
+     },
+     {
+      "ru": "Всегда",
+      "en": "Always",
+      "uz": "Doim"
+     },
+     {
+      "ru": "Никогда",
+      "en": "Never",
+      "uz": "Hech qachon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "방이 좀 ___. (좁다)",
+     "o": [
+      "좁아요",
+      "좁와요",
+      "조워요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "좁다 — правильный.",
+      "en": "좁다 is regular.",
+      "uz": "좁다 — to'g'ri."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "라디오를 ___ 있어요. (듣다)",
+     "o": [
+      "듣고",
+      "들고",
+      "들어고"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Перед согласной (고) — без изменений.",
+      "en": "Before a consonant (고) — no change.",
+      "uz": "Undosh (고) oldidan — o'zgarishsiz."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "그 노래를 ___? (모르다)",
+     "o": [
+      "몰라요",
+      "모라요",
+      "모르어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "르 → ㄹ라: 몰라요.",
+      "en": "르 → ㄹ라: 몰라요.",
+      "uz": "르 → ㄹ라: 몰라요."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о погоде и своём дне с 덥다/춥다, 듣다/걷다 и 모르다.",
+    "en": "Write 3 sentences about the weather and your day with 덥다/춥다, 듣다/걷다 and 모르다.",
+    "uz": "Ob-havo va kuningiz haqida 덥다/춥다, 듣다/걷다 va 모르다 bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "nikka",
+   "level": "B1",
+   "title": {
+    "ru": "-(으)니까: потому что (с советом и просьбой)",
+    "en": "-(으)니까: because (with advice and requests)",
+    "uz": "-(으)니까: chunki (maslahat va iltimos bilan)"
+   },
+   "sum": {
+    "ru": "Причина, после которой можно просить и предлагать.",
+    "en": "A reason you can follow with a request or suggestion.",
+    "uz": "Sabab, undan keyin iltimos va taklif qilish mumkin."
+   },
+   "explain": {
+    "ru": [
+     "Основа на гласную + 니까, на согласную + 으니까: 비가 오니까, 시간이 없으니까. ㄹ-основа: 살다 → 사니까.",
+     "Главное отличие от -아서/어서: после -(으)니까 можно просить и предлагать (-(으)세요, -(으)ㅂ시다, -(으)ㄹ까요): 비가 오니까 우산을 가져가세요. С -아서 так нельзя.",
+     "Прошлое — 았/었으니까: 어제 많이 먹었으니까 오늘은 조금만 먹을게요. -아서 с прошедшим не ставят: не «왔어서»."
+    ],
+    "en": [
+     "Vowel stem + 니까, consonant stem + 으니까: 비가 오니까, 시간이 없으니까. ㄹ-stem: 살다 → 사니까.",
+     "Main difference from -아서/어서: after -(으)니까 you can make requests and suggestions: 비가 오니까 우산을 가져가세요. Not with -아서.",
+     "Past — 았/었으니까: 어제 많이 먹었으니까… (-아서 never takes the past: not 왔어서)."
+    ],
+    "uz": [
+     "Unli o'zak + 니까, undosh o'zak + 으니까: 비가 오니까, 시간이 없으니까. ㄹ-o'zak: 살다 → 사니까.",
+     "-아서/어서 dan asosiy farq: -(으)니까 dan keyin iltimos va taklif mumkin: 비가 오니까 우산을 가져가세요. -아서 bilan mumkin emas.",
+     "O'tmish — 았/었으니까: 어제 많이 먹었으니까… (-아서 o'tmish bilan ishlatilmaydi)."
+    ]
+   },
+   "formula": [
+    "모음 + 니까 · 자음 + 으니까",
+    "-(으)니까 + -(으)세요 / -(으)ㅂ시다 (O)",
+    "-아서 + -(으)세요 (X)"
+   ],
+   "examples": [
+    {
+     "s": "추우니까 따뜻하게 입으세요.",
+     "t": {
+      "ru": "Холодно, так что одевайся теплее.",
+      "en": "It is cold, so dress warmly.",
+      "uz": "Sovuq, shuning uchun issiq kiyining."
+     }
+    },
+    {
+     "s": "시간이 없으니까 택시를 탑시다.",
+     "t": {
+      "ru": "Времени нет, давай возьмём такси.",
+      "en": "We have no time, let’s take a taxi.",
+      "uz": "Vaqt yo'q, taksiga o'tiraylik."
+     }
+    },
+    {
+     "s": "오늘은 바쁘니까 내일 만나요.",
+     "t": {
+      "ru": "Сегодня я занят, давай встретимся завтра.",
+      "en": "I am busy today, let’s meet tomorrow.",
+      "uz": "Bugun bandman, ertaga uchrashaylik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "비가 와서 우산을 가져가세요.",
+    "right": "비가 오니까 우산을 가져가세요.",
+    "note": {
+     "ru": "С просьбой → -(으)니까.",
+     "en": "With a request → -(으)니까.",
+     "uz": "Iltimos bilan → -(으)니까."
+    }
+   },
+   "tip": {
+    "ru": "Причина + просьба / предложение → -(으)니까.",
+    "en": "Reason + request / suggestion → -(으)니까.",
+    "uz": "Sabab + iltimos / taklif → -(으)니까."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "길이 ___ 지하철을 탑시다. (막히다)",
+     "o": [
+      "막히니까",
+      "막혀서",
+      "막히지만"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Предложение → -니까.",
+      "en": "A suggestion → -니까.",
+      "uz": "Taklif → -니까."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "음식이 ___ 천천히 드세요. (뜨겁다)",
+     "o": [
+      "뜨거우니까",
+      "뜨겁니까",
+      "뜨거워서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㅂ-неправильный + 으니까, просьба.",
+      "en": "ㅂ-irregular + 으니까, request.",
+      "uz": "ㅂ-noto'g'ri + 으니까, iltimos."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "어제 많이 ___ 오늘은 좀 쉬세요. (걷다, past)",
+     "o": [
+      "걸었으니까",
+      "걷었으니까",
+      "걸었어서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое + совет → 걸었으니까 (ㄷ → ㄹ).",
+      "en": "Past + advice → 걸었으니까 (ㄷ → ㄹ).",
+      "uz": "O'tmish + maslahat → 걸었으니까 (ㄷ → ㄹ)."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "내일 시험이 있으니까 같이 공부할까요?",
+      "내일 시험이 있어서 같이 공부할까요?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Предложение → -(으)니까.",
+      "en": "Suggestion → -(으)니까.",
+      "uz": "Taklif → -(으)니까."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "친구가 멀리 사니까 자주 못 만나요.",
+      "친구가 멀리 살으니까 자주 못 만나요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄹ-основа: 살다 → 사니까.",
+      "en": "ㄹ-stem: 살다 → 사니까.",
+      "uz": "ㄹ-o'zak: 살다 → 사니까."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "날씨가",
+      "좋으니까",
+      "산책하러",
+      "갑시다."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "위험하니까",
+      "들어가지",
+      "마세요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "시간이 ___ 빨리 가요. (없다)",
+     "a": [
+      "없으니까"
+     ],
+     "e": {
+      "ru": "Согласная → 없으니까.",
+      "en": "Consonant → 없으니까.",
+      "uz": "Undosh → 없으니까."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "비가 *와서* 집에 있었어요.",
+     "비가 *오니까* 우산을 *가져가세요*."
+    ],
+    "q": {
+     "ru": "Почему во втором 오니까?",
+     "en": "Why 오니까 in the second?",
+     "uz": "Nega ikkinchisida 오니까?"
+    },
+    "o": [
+     {
+      "ru": "После причины идёт просьба",
+      "en": "A request follows the reason",
+      "uz": "Sababdan keyin iltimos keladi"
+     },
+     {
+      "ru": "Это прошлое",
+      "en": "It is the past",
+      "uz": "Bu o'tmish"
+     },
+     {
+      "ru": "Без разницы",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "지금 ___ 나중에 전화할게요. (바쁘다)",
+     "o": [
+      "바쁘니까",
+      "바뻐서니까",
+      "바쁜니까"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Гласная → 바쁘니까.",
+      "en": "Vowel → 바쁘니까.",
+      "uz": "Unli → 바쁘니까."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "늦었으니까 택시를 ___.",
+     "o": [
+      "타세요",
+      "탔어요",
+      "타요니까"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Просьба после -니까 — возможна.",
+      "en": "A request after -니까 is fine.",
+      "uz": "-니까 dan keyin iltimos mumkin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "배가 ___ 밥 먹으러 가요. (고프다)",
+     "o": [
+      "고프니까",
+      "고파니까",
+      "고퍼서니까"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ 고프니까.",
+      "en": "→ 고프니까.",
+      "uz": "→ 고프니까."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Дай 3 совета другу с причиной (…(으)니까 …(으)세요).",
+    "en": "Give a friend 3 pieces of advice with a reason (…(으)니까 …(으)세요).",
+    "uz": "Do'stingizga sabab bilan 3 ta maslahat bering (…(으)니까 …(으)세요)."
+   }
+  },
+  {
    "id": "reported",
    "level": "B2",
    "title": {
@@ -9390,6 +10947,1047 @@
     "ru": "Напиши короткий диалог из 4 реплик между двумя друзьями на 반말 (…어/아, …자, …야/이야).",
     "en": "Write a short 4-line dialogue between two friends in 반말 (…어/아, …자, …야/이야).",
     "uz": "Ikki do'st orasida 반말 da 4 qatorli qisqa dialog yozing (…어/아, …자, …야/이야)."
+   }
+  },
+  {
+   "id": "myeonseo",
+   "level": "B2",
+   "title": {
+    "ru": "-(으)면서: одновременно, пока",
+    "en": "-(으)면서: while, at the same time",
+    "uz": "-(으)면서: bir vaqtda, …ayotib"
+   },
+   "sum": {
+    "ru": "Два действия одного человека в одно время.",
+    "en": "Two actions by the same person at the same time.",
+    "uz": "Bir odamning bir vaqtdagi ikki harakati."
+   },
+   "explain": {
+    "ru": [
+     "Основа на гласную + 면서, на согласную + 으면서: 음악을 들으면서 (듣다, ㄷ → ㄹ) 공부해요. 걸으면서, 먹으면서.",
+     "Подлежащее у обоих действий одно: 저는 운전하면서 노래해요. Время (прошлое/будущее) ставят только в конце: 밥을 먹으면서 이야기했어요.",
+     "Ещё значение «и при этом / хотя»: 그는 학생이면서 회사원이에요 (он и студент, и сотрудник). 알면서 모르는 척해요 (знает, а делает вид, что нет)."
+    ],
+    "en": [
+     "Vowel stem + 면서, consonant stem + 으면서: 음악을 들으면서 공부해요 (듣다, ㄷ → ㄹ).",
+     "Both actions have the same subject: 저는 운전하면서 노래해요. Tense goes only at the end: 밥을 먹으면서 이야기했어요.",
+     "Also “both… and / although”: 그는 학생이면서 회사원이에요. 알면서 모르는 척해요."
+    ],
+    "uz": [
+     "Unli o'zak + 면서, undosh o'zak + 으면서: 음악을 들으면서 공부해요 (듣다, ㄷ → ㄹ).",
+     "Ikkala harakatning egasi bitta: 저는 운전하면서 노래해요. Zamon faqat oxirida: 밥을 먹으면서 이야기했어요.",
+     "Yana «ham… ham / garchi»: 그는 학생이면서 회사원이에요. 알면서 모르는 척해요."
+    ]
+   },
+   "formula": [
+    "모음 + 면서 · 자음 + 으면서",
+    "같은 주어 · 시제는 끝에만",
+    "이면서 = and also · 알면서 = although"
+   ],
+   "examples": [
+    {
+     "s": "저는 커피를 마시면서 신문을 읽어요.",
+     "t": {
+      "ru": "Я читаю газету, попивая кофе.",
+      "en": "I read the newspaper while drinking coffee.",
+      "uz": "Qahva ichib, gazeta o'qiyman."
+     }
+    },
+    {
+     "s": "친구와 걸으면서 이야기했어요.",
+     "t": {
+      "ru": "Мы разговаривали с другом, гуляя.",
+      "en": "I talked with a friend while walking.",
+      "uz": "Do'stim bilan yurib gaplashdik."
+     }
+    },
+    {
+     "s": "그 사람은 가수이면서 배우예요.",
+     "t": {
+      "ru": "Он и певец, и актёр.",
+      "en": "He is both a singer and an actor.",
+      "uz": "U ham qo'shiqchi, ham aktyor."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "밥을 먹었으면서 텔레비전을 봤어요.",
+    "right": "밥을 먹으면서 텔레비전을 봤어요.",
+    "note": {
+     "ru": "Время — только в конце.",
+     "en": "Tense only at the end.",
+     "uz": "Zamon faqat oxirida."
+    }
+   },
+   "tip": {
+    "ru": "Один человек, два действия сразу → -(으)면서; время — в конце.",
+    "en": "One person, two actions at once → -(으)면서; tense at the end.",
+    "uz": "Bir odam, bir vaqtda ikki harakat → -(으)면서; zamon oxirida."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "노래를 ___ 춤을 춰요. (부르다)",
+     "o": [
+      "부르면서",
+      "불러면서",
+      "부르으면서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Гласная → 부르면서.",
+      "en": "Vowel → 부르면서.",
+      "uz": "Unli → 부르면서."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "음악을 ___ 운동해요. (듣다)",
+     "o": [
+      "들으면서",
+      "듣면서",
+      "듣으면서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄷ → ㄹ + 으면서.",
+      "en": "ㄷ → ㄹ + 으면서.",
+      "uz": "ㄷ → ㄹ + 으면서."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "어제 친구와 차를 ___ 이야기했어요. (마시다)",
+     "o": [
+      "마시면서",
+      "마셨으면서",
+      "마시고서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Время только в конце.",
+      "en": "Tense only at the end.",
+      "uz": "Zamon faqat oxirida."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "저는 운전하면서 전화하지 않아요.",
+      "저는 운전하면서 친구가 전화해요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Подлежащее одно.",
+      "en": "Same subject.",
+      "uz": "Ega bitta."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "그녀는 의사이면서 작가예요.",
+      "그녀는 의사면서이 작가예요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное + (이)면서.",
+      "en": "Noun + (이)면서.",
+      "uz": "Ot + (이)면서."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "저는",
+      "걸으면서",
+      "생각해요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "영화를",
+      "보면서",
+      "팝콘을",
+      "먹었어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "밥을 ___ 휴대폰을 보지 마세요. (먹다)",
+     "a": [
+      "먹으면서"
+     ],
+     "e": {
+      "ru": "Согласная → 먹으면서.",
+      "en": "Consonant → 먹으면서.",
+      "uz": "Undosh → 먹으면서."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "커피를 *마시면서* 책을 읽어요.",
+     "음악을 *들으면서* 운동해요."
+    ],
+    "q": {
+     "ru": "Сколько людей делает эти действия?",
+     "en": "How many people do these actions?",
+     "uz": "Bu harakatlarni necha kishi bajaradi?"
+    },
+    "o": [
+     {
+      "ru": "Один и тот же человек, одновременно",
+      "en": "The same person, at the same time",
+      "uz": "Bitta odam, bir vaqtda"
+     },
+     {
+      "ru": "Два разных человека",
+      "en": "Two different people",
+      "uz": "Ikki xil odam"
+     },
+     {
+      "ru": "Одно после другого",
+      "en": "One after the other",
+      "uz": "Ketma-ket"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "그는 ___ 공부해요. (일하다)",
+     "o": [
+      "일하면서",
+      "일했으면서",
+      "일해서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ 일하면서.",
+      "en": "→ 일하면서.",
+      "uz": "→ 일하면서."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "라디오를 ___ 요리했어요. (듣다)",
+     "o": [
+      "들으면서",
+      "듣으면서",
+      "들어면서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄷ → ㄹ.",
+      "en": "ㄷ → ㄹ.",
+      "uz": "ㄷ → ㄹ."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "알___ 왜 말 안 했어요?",
+     "o": [
+      "면서",
+      "으면서",
+      "아서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ㄹ-основа: 알다 → 알면서.",
+      "en": "ㄹ-stem: 알다 → 알면서.",
+      "uz": "ㄹ-o'zak: 알다 → 알면서."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 вещи, которые ты делаешь одновременно (-(으)면서).",
+    "en": "Write 3 things you do at the same time (-(으)면서).",
+    "uz": "Bir vaqtda qiladigan 3 ta ishingizni yozing (-(으)면서)."
+   }
+  },
+  {
+   "id": "gi-ttaemune",
+   "level": "B2",
+   "title": {
+    "ru": "-기 때문에: потому что (письменно и твёрдо)",
+    "en": "-기 때문에: because (firm, written style)",
+    "uz": "-기 때문에: chunki (qat'iy, yozma uslub)"
+   },
+   "sum": {
+    "ru": "Ясная, весомая причина.",
+    "en": "A clear, weighty reason.",
+    "uz": "Aniq, salmoqli sabab."
+   },
+   "explain": {
+    "ru": [
+     "Основа + 기 때문에: 바쁘기 때문에, 비가 오기 때문에. Прошлое — 았/었기 때문에: 늦게 일어났기 때문에.",
+     "С существительным: N 때문에 (из-за N): 비 때문에, 시험 때문에. С существительным-сказуемым: 학생이기 때문에 (потому что я студент).",
+     "Как и -아서, обычно не используется с просьбой или предложением: «바쁘기 때문에 내일 만납시다» звучит неестественно → 바쁘니까 내일 만납시다."
+    ],
+    "en": [
+     "Stem + 기 때문에: 바쁘기 때문에, 비가 오기 때문에. Past — 았/었기 때문에: 늦게 일어났기 때문에.",
+     "With a noun: N 때문에 (because of N): 비 때문에. With a noun as predicate: 학생이기 때문에.",
+     "Like -아서, it is not normally used with requests or suggestions: use -(으)니까 there instead."
+    ],
+    "uz": [
+     "O'zak + 기 때문에: 바쁘기 때문에, 비가 오기 때문에. O'tmish — 았/었기 때문에: 늦게 일어났기 때문에.",
+     "Ot bilan: N 때문에 (N tufayli): 비 때문에. Kesim bo'lgan ot bilan: 학생이기 때문에.",
+     "-아서 kabi, iltimos yoki taklif bilan odatda ishlatilmaydi: u yerda -(으)니까 ishlating."
+    ]
+   },
+   "formula": [
+    "어간 + 기 때문에 · 았/었기 때문에",
+    "명사 + 때문에 · 명사 + 이기 때문에",
+    "명령/청유 → -(으)니까"
+   ],
+   "examples": [
+    {
+     "s": "일이 많기 때문에 주말에도 일해요.",
+     "t": {
+      "ru": "Так как работы много, я работаю и в выходные.",
+      "en": "Because there is a lot of work, I work on weekends too.",
+      "uz": "Ish ko'p bo'lgani uchun dam olish kunlari ham ishlayman."
+     }
+    },
+    {
+     "s": "눈 때문에 비행기가 늦게 출발했어요.",
+     "t": {
+      "ru": "Из-за снега самолёт вылетел поздно.",
+      "en": "Because of the snow, the plane left late.",
+      "uz": "Qor tufayli samolyot kech uchdi."
+     }
+    },
+    {
+     "s": "어제 늦게 잤기 때문에 피곤해요.",
+     "t": {
+      "ru": "Я устал, потому что вчера поздно лёг.",
+      "en": "I am tired because I went to bed late yesterday.",
+      "uz": "Kecha kech yotganim uchun charchadim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "비가 때문에 집에 있었어요.",
+    "right": "비 때문에 집에 있었어요. / 비가 오기 때문에…",
+    "note": {
+     "ru": "Существительное + 때문에 (без 가) или глагол + 기 때문에.",
+     "en": "Noun + 때문에 (no 가) or verb + 기 때문에.",
+     "uz": "Ot + 때문에 (가 siz) yoki fe'l + 기 때문에."
+    }
+   },
+   "tip": {
+    "ru": "Глагол → -기 때문에, существительное → 때문에; для просьб — -(으)니까.",
+    "en": "Verb → -기 때문에, noun → 때문에; for requests use -(으)니까.",
+    "uz": "Fe'l → -기 때문에, ot → 때문에; iltimos uchun -(으)니까."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "시간이 ___ 택시를 탔어요. (없다)",
+     "o": [
+      "없기 때문에",
+      "없 때문에",
+      "없어서 때문에"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Основа + 기 때문에.",
+      "en": "Stem + 기 때문에.",
+      "uz": "O'zak + 기 때문에."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "감기 ___ 학교에 못 갔어요.",
+     "o": [
+      "때문에",
+      "기 때문에",
+      "이기 때문에"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное + 때문에.",
+      "en": "Noun + 때문에.",
+      "uz": "Ot + 때문에."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "어제 많이 ___ 배가 아파요. (먹다, past)",
+     "o": [
+      "먹었기 때문에",
+      "먹기 때문에였어요",
+      "먹어서 때문에"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → 았/었기 때문에.",
+      "en": "Past → 았/었기 때문에.",
+      "uz": "O'tmish → 았/었기 때문에."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "저는 외국인이기 때문에 한국어가 서툴러요.",
+      "저는 외국인 때문에 한국어가 서툴러요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "«Потому что я иностранец» → 이기 때문에.",
+      "en": "“Because I am a foreigner” → 이기 때문에.",
+      "uz": "«Chet ellik bo'lganim uchun» → 이기 때문에."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "비가 오니까 우산을 가져가세요.",
+      "비가 오기 때문에 우산을 가져가세요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С просьбой → -(으)니까.",
+      "en": "With a request → -(으)니까.",
+      "uz": "Iltimos bilan → -(으)니까."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "길이",
+      "막히기",
+      "때문에",
+      "지하철을",
+      "타요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "숙제",
+      "때문에",
+      "잠을",
+      "못",
+      "잤어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "주말이___ 때문에 사람이 많아요.",
+     "a": [
+      "기"
+     ],
+     "e": {
+      "ru": "Существительное-сказуемое: 주말이기 때문에.",
+      "en": "Noun as predicate: 주말이기 때문에.",
+      "uz": "Kesim ot: 주말이기 때문에."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*비 때문에* 늦었어요.",
+     "비가 *오기 때문에* 늦었어요."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Существительное + 때문에 / глагол + 기 때문에",
+      "en": "Noun + 때문에 / verb + 기 때문에",
+      "uz": "Ot + 때문에 / fe'l + 기 때문에"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Разное время",
+      "en": "Different tense",
+      "uz": "Turli zamon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "교통사고 ___ 길이 막혔어요.",
+     "o": [
+      "때문에",
+      "기 때문에",
+      "이니까"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существительное → 때문에.",
+      "en": "Noun → 때문에.",
+      "uz": "Ot → 때문에."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "바쁘___ 연락을 못 했어요.",
+     "o": [
+      "기 때문에",
+      "때문에",
+      "이기 때문에"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прилагательное → 기 때문에.",
+      "en": "Adjective → 기 때문에.",
+      "uz": "Sifat → 기 때문에."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "위험하니까 ___. (request)",
+     "o": [
+      "조심하세요",
+      "조심했기 때문에",
+      "조심해요 때문에"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Просьба — с -(으)니까.",
+      "en": "A request goes with -(으)니까.",
+      "uz": "Iltimos — -(으)니까 bilan."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Объясни 3 своих решения с -기 때문에 или N 때문에.",
+    "en": "Explain 3 of your decisions with -기 때문에 or N 때문에.",
+    "uz": "3 ta qaroringizni -기 때문에 yoki N 때문에 bilan tushuntiring."
+   }
+  },
+  {
+   "id": "a-itda",
+   "level": "B2",
+   "title": {
+    "ru": "-아/어 있다: состояние после действия",
+    "en": "-아/어 있다: a state after an action",
+    "uz": "-아/어 있다: harakatdan keyingi holat"
+   },
+   "sum": {
+    "ru": "Дверь открыта, он сидит — и чем это отличается от -고 있다.",
+    "en": "The door is open, he is sitting — and how it differs from -고 있다.",
+    "uz": "Eshik ochiq, u o'tiribdi — va -고 있다 dan farqi."
+   },
+   "explain": {
+    "ru": [
+     "-아/어 있다 — результат действия продолжается: 앉아 있어요 (сидит, уже сел), 서 있어요 (стоит), 문이 열려 있어요 (дверь открыта).",
+     "Используется с непереходными и страдательными глаголами: 앉다, 서다, 눕다 (누워 있다), 가다/오다 (와 있다), 열리다, 닫히다, 켜지다, 쓰이다 (написано).",
+     "-고 있다 — действие идёт сейчас: 앉고 있어요 = садится (в процессе). С одеждой -고 있다 означает «одет в»: 코트를 입고 있어요."
+    ],
+    "en": [
+     "-아/어 있다 — the result of an action continues: 앉아 있어요 (is sitting), 서 있어요 (is standing), 문이 열려 있어요 (the door is open).",
+     "Used with intransitive and passive verbs: 앉다, 서다, 눕다 (누워 있다), 오다 (와 있다), 열리다, 닫히다, 켜지다, 쓰이다.",
+     "-고 있다 — an action in progress: 앉고 있어요 = is sitting down. With clothes, -고 있다 means “wearing”: 코트를 입고 있어요."
+    ],
+    "uz": [
+     "-아/어 있다 — harakat natijasi davom etadi: 앉아 있어요 (o'tiribdi), 서 있어요 (turibdi), 문이 열려 있어요 (eshik ochiq).",
+     "O'timsiz va majhul fe'llar bilan: 앉다, 서다, 눕다 (누워 있다), 오다 (와 있다), 열리다, 닫히다, 켜지다, 쓰이다.",
+     "-고 있다 — davom etayotgan harakat: 앉고 있어요 = o'tiryapti (jarayonda). Kiyim bilan -고 있다 «kiygan»: 코트를 입고 있어요."
+    ]
+   },
+   "formula": [
+    "동사 + 아/어 있다 = 결과 상태",
+    "열려 있다 · 켜져 있다 · 써 있다",
+    "-고 있다 = 진행 · 입고 있다 = wearing"
+   ],
+   "examples": [
+    {
+     "s": "창문이 열려 있어요. 좀 추워요.",
+     "t": {
+      "ru": "Окно открыто. Немного холодно.",
+      "en": "The window is open. It is a bit cold.",
+      "uz": "Deraza ochiq. Biroz sovuq."
+     }
+    },
+    {
+     "s": "할머니는 소파에 누워 계세요.",
+     "t": {
+      "ru": "Бабушка лежит на диване.",
+      "en": "Grandma is lying on the sofa.",
+      "uz": "Buvim divanda yotibdilar."
+     }
+    },
+    {
+     "s": "칠판에 이름이 써 있어요.",
+     "t": {
+      "ru": "На доске написано имя.",
+      "en": "A name is written on the board.",
+      "uz": "Doskada ism yozilgan."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "문이 열고 있어요. (the door is open)",
+    "right": "문이 열려 있어요.",
+    "note": {
+     "ru": "Состояние двери → 열려 있다.",
+     "en": "The door’s state → 열려 있다.",
+     "uz": "Eshik holati → 열려 있다."
+    }
+   },
+   "tip": {
+    "ru": "Результат держится → -아/어 있다; действие идёт → -고 있다.",
+    "en": "A lasting result → -아/어 있다; an ongoing action → -고 있다.",
+    "uz": "Natija saqlanmoqda → -아/어 있다; harakat davom etmoqda → -고 있다."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "교실 불이 ___. (켜지다)",
+     "o": [
+      "켜져 있어요",
+      "켜고 있어요",
+      "켜 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Состояние, страдательный → 켜져 있어요.",
+      "en": "A state, passive → 켜져 있어요.",
+      "uz": "Holat, majhul → 켜져 있어요."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "민수 씨는 문 앞에 ___. (서다)",
+     "o": [
+      "서 있어요",
+      "서고 있어요",
+      "섰고 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Стоит (уже встал) → 서 있어요.",
+      "en": "Standing (already up) → 서 있어요.",
+      "uz": "Turibdi → 서 있어요."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "지금 친구한테 편지를 ___. (쓰다, in progress)",
+     "o": [
+      "쓰고 있어요",
+      "써 있어요",
+      "쓰여 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Действие в процессе → -고 있다.",
+      "en": "In progress → -고 있다.",
+      "uz": "Jarayonda → -고 있다."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "동생이 의자에 앉아 있어요.",
+      "동생이 의자에 앉고 있어요. (already seated)"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Уже сидит → 앉아 있다.",
+      "en": "Already seated → 앉아 있다.",
+      "uz": "Allaqachon o'tirgan → 앉아 있다."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "가게 문이 닫혀 있어요.",
+      "가게 문이 닫아 있어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Страдательный 닫히다 → 닫혀 있다.",
+      "en": "Passive 닫히다 → 닫혀 있다.",
+      "uz": "Majhul 닫히다 → 닫혀 있다."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "책상",
+      "위에",
+      "책이",
+      "놓여",
+      "있어요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "친구가",
+      "벌써",
+      "와",
+      "있어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "아이가 침대에 ___ 있어요. (눕다)",
+     "a": [
+      "누워"
+     ],
+     "e": {
+      "ru": "ㅂ-неправильный: 눕다 → 누워 있다.",
+      "en": "ㅂ-irregular: 눕다 → 누워 있다.",
+      "uz": "ㅂ-noto'g'ri: 눕다 → 누워 있다."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "그는 의자에 *앉고 있어요*.",
+     "그는 의자에 *앉아 있어요*."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Садится (сейчас) / уже сидит",
+      "en": "Is sitting down now / is already seated",
+      "uz": "Hozir o'tiryapti / allaqachon o'tiribdi"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Первое — прошлое",
+      "en": "The first is past",
+      "uz": "Birinchisi o'tmish"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "냉장고에 우유가 ___. (들다)",
+     "o": [
+      "들어 있어요",
+      "들고 있어요",
+      "들 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Лежит внутри → 들어 있다.",
+      "en": "Is inside → 들어 있다.",
+      "uz": "Ichida → 들어 있다."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "그 여자는 빨간 코트를 ___. (wearing)",
+     "o": [
+      "입고 있어요",
+      "입어 있어요",
+      "입혀 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Одежда → -고 있다.",
+      "en": "Clothes → -고 있다.",
+      "uz": "Kiyim → -고 있다."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "봉투에 주소가 ___. (쓰이다)",
+     "o": [
+      "쓰여 있어요",
+      "쓰고 있어요",
+      "써고 있어요"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Страдательный → 쓰여 있다.",
+      "en": "Passive → 쓰여 있다.",
+      "uz": "Majhul → 쓰여 있다."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши свою комнату прямо сейчас: что открыто, включено, лежит (-아/어 있다), 3 предложения.",
+    "en": "Describe your room right now: what is open, on, lying (-아/어 있다), 3 sentences.",
+    "uz": "Xonangizni hozirgi holatda tasvirlang: nima ochiq, yoqilgan, yotibdi (-아/어 있다), 3 ta gap."
+   }
+  },
+  {
+   "id": "daga",
+   "level": "B2",
+   "title": {
+    "ru": "-다가: начал одно — переключился на другое",
+    "en": "-다가: doing one thing, then switching",
+    "uz": "-다가: biri boshlandi — boshqasiga o'tildi"
+   },
+   "sum": {
+    "ru": "Шёл и встретил; учил и уснул.",
+    "en": "Was walking and met someone; was studying and fell asleep.",
+    "uz": "Ketayotib uchratdim; o'qiyotib uxlab qoldim."
+   },
+   "explain": {
+    "ru": [
+     "Основа + 다가: действие прерывается или по ходу случается другое: 학교에 가다가 친구를 만났어요 (по дороге в школу встретил друга).",
+     "Подлежащее у обеих частей одно; время ставится только в конце: 공부하다가 잤어요 (не 공부했다가 — у этой формы другое значение).",
+     "-았/었다가 = сделал и потом отменил / ушёл обратно: 창문을 열었다가 닫았어요 (открыл, а потом закрыл). 갔다가 왔어요 (сходил и вернулся)."
+    ],
+    "en": [
+     "Stem + 다가: an action is interrupted or something else happens on the way: 학교에 가다가 친구를 만났어요.",
+     "Both parts share the subject; tense goes only at the end: 공부하다가 잤어요.",
+     "-았/었다가 = did something and then reversed it: 창문을 열었다가 닫았어요. 갔다가 왔어요 (went and came back)."
+    ],
+    "uz": [
+     "O'zak + 다가: harakat to'xtaydi yoki yo'l-yo'lakay boshqasi yuz beradi: 학교에 가다가 친구를 만났어요.",
+     "Ikkala qismning egasi bitta; zamon faqat oxirida: 공부하다가 잤어요.",
+     "-았/었다가 = qildi va keyin bekor qildi: 창문을 열었다가 닫았어요. 갔다가 왔어요 (borib keldi)."
+    ]
+   },
+   "formula": [
+    "어간 + 다가 = 하던 중에 / 바꿔서",
+    "같은 주어 · 시제는 끝에",
+    "았/었다가 = 하고 나서 반대로"
+   ],
+   "examples": [
+    {
+     "s": "텔레비전을 보다가 잠이 들었어요.",
+     "t": {
+      "ru": "Я смотрел телевизор и уснул.",
+      "en": "I fell asleep while watching TV.",
+      "uz": "Televizor ko'rayotib uxlab qoldim."
+     }
+    },
+    {
+     "s": "집에 오다가 빵을 샀어요.",
+     "t": {
+      "ru": "По дороге домой я купил хлеб.",
+      "en": "I bought bread on my way home.",
+      "uz": "Uyga kelayotib non oldim."
+     }
+    },
+    {
+     "s": "코트를 입었다가 더워서 벗었어요.",
+     "t": {
+      "ru": "Я надел пальто, но было жарко, и снял.",
+      "en": "I put on my coat, but it was hot, so I took it off.",
+      "uz": "Paltoni kiydim, lekin issiq bo'lgani uchun yechdim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "저는 운전했다가 전화를 받았어요. (while driving)",
+    "right": "저는 운전하다가 전화를 받았어요.",
+    "note": {
+     "ru": "«Во время» → основа + 다가.",
+     "en": "“While” → stem + 다가.",
+     "uz": "«…ayotib» → o'zak + 다가."
+    }
+   },
+   "tip": {
+    "ru": "По ходу или переключение → -다가; сделал и отменил → -았/었다가.",
+    "en": "Along the way or switching → -다가; did and undid → -았/었다가.",
+    "uz": "Yo'l-yo'lakay yoki o'tish → -다가; qilib bekor qildi → -았/었다가."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "길을 ___ 넘어졌어요. (걷다)",
+     "o": [
+      "걷다가",
+      "걸었다가",
+      "걸으다가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "По ходу → основа + 다가.",
+      "en": "Along the way → stem + 다가.",
+      "uz": "Yo'l-yo'lakay → o'zak + 다가."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "책을 ___ 친구한테 전화했어요. (읽다)",
+     "o": [
+      "읽다가",
+      "읽었다가",
+      "읽고다가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прервал чтение → 읽다가.",
+      "en": "Stopped reading → 읽다가.",
+      "uz": "O'qishni to'xtatdi → 읽다가."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "불을 ___ 다시 켰어요. (끄다)",
+     "o": [
+      "껐다가",
+      "끄다가",
+      "꺼다가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Выключил, потом включил → 껐다가.",
+      "en": "Turned off, then on again → 껐다가.",
+      "uz": "O'chirdi, keyin yoqdi → 껐다가."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "요리하다가 손을 다쳤어요.",
+      "요리하다가 동생이 손을 다쳤어요."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Подлежащее одно.",
+      "en": "Same subject.",
+      "uz": "Ega bitta."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "은행에 갔다가 왔어요.",
+      "은행에 가다가 왔어요. (went and came back)"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сходил и вернулся → 갔다가.",
+      "en": "Went and came back → 갔다가.",
+      "uz": "Borib keldi → 갔다가."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "공부하다가",
+      "잠깐",
+      "쉬었어요."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "회사에",
+      "가다가",
+      "커피를",
+      "샀어요."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "밥을 ___ 전화를 받았어요. (먹다, while)",
+     "a": [
+      "먹다가"
+     ],
+     "e": {
+      "ru": "→ 먹다가.",
+      "en": "→ 먹다가.",
+      "uz": "→ 먹다가."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "학교에 *가다가* 친구를 만났어요.",
+     "학교에 *갔다가* 집에 왔어요."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "По дороге в школу / сходил в школу и вернулся",
+      "en": "On the way to school / went to school and came back",
+      "uz": "Maktabga ketayotib / maktabga borib qaytdim"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Оба — будущее",
+      "en": "Both are future",
+      "uz": "Ikkalasi kelajak"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "숙제를 ___ 게임을 했어요. (하다)",
+     "o": [
+      "하다가",
+      "했다가",
+      "해다가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Переключился → 하다가.",
+      "en": "Switched → 하다가.",
+      "uz": "O'tdi → 하다가."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "신발을 ___ 작아서 벗었어요. (신다)",
+     "o": [
+      "신었다가",
+      "신다가",
+      "신어다가"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Надел и снял → 신었다가.",
+      "en": "Put on, then took off → 신었다가.",
+      "uz": "Kiyib yechdi → 신었다가."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "운전___ 졸면 위험해요.",
+     "o": [
+      "하다가",
+      "했다가",
+      "하고서"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Во время вождения → 하다가.",
+      "en": "While driving → 하다가.",
+      "uz": "Haydayotib → 하다가."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Расскажи 3 случая: что случилось, пока ты что-то делал (-다가), и что ты сделал и отменил (-았/었다가).",
+    "en": "Tell 3 stories: what happened while you were doing something (-다가) and something you did and undid (-았/었다가).",
+    "uz": "3 ta voqea ayting: biror narsa qilayotganingizda nima bo'ldi (-다가) va qilib bekor qilgan ishingiz (-았/었다가)."
    }
   }
  ],

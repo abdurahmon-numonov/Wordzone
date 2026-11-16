@@ -2607,6 +2607,526 @@
    }
   },
   {
+   "id": "demostrativos",
+   "level": "A1",
+   "title": {
+    "ru": "Указательные: este, ese, aquel",
+    "en": "Demonstratives: este, ese, aquel",
+    "uz": "Ko'rsatish olmoshlari: este, ese, aquel"
+   },
+   "sum": {
+    "ru": "Этот, тот, вон тот — три расстояния.",
+    "en": "This, that, that over there — three distances.",
+    "uz": "Bu, u, ana u — uch masofa."
+   },
+   "explain": {
+    "ru": [
+     "este/esta — рядом со мной (этот), ese/esa — рядом с собеседником (тот), aquel/aquella — далеко от обоих (вон тот).",
+     "Согласуются в роде и числе: este libro, esta casa, estos libros, estas casas; ese/esa/esos/esas; aquel/aquella/aquellos/aquellas.",
+     "Средний род для «это» без существительного: esto, eso, aquello: ¿Qué es esto? Eso no es verdad."
+    ],
+    "en": [
+     "este/esta — near me, ese/esa — near you, aquel/aquella — far from both.",
+     "They agree in gender and number: este libro, esta casa, estos libros, estas casas.",
+     "Neuter forms for “this/that” without a noun: esto, eso, aquello: ¿Qué es esto?"
+    ],
+    "uz": [
+     "este/esta — yonimda, ese/esa — suhbatdosh yonida, aquel/aquella — ikkalamizdan uzoqda.",
+     "Rod va sonda moslashadi: este libro, esta casa, estos libros, estas casas.",
+     "Otsiz «bu/u» uchun o'rta rod: esto, eso, aquello: ¿Qué es esto?"
+    ]
+   },
+   "formula": [
+    "este · esta · estos · estas (here)",
+    "ese · esa · esos · esas (there)",
+    "aquel · aquella (over there) · esto / eso"
+   ],
+   "examples": [
+    {
+     "s": "Este café está muy bueno.",
+     "t": {
+      "ru": "Этот кофе очень вкусный.",
+      "uz": "Bu qahva juda mazali."
+     }
+    },
+    {
+     "s": "¿Cuánto cuestan esas gafas?",
+     "t": {
+      "ru": "Сколько стоят те очки?",
+      "uz": "U ko'zoynak qancha turadi?"
+     }
+    },
+    {
+     "s": "Aquella montaña es altísima.",
+     "t": {
+      "ru": "Вон та гора очень высокая.",
+      "uz": "Ana u tog' juda baland."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Esta libro es interesante.",
+    "right": "Este libro es interesante.",
+    "note": {
+     "ru": "libro — муж. → este.",
+     "en": "libro is masculine → este.",
+     "uz": "libro — erkak → este."
+    }
+   },
+   "tip": {
+    "ru": "Рядом — este, у тебя — ese, далеко — aquel.",
+    "en": "Near me — este, near you — ese, far — aquel.",
+    "uz": "Yonimda — este, senda — ese, uzoqda — aquel."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ chaqueta es mía. (here)",
+     "o": [
+      "Esta",
+      "Este",
+      "Estos"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "chaqueta — жен. → esta.",
+      "en": "Feminine → esta.",
+      "uz": "Ayol → esta."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Ves ___ edificio de allí? (far)",
+     "o": [
+      "aquel",
+      "este",
+      "esa"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Далеко, муж. → aquel.",
+      "en": "Far, masculine → aquel.",
+      "uz": "Uzoqda, erkak → aquel."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Qué es ___? (no noun)",
+     "o": [
+      "esto",
+      "este",
+      "esta"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Без существительного → esto.",
+      "en": "No noun → esto.",
+      "uz": "Otsiz → esto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Estos zapatos son nuevos.",
+      "Estas zapatos son nuevos."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "zapatos — муж. мн. → estos.",
+      "en": "Masculine plural → estos.",
+      "uz": "Erkak, ko'plik → estos."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Eso no es importante.",
+      "Ese no es importante."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Идея без существительного → eso.",
+      "en": "An idea, no noun → eso.",
+      "uz": "Otsiz g'oya → eso."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Esta",
+      "ciudad",
+      "es",
+      "muy",
+      "bonita."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "¿De",
+      "quién",
+      "es",
+      "aquella",
+      "casa?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Me gustan ___ flores. (these)",
+     "a": [
+      "estas"
+     ],
+     "e": {
+      "ru": "flores — жен. мн. → estas.",
+      "en": "Feminine plural → estas.",
+      "uz": "Ayol, ko'plik → estas."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*este* libro (aquí)",
+     "*ese* libro (ahí)",
+     "*aquel* libro (allí)"
+    ],
+    "q": {
+     "ru": "Что меняется?",
+     "en": "What changes?",
+     "uz": "Nima o'zgaradi?"
+    },
+    "o": [
+     {
+      "ru": "Расстояние до предмета",
+      "en": "The distance to the thing",
+      "uz": "Narsagacha masofa"
+     },
+     {
+      "ru": "Цвет книги",
+      "en": "The colour",
+      "uz": "Rang"
+     },
+     {
+      "ru": "Время",
+      "en": "The tense",
+      "uz": "Zamon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ niños son mis primos. (there, near you)",
+     "o": [
+      "Esos",
+      "Esas",
+      "Ese"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Муж. мн. → esos.",
+      "en": "Masculine plural → esos.",
+      "uz": "Erkak, ko'plik → esos."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "En ___ época no había móviles. (long ago)",
+     "o": [
+      "aquella",
+      "esta",
+      "esa época de"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Далёкое прошлое → aquella.",
+      "en": "Distant past → aquella.",
+      "uz": "Uzoq o'tmish → aquella."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Me das ___ revista? (here)",
+     "o": [
+      "esta",
+      "este",
+      "esto"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "revista — жен. → esta.",
+      "en": "Feminine → esta.",
+      "uz": "Ayol → esta."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши 3 предмета вокруг тебя на разном расстоянии (este, ese, aquel).",
+    "en": "Describe 3 things around you at different distances (este, ese, aquel).",
+    "uz": "Atrofingizdagi turli masofadagi 3 ta narsani tasvirlang (este, ese, aquel)."
+   }
+  },
+  {
+   "id": "muy-mucho",
+   "level": "A1",
+   "title": {
+    "ru": "Muy или mucho, bueno или bien",
+    "en": "Muy or mucho, bueno or bien",
+    "uz": "Muy yoki mucho, bueno yoki bien"
+   },
+   "sum": {
+    "ru": "Очень, много, хороший, хорошо.",
+    "en": "Very, a lot, good, well.",
+    "uz": "Juda, ko'p, yaxshi (sifat), yaxshi (ravish)."
+   },
+   "explain": {
+    "ru": [
+     "muy + прилагательное/наречие = «очень»: muy alto, muy bien. mucho с глаголом = «много»: Trabajo mucho.",
+     "mucho перед существительным согласуется: mucho dinero, mucha gente, muchos libros, muchas horas.",
+     "bueno — прилагательное (какой?): un libro bueno, un buen libro. bien — наречие (как?): Hablas bien. Estoy bien."
+    ],
+    "en": [
+     "muy + adjective/adverb = very: muy alto. mucho with a verb = a lot: Trabajo mucho.",
+     "mucho before a noun agrees: mucho dinero, mucha gente, muchos libros.",
+     "bueno is an adjective (what kind?): un buen libro. bien is an adverb (how?): Hablas bien."
+    ],
+    "uz": [
+     "muy + sifat/ravish = «juda»: muy alto. mucho fe'l bilan = «ko'p»: Trabajo mucho.",
+     "mucho otdan oldin moslashadi: mucho dinero, mucha gente, muchos libros.",
+     "bueno — sifat (qanday?): un buen libro. bien — ravish (qanday qilib?): Hablas bien."
+    ]
+   },
+   "formula": [
+    "muy + adjective",
+    "verb + mucho · mucho/mucha/muchos + noun",
+    "bueno (adjective) · bien (adverb)"
+   ],
+   "examples": [
+    {
+     "s": "Hoy hace mucho calor.",
+     "t": {
+      "ru": "Сегодня очень жарко.",
+      "uz": "Bugun juda issiq."
+     }
+    },
+    {
+     "s": "Mi hermana habla muy bien inglés.",
+     "t": {
+      "ru": "Моя сестра очень хорошо говорит по-английски.",
+      "uz": "Opam inglizchani juda yaxshi gapiradi."
+     }
+    },
+    {
+     "s": "Tengo muchos amigos aquí.",
+     "t": {
+      "ru": "У меня здесь много друзей.",
+      "uz": "Bu yerda do'stlarim ko'p."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Estoy mucho cansado.",
+    "right": "Estoy muy cansado.",
+    "note": {
+     "ru": "Перед прилагательным → muy.",
+     "en": "Before an adjective → muy.",
+     "uz": "Sifat oldidan → muy."
+    }
+   },
+   "tip": {
+    "ru": "Перед прилагательным — muy; с глаголом и существительным — mucho.",
+    "en": "Before an adjective — muy; with verbs and nouns — mucho.",
+    "uz": "Sifat oldidan — muy; fe'l va ot bilan — mucho."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "La película es ___ interesante.",
+     "o": [
+      "muy",
+      "mucho",
+      "mucha"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прилагательное → muy.",
+      "en": "Adjective → muy.",
+      "uz": "Sifat → muy."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Hay ___ gente en la calle.",
+     "o": [
+      "mucha",
+      "mucho",
+      "muy"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "gente — жен. → mucha.",
+      "en": "gente is feminine → mucha.",
+      "uz": "gente — ayol → mucha."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Cocinas muy ___.",
+     "o": [
+      "bien",
+      "bueno",
+      "buena"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Как? → bien.",
+      "en": "How? → bien.",
+      "uz": "Qanday qilib? → bien."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Me gusta mucho bailar.",
+      "Me gusta muy bailar."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С глаголом → mucho.",
+      "en": "With a verb → mucho.",
+      "uz": "Fe'l bilan → mucho."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Es un buen profesor.",
+      "Es un bien profesor."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Какой? → buen(o).",
+      "en": "What kind? → buen(o).",
+      "uz": "Qanday? → buen(o)."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mis",
+      "abuelos",
+      "viven",
+      "muy",
+      "lejos."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Necesito",
+      "mucho",
+      "tiempo",
+      "para",
+      "estudiar."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ellos estudian ___. (a lot)",
+     "a": [
+      "mucho"
+     ],
+     "e": {
+      "ru": "С глаголом → mucho.",
+      "en": "With a verb → mucho.",
+      "uz": "Fe'l bilan → mucho."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Es *muy* rápido.",
+     "Corre *mucho*.",
+     "Tiene *muchos* coches."
+    ],
+    "q": {
+     "ru": "Когда muy, а когда mucho?",
+     "en": "When muy and when mucho?",
+     "uz": "Qachon muy, qachon mucho?"
+    },
+    "o": [
+     {
+      "ru": "muy — с прилагательным; mucho — с глаголом и существительным",
+      "en": "muy with adjectives; mucho with verbs and nouns",
+      "uz": "muy — sifat bilan; mucho — fe'l va ot bilan"
+     },
+     {
+      "ru": "Это синонимы",
+      "en": "They are synonyms",
+      "uz": "Sinonim"
+     },
+     {
+      "ru": "muy — только в вопросах",
+      "en": "muy only in questions",
+      "uz": "muy faqat savollarda"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "¿Cómo estás? — ___, gracias.",
+     "o": [
+      "Bien",
+      "Bueno",
+      "Mucho"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Состояние → bien.",
+      "en": "How you are → bien.",
+      "uz": "Holat → bien."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tengo ___ preguntas.",
+     "o": [
+      "muchas",
+      "muchos",
+      "muy"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "preguntas — жен. мн.",
+      "en": "Feminine plural.",
+      "uz": "Ayol, ko'plik."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Esta paella está ___ buena.",
+     "o": [
+      "muy",
+      "mucho",
+      "mucha"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Перед прилагательным → muy.",
+      "en": "Before an adjective → muy.",
+      "uz": "Sifat oldidan → muy."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о себе с muy, mucho и bien.",
+    "en": "Write 3 sentences about yourself with muy, mucho and bien.",
+    "uz": "O'zingiz haqida muy, mucho va bien bilan 3 ta gap yozing."
+   }
+  },
+  {
    "id": "ser-estar",
    "level": "A2",
    "title": {
@@ -5217,6 +5737,524 @@
    }
   },
   {
+   "id": "indefinidos",
+   "level": "A2",
+   "title": {
+    "ru": "Algo, nada, alguien, nadie, alguno, ninguno",
+    "en": "Algo, nada, alguien, nadie, alguno, ninguno",
+    "uz": "Algo, nada, alguien, nadie, alguno, ninguno"
+   },
+   "sum": {
+    "ru": "Что-то, ничего, кто-то, никто, какой-то, ни один.",
+    "en": "Something, nothing, someone, no one, some, none.",
+    "uz": "Nimadir, hech narsa, kimdir, hech kim, qandaydir, hech biri."
+   },
+   "explain": {
+    "ru": [
+     "algo (что-то) ↔ nada (ничего), alguien (кто-то) ↔ nadie (никто). Они не меняются: ¿Quieres algo? No quiero nada.",
+     "alguno/a/os/as (какой-то, некоторые) ↔ ninguno/a (ни один) согласуются: algún libro, alguna idea, ningún problema. Перед муж. ед. — algún, ningún.",
+     "В испанском нормально двойное отрицание: No veo a nadie. No tengo ninguna pregunta. Если слово стоит перед глаголом, no не нужен: Nadie vino."
+    ],
+    "en": [
+     "algo ↔ nada, alguien ↔ nadie. They do not change: ¿Quieres algo? No quiero nada.",
+     "alguno ↔ ninguno agree with the noun: algún libro, alguna idea, ningún problema (shortened before masculine singular).",
+     "Double negatives are normal: No veo a nadie. If the word comes first, drop no: Nadie vino."
+    ],
+    "uz": [
+     "algo ↔ nada, alguien ↔ nadie. O'zgarmaydi: ¿Quieres algo? No quiero nada.",
+     "alguno ↔ ninguno otga moslashadi: algún libro, alguna idea, ningún problema.",
+     "Qo'sh inkor oddiy: No veo a nadie. So'z fe'ldan oldin bo'lsa, no kerak emas: Nadie vino."
+    ]
+   },
+   "formula": [
+    "algo ↔ nada · alguien ↔ nadie",
+    "algún / alguna ↔ ningún / ninguna",
+    "No … nadie · Nadie + verb"
+   ],
+   "examples": [
+    {
+     "s": "¿Hay alguien en casa?",
+     "t": {
+      "ru": "Дома кто-нибудь есть?",
+      "uz": "Uyda kimdir bormi?"
+     }
+    },
+    {
+     "s": "No he comido nada hoy.",
+     "t": {
+      "ru": "Я сегодня ничего не ел.",
+      "uz": "Bugun hech narsa yemadim."
+     }
+    },
+    {
+     "s": "¿Tienes algún plan para el sábado?",
+     "t": {
+      "ru": "У тебя есть какие-то планы на субботу?",
+      "uz": "Shanbaga biror rejang bormi?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "No tengo algún problema.",
+    "right": "No tengo ningún problema.",
+    "note": {
+     "ru": "В отрицании → ningún.",
+     "en": "In a negative → ningún.",
+     "uz": "Inkorda → ningún."
+    }
+   },
+   "tip": {
+    "ru": "В вопросе и утверждении — alg-; в отрицании — nad-/ning-.",
+    "en": "Questions and statements — alg-; negatives — nad-/ning-.",
+    "uz": "Savol va tasdiqda — alg-; inkorda — nad-/ning-."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "¿Quieres ___ de beber?",
+     "o": [
+      "algo",
+      "nada",
+      "alguien"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Что-нибудь → algo.",
+      "en": "Something → algo.",
+      "uz": "Nimadir → algo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No conozco a ___ aquí.",
+     "o": [
+      "nadie",
+      "alguien",
+      "nada"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Отрицание, человек → nadie.",
+      "en": "Negative, a person → nadie.",
+      "uz": "Inkor, odam → nadie."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No hay ___ tienda abierta.",
+     "o": [
+      "ninguna",
+      "ningún",
+      "alguna"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "tienda — жен., отрицание → ninguna.",
+      "en": "Feminine, negative → ninguna.",
+      "uz": "Ayol, inkor → ninguna."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Nadie me llamó.",
+      "Nadie no me llamó."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Перед глаголом — без no.",
+      "en": "First position — no no.",
+      "uz": "Fe'ldan oldin — no siz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "¿Has visto algún perro por aquí?",
+      "¿Has visto alguno perro por aquí?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Перед муж. ед. → algún.",
+      "en": "Before masculine singular → algún.",
+      "uz": "Erkak birlik oldidan → algún."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "No",
+      "hay",
+      "nada",
+      "en",
+      "la",
+      "nevera."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "¿Alguien",
+      "sabe",
+      "la",
+      "respuesta?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "No tengo ___ idea. (none)",
+     "a": [
+      "ninguna"
+     ],
+     "e": {
+      "ru": "idea — жен. → ninguna.",
+      "en": "Feminine → ninguna.",
+      "uz": "Ayol → ninguna."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "¿Hay *algo*?",
+     "No hay *nada*.",
+     "*Nadie* lo sabe."
+    ],
+    "q": {
+     "ru": "Когда нужен no?",
+     "en": "When do you need no?",
+     "uz": "no qachon kerak?"
+    },
+    "o": [
+     {
+      "ru": "Когда nada/nadie стоят после глагола",
+      "en": "When nada/nadie come after the verb",
+      "uz": "nada/nadie fe'ldan keyin kelganda"
+     },
+     {
+      "ru": "Всегда",
+      "en": "Always",
+      "uz": "Doim"
+     },
+     {
+      "ru": "Никогда",
+      "en": "Never",
+      "uz": "Hech qachon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ de mis amigos habla chino. (none)",
+     "o": [
+      "Ninguno",
+      "Ningún",
+      "Nadie de"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Без существительного → ninguno.",
+      "en": "Without a noun → ninguno.",
+      "uz": "Otsiz → ninguno."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Necesitas ___? (anything)",
+     "o": [
+      "algo",
+      "alguien algo",
+      "nada no"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вопрос → algo.",
+      "en": "Question → algo.",
+      "uz": "Savol → algo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No viene ___ a la reunión.",
+     "o": [
+      "nadie",
+      "alguien",
+      "ninguno de"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Отрицание, люди → nadie.",
+      "en": "Negative, people → nadie.",
+      "uz": "Inkor, odamlar → nadie."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своих выходных с algo/nada и alguien/nadie.",
+    "en": "Write 3 sentences about your weekend with algo/nada and alguien/nadie.",
+    "uz": "Dam olish kunlaringiz haqida algo/nada va alguien/nadie bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "como-gustar",
+   "level": "A2",
+   "title": {
+    "ru": "Глаголы как gustar: encantar, doler, interesar",
+    "en": "Verbs like gustar: encantar, doler, interesar",
+    "uz": "gustar kabi fe'llar: encantar, doler, interesar"
+   },
+   "sum": {
+    "ru": "Мне болит, меня интересует, мне не хватает.",
+    "en": "It hurts me, it interests me, I am missing.",
+    "uz": "Menga og'riyapti, meni qiziqtiradi, menga yetishmaydi."
+   },
+   "explain": {
+    "ru": [
+     "Строятся как gustar: кому? (me, te, le, nos, os, les) + глагол + что: Me encanta el cine. Me duele la cabeza.",
+     "Глагол согласуется с тем, что нравится/болит: Me duelen los pies. Nos interesan los idiomas.",
+     "Частые: encantar (обожать), interesar, doler (o→ue), importar, molestar, faltar (не хватать), parecer (казаться): ¿Qué te parece? Me falta tiempo."
+    ],
+    "en": [
+     "Built like gustar: to whom (me, te, le…) + verb + what: Me encanta el cine. Me duele la cabeza.",
+     "The verb agrees with the thing: Me duelen los pies. Nos interesan los idiomas.",
+     "Common: encantar, interesar, doler (o→ue), importar, molestar, faltar, parecer: ¿Qué te parece?"
+    ],
+    "uz": [
+     "gustar kabi tuziladi: kimga (me, te, le…) + fe'l + nima: Me encanta el cine. Me duele la cabeza.",
+     "Fe'l narsaga moslashadi: Me duelen los pies. Nos interesan los idiomas.",
+     "Ko'p uchraydigan: encantar, interesar, doler (o→ue), importar, molestar, faltar, parecer: ¿Qué te parece?"
+    ]
+   },
+   "formula": [
+    "me / te / le / nos / les + verb + thing",
+    "duele (one) · duelen (many)",
+    "encantar · doler · faltar · parecer · molestar"
+   ],
+   "examples": [
+    {
+     "s": "Me duele mucho la espalda.",
+     "t": {
+      "ru": "У меня сильно болит спина.",
+      "uz": "Belim qattiq og'riyapti."
+     }
+    },
+    {
+     "s": "A mi madre le encantan las flores.",
+     "t": {
+      "ru": "Моя мама обожает цветы.",
+      "uz": "Onam gullarni juda yaxshi ko'radi."
+     }
+    },
+    {
+     "s": "¿Qué te parece este plan?",
+     "t": {
+      "ru": "Что ты думаешь об этом плане?",
+      "uz": "Bu reja senga qanday tuyuladi?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Yo duelo la cabeza.",
+    "right": "Me duele la cabeza.",
+    "note": {
+     "ru": "Как gustar: me duele.",
+     "en": "Like gustar: me duele.",
+     "uz": "gustar kabi: me duele."
+    }
+   },
+   "tip": {
+    "ru": "Кому + глагол (по вещи) + что.",
+    "en": "To whom + verb (agrees with the thing) + what.",
+    "uz": "Kimga + fe'l (narsaga mos) + nima."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Me ___ los ojos. (doler)",
+     "o": [
+      "duelen",
+      "duele",
+      "duelo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ojos — мн. → duelen.",
+      "en": "Plural → duelen.",
+      "uz": "Ko'plik → duelen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "A nosotros ___ encanta viajar.",
+     "o": [
+      "nos",
+      "les",
+      "os"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "nosotros → nos.",
+      "en": "nosotros → nos.",
+      "uz": "nosotros → nos."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Me ___ dinero para el viaje. (not enough)",
+     "o": [
+      "falta",
+      "duele",
+      "parece"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Не хватает → faltar.",
+      "en": "Lacking → faltar.",
+      "uz": "Yetishmaydi → faltar."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "¿Te molesta la música?",
+      "¿Tú molestas la música?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Как gustar → te molesta.",
+      "en": "Like gustar → te molesta.",
+      "uz": "gustar kabi → te molesta."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "A Juan le interesan las noticias.",
+      "A Juan le interesa las noticias."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "noticias — мн. → interesan.",
+      "en": "Plural → interesan.",
+      "uz": "Ko'plik → interesan."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Me",
+      "encanta",
+      "el",
+      "chocolate",
+      "negro."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "¿Te",
+      "duele",
+      "la",
+      "garganta?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "A ellos no ___ importa el precio.",
+     "a": [
+      "les"
+     ],
+     "e": {
+      "ru": "ellos → les.",
+      "en": "ellos → les.",
+      "uz": "ellos → les."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Me *duele* la mano.",
+     "Me *duelen* las manos."
+    ],
+    "q": {
+     "ru": "Почему duele и duelen?",
+     "en": "Why duele and duelen?",
+     "uz": "Nega duele va duelen?"
+    },
+    "o": [
+     {
+      "ru": "Глагол согласуется с тем, что болит",
+      "en": "The verb agrees with what hurts",
+      "uz": "Fe'l og'riyotgan narsaga moslashadi"
+     },
+     {
+      "ru": "Разные лица",
+      "en": "Different persons",
+      "uz": "Turli shaxslar"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "¿Qué ___ parece la idea? (to you, tú)",
+     "o": [
+      "te",
+      "le",
+      "me"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "tú → te.",
+      "en": "tú → te.",
+      "uz": "tú → te."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nos ___ los ruidos de la calle. (molestar)",
+     "o": [
+      "molestan",
+      "molesta",
+      "molestamos"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ruidos — мн.",
+      "en": "Plural.",
+      "uz": "Ko'plik."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "A mi padre ___ duele la rodilla.",
+     "o": [
+      "le",
+      "lo",
+      "se"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Кому → le.",
+      "en": "To whom → le.",
+      "uz": "Kimga → le."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что тебя интересует, что ты обожаешь и чего тебе не хватает (interesar, encantar, faltar).",
+    "en": "Write what interests you, what you love and what you lack (interesar, encantar, faltar).",
+    "uz": "Sizni nima qiziqtirishi, nimani juda yaxshi ko'rishingiz va nima yetishmasligini yozing (interesar, encantar, faltar)."
+   }
+  },
+  {
    "id": "perfecto",
    "level": "B1",
    "title": {
@@ -7823,6 +8861,528 @@
    }
   },
   {
+   "id": "dobles-pronombres",
+   "level": "B1",
+   "title": {
+    "ru": "Два местоимения: me lo, se lo",
+    "en": "Double pronouns: me lo, se lo",
+    "uz": "Ikki olmosh: me lo, se lo"
+   },
+   "sum": {
+    "ru": "Кому + что: порядок и превращение le → se.",
+    "en": "To whom + what: order and le → se.",
+    "uz": "Kimga + nima: tartib va le → se."
+   },
+   "explain": {
+    "ru": [
+     "Порядок: сначала «кому» (me, te, nos, os, le/les), потом «что» (lo, la, los, las): ¿El libro? Te lo doy.",
+     "le/les перед lo/la/los/las превращается в se: le + lo → se lo: ¿Las fotos? Se las mandé a Ana.",
+     "Перед спрягаемым глаголом — отдельно, с инфинитивом/герундием/утвердительным приказом — слитно с ударением: Voy a dártelo. Dámelo."
+    ],
+    "en": [
+     "Order: first “to whom” (me, te, nos…), then “what” (lo, la, los, las): ¿El libro? Te lo doy.",
+     "le/les before lo/la/los/las becomes se: le + lo → se lo: Se las mandé a Ana.",
+     "Before a conjugated verb — separate; attached to infinitive/gerund/affirmative command, with an accent: Voy a dártelo. Dámelo."
+    ],
+    "uz": [
+     "Tartib: avval «kimga» (me, te, nos…), keyin «nimani» (lo, la, los, las): ¿El libro? Te lo doy.",
+     "le/les lo/la/los/las oldidan se bo'ladi: le + lo → se lo: Se las mandé a Ana.",
+     "Tuslangan fe'ldan oldin — alohida; infinitiv/gerundiy/buyruqqa qo'shib, urg'u bilan: Voy a dártelo. Dámelo."
+    ]
+   },
+   "formula": [
+    "indirect (me / te / se) + direct (lo / la)",
+    "le / les + lo → se lo",
+    "dámelo · voy a dártelo"
+   ],
+   "examples": [
+    {
+     "s": "¿Me prestas tu coche? — Sí, te lo presto.",
+     "t": {
+      "ru": "Одолжишь мне машину? — Да, одолжу.",
+      "uz": "Mashinangni berib turasanmi? — Ha, berib turaman."
+     }
+    },
+    {
+     "s": "Le compré un regalo y se lo di ayer.",
+     "t": {
+      "ru": "Я купил ему подарок и вчера его отдал.",
+      "uz": "Unga sovg'a oldim va kecha berdim."
+     }
+    },
+    {
+     "s": "Explícamelo otra vez, por favor.",
+     "t": {
+      "ru": "Объясни мне это ещё раз, пожалуйста.",
+      "uz": "Menga buni yana bir bor tushuntir, iltimos."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Le lo di a mi hermano.",
+    "right": "Se lo di a mi hermano.",
+    "note": {
+     "ru": "le + lo → se lo.",
+     "en": "le + lo → se lo.",
+     "uz": "le + lo → se lo."
+    }
+   },
+   "tip": {
+    "ru": "Кому раньше чего; le/les + lo → se lo.",
+    "en": "To whom before what; le/les + lo → se lo.",
+    "uz": "Kimga — nimadan oldin; le/les + lo → se lo."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "¿La carta? ___ envío mañana. (to you, tú)",
+     "o": [
+      "Te la",
+      "La te",
+      "Se la"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "te перед la.",
+      "en": "te before la.",
+      "uz": "te la dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Los libros? ___ di a mis alumnos.",
+     "o": [
+      "Se los",
+      "Les los",
+      "Los les"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "les + los → se los.",
+      "en": "les + los → se los.",
+      "uz": "les + los → se los."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Quiero ___ ahora. (tell you it, tú)",
+     "o": [
+      "decírtelo",
+      "te lo decir",
+      "decirlote"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С инфинитивом слитно.",
+      "en": "Attached to the infinitive.",
+      "uz": "Infinitivga qo'shib."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "¿Las llaves? Dámelas.",
+      "¿Las llaves? Dalas me."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Приказ: слитно, me перед las.",
+      "en": "Command: attached, me before las.",
+      "uz": "Buyruq: qo'shib, me las dan oldin."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "No se lo digas a nadie.",
+      "No le lo digas a nadie."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "le + lo → se lo.",
+      "en": "le + lo → se lo.",
+      "uz": "le + lo → se lo."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mi",
+      "abuela",
+      "me",
+      "lo",
+      "contó."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Se",
+      "lo",
+      "explico",
+      "mañana."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "¿El dinero? Ya ___ lo devolví a Pedro.",
+     "a": [
+      "se"
+     ],
+     "e": {
+      "ru": "le → se перед lo.",
+      "en": "le → se before lo.",
+      "uz": "lo oldidan le → se."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Doy el libro *a Ana*. → *Le* doy el libro.",
+     "→ *Se lo* doy."
+    ],
+    "q": {
+     "ru": "Что случилось с le?",
+     "en": "What happened to le?",
+     "uz": "le ga nima bo'ldi?"
+    },
+    "o": [
+     {
+      "ru": "Перед lo превратилось в se",
+      "en": "Before lo it became se",
+      "uz": "lo oldidan se bo'ldi"
+     },
+     {
+      "ru": "Исчезло",
+      "en": "It disappeared",
+      "uz": "Yo'qoldi"
+     },
+     {
+      "ru": "Стало lo",
+      "en": "It became lo",
+      "uz": "lo bo'ldi"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "¿Nos traes la cuenta? — Sí, ___ traigo enseguida.",
+     "o": [
+      "os la",
+      "la os",
+      "se la"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "os перед la.",
+      "en": "os before la.",
+      "uz": "os la dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿La foto? Voy a ___ a mi madre.",
+     "o": [
+      "mandársela",
+      "mandarlese",
+      "le la mandar"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "le + la → se la, слитно.",
+      "en": "le + la → se la, attached.",
+      "uz": "le + la → se la, qo'shib."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "¿Me lo repites? — Sí, ___ repito.",
+     "o": [
+      "te lo",
+      "lo te",
+      "se lo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "te перед lo.",
+      "en": "te before lo.",
+      "uz": "te lo dan oldin."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Ответь на 3 вопроса двумя местоимениями (¿Le das el regalo a tu madre? → Sí, se lo doy).",
+    "en": "Answer 3 questions with two pronouns (¿Le das el regalo a tu madre? → Sí, se lo doy).",
+    "uz": "3 ta savolga ikki olmosh bilan javob bering (¿Le das el regalo a tu madre? → Sí, se lo doy)."
+   }
+  },
+  {
+   "id": "causa-consecuencia",
+   "level": "B1",
+   "title": {
+    "ru": "Причина и следствие: porque, como, así que",
+    "en": "Cause and consequence: porque, como, así que",
+    "uz": "Sabab va natija: porque, como, así que"
+   },
+   "sum": {
+    "ru": "Почему и поэтому.",
+    "en": "Why and so.",
+    "uz": "Nega va shuning uchun."
+   },
+   "explain": {
+    "ru": [
+     "Причина: porque (потому что — обычно после главного), como (так как — в начале фразы), ya que / puesto que (поскольку — книжнее): Como llovía, no salimos.",
+     "С существительным: por + сущ. (из-за), gracias a (благодаря), a causa de (по причине): Gracias a ti, aprobé.",
+     "Следствие: así que (так что), por eso (поэтому), por lo tanto (следовательно), entonces (тогда, разговорное): Estaba cansado, así que me acosté."
+    ],
+    "en": [
+     "Cause: porque (after the main clause), como (at the start), ya que / puesto que (more formal): Como llovía, no salimos.",
+     "With a noun: por, gracias a (good), a causa de: Gracias a ti, aprobé.",
+     "Consequence: así que, por eso, por lo tanto, entonces (spoken): Estaba cansado, así que me acosté."
+    ],
+    "uz": [
+     "Sabab: porque (bosh gapdan keyin), como (gap boshida), ya que / puesto que (rasmiyroq): Como llovía, no salimos.",
+     "Ot bilan: por, gracias a (yaxshi), a causa de: Gracias a ti, aprobé.",
+     "Natija: así que, por eso, por lo tanto, entonces (og'zaki): Estaba cansado, así que me acosté."
+    ]
+   },
+   "formula": [
+    "porque · como (start) · ya que",
+    "por · gracias a · a causa de + noun",
+    "así que · por eso · por lo tanto"
+   ],
+   "examples": [
+    {
+     "s": "No fui a clase porque estaba enfermo.",
+     "t": {
+      "ru": "Я не пошёл на урок, потому что был болен.",
+      "uz": "Kasal bo'lganim uchun darsga bormadim."
+     }
+    },
+    {
+     "s": "Como no tenía dinero, me quedé en casa.",
+     "t": {
+      "ru": "Так как денег не было, я остался дома.",
+      "uz": "Pulim yo'qligi uchun uyda qoldim."
+     }
+    },
+    {
+     "s": "Ha estudiado mucho; por eso ha aprobado.",
+     "t": {
+      "ru": "Он много учился, поэтому сдал.",
+      "uz": "U ko'p o'qidi, shuning uchun o'tdi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Porque llovía, no salimos.",
+    "right": "Como llovía, no salimos.",
+    "note": {
+     "ru": "Причина в начале фразы → como.",
+     "en": "Cause at the start → como.",
+     "uz": "Gap boshida sabab → como."
+    }
+   },
+   "tip": {
+    "ru": "В начале — como; после — porque; итог — así que / por eso.",
+    "en": "At the start — como; after — porque; result — así que / por eso.",
+    "uz": "Boshida — como; keyin — porque; natija — así que / por eso."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ es tarde, vamos a casa. (at the start)",
+     "o": [
+      "Como",
+      "Porque",
+      "Así que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В начале → Como.",
+      "en": "At the start → Como.",
+      "uz": "Boshida → Como."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Llegué tarde ___ el tráfico.",
+     "o": [
+      "por",
+      "porque",
+      "así que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С существительным → por.",
+      "en": "With a noun → por.",
+      "uz": "Ot bilan → por."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No tenía hambre, ___ no comí.",
+     "o": [
+      "así que",
+      "porque",
+      "como"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → así que.",
+      "en": "Consequence → así que.",
+      "uz": "Natija → así que."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "¿Por qué lloras? — Porque estoy triste.",
+      "¿Por qué lloras? — Como estoy triste."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ответ на ¿por qué? → porque.",
+      "en": "Answering ¿por qué? → porque.",
+      "uz": "¿por qué? ga javob → porque."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Gracias a tu ayuda, terminé a tiempo.",
+      "A causa de tu ayuda, terminé a tiempo."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Хорошее → gracias a.",
+      "en": "Something good → gracias a.",
+      "uz": "Yaxshi narsa → gracias a."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Como",
+      "hacía",
+      "frío,",
+      "me",
+      "puse",
+      "el",
+      "abrigo."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Perdí",
+      "el",
+      "autobús,",
+      "por",
+      "eso",
+      "llegué",
+      "tarde."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Aprobé el examen ___ a mi profesora. (thanks)",
+     "a": [
+      "gracias"
+     ],
+     "e": {
+      "ru": "→ gracias a.",
+      "en": "→ gracias a.",
+      "uz": "→ gracias a."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Como* llueve, me quedo.",
+     "Me quedo *porque* llueve.",
+     "Llueve, *así que* me quedo."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Смысл тот же, меняется порядок мыслей",
+      "en": "Same idea, different order",
+      "uz": "Fikr bir xil, tartibi har xil"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "El vuelo se canceló ___ la tormenta.",
+     "o": [
+      "a causa de",
+      "gracias a",
+      "así que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Плохое + существительное → a causa de.",
+      "en": "Bad + noun → a causa de.",
+      "uz": "Yomon + ot → a causa de."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Estoy agotado; ___ , me voy a dormir.",
+     "o": [
+      "por lo tanto",
+      "porque",
+      "como"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → por lo tanto.",
+      "en": "Consequence → por lo tanto.",
+      "uz": "Natija → por lo tanto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No salgo ___ tengo mucho trabajo.",
+     "o": [
+      "porque",
+      "así que",
+      "por eso"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина после главного → porque.",
+      "en": "Cause after → porque.",
+      "uz": "Keyin sabab → porque."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Объясни 3 решения: почему (como, porque) и что из этого вышло (así que, por eso).",
+    "en": "Explain 3 decisions: why (como, porque) and the result (así que, por eso).",
+    "uz": "3 ta qarorni tushuntiring: nega (como, porque) va natijasi (así que, por eso)."
+   }
+  },
+  {
    "id": "imperfecto-subjuntivo",
    "level": "B2",
    "title": {
@@ -9389,6 +10949,1061 @@
     "ru": "Напиши 3 предложения: одно с aunque + факт, одно с aunque + «даже если», одно с a pesar de.",
     "en": "Write 3 sentences: aunque + fact, aunque + “even if”, and a pesar de.",
     "uz": "3 ta gap yozing: aunque + fakt, aunque + «hatto», va a pesar de."
+   }
+  },
+  {
+   "id": "futuro-perfecto",
+   "level": "B2",
+   "title": {
+    "ru": "Futuro perfecto и condicional compuesto",
+    "en": "Future perfect and conditional perfect",
+    "uz": "Futuro perfecto va condicional compuesto"
+   },
+   "sum": {
+    "ru": "Habré terminado, habría ido.",
+    "en": "Habré terminado, habría ido.",
+    "uz": "Habré terminado, habría ido."
+   },
+   "explain": {
+    "ru": [
+     "Futuro perfecto: habré, habrás, habrá, habremos, habréis, habrán + причастие — будет сделано к моменту: Para junio habré terminado la carrera.",
+     "Также догадка о недавнем прошлом: No contesta. Se habrá dormido (наверное, уснул).",
+     "Condicional compuesto: habría, habrías, habría… + причастие — «сделал бы» (но не сделал): Yo habría ido, pero estaba enfermo. Часто с si + pluscuamperfecto de subjuntivo."
+    ],
+    "en": [
+     "Future perfect: habré, habrás, habrá… + participle — done by a future moment: Para junio habré terminado.",
+     "Also a guess about the recent past: No contesta. Se habrá dormido.",
+     "Conditional perfect: habría… + participle — would have done: Yo habría ido, pero estaba enfermo."
+    ],
+    "uz": [
+     "Futuro perfecto: habré, habrás, habrá… + sifatdosh — kelajakdagi paytgacha: Para junio habré terminado.",
+     "Yaqin o'tmish haqida taxmin ham: No contesta. Se habrá dormido.",
+     "Condicional compuesto: habría… + sifatdosh — «qilgan bo'lardim»: Yo habría ido, pero estaba enfermo."
+    ]
+   },
+   "formula": [
+    "habré / habrás / habrá + participle",
+    "Se habrá dormido = probably",
+    "habría + participle = would have"
+   ],
+   "examples": [
+    {
+     "s": "Cuando llegues, ya habremos cenado.",
+     "t": {
+      "ru": "Когда ты приедешь, мы уже поужинаем.",
+      "uz": "Sen kelganingda biz kechki ovqatni yeb bo'lgan bo'lamiz."
+     }
+    },
+    {
+     "s": "Juan no ha venido. Habrá perdido el tren.",
+     "t": {
+      "ru": "Хуан не пришёл. Наверное, опоздал на поезд.",
+      "uz": "Xuan kelmadi. Poyezdga ulgurmagan bo'lsa kerak."
+     }
+    },
+    {
+     "s": "Con más tiempo, lo habría hecho mejor.",
+     "t": {
+      "ru": "Будь у меня больше времени, я бы сделал лучше.",
+      "uz": "Ko'proq vaqtim bo'lganida, yaxshiroq qilgan bo'lardim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Para 2030 terminaré ya la universidad.",
+    "right": "Para 2030 habré terminado la universidad.",
+    "note": {
+     "ru": "para + момент → habré + причастие.",
+     "en": "para + time → habré + participle.",
+     "uz": "para + vaqt → habré + sifatdosh."
+    }
+   },
+   "tip": {
+    "ru": "К моменту → habré; «сделал бы» → habría.",
+    "en": "By then → habré; would have → habría.",
+    "uz": "O'sha paytgacha → habré; «qilgan bo'lardim» → habría."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Para el viernes ___ el informe. (terminar, yo)",
+     "o": [
+      "habré terminado",
+      "habría terminado",
+      "terminaba"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "К пятнице → habré terminado.",
+      "en": "By Friday → habré terminado.",
+      "uz": "Jumagacha → habré terminado."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Yo en tu lugar no ___ eso. (decir)",
+     "o": [
+      "habría dicho",
+      "habré dicho",
+      "había dicho"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "«Не сказал бы» → habría dicho.",
+      "en": "Would not have said → habría dicho.",
+      "uz": "«Aytmagan bo'lardim» → habría dicho."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Está muy feliz. ___ buenas noticias. (recibir, guess)",
+     "o": [
+      "Habrá recibido",
+      "Habría recibido",
+      "Recibirá"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Догадка → habrá recibido.",
+      "en": "A guess → habrá recibido.",
+      "uz": "Taxmin → habrá recibido."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Si me lo hubieras dicho, te habría ayudado.",
+      "Si me lo hubieras dicho, te habré ayudado."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Нереальное прошлое → habría.",
+      "en": "Unreal past → habría.",
+      "uz": "Haqiqiy bo'lmagan o'tmish → habría."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Dentro de un año habrán abierto el museo.",
+      "Dentro de un año habían abierto el museo."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "К моменту в будущем → habrán.",
+      "en": "By a future time → habrán.",
+      "uz": "Kelajakdagi paytgacha → habrán."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "A",
+      "las",
+      "diez",
+      "ya",
+      "habré",
+      "salido",
+      "de",
+      "casa."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Nosotros",
+      "habríamos",
+      "llegado",
+      "antes."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "¿Dónde están mis llaves? Las ___ dejado en el coche. (guess)",
+     "a": [
+      "habré",
+      "habrás"
+     ],
+     "e": {
+      "ru": "Догадка → habré/habrás dejado.",
+      "en": "A guess → habré/habrás dejado.",
+      "uz": "Taxmin → habré/habrás dejado."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Mañana a las 8 *habré terminado*.",
+     "Ayer *habría terminado*, pero no pude."
+    ],
+    "q": {
+     "ru": "Что выражает каждая форма?",
+     "en": "What does each form express?",
+     "uz": "Har bir shakl nimani bildiradi?"
+    },
+    "o": [
+     {
+      "ru": "Будет готово к моменту / сделал бы, но не вышло",
+      "en": "Done by then / would have, but did not",
+      "uz": "O'sha paytgacha tayyor / qilgan bo'lardim, lekin bo'lmadi"
+     },
+     {
+      "ru": "Одно и то же",
+      "en": "The same",
+      "uz": "Bir xil"
+     },
+     {
+      "ru": "Оба — прошлое",
+      "en": "Both are past",
+      "uz": "Ikkalasi o'tmish"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Cuando vuelvas, ya ___ todo. (limpiar, nosotros)",
+     "o": [
+      "habremos limpiado",
+      "habríamos limpiado",
+      "limpiamos"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ habremos limpiado.",
+      "en": "→ habremos limpiado.",
+      "uz": "→ habremos limpiado."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Con un mapa no nos ___ . (perder)",
+     "o": [
+      "habríamos perdido",
+      "habremos perdido",
+      "perdemos"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "«Не потерялись бы» → habríamos perdido.",
+      "en": "Would not have got lost → habríamos perdido.",
+      "uz": "«Adashmagan bo'lardik» → habríamos perdido."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "María no ha llamado. Se le ___ olvidado. (guess)",
+     "o": [
+      "habrá",
+      "habría",
+      "había"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Догадка → habrá.",
+      "en": "A guess → habrá.",
+      "uz": "Taxmin → habrá."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что ты успеешь сделать к концу года (habré…) и что сделал бы иначе в прошлом (habría…).",
+    "en": "Write what you will have done by the end of the year (habré…) and what you would have done differently (habría…).",
+    "uz": "Yil oxirigacha nimani tugatishingiz (habré…) va o'tmishda nimani boshqacha qilgan bo'lardingiz (habría…) — yozing."
+   }
+  },
+  {
+   "id": "relativo-subjuntivo",
+   "level": "B2",
+   "title": {
+    "ru": "Busco a alguien que hable…: subjuntivo в относительных",
+    "en": "Relative clauses with the subjunctive",
+    "uz": "Nisbiy gaplarda subjuntivo"
+   },
+   "sum": {
+    "ru": "Конкретный человек или такой, какого ищешь.",
+    "en": "A known person or one you are looking for.",
+    "uz": "Ma'lum odam yoki izlayotganing kabi odam."
+   },
+   "explain": {
+    "ru": [
+     "Если человек/вещь известны и существуют — indicativo: Tengo un amigo que habla chino.",
+     "Если ищем, хотим или не знаем, существует ли, — subjuntivo: Busco un amigo que hable chino. Quiero un piso que tenga terraza.",
+     "Если такого нет — тоже subjuntivo: No hay nadie que sepa la respuesta. No conozco a ningún médico que trabaje los domingos."
+    ],
+    "en": [
+     "If the person/thing is known and exists — indicative: Tengo un amigo que habla chino.",
+     "If we are looking for it or do not know if it exists — subjunctive: Busco un amigo que hable chino.",
+     "If it does not exist — also subjunctive: No hay nadie que sepa la respuesta."
+    ],
+    "uz": [
+     "Odam/narsa ma'lum va mavjud bo'lsa — indicativo: Tengo un amigo que habla chino.",
+     "Izlayotgan yoki bor-yo'qligini bilmasak — subjuntivo: Busco un amigo que hable chino.",
+     "Bunday narsa yo'q bo'lsa — ham subjuntivo: No hay nadie que sepa la respuesta."
+    ]
+   },
+   "formula": [
+    "known / existing → que + indicativo",
+    "wanted / unknown → que + subjuntivo",
+    "no hay nadie que + subjuntivo"
+   ],
+   "examples": [
+    {
+     "s": "Necesito un móvil que tenga buena cámara.",
+     "t": {
+      "ru": "Мне нужен телефон с хорошей камерой.",
+      "uz": "Menga yaxshi kamerali telefon kerak."
+     }
+    },
+    {
+     "s": "Vivo en una casa que tiene jardín.",
+     "t": {
+      "ru": "Я живу в доме с садом.",
+      "uz": "Bog'li uyda yashayman."
+     }
+    },
+    {
+     "s": "No hay ningún restaurante que abra tan tarde.",
+     "t": {
+      "ru": "Нет ни одного ресторана, который открыт так поздно.",
+      "uz": "Shunday kech ochiladigan birorta restoran yo'q."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Busco un profesor que es paciente.",
+    "right": "Busco un profesor que sea paciente.",
+    "note": {
+     "ru": "Ищу любого такого → subjuntivo.",
+     "en": "Looking for any such person → subjunctive.",
+     "uz": "Har qanday shunday odamni izlayapman → subjuntivo."
+    }
+   },
+   "tip": {
+    "ru": "Есть и знаю → indicativo; ищу или нет → subjuntivo.",
+    "en": "Exists and known → indicative; wanted or none → subjunctive.",
+    "uz": "Bor va bilaman → indicativo; izlayman yoki yo'q → subjuntivo."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Quiero un trabajo que me ___ viajar. (permitir)",
+     "o": [
+      "permita",
+      "permite",
+      "permitirá"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Желаемое → subjuntivo.",
+      "en": "Wanted → subjunctive.",
+      "uz": "Istalgan → subjuntivo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tengo una vecina que ___ ruso. (hablar)",
+     "o": [
+      "habla",
+      "hable",
+      "hablara"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Существует → indicativo.",
+      "en": "Exists → indicative.",
+      "uz": "Mavjud → indicativo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No hay nadie que ___ hacerlo. (poder)",
+     "o": [
+      "pueda",
+      "puede",
+      "podrá"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Не существует → subjuntivo.",
+      "en": "Does not exist → subjunctive.",
+      "uz": "Mavjud emas → subjuntivo."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "No hay nadie que sepa la respuesta.",
+      "No hay nadie que sabe la respuesta."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Такого нет → sepa.",
+      "en": "Nobody like that exists → sepa.",
+      "uz": "Bunday odam yo'q → sepa."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Compré el libro que me recomendaste.",
+      "Compré el libro que me recomendaras."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Конкретная книга → indicativo.",
+      "en": "A specific book → indicative.",
+      "uz": "Aniq kitob → indicativo."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Busco",
+      "un",
+      "piso",
+      "que",
+      "esté",
+      "cerca",
+      "del",
+      "centro."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "No",
+      "conozco",
+      "a",
+      "nadie",
+      "que",
+      "viva",
+      "allí."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Buscamos una persona que ___ inglés. (saber)",
+     "a": [
+      "sepa"
+     ],
+     "e": {
+      "ru": "Ищем любого → sepa.",
+      "en": "Any such person → sepa.",
+      "uz": "Har qanday → sepa."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Tengo un coche que *es* rápido.",
+     "Quiero un coche que *sea* rápido."
+    ],
+    "q": {
+     "ru": "Почему es и sea?",
+     "en": "Why es and sea?",
+     "uz": "Nega es va sea?"
+    },
+    "o": [
+     {
+      "ru": "Машина есть / машину только хочу",
+      "en": "I have the car / I only want one",
+      "uz": "Mashina bor / faqat xohlayman"
+     },
+     {
+      "ru": "Разные лица",
+      "en": "Different persons",
+      "uz": "Turli shaxslar"
+     },
+     {
+      "ru": "Ошибка",
+      "en": "A mistake",
+      "uz": "Xato"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Necesitamos a alguien que ___ con niños. (trabajar)",
+     "o": [
+      "trabaje",
+      "trabaja",
+      "trabajó"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ищем → subjuntivo.",
+      "en": "Looking for → subjunctive.",
+      "uz": "Izlayapmiz → subjuntivo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Esta es la chica que ___ conmigo. (estudiar)",
+     "o": [
+      "estudia",
+      "estudie",
+      "estudiara"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Конкретная → indicativo.",
+      "en": "A specific person → indicative.",
+      "uz": "Aniq odam → indicativo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "No encuentro ningún vestido que me ___ . (gustar)",
+     "o": [
+      "guste",
+      "gusta",
+      "gustó"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Такого нет → subjuntivo.",
+      "en": "None exists → subjunctive.",
+      "uz": "Yo'q → subjuntivo."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши идеальную квартиру или работу, которую ищешь (Busco… que + subjuntivo), 3 предложения.",
+    "en": "Describe the ideal flat or job you are looking for (Busco… que + subjunctive), 3 sentences.",
+    "uz": "Izlayotgan ideal kvartira yoki ishingizni tasvirlang (Busco… que + subjuntivo), 3 ta gap."
+   }
+  },
+  {
+   "id": "para-que",
+   "level": "B2",
+   "title": {
+    "ru": "Para que + subjuntivo: чтобы",
+    "en": "Para que + subjunctive: so that",
+    "uz": "Para que + subjuntivo: …sin deb"
+   },
+   "sum": {
+    "ru": "Para + инфинитив или para que + subjuntivo.",
+    "en": "Para + infinitive or para que + subjunctive.",
+    "uz": "Para + infinitiv yoki para que + subjuntivo."
+   },
+   "explain": {
+    "ru": [
+     "Один и тот же человек → para + инфинитив: Estudio para aprobar (я учусь, я сдам).",
+     "Разные люди → para que + subjuntivo: Te lo explico para que lo entiendas (объясняю я, понимаешь ты).",
+     "Если главный глагол в прошлом — imperfecto de subjuntivo: Te lo expliqué para que lo entendieras. Так же: a fin de que, con el objetivo de que; sin que (без того чтобы) + subjuntivo."
+    ],
+    "en": [
+     "Same person → para + infinitive: Estudio para aprobar.",
+     "Different people → para que + subjunctive: Te lo explico para que lo entiendas.",
+     "If the main verb is past — imperfect subjunctive: para que lo entendieras. Same with a fin de que; sin que + subjunctive."
+    ],
+    "uz": [
+     "Bir xil odam → para + infinitiv: Estudio para aprobar.",
+     "Turli odamlar → para que + subjuntivo: Te lo explico para que lo entiendas.",
+     "Bosh fe'l o'tmishda — imperfecto de subjuntivo: para que lo entendieras. a fin de que; sin que + subjuntivo ham."
+    ]
+   },
+   "formula": [
+    "same subject → para + infinitive",
+    "different → para que + subjuntivo",
+    "past → para que + -ra · sin que"
+   ],
+   "examples": [
+    {
+     "s": "Ahorro para comprarme un coche.",
+     "t": {
+      "ru": "Я коплю, чтобы купить машину.",
+      "uz": "Mashina olish uchun pul yig'yapman."
+     }
+    },
+    {
+     "s": "Habla más alto para que te oigan todos.",
+     "t": {
+      "ru": "Говори громче, чтобы тебя все слышали.",
+      "uz": "Hamma eshitishi uchun balandroq gapir."
+     }
+    },
+    {
+     "s": "Salió sin que nadie lo viera.",
+     "t": {
+      "ru": "Он вышел так, что никто не видел.",
+      "uz": "U hech kim ko'rmasdan chiqib ketdi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Te llamo para que tú vienes.",
+    "right": "Te llamo para que vengas.",
+    "note": {
+     "ru": "para que → subjuntivo.",
+     "en": "para que → subjunctive.",
+     "uz": "para que → subjuntivo."
+    }
+   },
+   "tip": {
+    "ru": "Тот же человек — para + инф.; другой — para que + subjuntivo.",
+    "en": "Same person — para + inf.; another — para que + subjunctive.",
+    "uz": "Bir odam — para + inf.; boshqa — para que + subjuntivo."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Os doy mi número para que me ___ . (llamar)",
+     "o": [
+      "llaméis",
+      "llamáis",
+      "llamar"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Разные люди → subjuntivo.",
+      "en": "Different people → subjunctive.",
+      "uz": "Turli odamlar → subjuntivo."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Voy al gimnasio para ___ en forma. (estar, myself)",
+     "o": [
+      "estar",
+      "que esté",
+      "estoy"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Тот же человек → инфинитив.",
+      "en": "Same person → infinitive.",
+      "uz": "Bir odam → infinitiv."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Mi madre cocinó mucho para que nadie ___ hambre. (pasar)",
+     "o": [
+      "pasara",
+      "pase",
+      "pasaba"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → pasara.",
+      "en": "Past → pasara.",
+      "uz": "O'tmish → pasara."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Entré sin que me vieran.",
+      "Entré sin que me vieron."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sin que → subjuntivo.",
+      "en": "sin que → subjunctive.",
+      "uz": "sin que → subjuntivo."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Estudio para tener un buen trabajo.",
+      "Estudio para que tenga un buen trabajo."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Тот же человек → para + инфинитив.",
+      "en": "Same person → para + infinitive.",
+      "uz": "Bir odam → para + infinitiv."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Te",
+      "lo",
+      "repito",
+      "para",
+      "que",
+      "no",
+      "lo",
+      "olvides."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Trabajo",
+      "mucho",
+      "para",
+      "ayudar",
+      "a",
+      "mi",
+      "familia."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Abrí la ventana para que ___ aire fresco. (entrar)",
+     "a": [
+      "entrara",
+      "entrase"
+     ],
+     "e": {
+      "ru": "Прошлое → entrara.",
+      "en": "Past → entrara.",
+      "uz": "O'tmish → entrara."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Estudio *para aprobar*.",
+     "Te ayudo *para que apruebes*."
+    ],
+    "q": {
+     "ru": "Почему разные формы?",
+     "en": "Why different forms?",
+     "uz": "Nega shakllar har xil?"
+    },
+    "o": [
+     {
+      "ru": "Один человек / два разных человека",
+      "en": "One person / two different people",
+      "uz": "Bir odam / ikki xil odam"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     },
+     {
+      "ru": "Без разницы",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Te dejo la llave para que ___ entrar. (poder)",
+     "o": [
+      "puedas",
+      "puedes",
+      "poder"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ puedas.",
+      "en": "→ puedas.",
+      "uz": "→ puedas."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Hablé despacio para que me ___ . (entender, ellos)",
+     "o": [
+      "entendieran",
+      "entiendan",
+      "entendían"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → entendieran.",
+      "en": "Past → entendieran.",
+      "uz": "O'tmish → entendieran."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Salgo temprano para no ___ tarde. (llegar)",
+     "o": [
+      "llegar",
+      "llegue",
+      "que llegue"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Тот же человек → инфинитив.",
+      "en": "Same person → infinitive.",
+      "uz": "Bir odam → infinitiv."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о том, зачем ты что-то делаешь для себя и для других (para + инф., para que + subj.).",
+    "en": "Write 3 sentences on why you do things for yourself and for others (para + inf., para que + subj.).",
+    "uz": "O'zingiz va boshqalar uchun nima uchun biror narsa qilishingiz haqida 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "verbos-cambio",
+   "level": "B2",
+   "title": {
+    "ru": "Глаголы изменения: ponerse, volverse, hacerse, quedarse",
+    "en": "Verbs of change: ponerse, volverse, hacerse, quedarse",
+    "uz": "O'zgarish fe'llari: ponerse, volverse, hacerse, quedarse"
+   },
+   "sum": {
+    "ru": "По-русски «стать», по-испански — четыре разных глагола.",
+    "en": "One idea, “become”, four Spanish verbs.",
+    "uz": "Bitta «bo'lmoq» — to'rt xil ispan fe'li."
+   },
+   "explain": {
+    "ru": [
+     "ponerse + прилагательное — быстрое, временное изменение настроения/вида: ponerse nervioso, rojo, triste, contento.",
+     "volverse — глубокое, часто неожиданное изменение характера: volverse loco, serio, egoísta. hacerse — изменение через усилие или со временем (профессия, вера, статус): hacerse médico, rico, famoso, mayor.",
+     "quedarse — результат после события: quedarse sordo, embarazada, solo, sin dinero, sorprendido. Также llegar a ser — долгий путь к высокой цели: llegó a ser presidente."
+    ],
+    "en": [
+     "ponerse + adjective — a quick, temporary change of mood or look: ponerse nervioso, rojo, triste.",
+     "volverse — deep, often unexpected change of character: volverse loco. hacerse — change by effort or over time: hacerse médico, rico, mayor.",
+     "quedarse — a result after an event: quedarse sordo, solo, sin dinero. llegar a ser — a long road to a high goal: llegó a ser presidente."
+    ],
+    "uz": [
+     "ponerse + sifat — tez, vaqtinchalik holat o'zgarishi: ponerse nervioso, rojo, triste.",
+     "volverse — chuqur, ko'pincha kutilmagan xarakter o'zgarishi: volverse loco. hacerse — harakat yoki vaqt bilan: hacerse médico, rico, mayor.",
+     "quedarse — voqeadan keyingi natija: quedarse sordo, solo, sin dinero. llegar a ser — yuqori maqsadga uzoq yo'l: llegó a ser presidente."
+    ]
+   },
+   "formula": [
+    "ponerse = quick mood / look",
+    "volverse = character · hacerse = effort / time",
+    "quedarse = result · llegar a ser = long road"
+   ],
+   "examples": [
+    {
+     "s": "Me pongo nervioso antes de los exámenes.",
+     "t": {
+      "ru": "Я нервничаю перед экзаменами.",
+      "uz": "Imtihonlar oldidan asabiylashaman."
+     }
+    },
+    {
+     "s": "Con los años se hizo muy rico.",
+     "t": {
+      "ru": "С годами он очень разбогател.",
+      "uz": "Yillar o'tib u juda boyib ketdi."
+     }
+    },
+    {
+     "s": "Se quedó sin palabras.",
+     "t": {
+      "ru": "Он лишился дара речи.",
+      "uz": "U so'zsiz qoldi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Cuando lo vio, se hizo rojo.",
+    "right": "Cuando lo vio, se puso rojo.",
+    "note": {
+     "ru": "Быстрая смена вида → ponerse.",
+     "en": "A quick change of look → ponerse.",
+     "uz": "Tez ko'rinish o'zgarishi → ponerse."
+    }
+   },
+   "tip": {
+    "ru": "Настроение — ponerse, характер — volverse, профессия — hacerse, итог — quedarse.",
+    "en": "Mood — ponerse, character — volverse, career — hacerse, result — quedarse.",
+    "uz": "Kayfiyat — ponerse, xarakter — volverse, kasb — hacerse, natija — quedarse."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Cuando oyó la noticia, se ___ muy triste.",
+     "o": [
+      "puso",
+      "hizo",
+      "quedó de"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Быстрое настроение → ponerse.",
+      "en": "A quick mood → ponerse.",
+      "uz": "Tez kayfiyat → ponerse."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Estudió mucho y se ___ abogado.",
+     "o": [
+      "hizo",
+      "puso",
+      "volvió"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Профессия усилием → hacerse.",
+      "en": "A career by effort → hacerse.",
+      "uz": "Harakat bilan kasb → hacerse."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Después del accidente se ___ ciego.",
+     "o": [
+      "quedó",
+      "puso",
+      "hizo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Результат события → quedarse.",
+      "en": "Result of an event → quedarse.",
+      "uz": "Voqea natijasi → quedarse."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Desde que es famoso, se ha vuelto muy arrogante.",
+      "Desde que es famoso, se ha puesto muy arrogante para siempre."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Изменение характера → volverse.",
+      "en": "Change of character → volverse.",
+      "uz": "Xarakter o'zgarishi → volverse."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Empezó como camarero y llegó a ser director.",
+      "Empezó como camarero y se puso director."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Долгий путь → llegar a ser.",
+      "en": "A long road → llegar a ser.",
+      "uz": "Uzoq yo'l → llegar a ser."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Mi",
+      "hermano",
+      "se",
+      "pone",
+      "rojo",
+      "cuando",
+      "habla",
+      "en",
+      "público."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Me",
+      "quedé",
+      "sorprendido",
+      "con",
+      "su",
+      "respuesta."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Se ___ loco de amor. (character change, past)",
+     "a": [
+      "volvió"
+     ],
+     "e": {
+      "ru": "Глубокое изменение → volverse.",
+      "en": "Deep change → volverse.",
+      "uz": "Chuqur o'zgarish → volverse."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Se *puso* nervioso.",
+     "Se *volvió* nervioso."
+    ],
+    "q": {
+     "ru": "В чём разница?",
+     "en": "What is the difference?",
+     "uz": "Farqi nimada?"
+    },
+    "o": [
+     {
+      "ru": "Занервничал на минуту / стал нервным человеком",
+      "en": "Got nervous for a moment / became a nervous person",
+      "uz": "Bir lahza asabiylashdi / asabiy odamga aylandi"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Разное время",
+      "en": "Different tense",
+      "uz": "Turli zamon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Mi abuelo se ___ un poco sordo con la edad.",
+     "o": [
+      "quedó",
+      "puso",
+      "hizo"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Итог → quedarse.",
+      "en": "Result → quedarse.",
+      "uz": "Natija → quedarse."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nos ___ muy contentos al verte.",
+     "o": [
+      "pusimos",
+      "hicimos",
+      "volvimos"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Настроение → ponerse.",
+      "en": "Mood → ponerse.",
+      "uz": "Kayfiyat → ponerse."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Se ___ vegetariano hace diez años. (a choice)",
+     "o": [
+      "hizo",
+      "puso",
+      "quedó"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сознательный выбор → hacerse.",
+      "en": "A conscious choice → hacerse.",
+      "uz": "Ongli tanlov → hacerse."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши, как ты меняешься: когда ты нервничаешь (ponerse), кем хочешь стать (hacerse), что тебя удивило (quedarse).",
+    "en": "Describe how you change: when you get nervous (ponerse), what you want to become (hacerse), what surprised you (quedarse).",
+    "uz": "Qanday o'zgarishingizni yozing: qachon asabiylashasiz (ponerse), kim bo'lmoqchisiz (hacerse), nima hayron qoldirdi (quedarse)."
    }
   }
  ],

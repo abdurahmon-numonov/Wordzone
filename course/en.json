@@ -2614,6 +2614,536 @@
    }
   },
   {
+   "id": "prep-place",
+   "level": "A1",
+   "title": {
+    "ru": "Предлоги места: in, on, under, next to",
+    "en": "Prepositions of place: in, on, under, next to",
+    "uz": "Joy predloglari: in, on, under, next to"
+   },
+   "sum": {
+    "ru": "Где что находится.",
+    "en": "Saying where things are.",
+    "uz": "Narsalar qayerdaligini aytish."
+   },
+   "explain": {
+    "ru": [
+     "in — внутри (in the box, in the room), on — на поверхности (on the table, on the wall), under — под (under the bed).",
+     "next to — рядом, between — между двумя, behind — сзади, in front of — перед: The bank is between the café and the shop.",
+     "Города и страны — in: in London. Адрес с номером — at: at 15 Park Street. Улица без номера — in/on: on Park Street."
+    ],
+    "en": [
+     "in = inside (in the box), on = on a surface (on the table, on the wall), under = below (under the bed).",
+     "next to, between (two things), behind, in front of: The bank is between the café and the shop.",
+     "Cities and countries take in: in London. An address with a number takes at: at 15 Park Street."
+    ],
+    "uz": [
+     "in — ichida (in the box), on — ustida (on the table, on the wall), under — ostida (under the bed).",
+     "next to — yonida, between — ikki narsa orasida, behind — orqasida, in front of — oldida: The bank is between the café and the shop.",
+     "Shahar va mamlakat — in: in London. Raqamli manzil — at: at 15 Park Street."
+    ]
+   },
+   "formula": [
+    "in = inside · on = surface · under = below",
+    "next to · between · behind · in front of",
+    "in London · at 15 Park Street"
+   ],
+   "examples": [
+    {
+     "s": "Your keys are on the table.",
+     "t": {
+      "ru": "Твои ключи на столе.",
+      "uz": "Kalitlaring stol ustida."
+     }
+    },
+    {
+     "s": "The cat is under the sofa.",
+     "t": {
+      "ru": "Кот под диваном.",
+      "uz": "Mushuk divan ostida."
+     }
+    },
+    {
+     "s": "I live next to a park.",
+     "t": {
+      "ru": "Я живу рядом с парком.",
+      "uz": "Men park yonida yashayman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "The picture is in the wall.",
+    "right": "The picture is on the wall.",
+    "note": {
+     "ru": "Картина на поверхности стены → on.",
+     "en": "A picture is on the surface of the wall → on.",
+     "uz": "Rasm devor sirtida → on."
+    }
+   },
+   "tip": {
+    "ru": "Внутри — in, на поверхности — on, под — under.",
+    "en": "Inside — in, on a surface — on, below — under.",
+    "uz": "Ichida — in, sirtida — on, ostida — under."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "The milk is ___ the fridge.",
+     "o": [
+      "in",
+      "on",
+      "under"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Внутри холодильника → in.",
+      "en": "Inside the fridge → in.",
+      "uz": "Muzlatkich ichida → in."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "There is a lamp ___ the desk.",
+     "o": [
+      "on",
+      "in",
+      "between"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "На поверхности стола → on.",
+      "en": "On the desk surface → on.",
+      "uz": "Stol ustida → on."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "The shop is ___ the bank and the school.",
+     "o": [
+      "between",
+      "next",
+      "under"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Между двумя → between.",
+      "en": "Between two places → between.",
+      "uz": "Ikki joy orasida → between."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "My parents live in Samarkand.",
+      "My parents live on Samarkand."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Город → in.",
+      "en": "A city → in.",
+      "uz": "Shahar → in."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "The car is in front of the house.",
+      "The car is in front the house."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "in front of — с of.",
+      "en": "in front of needs of.",
+      "uz": "in front of — of bilan."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "The",
+      "dog",
+      "is",
+      "sleeping",
+      "under",
+      "the",
+      "table."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "There",
+      "is",
+      "a",
+      "supermarket",
+      "next",
+      "to",
+      "my",
+      "school."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "She lives ___ 24 Oak Road. (address with a number)",
+     "a": [
+      "at"
+     ],
+     "e": {
+      "ru": "Адрес с номером → at.",
+      "en": "An address with a number → at.",
+      "uz": "Raqamli manzil → at."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "The book is *in* the bag.",
+     "The book is *on* the bag.",
+     "The book is *under* the bag."
+    ],
+    "q": {
+     "ru": "Чем отличаются три фразы?",
+     "en": "How do the three sentences differ?",
+     "uz": "Uch gap nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Внутри — сверху — снизу",
+      "en": "Inside — on top — below",
+      "uz": "Ichida — ustida — ostida"
+     },
+     {
+      "ru": "Ничем",
+      "en": "They mean the same",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Разным временем",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "The poster is ___ the wall.",
+     "o": [
+      "on",
+      "in",
+      "at"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "На стене → on.",
+      "en": "On the wall → on.",
+      "uz": "Devorda → on."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "The garden is ___ the house. (at the back)",
+     "o": [
+      "behind",
+      "in front of",
+      "between"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сзади → behind.",
+      "en": "At the back → behind.",
+      "uz": "Orqasida → behind."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "He works ___ Tashkent.",
+     "o": [
+      "in",
+      "on",
+      "at"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Город → in.",
+      "en": "A city → in.",
+      "uz": "Shahar → in."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши свою комнату: где стоят 4 вещи (in, on, under, next to).",
+    "en": "Describe your room: where 4 things are (in, on, under, next to).",
+    "uz": "Xonangizni tasvirlang: 4 ta narsa qayerda (in, on, under, next to)."
+   }
+  },
+  {
+   "id": "have-got",
+   "level": "A1",
+   "title": {
+    "ru": "Have got: у меня есть",
+    "en": "Have got: I have",
+    "uz": "Have got: menda bor"
+   },
+   "sum": {
+    "ru": "Как сказать, что у тебя есть, в британском и американском стиле.",
+    "en": "Saying what you have, British and American style.",
+    "uz": "Nimangiz borligini aytish: britancha va amerikancha."
+   },
+   "explain": {
+    "ru": [
+     "have got = have (иметь), чаще в британском английском: I’ve got a brother. She’s got blue eyes.",
+     "I/you/we/they have got, he/she/it has got. Сокращения: ’ve got, ’s got. Вопрос: Have you got…? Has she got…? Отрицание: haven’t got / hasn’t got.",
+     "С обычным have вопрос и отрицание через do: Do you have a car? I don’t have time. Не смешивай: «Do you have got» — ошибка."
+    ],
+    "en": [
+     "have got = have, common in British English: I’ve got a brother. She’s got blue eyes.",
+     "I/you/we/they have got, he/she/it has got. Questions: Have you got…? Negative: haven’t got / hasn’t got.",
+     "With plain have, use do: Do you have a car? I don’t have time. Never mix them: “Do you have got” is wrong."
+    ],
+    "uz": [
+     "have got = have (ega bo'lmoq), ko'proq britancha: I’ve got a brother. She’s got blue eyes.",
+     "I/you/we/they have got, he/she/it has got. Savol: Have you got…? Inkor: haven’t got / hasn’t got.",
+     "Oddiy have bilan do ishlatiladi: Do you have a car? I don’t have time. Aralashtirma: «Do you have got» — xato."
+    ]
+   },
+   "formula": [
+    "have got / has got",
+    "Have you got…? · haven’t got",
+    "Do you have…? · don’t have"
+   ],
+   "examples": [
+    {
+     "s": "I’ve got two sisters.",
+     "t": {
+      "ru": "У меня две сестры.",
+      "uz": "Mening ikkita opam bor."
+     }
+    },
+    {
+     "s": "Has your flat got a balcony?",
+     "t": {
+      "ru": "В твоей квартире есть балкон?",
+      "uz": "Kvartirangda balkon bormi?"
+     }
+    },
+    {
+     "s": "We haven’t got much time.",
+     "t": {
+      "ru": "У нас мало времени.",
+      "uz": "Vaqtimiz ko'p emas."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "She have got a cat.",
+    "right": "She has got a cat.",
+    "note": {
+     "ru": "she → has got.",
+     "en": "she → has got.",
+     "uz": "she → has got."
+    }
+   },
+   "tip": {
+    "ru": "he/she/it — has got; вопрос — Have/Has … got?",
+    "en": "he/she/it → has got; question → Have/Has … got?",
+    "uz": "he/she/it — has got; savol — Have/Has … got?"
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "My brother ___ a new phone.",
+     "o": [
+      "has got",
+      "have got",
+      "is got"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "he → has got.",
+      "en": "he → has got.",
+      "uz": "he → has got."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ you got a pen?",
+     "o": [
+      "Have",
+      "Has",
+      "Do"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "you → Have you got.",
+      "en": "you → Have you got.",
+      "uz": "you → Have you got."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "They ___ got any children.",
+     "o": [
+      "haven’t",
+      "hasn’t",
+      "don’t"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "they → haven’t got.",
+      "en": "they → haven’t got.",
+      "uz": "they → haven’t got."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Do you have a car?",
+      "Do you have got a car?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "do + have без got.",
+      "en": "do + have, no got.",
+      "uz": "do + have, got siz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "He hasn’t got a bike.",
+      "He doesn’t got a bike."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "hasn’t got или doesn’t have.",
+      "en": "hasn’t got or doesn’t have.",
+      "uz": "hasn’t got yoki doesn’t have."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "I",
+      "have",
+      "got",
+      "a",
+      "lot",
+      "of",
+      "homework",
+      "today."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Has",
+      "your",
+      "school",
+      "got",
+      "a",
+      "library?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "She ___ got long hair.",
+     "a": [
+      "has",
+      "’s",
+      "'s"
+     ],
+     "e": {
+      "ru": "she → has got.",
+      "en": "she → has got.",
+      "uz": "she → has got."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "I *have got* a dog.",
+     "I *have* a dog."
+    ],
+    "q": {
+     "ru": "Есть ли разница в смысле?",
+     "en": "Is there a difference in meaning?",
+     "uz": "Ma'noda farq bormi?"
+    },
+    "o": [
+     {
+      "ru": "Нет, have got чаще в британском",
+      "en": "No, have got is more British",
+      "uz": "Yo'q, have got ko'proq britancha"
+     },
+     {
+      "ru": "Первое — прошлое",
+      "en": "The first is past",
+      "uz": "Birinchisi o'tmish"
+     },
+     {
+      "ru": "Второе — вопрос",
+      "en": "The second is a question",
+      "uz": "Ikkinchisi savol"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ she got a passport?",
+     "o": [
+      "Has",
+      "Have",
+      "Does"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "she → Has … got?",
+      "en": "she → Has … got?",
+      "uz": "she → Has … got?"
+     }
+    },
+    {
+     "k": "choose",
+     "q": "I ___ have a computer. (negative, plain have)",
+     "o": [
+      "don’t",
+      "haven’t",
+      "hasn’t"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Обычный have → don’t have.",
+      "en": "Plain have → don’t have.",
+      "uz": "Oddiy have → don’t have."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "We’ve ___ a big garden.",
+     "o": [
+      "got",
+      "get",
+      "gotten"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "have got.",
+      "en": "have got.",
+      "uz": "have got."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения: что у тебя есть и чего нет (have got / haven’t got).",
+    "en": "Write 3 sentences: what you have and haven’t got.",
+    "uz": "3 ta gap yozing: nimangiz bor va nimangiz yo'q (have got / haven’t got)."
+   }
+  },
+  {
    "id": "present-continuous",
    "level": "A2",
    "title": {
@@ -5243,6 +5773,528 @@
     "ru": "Напиши 3 вещи, которые ты делал в детстве, а сейчас нет (used to).",
     "en": "Write 3 things you used to do as a child but don’t do now.",
     "uz": "Bolalikda qilgan, hozir qilmaydigan 3 ta narsani yozing (used to)."
+   }
+  },
+  {
+   "id": "adverbs-manner",
+   "level": "A2",
+   "title": {
+    "ru": "Наречия образа действия: quickly, well",
+    "en": "Adverbs of manner: quickly, well",
+    "uz": "Holat ravishlari: quickly, well"
+   },
+   "sum": {
+    "ru": "Как сказать, КАК что-то делается.",
+    "en": "Saying HOW something is done.",
+    "uz": "Ish QANDAY bajarilishini aytish."
+   },
+   "explain": {
+    "ru": [
+     "Прилагательное описывает предмет, наречие — действие: She is a careful driver. → She drives carefully.",
+     "Обычно + -ly: quick → quickly, slow → slowly, easy → easily (y → i), gentle → gently.",
+     "Неправильные: good → well, fast → fast, hard → hard (hardly = «едва»), late → late. Наречие обычно после глагола и дополнения: He speaks English well."
+    ],
+    "en": [
+     "An adjective describes a noun, an adverb describes a verb: a careful driver → she drives carefully.",
+     "Usually add -ly: quickly, slowly, easily (y → i), gently.",
+     "Irregular: good → well, fast → fast, hard → hard (hardly = almost not), late → late. Position: after the verb and object."
+    ],
+    "uz": [
+     "Sifat otni, ravish fe'lni tasvirlaydi: a careful driver → she drives carefully.",
+     "Odatda -ly qo'shiladi: quickly, slowly, easily (y → i), gently.",
+     "Noto'g'ri: good → well, fast → fast, hard → hard (hardly = deyarli … emas), late → late. Fe'l va to'ldiruvchidan keyin."
+    ]
+   },
+   "formula": [
+    "adjective + -ly",
+    "good → well · fast · hard · late",
+    "verb + object + adverb"
+   ],
+   "examples": [
+    {
+     "s": "Please speak slowly.",
+     "t": {
+      "ru": "Говори, пожалуйста, медленно.",
+      "uz": "Iltimos, sekin gapiring."
+     }
+    },
+    {
+     "s": "She plays the piano very well.",
+     "t": {
+      "ru": "Она очень хорошо играет на пианино.",
+      "uz": "U pianinoni juda yaxshi chaladi."
+     }
+    },
+    {
+     "s": "He works hard every day.",
+     "t": {
+      "ru": "Он много работает каждый день.",
+      "uz": "U har kuni qattiq ishlaydi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "He speaks English very good.",
+    "right": "He speaks English very well.",
+    "note": {
+     "ru": "Про действие → well.",
+     "en": "Describing an action → well.",
+     "uz": "Harakat haqida → well."
+    }
+   },
+   "tip": {
+    "ru": "Как? → -ly; good → well.",
+    "en": "How? → -ly; good → well.",
+    "uz": "Qanday? → -ly; good → well."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Drive ___ — the road is wet.",
+     "o": [
+      "carefully",
+      "careful",
+      "care"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Про действие → carefully.",
+      "en": "About the action → carefully.",
+      "uz": "Harakat haqida → carefully."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "She did the test ___.",
+     "o": [
+      "easily",
+      "easyly",
+      "easy"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "y → i + ly.",
+      "en": "y → i + ly.",
+      "uz": "y → i + ly."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "He runs very ___.",
+     "o": [
+      "fast",
+      "fastly",
+      "faster"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "fast не меняется.",
+      "en": "fast does not change.",
+      "uz": "fast o'zgarmaydi."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "You sing beautifully.",
+      "You sing beautiful."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Как поёшь → beautifully.",
+      "en": "How you sing → beautifully.",
+      "uz": "Qanday kuylaysan → beautifully."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "I hardly slept last night.",
+      "I hard slept last night."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "hardly = почти не.",
+      "en": "hardly = almost not.",
+      "uz": "hardly = deyarli … emas."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "The",
+      "children",
+      "played",
+      "quietly",
+      "in",
+      "their",
+      "room."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "She",
+      "answered",
+      "the",
+      "question",
+      "correctly."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "My grandmother cooks very ___. (good)",
+     "a": [
+      "well"
+     ],
+     "e": {
+      "ru": "good → well.",
+      "en": "good → well.",
+      "uz": "good → well."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "She is a *quick* runner.",
+     "She runs *quickly*."
+    ],
+    "q": {
+     "ru": "Почему quick и quickly?",
+     "en": "Why quick and quickly?",
+     "uz": "Nega quick va quickly?"
+    },
+    "o": [
+     {
+      "ru": "quick — о человеке, quickly — о действии",
+      "en": "quick describes the person, quickly the action",
+      "uz": "quick — odam haqida, quickly — harakat haqida"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     },
+     {
+      "ru": "Без разницы",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "He speaks ___. (clear)",
+     "o": [
+      "clearly",
+      "clear",
+      "clearlly"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "clear → clearly.",
+      "en": "clear → clearly.",
+      "uz": "clear → clearly."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "They arrived ___. (late)",
+     "o": [
+      "late",
+      "lately",
+      "latly"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "late не меняется; lately = недавно.",
+      "en": "late stays; lately = recently.",
+      "uz": "late o'zgarmaydi; lately = yaqinda."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Is your English ___?",
+     "o": [
+      "good",
+      "well",
+      "goodly"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После is описываем английский → good.",
+      "en": "After is we describe English → good.",
+      "uz": "is dan keyin → good."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о том, как ты делаешь разные вещи (well, slowly, hard…).",
+    "en": "Write 3 sentences about how you do things (well, slowly, hard…).",
+    "uz": "Ishlarni qanday qilishingiz haqida 3 ta gap yozing (well, slowly, hard…)."
+   }
+  },
+  {
+   "id": "too-enough",
+   "level": "A2",
+   "title": {
+    "ru": "Too и enough: слишком и достаточно",
+    "en": "Too and enough",
+    "uz": "Too va enough: juda va yetarli"
+   },
+   "sum": {
+    "ru": "Слишком много, недостаточно, в самый раз.",
+    "en": "Too much, not enough, just right.",
+    "uz": "Haddan ortiq, yetarli emas, aynan."
+   },
+   "explain": {
+    "ru": [
+     "too + прилагательное = «слишком» (плохо): This coffee is too hot. (не пить)",
+     "прилагательное + enough = «достаточно»: He isn’t old enough to drive. Но enough + существительное: We have enough money.",
+     "too much + неисчисляемое, too many + исчисляемые: too much sugar, too many people. Часто + to + глагол: It’s too cold to swim."
+    ],
+    "en": [
+     "too + adjective = more than is good: This coffee is too hot.",
+     "adjective + enough: old enough. But enough + noun: enough money.",
+     "too much + uncountable, too many + countable; often + to-infinitive: too cold to swim."
+    ],
+    "uz": [
+     "too + sifat = «haddan ortiq»: This coffee is too hot.",
+     "sifat + enough: old enough. Lekin enough + ot: enough money.",
+     "too much + sanalmaydigan, too many + sanaladigan; ko'pincha + to: too cold to swim."
+    ]
+   },
+   "formula": [
+    "too + adjective",
+    "adjective + enough · enough + noun",
+    "too much / too many · … to do"
+   ],
+   "examples": [
+    {
+     "s": "This bag is too heavy for me.",
+     "t": {
+      "ru": "Эта сумка слишком тяжёлая для меня.",
+      "uz": "Bu sumka men uchun juda og'ir."
+     }
+    },
+    {
+     "s": "Is the room big enough?",
+     "t": {
+      "ru": "Комната достаточно большая?",
+      "uz": "Xona yetarlicha kattami?"
+     }
+    },
+    {
+     "s": "There are too many cars in the city.",
+     "t": {
+      "ru": "В городе слишком много машин.",
+      "uz": "Shaharda mashinalar juda ko'p."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "She is enough tall to play basketball.",
+    "right": "She is tall enough to play basketball.",
+    "note": {
+     "ru": "enough после прилагательного.",
+     "en": "enough goes after the adjective.",
+     "uz": "enough sifatdan keyin."
+    }
+   },
+   "tip": {
+    "ru": "too — перед прилагательным, enough — после.",
+    "en": "too goes before the adjective, enough after.",
+    "uz": "too — sifatdan oldin, enough — keyin."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "I can’t sleep. It’s ___ noisy.",
+     "o": [
+      "too",
+      "enough",
+      "very enough"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Слишком → too.",
+      "en": "More than OK → too.",
+      "uz": "Haddan ortiq → too."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "We haven’t got ___ chairs.",
+     "o": [
+      "enough",
+      "too",
+      "too many"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "enough + существительное.",
+      "en": "enough + noun.",
+      "uz": "enough + ot."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "You eat ___ sugar.",
+     "o": [
+      "too much",
+      "too many",
+      "enough of"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sugar — неисчисляемое → too much.",
+      "en": "sugar is uncountable → too much.",
+      "uz": "sugar — sanalmaydigan → too much."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "The water is too cold to swim in.",
+      "The water is too cold for swim in."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "too … to + глагол.",
+      "en": "too … to + verb.",
+      "uz": "too … to + fe'l."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "He isn’t strong enough.",
+      "He isn’t enough strong."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "enough после прилагательного.",
+      "en": "enough after the adjective.",
+      "uz": "enough sifatdan keyin."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "This",
+      "shirt",
+      "is",
+      "too",
+      "small",
+      "for",
+      "me."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Have",
+      "we",
+      "got",
+      "enough",
+      "time?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "There were ___ ___ people at the concert. (more than OK, countable)",
+     "a": [
+      "too many"
+     ],
+     "e": {
+      "ru": "Исчисляемые → too many.",
+      "en": "Countable → too many.",
+      "uz": "Sanaladigan → too many."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "The tea is *too hot*.",
+     "The tea is *hot enough*."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Слишком горячий / в самый раз горячий",
+      "en": "Too hot / hot as needed",
+      "uz": "Juda issiq / yetarlicha issiq"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Оба плохо",
+      "en": "Both are bad",
+      "uz": "Ikkalasi yomon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "He’s ___ young to vote.",
+     "o": [
+      "too",
+      "enough",
+      "very"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Слишком молод → too young.",
+      "en": "Too young.",
+      "uz": "Juda yosh → too young."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Is it warm ___ for a T-shirt?",
+     "o": [
+      "enough",
+      "too",
+      "much"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "прилаг. + enough.",
+      "en": "adjective + enough.",
+      "uz": "sifat + enough."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "I’ve got ___ homework today.",
+     "o": [
+      "too much",
+      "too many",
+      "enough of"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "homework неисчисляемое.",
+      "en": "homework is uncountable.",
+      "uz": "homework sanalmaydi."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своём городе с too, too many и enough.",
+    "en": "Write 3 sentences about your city with too, too many and enough.",
+    "uz": "Shahringiz haqida too, too many va enough bilan 3 ta gap yozing."
    }
   },
   {
@@ -7884,6 +8936,533 @@
    }
   },
   {
+   "id": "quantifiers",
+   "level": "B1",
+   "title": {
+    "ru": "Количество: few, little, both, either, neither",
+    "en": "Quantifiers: few, little, both, either, neither",
+    "uz": "Miqdor: few, little, both, either, neither"
+   },
+   "sum": {
+    "ru": "Немного, мало, оба, ни один.",
+    "en": "Some, hardly any, both, neither.",
+    "uz": "Biroz, kam, ikkalasi, hech biri."
+   },
+   "explain": {
+    "ru": [
+     "a few + исчисляемые, a little + неисчисляемое = «немного» (хорошо): a few friends, a little money.",
+     "few / little без a = «мало» (плохо): Few people came. There is little hope.",
+     "Про двоих: both (оба), either (любой из двух / тоже не), neither (ни один): Both answers are right. Neither answer is right. You can take either bus."
+    ],
+    "en": [
+     "a few + countable, a little + uncountable = some (positive): a few friends, a little money.",
+     "few / little without a = not many/much (negative): Few people came. There is little hope.",
+     "For two: both, either (one or the other), neither (not one nor the other)."
+    ],
+    "uz": [
+     "a few + sanaladigan, a little + sanalmaydigan = «biroz» (yaxshi): a few friends, a little money.",
+     "a siz few / little = «kam» (yomon): Few people came. There is little hope.",
+     "Ikkitasi uchun: both (ikkalasi), either (ikkisidan biri), neither (hech biri)."
+    ]
+   },
+   "formula": [
+    "a few / a little = some",
+    "few / little = not enough",
+    "both · either · neither (+ singular)"
+   ],
+   "examples": [
+    {
+     "s": "I have a few questions.",
+     "t": {
+      "ru": "У меня есть несколько вопросов.",
+      "uz": "Bir nechta savolim bor."
+     }
+    },
+    {
+     "s": "Very few students passed.",
+     "t": {
+      "ru": "Сдали очень немногие студенты.",
+      "uz": "Juda kam talaba o'tdi."
+     }
+    },
+    {
+     "s": "Neither of my brothers lives here.",
+     "t": {
+      "ru": "Ни один из моих братьев здесь не живёт.",
+      "uz": "Akalarimning hech biri bu yerda yashamaydi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Can I have a few water?",
+    "right": "Can I have a little water?",
+    "note": {
+     "ru": "water — неисчисляемое → a little.",
+     "en": "water is uncountable → a little.",
+     "uz": "water — sanalmaydigan → a little."
+    }
+   },
+   "tip": {
+    "ru": "С a — «немного, хватает»; без a — «мало».",
+    "en": "With a = some; without a = not much.",
+    "uz": "a bilan — «biroz, yetadi»; a siz — «kam»."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "I speak ___ French, enough to order food.",
+     "o": [
+      "a little",
+      "a few",
+      "few"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Неисчисляемое + хватает → a little.",
+      "en": "Uncountable, positive → a little.",
+      "uz": "Sanalmaydigan, ijobiy → a little."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "The film was boring. ___ people liked it.",
+     "o": [
+      "Few",
+      "A few",
+      "Little"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мало (плохо), исчисляемые → few.",
+      "en": "Not many, countable → few.",
+      "uz": "Kam, sanaladigan → few."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ my parents are teachers.",
+     "o": [
+      "Both",
+      "Either",
+      "Neither of"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Оба → both.",
+      "en": "Both of them → both.",
+      "uz": "Ikkalasi → both."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Neither answer is correct.",
+      "Neither answer are correct."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "neither + ед. ч.",
+      "en": "neither + singular.",
+      "uz": "neither + birlik."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "You can sit on either side.",
+      "You can sit on both side."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "either + ед. ч.; both + мн. ч.",
+      "en": "either + singular; both + plural.",
+      "uz": "either + birlik; both + ko'plik."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "There",
+      "is",
+      "very",
+      "little",
+      "milk",
+      "in",
+      "the",
+      "fridge."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Both",
+      "of",
+      "my",
+      "sisters",
+      "live",
+      "in",
+      "Tashkent."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "I don’t like ___ of these jackets. (not one or the other)",
+     "a": [
+      "either"
+     ],
+     "e": {
+      "ru": "В отрицании → either.",
+      "en": "In a negative → either.",
+      "uz": "Inkorda → either."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "I have *a few* friends here.",
+     "I have *few* friends here."
+    ],
+    "q": {
+     "ru": "В чём разница?",
+     "en": "What is the difference?",
+     "uz": "Farqi nimada?"
+    },
+    "o": [
+     {
+      "ru": "a few — есть несколько, few — почти нет (грустно)",
+      "en": "a few = some; few = hardly any (sad)",
+      "uz": "a few — bir nechta bor, few — deyarli yo'q"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "few — больше",
+      "en": "few means more",
+      "uz": "few — ko'proq"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "There’s ___ time left. Hurry!",
+     "o": [
+      "little",
+      "a few",
+      "few"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мало времени → little.",
+      "en": "Hardly any time → little.",
+      "uz": "Vaqt kam → little."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ of the two hotels was free. (not one)",
+     "o": [
+      "Neither",
+      "Both",
+      "Either"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ни один → neither.",
+      "en": "Not one → neither.",
+      "uz": "Hech biri → neither."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "I’ll be ready in ___ minutes.",
+     "o": [
+      "a few",
+      "a little",
+      "little"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Исчисляемые, несколько → a few.",
+      "en": "Countable, some → a few.",
+      "uz": "Sanaladigan, bir nechta → a few."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своей семье или классе с a few, few, both или neither.",
+    "en": "Write 3 sentences about your family or class with a few, few, both or neither.",
+    "uz": "Oilangiz yoki sinfingiz haqida a few, few, both yoki neither bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "phrasal-verbs",
+   "level": "B1",
+   "title": {
+    "ru": "Фразовые глаголы: give up, look after",
+    "en": "Phrasal verbs: give up, look after",
+    "uz": "Frazali fe'llar: give up, look after"
+   },
+   "sum": {
+    "ru": "Глагол + маленькое слово = новый смысл.",
+    "en": "Verb + small word = a new meaning.",
+    "uz": "Fe'l + kichik so'z = yangi ma'no."
+   },
+   "explain": {
+    "ru": [
+     "Фразовый глагол = глагол + частица (up, off, on, out…), смысл часто новый: give up = бросить, look after = присматривать, turn down = отклонить.",
+     "Разделяемые: дополнение может стоять посередине или в конце: Turn off the light / Turn the light off. Но местоимение — только посередине: Turn it off (не turn off it).",
+     "Неразделяемые: look after, get on (with), run out of — дополнение всегда после: She looks after her brother."
+    ],
+    "en": [
+     "A phrasal verb = verb + particle (up, off, on, out…), often with a new meaning: give up, look after, turn down.",
+     "Separable ones: the object can go in the middle or at the end; a pronoun must go in the middle: Turn it off.",
+     "Inseparable ones: look after, get on with, run out of — the object always comes after."
+    ],
+    "uz": [
+     "Frazali fe'l = fe'l + yuklama (up, off, on, out…), ma'no ko'pincha yangi: give up, look after, turn down.",
+     "Ajraladiganlar: to'ldiruvchi o'rtada yoki oxirida; olmosh faqat o'rtada: Turn it off.",
+     "Ajralmaydiganlar: look after, get on with, run out of — to'ldiruvchi doim keyin."
+    ]
+   },
+   "formula": [
+    "verb + particle = new meaning",
+    "turn the light off · turn it off",
+    "look after him (not look him after)"
+   ],
+   "examples": [
+    {
+     "s": "Don’t give up — you can do it!",
+     "t": {
+      "ru": "Не сдавайся — у тебя получится!",
+      "uz": "Taslim bo'lma — uddalaysan!"
+     }
+    },
+    {
+     "s": "Could you pick me up at six?",
+     "t": {
+      "ru": "Можешь забрать меня в шесть?",
+      "uz": "Meni soat oltida olib keta olasanmi?"
+     }
+    },
+    {
+     "s": "We’ve run out of bread.",
+     "t": {
+      "ru": "У нас закончился хлеб.",
+      "uz": "Nonimiz tugadi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "I took off it.",
+    "right": "I took it off.",
+    "note": {
+     "ru": "Местоимение — между глаголом и частицей.",
+     "en": "A pronoun goes between verb and particle.",
+     "uz": "Olmosh fe'l va yuklama orasida."
+    }
+   },
+   "tip": {
+    "ru": "Учи фразовые глаголы целиком, с примером.",
+    "en": "Learn each phrasal verb as one unit, with an example.",
+    "uz": "Har bir frazali fe'lni misol bilan butunligicha o'rgan."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Please ___ the TV, it’s too loud.",
+     "o": [
+      "turn down",
+      "turn up",
+      "give up"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сделать тише → turn down.",
+      "en": "Make quieter → turn down.",
+      "uz": "Pasaytirish → turn down."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Who will ___ your dog when you travel?",
+     "o": [
+      "look after",
+      "look for",
+      "look up"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Присматривать → look after.",
+      "en": "Take care of → look after.",
+      "uz": "Qarab turish → look after."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "I don’t know this word. I’ll ___ it ___.",
+     "o": [
+      "look … up",
+      "look … after",
+      "give … up"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Найти в словаре → look it up.",
+      "en": "Find in a dictionary → look it up.",
+      "uz": "Lug'atdan topish → look it up."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Put your coat on.",
+      "Put on it your coat."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Дополнение посередине или в конце.",
+      "en": "The object goes in the middle or at the end.",
+      "uz": "To'ldiruvchi o'rtada yoki oxirida."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "She gets on well with her boss.",
+      "She gets well on her boss."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "get on (well) with — неразделяемый.",
+      "en": "get on (well) with is inseparable.",
+      "uz": "get on (well) with — ajralmaydi."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "My",
+      "father",
+      "gave",
+      "up",
+      "smoking",
+      "last",
+      "year."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Can",
+      "you",
+      "turn",
+      "it",
+      "off,",
+      "please?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "We have run ___ ___ milk. (no milk left)",
+     "a": [
+      "out of"
+     ],
+     "e": {
+      "ru": "run out of = закончиться.",
+      "en": "run out of = have none left.",
+      "uz": "run out of = tugamoq."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Look* at the board.",
+     "*Look after* the baby.",
+     "*Look up* the word."
+    ],
+    "q": {
+     "ru": "Что меняет маленькое слово?",
+     "en": "What does the small word change?",
+     "uz": "Kichik so'z nimani o'zgartiradi?"
+    },
+    "o": [
+     {
+      "ru": "Весь смысл глагола",
+      "en": "The whole meaning of the verb",
+      "uz": "Fe'lning butun ma'nosini"
+     },
+     {
+      "ru": "Только время",
+      "en": "Only the tense",
+      "uz": "Faqat zamonni"
+     },
+     {
+      "ru": "Ничего",
+      "en": "Nothing",
+      "uz": "Hech narsa"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Please ___ your shoes before you come in.",
+     "o": [
+      "take off",
+      "put on",
+      "look after"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Снять → take off.",
+      "en": "Remove → take off.",
+      "uz": "Yechmoq → take off."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "He ___ the job offer. (said no)",
+     "o": [
+      "turned down",
+      "turned up",
+      "gave in"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Отклонить → turn down.",
+      "en": "Refuse → turn down.",
+      "uz": "Rad etmoq → turn down."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Can you pick ___ at 5?",
+     "o": [
+      "me up",
+      "up me",
+      "me on"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Местоимение посередине.",
+      "en": "Pronoun in the middle.",
+      "uz": "Olmosh o'rtada."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о своём дне с фразовыми глаголами (get up, pick up, give up…).",
+    "en": "Write 3 sentences about your day with phrasal verbs (get up, pick up, give up…).",
+    "uz": "Kuningiz haqida frazali fe'llar bilan 3 ta gap yozing (get up, pick up, give up…)."
+   }
+  },
+  {
    "id": "past-perfect",
    "level": "B2",
    "title": {
@@ -9474,6 +11053,1076 @@
     "ru": "Напиши о трудности, которую ты преодолел, используя although и despite.",
     "en": "Write about a difficulty you overcame, using although and despite.",
     "uz": "Yengib o'tgan qiyinchiligingiz haqida although va despite bilan yozing."
+   }
+  },
+  {
+   "id": "future-perfect",
+   "level": "B2",
+   "title": {
+    "ru": "Future continuous и future perfect",
+    "en": "Future continuous and future perfect",
+    "uz": "Future continuous va future perfect"
+   },
+   "sum": {
+    "ru": "Что будет происходить и что уже будет сделано.",
+    "en": "What will be happening and what will be done by then.",
+    "uz": "Nima bo'layotgan bo'ladi va nima tugagan bo'ladi."
+   },
+   "explain": {
+    "ru": [
+     "Future continuous (will be + -ing) — процесс в момент в будущем: This time tomorrow I’ll be flying to Paris.",
+     "Future perfect (will have + причастие) — будет закончено к моменту: By 2030 I’ll have finished university.",
+     "Сигналы: this time next week, at 8 tomorrow → continuous; by Friday, by the time, before → perfect. Вежливый вопрос о планах: Will you be using the car tonight?"
+    ],
+    "en": [
+     "Future continuous (will be + -ing) — in progress at a future moment: This time tomorrow I’ll be flying.",
+     "Future perfect (will have + participle) — completed before a future time: By 2030 I’ll have finished university.",
+     "Signals: this time next week, at 8 tomorrow → continuous; by Friday, by the time → perfect. Polite plans: Will you be using the car?"
+    ],
+    "uz": [
+     "Future continuous (will be + -ing) — kelajakdagi paytda jarayon: This time tomorrow I’ll be flying.",
+     "Future perfect (will have + sifatdosh) — kelajakdagi paytgacha tugaydi: By 2030 I’ll have finished university.",
+     "Belgilar: this time next week → continuous; by Friday, by the time → perfect. Muloyim savol: Will you be using the car?"
+    ]
+   },
+   "formula": [
+    "will be + -ing = in progress then",
+    "will have + done = finished by then",
+    "this time tomorrow · by Friday"
+   ],
+   "examples": [
+    {
+     "s": "Don’t call at nine — I’ll be having dinner.",
+     "t": {
+      "ru": "Не звони в девять — я буду ужинать.",
+      "uz": "Soat to'qqizda qo'ng'iroq qilma — kechki ovqat qilayotgan bo'laman."
+     }
+    },
+    {
+     "s": "By the time you arrive, we’ll have cooked everything.",
+     "t": {
+      "ru": "К твоему приезду мы всё приготовим.",
+      "uz": "Sen kelguningcha hammasini pishirib qo'yamiz."
+     }
+    },
+    {
+     "s": "Will you be using your laptop later?",
+     "t": {
+      "ru": "Ты будешь пользоваться ноутбуком позже?",
+      "uz": "Keyinroq noutbukingdan foydalanasanmi?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "By Monday I will finish the report already.",
+    "right": "By Monday I will have finished the report.",
+    "note": {
+     "ru": "by + момент → will have done.",
+     "en": "by + time → will have done.",
+     "uz": "by + vaqt → will have done."
+    }
+   },
+   "tip": {
+    "ru": "В процессе тогда → will be -ing; готово к тому времени → will have done.",
+    "en": "In progress then → will be -ing; done by then → will have done.",
+    "uz": "O'sha payt jarayonda → will be -ing; o'sha paytgacha tugagan → will have done."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "This time next week we ___ on the beach.",
+     "o": [
+      "’ll be lying",
+      "’ll have lain",
+      "lie"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Процесс в момент → will be -ing.",
+      "en": "In progress then → will be -ing.",
+      "uz": "Jarayon → will be -ing."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "By 2030 scientists ___ a cure.",
+     "o": [
+      "will have found",
+      "will be finding",
+      "find"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "by + год → will have done.",
+      "en": "by + year → will have done.",
+      "uz": "by + yil → will have done."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "At 10 pm I ___ my homework, so I can’t talk.",
+     "o": [
+      "will be doing",
+      "will have done",
+      "do"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В 10 — в процессе.",
+      "en": "At 10 — in progress.",
+      "uz": "Soat 10 da — jarayonda."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "She will have left by the time we get there.",
+      "She will leave already by the time we get there."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "by the time → will have done.",
+      "en": "by the time → will have done.",
+      "uz": "by the time → will have done."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Will you be coming to the meeting?",
+      "Will you have coming to the meeting?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вежливый вопрос → will be -ing.",
+      "en": "Polite question → will be -ing.",
+      "uz": "Muloyim savol → will be -ing."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "By",
+      "next",
+      "June",
+      "I",
+      "will",
+      "have",
+      "saved",
+      "enough",
+      "money."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "This",
+      "time",
+      "tomorrow",
+      "I",
+      "will",
+      "be",
+      "sitting",
+      "my",
+      "exam."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "By the end of the year, I ___ ___ ___ 20 books. (read)",
+     "a": [
+      "will have read"
+     ],
+     "e": {
+      "ru": "→ will have read.",
+      "en": "→ will have read.",
+      "uz": "→ will have read."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "At 8 I *will be working*.",
+     "By 8 I *will have finished*."
+    ],
+    "q": {
+     "ru": "В чём разница?",
+     "en": "What is the difference?",
+     "uz": "Farqi nimada?"
+    },
+    "o": [
+     {
+      "ru": "В 8 — ещё работаю; к 8 — уже закончил",
+      "en": "At 8 still working; by 8 already done",
+      "uz": "8 da — hali ishlayapman; 8 gacha — tugatgan bo'laman"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Оба прошедшее",
+      "en": "Both are past",
+      "uz": "Ikkalasi o'tmish"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Don’t worry, I ___ the dishes by the time you’re back.",
+     "o": [
+      "’ll have washed",
+      "’ll be washing",
+      "wash"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Готово к моменту.",
+      "en": "Done by then.",
+      "uz": "O'sha paytgacha tayyor."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "In ten years we ___ in a smart city.",
+     "o": [
+      "will be living",
+      "will have lived",
+      "lived"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Процесс в будущем.",
+      "en": "Ongoing in the future.",
+      "uz": "Kelajakdagi jarayon."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ you ___ the car tonight? (polite)",
+     "o": [
+      "Will … be using",
+      "Will … have used",
+      "Do … use"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вежливый вопрос → will be -ing.",
+      "en": "Polite → will be -ing.",
+      "uz": "Muloyim → will be -ing."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что ты будешь делать завтра в 9 утра и что успеешь сделать к концу года.",
+    "en": "Write what you will be doing at 9 am tomorrow and what you will have done by the end of the year.",
+    "uz": "Ertaga soat 9 da nima qilayotgan bo'lishingiz va yil oxirigacha nimani tugatishingizni yozing."
+   }
+  },
+  {
+   "id": "mixed-conditionals",
+   "level": "B2",
+   "title": {
+    "ru": "Смешанные условные предложения",
+    "en": "Mixed conditionals",
+    "uz": "Aralash shart gaplar"
+   },
+   "sum": {
+    "ru": "Прошлое влияет на настоящее — и наоборот.",
+    "en": "The past affecting the present — and the other way round.",
+    "uz": "O'tmish hozirga ta'sir qiladi — va aksincha."
+   },
+   "explain": {
+    "ru": [
+     "Прошлое условие → результат сейчас: if + past perfect, would + глагол: If I had studied medicine, I would be a doctor now.",
+     "Постоянное настоящее условие → прошлый результат: if + past simple, would have + причастие: If I were braver, I would have said something.",
+     "Подсказка: смотри на слова времени: now, today → would + глагол; yesterday, last year → would have done."
+    ],
+    "en": [
+     "Past condition → present result: if + past perfect, would + verb: If I had studied medicine, I would be a doctor now.",
+     "Present/permanent condition → past result: if + past simple, would have + participle: If I were braver, I would have said something.",
+     "Tip: look at time words: now, today → would + verb; yesterday, last year → would have done."
+    ],
+    "uz": [
+     "O'tmishdagi shart → hozirgi natija: if + past perfect, would + fe'l: If I had studied medicine, I would be a doctor now.",
+     "Hozirgi/doimiy shart → o'tmishdagi natija: if + past simple, would have + sifatdosh: If I were braver, I would have said something.",
+     "Maslahat: vaqt so'zlariga qara: now, today → would + fe'l; yesterday, last year → would have done."
+    ]
+   },
+   "formula": [
+    "if + had done → would do (now)",
+    "if + did / were → would have done (then)",
+    "now → would · yesterday → would have"
+   ],
+   "examples": [
+    {
+     "s": "If I hadn’t missed the bus, I wouldn’t be late now.",
+     "t": {
+      "ru": "Если бы я не опоздал на автобус, сейчас бы не опаздывал.",
+      "uz": "Avtobusdan qolmaganimda, hozir kechikmasdim."
+     }
+    },
+    {
+     "s": "If she spoke English, she would have got the job.",
+     "t": {
+      "ru": "Если бы она говорила по-английски, её бы взяли на ту работу.",
+      "uz": "Inglizcha gapirganida, u ishga olingan bo'lardi."
+     }
+    },
+    {
+     "s": "If we had bought that flat, we would live by the sea now.",
+     "t": {
+      "ru": "Если бы мы купили ту квартиру, жили бы сейчас у моря.",
+      "uz": "O'sha kvartirani olganimizda, hozir dengiz bo'yida yashardik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "If I had slept more, I would have been less tired now.",
+    "right": "If I had slept more, I would be less tired now.",
+    "note": {
+     "ru": "Результат сейчас (now) → would be.",
+     "en": "Result now → would be.",
+     "uz": "Natija hozir → would be."
+    }
+   },
+   "tip": {
+    "ru": "Прошлое → сейчас: had done … would do. Всегда → тогда: did … would have done.",
+    "en": "Past → now: had done … would do. Always → then: did … would have done.",
+    "uz": "O'tmish → hozir: had done … would do. Doim → o'shanda: did … would have done."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "If I had taken the job, I ___ in London now.",
+     "o": [
+      "would live",
+      "would have lived",
+      "lived"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Результат сейчас → would live.",
+      "en": "Result now → would live.",
+      "uz": "Natija hozir → would live."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "If he weren’t so lazy, he ___ the exam last week.",
+     "o": [
+      "would have passed",
+      "would pass",
+      "passed"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлый результат → would have passed.",
+      "en": "Past result → would have passed.",
+      "uz": "O'tmish natija → would have passed."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "If you ___ breakfast, you wouldn’t be hungry now.",
+     "o": [
+      "had eaten",
+      "ate",
+      "would eat"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое условие → had eaten.",
+      "en": "Past condition → had eaten.",
+      "uz": "O'tmish shart → had eaten."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "If I knew her number, I would have called her yesterday.",
+      "If I knew her number, I would call her yesterday."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "yesterday → would have called.",
+      "en": "yesterday → would have called.",
+      "uz": "yesterday → would have called."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "If we had left earlier, we would be there by now.",
+      "If we left earlier, we would be there by now."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое условие → had left.",
+      "en": "Past condition → had left.",
+      "uz": "O'tmish shart → had left."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "If",
+      "I",
+      "had",
+      "learned",
+      "to",
+      "swim,",
+      "I",
+      "would",
+      "go",
+      "to",
+      "the",
+      "beach",
+      "more."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "If",
+      "she",
+      "were",
+      "more",
+      "careful,",
+      "she",
+      "would",
+      "not",
+      "have",
+      "lost",
+      "her",
+      "keys."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "If I ___ ___ that film, I would know the ending. (see)",
+     "a": [
+      "had seen"
+     ],
+     "e": {
+      "ru": "Прошлое условие → had seen.",
+      "en": "Past condition → had seen.",
+      "uz": "O'tmish shart → had seen."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "If I *had saved* money, I *would be* rich *now*.",
+     "If I *were* rich, I *would have bought* it *yesterday*."
+    ],
+    "q": {
+     "ru": "Что подсказывает форму?",
+     "en": "What tells you the form?",
+     "uz": "Shaklni nima ko'rsatadi?"
+    },
+    "o": [
+     {
+      "ru": "Когда условие и когда результат: прошлое или сейчас",
+      "en": "When the condition and the result are: past or now",
+      "uz": "Shart va natija qachon: o'tmish yoki hozir"
+     },
+     {
+      "ru": "Только слово if",
+      "en": "Only the word if",
+      "uz": "Faqat if so'zi"
+     },
+     {
+      "ru": "Ничего",
+      "en": "Nothing",
+      "uz": "Hech narsa"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "If I had gone to bed earlier, I ___ so sleepy now.",
+     "o": [
+      "wouldn’t be",
+      "wouldn’t have been",
+      "am not"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "now → wouldn’t be.",
+      "en": "now → wouldn’t be.",
+      "uz": "now → wouldn’t be."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "If she ___ shy, she would have spoken at the meeting.",
+     "o": [
+      "weren’t",
+      "hadn’t",
+      "wouldn’t be"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Постоянное качество → weren’t.",
+      "en": "A permanent trait → weren’t.",
+      "uz": "Doimiy xususiyat → weren’t."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "If they ___ the map, they wouldn’t be lost now.",
+     "o": [
+      "had taken",
+      "took",
+      "would take"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прошлое → had taken.",
+      "en": "Past → had taken.",
+      "uz": "O'tmish → had taken."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 2 смешанных условных предложения о своей жизни (If I had…, I would… now).",
+    "en": "Write 2 mixed conditionals about your life (If I had…, I would… now).",
+    "uz": "Hayotingiz haqida 2 ta aralash shart gap yozing (If I had…, I would… now)."
+   }
+  },
+  {
+   "id": "participle-clauses",
+   "level": "B2",
+   "title": {
+    "ru": "Причастные обороты: Feeling tired, I…",
+    "en": "Participle clauses: Feeling tired, I…",
+    "uz": "Sifatdoshli oborotlar: Feeling tired, I…"
+   },
+   "sum": {
+    "ru": "Как сократить предложение и звучать естественно.",
+    "en": "Making sentences shorter and more natural.",
+    "uz": "Gapni qisqartirish va tabiiy yangrash."
+   },
+   "explain": {
+    "ru": [
+     "-ing вместо «так как / когда» (активно, одновременно): Feeling tired, I went to bed. = Because I felt tired…",
+     "Having + причастие — раньше: Having finished work, she went home. Причастие (-ed/3-я форма) — пассивно: Built in 1900, the house is very old.",
+     "Подлежащее обоих частей должно совпадать! Walking home, the rain started — ошибка (дождь не шёл домой). Правильно: Walking home, I got caught in the rain."
+    ],
+    "en": [
+     "-ing replaces “because/when” (active, at the same time): Feeling tired, I went to bed.",
+     "Having + participle = earlier: Having finished work, she went home. Past participle = passive: Built in 1900, the house is old.",
+     "Both parts must share the subject! “Walking home, the rain started” is wrong. Right: Walking home, I got caught in the rain."
+    ],
+    "uz": [
+     "-ing «chunki / qachon» o'rnida (faol, bir vaqtda): Feeling tired, I went to bed.",
+     "Having + sifatdosh = avvalroq: Having finished work, she went home. 3-shakl = majhul: Built in 1900, the house is old.",
+     "Ikkala qismning egasi bir xil bo'lishi kerak! «Walking home, the rain started» — xato."
+    ]
+   },
+   "formula": [
+    "-ing = because / when (active)",
+    "having done = after",
+    "done = passive · same subject!"
+   ],
+   "examples": [
+    {
+     "s": "Not knowing the way, we asked a policeman.",
+     "t": {
+      "ru": "Не зная дороги, мы спросили полицейского.",
+      "uz": "Yo'lni bilmay, politsiyachidan so'radik."
+     }
+    },
+    {
+     "s": "Having lost his keys, he couldn’t get in.",
+     "t": {
+      "ru": "Потеряв ключи, он не смог войти.",
+      "uz": "Kalitlarini yo'qotib, u kira olmadi."
+     }
+    },
+    {
+     "s": "Written in simple English, the book is easy to read.",
+     "t": {
+      "ru": "Книга написана простым английским, её легко читать.",
+      "uz": "Oddiy inglizchada yozilgani uchun kitobni o'qish oson."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Opening the door, the cat ran out.",
+    "right": "When I opened the door, the cat ran out.",
+    "note": {
+     "ru": "Разные подлежащие — оборот нельзя.",
+     "en": "Different subjects — no participle clause.",
+     "uz": "Egalar har xil — oborot mumkin emas."
+    }
+   },
+   "tip": {
+    "ru": "-ing — одновременно, having done — раньше, done — пассив; подлежащее одно.",
+    "en": "-ing = same time, having done = before, done = passive; one subject.",
+    "uz": "-ing — bir vaqtda, having done — avval, done — majhul; ega bitta."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ the news, she started to cry.",
+     "o": [
+      "Hearing",
+      "Heard",
+      "Having heard of"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Одновременно, активно → Hearing.",
+      "en": "Same time, active → Hearing.",
+      "uz": "Bir vaqtda, faol → Hearing."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ his homework, he went out to play.",
+     "o": [
+      "Having finished",
+      "Finishing",
+      "Finished"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сначала закончил → Having finished.",
+      "en": "Finished first → Having finished.",
+      "uz": "Avval tugatdi → Having finished."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ in 1889, the tower attracts millions.",
+     "o": [
+      "Built",
+      "Building",
+      "Having built"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Пассив → Built.",
+      "en": "Passive → Built.",
+      "uz": "Majhul → Built."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Feeling hungry, I made a sandwich.",
+      "Feeling hungry, a sandwich was made."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Подлежащее — я.",
+      "en": "The subject must be I.",
+      "uz": "Ega — men."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Not wanting to wake anyone, she came in quietly.",
+      "Don’t wanting to wake anyone, she came in quietly."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Отрицание: Not + -ing.",
+      "en": "Negative: Not + -ing.",
+      "uz": "Inkor: Not + -ing."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Having",
+      "read",
+      "the",
+      "instructions,",
+      "I",
+      "started",
+      "the",
+      "machine."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Not",
+      "knowing",
+      "what",
+      "to",
+      "say,",
+      "he",
+      "smiled."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "___ by thousands of fans, the band started playing. (cheer, passive)",
+     "a": [
+      "Cheered"
+     ],
+     "e": {
+      "ru": "Пассив → Cheered.",
+      "en": "Passive → Cheered.",
+      "uz": "Majhul → Cheered."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Feeling* tired, I slept.",
+     "*Having eaten*, I slept.",
+     "*Tired* of work, I slept."
+    ],
+    "q": {
+     "ru": "Что выражает каждая форма?",
+     "en": "What does each form express?",
+     "uz": "Har bir shakl nimani bildiradi?"
+    },
+    "o": [
+     {
+      "ru": "Одновременно — раньше — состояние/пассив",
+      "en": "Same time — before — state/passive",
+      "uz": "Bir vaqtda — avval — holat/majhul"
+     },
+     {
+      "ru": "Одно и то же",
+      "en": "The same",
+      "uz": "Bir xil"
+     },
+     {
+      "ru": "Будущее",
+      "en": "Future",
+      "uz": "Kelajak"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ the bus, I had to walk. (miss, earlier)",
+     "o": [
+      "Having missed",
+      "Missing to",
+      "Missed"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сначала опоздал → Having missed.",
+      "en": "First → Having missed.",
+      "uz": "Avval → Having missed."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ from the top, the city looks small. (see, passive)",
+     "o": [
+      "Seen",
+      "Seeing",
+      "Having seen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Город «виден» → Seen.",
+      "en": "The city is seen → Seen.",
+      "uz": "Shahar ko'rinadi → Seen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Walking home, ___ .",
+     "o": [
+      "I met an old friend",
+      "an old friend met me",
+      "it started raining"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Подлежащее — тот, кто шёл.",
+      "en": "The subject is who was walking.",
+      "uz": "Ega — kim yurgan bo'lsa."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Перепиши 3 своих предложения с because/after, используя -ing или having done.",
+    "en": "Rewrite 3 of your sentences with because/after using -ing or having done.",
+    "uz": "because/after li 3 ta gapingizni -ing yoki having done bilan qayta yozing."
+   }
+  },
+  {
+   "id": "would-rather",
+   "level": "B2",
+   "title": {
+    "ru": "Would rather, had better, it’s time",
+    "en": "Would rather, had better, it’s time",
+    "uz": "Would rather, had better, it’s time"
+   },
+   "sum": {
+    "ru": "Предпочтения, советы и «пора».",
+    "en": "Preferences, strong advice and “it’s time”.",
+    "uz": "Afzallik, kuchli maslahat va «vaqti keldi»."
+   },
+   "explain": {
+    "ru": [
+     "would rather + глагол без to = «я бы предпочёл»: I’d rather stay home. Про другого человека — прошедшее: I’d rather you stayed.",
+     "had better + глагол без to = сильный совет / предупреждение (сейчас!): You’d better hurry. You’d better not be late.",
+     "it’s (high) time + прошедшее = «давно пора»: It’s time we went home. It’s high time you found a job. С to: It’s time to go."
+    ],
+    "en": [
+     "would rather + bare verb = prefer: I’d rather stay home. About another person use the past: I’d rather you stayed.",
+     "had better + bare verb = strong advice or warning about now: You’d better hurry. You’d better not be late.",
+     "it’s (high) time + past = it should happen now: It’s time we went home. Or: It’s time to go."
+    ],
+    "uz": [
+     "would rather + to siz fe'l = «afzal ko'raman»: I’d rather stay home. Boshqa odam haqida — o'tgan zamon: I’d rather you stayed.",
+     "had better + to siz fe'l = kuchli maslahat yoki ogohlantirish: You’d better hurry.",
+     "it’s (high) time + o'tgan zamon = «allaqachon vaqti keldi»: It’s time we went home. Yoki: It’s time to go."
+    ]
+   },
+   "formula": [
+    "I’d rather + verb · I’d rather you + past",
+    "you’d better (not) + verb",
+    "it’s time + past · it’s time to + verb"
+   ],
+   "examples": [
+    {
+     "s": "I’d rather walk than take the bus.",
+     "t": {
+      "ru": "Я лучше пройдусь, чем поеду на автобусе.",
+      "uz": "Avtobusga minishdan ko'ra piyoda yurganim yaxshi."
+     }
+    },
+    {
+     "s": "You’d better take an umbrella.",
+     "t": {
+      "ru": "Возьми-ка зонт.",
+      "uz": "Soyabon olganing ma'qul."
+     }
+    },
+    {
+     "s": "It’s time you went to bed.",
+     "t": {
+      "ru": "Тебе давно пора спать.",
+      "uz": "Yotish vaqting allaqachon keldi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "You had better to study tonight.",
+    "right": "You had better study tonight.",
+    "note": {
+     "ru": "had better без to.",
+     "en": "had better takes no to.",
+     "uz": "had better — to siz."
+    }
+   },
+   "tip": {
+    "ru": "rather/better — без to; про другого и time — прошедшее.",
+    "en": "rather/better — no to; about someone else and after time — past.",
+    "uz": "rather/better — to siz; boshqa odam va time dan keyin — o'tgan zamon."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "I’d rather ___ at home tonight.",
+     "o": [
+      "stay",
+      "to stay",
+      "staying"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "would rather + глагол без to.",
+      "en": "would rather + bare verb.",
+      "uz": "would rather + to siz fe'l."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "You’d better ___ the doctor.",
+     "o": [
+      "see",
+      "to see",
+      "saw"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "had better + глагол без to.",
+      "en": "had better + bare verb.",
+      "uz": "had better + to siz fe'l."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "It’s high time we ___ a new car.",
+     "o": [
+      "bought",
+      "buy",
+      "will buy"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "it’s time + прошедшее.",
+      "en": "it’s time + past.",
+      "uz": "it’s time + o'tgan zamon."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "I’d rather you didn’t smoke here.",
+      "I’d rather you don’t smoke here."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Про другого → прошедшее.",
+      "en": "About another person → past.",
+      "uz": "Boshqa odam → o'tgan zamon."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "You’d better not tell her.",
+      "You’d not better tell her."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "had better not + глагол.",
+      "en": "had better not + verb.",
+      "uz": "had better not + fe'l."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "I",
+      "would",
+      "rather",
+      "read",
+      "a",
+      "book",
+      "than",
+      "watch",
+      "TV."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "It",
+      "is",
+      "time",
+      "to",
+      "say",
+      "goodbye."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "You’d better ___ late again! (negative)",
+     "a": [
+      "not be"
+     ],
+     "e": {
+      "ru": "had better not + глагол.",
+      "en": "had better not + verb.",
+      "uz": "had better not + fe'l."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "I’d rather *go*.",
+     "I’d rather you *went*."
+    ],
+    "q": {
+     "ru": "Почему go и went?",
+     "en": "Why go and went?",
+     "uz": "Nega go va went?"
+    },
+    "o": [
+     {
+      "ru": "Про себя — глагол, про другого — прошедшее",
+      "en": "About yourself — base verb; about someone else — past",
+      "uz": "O'zing haqida — fe'l, boshqa odam — o'tgan zamon"
+     },
+     {
+      "ru": "Разные времена события",
+      "en": "Different event times",
+      "uz": "Turli vaqtlar"
+     },
+     {
+      "ru": "Ошибка",
+      "en": "A mistake",
+      "uz": "Xato"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "We’d better ___ now or we’ll miss the train.",
+     "o": [
+      "leave",
+      "to leave",
+      "left"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "had better + leave.",
+      "en": "had better + leave.",
+      "uz": "had better + leave."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "It’s time the government ___ something.",
+     "o": [
+      "did",
+      "does",
+      "do"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "it’s time + прошедшее.",
+      "en": "it’s time + past.",
+      "uz": "it’s time + o'tgan zamon."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Would you rather ___ tea or coffee?",
+     "o": [
+      "have",
+      "to have",
+      "had"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "would rather + глагол без to.",
+      "en": "would rather + bare verb.",
+      "uz": "would rather + to siz fe'l."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что бы ты предпочёл на выходных (I’d rather…), один совет другу (You’d better…) и что давно пора сделать (It’s time…).",
+    "en": "Write your weekend preference (I’d rather…), one tip for a friend (You’d better…) and something it’s time to do (It’s time…).",
+    "uz": "Dam olish kunidagi afzalligingiz (I’d rather…), do'stga maslahat (You’d better…) va qilish vaqti kelgan ishni (It’s time…) yozing."
    }
   }
  ],

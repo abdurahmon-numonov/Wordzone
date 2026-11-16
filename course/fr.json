@@ -2612,6 +2612,525 @@
    }
   },
   {
+   "id": "cest-ilest",
+   "level": "A1",
+   "title": {
+    "ru": "C’est или il est",
+    "en": "C’est or il est",
+    "uz": "C’est yoki il est"
+   },
+   "sum": {
+    "ru": "Два способа сказать «это / он есть».",
+    "en": "Two ways to say “it is / he is”.",
+    "uz": "«Bu / u» deyishning ikki usuli."
+   },
+   "explain": {
+    "ru": [
+     "c’est + артикль/имя/местоимение: C’est un livre. C’est Paul. C’est moi. Мн. ч.: ce sont des amis.",
+     "il/elle est + прилагательное или профессия без артикля: Il est grand. Elle est médecin.",
+     "Профессия с прилагательным → c’est + артикль: C’est un bon médecin. Общая оценка — c’est + прил. м. р.: Paris, c’est beau!"
+    ],
+    "en": [
+     "c’est + article/name/pronoun: C’est un livre. C’est Paul. C’est moi. Plural: ce sont des amis.",
+     "il/elle est + adjective or a job without an article: Il est grand. Elle est médecin.",
+     "A job with an adjective → c’est + article: C’est un bon médecin. A general comment — c’est + masculine adjective: Paris, c’est beau!"
+    ],
+    "uz": [
+     "c’est + artikl/ism/olmosh: C’est un livre. C’est Paul. C’est moi. Ko'plik: ce sont des amis.",
+     "il/elle est + sifat yoki artiklsiz kasb: Il est grand. Elle est médecin.",
+     "Sifatli kasb → c’est + artikl: C’est un bon médecin. Umumiy baho — c’est + erkak sifat: Paris, c’est beau!"
+    ]
+   },
+   "formula": [
+    "c’est + un / le / nom / moi",
+    "il / elle est + adjectif · métier",
+    "c’est un bon médecin · c’est beau !"
+   ],
+   "examples": [
+    {
+     "s": "C’est ma sœur. Elle est étudiante.",
+     "t": {
+      "ru": "Это моя сестра. Она студентка.",
+      "uz": "Bu mening opam. U talaba."
+     }
+    },
+    {
+     "s": "Ce sont mes parents.",
+     "t": {
+      "ru": "Это мои родители.",
+      "uz": "Bular mening ota-onam."
+     }
+    },
+    {
+     "s": "Le français, c’est difficile mais c’est beau.",
+     "t": {
+      "ru": "Французский — это трудно, но красиво.",
+      "uz": "Fransuz tili — qiyin, lekin chiroyli."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Il est un professeur.",
+    "right": "Il est professeur. / C’est un professeur.",
+    "note": {
+     "ru": "il est + профессия без артикля; с артиклем — c’est.",
+     "en": "il est + job without article; with an article use c’est.",
+     "uz": "il est + artiklsiz kasb; artikl bilan — c’est."
+    }
+   },
+   "tip": {
+    "ru": "Артикль/имя → c’est; прилагательное/профессия → il est.",
+    "en": "Article/name → c’est; adjective/job → il est.",
+    "uz": "Artikl/ism → c’est; sifat/kasb → il est."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ mon ami Karim.",
+     "o": [
+      "C’est",
+      "Il est",
+      "Elle est"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Имя/притяжательное → c’est.",
+      "en": "A noun with mon → c’est.",
+      "uz": "mon bilan ot → c’est."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Regarde Marie, ___ très élégante.",
+     "o": [
+      "elle est",
+      "c’est",
+      "ce sont"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Прилагательное → elle est.",
+      "en": "Adjective → elle est.",
+      "uz": "Sifat → elle est."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ des touristes japonais.",
+     "o": [
+      "Ce sont",
+      "C’est",
+      "Ils sont"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мн. ч. с артиклем → ce sont.",
+      "en": "Plural with an article → ce sont.",
+      "uz": "Ko'plik artikl bilan → ce sont."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Mon père est ingénieur.",
+      "Mon père est un ingénieur."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Профессия без артикля.",
+      "en": "Job without an article.",
+      "uz": "Kasb artiklsiz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "C’est un excellent cuisinier.",
+      "Il est un excellent cuisinier."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Профессия + прилагательное → c’est un…",
+      "en": "Job + adjective → c’est un…",
+      "uz": "Kasb + sifat → c’est un…"
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "C’est",
+      "une",
+      "belle",
+      "maison."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Elle",
+      "est",
+      "infirmière",
+      "à",
+      "Lyon."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Qui est-ce ? — ___ moi ! (it’s)",
+     "a": [
+      "C’est"
+     ],
+     "e": {
+      "ru": "Местоимение → c’est.",
+      "en": "Pronoun → c’est.",
+      "uz": "Olmosh → c’est."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*C’est* un médecin.",
+     "*Il est* médecin."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "С артиклем — c’est, без артикля — il est",
+      "en": "With an article — c’est, without — il est",
+      "uz": "Artikl bilan — c’est, artiklsiz — il est"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Первое — вопрос",
+      "en": "The first is a question",
+      "uz": "Birinchisi savol"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Le film ? ___ génial !",
+     "o": [
+      "C’est",
+      "Il est un",
+      "Ce sont"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Общая оценка → c’est.",
+      "en": "General comment → c’est.",
+      "uz": "Umumiy baho → c’est."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Paul ? ___ avocat.",
+     "o": [
+      "Il est",
+      "C’est",
+      "Ce sont"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Профессия → il est.",
+      "en": "Job → il est.",
+      "uz": "Kasb → il est."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ les clés de Sophie.",
+     "o": [
+      "Ce sont",
+      "C’est",
+      "Elles sont"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мн. ч. + артикль → ce sont.",
+      "en": "Plural + article → ce sont.",
+      "uz": "Ko'plik + artikl → ce sont."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Представь 3 людей с фото: C’est… + il/elle est… .",
+    "en": "Introduce 3 people in a photo: C’est… + il/elle est… .",
+    "uz": "Rasmdagi 3 kishini tanishtiring: C’est… + il/elle est… ."
+   }
+  },
+  {
+   "id": "demonstratifs",
+   "level": "A1",
+   "title": {
+    "ru": "Указательные: ce, cet, cette, ces",
+    "en": "Demonstratives: ce, cet, cette, ces",
+    "uz": "Ko'rsatish olmoshlari: ce, cet, cette, ces"
+   },
+   "sum": {
+    "ru": "Этот, эта, эти.",
+    "en": "This, that, these.",
+    "uz": "Bu, shu, bular."
+   },
+   "explain": {
+    "ru": [
+     "ce + муж. (ce livre), cette + жен. (cette maison), ces + мн. ч. (ces enfants).",
+     "Перед мужским словом на гласную или немую h — cet: cet ami, cet hôtel, cet homme.",
+     "Чтобы уточнить «этот / тот», добавляют -ci / -là: ce livre-ci (этот), ce livre-là (тот). Время: ce matin, cette semaine, cet été."
+    ],
+    "en": [
+     "ce + masculine (ce livre), cette + feminine (cette maison), ces + plural (ces enfants).",
+     "Before a masculine word starting with a vowel or silent h — cet: cet ami, cet hôtel.",
+     "To contrast “this / that” add -ci / -là: ce livre-ci, ce livre-là. Time: ce matin, cette semaine, cet été."
+    ],
+    "uz": [
+     "ce + erkak (ce livre), cette + ayol (cette maison), ces + ko'plik (ces enfants).",
+     "Unli yoki talaffuz qilinmaydigan h bilan boshlanadigan erkak so'zdan oldin — cet: cet ami, cet hôtel.",
+     "«Bu / u» ni ajratish uchun -ci / -là: ce livre-ci, ce livre-là. Vaqt: ce matin, cette semaine, cet été."
+    ]
+   },
+   "formula": [
+    "ce + masc. · cet + masc. voyelle",
+    "cette + fém. · ces + pluriel",
+    "ce matin · cette semaine · cet été"
+   ],
+   "examples": [
+    {
+     "s": "Ce restaurant est excellent.",
+     "t": {
+      "ru": "Этот ресторан отличный.",
+      "uz": "Bu restoran zo'r."
+     }
+    },
+    {
+     "s": "J’aime beaucoup cette chanson.",
+     "t": {
+      "ru": "Мне очень нравится эта песня.",
+      "uz": "Bu qo'shiq menga juda yoqadi."
+     }
+    },
+    {
+     "s": "Cet été, nous allons en Italie.",
+     "t": {
+      "ru": "Этим летом мы едем в Италию.",
+      "uz": "Bu yoz Italiyaga boramiz."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ce arbre est très vieux.",
+    "right": "Cet arbre est très vieux.",
+    "note": {
+     "ru": "Муж. на гласную → cet.",
+     "en": "Masculine + vowel → cet.",
+     "uz": "Erkak + unli → cet."
+    }
+   },
+   "tip": {
+    "ru": "ce / cet / cette / ces — по роду, числу и первой букве.",
+    "en": "ce / cet / cette / ces — by gender, number and first letter.",
+    "uz": "ce / cet / cette / ces — rod, son va birinchi harfga ko'ra."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ voiture est à moi.",
+     "o": [
+      "Cette",
+      "Ce",
+      "Cet"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "voiture — жен. → cette.",
+      "en": "voiture is feminine → cette.",
+      "uz": "voiture — ayol → cette."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tu connais ___ homme ?",
+     "o": [
+      "cet",
+      "ce",
+      "cette"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Немая h, муж. → cet.",
+      "en": "Silent h, masculine → cet.",
+      "uz": "Talaffuz qilinmaydigan h, erkak → cet."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ fleurs sont pour toi.",
+     "o": [
+      "Ces",
+      "Cette",
+      "Ce"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мн. ч. → ces.",
+      "en": "Plural → ces.",
+      "uz": "Ko'plik → ces."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ce soir, on regarde un film.",
+      "Cette soir, on regarde un film."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "soir — муж. → ce.",
+      "en": "soir is masculine → ce.",
+      "uz": "soir — erkak → ce."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Cet ordinateur est rapide.",
+      "Ce ordinateur est rapide."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Гласная → cet.",
+      "en": "Vowel → cet.",
+      "uz": "Unli → cet."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ces",
+      "chaussures",
+      "sont",
+      "trop",
+      "petites."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Cette",
+      "semaine,",
+      "je",
+      "travaille",
+      "beaucoup."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Je voudrais ___ gâteau-là. (that, masculine)",
+     "a": [
+      "ce"
+     ],
+     "e": {
+      "ru": "gâteau — муж. → ce.",
+      "en": "gâteau is masculine → ce.",
+      "uz": "gâteau — erkak → ce."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*ce* livre",
+     "*cet* ami",
+     "*cette* amie",
+     "*ces* amis"
+    ],
+    "q": {
+     "ru": "Почему cet перед ami?",
+     "en": "Why cet before ami?",
+     "uz": "Nega ami oldida cet?"
+    },
+    "o": [
+     {
+      "ru": "Мужское слово начинается с гласной",
+      "en": "A masculine word starting with a vowel",
+      "uz": "Unli bilan boshlanadigan erkak so'z"
+     },
+     {
+      "ru": "Мн. ч.",
+      "en": "Plural",
+      "uz": "Ko'plik"
+     },
+     {
+      "ru": "Женский род",
+      "en": "Feminine",
+      "uz": "Ayol rodi"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ appartement est grand.",
+     "o": [
+      "Cet",
+      "Ce",
+      "Cette"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Муж. на гласную → cet.",
+      "en": "Masc. + vowel → cet.",
+      "uz": "Erkak + unli → cet."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tu as vu ___ film ?",
+     "o": [
+      "ce",
+      "cet",
+      "cette"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "film — муж. → ce.",
+      "en": "film is masculine → ce.",
+      "uz": "film — erkak → ce."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ année, je commence l’université.",
+     "o": [
+      "Cette",
+      "Cet",
+      "Ce"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "année — жен. → cette.",
+      "en": "année is feminine → cette.",
+      "uz": "année — ayol → cette."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши 4 вещи вокруг себя с ce, cet, cette, ces.",
+    "en": "Describe 4 things around you with ce, cet, cette, ces.",
+    "uz": "Atrofingizdagi 4 ta narsani ce, cet, cette, ces bilan tasvirlang."
+   }
+  },
+  {
    "id": "passe-compose-avoir",
    "level": "A2",
    "title": {
@@ -5236,6 +5755,531 @@
     "ru": "Напиши 3 предсказания о своём будущем через 10 лет (futur simple).",
     "en": "Write 3 predictions about your future in 10 years (simple future).",
     "uz": "10 yildan keyingi kelajagingiz haqida 3 ta bashorat yozing (futur simple)."
+   }
+  },
+  {
+   "id": "temps-proches",
+   "level": "A2",
+   "title": {
+    "ru": "Venir de, être en train de, aller",
+    "en": "Venir de, être en train de, aller",
+    "uz": "Venir de, être en train de, aller"
+   },
+   "sum": {
+    "ru": "Только что, прямо сейчас, вот-вот.",
+    "en": "Just did, right now, about to.",
+    "uz": "Hozirgina, aynan hozir, hademay."
+   },
+   "explain": {
+    "ru": [
+     "venir de + инфинитив = «только что»: Je viens de manger. Il vient d’arriver.",
+     "être en train de + инфинитив = «прямо сейчас, в процессе»: Je suis en train de travailler, rappelle-moi.",
+     "aller + инфинитив = «вот-вот / собираюсь»: Le film va commencer. venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent."
+    ],
+    "en": [
+     "venir de + infinitive = have just: Je viens de manger. Il vient d’arriver.",
+     "être en train de + infinitive = in the middle of: Je suis en train de travailler.",
+     "aller + infinitive = about to: Le film va commencer. venir: je viens, tu viens, il vient, nous venons, vous venez, ils viennent."
+    ],
+    "uz": [
+     "venir de + infinitiv = «hozirgina»: Je viens de manger. Il vient d’arriver.",
+     "être en train de + infinitiv = «aynan hozir»: Je suis en train de travailler.",
+     "aller + infinitiv = «hademay»: Le film va commencer. venir: je viens, il vient, nous venons, ils viennent."
+    ]
+   },
+   "formula": [
+    "venir de + inf. = just",
+    "être en train de + inf. = right now",
+    "aller + inf. = about to"
+   ],
+   "examples": [
+    {
+     "s": "Le train vient de partir.",
+     "t": {
+      "ru": "Поезд только что ушёл.",
+      "uz": "Poyezd hozirgina ketdi."
+     }
+    },
+    {
+     "s": "Chut ! Le bébé est en train de dormir.",
+     "t": {
+      "ru": "Тсс! Малыш спит.",
+      "uz": "Jim! Chaqaloq uxlayapti."
+     }
+    },
+    {
+     "s": "Attention, il va pleuvoir.",
+     "t": {
+      "ru": "Осторожно, сейчас пойдёт дождь.",
+      "uz": "Ehtiyot bo'l, yomg'ir yog'adi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Je viens manger. (I have just eaten)",
+    "right": "Je viens de manger.",
+    "note": {
+     "ru": "«Только что» → venir de.",
+     "en": "“Have just” → venir de.",
+     "uz": "«Hozirgina» → venir de."
+    }
+   },
+   "tip": {
+    "ru": "Прошлое — venir de, сейчас — en train de, будущее — aller.",
+    "en": "Just past — venir de, now — en train de, next — aller.",
+    "uz": "Hozirgina — venir de, hozir — en train de, keyin — aller."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Nous ___ de rentrer de vacances.",
+     "o": [
+      "venons",
+      "allons",
+      "sommes"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Только что → venir de.",
+      "en": "Just → venir de.",
+      "uz": "Hozirgina → venir de."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Elle est en train ___ cuisiner.",
+     "o": [
+      "de",
+      "à",
+      "en"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "en train de.",
+      "en": "en train de.",
+      "uz": "en train de."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Dépêche-toi, le bus ___ partir !",
+     "o": [
+      "va",
+      "vient de",
+      "est en train"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вот-вот → va.",
+      "en": "About to → va.",
+      "uz": "Hademay → va."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ils viennent d’acheter une maison.",
+      "Ils vient d’acheter une maison."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ils → viennent.",
+      "en": "ils → viennent.",
+      "uz": "ils → viennent."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Je suis en train de lire.",
+      "Je suis en train lire."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Нужно de.",
+      "en": "You need de.",
+      "uz": "de kerak."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Il",
+      "vient",
+      "de",
+      "finir",
+      "ses",
+      "devoirs."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Nous",
+      "sommes",
+      "en",
+      "train",
+      "de",
+      "regarder",
+      "un",
+      "film."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Le cours ___ de commencer. (just, il)",
+     "a": [
+      "vient"
+     ],
+     "e": {
+      "ru": "il → vient.",
+      "en": "il → vient.",
+      "uz": "il → vient."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Je *viens de* manger.",
+     "Je *suis en train de* manger.",
+     "Je *vais* manger."
+    ],
+    "q": {
+     "ru": "Когда происходит еда?",
+     "en": "When is the eating?",
+     "uz": "Ovqat qachon?"
+    },
+    "o": [
+     {
+      "ru": "Только что — сейчас — скоро",
+      "en": "Just now — right now — soon",
+      "uz": "Hozirgina — hozir — tez orada"
+     },
+     {
+      "ru": "Всегда сейчас",
+      "en": "Always now",
+      "uz": "Doim hozir"
+     },
+     {
+      "ru": "Вчера",
+      "en": "Yesterday",
+      "uz": "Kecha"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Tu ___ d’arriver ?",
+     "o": [
+      "viens",
+      "vient",
+      "vas"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "tu → viens.",
+      "en": "tu → viens.",
+      "uz": "tu → viens."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Je ne peux pas parler, je suis ___ conduire.",
+     "o": [
+      "en train de",
+      "en train",
+      "venu de"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ en train de.",
+      "en": "→ en train de.",
+      "uz": "→ en train de."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Regarde le ciel : il ___ neiger.",
+     "o": [
+      "va",
+      "vient",
+      "est"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вот-вот → va.",
+      "en": "About to → va.",
+      "uz": "Hademay → va."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения: что ты только что сделал, что делаешь сейчас и что сейчас сделаешь.",
+    "en": "Write 3 sentences: what you have just done, are doing now and are about to do.",
+    "uz": "3 ta gap yozing: hozirgina nima qildingiz, hozir nima qilyapsiz va hademay nima qilasiz."
+   }
+  },
+  {
+   "id": "depuis-pendant",
+   "level": "A2",
+   "title": {
+    "ru": "Depuis, il y a, pendant",
+    "en": "Depuis, il y a, pendant",
+    "uz": "Depuis, il y a, pendant"
+   },
+   "sum": {
+    "ru": "С какого времени, сколько назад, как долго.",
+    "en": "Since/for, ago, during.",
+    "uz": "…dan beri, … oldin, … davomida."
+   },
+   "explain": {
+    "ru": [
+     "depuis + настоящее = действие началось и ещё идёт: J’habite ici depuis 2020 / depuis trois ans. (не passé composé!)",
+     "il y a + время = «тому назад» (с прошедшим): Je suis arrivé il y a deux jours.",
+     "pendant = «в течение» (законченный отрезок): J’ai travaillé pendant cinq heures. Вопросы: Depuis quand…? Depuis combien de temps…?"
+    ],
+    "en": [
+     "depuis + present = started and still going: J’habite ici depuis 2020 / depuis trois ans.",
+     "il y a + time = ago (with a past tense): Je suis arrivé il y a deux jours.",
+     "pendant = for/during (a finished period): J’ai travaillé pendant cinq heures. Questions: Depuis quand…? Depuis combien de temps…?"
+    ],
+    "uz": [
+     "depuis + hozirgi zamon = boshlangan va davom etmoqda: J’habite ici depuis 2020 / depuis trois ans.",
+     "il y a + vaqt = «… oldin» (o'tgan zamon bilan): Je suis arrivé il y a deux jours.",
+     "pendant = «davomida» (tugagan davr): J’ai travaillé pendant cinq heures. Savollar: Depuis quand…? Depuis combien de temps…?"
+    ]
+   },
+   "formula": [
+    "depuis + présent = still going",
+    "il y a + passé = ago",
+    "pendant = during (finished)"
+   ],
+   "examples": [
+    {
+     "s": "J’apprends le français depuis six mois.",
+     "t": {
+      "ru": "Я учу французский уже полгода.",
+      "uz": "Fransuz tilini olti oydan beri o'rganyapman."
+     }
+    },
+    {
+     "s": "Elle est partie il y a une heure.",
+     "t": {
+      "ru": "Она ушла час назад.",
+      "uz": "U bir soat oldin ketdi."
+     }
+    },
+    {
+     "s": "Nous avons dormi pendant le voyage.",
+     "t": {
+      "ru": "Мы спали во время поездки.",
+      "uz": "Safar davomida uxladik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "J’ai habité ici depuis cinq ans.",
+    "right": "J’habite ici depuis cinq ans.",
+    "note": {
+     "ru": "Ещё живу → présent.",
+     "en": "Still living here → present.",
+     "uz": "Hali yashayapman → présent."
+    }
+   },
+   "tip": {
+    "ru": "Ещё длится → depuis + présent; назад → il y a; отрезок → pendant.",
+    "en": "Still going → depuis + present; ago → il y a; a period → pendant.",
+    "uz": "Davom etmoqda → depuis + présent; oldin → il y a; davr → pendant."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Il travaille chez Renault ___ 2019.",
+     "o": [
+      "depuis",
+      "il y a",
+      "pendant"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С 2019 и до сих пор → depuis.",
+      "en": "Since 2019 and still → depuis.",
+      "uz": "2019 dan beri → depuis."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "J’ai vu ce film ___ deux semaines.",
+     "o": [
+      "il y a",
+      "depuis",
+      "pendant"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Назад → il y a.",
+      "en": "Ago → il y a.",
+      "uz": "Oldin → il y a."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "On a marché ___ trois heures.",
+     "o": [
+      "pendant",
+      "depuis",
+      "il y a"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Законченный отрезок → pendant.",
+      "en": "A finished period → pendant.",
+      "uz": "Tugagan davr → pendant."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Depuis combien de temps tu attends ?",
+      "Pendant combien de temps tu attends depuis ?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вопрос о длительности до сих пор → depuis.",
+      "en": "Duration up to now → depuis.",
+      "uz": "Hozirgacha davom → depuis."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Il est arrivé il y a dix minutes.",
+      "Il est arrivé depuis dix minutes avant."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Назад → il y a.",
+      "en": "Ago → il y a.",
+      "uz": "Oldin → il y a."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Nous",
+      "nous",
+      "connaissons",
+      "depuis",
+      "l’enfance."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "J’ai",
+      "habité",
+      "à",
+      "Paris",
+      "pendant",
+      "deux",
+      "ans."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Il pleut ___ ce matin. (since)",
+     "a": [
+      "depuis"
+     ],
+     "e": {
+      "ru": "С утра и до сих пор → depuis.",
+      "en": "Since this morning → depuis.",
+      "uz": "Ertalabdan beri → depuis."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "J’habite ici *depuis* 3 ans.",
+     "J’ai habité ici *pendant* 3 ans."
+    ],
+    "q": {
+     "ru": "Живёт ли он здесь сейчас?",
+     "en": "Does he still live here?",
+     "uz": "U hozir ham shu yerda yashaydimi?"
+    },
+    "o": [
+     {
+      "ru": "В первом — да, во втором — уже нет",
+      "en": "First yes, second no longer",
+      "uz": "Birinchisida — ha, ikkinchisida — endi yo'q"
+     },
+     {
+      "ru": "В обоих да",
+      "en": "Yes in both",
+      "uz": "Ikkalasida ha"
+     },
+     {
+      "ru": "В обоих нет",
+      "en": "No in both",
+      "uz": "Ikkalasida yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Je suis ici ___ lundi.",
+     "o": [
+      "depuis",
+      "il y a",
+      "pendant"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С понедельника → depuis.",
+      "en": "Since Monday → depuis.",
+      "uz": "Dushanbadan beri → depuis."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Elle a appelé ___ cinq minutes.",
+     "o": [
+      "il y a",
+      "depuis",
+      "pendant"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Назад → il y a.",
+      "en": "Ago → il y a.",
+      "uz": "Oldin → il y a."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "J’ai lu ___ tout le week-end.",
+     "o": [
+      "pendant",
+      "depuis",
+      "il y a"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "В течение → pendant.",
+      "en": "During → pendant.",
+      "uz": "Davomida → pendant."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о себе с depuis, il y a и pendant.",
+    "en": "Write 3 sentences about yourself with depuis, il y a and pendant.",
+    "uz": "O'zingiz haqida depuis, il y a va pendant bilan 3 ta gap yozing."
    }
   },
   {
@@ -7867,6 +8911,535 @@
    }
   },
   {
+   "id": "celui-le-mien",
+   "level": "B1",
+   "title": {
+    "ru": "Celui-ci и le mien: указательные и притяжательные местоимения",
+    "en": "Celui-ci and le mien: demonstrative and possessive pronouns",
+    "uz": "Celui-ci va le mien: ko'rsatish va egalik olmoshlari"
+   },
+   "sum": {
+    "ru": "Не повторять существительное: этот, тот, мой.",
+    "en": "Avoiding repeating the noun: this one, mine.",
+    "uz": "Otni takrorlamaslik: bunisi, meniki."
+   },
+   "explain": {
+    "ru": [
+     "celui (м.), celle (ж.), ceux (м. мн.), celles (ж. мн.) заменяют существительное: Quel pull ? — Celui-ci (этот) / celui-là (тот).",
+     "celui de / celui qui / celui que: La voiture de Paul et celle de Marie. Celui qui parle est mon frère.",
+     "Притяжательные: le mien, la mienne, les miens, les miennes (мой); le tien (твой), le sien (его/её), le nôtre, le vôtre, le leur. Согласуются с вещью: C’est ta clé ? — Oui, c’est la mienne."
+    ],
+    "en": [
+     "celui, celle, ceux, celles replace a noun: Quel pull ? — Celui-ci / celui-là.",
+     "celui de / qui / que: La voiture de Paul et celle de Marie. Celui qui parle est mon frère.",
+     "Possessives: le mien, la mienne, les miens, les miennes; le tien, le sien, le nôtre, le vôtre, le leur — they agree with the thing."
+    ],
+    "uz": [
+     "celui, celle, ceux, celles otni almashtiradi: Quel pull ? — Celui-ci / celui-là.",
+     "celui de / qui / que: La voiture de Paul et celle de Marie. Celui qui parle est mon frère.",
+     "Egalik: le mien, la mienne, les miens, les miennes; le tien, le sien, le nôtre, le vôtre, le leur — narsaga moslashadi."
+    ]
+   },
+   "formula": [
+    "celui / celle / ceux / celles (+ -ci, -là, de, qui, que)",
+    "le mien · la mienne · les miens · les miennes",
+    "le tien · le sien · le nôtre · le leur"
+   ],
+   "examples": [
+    {
+     "s": "Ces chaussures sont jolies, mais je préfère celles-là.",
+     "t": {
+      "ru": "Эти туфли красивые, но мне больше нравятся те.",
+      "uz": "Bu tuflilar chiroyli, lekin menga ana u yoqadi."
+     }
+    },
+    {
+     "s": "Mon téléphone est vieux, le tien est neuf.",
+     "t": {
+      "ru": "Мой телефон старый, твой новый.",
+      "uz": "Mening telefonim eski, seniki yangi."
+     }
+    },
+    {
+     "s": "Ceux qui étudient réussissent.",
+     "t": {
+      "ru": "Те, кто учится, добиваются успеха.",
+      "uz": "O'qiganlar muvaffaqiyatga erishadi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ce n’est pas ma valise, c’est le sienne.",
+    "right": "Ce n’est pas ma valise, c’est la sienne.",
+    "note": {
+     "ru": "valise — жен. → la sienne.",
+     "en": "valise is feminine → la sienne.",
+     "uz": "valise — ayol → la sienne."
+    }
+   },
+   "tip": {
+    "ru": "Местоимение берёт род и число вещи, которую заменяет.",
+    "en": "The pronoun takes the gender and number of the thing it replaces.",
+    "uz": "Olmosh almashtirgan narsaning rodi va sonini oladi."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Quelle robe tu veux ? — ___-ci.",
+     "o": [
+      "Celle",
+      "Celui",
+      "Ceux"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "robe — жен. → celle.",
+      "en": "robe is feminine → celle.",
+      "uz": "robe — ayol → celle."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ton vélo est rouge, ___ est bleu. (mine)",
+     "o": [
+      "le mien",
+      "la mienne",
+      "les miens"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "vélo — муж. → le mien.",
+      "en": "vélo is masculine → le mien.",
+      "uz": "vélo — erkak → le mien."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Les gâteaux de ma mère sont meilleurs que ___ du magasin.",
+     "o": [
+      "ceux",
+      "celles",
+      "celui"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "gâteaux — муж. мн. → ceux.",
+      "en": "Masculine plural → ceux.",
+      "uz": "Erkak, ko'plik → ceux."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ce sont mes clés ou les tiennes ?",
+      "Ce sont mes clés ou les tiens ?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "clés — жен. мн. → les tiennes.",
+      "en": "Feminine plural → les tiennes.",
+      "uz": "Ayol, ko'plik → les tiennes."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Celui qui arrive le premier gagne.",
+      "Celui que arrive le premier gagne."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Подлежащее → qui.",
+      "en": "Subject → qui.",
+      "uz": "Ega → qui."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Leur",
+      "maison",
+      "est",
+      "plus",
+      "grande",
+      "que",
+      "la",
+      "nôtre."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Je",
+      "prends",
+      "celui-ci,",
+      "il",
+      "est",
+      "moins",
+      "cher."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "C’est ton livre ? — Oui, c’est le ___ . (mine)",
+     "a": [
+      "mien"
+     ],
+     "e": {
+      "ru": "livre — муж. → le mien.",
+      "en": "livre is masculine → le mien.",
+      "uz": "livre — erkak → le mien."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "ma voiture → *la mienne*",
+     "mon sac → *le mien*",
+     "mes amies → *les miennes*"
+    ],
+    "q": {
+     "ru": "С чем согласуется le mien?",
+     "en": "What does le mien agree with?",
+     "uz": "le mien nima bilan moslashadi?"
+    },
+    "o": [
+     {
+      "ru": "С вещью, которую заменяет",
+      "en": "With the thing it replaces",
+      "uz": "Almashtirgan narsa bilan"
+     },
+     {
+      "ru": "С владельцем",
+      "en": "With the owner",
+      "uz": "Egasi bilan"
+     },
+     {
+      "ru": "Ни с чем",
+      "en": "With nothing",
+      "uz": "Hech narsa bilan"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Ce n’est pas mon idée, c’est ___ de Paul.",
+     "o": [
+      "celle",
+      "celui",
+      "ceux"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "idée — жен. → celle.",
+      "en": "idée is feminine → celle.",
+      "uz": "idée — ayol → celle."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nos enfants jouent avec ___ . (theirs)",
+     "o": [
+      "les leurs",
+      "les leur",
+      "leurs"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Мн. ч. → les leurs.",
+      "en": "Plural → les leurs.",
+      "uz": "Ko'plik → les leurs."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ qui veulent venir sont les bienvenus.",
+     "o": [
+      "Ceux",
+      "Celui",
+      "Celles-ci que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Люди (мн.) + qui → ceux qui.",
+      "en": "People + qui → ceux qui.",
+      "uz": "Odamlar + qui → ceux qui."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Сравни свои вещи с вещами друга 3 предложениями (le mien, le tien, celui-ci).",
+    "en": "Compare your things with a friend’s in 3 sentences (le mien, le tien, celui-ci).",
+    "uz": "Narsalaringizni do'stingiznikiga 3 ta gapda solishtiring (le mien, le tien, celui-ci)."
+   }
+  },
+  {
+   "id": "cause-consequence",
+   "level": "B1",
+   "title": {
+    "ru": "Причина и следствие: parce que, puisque, donc",
+    "en": "Cause and consequence: parce que, puisque, donc",
+    "uz": "Sabab va natija: parce que, puisque, donc"
+   },
+   "sum": {
+    "ru": "Как объяснить «почему» и «поэтому».",
+    "en": "Explaining “why” and “so”.",
+    "uz": "«Nega» va «shuning uchun» ni tushuntirish."
+   },
+   "explain": {
+    "ru": [
+     "Причина: parce que (потому что — новая информация), puisque (раз уж — очевидно обоим), comme (так как — в начале фразы): Comme il pleut, on reste.",
+     "С существительным: à cause de (из-за — плохое), grâce à (благодаря — хорошее): Grâce à toi, j’ai réussi. À cause de la neige, le train est en retard.",
+     "Следствие: donc (значит, поэтому), alors (тогда, в разговоре), c’est pourquoi (вот почему), si bien que (так что): Il était malade, donc il n’est pas venu."
+    ],
+    "en": [
+     "Cause: parce que (new info), puisque (obvious to both), comme (at the start): Comme il pleut, on reste.",
+     "With a noun: à cause de (bad), grâce à (good): Grâce à toi, j’ai réussi.",
+     "Consequence: donc, alors (spoken), c’est pourquoi, si bien que: Il était malade, donc il n’est pas venu."
+    ],
+    "uz": [
+     "Sabab: parce que (yangi ma'lumot), puisque (ikkalasiga ayon), comme (gap boshida): Comme il pleut, on reste.",
+     "Ot bilan: à cause de (yomon), grâce à (yaxshi): Grâce à toi, j’ai réussi.",
+     "Natija: donc, alors (og'zaki), c’est pourquoi, si bien que: Il était malade, donc il n’est pas venu."
+    ]
+   },
+   "formula": [
+    "parce que · puisque · comme (+ phrase)",
+    "à cause de ☹ · grâce à ☺ (+ nom)",
+    "donc · alors · c’est pourquoi"
+   ],
+   "examples": [
+    {
+     "s": "Je suis fatigué parce que j’ai mal dormi.",
+     "t": {
+      "ru": "Я устал, потому что плохо спал.",
+      "uz": "Yomon uxlaganim uchun charchadim."
+     }
+    },
+    {
+     "s": "Puisque tu es là, aide-moi.",
+     "t": {
+      "ru": "Раз ты здесь, помоги мне.",
+      "uz": "Shu yerda ekansan, yordam ber."
+     }
+    },
+    {
+     "s": "Il a beaucoup travaillé, c’est pourquoi il a réussi.",
+     "t": {
+      "ru": "Он много работал, вот почему у него получилось.",
+      "uz": "U ko'p ishladi, shuning uchun muvaffaqiyatga erishdi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Grâce à la pluie, le match est annulé.",
+    "right": "À cause de la pluie, le match est annulé.",
+    "note": {
+     "ru": "Плохой результат → à cause de.",
+     "en": "A bad result → à cause de.",
+     "uz": "Yomon natija → à cause de."
+    }
+   },
+   "tip": {
+    "ru": "Причина: parce que/comme/puisque; со словом: grâce à/à cause de; итог: donc.",
+    "en": "Cause: parce que/comme/puisque; with a noun: grâce à/à cause de; result: donc.",
+    "uz": "Sabab: parce que/comme/puisque; ot bilan: grâce à/à cause de; natija: donc."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ il fait beau, on mange dehors. (at the start)",
+     "o": [
+      "Comme",
+      "Parce que",
+      "Donc"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина в начале → Comme.",
+      "en": "Cause at the start → Comme.",
+      "uz": "Gap boshidagi sabab → Comme."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "J’ai eu mon examen ___ mon professeur.",
+     "o": [
+      "grâce à",
+      "à cause de",
+      "parce que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Хорошее + существительное → grâce à.",
+      "en": "Good + noun → grâce à.",
+      "uz": "Yaxshi + ot → grâce à."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Il n’a pas d’argent, ___ il ne part pas en vacances.",
+     "o": [
+      "donc",
+      "parce que",
+      "puisque"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → donc.",
+      "en": "Consequence → donc.",
+      "uz": "Natija → donc."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Pourquoi tu ris ? — Parce que c’est drôle.",
+      "Pourquoi tu ris ? — Comme c’est drôle."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ответ на pourquoi → parce que.",
+      "en": "Answering pourquoi → parce que.",
+      "uz": "pourquoi ga javob → parce que."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "À cause du bruit, je n’ai pas dormi.",
+      "À cause de le bruit, je n’ai pas dormi."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "de + le = du.",
+      "en": "de + le = du.",
+      "uz": "de + le = du."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Comme",
+      "il",
+      "était",
+      "tard,",
+      "nous",
+      "sommes",
+      "rentrés."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Il",
+      "pleuvait,",
+      "donc",
+      "nous",
+      "avons",
+      "pris",
+      "un",
+      "taxi."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "___ à ton aide, j’ai fini à temps. (thanks)",
+     "a": [
+      "Grâce"
+     ],
+     "e": {
+      "ru": "Хорошее → grâce à.",
+      "en": "Good → grâce à.",
+      "uz": "Yaxshi → grâce à."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Grâce à* toi, j’ai gagné.",
+     "*À cause de* toi, j’ai perdu."
+    ],
+    "q": {
+     "ru": "Почему разные выражения?",
+     "en": "Why different expressions?",
+     "uz": "Nega har xil iboralar?"
+    },
+    "o": [
+     {
+      "ru": "Хороший результат / плохой результат",
+      "en": "A good result / a bad result",
+      "uz": "Yaxshi natija / yomon natija"
+     },
+     {
+      "ru": "Разные времена",
+      "en": "Different tenses",
+      "uz": "Turli zamonlar"
+     },
+     {
+      "ru": "Без разницы",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ tu sais tout, réponds ! (obvious)",
+     "o": [
+      "Puisque",
+      "Parce que",
+      "Donc"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Очевидная причина → Puisque.",
+      "en": "Obvious cause → Puisque.",
+      "uz": "Ayon sabab → Puisque."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Le vol est annulé ___ la grève.",
+     "o": [
+      "à cause de",
+      "grâce à",
+      "parce que"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Плохое + существительное → à cause de.",
+      "en": "Bad + noun → à cause de.",
+      "uz": "Yomon + ot → à cause de."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Je pense, ___ je suis.",
+     "o": [
+      "donc",
+      "comme",
+      "puisque"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Следствие → donc.",
+      "en": "Consequence → donc.",
+      "uz": "Natija → donc."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Объясни 3 решения из своей жизни: почему (parce que, comme) и что из этого вышло (donc, c’est pourquoi).",
+    "en": "Explain 3 decisions in your life: why (parce que, comme) and the result (donc, c’est pourquoi).",
+    "uz": "Hayotingizdagi 3 ta qarorni tushuntiring: nega (parce que, comme) va natijasi (donc, c’est pourquoi)."
+   }
+  },
+  {
    "id": "conditionnel-passe",
    "level": "B2",
    "title": {
@@ -9453,6 +11026,1058 @@
     "ru": "Напиши 3 предложения о себе с выделением (C’est … qui…, C’est … que…, Ce que j’aime, c’est…).",
     "en": "Write 3 sentences about yourself using emphasis (C’est … qui…, C’est … que…, Ce que j’aime, c’est…).",
     "uz": "O'zingiz haqida ta'kidlash bilan 3 ta gap yozing (C’est … qui…, C’est … que…, Ce que j’aime, c’est…)."
+   }
+  },
+  {
+   "id": "futur-anterieur",
+   "level": "B2",
+   "title": {
+    "ru": "Futur antérieur: j’aurai fini",
+    "en": "Future perfect: j’aurai fini",
+    "uz": "Futur antérieur: j’aurai fini"
+   },
+   "sum": {
+    "ru": "Будет сделано к моменту в будущем.",
+    "en": "Done before a moment in the future.",
+    "uz": "Kelajakdagi paytgacha bajarilgan bo'ladi."
+   },
+   "explain": {
+    "ru": [
+     "avoir/être в futur simple + причастие: j’aurai fini, elle sera partie, nous nous serons levés.",
+     "Действие закончится раньше другого будущего: Quand tu arriveras, j’aurai préparé le dîner. Dans un an, j’aurai fini mes études.",
+     "После quand, dès que, lorsque, après que о будущем — тоже futur antérieur: Dès que j’aurai terminé, je t’appellerai. Ещё: догадка о прошлом — Il aura oublié (наверное, забыл)."
+    ],
+    "en": [
+     "avoir/être in the simple future + participle: j’aurai fini, elle sera partie.",
+     "An action finished before another future one: Quand tu arriveras, j’aurai préparé le dîner.",
+     "After quand, dès que, après que about the future: Dès que j’aurai terminé, je t’appellerai. Also a guess about the past: Il aura oublié."
+    ],
+    "uz": [
+     "futur simple dagi avoir/être + sifatdosh: j’aurai fini, elle sera partie.",
+     "Boshqa kelajak harakatidan oldin tugaydi: Quand tu arriveras, j’aurai préparé le dîner.",
+     "Kelajak haqida quand, dès que, après que dan keyin: Dès que j’aurai terminé, je t’appellerai. Taxmin: Il aura oublié."
+    ]
+   },
+   "formula": [
+    "aurai / serai + participe",
+    "quand / dès que + futur antérieur, … futur",
+    "Il aura oublié = probably"
+   ],
+   "examples": [
+    {
+     "s": "À 18 heures, j’aurai fini mon travail.",
+     "t": {
+      "ru": "К 18 часам я закончу работу.",
+      "uz": "Soat 18 gacha ishimni tugatgan bo'laman."
+     }
+    },
+    {
+     "s": "Dès que tu seras arrivé, on partira.",
+     "t": {
+      "ru": "Как только ты приедешь, мы поедем.",
+      "uz": "Sen kelishing bilan yo'lga chiqamiz."
+     }
+    },
+    {
+     "s": "Il n’est pas là ? Il aura raté son train.",
+     "t": {
+      "ru": "Его нет? Наверное, опоздал на поезд.",
+      "uz": "U yo'qmi? Poyezdga ulgurmagan bo'lsa kerak."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Quand j’ai fini, je t’appellerai.",
+    "right": "Quand j’aurai fini, je t’appellerai.",
+    "note": {
+     "ru": "Будущее после quand → futur antérieur.",
+     "en": "Future after quand → futur antérieur.",
+     "uz": "quand dan keyin kelajak → futur antérieur."
+    }
+   },
+   "tip": {
+    "ru": "Что будет готово раньше → aurai/serai + причастие.",
+    "en": "What will be done first → aurai/serai + participle.",
+    "uz": "Avvalroq tayyor bo'ladigani → aurai/serai + sifatdosh."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Dans deux ans, nous ___ notre maison. (construire)",
+     "o": [
+      "aurons construit",
+      "construisons",
+      "avons construit"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Готово к моменту → aurons construit.",
+      "en": "Done by then → aurons construit.",
+      "uz": "O'sha paytgacha → aurons construit."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Quand elle ___ , nous dînerons. (rentrer)",
+     "o": [
+      "sera rentrée",
+      "rentre",
+      "aura rentré"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "rentrer → être, жен. → sera rentrée.",
+      "en": "rentrer takes être → sera rentrée.",
+      "uz": "rentrer → être → sera rentrée."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Paul est en retard. Il ___ l’heure. (oublier, guess)",
+     "o": [
+      "aura oublié",
+      "oubliera",
+      "a oublié demain"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Догадка → aura oublié.",
+      "en": "A guess → aura oublié.",
+      "uz": "Taxmin → aura oublié."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Dès que j’aurai reçu ta lettre, je répondrai.",
+      "Dès que j’ai reçu ta lettre, je répondrai."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Будущее → aurai reçu.",
+      "en": "Future → aurai reçu.",
+      "uz": "Kelajak → aurai reçu."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ils seront partis avant midi.",
+      "Ils auront partis avant midi."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "partir → être.",
+      "en": "partir takes être.",
+      "uz": "partir → être."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Quand",
+      "tu",
+      "reviendras,",
+      "j’aurai",
+      "rangé",
+      "ma",
+      "chambre."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Demain",
+      "à",
+      "cette",
+      "heure,",
+      "nous",
+      "serons",
+      "arrivés."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Je t’appellerai dès que j’___ ___ . (finir)",
+     "a": [
+      "aurai fini"
+     ],
+     "e": {
+      "ru": "→ aurai fini.",
+      "en": "→ aurai fini.",
+      "uz": "→ aurai fini."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Quand tu *arriveras*, j’*aurai fini*.",
+     "Quand il *rentrera*, nous *serons partis*."
+    ],
+    "q": {
+     "ru": "Что случится раньше?",
+     "en": "What happens first?",
+     "uz": "Avval nima bo'ladi?"
+    },
+    "o": [
+     {
+      "ru": "То, что в futur antérieur: «закончу», «уйдём»",
+      "en": "The futur antérieur action: finishing, leaving",
+      "uz": "Futur antérieur dagi harakat: tugatish, ketish"
+     },
+     {
+      "ru": "То, что в futur simple",
+      "en": "The futur simple action",
+      "uz": "Futur simple dagi harakat"
+     },
+     {
+      "ru": "Одновременно",
+      "en": "At the same time",
+      "uz": "Bir vaqtda"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Après que vous ___ , fermez la porte. (sortir)",
+     "o": [
+      "serez sortis",
+      "aurez sorti",
+      "sortez"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sortir → être, мн. ч.",
+      "en": "sortir takes être, plural.",
+      "uz": "sortir → être, ko'plik."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "D’ici lundi, j’___ le livre. (lire)",
+     "o": [
+      "aurai lu",
+      "ai lu",
+      "lirai"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Готово к понедельнику → aurai lu.",
+      "en": "Done by Monday → aurai lu.",
+      "uz": "Dushanbagacha → aurai lu."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Elle ne répond pas ? Elle se ___ endormie. (guess)",
+     "o": [
+      "sera",
+      "est",
+      "aura"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Возвратный → être → sera.",
+      "en": "Reflexive → être → sera.",
+      "uz": "O'zlik → être → sera."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения: что ты успеешь сделать к концу года (j’aurai…) и что сделаешь, как только… (dès que…).",
+    "en": "Write 3 sentences: what you will have done by the end of the year (j’aurai…) and what you will do as soon as… (dès que…).",
+    "uz": "3 ta gap yozing: yil oxirigacha nimani tugatasiz (j’aurai…) va … bilanoq nima qilasiz (dès que…)."
+   }
+  },
+  {
+   "id": "doubles-pronoms",
+   "level": "B2",
+   "title": {
+    "ru": "Два местоимения: je le lui donne",
+    "en": "Double pronouns: je le lui donne",
+    "uz": "Ikki olmosh: je le lui donne"
+   },
+   "sum": {
+    "ru": "Порядок, когда местоимений два.",
+    "en": "The order when there are two pronouns.",
+    "uz": "Olmoshlar ikkita bo'lganda tartib."
+   },
+   "explain": {
+    "ru": [
+     "Порядок перед глаголом: me/te/se/nous/vous → le/la/les → lui/leur → y → en: Il me le donne. Je le lui donne. Je leur en parle.",
+     "В passé composé оба перед avoir/être: Je la lui ai montrée. Отрицание обнимает оба: Je ne le lui ai pas dit.",
+     "В утвердительном повелительном — после глагола, le/la/les первыми, me → moi: Donne-le-moi. Envoie-la-leur. Но: Donnez-m’en."
+    ],
+    "en": [
+     "Order before the verb: me/te/se/nous/vous → le/la/les → lui/leur → y → en: Il me le donne. Je le lui donne.",
+     "In the passé composé both go before avoir/être: Je la lui ai montrée. Negation wraps both: Je ne le lui ai pas dit.",
+     "In the affirmative imperative they follow the verb, le/la/les first, me → moi: Donne-le-moi. But: Donnez-m’en."
+    ],
+    "uz": [
+     "Fe'ldan oldin tartib: me/te/se/nous/vous → le/la/les → lui/leur → y → en: Il me le donne. Je le lui donne.",
+     "Passé composé da ikkalasi avoir/être dan oldin: Je la lui ai montrée. Inkor ikkalasini o'raydi: Je ne le lui ai pas dit.",
+     "Tasdiq buyruqda fe'ldan keyin, le/la/les birinchi, me → moi: Donne-le-moi. Lekin: Donnez-m’en."
+    ]
+   },
+   "formula": [
+    "me / te / nous / vous → le / la / les → lui / leur → y → en",
+    "je ne le lui ai pas dit",
+    "donne-le-moi · donnez-m’en"
+   ],
+   "examples": [
+    {
+     "s": "Le livre ? Je te le prête.",
+     "t": {
+      "ru": "Книга? Я тебе её одолжу.",
+      "uz": "Kitobmi? Senga qarzga beraman."
+     }
+    },
+    {
+     "s": "Les photos ? Je les leur ai envoyées.",
+     "t": {
+      "ru": "Фотографии? Я их им отправил.",
+      "uz": "Rasmlarmi? Ularga yubordim."
+     }
+    },
+    {
+     "s": "Du pain ? Il y en a dans la cuisine.",
+     "t": {
+      "ru": "Хлеб? Он есть на кухне.",
+      "uz": "Nonmi? Oshxonada bor."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Je lui le donne.",
+    "right": "Je le lui donne.",
+    "note": {
+     "ru": "le/la/les перед lui/leur.",
+     "en": "le/la/les before lui/leur.",
+     "uz": "le/la/les lui/leur dan oldin."
+    }
+   },
+   "tip": {
+    "ru": "me-te-nous-vous, потом le-la-les, потом lui-leur, y, en.",
+    "en": "me-te-nous-vous, then le-la-les, then lui-leur, y, en.",
+    "uz": "me-te-nous-vous, keyin le-la-les, keyin lui-leur, y, en."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "La clé ? Je ___ donne. (à Marc)",
+     "o": [
+      "la lui",
+      "lui la",
+      "le lui"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "la перед lui.",
+      "en": "la before lui.",
+      "uz": "la lui dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tu me prêtes ton stylo ? — Oui, je ___ prête.",
+     "o": [
+      "te le",
+      "le te",
+      "te lui"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "te перед le.",
+      "en": "te before le.",
+      "uz": "te le dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Des bonbons ? Je ___ ai donné. (aux enfants)",
+     "o": [
+      "leur en",
+      "en leur",
+      "les leur"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "leur перед en.",
+      "en": "leur before en.",
+      "uz": "leur en dan oldin."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Rends-le-moi !",
+      "Rends-moi-le !"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Повелительное: le перед moi.",
+      "en": "Imperative: le before moi.",
+      "uz": "Buyruq: le moi dan oldin."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Je ne la lui ai pas montrée.",
+      "Je ne lui la ai pas montrée."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "la lui, перед ai.",
+      "en": "la lui, before ai.",
+      "uz": "la lui, ai dan oldin."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Je",
+      "vous",
+      "les",
+      "envoie",
+      "demain."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Il",
+      "ne",
+      "nous",
+      "en",
+      "a",
+      "pas",
+      "parlé."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Le gâteau ? Donne-___-moi ! (it)",
+     "a": [
+      "le"
+     ],
+     "e": {
+      "ru": "→ Donne-le-moi.",
+      "en": "→ Donne-le-moi.",
+      "uz": "→ Donne-le-moi."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Je donne *le livre* *à Paul*.",
+     "Je *le lui* donne."
+    ],
+    "q": {
+     "ru": "В каком порядке встали местоимения?",
+     "en": "In what order do the pronouns go?",
+     "uz": "Olmoshlar qanday tartibda?"
+    },
+    "o": [
+     {
+      "ru": "Сначала «что» (le), потом «кому» (lui)",
+      "en": "First “what” (le), then “to whom” (lui)",
+      "uz": "Avval «nimani» (le), keyin «kimga» (lui)"
+     },
+     {
+      "ru": "Как угодно",
+      "en": "Any order",
+      "uz": "Istalgan tartibda"
+     },
+     {
+      "ru": "Сначала lui",
+      "en": "lui first",
+      "uz": "Avval lui"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Les clés ? Je ___ ai rendues hier. (à eux)",
+     "o": [
+      "les leur",
+      "leur les",
+      "les lui"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "les перед leur.",
+      "en": "les before leur.",
+      "uz": "les leur dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Tu nous montres tes photos ? — Je ___ montre ce soir.",
+     "o": [
+      "vous les",
+      "les vous",
+      "vous leur"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "vous перед les.",
+      "en": "vous before les.",
+      "uz": "vous les dan oldin."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "De l’eau ? Donnez-___ , s’il vous plaît.",
+     "o": [
+      "m’en",
+      "en-moi",
+      "moi-en"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ Donnez-m’en.",
+      "en": "→ Donnez-m’en.",
+      "uz": "→ Donnez-m’en."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Ответь на 3 вопроса двумя местоимениями (Tu prêtes ton vélo à ton frère ? → Oui, je le lui prête).",
+    "en": "Answer 3 questions with two pronouns (Tu prêtes ton vélo à ton frère ? → Oui, je le lui prête).",
+    "uz": "3 ta savolga ikki olmosh bilan javob bering (Tu prêtes ton vélo à ton frère ? → Oui, je le lui prête)."
+   }
+  },
+  {
+   "id": "accord-participe",
+   "level": "B2",
+   "title": {
+    "ru": "Согласование причастия с avoir",
+    "en": "Past participle agreement with avoir",
+    "uz": "avoir bilan sifatdosh moslashuvi"
+   },
+   "sum": {
+    "ru": "La lettre que j’ai écrite.",
+    "en": "La lettre que j’ai écrite.",
+    "uz": "La lettre que j’ai écrite."
+   },
+   "explain": {
+    "ru": [
+     "С avoir причастие обычно НЕ согласуется: Elle a mangé. Nous avons vu un film.",
+     "Но согласуется с прямым дополнением, если оно стоит ПЕРЕД глаголом: Les photos ? Je les ai prises. La robe que j’ai achetée.",
+     "Три случая: местоимение le/la/les/me/te/nous/vous, que, quel(le)s…: Quelles villes as-tu visitées ? С en и с косвенным (lui, leur) — без согласования: Des pommes ? J’en ai mangé."
+    ],
+    "en": [
+     "With avoir the participle normally does NOT agree: Elle a mangé. Nous avons vu un film.",
+     "But it agrees with a direct object placed BEFORE the verb: Les photos ? Je les ai prises. La robe que j’ai achetée.",
+     "Three cases: le/la/les/me/te…, que, quel(le)s…: Quelles villes as-tu visitées ? No agreement with en or indirect objects: J’en ai mangé."
+    ],
+    "uz": [
+     "avoir bilan sifatdosh odatda moslashmaydi: Elle a mangé. Nous avons vu un film.",
+     "Lekin fe'ldan OLDIN turgan to'g'ri to'ldiruvchiga moslashadi: Les photos ? Je les ai prises. La robe que j’ai achetée.",
+     "Uch holat: le/la/les/me/te…, que, quel(le)s…: Quelles villes as-tu visitées ? en va vositali to'ldiruvchi bilan moslashmaydi: J’en ai mangé."
+    ]
+   },
+   "formula": [
+    "avoir + participe = no agreement",
+    "COD avant → agreement: je les ai prises",
+    "que · quelles · la / les … ai + -e / -s"
+   ],
+   "examples": [
+    {
+     "s": "Cette chanson, je l’ai entendue à la radio.",
+     "t": {
+      "ru": "Эту песню я слышал по радио.",
+      "uz": "Bu qo'shiqni radioda eshitdim."
+     }
+    },
+    {
+     "s": "Les gâteaux que tu as faits sont délicieux.",
+     "t": {
+      "ru": "Пирожные, которые ты испёк, очень вкусные.",
+      "uz": "Sen pishirgan pishiriqlar juda mazali."
+     }
+    },
+    {
+     "s": "Quelles langues as-tu apprises ?",
+     "t": {
+      "ru": "Какие языки ты выучил?",
+      "uz": "Qaysi tillarni o'rganding?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Les lettres que j’ai écrit sont sur la table.",
+    "right": "Les lettres que j’ai écrites sont sur la table.",
+    "note": {
+     "ru": "que = lettres (жен. мн.) перед глаголом → écrites.",
+     "en": "que = lettres before the verb → écrites.",
+     "uz": "que = lettres fe'ldan oldin → écrites."
+    }
+   },
+   "tip": {
+    "ru": "Дополнение до avoir → согласуй; после — нет.",
+    "en": "Object before avoir → agree; after → no.",
+    "uz": "To'ldiruvchi avoir dan oldin → moslashtir; keyin → yo'q."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "La voiture ? Je l’ai ___ hier. (vendre)",
+     "o": [
+      "vendue",
+      "vendu",
+      "vendues"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "l’ = la voiture перед глаголом → vendue.",
+      "en": "l’ = la voiture before → vendue.",
+      "uz": "l’ = la voiture oldin → vendue."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "J’ai ___ deux livres. (lire)",
+     "o": [
+      "lu",
+      "lus",
+      "lue"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Дополнение после → без согласования.",
+      "en": "Object after → no agreement.",
+      "uz": "To'ldiruvchi keyin → moslashmaydi."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Les amies que nous avons ___ étaient sympas. (rencontrer)",
+     "o": [
+      "rencontrées",
+      "rencontré",
+      "rencontrés"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "que = amies (жен. мн.) → rencontrées.",
+      "en": "que = amies → rencontrées.",
+      "uz": "que = amies → rencontrées."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Des fraises ? J’en ai acheté.",
+      "Des fraises ? J’en ai achetées."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С en — без согласования.",
+      "en": "No agreement with en.",
+      "uz": "en bilan moslashmaydi."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Elle leur a téléphoné.",
+      "Elle leur a téléphonés."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "leur — косвенное → без согласования.",
+      "en": "leur is indirect → no agreement.",
+      "uz": "leur — vositali → moslashmaydi."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Les",
+      "clés",
+      "que",
+      "tu",
+      "as",
+      "perdues",
+      "sont",
+      "ici."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Quelle",
+      "robe",
+      "as-tu",
+      "choisie",
+      "?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ces fleurs, c’est ma mère qui les a ___ . (planter)",
+     "a": [
+      "plantées"
+     ],
+     "e": {
+      "ru": "les = fleurs (жен. мн.) → plantées.",
+      "en": "les = fleurs → plantées.",
+      "uz": "les = fleurs → plantées."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "J’ai *pris* les photos.",
+     "Je les ai *prises*."
+    ],
+    "q": {
+     "ru": "Почему во втором prises?",
+     "en": "Why prises in the second?",
+     "uz": "Nega ikkinchisida prises?"
+    },
+    "o": [
+     {
+      "ru": "Дополнение (les) стоит перед глаголом",
+      "en": "The object (les) comes before the verb",
+      "uz": "To'ldiruvchi (les) fe'ldan oldin"
+     },
+     {
+      "ru": "Другое время",
+      "en": "A different tense",
+      "uz": "Boshqa zamon"
+     },
+     {
+      "ru": "Ошибка",
+      "en": "A mistake",
+      "uz": "Xato"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "La lettre que j’ai ___ … (recevoir)",
+     "o": [
+      "reçue",
+      "reçu",
+      "reçus"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "que = lettre → reçue.",
+      "en": "que = lettre → reçue.",
+      "uz": "que = lettre → reçue."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nous avons ___ nos parents. (appeler)",
+     "o": [
+      "appelé",
+      "appelés",
+      "appelées"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Дополнение после → appelé.",
+      "en": "Object after → appelé.",
+      "uz": "To'ldiruvchi keyin → appelé."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ces films, je les ai tous ___ . (voir)",
+     "o": [
+      "vus",
+      "vu",
+      "vues"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "les = films (м. мн.) → vus.",
+      "en": "les = films → vus.",
+      "uz": "les = films → vus."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения с que или le/la/les перед passé composé и проверь согласование.",
+    "en": "Write 3 sentences with que or le/la/les before a passé composé and check the agreement.",
+    "uz": "passé composé dan oldin que yoki le/la/les bilan 3 ta gap yozing va moslashuvni tekshiring."
+   }
+  },
+  {
+   "id": "subjonctif-passe",
+   "level": "B2",
+   "title": {
+    "ru": "Subjonctif passé: que j’aie fini",
+    "en": "Past subjunctive: que j’aie fini",
+    "uz": "Subjonctif passé: que j’aie fini"
+   },
+   "sum": {
+    "ru": "Эмоция или сомнение о том, что уже случилось.",
+    "en": "An emotion or doubt about something that already happened.",
+    "uz": "Allaqachon bo'lgan narsa haqida his yoki shubha."
+   },
+   "explain": {
+    "ru": [
+     "avoir/être в subjonctif présent + причастие: que j’aie fini, que tu sois venu, qu’elle se soit trompée.",
+     "Используется, когда действие ПРЕДШЕСТВУЕТ чувству: Je suis content que tu sois venu (ты уже пришёл). Сравни: Je suis content que tu viennes (приходишь / придёшь).",
+     "После тех же выражений: regretter que, avoir peur que, douter que, bien que, avant que…: Bien qu’il ait beaucoup étudié, il a échoué. Je doute qu’elle ait compris."
+    ],
+    "en": [
+     "avoir/être in the present subjunctive + participle: que j’aie fini, que tu sois venu.",
+     "Used when the action comes BEFORE the feeling: Je suis content que tu sois venu. Compare: que tu viennes (now / later).",
+     "After the same triggers: regretter que, avoir peur que, douter que, bien que…: Bien qu’il ait beaucoup étudié, il a échoué."
+    ],
+    "uz": [
+     "subjonctif présent dagi avoir/être + sifatdosh: que j’aie fini, que tu sois venu.",
+     "Harakat hisdan OLDIN bo'lganda: Je suis content que tu sois venu. Solishtiring: que tu viennes (hozir / keyin).",
+     "Xuddi shu iboralardan keyin: regretter que, avoir peur que, douter que, bien que…: Bien qu’il ait beaucoup étudié, il a échoué."
+    ]
+   },
+   "formula": [
+    "que + aie / sois + participe",
+    "past action → subjonctif passé",
+    "je suis content que tu sois venu"
+   ],
+   "examples": [
+    {
+     "s": "Je regrette que tu n’aies pas pu venir.",
+     "t": {
+      "ru": "Жаль, что ты не смог прийти.",
+      "uz": "Kela olmaganing achinarli."
+     }
+    },
+    {
+     "s": "C’est dommage qu’ils soient déjà partis.",
+     "t": {
+      "ru": "Жаль, что они уже ушли.",
+      "uz": "Ular allaqachon ketgani afsus."
+     }
+    },
+    {
+     "s": "Je ne crois pas qu’il ait dit la vérité.",
+     "t": {
+      "ru": "Не думаю, что он сказал правду.",
+      "uz": "U rost gapirgan deb o'ylamayman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Je suis heureux que tu as réussi.",
+    "right": "Je suis heureux que tu aies réussi.",
+    "note": {
+     "ru": "Эмоция + прошлое → subjonctif passé.",
+     "en": "Emotion + past → past subjunctive.",
+     "uz": "His + o'tmish → subjonctif passé."
+    }
+   },
+   "tip": {
+    "ru": "Чувство сейчас о прошлом → que + aie/sois + причастие.",
+    "en": "A feeling now about the past → que + aie/sois + participle.",
+    "uz": "Hozirgi his o'tmish haqida → que + aie/sois + sifatdosh."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Je suis désolé que tu ___ malade hier. (être)",
+     "o": [
+      "aies été",
+      "sois",
+      "as été"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вчера → subjonctif passé.",
+      "en": "Yesterday → past subjunctive.",
+      "uz": "Kecha → subjonctif passé."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Bien qu’elle ___ tôt, elle est arrivée en retard. (partir)",
+     "o": [
+      "soit partie",
+      "ait parti",
+      "est partie"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "partir → être, жен.",
+      "en": "partir takes être, feminine.",
+      "uz": "partir → être, ayol."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Je doute qu’ils ___ le message. (lire)",
+     "o": [
+      "aient lu",
+      "ont lu",
+      "lisent"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Сомнение о прошлом → aient lu.",
+      "en": "Doubt about the past → aient lu.",
+      "uz": "O'tmish haqida shubha → aient lu."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Nous sommes contents que vous soyez venus.",
+      "Nous sommes contents que vous ayez venus."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "venir → être.",
+      "en": "venir takes être.",
+      "uz": "venir → être."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Il est possible qu’elle se soit trompée.",
+      "Il est possible qu’elle s’ait trompée."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Возвратный → être.",
+      "en": "Reflexive → être.",
+      "uz": "O'zlik → être."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Je",
+      "suis",
+      "ravi",
+      "que",
+      "tu",
+      "aies",
+      "aimé",
+      "le",
+      "film."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Il",
+      "est",
+      "parti",
+      "avant",
+      "que",
+      "nous",
+      "ayons",
+      "fini."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "C’est bizarre qu’il ne m’___ pas appelé. (avoir)",
+     "a": [
+      "ait"
+     ],
+     "e": {
+      "ru": "avoir → qu’il ait.",
+      "en": "avoir → qu’il ait.",
+      "uz": "avoir → qu’il ait."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Je suis content que tu *viennes*.",
+     "Je suis content que tu *sois venu*."
+    ],
+    "q": {
+     "ru": "В чём разница?",
+     "en": "What is the difference?",
+     "uz": "Farqi nimada?"
+    },
+    "o": [
+     {
+      "ru": "Приходишь сейчас/потом — уже пришёл",
+      "en": "Coming now/later — already came",
+      "uz": "Hozir/keyin kelasan — allaqachon kelding"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Второе — будущее",
+      "en": "The second is future",
+      "uz": "Ikkinchisi kelajak"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Je regrette qu’elle ne ___ pas ___ la vérité. (dire)",
+     "o": [
+      "m’ait … dit",
+      "m’a … dit",
+      "me soit … dit"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ ne m’ait pas dit.",
+      "en": "→ ne m’ait pas dit.",
+      "uz": "→ ne m’ait pas dit."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "J’ai peur qu’ils ___ perdus. (se perdre)",
+     "o": [
+      "se soient",
+      "se sont",
+      "s’aient"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Возвратный → se soient.",
+      "en": "Reflexive → se soient.",
+      "uz": "O'zlik → se soient."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Il faut que tu ___ ce travail avant lundi. (finir, done by)",
+     "o": [
+      "aies fini",
+      "as fini",
+      "finiras"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Готово к сроку → aies fini.",
+      "en": "Done by a deadline → aies fini.",
+      "uz": "Muddatgacha → aies fini."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о прошлой неделе: чему ты рад и о чём жалеешь (que + subjonctif passé).",
+    "en": "Write 3 sentences about last week: what you are glad about and what you regret (que + past subjunctive).",
+    "uz": "O'tgan hafta haqida 3 ta gap yozing: nimadan xursandsiz va nimadan afsuslanasiz (que + subjonctif passé)."
    }
   }
  ],

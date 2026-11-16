@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.32'; // the one place the shown version lives (footer)
+  var VERSION = '2.33'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -64,7 +64,7 @@
     'tour.s2.back': ['хотя', 'even though', 'garchi'],
     'tour.s2.backFoot': ['…потом переверни', '…then flip', '…keyin aylantiring'],
     'tour.s3.h': ['Грамматика по шагам — <em>на шести языках.</em>', 'Step-by-step grammar — <em>in six languages.</em>', "Bosqichma-bosqich grammatika — <em>olti tilda.</em>"],
-    'tour.s3.p': ['По 36 тем от A1 до B2: короткое правило, живые примеры и тренировка. Слова из колоды можно озвучить и прогнать в играх.', '36 topics each, A1 to B2: a short rule, real examples and practice. Your deck words can be read aloud and played in games.', "Har birida A1 dan B2 gacha 36 ta mavzu: qisqa qoida, jonli misollar va mashq. To'plamdagi so'zlarni tinglash va o'yinlarda takrorlash mumkin."],
+    'tour.s3.p': ['От 36 до 46 тем на курс, от A1 до B2: короткое правило, живые примеры и тренировка. Слова из колоды можно озвучить и прогнать в играх.', '36 to 46 topics per course, A1 to B2: a short rule, real examples and practice. Your deck words can be read aloud and played in games.', "Har bir kursda A1 dan B2 gacha 36–46 ta mavzu: qisqa qoida, jonli misollar va mashq. To'plamdagi so'zlarni tinglash va o'yinlarda takrorlash mumkin."],
     'tour.s1.hint': ['Нажми на слова, которые хочешь выучить', 'Tap the words you want to learn', "O'rganmoqchi bo'lgan so'zlarni bosing"],
     'tour.s1.deck': ['В колоду', 'Into the deck', "To'plamga"],
     'tour.s1.empty': ['пока пусто — выбери слово', 'empty so far — pick a word', "hozircha bo'sh — so'z tanlang"],

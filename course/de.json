@@ -2597,6 +2597,523 @@
    }
   },
   {
+   "id": "ja-nein-doch",
+   "level": "A1",
+   "title": {
+    "ru": "Вопросы да/нет и doch",
+    "en": "Yes/no questions and doch",
+    "uz": "Ha/yo'q savollari va doch"
+   },
+   "sum": {
+    "ru": "Глагол на первом месте и особое «да» на отрицательный вопрос.",
+    "en": "The verb comes first, and a special “yes” for negative questions.",
+    "uz": "Fe'l birinchi o'rinda va inkor savolga maxsus «ha»."
+   },
+   "explain": {
+    "ru": [
+     "В вопросе да/нет глагол стоит на первом месте: Kommst du heute? Hast du Zeit?",
+     "Ответ: Ja (да) или Nein (нет): Kommst du? — Ja, ich komme. / Nein, ich komme nicht.",
+     "Если вопрос с отрицанием, а ответ «да, всё-таки» — doch: Kommst du nicht? — Doch, ich komme! Hast du keinen Hunger? — Doch!"
+    ],
+    "en": [
+     "In a yes/no question the verb comes first: Kommst du heute? Hast du Zeit?",
+     "Answer with Ja or Nein: Kommst du? — Ja, ich komme. / Nein, ich komme nicht.",
+     "If the question is negative and you want to say “yes, I do” — use doch: Kommst du nicht? — Doch, ich komme!"
+    ],
+    "uz": [
+     "Ha/yo'q savolida fe'l birinchi o'rinda: Kommst du heute? Hast du Zeit?",
+     "Javob: Ja yoki Nein: Kommst du? — Ja, ich komme. / Nein, ich komme nicht.",
+     "Savol inkor bo'lsa va javob «yo'q, aslida ha» bo'lsa — doch: Kommst du nicht? — Doch, ich komme!"
+    ]
+   },
+   "formula": [
+    "Verb + Subjekt …?",
+    "Ja / Nein",
+    "negative question → Doch!"
+   ],
+   "examples": [
+    {
+     "s": "Sprichst du Englisch? — Ja, ein bisschen.",
+     "t": {
+      "ru": "Ты говоришь по-английски? — Да, немного.",
+      "uz": "Inglizcha gapirasanmi? — Ha, biroz."
+     }
+    },
+    {
+     "s": "Bist du nicht müde? — Doch, sehr!",
+     "t": {
+      "ru": "Ты не устал? — Ещё как устал!",
+      "uz": "Charchamadingmi? — Charchadim, juda!"
+     }
+    },
+    {
+     "s": "Hast du kein Auto? — Nein, ich fahre Fahrrad.",
+     "t": {
+      "ru": "У тебя нет машины? — Нет, я езжу на велосипеде.",
+      "uz": "Mashinang yo'qmi? — Yo'q, velosipedda yuraman."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Bist du nicht müde? — Ja, sehr!",
+    "right": "Bist du nicht müde? — Doch, sehr!",
+    "note": {
+     "ru": "На вопрос с nicht «да» — это Doch.",
+     "en": "“Yes” to a question with nicht is Doch.",
+     "uz": "nicht li savolga «ha» — Doch."
+    }
+   },
+   "tip": {
+    "ru": "Глагол вперёд; на «не…?» отвечай doch, если «да».",
+    "en": "Verb first; answer a “not…?” question with doch if the answer is yes.",
+    "uz": "Fe'l oldinga; «…mi emas?» savoliga «ha» bo'lsa — doch."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ du Kaffee?",
+     "o": [
+      "Trinkst",
+      "Du trinkst",
+      "Trinken"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Глагол на первом месте.",
+      "en": "Verb first.",
+      "uz": "Fe'l birinchi."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Bist du nicht hungrig? — ___, ich habe großen Hunger!",
+     "o": [
+      "Doch",
+      "Ja",
+      "Nein"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Отрицательный вопрос, ответ «да» → Doch.",
+      "en": "Negative question, answer yes → Doch.",
+      "uz": "Inkor savol, javob «ha» → Doch."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Wohnst du in Berlin? — ___, ich wohne in München.",
+     "o": [
+      "Nein",
+      "Doch",
+      "Ja"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Не в Берлине → Nein.",
+      "en": "Not in Berlin → Nein.",
+      "uz": "Berlinda emas → Nein."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Hast du Geschwister?",
+      "Hast Geschwister du?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Глагол первый.",
+      "en": "Verb first.",
+      "uz": "Fe'l birinchi."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Kommst du nicht mit? — Doch, gern!",
+      "Kommst du nicht mit? — Ja, gern!"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "На отрицательный вопрос «да» → Doch.",
+      "en": "“Yes” to a negative question → Doch.",
+      "uz": "Inkor savolga «ha» → Doch."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Spielst",
+      "du",
+      "gern",
+      "Fußball?"
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ist",
+      "das",
+      "dein",
+      "Buch?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Hast du keine Zeit? — ___, ich habe Zeit.",
+     "a": [
+      "Doch"
+     ],
+     "e": {
+      "ru": "→ Doch.",
+      "en": "→ Doch.",
+      "uz": "→ Doch."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Kommst* du? — *Ja*.",
+     "Kommst du *nicht*? — *Doch*."
+    ],
+    "q": {
+     "ru": "Когда говорят doch?",
+     "en": "When do you say doch?",
+     "uz": "doch qachon aytiladi?"
+    },
+    "o": [
+     {
+      "ru": "«Да» в ответ на вопрос с отрицанием",
+      "en": "“Yes” in answer to a negative question",
+      "uz": "Inkor savolga «ha» javobi"
+     },
+     {
+      "ru": "Всегда вместо ja",
+      "en": "Always instead of ja",
+      "uz": "Doim ja o'rniga"
+     },
+     {
+      "ru": "Вместо nein",
+      "en": "Instead of nein",
+      "uz": "nein o'rniga"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ ihr am Wochenende?",
+     "o": [
+      "Arbeitet",
+      "Ihr arbeitet",
+      "Arbeiten"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ihr → arbeitet, глагол первый.",
+      "en": "ihr → arbeitet, verb first.",
+      "uz": "ihr → arbeitet, fe'l birinchi."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Magst du keine Pizza? — ___! Ich liebe Pizza.",
+     "o": [
+      "Doch",
+      "Ja",
+      "Nein"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ Doch.",
+      "en": "→ Doch.",
+      "uz": "→ Doch."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ist er Lehrer? — ___, er ist Arzt.",
+     "o": [
+      "Nein",
+      "Doch",
+      "Ja"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Не учитель → Nein.",
+      "en": "Not a teacher → Nein.",
+      "uz": "O'qituvchi emas → Nein."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Задай 3 вопроса да/нет другу и придумай один ответ с Doch.",
+    "en": "Write 3 yes/no questions for a friend and one answer with Doch.",
+    "uz": "Do'stingizga 3 ta ha/yo'q savol yozing va Doch bilan bitta javob o'ylab toping."
+   }
+  },
+  {
+   "id": "moechten-gern",
+   "level": "A1",
+   "title": {
+    "ru": "Möchten и gern: хочу и люблю",
+    "en": "Möchten and gern: would like and like",
+    "uz": "Möchten va gern: xohlayman va yoqtiraman"
+   },
+   "sum": {
+    "ru": "Вежливо попросить и сказать, что тебе нравится.",
+    "en": "Asking politely and saying what you like.",
+    "uz": "Muloyim so'rash va nima yoqishini aytish."
+   },
+   "explain": {
+    "ru": [
+     "möchten = «хотел бы» (вежливо): ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+     "С вещью: Ich möchte einen Kaffee. С действием — инфинитив в конце: Ich möchte nach Hause gehen.",
+     "gern + глагол = «люблю делать»: Ich lese gern. Ich spiele nicht gern Tennis. lieber = «больше люблю», am liebsten = «больше всего»."
+    ],
+    "en": [
+     "möchten = “would like” (polite): ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten.",
+     "With a thing: Ich möchte einen Kaffee. With an action the infinitive goes last: Ich möchte nach Hause gehen.",
+     "gern + verb = like doing: Ich lese gern. lieber = prefer, am liebsten = like most."
+    ],
+    "uz": [
+     "möchten = «xohlardim» (muloyim): ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten.",
+     "Narsa bilan: Ich möchte einen Kaffee. Harakat bilan infinitiv oxirida: Ich möchte nach Hause gehen.",
+     "gern + fe'l = «…ni yoqtiraman»: Ich lese gern. lieber = ko'proq yoqtiraman, am liebsten = eng ko'p."
+    ]
+   },
+   "formula": [
+    "möchte · möchtest · möchten",
+    "ich möchte + … + Infinitiv",
+    "gern · lieber · am liebsten"
+   ],
+   "examples": [
+    {
+     "s": "Ich möchte ein Wasser, bitte.",
+     "t": {
+      "ru": "Мне воды, пожалуйста.",
+      "uz": "Menga suv, iltimos."
+     }
+    },
+    {
+     "s": "Wir möchten am Samstag ins Kino gehen.",
+     "t": {
+      "ru": "Мы хотим в субботу пойти в кино.",
+      "uz": "Shanba kuni kinoga bormoqchimiz."
+     }
+    },
+    {
+     "s": "Ich trinke gern Tee, aber lieber Kaffee.",
+     "t": {
+      "ru": "Я люблю чай, но кофе больше.",
+      "uz": "Choyni yoqtiraman, lekin qahvani ko'proq."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich möchte gehen nach Hause.",
+    "right": "Ich möchte nach Hause gehen.",
+    "note": {
+     "ru": "Инфинитив — в конце.",
+     "en": "The infinitive goes last.",
+     "uz": "Infinitiv oxirida."
+    }
+   },
+   "tip": {
+    "ru": "möchte — вежливое «хочу»; gern — «люблю делать».",
+    "en": "möchte = polite “want”; gern = like doing.",
+    "uz": "möchte — muloyim «xohlayman»; gern — «…ni yoqtiraman»."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Was ___ du trinken?",
+     "o": [
+      "möchtest",
+      "möchte",
+      "möchten"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "du → möchtest.",
+      "en": "du → möchtest.",
+      "uz": "du → möchtest."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich spiele ___ Gitarre.",
+     "o": [
+      "gern",
+      "möchte",
+      "lieber gern"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Люблю делать → gern.",
+      "en": "Like doing → gern.",
+      "uz": "Yoqtiraman → gern."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Wir möchten ein Zimmer ___.",
+     "o": [
+      "buchen",
+      "buchen möchten",
+      "gebucht"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Инфинитив в конце.",
+      "en": "Infinitive last.",
+      "uz": "Infinitiv oxirida."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Er möchte ein Eis.",
+      "Er möchtet ein Eis."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "er → möchte.",
+      "en": "er → möchte.",
+      "uz": "er → möchte."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Am liebsten esse ich Plov.",
+      "Am gernsten esse ich Plov."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "gern → lieber → am liebsten.",
+      "en": "gern → lieber → am liebsten.",
+      "uz": "gern → lieber → am liebsten."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "möchte",
+      "heute",
+      "Abend",
+      "früh",
+      "schlafen."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Meine",
+      "Schwester",
+      "tanzt",
+      "sehr",
+      "gern."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "___ ihr eine Pizza? (möchten)",
+     "a": [
+      "Möchtet"
+     ],
+     "e": {
+      "ru": "ihr → möchtet, глагол первый.",
+      "en": "ihr → möchtet, verb first.",
+      "uz": "ihr → möchtet, fe'l birinchi."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Ich *möchte* einen Tee.",
+     "Ich trinke *gern* Tee."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Хочу сейчас / люблю вообще",
+      "en": "Want now / like in general",
+      "uz": "Hozir xohlayman / umuman yoqtiraman"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Первое — прошлое",
+      "en": "The first is past",
+      "uz": "Birinchisi o'tmish"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ Sie noch etwas? (Kellner)",
+     "o": [
+      "Möchten",
+      "Möchtest",
+      "Möchtet"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Sie → Möchten.",
+      "en": "Sie → Möchten.",
+      "uz": "Sie → Möchten."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich schwimme gern, aber ich laufe ___ .",
+     "o": [
+      "lieber",
+      "gerner",
+      "liebsten"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Больше люблю → lieber.",
+      "en": "Prefer → lieber.",
+      "uz": "Ko'proq → lieber."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sie ___ Ärztin werden. (sie, she)",
+     "o": [
+      "möchte",
+      "möchten",
+      "möchtet"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sie (она) → möchte.",
+      "en": "sie (she) → möchte.",
+      "uz": "sie (u) → möchte."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что ты хочешь заказать в кафе (möchte) и что ты любишь делать (gern, lieber, am liebsten).",
+    "en": "Write what you would order in a café (möchte) and what you like doing (gern, lieber, am liebsten).",
+    "uz": "Kafeda nima buyurtma qilishingiz (möchte) va nimani yoqtirishingizni (gern, lieber, am liebsten) yozing."
+   }
+  },
+  {
    "id": "modal",
    "level": "A2",
    "title": {
@@ -5199,6 +5716,531 @@
     "ru": "Напиши, что тебе нравится (gefällt mir), чей у тебя телефон (gehört mir) и кому ты помогаешь.",
     "en": "Write what you like (gefällt mir), whose phone you have and whom you help.",
     "uz": "Sizga nima yoqishi (gefällt mir), telefon kimniki va kimga yordam berishingizni yozing."
+   }
+  },
+  {
+   "id": "konnektoren",
+   "level": "A2",
+   "title": {
+    "ru": "Союзы und, aber, oder, denn, sondern",
+    "en": "Conjunctions: und, aber, oder, denn, sondern",
+    "uz": "Bog'lovchilar: und, aber, oder, denn, sondern"
+   },
+   "sum": {
+    "ru": "Соединяем предложения без изменения порядка слов.",
+    "en": "Joining sentences without changing word order.",
+    "uz": "So'z tartibini o'zgartirmay gaplarni bog'lash."
+   },
+   "explain": {
+    "ru": [
+     "und (и), aber (но), oder (или), denn (потому что), sondern (а, после отрицания) стоят на «нулевом месте»: после них обычный порядок.",
+     "Ich bleibe zu Hause, denn ich bin krank. — глагол второй, как в простом предложении (сравни: weil ich krank bin).",
+     "sondern — только после отрицания: Das ist nicht Tee, sondern Kaffee. Перед aber, denn, sondern — запятая; перед und/oder обычно нет."
+    ],
+    "en": [
+     "und, aber, oder, denn, sondern take “position zero”: normal word order follows.",
+     "Ich bleibe zu Hause, denn ich bin krank. — the verb is second, as usual (compare weil ich krank bin).",
+     "sondern only after a negative: nicht Tee, sondern Kaffee. Use a comma before aber, denn, sondern."
+    ],
+    "uz": [
+     "und, aber, oder, denn, sondern «nolinchi o'rinda»: keyin oddiy tartib.",
+     "Ich bleibe zu Hause, denn ich bin krank. — fe'l ikkinchi (solishtiring: weil ich krank bin).",
+     "sondern faqat inkordan keyin: nicht Tee, sondern Kaffee. aber, denn, sondern oldidan vergul."
+    ]
+   },
+   "formula": [
+    "und · aber · oder · denn · sondern = Position 0",
+    "denn + Subjekt + Verb …",
+    "nicht …, sondern …"
+   ],
+   "examples": [
+    {
+     "s": "Ich lerne Deutsch, denn ich will in Wien studieren.",
+     "t": {
+      "ru": "Я учу немецкий, потому что хочу учиться в Вене.",
+      "uz": "Nemis tilini o'rganyapman, chunki Venada o'qimoqchiman."
+     }
+    },
+    {
+     "s": "Er ist nicht faul, sondern müde.",
+     "t": {
+      "ru": "Он не ленивый, а уставший.",
+      "uz": "U dangasa emas, balki charchagan."
+     }
+    },
+    {
+     "s": "Kommst du mit oder bleibst du hier?",
+     "t": {
+      "ru": "Ты идёшь с нами или остаёшься?",
+      "uz": "Biz bilan borasanmi yoki shu yerda qolasanmi?"
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich komme nicht, denn ich krank bin.",
+    "right": "Ich komme nicht, denn ich bin krank.",
+    "note": {
+     "ru": "После denn обычный порядок.",
+     "en": "After denn normal order.",
+     "uz": "denn dan keyin oddiy tartib."
+    }
+   },
+   "tip": {
+    "ru": "После этих пяти союзов порядок слов не меняется.",
+    "en": "After these five, word order does not change.",
+    "uz": "Bu beshtasidan keyin so'z tartibi o'zgarmaydi."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Das ist nicht mein Handy, ___ dein Handy.",
+     "o": [
+      "sondern",
+      "aber",
+      "denn"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После nicht → sondern.",
+      "en": "After nicht → sondern.",
+      "uz": "nicht dan keyin → sondern."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich gehe früh schlafen, ___ ich muss um 6 aufstehen.",
+     "o": [
+      "denn",
+      "weil",
+      "sondern"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина + обычный порядок → denn.",
+      "en": "Reason + normal order → denn.",
+      "uz": "Sabab + oddiy tartib → denn."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Das Hotel ist schön, ___ teuer.",
+     "o": [
+      "aber",
+      "sondern",
+      "oder"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Противопоставление → aber.",
+      "en": "Contrast → aber.",
+      "uz": "Qarama-qarshilik → aber."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Sie kommt heute, aber sie bleibt nicht lange.",
+      "Sie kommt heute, aber bleibt sie nicht lange."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После aber — подлежащее, потом глагол.",
+      "en": "After aber: subject, then verb.",
+      "uz": "aber dan keyin: ega, keyin fe'l."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Wir fahren nicht mit dem Bus, sondern mit dem Zug.",
+      "Wir fahren nicht mit dem Bus, aber mit dem Zug."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Исправление после nicht → sondern.",
+      "en": "Correction after nicht → sondern.",
+      "uz": "nicht dan keyin tuzatish → sondern."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "trinke",
+      "Tee",
+      "und",
+      "meine",
+      "Frau",
+      "trinkt",
+      "Kaffee."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Er",
+      "bleibt",
+      "zu",
+      "Hause,",
+      "denn",
+      "es",
+      "regnet."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ich habe keinen Hund, ___ eine Katze.",
+     "a": [
+      "sondern"
+     ],
+     "e": {
+      "ru": "После отрицания → sondern.",
+      "en": "After a negative → sondern.",
+      "uz": "Inkordan keyin → sondern."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "…, *denn* ich *bin* müde.",
+     "…, *weil* ich müde *bin*."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "После denn глагол второй, после weil — в конце",
+      "en": "After denn the verb is second, after weil it goes last",
+      "uz": "denn dan keyin fe'l ikkinchi, weil dan keyin oxirida"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'nosi har xil"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Möchtest du Tee ___ Kaffee?",
+     "o": [
+      "oder",
+      "sondern",
+      "denn"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Выбор → oder.",
+      "en": "Choice → oder.",
+      "uz": "Tanlov → oder."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Er lernt viel, ___ er will gute Noten.",
+     "o": [
+      "denn",
+      "sondern",
+      "oder"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Причина → denn.",
+      "en": "Reason → denn.",
+      "uz": "Sabab → denn."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sie ist nicht Lehrerin, ___ Ärztin.",
+     "o": [
+      "sondern",
+      "aber",
+      "denn"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ sondern.",
+      "en": "→ sondern.",
+      "uz": "→ sondern."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о себе с denn, aber и sondern.",
+    "en": "Write 3 sentences about yourself with denn, aber and sondern.",
+    "uz": "O'zingiz haqida denn, aber va sondern bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "indefinitpronomen",
+   "level": "A2",
+   "title": {
+    "ru": "man, jemand, niemand, etwas, nichts",
+    "en": "man, jemand, niemand, etwas, nichts",
+    "uz": "man, jemand, niemand, etwas, nichts"
+   },
+   "sum": {
+    "ru": "«Кто-то, никто, что-то, ничего» и безличное man.",
+    "en": "“Someone, no one, something, nothing” and impersonal man.",
+    "uz": "«Kimdir, hech kim, nimadir, hech narsa» va shaxssiz man."
+   },
+   "explain": {
+    "ru": [
+     "man = «люди вообще» (глагол как у er): Hier spricht man Deutsch. In Usbekistan isst man viel Plov.",
+     "jemand (кто-то) — niemand (никто); etwas (что-то) — nichts (ничего): Ist jemand da? — Nein, niemand. Ich möchte etwas trinken.",
+     "С ними уже есть отрицание, второе не нужно: Ich sehe niemanden (не nicht niemand). alle (все), viele (многие), einige (некоторые) — мн. ч.: Alle sind da."
+    ],
+    "en": [
+     "man = people in general (verb like er): Hier spricht man Deutsch.",
+     "jemand (someone) — niemand (no one); etwas (something) — nichts (nothing).",
+     "They already contain the negative, so no second one: Ich sehe niemanden. alle, viele, einige take the plural: Alle sind da."
+    ],
+    "uz": [
+     "man = «umuman odamlar» (fe'l er kabi): Hier spricht man Deutsch.",
+     "jemand (kimdir) — niemand (hech kim); etwas (nimadir) — nichts (hech narsa).",
+     "Ularda inkor bor, ikkinchisi kerak emas: Ich sehe niemanden. alle, viele, einige — ko'plik: Alle sind da."
+    ]
+   },
+   "formula": [
+    "man + Verb (wie er)",
+    "jemand ↔ niemand · etwas ↔ nichts",
+    "alle / viele / einige + Plural"
+   ],
+   "examples": [
+    {
+     "s": "Man darf hier nicht rauchen.",
+     "t": {
+      "ru": "Здесь нельзя курить.",
+      "uz": "Bu yerda chekish mumkin emas."
+     }
+    },
+    {
+     "s": "Hat jemand meinen Schlüssel gesehen?",
+     "t": {
+      "ru": "Кто-нибудь видел мой ключ?",
+      "uz": "Kimdir kalitimni ko'rdimi?"
+     }
+    },
+    {
+     "s": "Ich habe heute nichts gegessen.",
+     "t": {
+      "ru": "Я сегодня ничего не ел.",
+      "uz": "Bugun hech narsa yemadim."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich habe nicht nichts gesagt.",
+    "right": "Ich habe nichts gesagt.",
+    "note": {
+     "ru": "Двойное отрицание не нужно.",
+     "en": "No double negative.",
+     "uz": "Qo'sh inkor kerak emas."
+    }
+   },
+   "tip": {
+    "ru": "man — «люди вообще»; в niemand и nichts уже есть «не».",
+    "en": "man = people in general; niemand and nichts already mean “not”.",
+    "uz": "man — «umuman odamlar»; niemand va nichts da «emas» bor."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Wie sagt ___ das auf Deutsch?",
+     "o": [
+      "man",
+      "jemand",
+      "niemand"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вообще → man.",
+      "en": "In general → man.",
+      "uz": "Umuman → man."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ist ___ zu Hause? Ich höre Musik.",
+     "o": [
+      "jemand",
+      "niemand",
+      "nichts"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Кто-то → jemand.",
+      "en": "Someone → jemand.",
+      "uz": "Kimdir → jemand."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich verstehe ___. Kannst du das wiederholen?",
+     "o": [
+      "nichts",
+      "etwas",
+      "jemand"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Ничего → nichts.",
+      "en": "Nothing → nichts.",
+      "uz": "Hech narsa → nichts."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Niemand hat angerufen.",
+      "Niemand hat nicht angerufen."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "niemand уже отрицание.",
+      "en": "niemand is already negative.",
+      "uz": "niemand allaqachon inkor."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Alle Schüler sind heute da.",
+      "Alle Schüler ist heute da."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "alle + мн. ч. → sind.",
+      "en": "alle + plural → sind.",
+      "uz": "alle + ko'plik → sind."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Im",
+      "Museum",
+      "darf",
+      "man",
+      "nicht",
+      "fotografieren."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Möchtest",
+      "du",
+      "etwas",
+      "essen?"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ich habe ___ gesehen. Der Park war leer. (no one)",
+     "a": [
+      "niemanden",
+      "niemand"
+     ],
+     "e": {
+      "ru": "Никого → niemand(en).",
+      "en": "No one → niemand(en).",
+      "uz": "Hech kim → niemand(en)."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Jemand* klopft.",
+     "*Niemand* klopft.",
+     "*Man* klopft nicht."
+    ],
+    "q": {
+     "ru": "Что значит каждое слово?",
+     "en": "What does each word mean?",
+     "uz": "Har bir so'z nimani bildiradi?"
+    },
+    "o": [
+     {
+      "ru": "кто-то — никто — люди вообще",
+      "en": "someone — no one — people in general",
+      "uz": "kimdir — hech kim — umuman odamlar"
+     },
+     {
+      "ru": "Одно и то же",
+      "en": "The same",
+      "uz": "Bir xil"
+     },
+     {
+      "ru": "Имена",
+      "en": "Names",
+      "uz": "Ismlar"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Hier spricht ___ Usbekisch.",
+     "o": [
+      "man",
+      "jemand",
+      "alle"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Вообще → man.",
+      "en": "In general → man.",
+      "uz": "Umuman → man."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich habe ___ Neues gehört.",
+     "o": [
+      "etwas",
+      "jemand",
+      "niemand"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Что-то новое → etwas Neues.",
+      "en": "Something new → etwas Neues.",
+      "uz": "Yangi narsa → etwas Neues."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ meine Freunde wohnen in Taschkent.",
+     "o": [
+      "Alle",
+      "Jemand",
+      "Man"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Все → alle + мн. ч.",
+      "en": "All → alle + plural.",
+      "uz": "Hammasi → alle + ko'plik."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 правила для своего дома или школы с man (Man darf…, Man muss…).",
+    "en": "Write 3 rules for your home or school with man (Man darf…, Man muss…).",
+    "uz": "Uyingiz yoki maktabingiz uchun man bilan 3 ta qoida yozing (Man darf…, Man muss…)."
    }
   },
   {
@@ -7833,6 +8875,539 @@
    }
   },
   {
+   "id": "temporalsaetze",
+   "level": "B1",
+   "title": {
+    "ru": "Временные придаточные: bevor, nachdem, während",
+    "en": "Time clauses: bevor, nachdem, während",
+    "uz": "Vaqt ergash gaplari: bevor, nachdem, während"
+   },
+   "sum": {
+    "ru": "До, после, пока, с тех пор как, до тех пор пока.",
+    "en": "Before, after, while, since, until.",
+    "uz": "…dan oldin, …dan keyin, …ayotganda, …dan beri, …guncha."
+   },
+   "explain": {
+    "ru": [
+     "bevor (до того как), nachdem (после того как), während (пока), seit(dem) (с тех пор как), bis (пока не) — придаточные: глагол в конце.",
+     "nachdem требует «предпрошедшего» порядка времён: Nachdem ich gegessen habe, gehe ich spazieren. Nachdem ich gegessen hatte, ging ich spazieren.",
+     "Если придаточное первое, главное начинается с глагола: Bevor ich schlafe, lese ich. seit — действие идёт до сих пор (настоящее): Seit ich hier wohne, bin ich glücklich."
+    ],
+    "en": [
+     "bevor, nachdem, während, seit(dem), bis start subordinate clauses: the verb goes last.",
+     "nachdem needs an earlier tense: Nachdem ich gegessen habe, gehe ich… / Nachdem ich gegessen hatte, ging ich…",
+     "If the clause comes first, the main clause starts with the verb: Bevor ich schlafe, lese ich. seit + present for something still going on."
+    ],
+    "uz": [
+     "bevor, nachdem, während, seit(dem), bis — ergash gap: fe'l oxirida.",
+     "nachdem avvalgi zamonni talab qiladi: Nachdem ich gegessen habe, gehe ich… / Nachdem ich gegessen hatte, ging ich…",
+     "Ergash gap birinchi bo'lsa, bosh gap fe'l bilan boshlanadi: Bevor ich schlafe, lese ich. seit + hozirgi zamon."
+    ]
+   },
+   "formula": [
+    "bevor · nachdem · während · seit · bis + … Verb",
+    "Nachdem ich gegessen habe/hatte, …",
+    "Nebensatz, Verb + Subjekt …"
+   ],
+   "examples": [
+    {
+     "s": "Bevor ich zur Arbeit fahre, trinke ich Kaffee.",
+     "t": {
+      "ru": "Перед тем как поехать на работу, я пью кофе.",
+      "uz": "Ishga borishdan oldin qahva ichaman."
+     }
+    },
+    {
+     "s": "Während er kochte, hörte er Musik.",
+     "t": {
+      "ru": "Пока он готовил, он слушал музыку.",
+      "uz": "U ovqat pishirayotganda musiqa tingladi."
+     }
+    },
+    {
+     "s": "Warte hier, bis ich zurückkomme.",
+     "t": {
+      "ru": "Жди здесь, пока я не вернусь.",
+      "uz": "Men qaytgunimcha shu yerda kut."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Nachdem ich esse, ich gehe spazieren.",
+    "right": "Nachdem ich gegessen habe, gehe ich spazieren.",
+    "note": {
+     "ru": "nachdem + Perfekt; главное — с глагола.",
+     "en": "nachdem + Perfekt; main clause starts with the verb.",
+     "uz": "nachdem + Perfekt; bosh gap fe'l bilan."
+    }
+   },
+   "tip": {
+    "ru": "Глагол в конце придаточного; после nachdem — время «раньше».",
+    "en": "Verb last in the clause; after nachdem use the earlier tense.",
+    "uz": "Ergash gapda fe'l oxirida; nachdem dan keyin avvalgi zamon."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ du schläfst, putz dir die Zähne.",
+     "o": [
+      "Bevor",
+      "Nachdem",
+      "Seit"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "До сна → Bevor.",
+      "en": "Before sleeping → Bevor.",
+      "uz": "Uxlashdan oldin → Bevor."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nachdem er die Prüfung ___, hat er gefeiert.",
+     "o": [
+      "bestanden hatte",
+      "besteht",
+      "bestehen wird"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Раньше прошлого → bestanden hatte.",
+      "en": "Earlier than past → bestanden hatte.",
+      "uz": "O'tmishdan avval → bestanden hatte."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ ich in Berlin wohne, spreche ich besser Deutsch.",
+     "o": [
+      "Seit",
+      "Bis",
+      "Bevor"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С тех пор как (и сейчас) → Seit.",
+      "en": "Since (and still) → Seit.",
+      "uz": "…dan beri → Seit."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Während wir warteten, begann es zu regnen.",
+      "Während wir warteten, es begann zu regnen."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После придаточного — глагол.",
+      "en": "After the clause: verb first.",
+      "uz": "Ergash gapdan keyin fe'l."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ich bleibe, bis du fertig bist.",
+      "Ich bleibe, bis du bist fertig."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Глагол в конце.",
+      "en": "Verb last.",
+      "uz": "Fe'l oxirida."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Bevor",
+      "ich",
+      "ins",
+      "Bett",
+      "gehe,",
+      "lese",
+      "ich",
+      "ein",
+      "Buch."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Nachdem",
+      "wir",
+      "gegessen",
+      "hatten,",
+      "gingen",
+      "wir",
+      "ins",
+      "Kino."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Wir warten, ___ der Regen aufhört. (until)",
+     "a": [
+      "bis"
+     ],
+     "e": {
+      "ru": "Пока не → bis.",
+      "en": "Until → bis.",
+      "uz": "…guncha → bis."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Bevor* ich esse, wasche ich mir die Hände.",
+     "*Nachdem* ich gegessen habe, spüle ich."
+    ],
+    "q": {
+     "ru": "Какой порядок действий?",
+     "en": "What is the order of actions?",
+     "uz": "Harakatlar tartibi qanday?"
+    },
+    "o": [
+     {
+      "ru": "bevor — сначала главное; nachdem — сначала придаточное",
+      "en": "bevor: main action first; nachdem: clause action first",
+      "uz": "bevor: avval bosh gap; nachdem: avval ergash gap"
+     },
+     {
+      "ru": "Одновременно",
+      "en": "At the same time",
+      "uz": "Bir vaqtda"
+     },
+     {
+      "ru": "Не важно",
+      "en": "It does not matter",
+      "uz": "Muhim emas"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ ich koche, telefoniere ich oft. (at the same time)",
+     "o": [
+      "Während",
+      "Nachdem",
+      "Bis"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Одновременно → Während.",
+      "en": "Same time → Während.",
+      "uz": "Bir vaqtda → Während."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Nachdem sie angekommen ___, rief sie an.",
+     "o": [
+      "war",
+      "ist",
+      "hatte"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ankommen → sein; прошлое → war.",
+      "en": "ankommen takes sein; past → war.",
+      "uz": "ankommen → sein; o'tmish → war."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Bevor wir losfahren, ___ wir tanken.",
+     "o": [
+      "müssen",
+      "wir müssen",
+      "muss"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После придаточного — глагол.",
+      "en": "Verb right after the clause.",
+      "uz": "Ergash gapdan keyin fe'l."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Опиши своё утро 3 предложениями с bevor, nachdem и während.",
+    "en": "Describe your morning in 3 sentences with bevor, nachdem and während.",
+    "uz": "Ertalabingizni bevor, nachdem va während bilan 3 ta gapda tasvirlang."
+   }
+  },
+  {
+   "id": "obwohl-trotzdem",
+   "level": "B1",
+   "title": {
+    "ru": "Obwohl и trotzdem: хотя и всё равно",
+    "en": "Obwohl and trotzdem: although and anyway",
+    "uz": "Obwohl va trotzdem: garchi va baribir"
+   },
+   "sum": {
+    "ru": "Одна мысль — два порядка слов.",
+    "en": "One idea — two word orders.",
+    "uz": "Bitta fikr — ikki xil so'z tartibi."
+   },
+   "explain": {
+    "ru": [
+     "obwohl (хотя) — придаточное, глагол в конце: Obwohl es regnet, gehen wir spazieren.",
+     "trotzdem (всё равно) — наречие на первом месте во втором предложении, глагол сразу после: Es regnet. Trotzdem gehen wir spazieren.",
+     "trotz + Genitiv — с существительным: Trotz des Regens gehen wir spazieren."
+    ],
+    "en": [
+     "obwohl (although) starts a subordinate clause, verb last: Obwohl es regnet, gehen wir spazieren.",
+     "trotzdem (anyway) is an adverb in position 1 of the second sentence, verb right after: Es regnet. Trotzdem gehen wir spazieren.",
+     "trotz + genitive with a noun: Trotz des Regens gehen wir spazieren."
+    ],
+    "uz": [
+     "obwohl (garchi) — ergash gap, fe'l oxirida: Obwohl es regnet, gehen wir spazieren.",
+     "trotzdem (baribir) — ikkinchi gapda birinchi o'rindagi ravish, fe'l darhol keyin: Es regnet. Trotzdem gehen wir spazieren.",
+     "trotz + Genitiv — ot bilan: Trotz des Regens gehen wir spazieren."
+    ]
+   },
+   "formula": [
+    "obwohl …, … Verb (Ende)",
+    "…. Trotzdem + Verb + Subjekt …",
+    "trotz + Genitiv"
+   ],
+   "examples": [
+    {
+     "s": "Obwohl ich müde bin, lerne ich weiter.",
+     "t": {
+      "ru": "Хотя я устал, я продолжаю учиться.",
+      "uz": "Charchagan bo'lsam ham, o'qishda davom etaman."
+     }
+    },
+    {
+     "s": "Das Essen war kalt. Trotzdem hat er alles gegessen.",
+     "t": {
+      "ru": "Еда была холодной. Он всё равно всё съел.",
+      "uz": "Ovqat sovuq edi. Baribir u hammasini yedi."
+     }
+    },
+    {
+     "s": "Trotz der Kälte spielen die Kinder draußen.",
+     "t": {
+      "ru": "Несмотря на холод, дети играют на улице.",
+      "uz": "Sovuqqa qaramay, bolalar tashqarida o'ynashyapti."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Obwohl es ist kalt, ich trage keine Jacke.",
+    "right": "Obwohl es kalt ist, trage ich keine Jacke.",
+    "note": {
+     "ru": "obwohl → глагол в конце; дальше — глагол.",
+     "en": "obwohl → verb last; then the main verb.",
+     "uz": "obwohl → fe'l oxirida; keyin bosh fe'l."
+    }
+   },
+   "tip": {
+    "ru": "obwohl — глагол в конце; trotzdem — глагол сразу после.",
+    "en": "obwohl: verb last; trotzdem: verb right after.",
+    "uz": "obwohl: fe'l oxirida; trotzdem: fe'l darhol keyin."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "___ er krank ist, geht er zur Arbeit.",
+     "o": [
+      "Obwohl",
+      "Trotzdem",
+      "Trotz"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Придаточное → Obwohl.",
+      "en": "A clause → Obwohl.",
+      "uz": "Ergash gap → Obwohl."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Er ist krank. ___ geht er zur Arbeit.",
+     "o": [
+      "Trotzdem",
+      "Obwohl",
+      "Trotz"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Второе предложение → Trotzdem.",
+      "en": "Second sentence → Trotzdem.",
+      "uz": "Ikkinchi gap → Trotzdem."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "___ des Staus kamen wir pünktlich.",
+     "o": [
+      "Trotz",
+      "Obwohl",
+      "Trotzdem"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "С существительным → Trotz.",
+      "en": "With a noun → Trotz.",
+      "uz": "Ot bilan → Trotz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Obwohl sie viel lernt, hat sie schlechte Noten.",
+      "Obwohl sie lernt viel, hat sie schlechte Noten."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "obwohl → глагол в конце.",
+      "en": "obwohl → verb last.",
+      "uz": "obwohl → fe'l oxirida."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Es war teuer. Trotzdem haben wir es gekauft.",
+      "Es war teuer. Trotzdem wir haben es gekauft."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "trotzdem → глагол второй.",
+      "en": "trotzdem → verb second.",
+      "uz": "trotzdem → fe'l ikkinchi."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Obwohl",
+      "das",
+      "Wetter",
+      "schlecht",
+      "war,",
+      "sind",
+      "wir",
+      "ans",
+      "Meer",
+      "gefahren."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "habe",
+      "wenig",
+      "Zeit.",
+      "Trotzdem",
+      "helfe",
+      "ich",
+      "dir."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Sie hat Angst. ___ springt sie ins Wasser.",
+     "a": [
+      "Trotzdem"
+     ],
+     "e": {
+      "ru": "→ Trotzdem + глагол.",
+      "en": "→ Trotzdem + verb.",
+      "uz": "→ Trotzdem + fe'l."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Obwohl* es regnet, *gehen* wir.",
+     "Es regnet. *Trotzdem gehen* wir."
+    ],
+    "q": {
+     "ru": "Чем отличаются?",
+     "en": "How do they differ?",
+     "uz": "Nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Смысл тот же, порядок слов разный",
+      "en": "Same meaning, different word order",
+      "uz": "Ma'no bir xil, so'z tartibi har xil"
+     },
+     {
+      "ru": "Разный смысл",
+      "en": "Different meaning",
+      "uz": "Ma'no har xil"
+     },
+     {
+      "ru": "Второе — вопрос",
+      "en": "The second is a question",
+      "uz": "Ikkinchisi savol"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Obwohl ich ihn ___, hat er mich nicht erkannt. (kennen)",
+     "o": [
+      "kenne",
+      "kennt",
+      "kennen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ich → kenne, в конце.",
+      "en": "ich → kenne, at the end.",
+      "uz": "ich → kenne, oxirida."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Das Buch ist lang. ___ lese ich es gern.",
+     "o": [
+      "Trotzdem",
+      "Obwohl",
+      "Trotz"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ Trotzdem.",
+      "en": "→ Trotzdem.",
+      "uz": "→ Trotzdem."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Trotz ___ Lärms konnte ich schlafen.",
+     "o": [
+      "des",
+      "dem",
+      "den"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "trotz + Genitiv → des Lärms.",
+      "en": "trotz + genitive → des Lärms.",
+      "uz": "trotz + Genitiv → des Lärms."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 2 предложения с obwohl и 1 с trotzdem о своей неделе.",
+    "en": "Write 2 sentences with obwohl and 1 with trotzdem about your week.",
+    "uz": "Haftangiz haqida obwohl bilan 2 ta va trotzdem bilan 1 ta gap yozing."
+   }
+  },
+  {
    "id": "genitive",
    "level": "B2",
    "title": {
@@ -9406,6 +10981,1054 @@
     "ru": "Напиши 3 правила для своего класса или работы в пассиве (… darf nicht … werden, … muss … werden).",
     "en": "Write 3 rules for your class or workplace in the passive (… darf nicht … werden, … muss … werden).",
     "uz": "Sinfingiz yoki ishingiz uchun majhul nisbatda 3 ta qoida yozing (… darf nicht … werden, … muss … werden)."
+   }
+  },
+  {
+   "id": "n-deklination",
+   "level": "B2",
+   "title": {
+    "ru": "N-склонение: den Kunden, dem Studenten",
+    "en": "N-declension: den Kunden, dem Studenten",
+    "uz": "N-turlanish: den Kunden, dem Studenten"
+   },
+   "sum": {
+    "ru": "Мужские слова, которые получают -n везде, кроме именительного.",
+    "en": "Masculine nouns that add -n everywhere except the nominative.",
+    "uz": "Nominativdan boshqa hamma joyda -n oladigan erkak otlar."
+   },
+   "explain": {
+    "ru": [
+     "Группа мужских существительных получает -(e)n в Akkusativ, Dativ и Genitiv: der Kunde → den Kunden, dem Kunden, des Kunden.",
+     "Кто это: на -e о людях и животных (der Junge, der Kollege, der Löwe); на -ent, -ant, -ist, -at (der Student, der Präsident, der Polizist, der Soldat).",
+     "Ещё: der Mensch, der Herr (den Herrn), der Nachbar, der Bär. Особые: der Name → des Namens, das Herz → des Herzens."
+    ],
+    "en": [
+     "Some masculine nouns add -(e)n in accusative, dative and genitive: der Kunde → den Kunden, dem Kunden, des Kunden.",
+     "Who: nouns in -e for people/animals (der Junge, der Kollege, der Löwe); in -ent, -ant, -ist, -at (der Student, der Polizist).",
+     "Also der Mensch, der Herr (den Herrn), der Nachbar, der Bär. Special: der Name → des Namens."
+    ],
+    "uz": [
+     "Ba'zi erkak otlar Akkusativ, Dativ, Genitivda -(e)n oladi: der Kunde → den Kunden, dem Kunden, des Kunden.",
+     "Kimlar: odam/hayvon -e bilan (der Junge, der Kollege, der Löwe); -ent, -ant, -ist, -at (der Student, der Polizist).",
+     "Yana: der Mensch, der Herr (den Herrn), der Nachbar, der Bär. Maxsus: der Name → des Namens."
+    ]
+   },
+   "formula": [
+    "der Kunde → den/dem/des Kunden",
+    "-e (Personen/Tiere) · -ent · -ant · -ist · -at",
+    "der Mensch · der Herr · der Nachbar"
+   ],
+   "examples": [
+    {
+     "s": "Ich habe den Studenten gefragt.",
+     "t": {
+      "ru": "Я спросил студента.",
+      "uz": "Talabadan so'radim."
+     }
+    },
+    {
+     "s": "Kennst du unseren Nachbarn?",
+     "t": {
+      "ru": "Ты знаешь нашего соседа?",
+      "uz": "Qo'shnimizni taniysanmi?"
+     }
+    },
+    {
+     "s": "Das Auto des Präsidenten ist schwarz.",
+     "t": {
+      "ru": "Машина президента чёрная.",
+      "uz": "Prezidentning mashinasi qora."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich helfe dem Kollege.",
+    "right": "Ich helfe dem Kollegen.",
+    "note": {
+     "ru": "Kollege — N-склонение → dem Kollegen.",
+     "en": "Kollege is n-declension → dem Kollegen.",
+     "uz": "Kollege — N-turlanish → dem Kollegen."
+    }
+   },
+   "tip": {
+    "ru": "Кроме именительного — всегда -n.",
+    "en": "Everything except the nominative gets -n.",
+    "uz": "Nominativdan boshqasi — doim -n."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Wir haben einen neuen ___. (Kollege)",
+     "o": [
+      "Kollegen",
+      "Kollege",
+      "Kolleges"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Akk. → Kollegen.",
+      "en": "Accusative → Kollegen.",
+      "uz": "Akkusativ → Kollegen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Die Polizistin spricht mit dem ___. (Junge)",
+     "o": [
+      "Jungen",
+      "Junge",
+      "Junges"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Dativ → Jungen.",
+      "en": "Dative → Jungen.",
+      "uz": "Dativ → Jungen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Das ist die Meinung des ___. (Experte)",
+     "o": [
+      "Experten",
+      "Expertes",
+      "Experte"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Genitiv → Experten.",
+      "en": "Genitive → Experten.",
+      "uz": "Genitiv → Experten."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Der Student wartet.",
+      "Der Studenten wartet."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Nominativ — без -n.",
+      "en": "Nominative — no -n.",
+      "uz": "Nominativ — -n siz."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Ich habe den Herrn gegrüßt.",
+      "Ich habe den Herr gegrüßt."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Herr → den Herrn.",
+      "en": "Herr → den Herrn.",
+      "uz": "Herr → den Herrn."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Der",
+      "Arzt",
+      "untersucht",
+      "den",
+      "Patienten."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "schreibe",
+      "dem",
+      "Präsidenten",
+      "einen",
+      "Brief."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Im Zoo haben wir einen ___ gesehen. (Löwe)",
+     "a": [
+      "Löwen"
+     ],
+     "e": {
+      "ru": "Akk. → Löwen.",
+      "en": "Accusative → Löwen.",
+      "uz": "Akkusativ → Löwen."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*der* Student",
+     "ich sehe *den Studenten*",
+     "mit *dem Studenten*"
+    ],
+    "q": {
+     "ru": "Что происходит с Student?",
+     "en": "What happens to Student?",
+     "uz": "Student ga nima bo'ladi?"
+    },
+    "o": [
+     {
+      "ru": "Получает -en во всех падежах, кроме Nominativ",
+      "en": "It gets -en in every case except nominative",
+      "uz": "Nominativdan boshqa barcha kelishiklarda -en oladi"
+     },
+     {
+      "ru": "Становится мн. ч.",
+      "en": "It becomes plural",
+      "uz": "Ko'plikka aylanadi"
+     },
+     {
+      "ru": "Ничего",
+      "en": "Nothing",
+      "uz": "Hech narsa"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Ich frage den ___. (Polizist)",
+     "o": [
+      "Polizisten",
+      "Polizist",
+      "Polizists"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "-ist → -en.",
+      "en": "-ist → -en.",
+      "uz": "-ist → -en."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Wie ist der Name des ___? (Kunde)",
+     "o": [
+      "Kunden",
+      "Kundes",
+      "Kunde"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Genitiv → Kunden.",
+      "en": "Genitive → Kunden.",
+      "uz": "Genitiv → Kunden."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Der ___ kommt aus Polen. (Nachbar)",
+     "o": [
+      "Nachbar",
+      "Nachbarn",
+      "Nachbars"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Nominativ → без -n.",
+      "en": "Nominative → no -n.",
+      "uz": "Nominativ → -n siz."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о людях вокруг тебя (der Nachbar, der Kollege, der Student) в разных падежах.",
+    "en": "Write 3 sentences about people around you (der Nachbar, der Kollege, der Student) in different cases.",
+    "uz": "Atrofingizdagi odamlar haqida turli kelishiklarda 3 ta gap yozing (der Nachbar, der Kollege, der Student)."
+   }
+  },
+  {
+   "id": "zweiteilige-konnektoren",
+   "level": "B2",
+   "title": {
+    "ru": "Парные союзы: entweder…oder, weder…noch",
+    "en": "Two-part conjunctions: entweder…oder, weder…noch",
+    "uz": "Juft bog'lovchilar: entweder…oder, weder…noch"
+   },
+   "sum": {
+    "ru": "Или…или, ни…ни, как…так и, чем…тем.",
+    "en": "Either…or, neither…nor, both…and, the more…the more.",
+    "uz": "Yo…yo, na…na, ham…ham, qancha…shuncha."
+   },
+   "explain": {
+    "ru": [
+     "entweder … oder (или … или), weder … noch (ни … ни), sowohl … als auch (как … так и), nicht nur … sondern auch (не только … но и).",
+     "weder … noch уже отрицание — без nicht/kein: Ich trinke weder Kaffee noch Tee.",
+     "je + сравнительная, desto + сравнительная: первая часть — придаточное (глагол в конце), вторая — глагол сразу после desto: Je mehr ich lese, desto besser verstehe ich."
+    ],
+    "en": [
+     "entweder … oder, weder … noch, sowohl … als auch, nicht nur … sondern auch.",
+     "weder … noch is already negative — no nicht/kein: Ich trinke weder Kaffee noch Tee.",
+     "je + comparative (verb last), desto + comparative + verb: Je mehr ich lese, desto besser verstehe ich."
+    ],
+    "uz": [
+     "entweder … oder (yo … yo), weder … noch (na … na), sowohl … als auch (ham … ham), nicht nur … sondern auch.",
+     "weder … noch allaqachon inkor — nicht/kein siz: Ich trinke weder Kaffee noch Tee.",
+     "je + qiyosiy (fe'l oxirida), desto + qiyosiy + fe'l: Je mehr ich lese, desto besser verstehe ich."
+    ]
+   },
+   "formula": [
+    "entweder … oder · weder … noch",
+    "sowohl … als auch · nicht nur … sondern auch",
+    "je …-er … Verb, desto …-er Verb …"
+   ],
+   "examples": [
+    {
+     "s": "Wir fahren entweder mit dem Zug oder mit dem Auto.",
+     "t": {
+      "ru": "Мы поедем или на поезде, или на машине.",
+      "uz": "Yo poyezdda, yo mashinada boramiz."
+     }
+    },
+    {
+     "s": "Er spricht sowohl Englisch als auch Deutsch.",
+     "t": {
+      "ru": "Он говорит и по-английски, и по-немецки.",
+      "uz": "U ham inglizcha, ham nemischa gapiradi."
+     }
+    },
+    {
+     "s": "Je älter er wird, desto ruhiger ist er.",
+     "t": {
+      "ru": "Чем старше он становится, тем спокойнее.",
+      "uz": "U qancha qarisa, shuncha xotirjam bo'ladi."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich habe weder nicht Zeit noch Geld.",
+    "right": "Ich habe weder Zeit noch Geld.",
+    "note": {
+     "ru": "weder…noch без nicht.",
+     "en": "weder…noch takes no nicht.",
+     "uz": "weder…noch — nicht siz."
+    }
+   },
+   "tip": {
+    "ru": "Выучи пары целиком; после desto — сразу глагол.",
+    "en": "Learn the pairs as units; after desto the verb comes next.",
+    "uz": "Juftlarni butunligicha o'rgan; desto dan keyin darhol fe'l."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Ich esse ___ Fleisch noch Fisch.",
+     "o": [
+      "weder",
+      "entweder",
+      "sowohl"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "ни … ни → weder … noch.",
+      "en": "neither … nor → weder … noch.",
+      "uz": "na … na → weder … noch."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sie ist nicht nur klug, ___ auch fleißig.",
+     "o": [
+      "sondern",
+      "aber",
+      "oder"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "nicht nur … sondern auch.",
+      "en": "nicht nur … sondern auch.",
+      "uz": "nicht nur … sondern auch."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Je früher wir losfahren, ___ eher sind wir da.",
+     "o": [
+      "desto",
+      "je",
+      "als"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "je … desto.",
+      "en": "je … desto.",
+      "uz": "je … desto."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Entweder du kommst mit oder du bleibst hier.",
+      "Entweder du kommst mit noch du bleibst hier."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "entweder … oder.",
+      "en": "entweder … oder.",
+      "uz": "entweder … oder."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Je mehr ich übe, desto besser spiele ich.",
+      "Je mehr ich übe, desto ich spiele besser."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "После desto + сравнит. — глагол.",
+      "en": "After desto + comparative: verb.",
+      "uz": "desto + qiyosiydan keyin fe'l."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "mag",
+      "sowohl",
+      "Hunde",
+      "als",
+      "auch",
+      "Katzen."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Je",
+      "länger",
+      "ich",
+      "warte,",
+      "desto",
+      "nervöser",
+      "werde",
+      "ich."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Ich habe weder Zeit ___ Lust.",
+     "a": [
+      "noch"
+     ],
+     "e": {
+      "ru": "weder … noch.",
+      "en": "weder … noch.",
+      "uz": "weder … noch."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "*Entweder* Tee *oder* Kaffee.",
+     "*Weder* Tee *noch* Kaffee.",
+     "*Sowohl* Tee *als auch* Kaffee."
+    ],
+    "q": {
+     "ru": "Что выражает каждая пара?",
+     "en": "What does each pair express?",
+     "uz": "Har bir juft nimani bildiradi?"
+    },
+    "o": [
+     {
+      "ru": "одно из двух — ни одно — оба",
+      "en": "one of the two — neither — both",
+      "uz": "ikkisidan biri — hech biri — ikkalasi"
+     },
+     {
+      "ru": "Одно и то же",
+      "en": "The same",
+      "uz": "Bir xil"
+     },
+     {
+      "ru": "Время",
+      "en": "Tense",
+      "uz": "Zamon"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Wir können ___ heute ___ morgen kommen. (either…or)",
+     "o": [
+      "entweder … oder",
+      "weder … noch",
+      "sowohl … als"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ entweder … oder.",
+      "en": "→ entweder … oder.",
+      "uz": "→ entweder … oder."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Je mehr Sport man macht, ___ gesünder ist man.",
+     "o": [
+      "desto",
+      "als",
+      "so"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ desto.",
+      "en": "→ desto.",
+      "uz": "→ desto."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Er hat sowohl ein Auto ___ ein Motorrad.",
+     "o": [
+      "als auch",
+      "oder",
+      "noch"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "sowohl … als auch.",
+      "en": "sowohl … als auch.",
+      "uz": "sowohl … als auch."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши 3 предложения о себе с weder…noch, sowohl…als auch и je…desto.",
+    "en": "Write 3 sentences about yourself with weder…noch, sowohl…als auch and je…desto.",
+    "uz": "O'zingiz haqida weder…noch, sowohl…als auch va je…desto bilan 3 ta gap yozing."
+   }
+  },
+  {
+   "id": "partizip-adjektiv",
+   "level": "B2",
+   "title": {
+    "ru": "Причастия как прилагательные: das lachende Kind",
+    "en": "Participles as adjectives: das lachende Kind",
+    "uz": "Sifatdoshlar sifat sifatida: das lachende Kind"
+   },
+   "sum": {
+    "ru": "Плачущий ребёнок, купленная сумка.",
+    "en": "A crying child, a bought bag.",
+    "uz": "Yig'layotgan bola, sotib olingan sumka."
+   },
+   "explain": {
+    "ru": [
+     "Partizip I = инфинитив + -d (действие идёт, активно): lachen → lachend: das lachende Kind (ребёнок, который смеётся).",
+     "Partizip II (gemacht, geschrieben) — уже сделано / пассивно: die gekaufte Tasche (сумка, которую купили), das geschriebene Wort.",
+     "Перед существительным получают обычные окончания прилагательных: ein schlafender Hund, mit dem reparierten Auto. Это короткая замена придаточного: das Auto, das repariert wurde → das reparierte Auto."
+    ],
+    "en": [
+     "Partizip I = infinitive + -d (ongoing, active): lachen → lachend: das lachende Kind.",
+     "Partizip II (gemacht, geschrieben) = done / passive: die gekaufte Tasche, das geschriebene Wort.",
+     "Before a noun they take normal adjective endings: ein schlafender Hund. They shorten a relative clause: das reparierte Auto."
+    ],
+    "uz": [
+     "Partizip I = infinitiv + -d (davom etayotgan, faol): lachen → lachend: das lachende Kind.",
+     "Partizip II (gemacht, geschrieben) — bajarilgan / majhul: die gekaufte Tasche, das geschriebene Wort.",
+     "Ot oldida oddiy sifat qo'shimchalarini oladi: ein schlafender Hund. Nisbiy gapni qisqartiradi: das reparierte Auto."
+    ]
+   },
+   "formula": [
+    "Infinitiv + d + Endung = läuft gerade",
+    "Partizip II + Endung = ist gemacht",
+    "das Auto, das repariert wurde → das reparierte Auto"
+   ],
+   "examples": [
+    {
+     "s": "Vorsicht vor dem bellenden Hund!",
+     "t": {
+      "ru": "Осторожно, лающая собака!",
+      "uz": "Huraytgan itdan ehtiyot bo'ling!"
+     }
+    },
+    {
+     "s": "Die verlorenen Schlüssel lagen im Auto.",
+     "t": {
+      "ru": "Потерянные ключи лежали в машине.",
+      "uz": "Yo'qolgan kalitlar mashinada yotgan edi."
+     }
+    },
+    {
+     "s": "Wir haben das frisch gebackene Brot gegessen.",
+     "t": {
+      "ru": "Мы съели свежеиспечённый хлеб.",
+      "uz": "Yangi pishgan nonni yedik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Das weinend Kind sucht seine Mutter.",
+    "right": "Das weinende Kind sucht seine Mutter.",
+    "note": {
+     "ru": "Нужно окончание прилагательного: weinende.",
+     "en": "It needs an adjective ending: weinende.",
+     "uz": "Sifat qo'shimchasi kerak: weinende."
+    }
+   },
+   "tip": {
+    "ru": "-end = делает сейчас; Partizip II = сделано; плюс окончание.",
+    "en": "-end = doing now; Partizip II = done; plus an ending.",
+    "uz": "-end = hozir qilyapti; Partizip II = qilingan; qo'shimcha bilan."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Das ___ Baby wachte auf. (schlafen, was sleeping)",
+     "o": [
+      "schlafende",
+      "geschlafene",
+      "schlafend"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Процесс → Partizip I + окончание.",
+      "en": "Ongoing → Partizip I + ending.",
+      "uz": "Jarayon → Partizip I + qo'shimcha."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich trage die ___ Jacke. (kaufen, bought)",
+     "o": [
+      "gekaufte",
+      "kaufende",
+      "gekauft"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Куплена → Partizip II.",
+      "en": "Bought → Partizip II.",
+      "uz": "Sotib olingan → Partizip II."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Er wohnt in einem ___ Haus. (renovieren, renovated)",
+     "o": [
+      "renovierten",
+      "renovierenden",
+      "renoviert"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Dativ, einem → -en.",
+      "en": "Dative after einem → -en.",
+      "uz": "Dativ, einem → -en."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Die steigenden Preise machen Sorgen.",
+      "Die gestiegenden Preise machen Sorgen."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Растут сейчас → steigend.",
+      "en": "Rising now → steigend.",
+      "uz": "Hozir oshyapti → steigend."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Das gestohlene Fahrrad wurde gefunden.",
+      "Das stehlende Fahrrad wurde gefunden."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Украдено (пассив) → gestohlen.",
+      "en": "Stolen (passive) → gestohlen.",
+      "uz": "O'g'irlangan (majhul) → gestohlen."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Der",
+      "lachende",
+      "Junge",
+      "spielt",
+      "im",
+      "Garten."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "habe",
+      "die",
+      "reparierte",
+      "Uhr",
+      "abgeholt."
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Die ___ Kinder sangen ein Lied. (spielen, playing)",
+     "a": [
+      "spielenden"
+     ],
+     "e": {
+      "ru": "die … Kinder → -en.",
+      "en": "die … Kinder → -en.",
+      "uz": "die … Kinder → -en."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "der *lesende* Mann",
+     "das *gelesene* Buch"
+    ],
+    "q": {
+     "ru": "Чем отличаются формы?",
+     "en": "How do the forms differ?",
+     "uz": "Shakllar nimasi bilan farq qiladi?"
+    },
+    "o": [
+     {
+      "ru": "Мужчина читает (сейчас) / книгу прочитали",
+      "en": "The man is reading / the book has been read",
+      "uz": "Erkak o'qiyapti / kitob o'qilgan"
+     },
+     {
+      "ru": "Ничем",
+      "en": "No difference",
+      "uz": "Farqi yo'q"
+     },
+     {
+      "ru": "Обе формы будущего",
+      "en": "Both are future",
+      "uz": "Ikkalasi kelajak"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "Das ___ Wasser ist heiß. (kochen, boiling)",
+     "o": [
+      "kochende",
+      "gekochte",
+      "kochend"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Кипит сейчас → kochende.",
+      "en": "Boiling now → kochende.",
+      "uz": "Hozir qaynayapti → kochende."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Die ___ Briefe liegen auf dem Tisch. (schreiben, written)",
+     "o": [
+      "geschriebenen",
+      "schreibenden",
+      "geschrieben"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Написаны → geschriebenen.",
+      "en": "Written → geschriebenen.",
+      "uz": "Yozilgan → geschriebenen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Das Auto, das repariert wurde = das ___ Auto",
+     "o": [
+      "reparierte",
+      "reparierende",
+      "repariert"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "→ das reparierte Auto.",
+      "en": "→ das reparierte Auto.",
+      "uz": "→ das reparierte Auto."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Сократи 3 придаточных до причастий (das Buch, das ich gekauft habe → das gekaufte Buch).",
+    "en": "Shorten 3 relative clauses into participles (das Buch, das ich gekauft habe → das gekaufte Buch).",
+    "uz": "3 ta nisbiy gapni sifatdoshga qisqartiring (das Buch, das ich gekauft habe → das gekaufte Buch)."
+   }
+  },
+  {
+   "id": "lassen",
+   "level": "B2",
+   "title": {
+    "ru": "Глагол lassen: оставлять и поручать",
+    "en": "The verb lassen: leave and have done",
+    "uz": "lassen fe'li: qoldirmoq va qildirmoq"
+   },
+   "sum": {
+    "ru": "Ich lasse mein Auto reparieren.",
+    "en": "Ich lasse mein Auto reparieren.",
+    "uz": "Ich lasse mein Auto reparieren."
+   },
+   "explain": {
+    "ru": [
+     "lassen = «оставлять»: Ich lasse das Handy zu Hause. Формы: ich lasse, du lässt, er lässt, wir lassen; Perfekt: hat gelassen.",
+     "lassen + инфинитив = «поручить кому-то сделать»: Ich lasse mir die Haare schneiden (меня стригут). = англ. have something done.",
+     "Также «разрешать»: Meine Eltern lassen mich ins Kino gehen. В Perfekt с инфинитивом — двойной инфинитив: Ich habe das Auto reparieren lassen."
+    ],
+    "en": [
+     "lassen = leave: Ich lasse das Handy zu Hause. Forms: ich lasse, du lässt, er lässt; Perfekt: hat gelassen.",
+     "lassen + infinitive = have something done: Ich lasse mir die Haare schneiden.",
+     "Also “let”: Meine Eltern lassen mich ins Kino gehen. Perfekt with an infinitive uses a double infinitive: Ich habe das Auto reparieren lassen."
+    ],
+    "uz": [
+     "lassen = «qoldirmoq»: Ich lasse das Handy zu Hause. Shakllar: ich lasse, du lässt, er lässt; Perfekt: hat gelassen.",
+     "lassen + infinitiv = «qildirmoq»: Ich lasse mir die Haare schneiden.",
+     "Shuningdek «ruxsat bermoq»: Meine Eltern lassen mich ins Kino gehen. Perfekt da qo'sh infinitiv: Ich habe das Auto reparieren lassen."
+    ]
+   },
+   "formula": [
+    "lassen = leave · du lässt · er lässt",
+    "lassen + Infinitiv = have done / let",
+    "Perfekt: hat … reparieren lassen"
+   ],
+   "examples": [
+    {
+     "s": "Ich lasse meinen Laptop reparieren.",
+     "t": {
+      "ru": "Я отдаю ноутбук в ремонт.",
+      "uz": "Noutbukimni ta'mirlatyapman."
+     }
+    },
+    {
+     "s": "Lass mich in Ruhe!",
+     "t": {
+      "ru": "Оставь меня в покое!",
+      "uz": "Meni tinch qo'y!"
+     }
+    },
+    {
+     "s": "Wir haben uns ein Haus bauen lassen.",
+     "t": {
+      "ru": "Мы построили себе дом (наняли строителей).",
+      "uz": "Biz o'zimizga uy qurdirdik."
+     }
+    }
+   ],
+   "mistake": {
+    "wrong": "Ich habe mein Auto reparieren gelassen.",
+    "right": "Ich habe mein Auto reparieren lassen.",
+    "note": {
+     "ru": "С инфинитивом — lassen, не gelassen.",
+     "en": "With an infinitive: lassen, not gelassen.",
+     "uz": "Infinitiv bilan: lassen, gelassen emas."
+    }
+   },
+   "tip": {
+    "ru": "Не сам делаешь, а поручаешь → lassen + инфинитив.",
+    "en": "Someone else does it for you → lassen + infinitive.",
+    "uz": "O'zing emas, boshqaga qildirasan → lassen + infinitiv."
+   },
+   "ex": [
+    {
+     "k": "choose",
+     "q": "Er ___ sein Handy immer im Auto.",
+     "o": [
+      "lässt",
+      "lasst",
+      "lassen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "er → lässt.",
+      "en": "er → lässt.",
+      "uz": "er → lässt."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich lasse mir einen Anzug ___.",
+     "o": [
+      "nähen",
+      "genäht",
+      "zu nähen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "lassen + инфинитив.",
+      "en": "lassen + infinitive.",
+      "uz": "lassen + infinitiv."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Wir haben die Wohnung streichen ___.",
+     "o": [
+      "lassen",
+      "gelassen",
+      "lässt"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Двойной инфинитив → lassen.",
+      "en": "Double infinitive → lassen.",
+      "uz": "Qo'sh infinitiv → lassen."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Meine Mutter lässt mich nicht allein reisen.",
+      "Meine Mutter lässt mich nicht allein zu reisen."
+     ],
+     "a": 0,
+     "e": {
+      "ru": "lassen + инфинитив без zu.",
+      "en": "lassen + infinitive without zu.",
+      "uz": "lassen + zu siz infinitiv."
+     }
+    },
+    {
+     "k": "error",
+     "o": [
+      "Hast du deinen Schirm im Bus gelassen?",
+      "Hast du deinen Schirm im Bus lassen?"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Без инфинитива → gelassen.",
+      "en": "Without an infinitive → gelassen.",
+      "uz": "Infinitivsiz → gelassen."
+     }
+    },
+    {
+     "k": "order",
+     "w": [
+      "Ich",
+      "lasse",
+      "mir",
+      "morgen",
+      "die",
+      "Haare",
+      "schneiden."
+     ]
+    },
+    {
+     "k": "order",
+     "w": [
+      "Lass",
+      "uns",
+      "ins",
+      "Kino",
+      "gehen!"
+     ]
+    },
+    {
+     "k": "type",
+     "q": "Du ___ dein Fahrrad reparieren. (lassen)",
+     "a": [
+      "lässt"
+     ],
+     "e": {
+      "ru": "du → lässt.",
+      "en": "du → lässt.",
+      "uz": "du → lässt."
+     }
+    }
+   ],
+   "discover": {
+    "s": [
+     "Ich *repariere* das Auto.",
+     "Ich *lasse* das Auto *reparieren*."
+    ],
+    "q": {
+     "ru": "Кто чинит машину?",
+     "en": "Who repairs the car?",
+     "uz": "Mashinani kim tuzatadi?"
+    },
+    "o": [
+     {
+      "ru": "В первом — я сам, во втором — мастер",
+      "en": "First me, second a mechanic",
+      "uz": "Birinchisida — o'zim, ikkinchisida — usta"
+     },
+     {
+      "ru": "Оба раза я",
+      "en": "Me both times",
+      "uz": "Ikkalasida men"
+     },
+     {
+      "ru": "Никто",
+      "en": "Nobody",
+      "uz": "Hech kim"
+     }
+    ],
+    "a": 0
+   },
+   "checks": [
+    {
+     "k": "choose",
+     "q": "___ uns gehen! (let us)",
+     "o": [
+      "Lass",
+      "Lässt",
+      "Gelassen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Lass uns … = давай…",
+      "en": "Lass uns … = let’s…",
+      "uz": "Lass uns … = keling…"
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Ich habe meine Brille zu Hause ___ .",
+     "o": [
+      "gelassen",
+      "lassen",
+      "lässt"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "Без инфинитива → gelassen.",
+      "en": "No infinitive → gelassen.",
+      "uz": "Infinitivsiz → gelassen."
+     }
+    },
+    {
+     "k": "choose",
+     "q": "Sie lässt sich die Nägel ___ .",
+     "o": [
+      "machen",
+      "gemacht",
+      "zu machen"
+     ],
+     "a": 0,
+     "e": {
+      "ru": "lassen + инфинитив.",
+      "en": "lassen + infinitive.",
+      "uz": "lassen + infinitiv."
+     }
+    }
+   ],
+   "write": {
+    "ru": "Напиши, что ты делаешь сам, а что поручаешь другим (Ich lasse…), 3 предложения.",
+    "en": "Write 3 sentences about what you do yourself and what you have done for you (Ich lasse…).",
+    "uz": "Nimani o'zingiz qilishingiz va nimani qildirishingiz haqida 3 ta gap yozing (Ich lasse…)."
    }
   }
  ],

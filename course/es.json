@@ -73,6 +73,173 @@
     "en": "Who, where from, what like → ser.",
     "uz": "Kim, qayerdan, qanday → ser."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ser — «быть»",
+      "en": "Ser — “to be”",
+      "uz": "Ser — «bo'lmoq»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Испанский для говорящих по-русски и по-узбекски приятный: читается почти так, как пишется. Начнём с главного глагола *ser* [сэр] — «быть». Он нужен, чтобы сказать, кто ты, откуда, какой ты по характеру и чем занимаешься: *Soy estudiante* — Я студент.",
+      "en": "Spanish is read almost exactly as it's written. Start with *ser* — “to be” — for who you are, where you're from, your character and your job: *Soy estudiante.*",
+      "uz": "Ispan tili o'zbek tilida so'zlashuvchilar uchun yoqimli: deyarli qanday yozilsa, shunday o'qiladi. Asosiy fe'l *ser* [ser] — «bo'lmoq» dan boshlaymiz. U kim ekaningiz, qayerdan ekaningiz, xarakteringiz va kasbingizni aytish uchun kerak: *Soy estudiante* — Men talabaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "ser",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "yo — я",
+         "en": "yo — I",
+         "uz": "yo — men"
+        },
+        "soy",
+        "Soy de Uzbekistán."
+       ],
+       [
+        {
+         "ru": "tú — ты",
+         "en": "tú — you",
+         "uz": "tú — sen"
+        },
+        "eres",
+        "Eres muy simpático."
+       ],
+       [
+        {
+         "ru": "él / ella / usted — он / она / Вы",
+         "en": "él / ella / usted — he / she / you (polite)",
+         "uz": "él / ella / usted — u / Siz"
+        },
+        "es",
+        "Ella es médica."
+       ],
+       [
+        {
+         "ru": "nosotros — мы",
+         "en": "nosotros — we",
+         "uz": "nosotros — biz"
+        },
+        "somos",
+        "Somos amigos."
+       ],
+       [
+        {
+         "ru": "vosotros — вы (друзья)",
+         "en": "vosotros — you (friends, Spain)",
+         "uz": "vosotros — sizlar (do'stlar)"
+        },
+        "sois",
+        "Sois estudiantes."
+       ],
+       [
+        {
+         "ru": "ellos / ustedes — они / Вы (мн.)",
+         "en": "ellos / ustedes — they / you (pl.)",
+         "uz": "ellos / ustedes — ular / Sizlar"
+        },
+        "son",
+        "Son de México."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимение можно не говорить",
+      "en": "You can drop the pronoun",
+      "uz": "Olmoshni aytmaslik mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в узбекском (*kelaman* — уже понятно, что «я»), в испанском форма глагола сама показывает лицо. Поэтому *yo, tú, él* обычно опускают: просто *Soy Ali* — Я Али. Местоимение говорят только для выделения: *Yo soy de Tashkent, y tú?*",
+      "en": "The verb form shows the person, so pronouns are usually dropped: *Soy Ali.* Use them only for emphasis.",
+      "uz": "O'zbek tilidagidek (*kelaman* — «men» ekani tushunarli), ispan tilida fe'l shaklining o'zi shaxsni ko'rsatadi. Shuning uchun *yo, tú, él* odatda tushiriladi: shunchaki *Soy Ali* — Men Aliman. Olmosh faqat ta'kid uchun aytiladi: *Yo soy de Tashkent, ¿y tú?*"
+     }
+    },
+    {
+     "note": {
+      "ru": "*Usted* — вежливое «Вы» к одному человеку — использует форму третьего лица: *Usted es muy amable* — Вы очень любезны.",
+      "en": "*Usted* — polite “you” — takes the third-person form: *Usted es muy amable.*",
+      "uz": "*Usted* — bir kishiga hurmat bilan «Siz» — uchinchi shaxs shaklini ishlatadi: *Usted es muy amable* — Siz juda xushmuomalasiz."
+     }
+    },
+    {
+     "h": {
+      "ru": "Произношение",
+      "en": "Pronunciation",
+      "uz": "Talaffuz"
+     }
+    },
+    {
+     "p": {
+      "ru": "Почти все буквы читаются как пишутся. Особенные: *h* не читается (*hola* [ола]), *j* — как русское [х] (*jefe*), *ñ* — [нь] (*España*), *ll* — [й] (*llamar*), *z* и *ce, ci* в Испании — как английское *th*. Ударение — на предпоследний слог, а если нет — над гласной ставят знак: *médico*.",
+      "en": "Almost every letter is read as written. Special: silent *h*, *j* like a throaty h, *ñ* = “ny”, *ll* = “y”. Stress falls on the second-to-last syllable unless marked: *médico*.",
+      "uz": "Deyarli barcha harflar yozilganidek o'qiladi. Alohidalari: *h* o'qilmaydi (*hola* [ola]), *j* — o'zbekcha [x] kabi (*jefe*), *ñ* — [ny] (*España*), *ll* — [y] (*llamar*). Urg'u oxiridan oldingi bo'g'inga tushadi, bo'lmasa unli ustiga belgi qo'yiladi: *médico*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Soy* de Samarcanda.",
+       "t": {
+        "ru": "Я из Самарканда.",
+        "uz": "Men Samarqanddanman.",
+        "en": "I'm from Samarkand."
+       }
+      },
+      {
+       "s": "Mi padre *es* profesor.",
+       "t": {
+        "ru": "Мой папа — учитель.",
+        "uz": "Dadam o'qituvchi.",
+        "en": "My father is a teacher."
+       }
+      },
+      {
+       "s": "¿De dónde *eres*?",
+       "t": {
+        "ru": "Откуда ты?",
+        "uz": "Qayerdansan?",
+        "en": "Where are you from?"
+       }
+      },
+      {
+       "s": "*Somos* muy buenos amigos.",
+       "t": {
+        "ru": "Мы очень хорошие друзья.",
+        "uz": "Biz juda yaxshi do'stmiz.",
+        "en": "We're very good friends."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В испанском вопрос и восклицание начинаются перевёрнутым знаком: *¿Cómo estás?*, *¡Hola!* Так сразу видно, где начинается вопрос.",
+      "en": "Spanish questions and exclamations open with an upside-down mark: *¿Cómo estás?*, *¡Hola!*",
+      "uz": "Ispan tilida savol va undov teskari belgi bilan boshlanadi: *¿Cómo estás?*, *¡Hola!* Shunda savol qayerdan boshlanishi darhol ko'rinadi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -332,6 +499,146 @@
     "en": "-o → el, -a → la, learn exceptions with the article.",
     "uz": "-o → el, -a → la, istisnolarni artikl bilan o'rgan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два рода: мужской и женский",
+      "en": "Two genders",
+      "uz": "Ikki jins: erkak va ayol"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском у каждого существительного есть род — мужской или женский. Хорошая новость: часто его легко угадать по окончанию. Слова на *-o* обычно мужского рода (*el libro*), на *-a* — женского (*la casa*).",
+      "en": "Every Spanish noun is masculine or feminine — and it's often easy to guess: *-o* is usually masculine (*el libro*), *-a* feminine (*la casa*).",
+      "uz": "Ispan tilida har bir otning jinsi bor — erkak yoki ayol. Yaxshi xabar: ko'pincha uni oxiridan topish oson. *-o* bilan tugaydigan so'zlar odatda erkak jinsida (*el libro*), *-a* bilan — ayol jinsida (*la casa*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Тот самый",
+        "en": "the",
+        "uz": "Aynan o'sha"
+       },
+       {
+        "ru": "Какой-то",
+        "en": "a / an",
+        "uz": "Qandaydir bitta"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "el",
+        "un",
+        "el libro, un chico"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "la",
+        "una",
+        "la mesa, una chica"
+       ],
+       [
+        {
+         "ru": "мужской мн.",
+         "en": "masculine plural",
+         "uz": "erkak ko'plik"
+        },
+        "los",
+        "unos",
+        "los libros"
+       ],
+       [
+        {
+         "ru": "женский мн.",
+         "en": "feminine plural",
+         "uz": "ayol ko'plik"
+        },
+        "las",
+        "unas",
+        "las mesas"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*El, la, los, las* — «тот самый, известный» (как *the*). *Un, una* — «один, какой-то» (как *a*). *Unos, unas* — «несколько, какие-то».",
+      "en": "*El, la, los, las* = the. *Un, una* = a. *Unos, unas* = some.",
+      "uz": "*El, la, los, las* — «aynan o'sha, ma'lum» (*the* kabi). *Un, una* — «bitta, qandaydir» (*a* kabi). *Unos, unas* — «bir nechta, qandaydir»."
+     }
+    },
+    {
+     "h": {
+      "ru": "Исключения, которые стоит знать",
+      "en": "Exceptions worth knowing",
+      "uz": "Bilish kerak bo'lgan istisnolar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые частые слова нарушают правило: *el día* (день), *el mapa* (карта), *el problema* (проблема) — мужского рода, хотя на *-a*. *La mano* (рука), *la radio* — женского, хотя на *-o*. Слова на *-ción, -dad* — женского: *la canción, la ciudad*.",
+      "en": "Some common words break the rule: *el día, el mapa, el problema* are masculine; *la mano, la radio* feminine. *-ción, -dad* words are feminine.",
+      "uz": "Ba'zi ko'p ishlatiladigan so'zlar qoidani buzadi: *el día* (kun), *el mapa* (xarita), *el problema* (muammo) — *-a* bilan tugasa ham erkak jinsida. *La mano* (qo'l), *la radio* — *-o* bilan tugasa ham ayol jinsida. *-ción, -dad* bilan tugaydiganlar — ayol jinsida: *la canción, la ciudad*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Предлоги *a* и *de* сливаются с *el*: *a + el = al* (*voy al parque*), *de + el = del* (*la casa del profesor*). С *la, los, las* не сливаются.",
+      "en": "*A* and *de* merge with *el*: *al*, *del*. Not with *la, los, las*.",
+      "uz": "*a* va *de* predloglari *el* bilan qo'shiladi: *a + el = al* (*voy al parque*), *de + el = del* (*la casa del profesor*). *la, los, las* bilan qo'shilmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tengo *un* perro. *El* perro se llama Max.",
+       "t": {
+        "ru": "У меня есть собака. Собаку зовут Макс.",
+        "uz": "Mening itim bor. Itning ismi Maks.",
+        "en": "I have a dog. The dog is called Max."
+       }
+      },
+      {
+       "s": "*La* ciudad es muy bonita.",
+       "t": {
+        "ru": "Город очень красивый.",
+        "uz": "Shahar juda chiroyli.",
+        "en": "The city is very beautiful."
+       }
+      },
+      {
+       "s": "*Los* niños están en *el* parque.",
+       "t": {
+        "ru": "Дети в парке.",
+        "uz": "Bolalar parkda.",
+        "en": "The children are in the park."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -593,6 +900,143 @@
     "en": "Adjective after the noun, same gender and number.",
     "uz": "Sifat otdan keyin, rod va son bir xil."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Прилагательные согласуются",
+      "en": "Adjectives agree",
+      "uz": "Sifatlar moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Прилагательное в испанском меняется вслед за существительным — по роду и числу, как в русском («новый дом — новая машина»). *Un chico alto* — высокий парень, *una chica alta* — высокая девушка.",
+      "en": "Spanish adjectives change with the noun — for gender and number: *un chico alto*, *una chica alta*.",
+      "uz": "Ispan tilida sifat otga qarab o'zgaradi — jins va son bo'yicha. *Un chico alto* — baland bo'yli yigit, *una chica alta* — baland bo'yli qiz. O'zbek tilida sifat o'zgarmaydi, ispan tilida esa o'zgaradi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        "-o",
+        "alto",
+        "alta",
+        "altos",
+        "altas"
+       ],
+       [
+        "-e",
+        "grande",
+        "grande",
+        "grandes",
+        "grandes"
+       ],
+       [
+        {
+         "ru": "согласная",
+         "en": "consonant",
+         "uz": "undosh"
+        },
+        "azul",
+        "azul",
+        "azules",
+        "azules"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Прилагательные на *-e* и на согласную не меняются по роду — только по числу. Исключение — национальности: *español → española*, *francés → francesa*.",
+      "en": "Adjectives in *-e* or a consonant don't change for gender, only number. Nationalities do: *español → española*.",
+      "uz": "*-e* va undosh bilan tugaydigan sifatlar jins bo'yicha o'zgarmaydi — faqat son bo'yicha. Istisno — millatlar: *español → española*, *francés → francesa*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Множественное число",
+      "en": "The plural",
+      "uz": "Ko'plik"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если слово кончается на гласную, добавляем *-s*: *casa → casas*. Если на согласную — *-es*: *ciudad → ciudades*, *azul → azules*. Слово на *-z* меняет её на *c*: *lápiz → lápices*.",
+      "en": "Vowel ending → *-s* (*casas*). Consonant → *-es* (*ciudades*). *-z* → *-ces* (*lápices*).",
+      "uz": "So'z unli bilan tugasa, *-s* qo'shamiz: *casa → casas*. Undosh bilan tugasa — *-es*: *ciudad → ciudades*, *azul → azules*. *-z* bilan tugaydigan so'zda u *c* ga aylanadi: *lápiz → lápices*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Место прилагательного",
+      "en": "Where it goes",
+      "uz": "Qayerda turadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как и во французском, прилагательное обычно стоит _после_ существительного: *un coche rojo* — красная машина (дословно «машина красная»). Но *bueno, malo, grande* часто ставят перед: *un buen amigo*, *un gran hombre* (тогда они сокращаются).",
+      "en": "Adjectives usually follow the noun: *un coche rojo*. *Bueno, malo, grande* often go before and shorten: *un buen amigo*, *un gran hombre*.",
+      "uz": "Sifat odatda otdan _keyin_ turadi: *un coche rojo* — qizil mashina (so'zma-so'z «mashina qizil»). Lekin *bueno, malo, grande* ko'pincha oldidan qo'yiladi va qisqaradi: *un buen amigo*, *un gran hombre*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tengo dos gatos *negros*.",
+       "t": {
+        "ru": "У меня две чёрные кошки.",
+        "uz": "Mening ikkita qora mushugim bor.",
+        "en": "I have two black cats."
+       }
+      },
+      {
+       "s": "Es una ciudad muy *antigua*.",
+       "t": {
+        "ru": "Это очень древний город.",
+        "uz": "Bu juda qadimiy shahar.",
+        "en": "It's a very old city."
+       }
+      },
+      {
+       "s": "Mis amigas son *simpáticas*.",
+       "t": {
+        "ru": "Мои подруги милые.",
+        "uz": "Dugonalarim yoqimli.",
+        "en": "My friends are nice."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -853,6 +1297,124 @@
     "en": "Drop -ar/-er/-ir, add the person’s ending.",
     "uz": "-ar/-er/-ir ni olib, shaxs qo'shimchasini qo'sh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Три группы глаголов",
+      "en": "Three verb groups",
+      "uz": "Uchta fe'l guruhi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Все испанские глаголы в начальной форме кончаются на *-ar*, *-er* или *-ir*: *hablar* — говорить, *comer* — есть, *vivir* — жить. В настоящем времени отрезаем окончание и добавляем новое, по лицу — совсем как в узбекском: *gapir-aman, gapir-asan*.",
+      "en": "All Spanish infinitives end in *-ar*, *-er* or *-ir*: *hablar, comer, vivir*. In the present, drop the ending and add a personal one.",
+      "uz": "Barcha ispan fe'llari boshlang'ich shaklda *-ar*, *-er* yoki *-ir* bilan tugaydi: *hablar* — gapirmoq, *comer* — yemoq, *vivir* — yashamoq. Hozirgi zamonda oxirini kesib, shaxsga qarab yangisini qo'shamiz — xuddi o'zbek tilidagidek: *gapir-aman, gapir-asan*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "hablar",
+       "comer",
+       "vivir"
+      ],
+      "rows": [
+       [
+        "yo",
+        "hablo",
+        "como",
+        "vivo"
+       ],
+       [
+        "tú",
+        "hablas",
+        "comes",
+        "vives"
+       ],
+       [
+        "él / ella / usted",
+        "habla",
+        "come",
+        "vive"
+       ],
+       [
+        "nosotros",
+        "hablamos",
+        "comemos",
+        "vivimos"
+       ],
+       [
+        "vosotros",
+        "habláis",
+        "coméis",
+        "vivís"
+       ],
+       [
+        "ellos / ustedes",
+        "hablan",
+        "comen",
+        "viven"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Подсказка: у *yo* всегда *-o*. У *-ar* глаголов в остальных формах звучит *a*, у *-er* и *-ir* — *e*. *-er* и *-ir* отличаются только в *nosotros* и *vosotros*.",
+      "en": "Tip: *yo* always ends in *-o*. *-ar* verbs use *a*, *-er / -ir* verbs use *e*; *-er* and *-ir* differ only for *nosotros* and *vosotros*.",
+      "uz": "Ishora: *yo* da doim *-o*. *-ar* fe'llarining qolgan shakllarida *a* eshitiladi, *-er* va *-ir* da — *e*. *-er* va *-ir* faqat *nosotros* va *vosotros* da farq qiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Одно настоящее время значит и «делаю вообще», и «делаю сейчас»: *Como pan* — Я ем хлеб. Для «прямо сейчас» есть и отдельная форма (*estoy comiendo*), но её вы узнаете позже.",
+      "en": "One present covers both habits and now: *Como pan.* (There's also *estoy comiendo* for right now — later.)",
+      "uz": "Bitta hozirgi zamon ham «umuman qilaman», ham «hozir qilyapman» ma'nosida: *Como pan* — Non yeyapman. «Aynan hozir» uchun alohida shakl ham bor (*estoy comiendo*), uni keyinroq o'rganasiz."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hablo* un poco de español.",
+       "t": {
+        "ru": "Я немного говорю по-испански.",
+        "uz": "Men biroz ispancha gapiraman.",
+        "en": "I speak a little Spanish."
+       }
+      },
+      {
+       "s": "¿Dónde *vives*?",
+       "t": {
+        "ru": "Где ты живёшь?",
+        "uz": "Qayerda yashaysan?",
+        "en": "Where do you live?"
+       }
+      },
+      {
+       "s": "Mis padres *trabajan* en un hospital.",
+       "t": {
+        "ru": "Мои родители работают в больнице.",
+        "uz": "Ota-onam kasalxonada ishlaydi.",
+        "en": "My parents work in a hospital."
+       }
+      },
+      {
+       "s": "*Comemos* a las dos.",
+       "t": {
+        "ru": "Мы обедаем в два.",
+        "uz": "Biz soat ikkida ovqatlanamiz.",
+        "en": "We eat at two."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1114,6 +1676,142 @@
     "en": "Something new → hay; where a specific thing is → está.",
     "uz": "Yangi narsa → hay; aniq narsa qayerda → está."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Второе «быть»: estar",
+      "en": "The second “to be”: estar",
+      "uz": "Ikkinchi «bo'lmoq»: estar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском _два_ глагола «быть». *Ser* — кто ты и какой ты по сути. *Estar* [эстар] — где ты находишься и как ты себя чувствуешь _сейчас_. *Estoy en casa* — Я дома. *Estoy cansado* — Я устал (сейчас).",
+      "en": "Spanish has two verbs “to be”. *Ser* — who and what you are. *Estar* — where you are and how you feel right now: *Estoy en casa*, *Estoy cansado*.",
+      "uz": "Ispan tilida _ikkita_ «bo'lmoq» fe'li bor. *Ser* — kimsan va mohiyatan qandaysan. *Estar* [estar] — qayerdasan va _hozir_ o'zingni qanday his qilyapsan. *Estoy en casa* — Men uydaman. *Estoy cansado* — Charchadim (hozir)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "estar",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "yo",
+        "estoy",
+        "Estoy bien."
+       ],
+       [
+        "tú",
+        "estás",
+        "¿Cómo estás?"
+       ],
+       [
+        "él / ella / usted",
+        "está",
+        "Está en Madrid."
+       ],
+       [
+        "nosotros",
+        "estamos",
+        "Estamos contentos."
+       ],
+       [
+        "vosotros",
+        "estáis",
+        "¿Estáis listos?"
+       ],
+       [
+        "ellos / ustedes",
+        "están",
+        "Están en clase."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Hay — «есть, имеется»",
+      "en": "Hay — “there is / there are”",
+      "uz": "Hay — «bor»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Hay* [ай] значит «есть, имеется» и не меняется: одинаково для одного и для многих. *Hay un banco aquí* — Здесь есть банк. *Hay muchos turistas* — Есть много туристов. Это как английское *there is / there are* и узбекское «bor».",
+      "en": "*Hay* means “there is / there are” and never changes: *Hay un banco aquí*, *Hay muchos turistas*.",
+      "uz": "*Hay* [ay] «bor, mavjud» degani va o'zgarmaydi: bitta uchun ham, ko'p uchun ham bir xil. *Hay un banco aquí* — Bu yerda bank bor. *Hay muchos turistas* — Turistlar ko'p. Bu o'zbekcha «bor» ga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Hay или está",
+      "en": "Hay or está",
+      "uz": "Hay yoki está"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Hay* — когда сообщаем, что что-то _существует_, впервые упоминаем (обычно с *un, una*, числом или без артикля). *Está / están* — когда говорим, _где_ находится уже известный предмет (с *el, la*, именем).",
+      "en": "*Hay* introduces something new (with *un*, a number or no article). *Está* tells where a known thing is (with *el, la* or a name).",
+      "uz": "*Hay* — narsa _borligini_ birinchi marta xabar qilganda (odatda *un, una*, son bilan yoki artiklsiz). *Está / están* — ma'lum narsa _qayerda_ ekanini aytganda (*el, la*, ism bilan)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hay* una farmacia cerca.",
+       "t": {
+        "ru": "Рядом есть аптека.",
+        "uz": "Yaqinda dorixona bor.",
+        "en": "There's a pharmacy nearby."
+       }
+      },
+      {
+       "s": "La farmacia *está* en la plaza.",
+       "t": {
+        "ru": "Аптека на площади.",
+        "uz": "Dorixona maydonda.",
+        "en": "The pharmacy is on the square."
+       }
+      },
+      {
+       "s": "¿*Hay* agua en la nevera?",
+       "t": {
+        "ru": "В холодильнике есть вода?",
+        "uz": "Muzlatgichda suv bormi?",
+        "en": "Is there water in the fridge?"
+       }
+      },
+      {
+       "s": "Mis padres *están* de vacaciones.",
+       "t": {
+        "ru": "Мои родители в отпуске.",
+        "uz": "Ota-onam ta'tilda.",
+        "en": "My parents are on holiday."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Место и самочувствие → *estar*. «Есть ли / существует» → *hay*. *¿Dónde está el baño?* — Где туалет? *¿Hay un baño?* — Здесь есть туалет?",
+      "en": "Location and feelings → *estar*. Existence → *hay*.",
+      "uz": "Joy va kayfiyat → *estar*. «Bormi / mavjudmi» → *hay*. *¿Dónde está el baño?* — Hojatxona qayerda? *¿Hay un baño?* — Bu yerda hojatxona bormi?"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1374,6 +2072,131 @@
     "en": "Age, hunger, cold, “have to” → tener.",
     "uz": "Yosh, ochlik, sovuq, «kerak» → tener."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Tener — иметь",
+      "en": "Tener — to have",
+      "uz": "Tener — ega bo'lmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tener* [тэнэр] — «иметь». С ним говорят, что у тебя есть: *Tengo un hermano* — У меня есть брат (дословно «я имею брата»). Это неправильный глагол, его формы надо запомнить.",
+      "en": "*Tener* means “to have”: *Tengo un hermano.* It's irregular — learn its forms.",
+      "uz": "*Tener* [tener] — «ega bo'lmoq». U bilan nimangiz borligini aytasiz: *Tengo un hermano* — Mening akam bor (so'zma-so'z «men akaga egaman»). Bu noto'g'ri fe'l, shakllarini yodlash kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "tener"
+      ],
+      "rows": [
+       [
+        "yo",
+        "tengo"
+       ],
+       [
+        "tú",
+        "tienes"
+       ],
+       [
+        "él / ella / usted",
+        "tiene"
+       ],
+       [
+        "nosotros",
+        "tenemos"
+       ],
+       [
+        "vosotros",
+        "tenéis"
+       ],
+       [
+        "ellos / ustedes",
+        "tienen"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Возраст и ощущения",
+      "en": "Age and feelings",
+      "uz": "Yosh va his-tuyg'ular"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как во французском, возраст и многие ощущения в испанском «имеют»: *Tengo 18 años* — Мне 18 лет. *Tengo hambre* — Я голоден, *tengo frío* — мне холодно, *tengo sed* — хочу пить, *tengo sueño* — хочу спать, *tengo miedo* — мне страшно.",
+      "en": "Age and many feelings use *tener*: *Tengo 18 años*, *tengo hambre* (hungry), *frío* (cold), *sed* (thirsty), *sueño* (sleepy), *miedo* (afraid).",
+      "uz": "Yosh va ko'p his-tuyg'ular ispan tilida «ega bo'lmoq» bilan aytiladi: *Tengo 18 años* — Men 18 yoshdaman. *Tengo hambre* — Qornim och, *tengo frío* — Sovqotyapman, *tengo sed* — Chanqadim, *tengo sueño* — Uyqum keldi, *tengo miedo* — Qo'rqyapman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Tener que — нужно, должен",
+      "en": "Tener que — have to",
+      "uz": "Tener que — kerak, majburman"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tener que* + глагол в начальной форме = «мне нужно / я должен»: *Tengo que estudiar* — Мне нужно учиться. Это как английское *have to*.",
+      "en": "*Tener que* + infinitive = “have to”: *Tengo que estudiar.*",
+      "uz": "*Tener que* + boshlang'ich fe'l = «… im kerak / majburman»: *Tengo que estudiar* — O'qishim kerak. Bu ingliz tilidagi *have to* ga o'xshaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Cuántos años *tienes*? — *Tengo* veinte.",
+       "t": {
+        "ru": "Сколько тебе лет? — Двадцать.",
+        "uz": "Necha yoshdasan? — Yigirmada.",
+        "en": "How old are you? — Twenty."
+       }
+      },
+      {
+       "s": "*Tenemos* dos hijos.",
+       "t": {
+        "ru": "У нас двое детей.",
+        "uz": "Bizning ikkita farzandimiz bor.",
+        "en": "We have two children."
+       }
+      },
+      {
+       "s": "*Tengo* mucho calor.",
+       "t": {
+        "ru": "Мне очень жарко.",
+        "uz": "Menga juda issiq.",
+        "en": "I'm very hot."
+       }
+      },
+      {
+       "s": "Mañana *tienes que* levantarte temprano.",
+       "t": {
+        "ru": "Завтра тебе нужно рано встать.",
+        "uz": "Ertaga erta turishing kerak.",
+        "en": "Tomorrow you have to get up early."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "«Мне холодно» — *tengo frío* (не «estoy frío»: это значило бы «я холодный на ощупь»).",
+      "en": "“I'm cold” is *tengo frío*, not “estoy frío” (that means you're cold to the touch).",
+      "uz": "«Sovqotyapman» — *tengo frío* («estoy frío» emas: bu «men ushlab ko'rganda sovuqman» degani bo'lardi)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1636,6 +2459,164 @@
     "en": "no before the verb; questions in ¿…? with qué/dónde…",
     "uz": "no — fe'ldan oldin; savol ¿…? ichida, qué/dónde… bilan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Отрицание: просто no",
+      "en": "Negation: just no",
+      "uz": "Inkor: shunchaki no"
+     }
+    },
+    {
+     "p": {
+      "ru": "Отрицание в испанском — одно из самых простых: перед глаголом ставят *no*. *Hablo inglés* → *No hablo inglés* — Я не говорю по-английски. Никаких помощников, как в английском *do*, не нужно.",
+      "en": "Spanish negation is simple: put *no* before the verb. *No hablo inglés.* No helper verbs needed.",
+      "uz": "Ispan tilida inkor — eng oddiylaridan biri: fe'l oldidan *no* qo'yiladi. *Hablo inglés* → *No hablo inglés* — Men inglizcha gapirmayman. Ingliz tilidagi *do* kabi yordamchilar kerak emas."
+     }
+    },
+    {
+     "p": {
+      "ru": "Двойное отрицание в испанском — норма, как в русском: *No tengo nada* — У меня ничего нет (дословно «не имею ничего»). *No viene nadie* — Никто не приходит.",
+      "en": "Double negatives are normal: *No tengo nada* — I don't have anything. *No viene nadie.*",
+      "uz": "Ispan tilida qo'sh inkor — me'yor, xuddi o'zbek tilidagidek: *No tengo nada* — Menda hech narsa yo'q. *No viene nadie* — Hech kim kelmayapti."
+     }
+    },
+    {
+     "h": {
+      "ru": "Вопрос: та же фраза, другая интонация",
+      "en": "Questions: same words, rising voice",
+      "uz": "Savol: o'sha gap, boshqa ohang"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для вопроса «да/нет» часто достаточно интонации и знаков *¿ … ?*: *¿Hablas español?* Можно также поставить глагол перед подлежащим: *¿Habla usted español?*",
+      "en": "For yes/no questions, intonation and *¿ … ?* are enough: *¿Hablas español?*",
+      "uz": "«Ha/yo'q» savoli uchun ko'pincha ohang va *¿ … ?* belgilari yetarli: *¿Hablas español?* Fe'lni egadan oldin qo'yish ham mumkin: *¿Habla usted español?*"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "qué",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "¿Qué haces?"
+       ],
+       [
+        "quién",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "¿Quién es?"
+       ],
+       [
+        "dónde",
+        {
+         "ru": "где",
+         "en": "where",
+         "uz": "qayerda"
+        },
+        "¿Dónde vives?"
+       ],
+       [
+        "cuándo",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "¿Cuándo llegas?"
+       ],
+       [
+        "cómo",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday"
+        },
+        "¿Cómo te llamas?"
+       ],
+       [
+        "por qué",
+        {
+         "ru": "почему",
+         "en": "why",
+         "uz": "nega"
+        },
+        "¿Por qué estudias?"
+       ],
+       [
+        "cuánto",
+        {
+         "ru": "сколько",
+         "en": "how much",
+         "uz": "qancha"
+        },
+        "¿Cuánto cuesta?"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "В вопросительных словах всегда стоит ударение: *qué, dónde, cómo*. *Por qué* (почему) пишется раздельно, а *porque* (потому что) — слитно.",
+      "en": "Question words always carry an accent: *qué, dónde, cómo*. *Por qué* (why) is two words; *porque* (because) is one.",
+      "uz": "So'roq so'zlarida doim urg'u belgisi bor: *qué, dónde, cómo*. *Por qué* (nega) alohida, *porque* (chunki) qo'shib yoziladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*No* entiendo.",
+       "t": {
+        "ru": "Я не понимаю.",
+        "uz": "Tushunmayapman.",
+        "en": "I don't understand."
+       }
+      },
+      {
+       "s": "¿*Dónde* está la estación?",
+       "t": {
+        "ru": "Где вокзал?",
+        "uz": "Vokzal qayerda?",
+        "en": "Where's the station?"
+       }
+      },
+      {
+       "s": "*No* conozco a *nadie* aquí.",
+       "t": {
+        "ru": "Я здесь никого не знаю.",
+        "uz": "Bu yerda hech kimni tanimayman.",
+        "en": "I don't know anyone here."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1897,6 +2878,141 @@
     "en": "To whom (me/te/le) + gusta/gustan + what.",
     "uz": "Kimga (me/te/le) + gusta/gustan + nima."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Gustar: «мне нравится»",
+      "en": "Gustar: “I like”",
+      "uz": "Gustar: «menga yoqadi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Gustar* устроен не так, как английское *like*, но точно так же, как русское «нравиться» и узбекское «yoqmoq». Главное в предложении — _то, что нравится_, а человек стоит в дательном падеже: *Me gusta el café* — Мне нравится кофе (дословно «мне нравится кофе»).",
+      "en": "*Gustar* works like “to please”: the thing liked is the subject, and the person is the indirect object: *Me gusta el café* — Coffee pleases me.",
+      "uz": "*Gustar* ingliz tilidagi *like* dan farqli, lekin xuddi o'zbekcha «yoqmoq» kabi tuzilgan. Gapda asosiysi — _yoqadigan narsa_, odam esa jo'nalish kelishigida turadi: *Me gusta el café* — Menga qahva yoqadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       {
+        "ru": "Одна вещь / действие",
+        "en": "One thing / action",
+        "uz": "Bitta narsa / harakat"
+       },
+       {
+        "ru": "Много вещей",
+        "en": "Several things",
+        "uz": "Ko'p narsa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "me — мне",
+         "en": "me — me",
+         "uz": "me — menga"
+        },
+        "me gusta",
+        "me gustan"
+       ],
+       [
+        {
+         "ru": "te — тебе",
+         "en": "te — you",
+         "uz": "te — senga"
+        },
+        "te gusta",
+        "te gustan"
+       ],
+       [
+        {
+         "ru": "le — ему / ей / Вам",
+         "en": "le — him / her / you",
+         "uz": "le — unga / Sizga"
+        },
+        "le gusta",
+        "le gustan"
+       ],
+       [
+        {
+         "ru": "nos — нам",
+         "en": "nos — us",
+         "uz": "nos — bizga"
+        },
+        "nos gusta",
+        "nos gustan"
+       ],
+       [
+        {
+         "ru": "os — вам",
+         "en": "os — you (pl.)",
+         "uz": "os — sizlarga"
+        },
+        "os gusta",
+        "os gustan"
+       ],
+       [
+        {
+         "ru": "les — им",
+         "en": "les — them",
+         "uz": "les — ularga"
+        },
+        "les gusta",
+        "les gustan"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Форма глагола зависит не от человека, а от _предмета_: одна вещь или действие — *gusta*, много вещей — *gustan*. *Me gusta la música*, но *Me gustan los libros*. С глаголом всегда *gusta*: *Me gusta bailar* — Я люблю танцевать.",
+      "en": "The verb agrees with the thing, not the person: *me gusta la música*, *me gustan los libros*. With an infinitive always *gusta*: *Me gusta bailar.*",
+      "uz": "Fe'l shakli odamga emas, _narsaga_ bog'liq: bitta narsa yoki harakat — *gusta*, ko'p narsa — *gustan*. *Me gusta la música*, lekin *Me gustan los libros*. Fe'l bilan doim *gusta*: *Me gusta bailar* — Raqs tushishni yaxshi ko'raman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Te *gusta* el fútbol?",
+       "t": {
+        "ru": "Тебе нравится футбол?",
+        "uz": "Senga futbol yoqadimi?",
+        "en": "Do you like football?"
+       }
+      },
+      {
+       "s": "No me *gustan* las arañas.",
+       "t": {
+        "ru": "Я не люблю пауков.",
+        "uz": "Menga o'rgimchaklar yoqmaydi.",
+        "en": "I don't like spiders."
+       }
+      },
+      {
+       "s": "A mi madre le *gusta* cocinar.",
+       "t": {
+        "ru": "Моя мама любит готовить.",
+        "uz": "Onam ovqat pishirishni yaxshi ko'radi.",
+        "en": "My mother likes cooking."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Для уточнения добавляют _a + человек_: *A mí me gusta*, *A Ana le gusta*. Отрицание *no* — перед местоимением: *No me gusta*.",
+      "en": "For emphasis or clarity add *a + person*: *A mí me gusta*, *A Ana le gusta*. *No* goes before the pronoun: *No me gusta.*",
+      "uz": "Aniqlashtirish uchun *a + odam* qo'shiladi: *A mí me gusta*, *A Ana le gusta*. *no* inkori olmoshdan oldin turadi: *No me gusta*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2157,6 +3273,149 @@
     "en": "One thing — mi/tu/su; many — mis/tus/sus.",
     "uz": "Bitta narsa — mi/tu/su; ko'p — mis/tus/sus."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мой, твой, его",
+      "en": "My, your, his",
+      "uz": "Mening, sening, uning"
+     }
+    },
+    {
+     "p": {
+      "ru": "Притяжательные слова в испанском стоят перед существительным и согласуются с _предметом_ по числу: *mi libro* — моя книга, *mis libros* — мои книги. *Nuestro* и *vuestro* меняются ещё и по роду: *nuestra casa*.",
+      "en": "Spanish possessives go before the noun and agree with the thing owned: *mi libro*, *mis libros*; *nuestro / nuestra*.",
+      "uz": "Ispan tilida egalik so'zlari otdan oldin turadi va _narsaga_ son bo'yicha moslashadi: *mi libro* — kitobim, *mis libros* — kitoblarim. *nuestro* va *vuestro* jins bo'yicha ham o'zgaradi: *nuestra casa* — uyimiz."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Владелец",
+        "en": "Owner",
+        "uz": "Ega"
+       },
+       {
+        "ru": "Один предмет",
+        "en": "One thing",
+        "uz": "Bitta narsa"
+       },
+       {
+        "ru": "Много предметов",
+        "en": "Several things",
+        "uz": "Ko'p narsa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "I",
+         "uz": "men"
+        },
+        "mi",
+        "mis"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "tu",
+        "tus"
+       ],
+       [
+        {
+         "ru": "он / она / Вы",
+         "en": "he / she / you (polite)",
+         "uz": "u / Siz"
+        },
+        "su",
+        "sus"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "we",
+         "uz": "biz"
+        },
+        "nuestro / nuestra",
+        "nuestros / nuestras"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "vuestro / vuestra",
+        "vuestros / vuestras"
+       ],
+       [
+        {
+         "ru": "они / Вы (мн.)",
+         "en": "they / you (pl.)",
+         "uz": "ular / Sizlar"
+        },
+        "su",
+        "sus"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "*Su* — очень многозначное: «его, её, их, Ваш». Обычно смысл понятен из контекста. Если нет — говорят *el libro de él* (его книга), *de ella* (её).",
+      "en": "*Su* can mean his, her, their or your (polite). If unclear, say *el libro de él / de ella*.",
+      "uz": "*Su* — juda ko'p ma'noli: «uning, ularning, Sizning». Odatda ma'no kontekstdan tushunarli. Bo'lmasa, *el libro de él* (uning — erkak), *de ella* (uning — ayol) deyiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tu* (твой) пишется без ударения, а *tú* (ты) — с ударением. Это два разных слова: *Tú tienes tu libro* — У тебя есть твоя книга.",
+      "en": "*Tu* (your) has no accent; *tú* (you) has one: *Tú tienes tu libro.*",
+      "uz": "*Tu* (sening) urg'u belgisiz, *tú* (sen) esa belgi bilan yoziladi. Bular ikki xil so'z: *Tú tienes tu libro* — Senda kitobing bor."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Mi* hermana vive en Bujará.",
+       "t": {
+        "ru": "Моя сестра живёт в Бухаре.",
+        "uz": "Opam Buxoroda yashaydi.",
+        "en": "My sister lives in Bukhara."
+       }
+      },
+      {
+       "s": "¿Dónde están *tus* llaves?",
+       "t": {
+        "ru": "Где твои ключи?",
+        "uz": "Kalitlaring qayerda?",
+        "en": "Where are your keys?"
+       }
+      },
+      {
+       "s": "*Nuestra* profesora es muy simpática.",
+       "t": {
+        "ru": "Наша учительница очень милая.",
+        "uz": "O'qituvchimiz juda yoqimli.",
+        "en": "Our teacher is very nice."
+       }
+      },
+      {
+       "s": "Ellos y *sus* hijos.",
+       "t": {
+        "ru": "Они и их дети.",
+        "uz": "Ular va ularning bolalari.",
+        "en": "They and their children."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2417,6 +3676,120 @@
     "en": "ir (by person) + a + infinitive.",
     "uz": "ir (shaxsga ko'ra) + a + infinitiv."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ir — идти, ехать",
+      "en": "Ir — to go",
+      "uz": "Ir — bormoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ir* [ир] — «идти, ехать». Неправильный глагол, причём очень неправильный: формы совсем не похожи на начальную. *Voy al trabajo* — Я иду на работу.",
+      "en": "*Ir* (to go) is very irregular — its forms look nothing like the infinitive: *Voy al trabajo.*",
+      "uz": "*Ir* [ir] — «bormoq». Noto'g'ri fe'l, juda noto'g'ri: shakllari boshlang'ich shaklga umuman o'xshamaydi. *Voy al trabajo* — Ishga boryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "ir",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "yo",
+        "voy",
+        "Voy a casa."
+       ],
+       [
+        "tú",
+        "vas",
+        "¿Adónde vas?"
+       ],
+       [
+        "él / ella / usted",
+        "va",
+        "Va al colegio."
+       ],
+       [
+        "nosotros",
+        "vamos",
+        "¡Vamos!"
+       ],
+       [
+        "vosotros",
+        "vais",
+        "¿Vais a la fiesta?"
+       ],
+       [
+        "ellos / ustedes",
+        "van",
+        "Van en autobús."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Ir a + глагол: собираюсь",
+      "en": "Ir a + verb: going to",
+      "uz": "Ir a + fe'l: … moqchiman"
+     }
+    },
+    {
+     "p": {
+      "ru": "Самый простой способ говорить о будущем: *ir* + *a* + глагол в начальной форме. *Voy a estudiar* — Я собираюсь учиться / Я буду учиться. Это как английское *going to*. Не забудь маленькое *a* между ними!",
+      "en": "The easiest future: *ir* + *a* + infinitive. *Voy a estudiar* — I'm going to study. Don't forget the little *a*!",
+      "uz": "Kelajak haqida gapirishning eng oson usuli: *ir* + *a* + boshlang'ich fe'l. *Voy a estudiar* — O'qimoqchiman / O'qiyman. Bu ingliz tilidagi *going to* ga o'xshaydi. Ular orasidagi kichkina *a* ni unutmang!"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mañana *voy a* visitar a mi abuela.",
+       "t": {
+        "ru": "Завтра я навещу бабушку.",
+        "uz": "Ertaga buvimnikiga boraman.",
+        "en": "Tomorrow I'm going to visit my grandma."
+       }
+      },
+      {
+       "s": "¿Qué *vas a* hacer este fin de semana?",
+       "t": {
+        "ru": "Что ты будешь делать на выходных?",
+        "uz": "Dam olish kunlari nima qilmoqchisan?",
+        "en": "What are you going to do this weekend?"
+       }
+      },
+      {
+       "s": "*Va a* llover.",
+       "t": {
+        "ru": "Будет дождь.",
+        "uz": "Yomg'ir yog'adi.",
+        "en": "It's going to rain."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*¡Vamos!* — «Пошли! Давай!» — одно из самых частых слов в испанском. А *Vamos a ver* — «Посмотрим».",
+      "en": "*¡Vamos!* — “Let's go!” — is everywhere. *Vamos a ver* — “Let's see”.",
+      "uz": "*¡Vamos!* — «Ketdik! Qani!» — ispan tilidagi eng ko'p ishlatiladigan so'zlardan biri. *Vamos a ver* — «Ko'ramiz»."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2678,6 +4051,130 @@
     "en": "Near me — este, near you — ese, far — aquel.",
     "uz": "Yonimda — este, senda — ese, uzoqda — aquel."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Этот, тот и тот вдали",
+      "en": "This, that and that over there",
+      "uz": "Bu, u va anavi uzoqdagi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском _три_ степени расстояния, а не две, как в русском. *Este* — рядом со мной. *Ese* — рядом с тобой или недалеко. *Aquel* — далеко от нас обоих. Похоже на узбекские «bu — shu — u».",
+      "en": "Spanish has three distances: *este* (near me), *ese* (near you / not far), *aquel* (far from both of us).",
+      "uz": "Ispan tilida masofaning _uch_ darajasi bor. *Este* — mening yonimda. *Ese* — sening yoningda yoki uncha uzoq emas. *Aquel* — ikkalamizdan uzoqda. O'zbekcha «bu — shu — u» ga o'xshaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Расстояние",
+        "en": "Distance",
+        "uz": "Masofa"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "рядом со мной",
+         "en": "near me",
+         "uz": "yonimda"
+        },
+        "este",
+        "esta",
+        "estos",
+        "estas"
+       ],
+       [
+        {
+         "ru": "рядом с тобой",
+         "en": "near you",
+         "uz": "yoningda"
+        },
+        "ese",
+        "esa",
+        "esos",
+        "esas"
+       ],
+       [
+        {
+         "ru": "далеко",
+         "en": "far away",
+         "uz": "uzoqda"
+        },
+        "aquel",
+        "aquella",
+        "aquellos",
+        "aquellas"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Все они согласуются с существительным по роду и числу: *este libro*, *esta mesa*, *estos chicos*. Обрати внимание: мужской род единственного числа кончается на *-e* (*este, ese*), а не на *-o*.",
+      "en": "They agree in gender and number: *este libro, esta mesa, estos chicos*. Note the masculine singular ends in *-e*.",
+      "uz": "Ularning hammasi ot bilan jins va son bo'yicha moslashadi: *este libro*, *esta mesa*, *estos chicos*. E'tibor bering: erkak jinsi birligi *-o* emas, *-e* bilan tugaydi (*este, ese*)."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Esto, eso, aquello* — средняя форма для того, что не названо: *¿Qué es esto?* — Что это? *Eso es* — Именно так.",
+      "en": "*Esto, eso, aquello* refer to something unnamed: *¿Qué es esto?*, *Eso es.*",
+      "uz": "*Esto, eso, aquello* — nomi aytilmagan narsa uchun o'rta shakl: *¿Qué es esto?* — Bu nima? *Eso es* — Aynan shunday."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Este* café está muy rico.",
+       "t": {
+        "ru": "Этот кофе очень вкусный.",
+        "uz": "Bu qahva juda mazali.",
+        "en": "This coffee is delicious."
+       }
+      },
+      {
+       "s": "¿Cuánto cuesta *esa* camiseta?",
+       "t": {
+        "ru": "Сколько стоит эта (твоя) футболка?",
+        "uz": "Shu futbolka qancha turadi?",
+        "en": "How much is that T-shirt?"
+       }
+      },
+      {
+       "s": "*Aquellas* montañas son muy altas.",
+       "t": {
+        "ru": "Те горы очень высокие.",
+        "uz": "Anavi tog'lar juda baland.",
+        "en": "Those mountains are very high."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2938,6 +4435,149 @@
     "en": "Before an adjective — muy; with verbs and nouns — mucho.",
     "uz": "Sifat oldidan — muy; fe'l va ot bilan — mucho."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Muy или mucho",
+      "en": "Muy or mucho",
+      "uz": "Muy yoki mucho"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба переводятся «очень / много», но работают по-разному. *Muy* — «очень», стоит перед прилагательным или наречием и никогда не меняется: *muy grande*, *muy bien*. *Mucho* — «много, сильно», стоит с существительным или после глагола.",
+      "en": "Both can mean “very / a lot”, but differently. *Muy* goes before adjectives and adverbs and never changes: *muy grande*. *Mucho* goes with nouns or after verbs.",
+      "uz": "Ikkalasi ham «juda / ko'p» deb tarjima qilinadi, lekin turlicha ishlaydi. *Muy* — «juda», sifat yoki ravish oldidan turadi va hech qachon o'zgarmaydi: *muy grande*, *muy bien*. *Mucho* — «ko'p, qattiq», ot bilan yoki fe'ldan keyin keladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "С чем",
+        "en": "With",
+        "uz": "Nima bilan"
+       },
+       {
+        "ru": "Меняется?",
+        "en": "Changes?",
+        "uz": "O'zgaradimi?"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "muy",
+        {
+         "ru": "прилагательное, наречие",
+         "en": "adjective, adverb",
+         "uz": "sifat, ravish"
+        },
+        {
+         "ru": "нет",
+         "en": "no",
+         "uz": "yo'q"
+        },
+        "muy caro, muy rápido"
+       ],
+       [
+        "mucho",
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        {
+         "ru": "да: -o/-a/-os/-as",
+         "en": "yes: -o/-a/-os/-as",
+         "uz": "ha: -o/-a/-os/-as"
+        },
+        "mucha gente, muchos libros"
+       ],
+       [
+        "mucho",
+        {
+         "ru": "после глагола",
+         "en": "after a verb",
+         "uz": "fe'ldan keyin"
+        },
+        {
+         "ru": "нет",
+         "en": "no",
+         "uz": "yo'q"
+        },
+        "Te quiero mucho."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Bueno или bien",
+      "en": "Bueno or bien",
+      "uz": "Bueno yoki bien"
+     }
+    },
+    {
+     "p": {
+      "ru": "Та же логика, что в английском *good / well*. *Bueno* — прилагательное, описывает предмет: *un libro bueno*. *Bien* — наречие, описывает действие или самочувствие: *Hablas bien* — Ты хорошо говоришь, *Estoy bien* — У меня всё хорошо.",
+      "en": "Like English *good / well*. *Bueno* describes a thing: *un libro bueno*. *Bien* describes an action or how you are: *Hablas bien*, *Estoy bien*.",
+      "uz": "Mantiq ingliz tilidagi *good / well* bilan bir xil. *Bueno* — sifat, narsani tasvirlaydi: *un libro bueno*. *Bien* — ravish, harakat yoki kayfiyatni tasvirlaydi: *Hablas bien* — Yaxshi gapirasan, *Estoy bien* — Hammasi yaxshi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "La comida está *muy* buena.",
+       "t": {
+        "ru": "Еда очень вкусная.",
+        "uz": "Ovqat juda mazali.",
+        "en": "The food is very good."
+       }
+      },
+      {
+       "s": "Hay *muchas* personas en la calle.",
+       "t": {
+        "ru": "На улице много людей.",
+        "uz": "Ko'chada odamlar ko'p.",
+        "en": "There are lots of people in the street."
+       }
+      },
+      {
+       "s": "Trabajas *mucho*.",
+       "t": {
+        "ru": "Ты много работаешь.",
+        "uz": "Sen ko'p ishlaysan.",
+        "en": "You work a lot."
+       }
+      },
+      {
+       "s": "¿Cómo estás? — *Muy bien*, gracias.",
+       "t": {
+        "ru": "Как дела? — Очень хорошо, спасибо.",
+        "uz": "Qalaysan? — Juda yaxshi, rahmat.",
+        "en": "How are you? — Very well, thanks."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Сказать «muy mucho» нельзя. «Очень много» — *muchísimo*: *Me gusta muchísimo*.",
+      "en": "You can't say “muy mucho”. “Very much” is *muchísimo*.",
+      "uz": "«muy mucho» deb bo'lmaydi. «Juda ko'p» — *muchísimo*: *Me gusta muchísimo* — Menga juda-juda yoqadi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

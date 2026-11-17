@@ -73,6 +73,169 @@
     "en": "Who/what like → être; what you have, age, hunger → avoir.",
     "uz": "Kim/qanday → être; nimaga egalik, yosh, ochlik → avoir."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два главных глагола",
+      "en": "The two key verbs",
+      "uz": "Ikki asosiy fe'l"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском, как в английском и немецком, в каждом предложении должен быть глагол. Самые важные — *être* [этр] «быть» и *avoir* [авуар] «иметь». «Я студент» по-французски — *Je suis étudiant* (дословно «я есть студент»), а «у меня есть брат» — *J'ai un frère* («я имею брата»).",
+      "en": "French always needs a verb. The two most important are *être* (to be) and *avoir* (to have): *Je suis étudiant*, *J'ai un frère*.",
+      "uz": "Fransuz tilida ham har bir gapda fe'l bo'lishi shart. Eng muhimlari — *être* [etr] «bo'lmoq» va *avoir* [avuar] «ega bo'lmoq». «Men talabaman» — *Je suis étudiant* (so'zma-so'z «men bo'lmoq talaba»), «Mening akam bor» — *J'ai un frère* («men akaga egaman»)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "être",
+       "avoir"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "je — я",
+         "en": "je — I",
+         "uz": "je — men"
+        },
+        "suis",
+        "ai (j'ai)"
+       ],
+       [
+        {
+         "ru": "tu — ты",
+         "en": "tu — you (friend)",
+         "uz": "tu — sen"
+        },
+        "es",
+        "as"
+       ],
+       [
+        {
+         "ru": "il / elle — он / она",
+         "en": "il / elle — he / she",
+         "uz": "il / elle — u"
+        },
+        "est",
+        "a"
+       ],
+       [
+        {
+         "ru": "nous — мы",
+         "en": "nous — we",
+         "uz": "nous — biz"
+        },
+        "sommes",
+        "avons"
+       ],
+       [
+        {
+         "ru": "vous — вы / Вы",
+         "en": "vous — you (plural, polite)",
+         "uz": "vous — sizlar / Siz"
+        },
+        "êtes",
+        "avez"
+       ],
+       [
+        {
+         "ru": "ils / elles — они",
+         "en": "ils / elles — they",
+         "uz": "ils / elles — ular"
+        },
+        "sont",
+        "ont"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Формы обоих глаголов неправильные — их учат наизусть. Это самые частые слова языка, поэтому выучить их стоит в первый же день.",
+      "en": "Both verbs are irregular — learn them by heart. They're the most common words in the language.",
+      "uz": "Ikkala fe'lning shakllari noto'g'ri — ularni yodlash kerak. Bular tilning eng ko'p ishlatiladigan so'zlari, shuning uchun ularni birinchi kunning o'zida o'rganish arziydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Произношение и слияние",
+      "en": "Pronunciation and linking",
+      "uz": "Talaffuz va qo'shilish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском многие конечные буквы не читаются: *est* звучит [э], *sont* — [сон], *ont* — [он]. Если слово начинается с гласной, *je* теряет *e* и сливается с ним через апостроф: *j'ai* [жэ]. А согласная в конце иногда «перескакивает» на следующую гласную: *vous avez* [вузавэ], *ils ont* [ильзон].",
+      "en": "Many final letters are silent: *est*, *sont*, *ont*. Before a vowel, *je* becomes *j'*: *j'ai*. Final consonants often link to the next vowel: *vous avez*, *ils ont*.",
+      "uz": "Fransuz tilida ko'p oxirgi harflar o'qilmaydi: *est* [e], *sont* [son], *ont* [on] deb o'qiladi. So'z unli bilan boshlansa, *je* o'zidagi *e* ni yo'qotib, apostrof bilan qo'shiladi: *j'ai* [je]. Oxirgi undosh esa ba'zan keyingi unliga «o'tadi»: *vous avez* [vuzave], *ils ont* [ilzon]."
+     }
+    },
+    {
+     "note": {
+      "ru": "Не путай *ils sont* [ильсон] — они есть и *ils ont* [ильзон] — у них есть. Разница только в звуке [с] или [з].",
+      "en": "Don't confuse *ils sont* (they are) and *ils ont* (they have) — the difference is an “s” or a “z” sound.",
+      "uz": "*ils sont* [ilson] — ular … dir va *ils ont* [ilzon] — ularda bor ni adashtirmang. Farqi faqat [s] yoki [z] tovushida."
+     }
+    },
+    {
+     "h": {
+      "ru": "Возраст и ощущения — через avoir",
+      "en": "Age and feelings use avoir",
+      "uz": "Yosh va his-tuyg'ular — avoir orqali"
+     }
+    },
+    {
+     "p": {
+      "ru": "Ловушка для начинающих: возраст и многие ощущения во французском «имеют», а не «есть». *J'ai 20 ans* — мне 20 лет (дословно «я имею 20 лет»). *J'ai faim* — я голоден («имею голод»), *j'ai froid* — мне холодно, *j'ai peur* — мне страшно.",
+      "en": "Trap: age and many feelings use *avoir*: *J'ai 20 ans* (I'm 20), *j'ai faim* (I'm hungry), *j'ai froid* (I'm cold).",
+      "uz": "Boshlovchilar uchun tuzoq: yosh va ko'p his-tuyg'ular fransuz tilida «bo'lmoq» emas, «ega bo'lmoq» bilan aytiladi. *J'ai 20 ans* — men 20 yoshdaman (so'zma-so'z «men 20 yilga egaman»). *J'ai faim* — qornim och, *j'ai froid* — sovqotyapman, *j'ai peur* — qo'rqyapman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *suis* de Tachkent.",
+       "t": {
+        "ru": "Я из Ташкента.",
+        "uz": "Men Toshkentdanman.",
+        "en": "I'm from Tashkent."
+       }
+      },
+      {
+       "s": "Elle *est* très gentille.",
+       "t": {
+        "ru": "Она очень милая.",
+        "uz": "U juda mehribon.",
+        "en": "She's very kind."
+       }
+      },
+      {
+       "s": "Nous *avons* un chat.",
+       "t": {
+        "ru": "У нас есть кошка.",
+        "uz": "Bizning mushugimiz bor.",
+        "en": "We have a cat."
+       }
+      },
+      {
+       "s": "Tu *as* quel âge ? — J'*ai* 16 ans.",
+       "t": {
+        "ru": "Сколько тебе лет? — Мне 16.",
+        "uz": "Necha yoshdasan? — 16 yoshdaman.",
+        "en": "How old are you? — I'm 16."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -331,6 +494,151 @@
     "en": "Learn each word with its article: une maison, un livre.",
     "uz": "Har so'zni artikl bilan o'rgan: une maison, un livre."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мужской и женский род",
+      "en": "Masculine and feminine",
+      "uz": "Erkak va ayol jinsi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском у каждого существительного есть род: мужской или женский (среднего нет). Род часто не совпадает с русским: «стол» мужского рода и *la table* — женского. В узбекском рода нет вовсе, поэтому главный совет: учи каждое слово сразу с артиклем.",
+      "en": "Every French noun is masculine or feminine (no neuter), often unpredictably: *la table* is feminine. Learn every noun with its article.",
+      "uz": "Fransuz tilida har bir otning jinsi bor: erkak yoki ayol (o'rta jins yo'q). Jins ko'pincha mantiqqa bo'ysunmaydi: *la table* (stol) — ayol jinsida. O'zbek tilida jins umuman yo'q, shuning uchun asosiy maslahat: har bir so'zni darhol artikli bilan yodlang."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Тот самый",
+        "en": "the",
+        "uz": "Aynan o'sha"
+       },
+       {
+        "ru": "Какой-то",
+        "en": "a / an",
+        "uz": "Qandaydir bitta"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "le livre",
+        "un livre"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "la maison",
+        "une maison"
+       ],
+       [
+        {
+         "ru": "перед гласной",
+         "en": "before a vowel",
+         "uz": "unli oldidan"
+        },
+        "l'ami, l'école",
+        "un ami, une école"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "les livres",
+        "des livres"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Определённый и неопределённый",
+      "en": "Definite and indefinite",
+      "uz": "Aniq va noaniq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Le, la, les* — «тот самый, известный» (как английский *the*). *Un, une* — «один, какой-то» (как *a*). Перед гласной *le* и *la* превращаются в *l'*: *l'ami*, *l'eau*.",
+      "en": "*Le, la, les* = the; *un, une* = a. Before a vowel *le / la* become *l'*: *l'ami*.",
+      "uz": "*Le, la, les* — «aynan o'sha, ma'lum» (ingliz tilidagi *the* kabi). *Un, une* — «bitta, qandaydir» (*a* kabi). Unli oldidan *le* va *la* *l'* ga aylanadi: *l'ami*, *l'eau*."
+     }
+    },
+    {
+     "p": {
+      "ru": "У французского есть особенность, которой нет в английском: _множественное_ «какие-то» тоже имеет артикль — *des*. *J'ai des amis* — у меня есть (какие-то) друзья. Без артикля французы существительное почти никогда не оставляют.",
+      "en": "Unlike English, French has a plural indefinite article: *des*. *J'ai des amis.* French nouns almost never stand without an article.",
+      "uz": "Fransuz tilida ingliz tilida yo'q xususiyat bor: _ko'plikdagi_ «qandaydir» ham artiklga ega — *des*. *J'ai des amis* — mening (qandaydir) do'stlarim bor. Fransuzlar otni deyarli hech qachon artiklsiz qoldirmaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как угадать род",
+      "en": "Guessing gender",
+      "uz": "Jinsni qanday topish mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Подсказки по окончаниям: слова на *-tion, -sion, -té, -ette, -ure* обычно женского рода (*la nation, la liberté*). На *-ment, -age, -eau, -isme* — обычно мужского (*le moment, le fromage, le gâteau*). Но исключений хватает.",
+      "en": "Ending clues: *-tion, -té, -ette, -ure* → usually feminine; *-ment, -age, -eau, -isme* → usually masculine.",
+      "uz": "Qo'shimchalar bo'yicha ishoralar: *-tion, -sion, -té, -ette, -ure* bilan tugaydiganlar odatda ayol jinsida (*la nation, la liberté*). *-ment, -age, -eau, -isme* — odatda erkak jinsida (*le moment, le fromage, le gâteau*). Lekin istisnolar yetarli."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "C'est *un* livre. *Le* livre est intéressant.",
+       "t": {
+        "ru": "Это книга. Книга интересная.",
+        "uz": "Bu kitob. Kitob qiziqarli.",
+        "en": "It's a book. The book is interesting."
+       }
+      },
+      {
+       "s": "J'habite dans *une* petite maison.",
+       "t": {
+        "ru": "Я живу в маленьком доме.",
+        "uz": "Kichkina uyda yashayman.",
+        "en": "I live in a small house."
+       }
+      },
+      {
+       "s": "*Les* enfants jouent dans *le* jardin.",
+       "t": {
+        "ru": "Дети играют в саду.",
+        "uz": "Bolalar bog'da o'ynayapti.",
+        "en": "The children are playing in the garden."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Во множественном числе *-s* на конце слова обычно не произносится: *livre* и *livres* звучат одинаково. Число слышно по артиклю: *le* [лё] — *les* [лэ].",
+      "en": "The plural *-s* is usually silent: *livre* and *livres* sound the same. You hear the number in the article: *le* vs *les*.",
+      "uz": "Ko'plikdagi *-s* odatda o'qilmaydi: *livre* va *livres* bir xil eshitiladi. Son artikldan eshitiladi: *le* [lyo] — *les* [le]."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -595,6 +903,170 @@
     "en": "Stem + -e/-es/-e/-ons/-ez/-ent.",
     "uz": "O'zak + -e/-es/-e/-ons/-ez/-ent."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Самая большая группа глаголов",
+      "en": "The biggest group of verbs",
+      "uz": "Eng katta fe'llar guruhi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Около 90% французских глаголов кончаются на *-er*: *parler* — говорить, *aimer* — любить, *habiter* — жить, *travailler* — работать. Хорошая новость: все они спрягаются одинаково. Выучишь один — знаешь тысячи.",
+      "en": "About 90% of French verbs end in *-er* (*parler, aimer, habiter*), and they all follow the same pattern. Learn one, know thousands.",
+      "uz": "Fransuz fe'llarining taxminan 90% i *-er* bilan tugaydi: *parler* — gapirmoq, *aimer* — sevmoq, *habiter* — yashamoq, *travailler* — ishlamoq. Yaxshi xabar: ularning hammasi bir xil tuslanadi. Bittasini o'rgansangiz — minglabini bilasiz."
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём основу (слово без *-er*: *parl-*) и добавляем окончание, которое зависит от лица.",
+      "en": "Take the stem (drop *-er*: *parl-*) and add an ending for each person.",
+      "uz": "O'zakni olamiz (*-er* siz so'z: *parl-*) va shaxsga qarab qo'shimcha qo'shamiz."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       "parler",
+       {
+        "ru": "Звучит",
+        "en": "Sounds like",
+        "uz": "O'qilishi"
+       }
+      ],
+      "rows": [
+       [
+        "je",
+        "-e",
+        "parle",
+        {
+         "ru": "[парль]",
+         "en": "[parl]",
+         "uz": "[parl]"
+        }
+       ],
+       [
+        "tu",
+        "-es",
+        "parles",
+        {
+         "ru": "[парль]",
+         "en": "[parl]",
+         "uz": "[parl]"
+        }
+       ],
+       [
+        "il / elle / on",
+        "-e",
+        "parle",
+        {
+         "ru": "[парль]",
+         "en": "[parl]",
+         "uz": "[parl]"
+        }
+       ],
+       [
+        "nous",
+        "-ons",
+        "parlons",
+        {
+         "ru": "[парлон]",
+         "en": "[parlon]",
+         "uz": "[parlon]"
+        }
+       ],
+       [
+        "vous",
+        "-ez",
+        "parlez",
+        {
+         "ru": "[парлэ]",
+         "en": "[parle]",
+         "uz": "[parle]"
+        }
+       ],
+       [
+        "ils / elles",
+        "-ent",
+        "parlent",
+        {
+         "ru": "[парль]",
+         "en": "[parl]",
+         "uz": "[parl]"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Самое приятное: формы *je, tu, il, ils* пишутся по-разному, но _звучат одинаково_ — [парль]. Окончание *-ent* у *ils* не читается никогда! На слух различаются только *nous* и *vous*.",
+      "en": "Nice surprise: *je, tu, il, ils* forms are spelled differently but sound the same. The *-ent* ending is never pronounced!",
+      "uz": "Eng yoqimlisi: *je, tu, il, ils* shakllari har xil yoziladi, lekin _bir xil eshitiladi_ — [parl]. *ils* dagi *-ent* hech qachon o'qilmaydi! Eshitishda faqat *nous* va *vous* farqlanadi."
+     }
+    },
+    {
+     "p": {
+      "ru": "*On* — очень частое слово. Формально «некто, люди», но в разговоре оно почти всегда значит «мы»: *On va au cinéma ?* — Пойдём в кино? Глагол после *on* — как после *il*.",
+      "en": "*On* formally means “one / people”, but in speech it usually means “we”: *On va au cinéma ?* The verb takes the *il* form.",
+      "uz": "*On* — juda ko'p ishlatiladigan so'z. Rasman «kimdir, odamlar», lekin so'zlashuvda deyarli doim «biz» degani: *On va au cinéma ?* — Kinoga boramizmi? *on* dan keyin fe'l *il* dagidek."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "J'*habite* à Samarcande.",
+       "t": {
+        "ru": "Я живу в Самарканде.",
+        "uz": "Men Samarqandda yashayman.",
+        "en": "I live in Samarkand."
+       }
+      },
+      {
+       "s": "Tu *parles* français ?",
+       "t": {
+        "ru": "Ты говоришь по-французски?",
+        "uz": "Fransuzcha gapirasanmi?",
+        "en": "Do you speak French?"
+       }
+      },
+      {
+       "s": "Nous *aimons* la musique.",
+       "t": {
+        "ru": "Мы любим музыку.",
+        "uz": "Biz musiqani yaxshi ko'ramiz.",
+        "en": "We love music."
+       }
+      },
+      {
+       "s": "Ils *travaillent* beaucoup.",
+       "t": {
+        "ru": "Они много работают.",
+        "uz": "Ular ko'p ishlaydi.",
+        "en": "They work a lot."
+       }
+      }
+     ]
+    },
+    {
+     "p": {
+      "ru": "Одно настоящее время на всё: *je parle* — и «я говорю (вообще)», и «я говорю (сейчас)». Отдельного «continuous», как в английском, нет.",
+      "en": "One present tense for everything: *je parle* = “I speak” and “I'm speaking”.",
+      "uz": "Hamma narsa uchun bitta hozirgi zamon: *je parle* — ham «gapiraman (umuman)», ham «hozir gapiryapman». Ingliz tilidagi kabi alohida «continuous» yo'q."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -855,6 +1327,167 @@
     "en": "ne + verb + pas; un/des after pas → de.",
     "uz": "ne + fe'l + pas; pas dan keyin un/des → de."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ne … pas: отрицание из двух частей",
+      "en": "Ne … pas: a two-part negative",
+      "uz": "Ne … pas: ikki qismli inkor"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском «не» состоит из _двух_ слов, которые, как скобки, обнимают глагол: *ne* перед глаголом и *pas* после. *Je parle* → *Je ne parle pas* — Я не говорю.",
+      "en": "French “not” has two parts that wrap the verb like brackets: *ne* before, *pas* after. *Je ne parle pas.*",
+      "uz": "Fransuz tilida inkor _ikki_ so'zdan iborat, ular qavs kabi fe'lni o'rab oladi: fe'ldan oldin *ne*, keyin *pas*. *Je parle* → *Je ne parle pas* — Men gapirmayman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Утверждение",
+        "en": "Positive",
+        "uz": "Darak"
+       },
+       {
+        "ru": "Отрицание",
+        "en": "Negative",
+        "uz": "Inkor"
+       }
+      ],
+      "rows": [
+       [
+        "Je suis fatigué.",
+        "Je ne suis pas fatigué."
+       ],
+       [
+        "Il aime le café.",
+        "Il n'aime pas le café."
+       ],
+       [
+        "Nous habitons ici.",
+        "Nous n'habitons pas ici."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Перед гласной *ne* превращается в *n'*: *Il n'aime pas*. В разговоре французы очень часто вообще выбрасывают *ne*: *J'sais pas* вместо *Je ne sais pas*. Но в письме и на экзаменах *ne* обязательно.",
+      "en": "Before a vowel *ne* becomes *n'*. In casual speech the French often drop *ne* (*J'sais pas*), but in writing it's required.",
+      "uz": "Unli oldidan *ne* *n'* ga aylanadi: *Il n'aime pas*. So'zlashuvda fransuzlar ko'pincha *ne* ni umuman tushirib qoldiradi: *Je ne sais pas* o'rniga *J'sais pas*. Lekin yozuvda va imtihonlarda *ne* majburiy."
+     }
+    },
+    {
+     "h": {
+      "ru": "Другие отрицания",
+      "en": "Other negatives",
+      "uz": "Boshqa inkorlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Вместо *pas* можно поставить другие слова и получить другие значения. Схема та же: *ne* + глагол + второе слово.",
+      "en": "Replace *pas* with other words for other meanings — same frame.",
+      "uz": "*pas* o'rniga boshqa so'zlar qo'yib, boshqa ma'nolar olish mumkin. Sxema bir xil: *ne* + fe'l + ikkinchi so'z."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Отрицание",
+        "en": "Negative",
+        "uz": "Inkor"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "ne … jamais",
+        {
+         "ru": "никогда",
+         "en": "never",
+         "uz": "hech qachon"
+        },
+        "Je ne mange jamais de viande."
+       ],
+       [
+        "ne … plus",
+        {
+         "ru": "больше не",
+         "en": "no longer",
+         "uz": "endi … emas"
+        },
+        "Il n'habite plus ici."
+       ],
+       [
+        "ne … rien",
+        {
+         "ru": "ничего",
+         "en": "nothing",
+         "uz": "hech narsa"
+        },
+        "Je ne comprends rien."
+       ],
+       [
+        "ne … personne",
+        {
+         "ru": "никого",
+         "en": "no one",
+         "uz": "hech kim"
+        },
+        "Je ne vois personne."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "После отрицания *un, une, des* (и *du, de la*) превращаются в *de*: *J'ai un chat* → *Je n'ai pas de chat* — У меня нет кошки.",
+      "en": "After a negative, *un, une, des* (and *du, de la*) become *de*: *Je n'ai pas de chat.*",
+      "uz": "Inkordan keyin *un, une, des* (va *du, de la*) *de* ga aylanadi: *J'ai un chat* → *Je n'ai pas de chat* — Mushugim yo'q."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *ne* suis *pas* d'accord.",
+       "t": {
+        "ru": "Я не согласен.",
+        "uz": "Men rozi emasman.",
+        "en": "I don't agree."
+       }
+      },
+      {
+       "s": "Elle *ne* travaille *plus* le samedi.",
+       "t": {
+        "ru": "Она больше не работает по субботам.",
+        "uz": "U endi shanba kunlari ishlamaydi.",
+        "en": "She no longer works on Saturdays."
+       }
+      },
+      {
+       "s": "Nous *n'*avons *pas de* voiture.",
+       "t": {
+        "ru": "У нас нет машины.",
+        "uz": "Bizning mashinamiz yo'q.",
+        "en": "We don't have a car."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1115,6 +1748,226 @@
     "en": "Easiest: est-ce que + normal word order.",
     "uz": "Eng oson: est-ce que + oddiy so'z tartibi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Три способа задать вопрос",
+      "en": "Three ways to ask a question",
+      "uz": "Savol berishning uchta usuli"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском вопрос «да или нет» можно задать тремя способами — от самого разговорного до самого книжного. Все три правильные, разница только в стиле.",
+      "en": "French has three ways to ask a yes/no question — from casual to formal. All three are correct.",
+      "uz": "Fransuz tilida «ha yoki yo'q» savolini uch xil usulda berish mumkin — eng so'zlashuvdan eng kitobiygacha. Uchalasi ham to'g'ri, farqi faqat uslubda."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Способ",
+        "en": "Way",
+        "uz": "Usul"
+       },
+       {
+        "ru": "Стиль",
+        "en": "Style",
+        "uz": "Uslub"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "1. интонация",
+         "en": "1. intonation",
+         "uz": "1. ohang"
+        },
+        {
+         "ru": "разговорный",
+         "en": "casual",
+         "uz": "so'zlashuv"
+        },
+        "Tu parles français ?"
+       ],
+       [
+        {
+         "ru": "2. est-ce que",
+         "en": "2. est-ce que",
+         "uz": "2. est-ce que"
+        },
+        {
+         "ru": "нейтральный",
+         "en": "neutral",
+         "uz": "betaraf"
+        },
+        "Est-ce que tu parles français ?"
+       ],
+       [
+        {
+         "ru": "3. инверсия",
+         "en": "3. inversion",
+         "uz": "3. inversiya"
+        },
+        {
+         "ru": "книжный, вежливый",
+         "en": "formal",
+         "uz": "rasmiy, kitobiy"
+        },
+        "Parles-tu français ?"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "1) Просто повысить голос в конце, как в русском. 2) Поставить в начало *est-ce que* [эскё] — дословно «есть ли это, что…». Порядок слов не меняется. 3) Поменять местами глагол и местоимение и соединить их чёрточкой: *Parlez-vous anglais ?*",
+      "en": "1) Just raise your voice at the end. 2) Put *est-ce que* at the front — the order doesn't change. 3) Swap the verb and pronoun with a hyphen: *Parlez-vous anglais ?*",
+      "uz": "1) Shunchaki oxirida ovozni ko'tarish. 2) Boshiga *est-ce que* [eskyo] qo'yish — so'zma-so'z «bu shundaymiki…». So'z tartibi o'zgarmaydi. 3) Fe'l va olmoshning o'rnini almashtirib, chiziqcha bilan bog'lash: *Parlez-vous anglais ?*"
+     }
+    },
+    {
+     "note": {
+      "ru": "При инверсии, если глагол кончается на гласную, а местоимение *il / elle / on*, между ними вставляют *-t-* для благозвучия: *Parle-t-il français ?*, *A-t-elle un frère ?*",
+      "en": "In inversion, if the verb ends in a vowel before *il / elle / on*, insert *-t-*: *Parle-t-il français ?*",
+      "uz": "Inversiyada fe'l unli bilan tugasa va olmosh *il / elle / on* bo'lsa, ular orasiga yoqimli eshitilishi uchun *-t-* qo'yiladi: *Parle-t-il français ?*, *A-t-elle un frère ?*"
+     }
+    },
+    {
+     "h": {
+      "ru": "Вопросительные слова",
+      "en": "Question words",
+      "uz": "So'roq so'zlari"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "qui",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "Qui est-ce ?"
+       ],
+       [
+        "que / quoi",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "Qu'est-ce que tu fais ?"
+       ],
+       [
+        "où",
+        {
+         "ru": "где, куда",
+         "en": "where",
+         "uz": "qayerda, qayerga"
+        },
+        "Où est la gare ?"
+       ],
+       [
+        "quand",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "Quand est-ce qu'il arrive ?"
+       ],
+       [
+        "comment",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday"
+        },
+        "Comment tu t'appelles ?"
+       ],
+       [
+        "pourquoi",
+        {
+         "ru": "почему",
+         "en": "why",
+         "uz": "nega"
+        },
+        "Pourquoi tu ris ?"
+       ],
+       [
+        "combien",
+        {
+         "ru": "сколько",
+         "en": "how much / many",
+         "uz": "qancha"
+        },
+        "Combien ça coûte ?"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Est-ce que* vous avez des enfants ?",
+       "t": {
+        "ru": "У вас есть дети?",
+        "uz": "Farzandlaringiz bormi?",
+        "en": "Do you have children?"
+       }
+      },
+      {
+       "s": "*Où* est-ce que tu habites ?",
+       "t": {
+        "ru": "Где ты живёшь?",
+        "uz": "Qayerda yashaysan?",
+        "en": "Where do you live?"
+       }
+      },
+      {
+       "s": "*Comment* allez-vous ?",
+       "t": {
+        "ru": "Как Вы поживаете?",
+        "uz": "Ahvolingiz qanday?",
+        "en": "How are you?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Во французской письменности перед *?* и *!* ставят пробел: *Tu viens ?* Это правило типографики, а не ошибка.",
+      "en": "In French typography there's a space before *?* and *!*: *Tu viens ?*",
+      "uz": "Fransuz yozuvida *?* va *!* oldidan bo'sh joy qo'yiladi: *Tu viens ?* Bu xato emas, tipografiya qoidasi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1376,6 +2229,175 @@
     "en": "Agree (+e, +s); short everyday ones go before the noun.",
     "uz": "Moslashtir (+e, +s); qisqa kundaliklar otdan oldin."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Прилагательное согласуется с существительным",
+      "en": "Adjectives agree with the noun",
+      "uz": "Sifat ot bilan moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском прилагательное (большой, красивый) меняется вслед за существительным: по роду и по числу. В русском так же («красивый дом — красивая машина»), а в узбекском и английском прилагательное не меняется.",
+      "en": "French adjectives change with the noun — for gender and number.",
+      "uz": "Fransuz tilida sifat (katta, chiroyli) otga qarab o'zgaradi: jins va son bo'yicha. O'zbek va ingliz tilida esa sifat o'zgarmaydi («chiroyli uy — chiroyli mashina»)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Число",
+        "en": "Number",
+        "uz": "Son"
+       },
+       {
+        "ru": "Мужской",
+        "en": "Masculine",
+        "uz": "Erkak"
+       },
+       {
+        "ru": "Женский",
+        "en": "Feminine",
+        "uz": "Ayol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "один",
+         "en": "singular",
+         "uz": "birlik"
+        },
+        "petit",
+        "petite"
+       ],
+       [
+        {
+         "ru": "много",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "petits",
+        "petites"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Основное правило: женский род + *-e*, множественное + *-s*. Часто *-e* меняет звучание: *petit* [пти] — *petite* [птит]: немая *t* начинает читаться. Если слово уже кончается на *-e*, ничего не добавляют: *jeune* — *jeune*.",
+      "en": "Basic rule: feminine + *-e*, plural + *-s*. The *-e* often changes the sound: *petit* — *petite* (the *t* is now pronounced).",
+      "uz": "Asosiy qoida: ayol jinsi + *-e*, ko'plik + *-s*. Ko'pincha *-e* talaffuzni o'zgartiradi: *petit* [pti] — *petite* [ptit]: o'qilmaydigan *t* o'qila boshlaydi. So'z allaqachon *-e* bilan tugasa, hech narsa qo'shilmaydi: *jeune* — *jeune*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Мужской",
+        "en": "Masculine",
+        "uz": "Erkak"
+       },
+       {
+        "ru": "Женский",
+        "en": "Feminine",
+        "uz": "Ayol"
+       },
+       {
+        "ru": "Правило",
+        "en": "Rule",
+        "uz": "Qoida"
+       }
+      ],
+      "rows": [
+       [
+        "grand",
+        "grande",
+        "+ e"
+       ],
+       [
+        "heureux",
+        "heureuse",
+        "-eux → -euse"
+       ],
+       [
+        "actif",
+        "active",
+        "-f → -ve"
+       ],
+       [
+        "bon",
+        "bonne",
+        {
+         "ru": "удвоение",
+         "en": "double the consonant",
+         "uz": "undosh ikkilanadi"
+        }
+       ],
+       [
+        "beau",
+        "belle",
+        {
+         "ru": "особая форма",
+         "en": "irregular",
+         "uz": "alohida shakl"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Место прилагательного",
+      "en": "Where the adjective goes",
+      "uz": "Sifat qayerda turadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В отличие от русского и узбекского, во французском прилагательное обычно стоит _после_ существительного: *une voiture rouge* — красная машина (дословно «машина красная»). Особенно цвета, национальности и формы.",
+      "en": "Unlike English, French adjectives usually come after the noun: *une voiture rouge* — a red car.",
+      "uz": "O'zbek tilidan farqli, fransuz tilida sifat odatda otdan _keyin_ turadi: *une voiture rouge* — qizil mashina (so'zma-so'z «mashina qizil»). Ayniqsa ranglar, millatlar va shakllar."
+     }
+    },
+    {
+     "p": {
+      "ru": "Но несколько коротких частых прилагательных стоят _перед_: *beau, bon, grand, petit, jeune, vieux, nouveau, joli*. Их удобно запомнить по смыслу — красота, возраст, хорошесть, размер.",
+      "en": "But a few short, common ones go before: *beau, bon, grand, petit, jeune, vieux, nouveau, joli* (beauty, age, goodness, size).",
+      "uz": "Lekin bir nechta qisqa va ko'p ishlatiladigan sifatlar _oldidan_ turadi: *beau, bon, grand, petit, jeune, vieux, nouveau, joli*. Ularni ma'nosi bo'yicha eslab qolish qulay — go'zallik, yosh, yaxshilik, o'lcham."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "C'est une *petite* ville *tranquille*.",
+       "t": {
+        "ru": "Это маленький тихий город.",
+        "uz": "Bu kichik, sokin shahar.",
+        "en": "It's a small quiet town."
+       }
+      },
+      {
+       "s": "J'ai une voiture *noire*.",
+       "t": {
+        "ru": "У меня чёрная машина.",
+        "uz": "Mening qora mashinam bor.",
+        "en": "I have a black car."
+       }
+      },
+      {
+       "s": "Elles sont très *contentes*.",
+       "t": {
+        "ru": "Они очень довольны.",
+        "uz": "Ular juda mamnun.",
+        "en": "They're very happy."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1636,6 +2658,134 @@
     "en": "aller (by person) + infinitive; à + le = au.",
     "uz": "aller (shaxsga ko'ra) + infinitiv; à + le = au."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Aller — идти, ехать",
+      "en": "Aller — to go",
+      "uz": "Aller — bormoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Aller* [алё] значит «идти, ехать» и это один из самых частых глаголов. Он неправильный, хотя кончается на *-er*, — формы надо выучить.",
+      "en": "*Aller* (to go) is one of the most common verbs, and it's irregular despite ending in *-er*.",
+      "uz": "*Aller* [ale] «bormoq» degani va eng ko'p ishlatiladigan fe'llardan biri. U *-er* bilan tugasa ham noto'g'ri fe'l — shakllarini yodlash kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "aller",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "je",
+        "vais",
+        "Je vais à l'école."
+       ],
+       [
+        "tu",
+        "vas",
+        "Tu vas où ?"
+       ],
+       [
+        "il / elle / on",
+        "va",
+        "Ça va ?"
+       ],
+       [
+        "nous",
+        "allons",
+        "Nous allons au marché."
+       ],
+       [
+        "vous",
+        "allez",
+        "Vous allez bien ?"
+       ],
+       [
+        "ils / elles",
+        "vont",
+        "Ils vont en France."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ça va ?* — «Как дела?» — дословно «Это идёт?». Отвечают *Ça va bien* — Всё хорошо.",
+      "en": "*Ça va ?* — “How's it going?” Answer: *Ça va bien.*",
+      "uz": "*Ça va ?* — «Ishlar qalay?», so'zma-so'z «Bu ketyaptimi?». Javob: *Ça va bien* — Hammasi yaxshi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Futur proche — ближайшее будущее",
+      "en": "Futur proche — the near future",
+      "uz": "Futur proche — yaqin kelajak"
+     }
+    },
+    {
+     "p": {
+      "ru": "Самый простой способ сказать о будущем: *aller* + глагол в начальной форме. *Je vais manger* — Я собираюсь поесть / Я сейчас поем. Это как английское *going to*. Учить новые формы не нужно — только *aller*.",
+      "en": "The easiest way to talk about the future: *aller* + infinitive. *Je vais manger* — I'm going to eat. Like English *going to*.",
+      "uz": "Kelajak haqida gapirishning eng oson usuli: *aller* + boshlang'ich shakldagi fe'l. *Je vais manger* — Ovqatlanmoqchiman / Hozir ovqatlanaman. Bu ingliz tilidagi *going to* ga o'xshaydi. Yangi shakllarni o'rganish shart emas — faqat *aller*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *vais regarder* un film ce soir.",
+       "t": {
+        "ru": "Сегодня вечером я посмотрю фильм.",
+        "uz": "Bugun kechqurun film ko'raman.",
+        "en": "I'm going to watch a film tonight."
+       }
+      },
+      {
+       "s": "Il *va pleuvoir*.",
+       "t": {
+        "ru": "Сейчас пойдёт дождь.",
+        "uz": "Yomg'ir yog'adi.",
+        "en": "It's going to rain."
+       }
+      },
+      {
+       "s": "Nous *allons visiter* Paris l'été prochain.",
+       "t": {
+        "ru": "Следующим летом мы поедем в Париж.",
+        "uz": "Kelasi yozda Parijga boramiz.",
+        "en": "We're going to visit Paris next summer."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В отрицании *ne … pas* обнимает только *aller*: *Je ne vais pas sortir* — Я не собираюсь выходить.",
+      "en": "In the negative, *ne … pas* wraps only *aller*: *Je ne vais pas sortir.*",
+      "uz": "Inkorda *ne … pas* faqat *aller* ni o'rab oladi: *Je ne vais pas sortir* — Tashqariga chiqmoqchi emasman."
+     }
+    },
+    {
+     "p": {
+      "ru": "Предлог *à* сливается с артиклем: *à + le = au* (*au cinéma*), *à + les = aux*. С *la* и *l'* не сливается: *à la plage*, *à l'école*.",
+      "en": "*À* merges with the article: *au* (*à + le*), *aux* (*à + les*). Not with *la* or *l'*.",
+      "uz": "*à* predlogi artikl bilan qo'shiladi: *à + le = au* (*au cinéma*), *à + les = aux*. *la* va *l'* bilan qo'shilmaydi: *à la plage*, *à l'école*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1899,6 +3049,160 @@
     "en": "Look at the thing: its gender and number.",
     "uz": "Narsaga qara: rodi va soni."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мой, твой, его",
+      "en": "My, your, his",
+      "uz": "Mening, sening, uning"
+     }
+    },
+    {
+     "p": {
+      "ru": "Притяжательные слова во французском согласуются с _предметом_, а не с владельцем. *Mon* — для предмета мужского рода, *ma* — женского, *mes* — для множественного. *Mon frère* — мой брат, *ma sœur* — моя сестра, *mes parents* — мои родители.",
+      "en": "French possessives agree with the thing owned, not the owner: *mon frère*, *ma sœur*, *mes parents*.",
+      "uz": "Fransuz tilida egalik so'zlari egaga emas, _narsaga_ moslashadi. *Mon* — erkak jinsidagi narsa uchun, *ma* — ayol jinsidagi, *mes* — ko'plik uchun. *Mon frère* — akam, *ma sœur* — opam, *mes parents* — ota-onam."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Владелец",
+        "en": "Owner",
+        "uz": "Ega"
+       },
+       {
+        "ru": "муж. ед.",
+        "en": "masc. sg.",
+        "uz": "erkak birlik"
+       },
+       {
+        "ru": "жен. ед.",
+        "en": "fem. sg.",
+        "uz": "ayol birlik"
+       },
+       {
+        "ru": "мн.",
+        "en": "plural",
+        "uz": "ko'plik"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "I",
+         "uz": "men"
+        },
+        "mon",
+        "ma",
+        "mes"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "ton",
+        "ta",
+        "tes"
+       ],
+       [
+        {
+         "ru": "он / она",
+         "en": "he / she",
+         "uz": "u"
+        },
+        "son",
+        "sa",
+        "ses"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "we",
+         "uz": "biz"
+        },
+        "notre",
+        "notre",
+        "nos"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "votre",
+        "votre",
+        "vos"
+       ],
+       [
+        {
+         "ru": "они",
+         "en": "they",
+         "uz": "ular"
+        },
+        "leur",
+        "leur",
+        "leurs"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Важно: *son / sa* значит и «его», и «её». Выбор зависит от рода _предмета_: *sa voiture* — его или её машина (машина — женского рода). *Son père* — его или её отец.",
+      "en": "*Son / sa* mean both “his” and “her” — the choice depends on the thing: *sa voiture* = his or her car.",
+      "uz": "Muhim: *son / sa* «uning» degani, ega erkakmi yoki ayolmi farqi yo'q. Tanlov _narsaning_ jinsiga bog'liq: *sa voiture* — uning mashinasi (mashina — ayol jinsida). O'zbekcha «uning» kabi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Перед словом женского рода, которое начинается с гласной, вместо *ma, ta, sa* ставят *mon, ton, son*, чтобы не было двух гласных подряд: *mon amie* (моя подруга), *son école* (его школа).",
+      "en": "Before a feminine word starting with a vowel, use *mon, ton, son*: *mon amie*, *son école*.",
+      "uz": "Unli bilan boshlanadigan ayol jinsidagi so'z oldidan *ma, ta, sa* o'rniga *mon, ton, son* qo'yiladi, ikki unli ketma-ket kelmasligi uchun: *mon amie* (dugonam), *son école* (uning maktabi)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Ma* mère est médecin.",
+       "t": {
+        "ru": "Моя мама — врач.",
+        "uz": "Onam shifokor.",
+        "en": "My mother is a doctor."
+       }
+      },
+      {
+       "s": "Où sont *tes* clés ?",
+       "t": {
+        "ru": "Где твои ключи?",
+        "uz": "Kalitlaring qayerda?",
+        "en": "Where are your keys?"
+       }
+      },
+      {
+       "s": "Ils aiment *leur* maison.",
+       "t": {
+        "ru": "Они любят свой дом.",
+        "uz": "Ular uylarini yaxshi ko'radi.",
+        "en": "They love their house."
+       }
+      },
+      {
+       "s": "C'est *mon* amie Leïla.",
+       "t": {
+        "ru": "Это моя подруга Лейла.",
+        "uz": "Bu dugonam Laylo.",
+        "en": "This is my friend Leila."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2158,6 +3462,137 @@
     "en": "Some → du/de la; like in general → le/la; after pas and quantities → de.",
     "uz": "Biroz → du/de la; umuman yoqtiraman → le/la; pas va miqdordan keyin → de."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Немного чего-то: du, de la",
+      "en": "Some of something: du, de la",
+      "uz": "Biror narsadan biroz: du, de la"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда говорим о части чего-то, что нельзя посчитать (хлеб, вода, сыр, терпение), французы ставят особый «частичный» артикль: *du* (мужской род), *de la* (женский), *de l'* (перед гласной). *Je mange du pain* — Я ем хлеб (какую-то часть хлеба, не весь хлеб на свете).",
+      "en": "For an unspecified amount of something uncountable (bread, water, cheese), French uses the partitive: *du* (masc.), *de la* (fem.), *de l'* (before a vowel). *Je mange du pain.*",
+      "uz": "Sanab bo'lmaydigan narsaning (non, suv, pishloq, sabr) bir qismi haqida gapirganda, fransuzlar maxsus «qism» artiklini qo'yadi: *du* (erkak jinsi), *de la* (ayol), *de l'* (unli oldidan). *Je mange du pain* — Non yeyapman (dunyodagi hamma nonni emas, bir qismini)."
+     }
+    },
+    {
+     "p": {
+      "ru": "В русском и узбекском здесь ничего не ставят («Я пью воду», «Suv ichaman»), а в английском иногда ставят *some*. Во французском частичный артикль обязателен: сказать «Je bois eau» нельзя.",
+      "en": "English sometimes uses *some* here; in French the partitive is required — you can't say “Je bois eau”.",
+      "uz": "O'zbek tilida bu yerda hech narsa qo'yilmaydi («Suv ichaman»), ingliz tilida ba'zan *some* qo'yiladi. Fransuz tilida qism artikli majburiy: «Je bois eau» deb bo'lmaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Артикль",
+        "en": "Article",
+        "uz": "Artikl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "du",
+        "du fromage, du riz"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "de la",
+        "de la viande, de la musique"
+       ],
+       [
+        {
+         "ru": "перед гласной",
+         "en": "before a vowel",
+         "uz": "unli oldidan"
+        },
+        "de l'",
+        "de l'eau, de l'argent"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "des",
+        "des légumes"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Le или du",
+      "en": "Le or du",
+      "uz": "Le yoki du"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда говорим о предмете _вообще_, особенно после *aimer, adorer, détester* (любить, обожать, ненавидеть), ставят *le / la*: *J'aime le café* — я люблю кофе (вообще). А когда о части: *Je bois du café* — я пью кофе (какое-то количество).",
+      "en": "For things in general, especially after *aimer, adorer, détester*, use *le / la*: *J'aime le café.* For an amount, the partitive: *Je bois du café.*",
+      "uz": "Narsa haqida _umuman_ gapirganda, ayniqsa *aimer, adorer, détester* (yaxshi ko'rmoq, juda yoqtirmoq, yomon ko'rmoq) dan keyin *le / la* qo'yiladi: *J'aime le café* — qahvani yaxshi ko'raman (umuman). Qismi haqida esa: *Je bois du café* — qahva ichyapman (bir miqdorda)."
+     }
+    },
+    {
+     "note": {
+      "ru": "После отрицания и слов количества (*beaucoup, un peu, un kilo*) остаётся просто *de*: *Je ne bois pas de café*, *beaucoup de sucre*, *un kilo de pommes*.",
+      "en": "After a negative and quantity words (*beaucoup, un peu, un kilo*) use plain *de*: *pas de café*, *beaucoup de sucre*.",
+      "uz": "Inkordan va miqdor so'zlaridan (*beaucoup, un peu, un kilo*) keyin shunchaki *de* qoladi: *Je ne bois pas de café*, *beaucoup de sucre*, *un kilo de pommes*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tu veux *du* thé ?",
+       "t": {
+        "ru": "Хочешь чаю?",
+        "uz": "Choy ichasanmi?",
+        "en": "Would you like some tea?"
+       }
+      },
+      {
+       "s": "Il faut *de la* patience.",
+       "t": {
+        "ru": "Нужно терпение.",
+        "uz": "Sabr kerak.",
+        "en": "You need patience."
+       }
+      },
+      {
+       "s": "Je n'ai pas *d'*argent.",
+       "t": {
+        "ru": "У меня нет денег.",
+        "uz": "Pulim yo'q.",
+        "en": "I don't have any money."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2419,6 +3854,139 @@
     "en": "City — à; country in -e — en; other country — au; at someone’s — chez.",
     "uz": "Shahar — à; -e bilan mamlakat — en; boshqa mamlakat — au; kimnikida — chez."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Где и куда: à, en, au, chez",
+      "en": "Where: à, en, au, chez",
+      "uz": "Qayerda va qayerga: à, en, au, chez"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском одни и те же предлоги отвечают и на «где?», и на «куда?»: *Je suis à Paris* (в Париже) и *Je vais à Paris* (в Париж). Это проще, чем в русском. Но выбор предлога зависит от того, _что_ это за место.",
+      "en": "French uses the same prepositions for “where” and “where to”: *Je suis à Paris*, *Je vais à Paris*. The choice depends on the type of place.",
+      "uz": "Fransuz tilida bir xil predloglar ham «qayerda?», ham «qayerga?» savoliga javob beradi: *Je suis à Paris* (Parijda) va *Je vais à Paris* (Parijga). Bu o'zbek tilidan ham oson. Lekin predlog tanlovi joyning _turiga_ bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Место",
+        "en": "Place",
+        "uz": "Joy"
+       },
+       {
+        "ru": "Предлог",
+        "en": "Preposition",
+        "uz": "Predlog"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "город",
+         "en": "city",
+         "uz": "shahar"
+        },
+        "à",
+        "à Tachkent, à Londres"
+       ],
+       [
+        {
+         "ru": "страна женского рода (на -e)",
+         "en": "feminine country (in -e)",
+         "uz": "ayol jinsidagi mamlakat (-e bilan)"
+        },
+        "en",
+        "en France, en Russie"
+       ],
+       [
+        {
+         "ru": "страна мужского рода",
+         "en": "masculine country",
+         "uz": "erkak jinsidagi mamlakat"
+        },
+        "au",
+        "au Japon, au Canada"
+       ],
+       [
+        {
+         "ru": "страна во множественном",
+         "en": "plural country",
+         "uz": "ko'plikdagi mamlakat"
+        },
+        "aux",
+        "aux États-Unis"
+       ],
+       [
+        {
+         "ru": "у кого-то дома",
+         "en": "at someone's place",
+         "uz": "kimningdir uyida"
+        },
+        "chez",
+        "chez moi, chez le médecin"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Большинство стран на *-e* женского рода: *la France*, *l'Italie*, *la Turquie* — поэтому *en*. Узбекистан — *l'Ouzbékistan*, мужской род, но начинается с гласной, поэтому тоже *en Ouzbékistan*.",
+      "en": "Most countries ending in *-e* are feminine (*en France*). *L'Ouzbékistan* is masculine but starts with a vowel, so *en Ouzbékistan*.",
+      "uz": "*-e* bilan tugaydigan mamlakatlarning ko'pchiligi ayol jinsida: *la France*, *l'Italie*, *la Turquie* — shuning uchun *en*. O'zbekiston — *l'Ouzbékistan*, erkak jinsida, lekin unli bilan boshlanadi, shuning uchun ham *en Ouzbékistan*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Chez — у кого-то",
+      "en": "Chez — at someone's",
+      "uz": "Chez — kimningdir oldida"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Chez* [ше] — особое слово, которого нет в русском: «у кого-то дома, в чьём-то месте». *Je rentre chez moi* — Я иду домой (к себе). *Je vais chez le dentiste* — Я иду к стоматологу. В узбекском похоже на «-nikiga»: do'stim_nikiga_.",
+      "en": "*Chez* means “at / to someone's place”: *chez moi* (home), *chez le dentiste*.",
+      "uz": "*Chez* [she] — alohida so'z: «kimningdir uyida, kimningdir joyida». *Je rentre chez moi* — Uyga qaytyapman. *Je vais chez le dentiste* — Tish shifokoriga boryapman. O'zbekchada «-nikiga» ga o'xshaydi: do'stim_nikiga_."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "J'habite *à* Boukhara, *en* Ouzbékistan.",
+       "t": {
+        "ru": "Я живу в Бухаре, в Узбекистане.",
+        "uz": "Men Buxoroda, O'zbekistonda yashayman.",
+        "en": "I live in Bukhara, in Uzbekistan."
+       }
+      },
+      {
+       "s": "Elle travaille *au* Canada.",
+       "t": {
+        "ru": "Она работает в Канаде.",
+        "uz": "U Kanadada ishlaydi.",
+        "en": "She works in Canada."
+       }
+      },
+      {
+       "s": "On dîne *chez* mes parents.",
+       "t": {
+        "ru": "Мы ужинаем у моих родителей.",
+        "uz": "Ota-onamnikida kechki ovqat qilamiz.",
+        "en": "We're having dinner at my parents'."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2683,6 +4251,139 @@
     "en": "Article/name → c’est; adjective/job → il est.",
     "uz": "Artikl/ism → c’est; sifat/kasb → il est."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "C'est или il est",
+      "en": "C'est or il est",
+      "uz": "C'est yoki il est"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба выражения переводятся «это / он есть», и начинающие их постоянно путают. Выбор зависит от того, что идёт _после_.",
+      "en": "Both can mean “it is / he is”, and beginners mix them up. The choice depends on what comes after.",
+      "uz": "Ikkala ibora ham «bu / u … dir» deb tarjima qilinadi va boshlovchilar ularni doim adashtiradi. Tanlov _keyin_ nima kelishiga bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "После идёт",
+        "en": "Followed by",
+        "uz": "Keyin keladi"
+       },
+       {
+        "ru": "Что ставить",
+        "en": "Use",
+        "uz": "Nima qo'yiladi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "артикль / притяжательное + сущ.",
+         "en": "article / possessive + noun",
+         "uz": "artikl / egalik so'zi + ot"
+        },
+        "c'est",
+        "C'est un médecin. C'est mon frère."
+       ],
+       [
+        {
+         "ru": "имя собственное",
+         "en": "a name",
+         "uz": "atoqli ot"
+        },
+        "c'est",
+        "C'est Ali."
+       ],
+       [
+        {
+         "ru": "ударное местоимение",
+         "en": "stressed pronoun",
+         "uz": "urg'uli olmosh"
+        },
+        "c'est",
+        "C'est moi."
+       ],
+       [
+        {
+         "ru": "прилагательное о человеке",
+         "en": "adjective about a person",
+         "uz": "odam haqida sifat"
+        },
+        "il / elle est",
+        "Il est sympa."
+       ],
+       [
+        {
+         "ru": "профессия, национальность без артикля",
+         "en": "profession, nationality, no article",
+         "uz": "artiklsiz kasb, millat"
+        },
+        "il / elle est",
+        "Elle est médecin."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Главная подсказка — артикль. Если после стоит *un, une, le, mon*, бери *c'est*: *C'est un acteur*. Если просто прилагательное или профессия без артикля — *il / elle est*: *Il est acteur*, *Il est grand*.",
+      "en": "Key clue: the article. With *un, une, le, mon* after it → *c'est*: *C'est un acteur*. With a bare adjective or profession → *il / elle est*: *Il est acteur.*",
+      "uz": "Asosiy ishora — artikl. Keyin *un, une, le, mon* tursa — *c'est*: *C'est un acteur*. Shunchaki sifat yoki artiklsiz kasb bo'lsa — *il / elle est*: *Il est acteur*, *Il est grand*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Профессия без артикля — особенность французского: *Je suis professeur* — Я учитель (не «un professeur»). Но с прилагательным артикль возвращается: *C'est un bon professeur.*",
+      "en": "Professions take no article: *Je suis professeur*. But with an adjective the article returns: *C'est un bon professeur.*",
+      "uz": "Kasb artiklsiz — fransuz tilining xususiyati: *Je suis professeur* — Men o'qituvchiman («un professeur» emas). Lekin sifat bilan artikl qaytadi: *C'est un bon professeur.*"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для вещей и ситуаций в целом говорят *c'est* + прилагательное в мужском роде: *Paris, c'est beau !* — Париж — это красиво. *C'est difficile* — Это трудно.",
+      "en": "For situations in general: *c'est* + masculine adjective: *C'est difficile.*",
+      "uz": "Umuman narsa va vaziyatlar haqida *c'est* + erkak jinsidagi sifat ishlatiladi: *Paris, c'est beau !* — Parij — go'zal. *C'est difficile* — Bu qiyin."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*C'est* ma sœur. *Elle est* étudiante.",
+       "t": {
+        "ru": "Это моя сестра. Она студентка.",
+        "uz": "Bu mening opam. U talaba.",
+        "en": "This is my sister. She's a student."
+       }
+      },
+      {
+       "s": "*C'est* un très bon film.",
+       "t": {
+        "ru": "Это очень хороший фильм.",
+        "uz": "Bu juda yaxshi film.",
+        "en": "It's a very good film."
+       }
+      },
+      {
+       "s": "*Il est* français, mais il habite à Rome.",
+       "t": {
+        "ru": "Он француз, но живёт в Риме.",
+        "uz": "U fransuz, lekin Rimda yashaydi.",
+        "en": "He's French but lives in Rome."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2941,6 +4642,145 @@
     "en": "ce / cet / cette / ces — by gender, number and first letter.",
     "uz": "ce / cet / cette / ces — rod, son va birinchi harfga ko'ra."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Этот, эта, эти: ce, cette, ces",
+      "en": "This, these: ce, cette, ces",
+      "uz": "Bu, bular: ce, cette, ces"
+     }
+    },
+    {
+     "p": {
+      "ru": "Указательные слова «этот / тот» во французском согласуются с существительным по роду и числу. При этом _одно и то же_ слово значит и «этот», и «тот» — французы не различают близко и далеко без особой нужды.",
+      "en": "French demonstratives agree in gender and number, and the same word means both “this” and “that”.",
+      "uz": "Fransuz tilida ko'rsatish so'zlari ot bilan jins va son bo'yicha moslashadi. Bunda _bitta_ so'z ham «bu», ham «anavi» degani — fransuzlar zarurat bo'lmasa yaqin va uzoqni farqlamaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Когда",
+        "en": "When",
+        "uz": "Qachon"
+       },
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской род",
+         "en": "masculine",
+         "uz": "erkak jinsi"
+        },
+        "ce",
+        "ce livre"
+       ],
+       [
+        {
+         "ru": "мужской перед гласной / немой h",
+         "en": "masculine before a vowel / silent h",
+         "uz": "erkak, unli / o'qilmaydigan h oldidan"
+        },
+        "cet",
+        "cet ami, cet hôtel"
+       ],
+       [
+        {
+         "ru": "женский род",
+         "en": "feminine",
+         "uz": "ayol jinsi"
+        },
+        "cette",
+        "cette ville"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "ces",
+        "ces enfants"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Cet* нужен только для удобства произношения: «ce ami» звучало бы неуклюже, поэтому *cet ami* [сэтами]. Звучит *cet* точно так же, как *cette*.",
+      "en": "*Cet* is just for easy pronunciation before a vowel: *cet ami*. It sounds exactly like *cette*.",
+      "uz": "*Cet* faqat talaffuz qulayligi uchun kerak: «ce ami» noqulay eshitilardi, shuning uchun *cet ami* [setami]. *cet* xuddi *cette* kabi o'qiladi."
+     }
+    },
+    {
+     "h": {
+      "ru": "-ci и -là: если нужно уточнить",
+      "en": "-ci and -là: when you need to be precise",
+      "uz": "-ci va -là: aniqlashtirish kerak bo'lsa"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если нужно противопоставить «этот» и «тот», к существительному добавляют *-ci* (здесь) или *-là* (там): *Je préfère ce pull-ci, pas ce pull-là* — Я предпочитаю этот свитер, а не тот.",
+      "en": "To contrast “this” and “that”, add *-ci* (here) or *-là* (there): *ce pull-ci*, *ce pull-là*.",
+      "uz": "«Bu» va «anavi» ni qarama-qarshi qo'yish kerak bo'lsa, otga *-ci* (bu yerda) yoki *-là* (u yerda) qo'shiladi: *Je préfère ce pull-ci, pas ce pull-là* — Anavi emas, bu sviterni afzal ko'raman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Cette* robe est très jolie.",
+       "t": {
+        "ru": "Это платье очень красивое.",
+        "uz": "Bu ko'ylak juda chiroyli.",
+        "en": "This dress is very pretty."
+       }
+      },
+      {
+       "s": "J'aime beaucoup *cet* endroit.",
+       "t": {
+        "ru": "Мне очень нравится это место.",
+        "uz": "Bu joy menga juda yoqadi.",
+        "en": "I really like this place."
+       }
+      },
+      {
+       "s": "*Ces* chaussures sont trop chères.",
+       "t": {
+        "ru": "Эти туфли слишком дорогие.",
+        "uz": "Bu oyoq kiyimlar juda qimmat.",
+        "en": "These shoes are too expensive."
+       }
+      },
+      {
+       "s": "*Ce* soir, on va au restaurant.",
+       "t": {
+        "ru": "Сегодня вечером мы идём в ресторан.",
+        "uz": "Bugun kechqurun restoranga boramiz.",
+        "en": "Tonight we're going to a restaurant."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Ce matin, ce soir, cette semaine, cette année* — «сегодня утром, сегодня вечером, на этой неделе, в этом году». Очень полезные выражения времени.",
+      "en": "*Ce matin, ce soir, cette semaine, cette année* — this morning, tonight, this week, this year.",
+      "uz": "*Ce matin, ce soir, cette semaine, cette année* — «bugun ertalab, bugun kechqurun, shu hafta, shu yil». Juda foydali vaqt iboralari."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

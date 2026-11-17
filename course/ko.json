@@ -9257,6 +9257,123 @@
     "en": "-아야/어야 해요 = must; -아도/어도 돼요 = may; -지 않아도 돼요 = no need.",
     "uz": "-아야/어야 해요 = kerak; -아도/어도 돼요 = mumkin; -지 않아도 돼요 = shart emas."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Нужно и можно",
+      "en": "Must and may",
+      "uz": "Kerak va mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать «должен, надо», к основе добавляют *-아야 / -어야 해요* (по гармонии гласных). Буквально это «только если сделаю — будет»: *가야 해요* — надо идти. По-узбекски — «-ishim kerak»: «borishim kerak».",
+      "en": "“Must” = *-아야 / -어야 해요* (vowel harmony): *가야 해요* — I have to go.",
+      "uz": "«Kerak, shart» deyish uchun o'zakka *-아야 / -어야 해요* qo'shiladi (unlilar uyg'unligi bo'yicha). So'zma-so'z «qilsam_gina_ bo'ladi»: *가야 해요* — borishim kerak."
+     }
+    },
+    {
+     "p": {
+      "ru": "«Можно» — *-아도 / -어도 돼요*, буквально «даже если сделаешь — нормально»: *들어가도 돼요?* — Можно войти? А «не нужно» — *-지 않아도 돼요* или *안 -아도 돼요*: *안 와도 돼요* — Можешь не приходить.",
+      "en": "“May” = *-아도 / -어도 돼요*: *들어가도 돼요?* “Don't have to” = *안 -아도 돼요* / *-지 않아도 돼요*.",
+      "uz": "«Mumkin» — *-아도 / -어도 돼요*, so'zma-so'z «qilsang ham — mayli»: *들어가도 돼요?* — Kirsam bo'ladimi? «Kerak emas» esa — *-지 않아도 돼요* yoki *안 -아도 돼요*: *안 와도 돼요* — Kelmasang ham bo'ladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "должен, надо",
+         "en": "must, have to",
+         "uz": "kerak, shart"
+        },
+        "-아야/어야 해요",
+        "숙제를 해야 해요."
+       ],
+       [
+        {
+         "ru": "можно",
+         "en": "may, it's OK to",
+         "uz": "mumkin"
+        },
+        "-아도/어도 돼요",
+        "여기 앉아도 돼요."
+       ],
+       [
+        {
+         "ru": "не нужно",
+         "en": "don't have to",
+         "uz": "shart emas"
+        },
+        "-지 않아도 돼요",
+        "걱정하지 않아도 돼요."
+       ],
+       [
+        {
+         "ru": "нельзя",
+         "en": "must not",
+         "uz": "mumkin emas"
+        },
+        "-(으)면 안 돼요",
+        "여기서 사진 찍으면 안 돼요."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "내일 일찍 일어나*야 해요*.",
+       "t": {
+        "ru": "Завтра мне надо рано встать.",
+        "uz": "Ertaga erta turishim kerak.",
+        "en": "I have to get up early tomorrow."
+       }
+      },
+      {
+       "s": "창문을 열*어도 돼요*?",
+       "t": {
+        "ru": "Можно открыть окно?",
+        "uz": "Derazani ochsam bo'ladimi?",
+        "en": "May I open the window?"
+       }
+      },
+      {
+       "s": "돈을 내*지 않아도 돼요*.",
+       "t": {
+        "ru": "Платить не нужно.",
+        "uz": "Pul to'lash shart emas.",
+        "en": "You don't have to pay."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вместо *해요* в «надо» часто говорят *돼요*: *가야 돼요* — то же самое, но разговорнее.",
+      "en": "*-아야 돼요* is a common, more casual alternative to *-아야 해요*.",
+      "uz": "«Kerak» da *해요* o'rniga ko'pincha *돼요* deyiladi: *가야 돼요* — xuddi shunday, lekin so'zlashuvdagidek."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9519,6 +9636,107 @@
     "en": "vowel + ㄹ 수 있어요; consonant + 을 수 있어요; 수 없어요 = 못.",
     "uz": "unli + ㄹ 수 있어요; undosh + 을 수 있어요; 수 없어요 = 못."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мочь: -(으)ㄹ 수 있어요",
+      "en": "Can: -(으)ㄹ 수 있어요",
+      "uz": "Qila olmoq: -(으)ㄹ 수 있어요"
+     }
+    },
+    {
+     "p": {
+      "ru": "*수* [су] значит «способ, возможность». Конструкция *-(으)ㄹ 수 있어요* буквально — «способ сделать есть», то есть «могу». А *-(으)ㄹ 수 없어요* — «способа нет», «не могу». Это узбекское «-a olaman / -a olmayman».",
+      "en": "*수* means “way, means”. *-(으)ㄹ 수 있어요* = “there's a way to” = can; *없어요* = can't.",
+      "uz": "*수* [su] — «usul, imkon» degani. *-(으)ㄹ 수 있어요* so'zma-so'z «qilish imkoni bor», ya'ni «qila olaman». *-(으)ㄹ 수 없어요* esa — «imkon yo'q», «qila olmayman». Bu o'zbekcha «-a olaman / -a olmayman»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "Могу",
+        "en": "Can",
+        "uz": "Qila olaman"
+       },
+       {
+        "ru": "Не могу",
+        "en": "Can't",
+        "uz": "Qila olmayman"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "гласная: 가다",
+         "en": "vowel: 가다",
+         "uz": "unli: 가다"
+        },
+        "갈 수 있어요",
+        "갈 수 없어요"
+       ],
+       [
+        {
+         "ru": "согласная: 읽다",
+         "en": "consonant: 읽다",
+         "uz": "undosh: 읽다"
+        },
+        "읽을 수 있어요",
+        "읽을 수 없어요"
+       ],
+       [
+        {
+         "ru": "на ㄹ: 만들다",
+         "en": "ends in ㄹ: 만들다",
+         "uz": "ㄹ bilan: 만들다"
+        },
+        "만들 수 있어요",
+        "만들 수 없어요"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Помнишь *못*? *못 가요* и *갈 수 없어요* значат почти одно и то же. *못* короче и разговорнее. А «уметь» как навык (плавать, водить) часто говорят через *-(으)ㄹ 줄 알아요*: *운전할 줄 알아요* — Я умею водить.",
+      "en": "*못 가요* ≈ *갈 수 없어요*. For a learned skill, use *-(으)ㄹ 줄 알아요*: *운전할 줄 알아요.*",
+      "uz": "*못* esingizdami? *못 가요* va *갈 수 없어요* deyarli bir xil ma'noni bildiradi. *못* qisqaroq va so'zlashuvdagidek. Ko'nikma sifatida «bilmoq» (suzish, haydash) esa ko'pincha *-(으)ㄹ 줄 알아요* orqali aytiladi: *운전할 줄 알아요* — Mashina haydashni bilaman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "한국어를 조금 *할 수 있어요*.",
+       "t": {
+        "ru": "Я немного говорю по-корейски.",
+        "uz": "Koreyschani biroz gapira olaman.",
+        "en": "I can speak a little Korean."
+       }
+      },
+      {
+       "s": "오늘은 *만날 수 없어요*.",
+       "t": {
+        "ru": "Сегодня я не могу встретиться.",
+        "uz": "Bugun uchrasha olmayman.",
+        "en": "I can't meet today."
+       }
+      },
+      {
+       "s": "여기서 표를 *살 수 있어요*?",
+       "t": {
+        "ru": "Здесь можно купить билет?",
+        "uz": "Bu yerda chipta sotib olsa bo'ladimi?",
+        "en": "Can I buy a ticket here?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9781,6 +9999,116 @@
     "en": "vowel + ㄹ까요? / consonant + 을까요? = “shall we…?”; ㅂ시다 = “let's”.",
     "uz": "unli + ㄹ까요? / undosh + 을까요? = «…mi?»; ㅂ시다 = «keling»."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Предложить: -(으)ㄹ까요?, -(으)ㅂ시다",
+      "en": "Suggesting: -(으)ㄹ까요?, -(으)ㅂ시다",
+      "uz": "Taklif: -(으)ㄹ까요?, -(으)ㅂ시다"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-(으)ㄹ까요?* [-льккаё] — мягкий вопрос-предложение «может, …?», «давай …?». *같이 갈까요?* — Пойдём вместе? Им же спрашивают совета: *뭐 먹을까요?* — Что нам съесть? По-узбекски это «-aylikmi?»: «Birga boraylikmi?»",
+      "en": "*-(으)ㄹ까요?* is a soft “shall we…?”: *같이 갈까요?* Also “what should we…?”: *뭐 먹을까요?*",
+      "uz": "*-(으)ㄹ까요?* [-lkkayo] — yumshoq savol-taklif. *같이 갈까요?* — Birga boraylikmi? U bilan maslahat ham so'raladi: *뭐 먹을까요?* — Nima yeylik? O'zbekcha bu «-aylikmi?»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-(으)ㄹ까요?",
+        {
+         "ru": "может, …? (мы)",
+         "en": "shall we…?",
+         "uz": "… aylikmi?"
+        },
+        "커피 마실까요?"
+       ],
+       [
+        "-(으)ㄹ까요?",
+        {
+         "ru": "мне …? (совет)",
+         "en": "shall I…?",
+         "uz": "… aymi?"
+        },
+        "창문을 열까요?"
+       ],
+       [
+        "-(으)ㅂ시다",
+        {
+         "ru": "давайте …!",
+         "en": "let's…!",
+         "uz": "… aylik!"
+        },
+        "시작합시다!"
+       ],
+       [
+        "-아요/어요",
+        {
+         "ru": "давай (разговорно)",
+         "en": "let's (casual)",
+         "uz": "… aylik (so'zlashuv)"
+        },
+        "같이 가요!"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*-(으)ㅂ시다* — уверенное «давайте!», но его _не говорят старшим_: звучит как распоряжение. Со старшими безопаснее *-(으)ㄹ까요?* или просто *-아요 / -어요* с вопросительной интонацией.",
+      "en": "*-(으)ㅂ시다* is a firm “let's!” — avoid it with elders; use *-(으)ㄹ까요?* instead.",
+      "uz": "*-(으)ㅂ시다* — qat'iy «keling!», lekin uni _kattalarga aytilmaydi_: farmoyishdek eshitiladi. Kattalar bilan *-(으)ㄹ까요?* yoki savol ohangidagi oddiy *-아요 / -어요* xavfsizroq."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "주말에 영화 *볼까요*?",
+       "t": {
+        "ru": "Посмотрим фильм на выходных?",
+        "uz": "Dam olish kunlari film ko'raylikmi?",
+        "en": "Shall we watch a film at the weekend?"
+       }
+      },
+      {
+       "s": "제가 *도와드릴까요*?",
+       "t": {
+        "ru": "Вам помочь?",
+        "uz": "Sizga yordam beraymi?",
+        "en": "Shall I help you?"
+       }
+      },
+      {
+       "s": "자, 이제 *출발합시다*!",
+       "t": {
+        "ru": "Ну, давайте отправляться!",
+        "uz": "Qani, endi yo'lga chiqaylik!",
+        "en": "Right, let's set off!"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10041,6 +10369,107 @@
     "en": "vowel + 면, consonant + 으면; 안 돼요 = not allowed; 돼요 = enough.",
     "uz": "unli + 면, undosh + 으면; 안 돼요 = mumkin emas; 돼요 = yetarli."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Условие: -(으)면",
+      "en": "If: -(으)면",
+      "uz": "Shart: -(으)면"
+     }
+    },
+    {
+     "p": {
+      "ru": "«Если» в корейском — окончание *-(으)면* [-(ы)мён] на основе глагола. *비가 오면 집에 있어요* — Если пойдёт дождь, останусь дома. Это точное узбекское «-sa»: «Yomg'ir yog'_sa_, uyda qolaman». И стоит оно так же — в конце первой части.",
+      "en": "“If” = stem + *-(으)면*: *비가 오면 집에 있어요.*",
+      "uz": "Koreys tilida «agar» — fe'l o'zagidagi *-(으)면* [-(i)myon] qo'shimchasi. *비가 오면 집에 있어요* — Yomg'ir yog'sa, uyda qolaman. Bu aynan o'zbekcha «-sa», va u ham xuddi shunday — birinchi qism oxirida turadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "гласная / ㄹ",
+         "en": "vowel / ㄹ",
+         "uz": "unli / ㄹ"
+        },
+        "-면",
+        "가다 → 가면, 살다 → 살면"
+       ],
+       [
+        {
+         "ru": "согласная",
+         "en": "consonant",
+         "uz": "undosh"
+        },
+        "-으면",
+        "먹다 → 먹으면"
+       ],
+       [
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        "-(이)면",
+        "학생이면"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "С *-(으)면* строятся полезные выражения: *-(으)면 안 돼요* — «если сделаешь — нельзя», то есть «нельзя»; *-(으)면 돼요* — «достаточно, нужно просто»: *여기에 쓰면 돼요* — Просто напишите здесь. *-(으)면 좋겠어요* — «хорошо бы»: *내일 날씨가 좋으면 좋겠어요*.",
+      "en": "Useful patterns: *-(으)면 안 돼요* (mustn't), *-(으)면 돼요* (you just need to), *-(으)면 좋겠어요* (I wish).",
+      "uz": "*-(으)면* bilan foydali iboralar tuziladi: *-(으)면 안 돼요* — «qilsang, bo'lmaydi», ya'ni «mumkin emas»; *-(으)면 돼요* — «shunchaki … kifoya»: *여기에 쓰면 돼요* — Shu yerga yozsangiz bo'ldi. *-(으)면 좋겠어요* — «… sa yaxshi bo'lardi»: *내일 날씨가 좋으면 좋겠어요*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "시간이 있*으면* 같이 가요.",
+       "t": {
+        "ru": "Если будет время, пойдём вместе.",
+        "uz": "Vaqting bo'lsa, birga boraylik.",
+        "en": "If you have time, let's go together."
+       }
+      },
+      {
+       "s": "모르*면* 물어보세요.",
+       "t": {
+        "ru": "Если не знаете — спросите.",
+        "uz": "Bilmasangiz, so'rang.",
+        "en": "If you don't know, ask."
+       }
+      },
+      {
+       "s": "여기서 수영하*면 안 돼요*.",
+       "t": {
+        "ru": "Здесь нельзя плавать.",
+        "uz": "Bu yerda suzish mumkin emas.",
+        "en": "You mustn't swim here."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10302,6 +10731,105 @@
     "en": "stem + (으)러 + 가다/오다; place + 에 + purpose + 가요.",
     "uz": "o'zak + (으)러 + 가다/오다; joy + 에 + maqsad + 가요."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Цель движения: -(으)러 가요",
+      "en": "Going to do: -(으)러 가요",
+      "uz": "Maqsad bilan bormoq: -(으)러 가요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать «иду куда-то, _чтобы_ что-то сделать», к основе глагола цели добавляют *-(으)러* [-(ы)ро], а потом ставят глагол движения: *가다* (идти), *오다* (приходить), *다니다* (ходить регулярно). *밥 먹으러 가요* — Иду поесть. Это узбекское «-gani»: «ovqat ye_gani_ ketyapman».",
+      "en": "“Go somewhere to do something”: purpose stem + *-(으)러* + a verb of motion: *밥 먹으러 가요.*",
+      "uz": "«Biror narsa qilish _uchun_ biror joyga boryapman» deyish uchun maqsad fe'li o'zagiga *-(으)러* [-(i)ro] qo'shiladi, keyin harakat fe'li qo'yiladi: *가다* (bormoq), *오다* (kelmoq), *다니다* (qatnamoq). *밥 먹으러 가요* — Ovqatlangani ketyapman. Bu o'zbekcha «-gani»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "гласная / ㄹ",
+         "en": "vowel / ㄹ",
+         "uz": "unli / ㄹ"
+        },
+        "-러",
+        "보다 → 보러, 놀다 → 놀러"
+       ],
+       [
+        {
+         "ru": "согласная",
+         "en": "consonant",
+         "uz": "undosh"
+        },
+        "-으러",
+        "찾다 → 찾으러"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Порядок — как в узбекском: место + *에*, потом цель, потом движение. *도서관에 책을 빌리러 가요* — Иду в библиотеку взять книгу (Kutubxonaga kitob olgani boraman).",
+      "en": "Order: place + *에*, then purpose, then motion: *도서관에 책을 빌리러 가요.*",
+      "uz": "Tartib — o'zbek tilidagidek: joy + *에*, keyin maqsad, keyin harakat. *도서관에 책을 빌리러 가요* — Kutubxonaga kitob olgani boraman."
+     }
+    },
+    {
+     "note": {
+      "ru": "*-(으)러* работает _только_ с глаголами движения. Для других глаголов «чтобы» говорят через *-(으)려고* (тема B2).",
+      "en": "*-(으)러* only works with verbs of motion. For other verbs, use *-(으)려고* (B2).",
+      "uz": "*-(으)러* _faqat_ harakat fe'llari bilan ishlaydi. Boshqa fe'llar uchun «… uchun» *-(으)려고* orqali aytiladi (B2 mavzusi)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "친구를 *만나러* 카페에 가요.",
+       "t": {
+        "ru": "Иду в кафе встретиться с другом.",
+        "uz": "Do'stim bilan uchrashgani kafega boryapman.",
+        "en": "I'm going to a café to meet a friend."
+       }
+      },
+      {
+       "s": "한국에 뭐 하*러* 왔어요?",
+       "t": {
+        "ru": "Зачем вы приехали в Корею?",
+        "uz": "Koreyaga nima qilgani keldingiz?",
+        "en": "What did you come to Korea for?"
+       }
+      },
+      {
+       "s": "주말에 바다에 *놀러* 갈 거예요.",
+       "t": {
+        "ru": "На выходных поеду отдохнуть на море.",
+        "uz": "Dam olish kunlari dengizga dam olgani boraman.",
+        "en": "At the weekend I'll go to the seaside to have fun."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10562,6 +11090,132 @@
     "en": "verb + 는데; adjective + (으)ㄴ데; N + 인데; past -았/었는데.",
     "uz": "fe'l + 는데; sifat + (으)ㄴ데; N + 인데; o'tgan -았/었는데."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Фон и контраст: -는데",
+      "en": "Background and contrast: -는데",
+      "uz": "Fon va qarama-qarshilik: -는데"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-는데* [-нынде] — очень частое окончание. Оно говорит: «вот ситуация, а теперь главное». Это может быть фон («я сейчас в кафе, — приходи»), контраст («дорого, но…») или мягкое вступление перед просьбой.",
+      "en": "*-는데* sets up background before the main point: context, contrast, or a soft lead-in to a request.",
+      "uz": "*-는데* [-ninde] — juda ko'p ishlatiladigan qo'shimcha. U «mana vaziyat, endi asosiysi» deydi. Bu fon («hozir kafedaman, — kel»), qarama-qarshilik («qimmat, lekin…») yoki iltimos oldidan yumshoq kirish bo'lishi mumkin."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что",
+        "en": "What",
+        "uz": "Nima"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "глагол, 있다 / 없다",
+         "en": "verb, 있다 / 없다",
+         "uz": "fe'l, 있다 / 없다"
+        },
+        "-는데",
+        "가는데, 맛있는데"
+       ],
+       [
+        {
+         "ru": "прилагательное на гласную",
+         "en": "adjective, vowel",
+         "uz": "sifat, unli"
+        },
+        "-ㄴ데",
+        "비싼데"
+       ],
+       [
+        {
+         "ru": "прилагательное на согласную",
+         "en": "adjective, consonant",
+         "uz": "sifat, undosh"
+        },
+        "-은데",
+        "작은데"
+       ],
+       [
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        "-인데",
+        "학생인데"
+       ],
+       [
+        {
+         "ru": "прошлое (любое)",
+         "en": "past (any)",
+         "uz": "o'tgan (har qanday)"
+        },
+        "-았/었는데",
+        "갔는데"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "По-узбекски это часто «-yapman, …» или «-di-yu, …»: *지금 집에 가는데 같이 갈래요?* — Hozir uyga ketyapman, birga borasanmi? *어제 갔는데 문을 닫았어요* — Kecha bordim-u, yopiq ekan.",
+      "en": "*지금 집에 가는데 같이 갈래요?* — I'm heading home now — want to come? *어제 갔는데 문을 닫았어요* — I went yesterday, but it was closed.",
+      "uz": "O'zbek tilida bu ko'pincha «-yapman, …» yoki «-di-yu, …» bo'ladi: *지금 집에 가는데 같이 갈래요?* — Hozir uyga ketyapman, birga borasanmi? *어제 갔는데 문을 닫았어요* — Kecha bordim-u, yopiq ekan."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "배가 고*픈데* 뭐 먹을까요?",
+       "t": {
+        "ru": "Я голоден — может, что-нибудь съедим?",
+        "uz": "Qornim och, biror narsa yeylikmi?",
+        "en": "I'm hungry — shall we eat something?"
+       }
+      },
+      {
+       "s": "이 옷은 예*쁜데* 너무 비싸요.",
+       "t": {
+        "ru": "Эта одежда красивая, но слишком дорогая.",
+        "uz": "Bu kiyim chiroyli, lekin juda qimmat.",
+        "en": "These clothes are pretty but too expensive."
+       }
+      },
+      {
+       "s": "죄송*한데요*, 길 좀 물어봐도 돼요?",
+       "t": {
+        "ru": "Извините, можно спросить дорогу?",
+        "uz": "Kechirasiz, yo'l so'rasam bo'ladimi?",
+        "en": "Excuse me, may I ask for directions?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если поставить *-는데요* в конце фразы, получится мягкий, недоговорённый тон: *저는 괜찮은데요…* — Мне-то нормально… (а вам?).",
+      "en": "At the end of a sentence, *-는데요* gives a soft, open-ended tone.",
+      "uz": "Gap oxirida *-는데요* qo'yilsa, yumshoq, oxiriga yetkazilmagan ohang chiqadi: *저는 괜찮은데요…* — Menga-ku yaxshi… (sizga-chi?)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10823,6 +11477,150 @@
     "en": "-(으)시- + 어요 → 세요; special verbs: 드세요, 주무세요, 계세요; 께서.",
     "uz": "-(으)시- + 어요 → 세요; maxsus fe'llar: 드세요, 주무세요, 계세요; 께서."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Почтение к старшим: -(으)시-",
+      "en": "Honouring elders: -(으)시-",
+      "uz": "Kattalarga hurmat: -(으)시-"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском, как и в узбекском, со старшими говорят особо. Когда _подлежащее_ — уважаемый человек (учитель, родители, начальник), в глагол вставляют *-(으)시-*. *가요* → *가세요* — (он) идёт, уважительно. Это узбекское «-lar» уважения: «Ustoz ketdi_lar_».",
+      "en": "When the subject is someone respected, insert *-(으)시-*: *가요 → 가세요.* Like the respectful plural in many languages.",
+      "uz": "Koreys tilida ham, o'zbek tilidagidek, kattalar bilan alohida gapiriladi. _Ega_ hurmatli odam bo'lsa (o'qituvchi, ota-ona, rahbar), fe'lga *-(으)시-* qo'shiladi. *가요* → *가세요* — (u kishi) ketyaptilar. Bu o'zbekcha hurmat «-lar» i: «Ustoz ketdi_lar_»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Обычно",
+        "en": "Plain",
+        "uz": "Oddiy"
+       },
+       {
+        "ru": "Уважительно",
+        "en": "Honorific",
+        "uz": "Hurmat"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       }
+      ],
+      "rows": [
+       [
+        "가요",
+        "가세요",
+        {
+         "ru": "идёт",
+         "en": "goes",
+         "uz": "boradi"
+        }
+       ],
+       [
+        "읽어요",
+        "읽으세요",
+        {
+         "ru": "читает",
+         "en": "reads",
+         "uz": "o'qiydi"
+        }
+       ],
+       [
+        "갔어요",
+        "가셨어요",
+        {
+         "ru": "ушёл",
+         "en": "went",
+         "uz": "ketdi"
+        }
+       ],
+       [
+        "먹어요",
+        "드세요",
+        {
+         "ru": "ест",
+         "en": "eats",
+         "uz": "yeydi"
+        }
+       ],
+       [
+        "자요",
+        "주무세요",
+        {
+         "ru": "спит",
+         "en": "sleeps",
+         "uz": "uxlaydi"
+        }
+       ],
+       [
+        "있어요",
+        "계세요",
+        {
+         "ru": "находится",
+         "en": "is (somewhere)",
+         "uz": "… da bo'ladi"
+        }
+       ],
+       [
+        "이 / 가",
+        "께서",
+        {
+         "ru": "частица подлежащего",
+         "en": "subject particle",
+         "uz": "ega yuklamasi"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Несколько глаголов меняются целиком — их нужно просто запомнить: *먹다 → 드시다*, *자다 → 주무시다*, *있다 → 계시다*, *말하다 → 말씀하시다*. Частица *이 / 가* для уважаемого лица становится *께서*: *선생님께서 오셨어요* — Учитель пришёл.",
+      "en": "Some verbs change completely: *드시다, 주무시다, 계시다, 말씀하시다*. The subject particle becomes *께서*.",
+      "uz": "Ba'zi fe'llar butunlay o'zgaradi — ularni yodlash kerak: *먹다 → 드시다*, *자다 → 주무시다*, *있다 → 계시다*, *말하다 → 말씀하시다*. Hurmatli shaxs uchun *이 / 가* yuklamasi *께서* ga aylanadi: *선생님께서 오셨어요* — Ustoz keldilar."
+     }
+    },
+    {
+     "note": {
+      "ru": "О _себе_ *-(으)시-* никогда не говорят. «Я иду» — *가요*, а не «가세요».",
+      "en": "Never use *-(으)시-* about yourself.",
+      "uz": "_O'zingiz_ haqingizda *-(으)시-* hech qachon ishlatilmaydi. «Men boryapman» — «가세요» emas, *가요*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "할머니께서 *주무세요*.",
+       "t": {
+        "ru": "Бабушка спит.",
+        "uz": "Buvim uxlayaptilar.",
+        "en": "Grandma is sleeping."
+       }
+      },
+      {
+       "s": "사장님은 지금 사무실에 *계세요*.",
+       "t": {
+        "ru": "Директор сейчас в кабинете.",
+        "uz": "Direktor hozir ofisdalar.",
+        "en": "The boss is in the office now."
+       }
+      },
+      {
+       "s": "아버지께서 신문을 *읽으세요*.",
+       "t": {
+        "ru": "Отец читает газету.",
+        "uz": "Otam gazeta o'qiyaptilar.",
+        "en": "Father is reading the newspaper."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11082,6 +11880,123 @@
     "en": "-기 전에 = before; -(으)ㄴ 후에 = after; N 전에 / 후에.",
     "uz": "-기 전에 = oldin; -(으)ㄴ 후에 = keyin; N 전에 / 후에."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "До и после: -기 전에, -(으)ㄴ 후에",
+      "en": "Before and after: -기 전에, -(으)ㄴ 후에",
+      "uz": "Oldin va keyin: -기 전에, -(으)ㄴ 후에"
+     }
+    },
+    {
+     "p": {
+      "ru": "*전* [чон] — «до», *후* [ху] — «после». Как в узбекском, они стоят _после_ действия: «ovqatlanish_dan oldin_», «ovqatlan_gandan keyin_». С существительным всё просто: *수업 전에* — до урока, *수업 후에* — после урока.",
+      "en": "*전* = before, *후* = after, and they come after the action, as in Uzbek: *수업 전에, 수업 후에.*",
+      "uz": "*전* [chon] — «oldin», *후* [xu] — «keyin». O'zbek tilidagidek, ular harakatdan _keyin_ turadi: «ovqatlanish_dan oldin_», «ovqatlan_gandan keyin_». Ot bilan hammasi oddiy: *수업 전에* — darsdan oldin, *수업 후에* — darsdan keyin."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "С глаголом",
+        "en": "With a verb",
+        "uz": "Fe'l bilan"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "до того как",
+         "en": "before",
+         "uz": "… dan oldin"
+        },
+        "-기 전에",
+        "자기 전에"
+       ],
+       [
+        {
+         "ru": "после того как (гласная)",
+         "en": "after (vowel)",
+         "uz": "… gandan keyin (unli)"
+        },
+        "-ㄴ 후에",
+        "본 후에"
+       ],
+       [
+        {
+         "ru": "после того как (согласная)",
+         "en": "after (consonant)",
+         "uz": "… gandan keyin (undosh)"
+        },
+        "-은 후에",
+        "먹은 후에"
+       ],
+       [
+        {
+         "ru": "синоним «после»",
+         "en": "synonym of “after”",
+         "uz": "«keyin» sinonimi"
+        },
+        "-(으)ㄴ 다음에",
+        "끝난 다음에"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Как всегда в корейском, время показывает только конец фразы: перед *-기 전에* и *-(으)ㄴ 후에* прошедшее _не ставят_. *밥을 먹은 후에 산책했어요* — После еды я погулял.",
+      "en": "Tense goes only at the end; never put the past before *-기 전에* / *-(으)ㄴ 후에*.",
+      "uz": "Koreys tilida har doimgidek, zamonni faqat gap oxiri ko'rsatadi: *-기 전에* va *-(으)ㄴ 후에* oldidan o'tgan zamon _qo'yilmaydi_. *밥을 먹은 후에 산책했어요* — Ovqatlangandan keyin sayr qildim."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "자*기 전에* 이를 닦아요.",
+       "t": {
+        "ru": "Перед сном я чищу зубы.",
+        "uz": "Uxlashdan oldin tishimni yuvaman.",
+        "en": "I brush my teeth before bed."
+       }
+      },
+      {
+       "s": "졸업*한 후에* 한국에서 일하고 싶어요.",
+       "t": {
+        "ru": "После выпуска хочу работать в Корее.",
+        "uz": "O'qishni tugatgandan keyin Koreyada ishlamoqchiman.",
+        "en": "After graduating I want to work in Korea."
+       }
+      },
+      {
+       "s": "한 시간 *전에* 도착했어요.",
+       "t": {
+        "ru": "Я приехал час назад.",
+        "uz": "Bir soat oldin yetib keldim.",
+        "en": "I arrived an hour ago."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*N 전에* с периодом времени значит «… назад»: *3년 전에* — три года назад (uch yil oldin).",
+      "en": "*Time + 전에* means “… ago”: *3년 전에* — three years ago.",
+      "uz": "Vaqt davri bilan *N 전에* «… oldin» degani: *3년 전에* — uch yil oldin."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11344,6 +12259,175 @@
     "en": "adjective + (으)ㄴ; verb: -는 (present), -(으)ㄴ (past), -(으)ㄹ (future).",
     "uz": "sifat + (으)ㄴ; fe'l: -는 (hozir), -(으)ㄴ (o'tgan), -(으)ㄹ (kelasi)."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Определения: -는, -(으)ㄴ, -(으)ㄹ",
+      "en": "Modifiers: -는, -(으)ㄴ, -(으)ㄹ",
+      "uz": "Aniqlovchilar: -는, -(으)ㄴ, -(으)ㄹ"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском нет слова «который». Вместо этого глагол или прилагательное получает окончание и встаёт _перед_ существительным — ровно как узбекское причастие: «men o'qi_gan_ kitob» — книга, которую я читал. *제가 읽은 책* — то же самое и в том же порядке.",
+      "en": "Korean has no “which/who”. The verb takes an ending and goes before the noun — like a participle: *제가 읽은 책* — the book I read.",
+      "uz": "Koreys tilida «qaysiki» so'zi yo'q. Uning o'rniga fe'l yoki sifat qo'shimcha oladi va ot _oldidan_ turadi — xuddi o'zbekcha sifatdosh kabi: «men o'qi_gan_ kitob». *제가 읽은 책* — xuddi shu narsa va xuddi shu tartibda."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что",
+        "en": "What",
+        "uz": "Nima"
+       },
+       {
+        "ru": "Время",
+        "en": "Time",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "глагол",
+         "en": "verb",
+         "uz": "fe'l"
+        },
+        {
+         "ru": "сейчас",
+         "en": "present",
+         "uz": "hozir"
+        },
+        "-는",
+        {
+         "ru": "먹는 사람 — человек, который ест",
+         "en": "먹는 사람 — the person eating",
+         "uz": "먹는 사람 — yeyayotgan odam"
+        }
+       ],
+       [
+        {
+         "ru": "глагол",
+         "en": "verb",
+         "uz": "fe'l"
+        },
+        {
+         "ru": "прошлое",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "-(으)ㄴ",
+        {
+         "ru": "먹은 음식 — еда, которую съел",
+         "en": "먹은 음식 — the food I ate",
+         "uz": "먹은 음식 — yegan ovqatim"
+        }
+       ],
+       [
+        {
+         "ru": "глагол",
+         "en": "verb",
+         "uz": "fe'l"
+        },
+        {
+         "ru": "будущее",
+         "en": "future",
+         "uz": "kelasi"
+        },
+        "-(으)ㄹ",
+        {
+         "ru": "먹을 음식 — еда, которую съем",
+         "en": "먹을 음식 — food to eat",
+         "uz": "먹을 음식 — yeydigan ovqat"
+        }
+       ],
+       [
+        {
+         "ru": "прилагательное",
+         "en": "adjective",
+         "uz": "sifat"
+        },
+        {
+         "ru": "всегда",
+         "en": "always",
+         "uz": "doim"
+        },
+        "-(으)ㄴ",
+        {
+         "ru": "큰 집 — большой дом",
+         "en": "큰 집 — a big house",
+         "uz": "큰 집 — katta uy"
+        }
+       ],
+       [
+        {
+         "ru": "있다 / 없다",
+         "en": "있다 / 없다",
+         "uz": "있다 / 없다"
+        },
+        {
+         "ru": "всегда",
+         "en": "always",
+         "uz": "doim"
+        },
+        "-는",
+        {
+         "ru": "맛있는 빵 — вкусный хлеб",
+         "en": "맛있는 빵 — tasty bread",
+         "uz": "맛있는 빵 — mazali non"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Узбекские пары почти совпадают: *-는* ≈ «-yotgan / -adigan», *-(으)ㄴ* ≈ «-gan», *-(으)ㄹ* ≈ «-adigan» (будущее). Если знаешь узбекский — эта тема, самая трудная для европейцев, почти бесплатна.",
+      "en": "If you know a language with participles before the noun, this topic comes naturally.",
+      "uz": "O'zbekcha juftliklar deyarli mos keladi: *-는* ≈ «-yotgan / -adigan», *-(으)ㄴ* ≈ «-gan», *-(으)ㄹ* ≈ «-adigan» (kelasi). O'zbek tilini bilsangiz — yevropaliklar uchun eng qiyin bu mavzu deyarli tekin."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "지금 노래하*는* 사람이 제 동생이에요.",
+       "t": {
+        "ru": "Человек, который сейчас поёт, — мой младший брат.",
+        "uz": "Hozir qo'shiq aytayotgan odam — mening ukam.",
+        "en": "The person singing now is my younger brother."
+       }
+      },
+      {
+       "s": "어제 *본* 영화가 재미있었어요.",
+       "t": {
+        "ru": "Фильм, который я посмотрел вчера, был интересным.",
+        "uz": "Kecha ko'rgan filmim qiziqarli edi.",
+        "en": "The film I saw yesterday was fun."
+       }
+      },
+      {
+       "s": "내일 *할* 일이 많아요.",
+       "t": {
+        "ru": "У меня много дел на завтра.",
+        "uz": "Ertaga qiladigan ishlarim ko'p.",
+        "en": "I have a lot to do tomorrow."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11605,6 +12689,121 @@
     "en": "-아/어 보다 = to try; -(으)ㄴ 적이 있어요 = to have ever.",
     "uz": "-아/어 보다 = sinab ko'rmoq; -(으)ㄴ 적이 있어요 = bo'lgan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Попробовать и опыт",
+      "en": "Trying and experience",
+      "uz": "Sinab ko'rmoq va tajriba"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-아 / -어 보다* — буквально «сделать и посмотреть», то есть «попробовать». *먹어 봐요* — Попробуй (съешь и посмотри). Это узбекское «-ib ko'r»: «ye_b ko'r_». В просьбе — *-아 / -어 보세요*: *입어 보세요* — Примерьте.",
+      "en": "*-아 / -어 보다* = “do and see” = try: *먹어 봐요.* Polite request: *입어 보세요* — try it on.",
+      "uz": "*-아 / -어 보다* — so'zma-so'z «qilib ko'rmoq», ya'ni «sinab ko'rmoq». *먹어 봐요* — Yeb ko'r. Bu o'zbekcha «-ib ko'r»: «ye_b ko'r_». Iltimosda — *-아 / -어 보세요*: *입어 보세요* — Kiyib ko'ring."
+     }
+    },
+    {
+     "h": {
+      "ru": "Опыт: -(으)ㄴ 적이 있어요",
+      "en": "Experience: -(으)ㄴ 적이 있어요",
+      "uz": "Tajriba: -(으)ㄴ 적이 있어요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать «мне доводилось …», «я когда-нибудь …», используют *-(으)ㄴ 적이 있어요* (буквально «был случай, когда сделал»). Отрицание — *-(으)ㄴ 적이 없어요*. Это узбекское «-gan»: «Koreyaga bor_gan_man».",
+      "en": "“I have (ever) done” = *-(으)ㄴ 적이 있어요*; “never” = *-(으)ㄴ 적이 없어요*.",
+      "uz": "«… gan paytim bo'lgan», «hech … ganmisan» deyish uchun *-(으)ㄴ 적이 있어요* ishlatiladi (so'zma-so'z «qilgan holim bor»). Inkori — *-(으)ㄴ 적이 없어요*. Bu o'zbekcha «-gan»: «Koreyaga bor_gan_man»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "пробовать",
+         "en": "try",
+         "uz": "sinab ko'rmoq"
+        },
+        "-아/어 보다",
+        "입어 봐도 돼요?"
+       ],
+       [
+        {
+         "ru": "опыт есть",
+         "en": "have done",
+         "uz": "tajriba bor"
+        },
+        "-(으)ㄴ 적이 있어요",
+        "가 본 적이 있어요."
+       ],
+       [
+        {
+         "ru": "опыта нет",
+         "en": "have never done",
+         "uz": "tajriba yo'q"
+        },
+        "-(으)ㄴ 적이 없어요",
+        "먹어 본 적이 없어요."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Две формы часто идут вместе: *-아 / -어 본 적이 있어요* — «пробовал когда-нибудь». *한국 음식을 먹어 본 적이 있어요?* — Ты когда-нибудь пробовал корейскую еду?",
+      "en": "The two combine: *-아 / -어 본 적이 있어요* — “have you ever tried…?”",
+      "uz": "Ikki shakl ko'pincha birga keladi: *-아 / -어 본 적이 있어요* — «hech sinab ko'rganmisan». *한국 음식을 먹어 본 적이 있어요?* — Hech koreys taomini tatib ko'rganmisan?"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "이 신발 한번 신*어 보세요*.",
+       "t": {
+        "ru": "Примерьте эти туфли.",
+        "uz": "Bu poyabzalni bir kiyib ko'ring.",
+        "en": "Try these shoes on."
+       }
+      },
+      {
+       "s": "제주도에 *가 본 적이 있어요*.",
+       "t": {
+        "ru": "Я бывал на Чеджу.",
+        "uz": "Chejuda bo'lganman.",
+        "en": "I've been to Jeju."
+       }
+      },
+      {
+       "s": "아직 비행기를 *탄 적이 없어요*.",
+       "t": {
+        "ru": "Я ещё ни разу не летал на самолёте.",
+        "uz": "Hali samolyotda uchmaganman.",
+        "en": "I've never flown yet."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11869,6 +13068,141 @@
     "en": "Before a vowel: ㅂ → 우, ㄷ → ㄹ, 르 → ㄹㄹ.",
     "uz": "Unli oldidan: ㅂ → 우, ㄷ → ㄹ, 르 → ㄹㄹ."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Неправильные основы: ㅂ, ㄷ, 르",
+      "en": "Irregular stems: ㅂ, ㄷ, 르",
+      "uz": "Noqoidali o'zaklar: ㅂ, ㄷ, 르"
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые основы меняются, когда после них идёт _гласная_ (например, *-아요 / -어요*). Перед согласной (*-고, -지만*) они остаются как есть. Групп немного, и каждая подчиняется своему правилу.",
+      "en": "Some stems change before a vowel ending (like *-아요 / -어요*), but stay put before a consonant (*-고, -지만*).",
+      "uz": "Ba'zi o'zaklar ulardan keyin _unli_ kelganda o'zgaradi (masalan, *-아요 / -어요*). Undosh oldidan (*-고, -지만*) ular o'zgarmaydi. Guruhlar ko'p emas va har biri o'z qoidasiga bo'ysunadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Правило",
+        "en": "Rule",
+        "uz": "Qoida"
+       },
+       {
+        "ru": "Словарная форма",
+        "en": "Dictionary form",
+        "uz": "Lug'at shakli"
+       },
+       {
+        "ru": "+ 아요/어요",
+        "en": "+ 아요/어요",
+        "uz": "+ 아요/어요"
+       },
+       {
+        "ru": "+ 고",
+        "en": "+ 고",
+        "uz": "+ 고"
+       }
+      ],
+      "rows": [
+       [
+        "ㅂ",
+        {
+         "ru": "ㅂ → 우",
+         "en": "ㅂ → 우",
+         "uz": "ㅂ → 우"
+        },
+        "덥다",
+        "더워요",
+        "덥고"
+       ],
+       [
+        "ㄷ",
+        {
+         "ru": "ㄷ → ㄹ",
+         "en": "ㄷ → ㄹ",
+         "uz": "ㄷ → ㄹ"
+        },
+        "듣다",
+        "들어요",
+        "듣고"
+       ],
+       [
+        "르",
+        {
+         "ru": "르 → ㄹㄹ",
+         "en": "르 → ㄹㄹ",
+         "uz": "르 → ㄹㄹ"
+        },
+        "모르다",
+        "몰라요",
+        "모르고"
+       ],
+       [
+        "ㅡ",
+        {
+         "ru": "ㅡ выпадает",
+         "en": "ㅡ drops",
+         "uz": "ㅡ tushib qoladi"
+        },
+        "바쁘다",
+        "바빠요",
+        "바쁘고"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Самая большая группа — *ㅂ*: почти все прилагательные-ощущения на *-ㅂ다*: *춥다 → 추워요* (холодно), *맵다 → 매워요* (остро), *어렵다 → 어려워요* (трудно), *쉽다 → 쉬워요* (легко). Но *입다* (надевать) и *좁다* (узкий) — правильные: *입어요*, *좁아요*.",
+      "en": "*ㅂ* is the biggest group (*추워요, 매워요, 어려워요*), but *입다* and *좁다* are regular.",
+      "uz": "Eng katta guruh — *ㅂ*: *-ㅂ다* bilan tugaydigan deyarli barcha his-sezgi sifatlari: *춥다 → 추워요* (sovuq), *맵다 → 매워요* (achchiq), *어렵다 → 어려워요* (qiyin), *쉽다 → 쉬워요* (oson). Lekin *입다* (kiymoq) va *좁다* (tor) — qoidali: *입어요*, *좁아요*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "오늘 정말 *추워요*.",
+       "t": {
+        "ru": "Сегодня очень холодно.",
+        "uz": "Bugun juda sovuq.",
+        "en": "It's really cold today."
+       }
+      },
+      {
+       "s": "음악을 *들어요*.",
+       "t": {
+        "ru": "Я слушаю музыку.",
+        "uz": "Musiqa tinglayapman.",
+        "en": "I'm listening to music."
+       }
+      },
+      {
+       "s": "그 사람 이름을 *몰라요*.",
+       "t": {
+        "ru": "Я не знаю, как его зовут.",
+        "uz": "Uning ismini bilmayman.",
+        "en": "I don't know his name."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В словаре всегда стоит исходная форма (*덥다*), поэтому встретив *더워요*, ищи слово на *-ㅂ다*.",
+      "en": "Dictionaries list the base form, so for *더워요* look up a word in *-ㅂ다*.",
+      "uz": "Lug'atda doim boshlang'ich shakl turadi (*덥다*), shuning uchun *더워요* ni uchratsangiz, *-ㅂ다* bilan tugaydigan so'zni qidiring."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12128,6 +13462,112 @@
     "en": "Reason + request / suggestion → -(으)니까.",
     "uz": "Sabab + iltimos / taklif → -(으)니까."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "-(으)니까: потому что (с советом)",
+      "en": "-(으)니까: because (with advice)",
+      "uz": "-(으)니까: chunki (maslahat bilan)"
+     }
+    },
+    {
+     "p": {
+      "ru": "Ещё одно «потому что». Разница с *-아서 / -어서* — в том, что идёт _после_. Если дальше просьба, совет или предложение («поэтому давай…», «поэтому возьми…»), подходит _только_ *-(으)니까*: *비가 오니까 우산을 가져가세요* — Идёт дождь, возьмите зонт.",
+      "en": "Another “because”. Before a request, advice or suggestion, only *-(으)니까* works: *비가 오니까 우산을 가져가세요.*",
+      "uz": "Yana bir «chunki». *-아서 / -어서* dan farqi — _keyin_ nima kelishida. Agar keyin iltimos, maslahat yoki taklif kelsa («shuning uchun keling…», «shuning uchun oling…»), _faqat_ *-(으)니까* to'g'ri keladi: *비가 오니까 우산을 가져가세요* — Yomg'ir yog'yapti, soyabon oling."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "После причины",
+        "en": "After the reason",
+        "uz": "Sababdan keyin"
+       },
+       "-아서/어서",
+       "-(으)니까"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "факт, рассказ",
+         "en": "a statement",
+         "uz": "fakt, hikoya"
+        },
+        "✓",
+        "✓"
+       ],
+       [
+        {
+         "ru": "просьба, совет, «давай»",
+         "en": "request, advice, “let's”",
+         "uz": "iltimos, maslahat, «keling»"
+        },
+        "✗",
+        "✓"
+       ],
+       [
+        {
+         "ru": "прошедшее перед окончанием",
+         "en": "past before the ending",
+         "uz": "qo'shimcha oldidan o'tgan zamon"
+        },
+        "✗",
+        {
+         "ru": "✓ (-았/었으니까)",
+         "en": "✓ (-았/었으니까)",
+         "uz": "✓ (-았/었으니까)"
+        }
+       ],
+       [
+        {
+         "ru": "извинение, «спасибо»",
+         "en": "apology, thanks",
+         "uz": "kechirim, «rahmat»"
+        },
+        "✓",
+        "✗"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Ещё два отличия: перед *-(으)니까* _можно_ ставить прошедшее (*늦었으니까* — раз уж опоздали), и оно звучит как «раз уж так, то…» — немного настойчивее. А «извини, что…» говорят только через *-아서*: *늦어서 미안해요*.",
+      "en": "The past is allowed before *-(으)니까*, and it sounds like “since…, then”. Apologies still use *-아서*.",
+      "uz": "Yana ikki farq: *-(으)니까* oldidan o'tgan zamon qo'yish _mumkin_ (*늦었으니까* — kechikkanimiz uchun), va u «modomiki shunday ekan, …» degandek — biroz qat'iyroq eshitiladi. «… uchun kechirasiz» esa faqat *-아서* bilan aytiladi: *늦어서 미안해요*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "시간이 없*으니까* 빨리 가요.",
+       "t": {
+        "ru": "Времени нет — пойдём быстрее.",
+        "uz": "Vaqt yo'q, tezroq boraylik.",
+        "en": "There's no time, so let's hurry."
+       }
+      },
+      {
+       "s": "추우*니까* 따뜻하게 입으세요.",
+       "t": {
+        "ru": "Холодно, оденьтесь тепло.",
+        "uz": "Sovuq, issiq kiyining.",
+        "en": "It's cold, so dress warmly."
+       }
+      },
+      {
+       "s": "오늘은 피곤하*니까* 내일 만납시다.",
+       "t": {
+        "ru": "Сегодня я устал, давайте встретимся завтра.",
+        "uz": "Bugun charchadim, ertaga uchrashaylik.",
+        "en": "I'm tired today, so let's meet tomorrow."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12387,6 +13827,134 @@
     "en": "verb: ㄴ/는다고; adj.: 다고; command: (으)라고; suggestion: 자고.",
     "uz": "fe'l: ㄴ/는다고; sifat: 다고; buyruq: (으)라고; taklif: 자고."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Косвенная речь: -다고 해요",
+      "en": "Reported speech: -다고 해요",
+      "uz": "O'zlashtirma gap: -다고 해요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы передать чужие слова («он говорит, что…»), в корейском к сказанному добавляют *-다고* и глагол *하다* (говорить). Это ровно узбекское «… deb aytdi»: «Charchadim, _deb_ aytdi». *피곤하다고 했어요* — Сказал, что устал.",
+      "en": "To report what someone said, add *-다고* + *하다*: *피곤하다고 했어요* — He said he was tired.",
+      "uz": "Birovning so'zlarini yetkazish uchun («u … deyapti») koreys tilida aytilgan gapga *-다고* va *하다* (aytmoq) fe'li qo'shiladi. Bu aynan o'zbekcha «… deb aytdi»: «Charchadim, _deb_ aytdi». *피곤하다고 했어요*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что пересказываем",
+        "en": "What is reported",
+        "uz": "Nima yetkaziladi"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "утверждение: прилагательное",
+         "en": "statement: adjective",
+         "uz": "darak: sifat"
+        },
+        "-다고",
+        "바쁘다고 해요."
+       ],
+       [
+        {
+         "ru": "утверждение: глагол",
+         "en": "statement: verb",
+         "uz": "darak: fe'l"
+        },
+        "-ㄴ다고 / -는다고",
+        "간다고, 먹는다고"
+       ],
+       [
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        "-(이)라고",
+        "학생이라고 해요."
+       ],
+       [
+        {
+         "ru": "вопрос",
+         "en": "question",
+         "uz": "so'roq"
+        },
+        "-냐고",
+        "어디 가냐고 물어봤어요."
+       ],
+       [
+        {
+         "ru": "просьба / приказ",
+         "en": "request / command",
+         "uz": "iltimos / buyruq"
+        },
+        "-(으)라고",
+        "기다리라고 했어요."
+       ],
+       [
+        {
+         "ru": "предложение «давай»",
+         "en": "suggestion “let's”",
+         "uz": "taklif «keling»"
+        },
+        "-자고",
+        "같이 가자고 했어요."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Прошлое и будущее остаются внутри: *갔다고* (что ушёл), *갈 거라고* (что пойдёт). В разговоре *-다고 해요* часто сжимают до *-대요*: *바쁘대요* — Говорит, что занят. *온대요* — Говорят, придёт.",
+      "en": "Tense stays inside: *갔다고, 갈 거라고*. In speech *-다고 해요* shortens to *-대요*: *바쁘대요.*",
+      "uz": "O'tgan va kelasi zamon ichida qoladi: *갔다고* (ketdi deb), *갈 거라고* (boradi deb). So'zlashuvda *-다고 해요* ko'pincha *-대요* ga qisqaradi: *바쁘대요* — Band ekan. *온대요* — Kelarkan."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "민수 씨가 내일 *온다고 했어요*.",
+       "t": {
+        "ru": "Минсу сказал, что завтра придёт.",
+        "uz": "Minsu ertaga kelishini aytdi.",
+        "en": "Minsu said he'd come tomorrow."
+       }
+      },
+      {
+       "s": "선생님이 숙제를 *하라고 하셨어요*.",
+       "t": {
+        "ru": "Учитель велел сделать домашнее задание.",
+        "uz": "Ustoz uy vazifasini qilishni aytdilar.",
+        "en": "The teacher told us to do our homework."
+       }
+      },
+      {
+       "s": "내일 비가 *온대요*.",
+       "t": {
+        "ru": "Говорят, завтра будет дождь.",
+        "uz": "Ertaga yomg'ir yog'arkan.",
+        "en": "They say it'll rain tomorrow."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12649,6 +14217,116 @@
     "en": "adj. + (으)ㄴ; verb: 는 (present), (으)ㄴ (past), (으)ㄹ (future) + 것 같아요.",
     "uz": "sifat + (으)ㄴ; fe'l: 는 (hozirgi), (으)ㄴ (o'tgan), (으)ㄹ (kelasi) + 것 같아요."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Предположение: -(으)ㄹ 것 같아요",
+      "en": "Guessing: -(으)ㄹ 것 같아요",
+      "uz": "Taxmin: -(으)ㄹ 것 같아요"
+     }
+    },
+    {
+     "p": {
+      "ru": "*같다* значит «похожий». *… 것 같아요* — буквально «похоже на то, что…», то есть «кажется, наверное». Этим корейцы ещё и смягчают мнение: вместо резкого «это плохо» говорят «кажется, не очень». По-узбекски — «-ga o'xshaydi», «shekilli».",
+      "en": "*것 같아요* = “it seems that…”. Koreans also use it to soften opinions.",
+      "uz": "*같다* — «o'xshash» degani. *… 것 같아요* — so'zma-so'z «… ga o'xshaydi», ya'ni «shekilli, ehtimol». Koreyslar bu bilan fikrni yumshatadi ham: keskin «bu yomon» o'rniga «unchalik emas shekilli» deyishadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "О чём",
+        "en": "About",
+        "uz": "Nima haqida"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "сейчас (глагол)",
+         "en": "now (verb)",
+         "uz": "hozir (fe'l)"
+        },
+        "-는 것 같아요",
+        "비가 오는 것 같아요."
+       ],
+       [
+        {
+         "ru": "прошлое (глагол)",
+         "en": "past (verb)",
+         "uz": "o'tgan (fe'l)"
+        },
+        "-(으)ㄴ 것 같아요",
+        "벌써 간 것 같아요."
+       ],
+       [
+        {
+         "ru": "будущее / догадка",
+         "en": "future / guess",
+         "uz": "kelasi / taxmin"
+        },
+        "-(으)ㄹ 것 같아요",
+        "비가 올 것 같아요."
+       ],
+       [
+        {
+         "ru": "прилагательное",
+         "en": "adjective",
+         "uz": "sifat"
+        },
+        "-(으)ㄴ 것 같아요",
+        "좀 비싼 것 같아요."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Выбор формы — по тем же правилам, что и в теме «Определения» (*-는, -(으)ㄴ, -(으)ㄹ*). Разница между *오는 것 같아요* и *올 것 같아요*: первое — «кажется, идёт (вижу мокрые зонты)», второе — «кажется, пойдёт (небо тёмное)».",
+      "en": "Forms follow the modifier rules. *오는 것 같아요* = seems to be raining; *올 것 같아요* = looks like it will rain.",
+      "uz": "Shaklni tanlash «Aniqlovchilar» mavzusidagi qoidalar bo'yicha (*-는, -(으)ㄴ, -(으)ㄹ*). *오는 것 같아요* va *올 것 같아요* farqi: birinchisi — «yog'yapti shekilli (ho'l soyabonlarni ko'ryapman)», ikkinchisi — «yog'adiganga o'xshaydi (osmon qorong'i)»."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "민지 씨는 지금 *자는 것 같아요*.",
+       "t": {
+        "ru": "Минджи, кажется, сейчас спит.",
+        "uz": "Minji hozir uxlayotganga o'xshaydi.",
+        "en": "Minji seems to be asleep now."
+       }
+      },
+      {
+       "s": "이 옷은 저한테 좀 *작은 것 같아요*.",
+       "t": {
+        "ru": "Эта одежда, кажется, мне маловата.",
+        "uz": "Bu kiyim menga biroz kichik shekilli.",
+        "en": "These clothes seem a bit small for me."
+       }
+      },
+      {
+       "s": "오늘 늦게 *끝날 것 같아요*.",
+       "t": {
+        "ru": "Похоже, сегодня закончим поздно.",
+        "uz": "Bugun kech tugaydiganga o'xshaydi.",
+        "en": "It looks like we'll finish late today."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12913,6 +14591,113 @@
     "en": "adj. + 아/어지다 = become; verb + 게 되다 = come to.",
     "uz": "sifat + 아/어지다 = bo'lib qolmoq; fe'l + 게 되다 = bo'lib chiqdi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Становиться: -아/어지다 и -게 되다",
+      "en": "Becoming: -아/어지다 and -게 되다",
+      "uz": "Bo'lib qolmoq: -아/어지다 va -게 되다"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-아 / -어지다* добавляют к _прилагательному_, чтобы сказать «стать таким»: *춥다* (холодный) → *추워지다* (похолодать). *날씨가 추워졌어요* — Похолодало. По-узбекски — «-lashdi»: «sovib ketdi», «yaxshi_lashdi_».",
+      "en": "*-아 / -어지다* on an adjective = “become”: *추워지다* — get cold.",
+      "uz": "*-아 / -어지다* «shunday bo'lib qolmoq» deyish uchun _sifatga_ qo'shiladi: *춥다* (sovuq) → *추워지다* (sovib ketmoq). *날씨가 추워졌어요* — Havo sovidi. O'zbekcha — «-lashdi», «-ib ketdi»."
+     }
+    },
+    {
+     "p": {
+      "ru": "*-게 되다* добавляют к _глаголу_: «получилось так, что…», «в итоге пришлось». Это про изменения, которые случились не совсем по твоему плану: *한국에서 살게 됐어요* — Так вышло, что я стал жить в Корее. *알게 됐어요* — Я узнал (так получилось).",
+      "en": "*-게 되다* on a verb = “it came about that…”: *한국에서 살게 됐어요.*",
+      "uz": "*-게 되다* _fe'lga_ qo'shiladi: «shunday bo'lib chiqdiki…», «oxir-oqibat … ga to'g'ri keldi». Bu to'liq sizning rejangiz bo'yicha bo'lmagan o'zgarishlar haqida: *한국에서 살게 됐어요* — Koreyada yashaydigan bo'lib qoldim. *알게 됐어요* — Bilib qoldim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "К чему",
+        "en": "Attaches to",
+        "uz": "Nimaga"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "прилагательное",
+         "en": "adjective",
+         "uz": "sifat"
+        },
+        "-아/어지다",
+        {
+         "ru": "стать каким-то",
+         "en": "become (state)",
+         "uz": "… bo'lib qolmoq"
+        },
+        "예뻐졌어요."
+       ],
+       [
+        {
+         "ru": "глагол",
+         "en": "verb",
+         "uz": "fe'l"
+        },
+        "-게 되다",
+        {
+         "ru": "получилось так, что",
+         "en": "come to (do)",
+         "uz": "… adigan bo'lmoq"
+        },
+        "좋아하게 됐어요."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "한국어가 점점 *쉬워져요*.",
+       "t": {
+        "ru": "Корейский становится всё проще.",
+        "uz": "Koreys tili tobora osonlashyapti.",
+        "en": "Korean is getting easier and easier."
+       }
+      },
+      {
+       "s": "방이 *깨끗해졌어요*.",
+       "t": {
+        "ru": "Комната стала чистой.",
+        "uz": "Xona toza bo'ldi.",
+        "en": "The room got clean."
+       }
+      },
+      {
+       "s": "회사 때문에 부산으로 *이사하게 됐어요*.",
+       "t": {
+        "ru": "Из-за работы пришлось переехать в Пусан.",
+        "uz": "Ish tufayli Pusanga ko'chib o'tadigan bo'ldim.",
+        "en": "Because of work, I ended up moving to Busan."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -13173,6 +14958,116 @@
     "en": "-는 것 = process; -(으)ㄴ 것 / -(으)ㄹ 것; -기 + 좋다/싫다; 게 = 것이.",
     "uz": "-는 것 = jarayon; -(으)ㄴ 것 / -(으)ㄹ 것; -기 + 좋다/싫다; 게 = 것이."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глагол как существительное: -는 것, -기",
+      "en": "Verbs as nouns: -는 것, -기",
+      "uz": "Fe'lni otga aylantirish: -는 것, -기"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы глагол стал существительным («чтение», «то, что я читаю»), есть два способа. *-는 것* — «то, что…»: *책을 읽는 것을 좋아해요* — Я люблю читать (то, что читаю). Это узбекское «-ish»: «kitob o'qi_sh_ni yaxshi ko'raman».",
+      "en": "Two ways to turn a verb into a noun. *-는 것* = “the act of …”: *책을 읽는 것을 좋아해요.*",
+      "uz": "Fe'lni otga aylantirish («o'qish», «o'qiganim») uchun ikki usul bor. *-는 것* — «… ish, … gan narsa»: *책을 읽는 것을 좋아해요* — Kitob o'qishni yaxshi ko'raman. Bu o'zbekcha «-ish»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Где",
+        "en": "Where",
+        "uz": "Qayerda"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-는 것",
+        {
+         "ru": "общий способ, любое место во фразе",
+         "en": "general, any position",
+         "uz": "umumiy usul, istalgan joy"
+        },
+        "요리하는 것이 재미있어요."
+       ],
+       [
+        "-기",
+        {
+         "ru": "с 좋다, 싫다, 쉽다, 어렵다, 시작하다",
+         "en": "with 좋다, 싫다, 쉽다, 어렵다, 시작하다",
+         "uz": "좋다, 싫다, 쉽다, 어렵다, 시작하다 bilan"
+        },
+        "읽기 쉬워요."
+       ],
+       [
+        "-기",
+        {
+         "ru": "в списках, заголовках",
+         "en": "in lists, headings",
+         "uz": "ro'yxatlarda, sarlavhalarda"
+        },
+        "말하기, 듣기, 쓰기"
+       ],
+       [
+        "-(으)ㄴ 것 / -(으)ㄹ 것",
+        {
+         "ru": "прошлое / будущее",
+         "en": "past / future",
+         "uz": "o'tgan / kelasi"
+        },
+        "어제 산 것, 먹을 것"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "В разговоре *것이* сжимается в *게*, а *것을* — в *걸*: *이게 뭐예요?* *먹는 걸 좋아해요*. Поэтому *게* так часто слышно в речи — это просто «вещь, то, что».",
+      "en": "In speech *것이 → 게*, *것을 → 걸*.",
+      "uz": "So'zlashuvda *것이* *게* ga, *것을* esa *걸* ga qisqaradi: *이게 뭐예요?* *먹는 걸 좋아해요*. Shuning uchun nutqda *게* juda ko'p eshitiladi — bu shunchaki «narsa»."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "제 취미는 사진을 *찍는 것*이에요.",
+       "t": {
+        "ru": "Моё хобби — фотографировать.",
+        "uz": "Mening xobbim — suratga olish.",
+        "en": "My hobby is taking photos."
+       }
+      },
+      {
+       "s": "이 글씨는 *읽기* 어려워요.",
+       "t": {
+        "ru": "Этот почерк трудно читать.",
+        "uz": "Bu yozuvni o'qish qiyin.",
+        "en": "This handwriting is hard to read."
+       }
+      },
+      {
+       "s": "어제 *들은 것*을 다 잊어버렸어요.",
+       "t": {
+        "ru": "Я забыл всё, что слышал вчера.",
+        "uz": "Kecha eshitganlarimning hammasini unutib qo'ydim.",
+        "en": "I forgot everything I heard yesterday."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -13435,6 +15330,114 @@
     "en": "vowel + 려고, consonant + 으려고; -(으)려고 하다 = intend; -(으)려고 했는데 = I was going to but…",
     "uz": "unli + 려고, undosh + 으려고; -(으)려고 하다 = niyat; -(으)려고 했는데 = …moqchi edim, lekin…"
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Намерение: -(으)려고",
+      "en": "Intention: -(으)려고",
+      "uz": "Niyat: -(으)려고"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-(으)려고* [-(ы)рёго] значит «чтобы, с намерением». В отличие от *-(으)러*, оно работает с _любым_ глаголом: *살을 빼려고 운동해요* — Занимаюсь спортом, чтобы похудеть. По-узбекски — «-ish uchun», «-moqchi bo'lib».",
+      "en": "*-(으)려고* = “in order to”, with any verb: *살을 빼려고 운동해요.*",
+      "uz": "*-(으)려고* [-(i)ryogo] — «… ish uchun, … moqchi bo'lib» degani. *-(으)러* dan farqli o'laroq, u _har qanday_ fe'l bilan ishlaydi: *살을 빼려고 운동해요* — Ozish uchun sport bilan shug'ullanaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-(으)려고",
+        {
+         "ru": "чтобы",
+         "en": "in order to",
+         "uz": "… ish uchun"
+        },
+        "사려고 돈을 모아요."
+       ],
+       [
+        "-(으)려고 해요",
+        {
+         "ru": "собираюсь",
+         "en": "I plan to",
+         "uz": "… moqchiman"
+        },
+        "내년에 유학 가려고 해요."
+       ],
+       [
+        "-(으)려고 했는데",
+        {
+         "ru": "собирался, но…",
+         "en": "I meant to, but…",
+         "uz": "… moqchi edim, lekin…"
+        },
+        "전화하려고 했는데 잊어버렸어요."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*-(으)려고 해요* — мягкое «собираюсь», чуть менее уверенное, чем *-(으)ㄹ 거예요*. А *-(으)려고 했는데* — очень частая фраза-оправдание: «хотел…, но не вышло».",
+      "en": "*-(으)려고 해요* is a softer “I'm planning to”. *-(으)려고 했는데* = “I was going to, but…”.",
+      "uz": "*-(으)려고 해요* — yumshoq «… moqchiman», *-(으)ㄹ 거예요* dan biroz kamroq ishonchli. *-(으)려고 했는데* esa — juda ko'p ishlatiladigan bahona-ibora: «… moqchi edim, lekin bo'lmadi»."
+     }
+    },
+    {
+     "note": {
+      "ru": "Ограничение: после *-(으)려고* нельзя ставить просьбу или «давай». Для этого — *-(으)러* (с движением) или *-기 위해서*.",
+      "en": "No commands or suggestions after *-(으)려고*.",
+      "uz": "Cheklov: *-(으)려고* dan keyin iltimos yoki «keling» qo'yib bo'lmaydi. Buning uchun — *-(으)러* (harakat bilan) yoki *-기 위해서*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "한국 회사에서 일하*려고* 한국어를 배워요.",
+       "t": {
+        "ru": "Я учу корейский, чтобы работать в корейской компании.",
+        "uz": "Koreys kompaniyasida ishlash uchun koreys tilini o'rganyapman.",
+        "en": "I'm learning Korean to work at a Korean company."
+       }
+      },
+      {
+       "s": "이번 주말에 집에서 쉬*려고 해요*.",
+       "t": {
+        "ru": "На этих выходных собираюсь отдохнуть дома.",
+        "uz": "Bu dam olish kunlari uyda dam olmoqchiman.",
+        "en": "I'm planning to rest at home this weekend."
+       }
+      },
+      {
+       "s": "일찍 자*려고 했는데* 못 잤어요.",
+       "t": {
+        "ru": "Хотел лечь рано, но не получилось.",
+        "uz": "Erta yotmoqchi edim, lekin uxlay olmadim.",
+        "en": "I meant to go to bed early, but I couldn't."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -13696,6 +15699,157 @@
     "en": "drop 요: 먹어, 가, 해; 이야 / 야; -자; -지 마; 나, 너.",
     "uz": "요 ni tashlang: 먹어, 가, 해; 이야 / 야; -자; -지 마; 나, 너."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Разговорный стиль: 반말",
+      "en": "Casual speech: 반말",
+      "uz": "Norasmiy uslub: 반말"
+     }
+    },
+    {
+     "p": {
+      "ru": "*반말* [панмаль] — «полуречь», стиль для близких друзей, младших и детей. Это корейское «ты»: как в узбекском «sen» вместо «siz». Со старшими и незнакомыми его _не используют_ — это прозвучит грубо.",
+      "en": "*반말* is casual speech for close friends, younger people and children — like switching from formal to informal “you”. Never with elders or strangers.",
+      "uz": "*반말* [panmal] — «yarim nutq», yaqin do'stlar, kichiklar va bolalar uchun uslub. Bu koreyscha «sen»: o'zbek tilidagi «siz» o'rniga «sen» kabi. Kattalar va notanishlar bilan _ishlatilmaydi_ — qo'pol eshitiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Главное правило очень простое: убери *요* в конце. *먹어요 → 먹어*, *가요 → 가*, *했어요 → 했어*. Почти всё остальное остаётся как было.",
+      "en": "The main rule: drop the final *요*: *먹어요 → 먹어*, *가요 → 가*.",
+      "uz": "Asosiy qoida juda oddiy: oxiridagi *요* ni olib tashlang. *먹어요 → 먹어*, *가요 → 가*, *했어요 → 했어*. Qolgan deyarli hamma narsa o'zgarmaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Вежливо",
+        "en": "Polite",
+        "uz": "Muloyim"
+       },
+       {
+        "ru": "반말",
+        "en": "반말",
+        "uz": "반말"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       }
+      ],
+      "rows": [
+       [
+        "먹어요",
+        "먹어",
+        {
+         "ru": "ем / ешь",
+         "en": "eat",
+         "uz": "yeyman / ye"
+        }
+       ],
+       [
+        "학생이에요",
+        "학생이야",
+        {
+         "ru": "студент",
+         "en": "is a student",
+         "uz": "talaba"
+        }
+       ],
+       [
+        "친구예요",
+        "친구야",
+        {
+         "ru": "друг",
+         "en": "is a friend",
+         "uz": "do'st"
+        }
+       ],
+       [
+        "갑시다",
+        "가자",
+        {
+         "ru": "пойдём",
+         "en": "let's go",
+         "uz": "ketdik"
+        }
+       ],
+       [
+        "가지 마세요",
+        "가지 마",
+        {
+         "ru": "не уходи",
+         "en": "don't go",
+         "uz": "ketma"
+        }
+       ],
+       [
+        "저, 제",
+        "나, 내",
+        {
+         "ru": "я, мой",
+         "en": "I, my",
+         "uz": "men, mening"
+        }
+       ],
+       [
+        "네 / 아니요",
+        "응 / 아니",
+        {
+         "ru": "да / нет",
+         "en": "yes / no",
+         "uz": "ha / yo'q"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Местоимение «ты» — *너* [но], «твой» — *네* (в речи часто *니*, чтобы не путать с «да»). Обращаясь к другу по имени, добавляют *-아* (после согласной) или *-야* (после гласной): *민수야!*, *지현아!*",
+      "en": "“You” = *너*, “your” = *네* (often said *니*). Calling a friend: name + *아 / 야*: *민수야!*",
+      "uz": "«Sen» olmoshi — *너* [no], «sening» — *네* (nutqda «ha» bilan adashtirmaslik uchun ko'pincha *니*). Do'stga ismi bilan murojaat qilganda *-아* (undoshdan keyin) yoki *-야* (unlidan keyin) qo'shiladi: *민수야!*, *지현아!*"
+     }
+    },
+    {
+     "note": {
+      "ru": "Переходить на 반말 обычно предлагает старший: *말 놓으세요* — «давай на ты». Самому начинать первым невежливо.",
+      "en": "Usually the older person suggests switching: *말 놓으세요.*",
+      "uz": "반말 ga o'tishni odatda katta kishi taklif qiladi: *말 놓으세요* — «sen deb gaplasha qol». O'zingiz birinchi boshlash odobsizlik."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "뭐 *해*? — 그냥 집에 *있어*.",
+       "t": {
+        "ru": "Что делаешь? — Просто сижу дома.",
+        "uz": "Nima qilyapsan? — Shunchaki uydaman.",
+        "en": "What are you doing? — Just at home."
+       }
+      },
+      {
+       "s": "내일 같이 영화 *보자*!",
+       "t": {
+        "ru": "Давай завтра сходим в кино!",
+        "uz": "Ertaga birga kino ko'raylik!",
+        "en": "Let's watch a film together tomorrow!"
+       }
+      },
+      {
+       "s": "*너* 배고파? — *응*, 조금.",
+       "t": {
+        "ru": "Ты голоден? — Ага, немного.",
+        "uz": "Qorning ochmi? — Ha, biroz.",
+        "en": "Are you hungry? — Yeah, a bit."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -13957,6 +16111,107 @@
     "en": "One person, two actions at once → -(으)면서; tense at the end.",
     "uz": "Bir odam, bir vaqtda ikki harakat → -(으)면서; zamon oxirida."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Одновременно: -(으)면서",
+      "en": "At the same time: -(으)면서",
+      "uz": "Bir vaqtda: -(으)면서"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-(으)면서* [-(ы)мёнсо] — «делая одно, одновременно делаю другое». *음악을 들으면서 공부해요* — Учусь, слушая музыку. Это узбекское деепричастие: «musiqa tingla_b_ o'qiyman», «tinglay-tinglay».",
+      "en": "*-(으)면서* = “while doing”: *음악을 들으면서 공부해요* — I study while listening to music.",
+      "uz": "*-(으)면서* [-(i)myonso] — «birini qilib, bir vaqtda boshqasini qilaman». *음악을 들으면서 공부해요* — Musiqa tinglab o'qiyman. Bu o'zbekcha ravishdosh: «tinglab», «tinglay-tinglay»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "гласная / ㄹ",
+         "en": "vowel / ㄹ",
+         "uz": "unli / ㄹ"
+        },
+        "-면서",
+        "보면서, 살면서"
+       ],
+       [
+        {
+         "ru": "согласная",
+         "en": "consonant",
+         "uz": "undosh"
+        },
+        "-으면서",
+        "먹으면서"
+       ],
+       [
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        "-(이)면서",
+        "학생이면서"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Два строгих правила. Первое: оба действия делает _один и тот же_ человек. Второе: время ставят только в конце — *TV를 보면서 밥을 먹었어요* (ел, смотря телевизор), а не «봤으면서». У *-(으)면서* есть и второй смысл — «хотя, при этом»: *알면서 왜 물어봐요?* — Знаешь же, зачем спрашиваешь?",
+      "en": "Same subject for both actions; tense only at the end. Also “even though”: *알면서 왜 물어봐요?*",
+      "uz": "Ikkita qat'iy qoida bor. Birinchisi: ikkala harakatni _bir xil_ odam qiladi. Ikkinchisi: zamon faqat oxirida qo'yiladi — «봤으면서» emas, *TV를 보면서 밥을 먹었어요* (televizor ko'rib ovqatlandim). *-(으)면서* ning ikkinchi ma'nosi ham bor — «… gani holda»: *알면서 왜 물어봐요?* — Bilib turib, nega so'rayapsan?"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "운전하*면서* 전화하면 안 돼요.",
+       "t": {
+        "ru": "Нельзя говорить по телефону за рулём.",
+        "uz": "Mashina haydab telefonda gaplashish mumkin emas.",
+        "en": "You mustn't phone while driving."
+       }
+      },
+      {
+       "s": "그는 웃*으면서* 인사했어요.",
+       "t": {
+        "ru": "Он поздоровался, улыбаясь.",
+        "uz": "U jilmayib salom berdi.",
+        "en": "He said hello with a smile."
+       }
+      },
+      {
+       "s": "일하*면서* 대학원에 다녀요.",
+       "t": {
+        "ru": "Я учусь в магистратуре и одновременно работаю.",
+        "uz": "Ishlab, magistraturada o'qiyman.",
+        "en": "I go to grad school while working."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14216,6 +16471,116 @@
     "en": "Verb → -기 때문에, noun → 때문에; for requests use -(으)니까.",
     "uz": "Fe'l → -기 때문에, ot → 때문에; iltimos uchun -(으)니까."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "-기 때문에: потому что (твёрдо)",
+      "en": "-기 때문에: because (firmly)",
+      "uz": "-기 때문에: chunki (qat'iy)"
+     }
+    },
+    {
+     "p": {
+      "ru": "*때문* [ттэмун] — «причина». *-기 때문에* — самое «логичное», чёткое «потому что»: так пишут в эссе, говорят в новостях и объясняют серьёзные причины. *비가 왔기 때문에 경기가 취소됐어요* — Из-за дождя матч отменили.",
+      "en": "*-기 때문에* is the clearest, most formal “because” — used in writing, news, serious explanations.",
+      "uz": "*때문* [ttemun] — «sabab». *-기 때문에* — eng «mantiqiy», aniq «chunki»: inshoda shunday yoziladi, yangiliklarda shunday gapiriladi va jiddiy sabablar shunday tushuntiriladi. *비가 왔기 때문에 경기가 취소됐어요* — Yomg'ir yoqqani uchun o'yin bekor qilindi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что",
+        "en": "What",
+        "uz": "Nima"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "глагол / прилагательное",
+         "en": "verb / adjective",
+         "uz": "fe'l / sifat"
+        },
+        "-기 때문에",
+        "바쁘기 때문에"
+       ],
+       [
+        {
+         "ru": "прошлое",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "-았/었기 때문에",
+        "늦었기 때문에"
+       ],
+       [
+        {
+         "ru": "существительное: «из-за»",
+         "en": "noun: “because of”",
+         "uz": "ot: «… tufayli»"
+        },
+        "N 때문에",
+        "비 때문에"
+       ],
+       [
+        {
+         "ru": "существительное: «потому что это»",
+         "en": "noun: “because it is”",
+         "uz": "ot: «… bo'lgani uchun»"
+        },
+        "N(이)기 때문에",
+        "학생이기 때문에"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Сравни три «потому что»: *-아서* — нейтрально, в речи; *-(으)니까* — перед советом и просьбой; *-기 때문에* — подчёркнуто, логично, письменно. Как и *-아서*, оно _не идёт_ перед просьбой или «давай». Обрати внимание: *N 때문에* часто звучит как жалоба — *너 때문에!* — Из-за тебя!",
+      "en": "Three “becauses”: *-아서* (neutral), *-(으)니까* (before advice), *-기 때문에* (emphatic, written). No commands after *-기 때문에*.",
+      "uz": "Uch xil «chunki» ni solishtiring: *-아서* — betaraf, nutqda; *-(으)니까* — maslahat va iltimos oldidan; *-기 때문에* — ta'kidli, mantiqiy, yozma. *-아서* kabi, u ham iltimos yoki «keling» oldidan _kelmaydi_. E'tibor bering: *N 때문에* ko'pincha shikoyatdek eshitiladi — *너 때문에!* — Sen tufayli!"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "시험이 있*기 때문에* 오늘은 못 놀아요.",
+       "t": {
+        "ru": "У меня экзамен, поэтому сегодня я не могу гулять.",
+        "uz": "Imtihonim borligi uchun bugun o'ynay olmayman.",
+        "en": "I have an exam, so I can't hang out today."
+       }
+      },
+      {
+       "s": "교통사고 *때문에* 길이 막혀요.",
+       "t": {
+        "ru": "Из-за аварии пробка.",
+        "uz": "Avariya tufayli yo'l tirband.",
+        "en": "The road is jammed because of an accident."
+       }
+      },
+      {
+       "s": "그 사람은 정직하*기 때문에* 믿을 수 있어요.",
+       "t": {
+        "ru": "Ему можно доверять, потому что он честный.",
+        "uz": "U halol bo'lgani uchun unga ishonsa bo'ladi.",
+        "en": "He's honest, so you can trust him."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14478,6 +16843,106 @@
     "en": "A lasting result → -아/어 있다; an ongoing action → -고 있다.",
     "uz": "Natija saqlanmoqda → -아/어 있다; harakat davom etmoqda → -고 있다."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Состояние: -아/어 있다",
+      "en": "Resulting state: -아/어 있다",
+      "uz": "Natija holati: -아/어 있다"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-아 / -어 있다* описывает состояние, которое _осталось_ после действия: дверь открыли — и она _открыта_. *문이 열려 있어요* — Дверь открыта. *앉아 있어요* — Сидит (сел и сидит). По-узбекски — «-ib turibdi»: «eshik ochi_lib turibdi_», «o'tir_ib_ turibdi».",
+      "en": "*-아 / -어 있다* describes a state left by an action: *문이 열려 있어요* — the door is open.",
+      "uz": "*-아 / -어 있다* harakatdan keyin _qolgan_ holatni tasvirlaydi: eshikni ochishdi — va u _ochiq turibdi_. *문이 열려 있어요* — Eshik ochiq turibdi. *앉아 있어요* — O'tirib turibdi. O'zbekcha — «-ib turibdi»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Что значит",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-고 있다",
+        {
+         "ru": "действие идёт",
+         "en": "action in progress",
+         "uz": "harakat davom etyapti"
+        },
+        {
+         "ru": "옷을 입고 있어요 — одевается / носит",
+         "en": "옷을 입고 있어요 — is putting on / wearing",
+         "uz": "옷을 입고 있어요 — kiyinyapti / kiyib yuribdi"
+        }
+       ],
+       [
+        "-아/어 있다",
+        {
+         "ru": "результат держится",
+         "en": "result remains",
+         "uz": "natija saqlanyapti"
+        },
+        {
+         "ru": "의자에 앉아 있어요 — сидит на стуле",
+         "en": "의자에 앉아 있어요 — is sitting on a chair",
+         "uz": "의자에 앉아 있어요 — stulda o'tiribdi"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Чаще всего это окончание идёт с глаголами, которые «сами случаются» (без дополнения): *열리다* (открываться), *닫히다* (закрываться), *켜지다* (включаться), *앉다, 서다, 눕다* (сесть, встать, лечь), *가다, 오다*. С глаголом, у которого есть дополнение (*을 / 를*), его _не используют_.",
+      "en": "Used with intransitive verbs (*열리다, 닫히다, 켜지다, 앉다, 서다, 눕다, 가다, 오다*), not with verbs taking *을 / 를*.",
+      "uz": "Bu qo'shimcha ko'pincha «o'zi sodir bo'ladigan» (to'ldiruvchisiz) fe'llar bilan keladi: *열리다* (ochilmoq), *닫히다* (yopilmoq), *켜지다* (yoqilmoq), *앉다, 서다, 눕다* (o'tirmoq, turmoq, yotmoq), *가다, 오다*. To'ldiruvchili (*을 / 를*) fe'l bilan _ishlatilmaydi_."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "불이 *켜져 있어요*.",
+       "t": {
+        "ru": "Свет включён.",
+        "uz": "Chiroq yoniq turibdi.",
+        "en": "The light is on."
+       }
+      },
+      {
+       "s": "아이가 소파에 *누워 있어요*.",
+       "t": {
+        "ru": "Ребёнок лежит на диване.",
+        "uz": "Bola divanda yotibdi.",
+        "en": "The child is lying on the sofa."
+       }
+      },
+      {
+       "s": "책상 위에 편지가 *놓여 있어요*.",
+       "t": {
+        "ru": "На столе лежит письмо.",
+        "uz": "Stol ustida xat turibdi.",
+        "en": "There's a letter on the desk."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14739,6 +17204,105 @@
     "en": "Along the way or switching → -다가; did and undid → -았/었다가.",
     "uz": "Yo'l-yo'lakay yoki o'tish → -다가; qilib bekor qildi → -았/었다가."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "-다가: начал одно — переключился",
+      "en": "-다가: switching mid-action",
+      "uz": "-다가: birini boshlab, boshqasiga o'tmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*-다가* [-тага] показывает, что первое действие _прервалось_ или по ходу него что-то случилось. *학교에 가다가 친구를 만났어요* — По дороге в школу встретил друга (шёл — и встретил). По-узбекски — «-ayotib», «-ib turib»: «maktabga keta_yotib_».",
+      "en": "*-다가* = an action is interrupted, or something happens partway: *학교에 가다가 친구를 만났어요.*",
+      "uz": "*-다가* [-taga] birinchi harakat _uzilganini_ yoki uning davomida nimadir sodir bo'lganini ko'rsatadi. *학교에 가다가 친구를 만났어요* — Maktabga ketayotib do'stimni uchratdim. O'zbekcha — «-ayotib», «-ib turib»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-다가",
+        {
+         "ru": "по ходу, прервал и переключился",
+         "en": "while / switched midway",
+         "uz": "… ayotib, to'xtatib"
+        },
+        "공부하다가 잤어요."
+       ],
+       [
+        "-았/었다가",
+        {
+         "ru": "сделал полностью — и отменил / вернул",
+         "en": "did it fully, then reversed",
+         "uz": "to'liq qilib, keyin qaytardi"
+        },
+        "창문을 열었다가 닫았어요."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Разница с *-았 / -었다가* тонкая, но важная. *가다가 돌아왔어요* — «шёл и с полпути вернулся». *갔다가 돌아왔어요* — «сходил (дошёл) и вернулся». Первое — процесс прервали, второе — действие завершили и потом откатили.",
+      "en": "*가다가 돌아왔어요* = turned back halfway; *갔다가 돌아왔어요* = went there and came back.",
+      "uz": "*-았 / -었다가* bilan farq nozik, lekin muhim. *가다가 돌아왔어요* — «ketayotib yarim yo'ldan qaytdim». *갔다가 돌아왔어요* — «borib keldim». Birinchisida jarayon uzildi, ikkinchisida harakat tugadi va keyin ortga qaytdi."
+     }
+    },
+    {
+     "note": {
+      "ru": "Оба действия у одного человека. Частая предупреждающая форма: *-다가 -(으)ㄹ 수 있어요* — «так можно и…»: *그렇게 뛰다가 넘어질 수 있어요* — Так бегая, можно упасть.",
+      "en": "Same subject. Warning pattern: *뛰다가 넘어질 수 있어요* — Running like that, you could fall.",
+      "uz": "Ikkala harakat bir odamniki. Ko'p uchraydigan ogohlantirish shakli: *-다가 -(으)ㄹ 수 있어요* — «shunday qilib … ib qolishing mumkin»: *그렇게 뛰다가 넘어질 수 있어요* — Shunday yugurib yiqilib tushishing mumkin."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "영화를 보*다가* 잠이 들었어요.",
+       "t": {
+        "ru": "Я заснул во время фильма.",
+        "uz": "Film ko'rayotib uxlab qoldim.",
+        "en": "I fell asleep while watching the film."
+       }
+      },
+      {
+       "s": "집에 가*다가* 마트에 들렀어요.",
+       "t": {
+        "ru": "По пути домой я заглянул в магазин.",
+        "uz": "Uyga ketayotib do'konga kirib o'tdim.",
+        "en": "On my way home I dropped into the shop."
+       }
+      },
+      {
+       "s": "옷을 샀*다가* 다시 환불했어요.",
+       "t": {
+        "ru": "Купил одежду, а потом вернул.",
+        "uz": "Kiyim sotib oldim-u, keyin qaytarib berdim.",
+        "en": "I bought the clothes and then returned them."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

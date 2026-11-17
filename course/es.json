@@ -13034,7 +13034,11 @@
         "Sigue lloviendo."
        ],
        [
-        "llevar + время + gerundio",
+        {
+         "ru": "llevar + время + gerundio",
+         "en": "llevar + time + gerundio",
+         "uz": "llevar + vaqt + gerundio"
+        },
         {
          "ru": "уже (сколько времени)",
          "en": "have been … for",
@@ -14110,6 +14114,137 @@
     "en": "Past/conditional + que → the -ra form.",
     "uz": "O'tgan/condicional + que → -ra shakli."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Imperfecto de subjuntivo: hablara",
+      "en": "Imperfect subjunctive: hablara",
+      "uz": "O'tgan subjuntivo: hablara"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это прошедшая форма subjuntivo. Она нужна, когда главная часть стоит в прошедшем или в condicional и требует subjuntivo: *Quería que vinieras* — Я хотел, чтобы ты пришёл. А ещё — в воображаемых условиях с *si*: *Si tuviera dinero…* — Если бы у меня были деньги…",
+      "en": "The past subjunctive is used when the main clause is past or conditional and needs a subjunctive (*Quería que vinieras*), and in imaginary *si* clauses (*Si tuviera dinero…*).",
+      "uz": "Bu subjuntivo ning o'tgan shakli. U bosh qism o'tgan zamonda yoki condicional da turib, subjuntivo talab qilganda kerak: *Quería que vinieras* — Kelishingni xohlagan edim. Shuningdek *si* li xayoliy shartlarda: *Si tuviera dinero…* — Pulim bo'lganida…"
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём форму «они» в pretérito indefinido, убираем *-ron* и добавляем *-ra, -ras, -ra, -ramos, -rais, -ran*. *Hablaron → hablara*, *tuvieron → tuviera*, *fueron → fuera*. Все неправильности indefinido сохраняются автоматически!",
+      "en": "Take the *ellos* preterite, drop *-ron*, add *-ra, -ras, -ra, -ramos, -rais, -ran*: *hablara, tuviera, fuera*. All preterite irregularities carry over.",
+      "uz": "Pretérito indefinido dagi «ular» shaklini olib, *-ron* ni olib tashlab, *-ra, -ras, -ra, -ramos, -rais, -ran* qo'shamiz. *Hablaron → hablara*, *tuvieron → tuviera*, *fueron → fuera*. Indefinido ning barcha noto'g'riliklari avtomatik saqlanadi!"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Indefinido (ellos)",
+        "en": "Preterite (ellos)",
+        "uz": "Indefinido (ular)"
+       },
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "yo",
+        "en": "yo",
+        "uz": "yo"
+       },
+       {
+        "ru": "nosotros",
+        "en": "nosotros",
+        "uz": "nosotros"
+       }
+      ],
+      "rows": [
+       [
+        "hablaron",
+        "habla-",
+        "hablara",
+        "habláramos"
+       ],
+       [
+        "comieron",
+        "comie-",
+        "comiera",
+        "comiéramos"
+       ],
+       [
+        "tuvieron",
+        "tuvie-",
+        "tuviera",
+        "tuviéramos"
+       ],
+       [
+        "fueron",
+        "fue-",
+        "fuera",
+        "fuéramos"
+       ],
+       [
+        "hicieron",
+        "hicie-",
+        "hiciera",
+        "hiciéramos"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mi madre quería que *estudiara* medicina.",
+       "t": {
+        "ru": "Мама хотела, чтобы я учился на врача.",
+        "uz": "Onam tibbiyotni o'qishimni xohlagan edi.",
+        "en": "My mother wanted me to study medicine."
+       }
+      },
+      {
+       "s": "Me pidió que le *ayudara*.",
+       "t": {
+        "ru": "Он попросил меня помочь ему.",
+        "uz": "U mendan yordam berishimni so'radi.",
+        "en": "He asked me to help him."
+       }
+      },
+      {
+       "s": "Ojalá *tuviera* más tiempo.",
+       "t": {
+        "ru": "Если бы у меня было больше времени.",
+        "uz": "Qani endi vaqtim ko'proq bo'lsa.",
+        "en": "I wish I had more time."
+       }
+      },
+      {
+       "s": "Habla como si lo *supiera* todo.",
+       "t": {
+        "ru": "Он говорит так, будто всё знает.",
+        "uz": "U hamma narsani biladigandek gapiradi.",
+        "en": "He talks as if he knew everything."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Есть вторая форма на *-se* (*hablase, tuviese*) — значит то же самое, чаще встречается в Испании и в книгах.",
+      "en": "There's an equivalent *-se* form (*hablase, tuviese*), more common in Spain and in books.",
+      "uz": "*-se* bilan ikkinchi shakli ham bor (*hablase, tuviese*) — ma'nosi bir xil, Ispaniyada va kitoblarda ko'proq uchraydi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14371,6 +14506,122 @@
     "en": "Real → present; imaginary → -ra/-ría; too late → hubiera/habría.",
     "uz": "Real → presente; xayoliy → -ra/-ría; kech → hubiera/habría."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Условные предложения: si…",
+      "en": "Conditional sentences: si…",
+      "uz": "Shart gaplar: si…"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском, как и во французском, после *si* («если») есть строгие правила. Тип предложения зависит от того, насколько реально условие.",
+      "en": "As in French, *si* clauses follow strict patterns depending on how real the condition is.",
+      "uz": "Ispan tilida ham, fransuz tilidagidek, *si* («agar») dan keyin qat'iy qoidalar bor. Gap turi shart qanchalik real ekaniga bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "После si",
+        "en": "After si",
+        "uz": "si dan keyin"
+       },
+       {
+        "ru": "Результат",
+        "en": "Result",
+        "uz": "Natija"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "реальное",
+         "en": "real",
+         "uz": "real"
+        },
+        "presente",
+        "futuro / presente",
+        "Si llueve, me quedo en casa."
+       ],
+       [
+        {
+         "ru": "воображаемое сейчас",
+         "en": "imaginary now",
+         "uz": "hozirgi xayoliy"
+        },
+        "imperfecto de subjuntivo",
+        "condicional",
+        "Si tuviera dinero, viajaría."
+       ],
+       [
+        {
+         "ru": "невозможное в прошлом",
+         "en": "impossible past",
+         "uz": "o'tmishda imkonsiz"
+        },
+        "pluscuamperfecto de subjuntivo",
+        "condicional compuesto",
+        "Si hubiera estudiado, habría aprobado."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Третий тип — сожаления о прошлом. *Hubiera* — это subjuntivo от *haber*: *si hubiera sabido* — если бы я знал. А результат: *habría venido* — я бы пришёл.",
+      "en": "Type 3 is for regrets: *Si hubiera sabido, habría venido.*",
+      "uz": "Uchinchi tur — o'tmish haqidagi afsuslar. *Hubiera* — *haber* ning subjuntivo shakli: *si hubiera sabido* — bilganimda. Natija: *habría venido* — kelgan bo'lardim."
+     }
+    },
+    {
+     "note": {
+      "ru": "Главное правило: после *si* никогда не ставят futuro, condicional и presente de subjuntivo. «Si tendré» и «si tendría» — ошибки.",
+      "en": "Key rule: never use the future, conditional or present subjunctive right after *si*.",
+      "uz": "Asosiy qoida: *si* dan keyin hech qachon futuro, condicional va presente de subjuntivo qo'yilmaydi. «Si tendré» va «si tendría» — xato."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Si* me *llamas*, te *contaré* todo.",
+       "t": {
+        "ru": "Если позвонишь, я всё тебе расскажу.",
+        "uz": "Qo'ng'iroq qilsang, hammasini aytib beraman.",
+        "en": "If you call me, I'll tell you everything."
+       }
+      },
+      {
+       "s": "*Si* *viviera* en la playa, *nadaría* cada día.",
+       "t": {
+        "ru": "Если бы я жил у моря, я бы плавал каждый день.",
+        "uz": "Dengiz bo'yida yashaganimda, har kuni suzardim.",
+        "en": "If I lived by the beach, I'd swim every day."
+       }
+      },
+      {
+       "s": "*Si* *hubieras venido*, te *habrías divertido*.",
+       "t": {
+        "ru": "Если бы ты пришёл, тебе было бы весело.",
+        "uz": "Kelganingda, maza qilarding.",
+        "en": "If you had come, you'd have had fun."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14634,6 +14885,114 @@
     "en": "Said in the past → one step back in tense.",
     "uz": "O'tmishda aytdi → zamon bir qadam orqaga."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Косвенная речь",
+      "en": "Reported speech",
+      "uz": "O'zlashtirma gap"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда мы пересказываем чужие слова глаголом в прошедшем (*dijo que, me preguntó si*), времена во второй части сдвигаются на шаг назад — как в английском и французском.",
+      "en": "When the reporting verb is past (*dijo que*), tenses shift one step back, as in English and French.",
+      "uz": "Birovning so'zlarini o'tgan zamondagi fe'l bilan yetkazganimizda (*dijo que, me preguntó si*), ikkinchi qismdagi zamonlar bir qadam orqaga suriladi — ingliz va fransuz tillaridagidek."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Сказал",
+        "en": "Said",
+        "uz": "Aytgan"
+       },
+       {
+        "ru": "Пересказ",
+        "en": "Reported",
+        "uz": "Yetkazilgan"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "presente",
+        "imperfecto",
+        "«Estoy cansado.» → Dijo que estaba cansado."
+       ],
+       [
+        "indefinido / perfecto",
+        "pluscuamperfecto",
+        "«He terminado.» → Dijo que había terminado."
+       ],
+       [
+        "futuro",
+        "condicional",
+        "«Vendré.» → Dijo que vendría."
+       ],
+       [
+        "imperativo",
+        "imperfecto de subjuntivo",
+        "«¡Ven!» → Me dijo que viniera."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Последняя строка важна: пересказанная команда превращается в subjuntivo. *«Cierra la puerta» → Me pidió que cerrara la puerta* — Он попросил меня закрыть дверь.",
+      "en": "A reported command becomes the subjunctive: *Me pidió que cerrara la puerta.*",
+      "uz": "Oxirgi qator muhim: yetkazilgan buyruq subjuntivo ga aylanadi. *«Cierra la puerta» → Me pidió que cerrara la puerta* — U mendan eshikni yopishni so'radi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Слова времени тоже меняются: *hoy → ese día*, *mañana → al día siguiente*, *ayer → el día anterior*, *aquí → allí*. Вопросы пересказывают через *si* (ли) или через вопросительное слово.",
+      "en": "Time and place words change too: *mañana → al día siguiente*, *aquí → allí*. Questions use *si* or the question word.",
+      "uz": "Vaqt so'zlari ham o'zgaradi: *hoy → ese día*, *mañana → al día siguiente*, *ayer → el día anterior*, *aquí → allí*. Savollar *si* (… mi) yoki so'roq so'zi orqali yetkaziladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ana dijo que *tenía* hambre.",
+       "t": {
+        "ru": "Ана сказала, что голодна.",
+        "uz": "Ana qorni ochligini aytdi.",
+        "en": "Ana said she was hungry."
+       }
+      },
+      {
+       "s": "Me preguntó *si* *había visto* la película.",
+       "t": {
+        "ru": "Он спросил, видел ли я фильм.",
+        "uz": "U filmni ko'rgan-ko'rmaganimni so'radi.",
+        "en": "He asked me if I had seen the film."
+       }
+      },
+      {
+       "s": "El profesor nos dijo que *estudiáramos* más.",
+       "t": {
+        "ru": "Учитель сказал нам больше заниматься.",
+        "uz": "O'qituvchi bizga ko'proq o'qishni aytdi.",
+        "en": "The teacher told us to study more."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если пересказ в настоящем (*dice que*), времена не меняются: *Dice que está cansado.*",
+      "en": "With a present reporting verb (*dice que*), tenses don't change.",
+      "uz": "Yetkazish hozirgi zamonda bo'lsa (*dice que*), zamonlar o'zgarmaydi: *Dice que está cansado.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14893,6 +15252,112 @@
     "en": "Formal → ser + participle; everyday → se + verb agreeing with the thing.",
     "uz": "Rasmiy → ser + sifatdosh; kundalik → se + narsaga mos fe'l."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Пассив: ser + participio и se",
+      "en": "The passive: ser + participle and se",
+      "uz": "Passiv: ser + sifatdosh va se"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском есть два способа сказать, что действие «делается», когда исполнитель неважен. Первый — как в английском: *ser* + причастие. *El puente fue construido en 1900* — Мост был построен в 1900 году. Он звучит книжно — так пишут в новостях и учебниках.",
+      "en": "Spanish has two passives. The first is like English: *ser* + participle — *El puente fue construido en 1900.* It sounds formal.",
+      "uz": "Ispan tilida bajaruvchi muhim bo'lmaganda harakat «qilinishini» aytishning ikki usuli bor. Birinchisi — ingliz tilidagidek: *ser* + sifatdosh. *El puente fue construido en 1900* — Ko'prik 1900-yilda qurilgan. Bu kitobiy eshitiladi — yangiliklar va darsliklarda shunday yoziladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Причастие согласуется с подлежащим: *La casa fue vendida*, *Los libros fueron publicados*. Исполнителя вводят словом *por*: *escrito por Cervantes*.",
+      "en": "The participle agrees with the subject; the doer is introduced by *por*: *escrito por Cervantes*.",
+      "uz": "Sifatdosh ega bilan moslashadi: *La casa fue vendida*, *Los libros fueron publicados*. Bajaruvchi *por* so'zi bilan kiritiladi: *escrito por Cervantes*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Пассив с se — самый частый",
+      "en": "The se passive — the most common",
+      "uz": "se li passiv — eng ko'p uchraydigani"
+     }
+    },
+    {
+     "p": {
+      "ru": "В живой речи гораздо чаще используют *se* + глагол в 3-м лице: *Se habla español* — Здесь говорят по-испански. *Se venden pisos* — Продаются квартиры. Глагол согласуется с предметом: один — *se vende*, много — *se venden*.",
+      "en": "In everyday Spanish, *se* + third-person verb is much more common: *Se habla español*, *Se venden pisos.* The verb agrees with the thing.",
+      "uz": "Jonli nutqda *se* + 3-shaxsdagi fe'l ancha ko'p ishlatiladi: *Se habla español* — Bu yerda ispancha gapiriladi. *Se venden pisos* — Kvartiralar sotiladi. Fe'l narsa bilan moslashadi: bitta — *se vende*, ko'p — *se venden*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "книжный",
+         "en": "formal",
+         "uz": "kitobiy"
+        },
+        "ser + participio (+ por)",
+        "La novela fue escrita por Cervantes."
+       ],
+       [
+        {
+         "ru": "разговорный",
+         "en": "everyday",
+         "uz": "so'zlashuv"
+        },
+        "se + verbo (3ª persona)",
+        "Aquí se come muy bien."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "En Uzbekistán *se cultiva* mucho algodón.",
+       "t": {
+        "ru": "В Узбекистане выращивают много хлопка.",
+        "uz": "O'zbekistonda ko'p paxta yetishtiriladi.",
+        "en": "A lot of cotton is grown in Uzbekistan."
+       }
+      },
+      {
+       "s": "La ciudad *fue fundada* en el siglo XV.",
+       "t": {
+        "ru": "Город был основан в XV веке.",
+        "uz": "Shahar XV asrda asos solingan.",
+        "en": "The city was founded in the 15th century."
+       }
+      },
+      {
+       "s": "¿Cómo *se dice* «gracias» en uzbeko?",
+       "t": {
+        "ru": "Как сказать «спасибо» по-узбекски?",
+        "uz": "O'zbekchada «gracias» qanday aytiladi?",
+        "en": "How do you say “thank you” in Uzbek?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15156,6 +15621,114 @@
     "en": "Future after cuando → subjunctive; habit → indicative.",
     "uz": "cuando dan keyin kelajak → subjuntivo; odat → indicativo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Cuando + subjuntivo: о будущем",
+      "en": "Cuando + subjunctive: about the future",
+      "uz": "Cuando + subjuntivo: kelajak haqida"
+     }
+    },
+    {
+     "p": {
+      "ru": "Важная особенность испанского: после слов времени (*cuando* — когда, *en cuanto* — как только, *hasta que* — пока не, *antes de que* — прежде чем), если речь о _будущем_, ставят subjuntivo. *Cuando llegue a casa, te llamaré* — Когда приду домой, позвоню тебе.",
+      "en": "Key point: after time words (*cuando, en cuanto, hasta que, antes de que*), if the action is in the future, use the subjunctive: *Cuando llegue a casa, te llamaré.*",
+      "uz": "Ispan tilining muhim xususiyati: vaqt so'zlaridan (*cuando* — qachonki, *en cuanto* — … bilanoq, *hasta que* — … guncha, *antes de que* — … dan oldin) keyin, gap _kelajak_ haqida bo'lsa, subjuntivo qo'yiladi. *Cuando llegue a casa, te llamaré* — Uyga kelganimda senga qo'ng'iroq qilaman."
+     }
+    },
+    {
+     "p": {
+      "ru": "Логика: будущее ещё не факт, поэтому subjuntivo. А если речь о привычке или прошлом (это факт), ставят обычное время: *Cuando llego a casa, siempre ceno* — Когда прихожу домой, я всегда ужинаю.",
+      "en": "Logic: the future isn't a fact yet → subjunctive. Habits and the past are facts → indicative: *Cuando llego a casa, siempre ceno.*",
+      "uz": "Mantiq: kelajak hali fakt emas, shuning uchun subjuntivo. Gap odat yoki o'tmish haqida bo'lsa (bu fakt), oddiy zamon qo'yiladi: *Cuando llego a casa, siempre ceno* — Uyga kelganimda doim kechki ovqat qilaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "будущее",
+         "en": "future",
+         "uz": "kelajak"
+        },
+        "cuando + subjuntivo",
+        "Cuando tenga tiempo, iré."
+       ],
+       [
+        {
+         "ru": "привычка",
+         "en": "habit",
+         "uz": "odat"
+        },
+        "cuando + presente",
+        "Cuando tengo tiempo, voy."
+       ],
+       [
+        {
+         "ru": "прошлое",
+         "en": "past",
+         "uz": "o'tmish"
+        },
+        "cuando + pasado",
+        "Cuando tuve tiempo, fui."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Важно: *antes de que* — всегда с subjuntivo, даже о прошлом. И не ставь futuro после *cuando*: «cuando tendré» — ошибка.",
+      "en": "*Antes de que* always takes the subjunctive. Never use the future after *cuando*.",
+      "uz": "Muhim: *antes de que* — doim subjuntivo bilan, hatto o'tmish haqida ham. *cuando* dan keyin futuro qo'ymang: «cuando tendré» — xato."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*En cuanto* *sepa* algo, te aviso.",
+       "t": {
+        "ru": "Как только что-нибудь узнаю, сообщу тебе.",
+        "uz": "Biror narsani bilishim bilanoq senga xabar beraman.",
+        "en": "As soon as I know something, I'll let you know."
+       }
+      },
+      {
+       "s": "Espera aquí *hasta que* *vuelva*.",
+       "t": {
+        "ru": "Жди здесь, пока я не вернусь.",
+        "uz": "Men qaytgunimcha shu yerda kut.",
+        "en": "Wait here until I come back."
+       }
+      },
+      {
+       "s": "Llámame *antes de que* *salgas*.",
+       "t": {
+        "ru": "Позвони мне, прежде чем выйдешь.",
+        "uz": "Chiqishingdan oldin menga qo'ng'iroq qil.",
+        "en": "Call me before you leave."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15418,6 +15991,105 @@
     "en": "I know it is so → indicative; even if / doesn’t matter → subjunctive.",
     "uz": "Shunday ekanini bilaman → indicativo; hatto/ahamiyatsiz → subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Aunque: хотя / даже если",
+      "en": "Aunque: although / even if",
+      "uz": "Aunque: garchi / hatto … bo'lsa ham"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Aunque* значит «хотя», но смысл зависит от времени после него. С обычным временем (indicativo) — это факт: *Aunque llueve, salgo* — Хотя идёт дождь (и это правда), я выхожу. С subjuntivo — это предположение или неважно: *Aunque llueva, saldré* — Даже если пойдёт дождь, я выйду.",
+      "en": "*Aunque* + indicative = a fact (“although it's raining”). *Aunque* + subjunctive = a possibility or something irrelevant (“even if it rains”).",
+      "uz": "*Aunque* «garchi» degani, lekin ma'no undan keyingi zamonga bog'liq. Oddiy zamon (indicativo) bilan — bu fakt: *Aunque llueve, salgo* — Yomg'ir yog'ayotgan bo'lsa ham (bu rost), chiqaman. Subjuntivo bilan — bu taxmin yoki muhim emas: *Aunque llueva, saldré* — Hatto yomg'ir yog'sa ham, chiqaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "aunque + indicativo",
+        {
+         "ru": "факт: хотя (это правда)",
+         "en": "fact: although",
+         "uz": "fakt: garchi (bu rost)"
+        },
+        "Aunque es caro, lo compro."
+       ],
+       [
+        "aunque + subjuntivo",
+        {
+         "ru": "возможно / неважно: даже если",
+         "en": "possible / irrelevant: even if",
+         "uz": "ehtimol / muhim emas: hatto … sa ham"
+        },
+        "Aunque sea caro, lo compraré."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Есть и другие слова уступки: *a pesar de* + существительное или инфинитив (несмотря на): *A pesar del frío, fuimos* — Несмотря на холод, мы пошли. *Sin embargo* (однако) начинает новое предложение.",
+      "en": "Other concession words: *a pesar de* + noun or infinitive (despite); *sin embargo* (however) starts a new clause.",
+      "uz": "To'siqsizlikning boshqa so'zlari ham bor: *a pesar de* + ot yoki infinitiv (… ga qaramay): *A pesar del frío, fuimos* — Sovuqqa qaramay bordik. *Sin embargo* (biroq) yangi gapni boshlaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Aunque* *estoy* cansado, voy a terminar.",
+       "t": {
+        "ru": "Хотя я устал, я закончу.",
+        "uz": "Charchagan bo'lsam ham, tugataman.",
+        "en": "Although I'm tired, I'm going to finish."
+       }
+      },
+      {
+       "s": "*Aunque* me lo *pidas* mil veces, no iré.",
+       "t": {
+        "ru": "Даже если попросишь тысячу раз, я не пойду.",
+        "uz": "Ming marta so'rasang ham, bormayman.",
+        "en": "Even if you ask me a thousand times, I won't go."
+       }
+      },
+      {
+       "s": "*A pesar de* estudiar mucho, suspendió.",
+       "t": {
+        "ru": "Несмотря на то что много учился, он провалился.",
+        "uz": "Ko'p o'qiganiga qaramay, imtihondan yiqildi.",
+        "en": "Despite studying a lot, he failed."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказка: если можно сказать «даже если», бери subjuntivo. Если «хотя на самом деле» — indicativo.",
+      "en": "Tip: “even if” → subjunctive; “although (in fact)” → indicative.",
+      "uz": "Ishora: «hatto … sa ham» deyish mumkin bo'lsa, subjuntivo ni oling. «Garchi aslida» bo'lsa — indicativo."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15679,6 +16351,150 @@
     "en": "By then → habré; would have → habría.",
     "uz": "O'sha paytgacha → habré; «qilgan bo'lardim» → habría."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Futuro perfecto и condicional compuesto",
+      "en": "Future perfect and conditional perfect",
+      "uz": "Futuro perfecto va condicional compuesto"
+     }
+    },
+    {
+     "p": {
+      "ru": "Два составных времени, которые строятся одинаково: *haber* + причастие. Различается только форма *haber*: в будущем (*habré*) или в condicional (*habría*).",
+      "en": "Two compound tenses built the same way: *haber* + participle, with *haber* in the future (*habré*) or conditional (*habría*).",
+      "uz": "Bir xil tuziladigan ikki murakkab zamon: *haber* + sifatdosh. Farq faqat *haber* shaklida: kelasi zamonda (*habré*) yoki condicional da (*habría*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "futuro perfecto",
+        "habré + participio",
+        {
+         "ru": "уже сделаю (к моменту)",
+         "en": "will have done",
+         "uz": "qilib bo'lgan bo'laman"
+        },
+        "A las seis habré terminado."
+       ],
+       [
+        "condicional compuesto",
+        "habría + participio",
+        {
+         "ru": "сделал бы (но не сделал)",
+         "en": "would have done",
+         "uz": "qilgan bo'lardim"
+        },
+        "Habría venido, pero estaba enfermo."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Futuro perfecto ещё выражает догадку о недавнем прошлом: *Ya habrá llegado* — Он, наверное, уже приехал. А condicional compuesto — догадку о более далёком прошлом или результат в условиях третьего типа: *Si hubiera sabido, habría venido.*",
+      "en": "The future perfect also guesses about the recent past: *Ya habrá llegado.* The conditional perfect is the result in type-3 conditionals.",
+      "uz": "Futuro perfecto yaqin o'tmish haqida taxminni ham bildiradi: *Ya habrá llegado* — U allaqachon yetib kelgan bo'lsa kerak. Condicional compuesto esa uchinchi tur shart gaplardagi natija: *Si hubiera sabido, habría venido.*"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "futuro",
+       "condicional"
+      ],
+      "rows": [
+       [
+        "yo",
+        "habré",
+        "habría"
+       ],
+       [
+        "tú",
+        "habrás",
+        "habrías"
+       ],
+       [
+        "él / ella",
+        "habrá",
+        "habría"
+       ],
+       [
+        "nosotros",
+        "habremos",
+        "habríamos"
+       ],
+       [
+        "vosotros",
+        "habréis",
+        "habríais"
+       ],
+       [
+        "ellos",
+        "habrán",
+        "habrían"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Para junio *habré terminado* la carrera.",
+       "t": {
+        "ru": "К июню я закончу учёбу.",
+        "uz": "Iyungacha o'qishni tugatgan bo'laman.",
+        "en": "By June I'll have finished my degree."
+       }
+      },
+      {
+       "s": "¿Dónde está Ana? — *Habrá salido*.",
+       "t": {
+        "ru": "Где Ана? — Наверное, вышла.",
+        "uz": "Ana qayerda? — Chiqib ketgan bo'lsa kerak.",
+        "en": "Where's Ana? — She must have gone out."
+       }
+      },
+      {
+       "s": "Yo en tu lugar no lo *habría hecho*.",
+       "t": {
+        "ru": "На твоём месте я бы этого не сделал.",
+        "uz": "Sening o'rningda buni qilmagan bo'lardim.",
+        "en": "In your place I wouldn't have done it."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15941,6 +16757,114 @@
     "en": "Exists and known → indicative; wanted or none → subjunctive.",
     "uz": "Bor va bilaman → indicativo; izlayman yoki yo'q → subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ищу того, кто…: subjuntivo в относительных",
+      "en": "Looking for someone who…: subjunctive in relatives",
+      "uz": "… adigan kishini qidiryapman: nisbiy gapda subjuntivo"
+     }
+    },
+    {
+     "p": {
+      "ru": "После *que* («который») обычно стоит обычное время. Но если мы говорим о человеке или предмете, который _может не существовать_ или нам неизвестен, ставят subjuntivo. *Busco a alguien que hable chino* — Ищу кого-нибудь, кто говорит по-китайски (не знаю, есть ли такой).",
+      "en": "After *que* the indicative is normal. But if the person or thing may not exist or is unknown, use the subjunctive: *Busco a alguien que hable chino.*",
+      "uz": "*que* («qaysiki») dan keyin odatda oddiy zamon keladi. Lekin _mavjud bo'lmasligi mumkin_ yoki bizga noma'lum odam yoki narsa haqida gapirsak, subjuntivo qo'yiladi. *Busco a alguien que hable chino* — Xitoycha gapiradigan birortasini qidiryapman (bunday odam bormi, bilmayman)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Ситуация",
+        "en": "Situation",
+        "uz": "Vaziyat"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "известный, существующий",
+         "en": "known, real",
+         "uz": "ma'lum, mavjud"
+        },
+        "que + indicativo",
+        "Tengo un amigo que habla chino."
+       ],
+       [
+        {
+         "ru": "неизвестный, искомый",
+         "en": "unknown, sought",
+         "uz": "noma'lum, izlanayotgan"
+        },
+        "que + subjuntivo",
+        "Busco un amigo que hable chino."
+       ],
+       [
+        {
+         "ru": "не существует",
+         "en": "doesn't exist",
+         "uz": "mavjud emas"
+        },
+        "que + subjuntivo",
+        "No conozco a nadie que hable chino."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Сравни: *Vivo en una casa que tiene jardín* — Я живу в доме, где есть сад (факт). *Quiero una casa que tenga jardín* — Хочу дом, где был бы сад (такого дома у меня пока нет).",
+      "en": "Compare: *Vivo en una casa que tiene jardín* (fact) vs *Quiero una casa que tenga jardín* (wish).",
+      "uz": "Solishtiring: *Vivo en una casa que tiene jardín* — Bog'i bor uyda yashayman (fakt). *Quiero una casa que tenga jardín* — Bog'i bor uy xohlayman (bunday uyim hali yo'q)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Necesito un piso que *esté* cerca del centro.",
+       "t": {
+        "ru": "Мне нужна квартира рядом с центром.",
+        "uz": "Markazga yaqin kvartira kerak.",
+        "en": "I need a flat near the centre."
+       }
+      },
+      {
+       "s": "¿Hay alguien aquí que *sepa* nadar?",
+       "t": {
+        "ru": "Здесь есть кто-нибудь, кто умеет плавать?",
+        "uz": "Bu yerda suzishni biladigan biror kishi bormi?",
+        "en": "Is there anyone here who can swim?"
+       }
+      },
+      {
+       "s": "No hay nada que *pueda* hacer.",
+       "t": {
+        "ru": "Я ничего не могу сделать.",
+        "uz": "Qila oladigan hech narsam yo'q.",
+        "en": "There's nothing I can do."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказки: *busco, necesito, quiero* (ищу, нужен, хочу) + неопределённый предмет, а также *no hay nadie / nada que…* — почти всегда subjuntivo.",
+      "en": "Clues: *busco, necesito, quiero* + an unknown thing, or *no hay nadie / nada que…* → subjunctive.",
+      "uz": "Ishoralar: *busco, necesito, quiero* (qidiryapman, kerak, xohlayman) + noaniq narsa, shuningdek *no hay nadie / nada que…* — deyarli doim subjuntivo."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16205,6 +17129,105 @@
     "en": "Same person — para + inf.; another — para que + subjunctive.",
     "uz": "Bir odam — para + inf.; boshqa — para que + subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Para que: чтобы",
+      "en": "Para que: so that",
+      "uz": "Para que: … sin deb, … uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Para* + инфинитив — «чтобы» (когда человек тот же): *Estudio para aprender* — Я учусь, чтобы (я) узнать. *Para que* + subjuntivo — «чтобы», когда во второй части _другой_ человек: *Te lo explico para que lo entiendas* — Я объясняю, чтобы ты понял.",
+      "en": "*Para* + infinitive when the subject is the same (*Estudio para aprender*). *Para que* + subjunctive when it's different (*Te lo explico para que lo entiendas*).",
+      "uz": "*Para* + infinitiv — «… uchun» (odam bir xil bo'lganda): *Estudio para aprender* — Bilish uchun o'qiyman. *Para que* + subjuntivo — ikkinchi qismda _boshqa_ odam bo'lganda: *Te lo explico para que lo entiendas* — Tushunishing uchun tushuntiryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "тот же человек",
+         "en": "same person",
+         "uz": "bir xil odam"
+        },
+        "para + infinitivo",
+        "Trabajo para ganar dinero."
+       ],
+       [
+        {
+         "ru": "другой человек",
+         "en": "different person",
+         "uz": "boshqa odam"
+        },
+        "para que + subjuntivo",
+        "Trabajo para que mis hijos estudien."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Para que* всегда требует subjuntivo, потому что цель — это ещё не факт. Если главная часть в прошедшем, subjuntivo тоже в прошедшем: *Lo hice para que estuvieras contento* — Я сделал это, чтобы ты был доволен.",
+      "en": "*Para que* always takes the subjunctive (a goal isn't a fact). After a past main clause, use the past subjunctive: *para que estuvieras contento.*",
+      "uz": "*Para que* doim subjuntivo talab qiladi, chunki maqsad hali fakt emas. Bosh qism o'tgan zamonda bo'lsa, subjuntivo ham o'tgan zamonda: *Lo hice para que estuvieras contento* — Xursand bo'lishing uchun shunday qildim."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Habla más alto *para que* todos te *oigan*.",
+       "t": {
+        "ru": "Говори громче, чтобы все тебя слышали.",
+        "uz": "Hamma eshitishi uchun balandroq gapir.",
+        "en": "Speak louder so everyone can hear you."
+       }
+      },
+      {
+       "s": "Ahorro *para* comprar un coche.",
+       "t": {
+        "ru": "Я коплю, чтобы купить машину.",
+        "uz": "Mashina sotib olish uchun pul yig'yapman.",
+        "en": "I'm saving to buy a car."
+       }
+      },
+      {
+       "s": "Te dejé las llaves *para que* *pudieras* entrar.",
+       "t": {
+        "ru": "Я оставил тебе ключи, чтобы ты мог войти.",
+        "uz": "Kira olishing uchun kalitlarni qoldirdim.",
+        "en": "I left you the keys so you could get in."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Так же работают *sin que* (без того, чтобы) и *a fin de que* (с тем чтобы): *Salió sin que nadie lo viera* — Он ушёл так, что никто не видел.",
+      "en": "*Sin que* and *a fin de que* work the same way: *Salió sin que nadie lo viera.*",
+      "uz": "*sin que* (… masdan) va *a fin de que* (… maqsadida) ham xuddi shunday ishlaydi: *Salió sin que nadie lo viera* — U hech kim ko'rmasdan chiqib ketdi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16470,6 +17493,133 @@
     "en": "Mood — ponerse, character — volverse, career — hacerse, result — quedarse.",
     "uz": "Kayfiyat — ponerse, xarakter — volverse, kasb — hacerse, natija — quedarse."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы изменения: стать",
+      "en": "Verbs of change: become",
+      "uz": "O'zgarish fe'llari: bo'lib qolmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "В русском есть одно слово «стать», в английском — *become / get*. В испанском для этого несколько глаголов, и выбор зависит от того, _какое_ это изменение: быстрое или постепенное, временное или навсегда, по своей воле или само.",
+      "en": "Spanish has several verbs for “become”, chosen by the type of change: quick or gradual, temporary or permanent, chosen or not.",
+      "uz": "O'zbek tilida «bo'lib qolmoq, aylanmoq» bor. Ispan tilida buning uchun bir necha fe'l bor va tanlov o'zgarish _qanday_ ekaniga bog'liq: tez yoki asta-sekin, vaqtinchalik yoki doimiy, o'z xohishi bilan yoki o'z-o'zidan."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Какое изменение",
+        "en": "Type of change",
+        "uz": "O'zgarish turi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "ponerse",
+        {
+         "ru": "быстрое, временное (эмоции, цвет)",
+         "en": "quick, temporary (mood, colour)",
+         "uz": "tez, vaqtinchalik (his-tuyg'u, rang)"
+        },
+        "Se puso nervioso."
+       ],
+       [
+        "volverse",
+        {
+         "ru": "резкое, глубокое (характер)",
+         "en": "sudden, deep (character)",
+         "uz": "keskin, chuqur (xarakter)"
+        },
+        "Se volvió muy egoísta."
+       ],
+       [
+        "hacerse",
+        {
+         "ru": "постепенное, своими усилиями (профессия, вера)",
+         "en": "gradual, by effort (job, beliefs)",
+         "uz": "asta-sekin, o'z harakati bilan (kasb, e'tiqod)"
+        },
+        "Se hizo médico."
+       ],
+       [
+        "llegar a ser",
+        {
+         "ru": "после долгого пути, успех",
+         "en": "after a long process, success",
+         "uz": "uzoq yo'ldan keyin, muvaffaqiyat"
+        },
+        "Llegó a ser presidente."
+       ],
+       [
+        "quedarse",
+        {
+         "ru": "результат, состояние после события",
+         "en": "result, state after an event",
+         "uz": "natija, voqeadan keyingi holat"
+        },
+        "Se quedó sorprendido."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ponerse* — для того, что быстро проходит: *ponerse rojo* (покраснеть), *ponerse triste* (загрустить). *Hacerse* — когда человек сам этого добился: *hacerse rico* (разбогатеть). *Quedarse* — состояние после события: *quedarse sin dinero* (остаться без денег), *quedarse ciego* (ослепнуть).",
+      "en": "*Ponerse* for passing states (*ponerse rojo*). *Hacerse* for effort (*hacerse rico*). *Quedarse* for the state after an event (*quedarse sin dinero*).",
+      "uz": "*Ponerse* — tez o'tib ketadigan narsa uchun: *ponerse rojo* (qizarib ketmoq), *ponerse triste* (xafa bo'lmoq). *Hacerse* — odam bunga o'zi erishganda: *hacerse rico* (boyib ketmoq). *Quedarse* — voqeadan keyingi holat: *quedarse sin dinero* (pulsiz qolmoq), *quedarse ciego* (ko'r bo'lib qolmoq)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Cuando la vio, *se puso* rojo.",
+       "t": {
+        "ru": "Когда он её увидел, он покраснел.",
+        "uz": "Uni ko'rganda qizarib ketdi.",
+        "en": "When he saw her, he turned red."
+       }
+      },
+      {
+       "s": "Mi primo *se hizo* abogado.",
+       "t": {
+        "ru": "Мой двоюродный брат стал адвокатом.",
+        "uz": "Amakivachcham advokat bo'ldi.",
+        "en": "My cousin became a lawyer."
+       }
+      },
+      {
+       "s": "Después del accidente, *se volvió* muy prudente.",
+       "t": {
+        "ru": "После аварии он стал очень осторожным.",
+        "uz": "Avariyadan keyin u juda ehtiyotkor bo'lib qoldi.",
+        "en": "After the accident he became very careful."
+       }
+      },
+      {
+       "s": "Nos *quedamos* sin batería.",
+       "t": {
+        "ru": "У нас сел аккумулятор.",
+        "uz": "Batareyamiz tugab qoldi.",
+        "en": "Our battery died."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

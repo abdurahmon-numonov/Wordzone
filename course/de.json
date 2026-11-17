@@ -9798,6 +9798,131 @@
     "en": "weil / dass / wenn → verb to the very end.",
     "uz": "weil / dass / wenn → fe'l eng oxiriga."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Придаточные: глагол уходит в конец",
+      "en": "Subordinate clauses: the verb goes to the end",
+      "uz": "Ergash gaplar: fe'l oxirga ketadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Придаточное предложение — это часть, которая зависит от главной и начинается со слова-связки: *weil* (потому что), *dass* (что), *wenn* (если, когда). И здесь в немецком происходит главное чудо: изменяемый глагол уходит _в самый конец_ придаточного.",
+      "en": "A subordinate clause depends on the main clause and starts with a linking word: *weil* (because), *dass* (that), *wenn* (if, when). In German the conjugated verb moves to the very end of it.",
+      "uz": "Ergash gap — bosh gapga bog'liq qism, u bog'lovchi so'z bilan boshlanadi: *weil* (chunki), *dass* (-ki, ekanini), *wenn* (agar, qachonki). Va nemis tilida asosiy mo''jiza shu yerda: tuslangan fe'l ergash gapning _eng oxiriga_ ketadi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Узбекам это даже привычно: в узбекском глагол тоже в конце («…chunki men kasal_man_»). Сравни: *Ich bin krank* (главное, глагол на месте 2) → *…, weil ich krank bin* (придаточное, глагол в конце).",
+      "en": "Compare: *Ich bin krank* (main clause, verb in slot 2) → *…, weil ich krank bin* (subordinate, verb at the end).",
+      "uz": "O'zbeklarga bu hatto tanish: o'zbek tilida ham fe'l oxirida. Solishtiring: *Ich bin krank* (bosh gap, fe'l 2-o'rinda) → *…, weil ich krank bin* (ergash gap, fe'l oxirida)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Главное",
+        "en": "Main clause",
+        "uz": "Bosh gap"
+       },
+       {
+        "ru": "Связка",
+        "en": "Linker",
+        "uz": "Bog'lovchi"
+       },
+       {
+        "ru": "Середина",
+        "en": "Middle",
+        "uz": "O'rtasi"
+       },
+       {
+        "ru": "Глагол в конце",
+        "en": "Verb at end",
+        "uz": "Oxiridagi fe'l"
+       }
+      ],
+      "rows": [
+       [
+        "Ich bleibe zu Hause,",
+        "weil",
+        "ich krank",
+        "bin."
+       ],
+       [
+        "Ich glaube,",
+        "dass",
+        "er heute",
+        "kommt."
+       ],
+       [
+        "Ruf mich an,",
+        "wenn",
+        "du Zeit",
+        "hast."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если в придаточном два глагола, в самом конце стоит изменяемый: *…, weil ich arbeiten muss* (не «muss arbeiten»). *…, dass er gestern gekommen ist.*",
+      "en": "With two verbs, the conjugated one comes last: *…, weil ich arbeiten muss.*",
+      "uz": "Ergash gapda ikki fe'l bo'lsa, eng oxirida tuslangani turadi: *…, weil ich arbeiten muss* («muss arbeiten» emas). *…, dass er gestern gekommen ist.*"
+     }
+    },
+    {
+     "h": {
+      "ru": "Если придаточное стоит первым",
+      "en": "When the clause comes first",
+      "uz": "Ergash gap birinchi kelganda"
+     }
+    },
+    {
+     "p": {
+      "ru": "Придаточное может стоять в начале. Тогда оно целиком считается «местом 1», и главное предложение начинается сразу с глагола: *Wenn ich Zeit habe, komme ich.* Получается «глагол, глагол» через запятую.",
+      "en": "If the clause comes first, it counts as slot 1, so the main clause starts with its verb: *Wenn ich Zeit habe, komme ich.*",
+      "uz": "Ergash gap boshida tursa, u butunlay «1-o'rin» hisoblanadi va bosh gap darhol fe'l bilan boshlanadi: *Wenn ich Zeit habe, komme ich.* Vergul orqali «fe'l, fe'l» hosil bo'ladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich lerne Deutsch, *weil* ich in Deutschland arbeiten *will*.",
+       "t": {
+        "ru": "Я учу немецкий, потому что хочу работать в Германии.",
+        "uz": "Nemis tilini o'rganyapman, chunki Germaniyada ishlamoqchiman.",
+        "en": "I'm learning German because I want to work in Germany."
+       }
+      },
+      {
+       "s": "Ich weiß, *dass* du recht *hast*.",
+       "t": {
+        "ru": "Я знаю, что ты прав.",
+        "uz": "Haq ekaningni bilaman.",
+        "en": "I know you're right."
+       }
+      },
+      {
+       "s": "*Wenn* es regnet, *bleiben* wir zu Hause.",
+       "t": {
+        "ru": "Если пойдёт дождь, мы останемся дома.",
+        "uz": "Yomg'ir yog'sa, uyda qolamiz.",
+        "en": "If it rains, we'll stay at home."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Перед придаточным в немецком всегда ставится запятая.",
+      "en": "In German a comma always separates the subordinate clause.",
+      "uz": "Nemis tilida ergash gap oldidan doim vergul qo'yiladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10063,6 +10188,131 @@
     "en": "Wish/politeness → würde, wäre, hätte, könnte.",
     "uz": "Orzu/xushmuomalalik → würde, wäre, hätte, könnte."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Konjunktiv II — «бы»",
+      "en": "Konjunktiv II — “would”",
+      "uz": "Konjunktiv II — «-ardi, edi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Konjunktiv II — это форма для нереального, желаемого и вежливого. В русском её делают частицей «бы»: «Я бы поехал», «Если бы у меня было время». В узбекском — «-sa edi», «-ar edim». В немецком самый простой способ — *würde* + глагол в конце.",
+      "en": "Konjunktiv II is the form for unreal wishes, imagined situations and polite requests — like English *would*. The simplest way: *würde* + verb at the end.",
+      "uz": "Konjunktiv II — haqiqiy bo'lmagan, orzu qilingan va muloyim narsalar uchun shakl. O'zbek tilida bu «-sa edi», «-ar edim» bilan aytiladi: «Borardim», «Vaqtim bo'lganida edi». Nemis tilida eng oson usul — *würde* + oxirida fe'l."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "würde",
+       "hätte",
+       "wäre",
+       "könnte"
+      ],
+      "rows": [
+       [
+        "ich",
+        "würde",
+        "hätte",
+        "wäre",
+        "könnte"
+       ],
+       [
+        "du",
+        "würdest",
+        "hättest",
+        "wärst",
+        "könntest"
+       ],
+       [
+        "er / sie / es",
+        "würde",
+        "hätte",
+        "wäre",
+        "könnte"
+       ],
+       [
+        "wir / sie / Sie",
+        "würden",
+        "hätten",
+        "wären",
+        "könnten"
+       ],
+       [
+        "ihr",
+        "würdet",
+        "hättet",
+        "wärt",
+        "könntet"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Для *haben*, *sein* и модальных глаголов *würde* не используют — у них есть свои короткие формы: *hätte* (имел бы), *wäre* (был бы), *könnte* (мог бы), *müsste* (должен был бы). Они похожи на Präteritum, но с умлаутом.",
+      "en": "*Haben, sein* and modals have their own forms instead of *würde*: *hätte, wäre, könnte, müsste* — like the Präteritum with an umlaut.",
+      "uz": "*haben*, *sein* va modal fe'llar uchun *würde* ishlatilmaydi — ularning o'z qisqa shakllari bor: *hätte* (bo'lardi, ega bo'lardim), *wäre* (bo'lardi), *könnte* (qila olardi), *müsste* (kerak edi). Ular Präteritum ga o'xshaydi, lekin umlaut bilan."
+     }
+    },
+    {
+     "h": {
+      "ru": "Три главных случая",
+      "en": "Three main uses",
+      "uz": "Uchta asosiy holat"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Wenn* ich Zeit *hätte*, *würde* ich mehr lesen.",
+       "t": {
+        "ru": "Если бы у меня было время, я бы больше читал.",
+        "uz": "Vaqtim bo'lganida, ko'proq o'qirdim.",
+        "en": "If I had time, I would read more."
+       }
+      },
+      {
+       "s": "Ich *wäre* gern am Meer.",
+       "t": {
+        "ru": "Я бы хотел быть на море.",
+        "uz": "Dengiz bo'yida bo'lishni xohlardim.",
+        "en": "I'd love to be at the sea."
+       }
+      },
+      {
+       "s": "*Könnten* Sie mir bitte helfen?",
+       "t": {
+        "ru": "Не могли бы Вы мне помочь?",
+        "uz": "Menga yordam bera olmaysizmi?",
+        "en": "Could you help me, please?"
+       }
+      },
+      {
+       "s": "An deiner Stelle *würde* ich das nicht *machen*.",
+       "t": {
+        "ru": "На твоём месте я бы этого не делал.",
+        "uz": "Sening o'rningda men buni qilmasdim.",
+        "en": "If I were you, I wouldn't do that."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Самые полезные фразы: *Ich hätte gern…* (Я бы хотел… — в кафе, магазине), *Könnten Sie…?* (Не могли бы Вы…?), *An deiner Stelle würde ich…* (На твоём месте я бы…).",
+      "en": "Most useful phrases: *Ich hätte gern…* (I'd like…), *Könnten Sie…?* (Could you…?), *An deiner Stelle würde ich…* (If I were you…).",
+      "uz": "Eng foydali iboralar: *Ich hätte gern…* (… xohlardim — kafe, do'konda), *Könnten Sie…?* (… qila olmaysizmi?), *An deiner Stelle würde ich…* (Sening o'rningda men…)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10329,6 +10579,130 @@
     "en": "Gender from the noun, case from its role, verb at the end.",
     "uz": "Rod — otdan, kelishik — vazifadan, fe'l — oxirida."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Который: относительные придаточные",
+      "en": "Who, which: relative clauses",
+      "uz": "Qaysiki: nisbiy ergash gaplar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы уточнить, о каком человеке или предмете речь, в немецком используют слова *der, die, das* в роли «который». *Der Mann, der dort steht, ist mein Lehrer* — Мужчина, который там стоит, — мой учитель.",
+      "en": "To say which person or thing you mean, German uses *der, die, das* as “who / which”: *Der Mann, der dort steht, ist mein Lehrer.*",
+      "uz": "Qaysi odam yoki narsa haqida gap ketayotganini aniqlash uchun nemis tilida *der, die, das* so'zlari «qaysiki» vazifasida ishlatiladi. *Der Mann, der dort steht, ist mein Lehrer* — U yerda turgan erkak — mening o'qituvchim. O'zbek tilida bu sifatdosh bilan aytiladi: «turgan erkak»."
+     }
+    },
+    {
+     "p": {
+      "ru": "Два правила. Первое: «который» берёт _род_ от слова, к которому относится (*der Mann → der*, *die Frau → die*, *das Kind → das*). Второе: _падеж_ — от своей роли в придаточном. И, как во всех придаточных, глагол — в конце.",
+      "en": "Two rules: the relative pronoun takes its gender from the noun it refers to, and its case from its role in the clause. The verb goes to the end.",
+      "uz": "Ikki qoida. Birinchi: «qaysiki» _jinsni_ o'zi tegishli so'zdan oladi (*der Mann → der*, *die Frau → die*, *das Kind → das*). Ikkinchi: _kelishikni_ ergash gapdagi o'z vazifasidan oladi. Va barcha ergash gaplardagidek, fe'l — oxirida."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Падеж",
+        "en": "Case",
+        "uz": "Kelishik"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "ср.",
+        "en": "neut.",
+        "uz": "o'rta"
+       },
+       {
+        "ru": "мн.",
+        "en": "plural",
+        "uz": "ko'plik"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "кто? (ном.)",
+         "en": "nominative",
+         "uz": "nominativ"
+        },
+        "der",
+        "die",
+        "das",
+        "die"
+       ],
+       [
+        {
+         "ru": "кого? (акк.)",
+         "en": "accusative",
+         "uz": "akkuzativ"
+        },
+        "den",
+        "die",
+        "das",
+        "die"
+       ],
+       [
+        {
+         "ru": "кому? (дат.)",
+         "en": "dative",
+         "uz": "dativ"
+        },
+        "dem",
+        "der",
+        "dem",
+        "denen"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Das ist die Frau, *die* in Taschkent *wohnt*.",
+       "t": {
+        "ru": "Это женщина, которая живёт в Ташкенте.",
+        "uz": "Bu Toshkentda yashaydigan ayol.",
+        "en": "That's the woman who lives in Tashkent."
+       }
+      },
+      {
+       "s": "Der Film, *den* wir gestern *gesehen haben*, war toll.",
+       "t": {
+        "ru": "Фильм, который мы вчера смотрели, был отличным.",
+        "uz": "Kecha ko'rgan filmimiz ajoyib edi.",
+        "en": "The film we saw yesterday was great."
+       }
+      },
+      {
+       "s": "Das ist der Freund, mit *dem* ich *reise*.",
+       "t": {
+        "ru": "Это друг, с которым я путешествую.",
+        "uz": "Bu men birga sayohat qiladigan do'stim.",
+        "en": "That's the friend I'm travelling with."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Во втором примере *den*: фильм мужского рода (*der Film*), а в придаточном мы его «видели» (кого? что? — аккузатив). Предлог стоит перед «который»: *mit dem*, *für die*.",
+      "en": "In the second example *den*: *der Film* is masculine, and in the clause it's the object (accusative). A preposition comes before the relative: *mit dem*.",
+      "uz": "Ikkinchi misolda *den*: film erkak jinsida (*der Film*), ergash gapda esa biz uni «ko'rdik» (nimani? — akkuzativ). Predlog «qaysiki» dan oldin turadi: *mit dem*, *für die*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10596,6 +10970,126 @@
     "en": "werden + participle last; by whom — von + dative.",
     "uz": "werden + oxirida sifatdosh; kim tomonidan — von + dativ."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Пассив: что делается",
+      "en": "The passive: what is done",
+      "uz": "Passiv: nima qilinadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Пассив используют, когда важно действие, а не тот, кто его делает. *Hier wird ein Haus gebaut* — Здесь строится дом (кто строит — неважно). В узбекском это форма с «-il»: qur_il_moqda.",
+      "en": "The passive is used when the action matters more than the doer: *Hier wird ein Haus gebaut* — A house is being built here.",
+      "uz": "Passiv harakatni bajaruvchi emas, harakatning o'zi muhim bo'lganda ishlatiladi. *Hier wird ein Haus gebaut* — Bu yerda uy qurilmoqda (kim qurayotgani muhim emas). O'zbek tilida bu «-il» shakli: qur_il_moqda."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Нужен глагол *werden* на месте 2 и Partizip II (*gemacht, gebaut, geschrieben*) в конце. Время показывает *werden*: настоящее — *wird gebaut*, прошедшее — *wurde gebaut*.",
+      "en": "*Werden* in slot 2 + Partizip II at the end. *Werden* shows the tense: *wird gebaut* (present), *wurde gebaut* (past).",
+      "uz": "2-o'rinda *werden* fe'li va oxirida Partizip II (*gemacht, gebaut, geschrieben*) kerak. Zamonni *werden* ko'rsatadi: hozirgi — *wird gebaut*, o'tgan — *wurde gebaut*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Настоящее",
+        "en": "Present",
+        "uz": "Hozirgi"
+       },
+       {
+        "ru": "Прошедшее",
+        "en": "Past",
+        "uz": "O'tgan"
+       }
+      ],
+      "rows": [
+       [
+        "ich",
+        "werde",
+        "wurde"
+       ],
+       [
+        "du",
+        "wirst",
+        "wurdest"
+       ],
+       [
+        "er / sie / es",
+        "wird",
+        "wurde"
+       ],
+       [
+        "wir / sie / Sie",
+        "werden",
+        "wurden"
+       ],
+       [
+        "ihr",
+        "werdet",
+        "wurdet"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если нужно назвать, кем сделано, используют *von* + датив: *Das Buch wurde von Goethe geschrieben* — Книга была написана Гёте.",
+      "en": "To name the doer, use *von* + dative: *von Goethe geschrieben*.",
+      "uz": "Kim tomonidan qilinganini aytish uchun *von* + dativ ishlatiladi: *Das Buch wurde von Goethe geschrieben* — Kitob Gyote tomonidan yozilgan."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "In Usbekistan *wird* viel Baumwolle *angebaut*.",
+       "t": {
+        "ru": "В Узбекистане выращивают много хлопка.",
+        "uz": "O'zbekistonda ko'p paxta yetishtiriladi.",
+        "en": "A lot of cotton is grown in Uzbekistan."
+       }
+      },
+      {
+       "s": "Das Fenster *wurde* gestern *repariert*.",
+       "t": {
+        "ru": "Окно вчера починили.",
+        "uz": "Deraza kecha ta'mirlandi.",
+        "en": "The window was repaired yesterday."
+       }
+      },
+      {
+       "s": "Hier *wird* Deutsch *gesprochen*.",
+       "t": {
+        "ru": "Здесь говорят по-немецки.",
+        "uz": "Bu yerda nemischa gapiriladi.",
+        "en": "German is spoken here."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Werden* — многоликий глагол: сам по себе «становиться» (*Er wird Arzt*), с инфинитивом — будущее (*Er wird kommen*), с Partizip II — пассив (*Es wird gemacht*).",
+      "en": "*Werden* has three jobs: “become” on its own, future with an infinitive, passive with a Partizip II.",
+      "uz": "*Werden* — ko'p qirrali fe'l: o'zi «bo'lmoq, aylanmoq» (*Er wird Arzt* — U shifokor bo'ladi), infinitiv bilan — kelasi zamon (*Er wird kommen*), Partizip II bilan — passiv (*Es wird gemacht*)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10859,6 +11353,154 @@
     "en": "Gender shown by the article → -e; hidden (ein) → -er/-es; dative → -en.",
     "uz": "Rod artiklda ko'rinsa → -e; ko'rinmasa (ein) → -er/-es; dativ → -en."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Окончания прилагательных",
+      "en": "Adjective endings",
+      "uz": "Sifat qo'shimchalari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если прилагательное стоит _после_ глагола, оно не меняется: *Das Auto ist neu*. Но если оно стоит _перед_ существительным, у него появляется окончание: *das neue Auto*, *ein neues Auto*. Это одна из самых сложных тем немецкого, но в ней есть система.",
+      "en": "After a verb the adjective doesn't change: *Das Auto ist neu*. Before a noun it takes an ending: *das neue Auto*, *ein neues Auto*. It looks hard but there is a system.",
+      "uz": "Sifat fe'ldan _keyin_ tursa, o'zgarmaydi: *Das Auto ist neu*. Lekin ot oldidan tursa, qo'shimcha oladi: *das neue Auto*, *ein neues Auto*. Bu nemis tilining eng qiyin mavzularidan biri, lekin unda tizim bor."
+     }
+    },
+    {
+     "h": {
+      "ru": "Главная идея: кто-то должен показать род",
+      "en": "The key idea: someone has to show the gender",
+      "uz": "Asosiy g'oya: kimdir jinsni ko'rsatishi kerak"
+     }
+    },
+    {
+     "p": {
+      "ru": "Род и падеж должны быть видны хотя бы в одном слове. Если артикль уже ясно их показывает (*der, die, das, dem…*), прилагательному достаточно скромного окончания *-e* или *-en*. Если артикль «молчит» (*ein* — непонятно, мужской или средний) или его нет, прилагательное берёт на себя сильное окончание, как у артикля.",
+      "en": "The gender and case must be visible in at least one word. If the article shows them clearly (*der, die, das, dem*), the adjective gets a weak *-e* or *-en*. If the article is unclear (*ein*) or missing, the adjective takes the strong ending.",
+      "uz": "Jins va kelishik kamida bitta so'zda ko'rinishi kerak. Artikl ularni aniq ko'rsatsa (*der, die, das, dem…*), sifatga oddiy *-e* yoki *-en* qo'shimchasi yetarli. Artikl «jim» bo'lsa (*ein* — erkakmi, o'rtami, noma'lum) yoki umuman bo'lmasa, sifat kuchli qo'shimchani, artikldagidek qo'shimchani o'z zimmasiga oladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род (номинатив)",
+        "en": "Gender (nominative)",
+        "uz": "Jins (nominativ)"
+       },
+       {
+        "ru": "После der/die/das",
+        "en": "After der/die/das",
+        "uz": "der/die/das dan keyin"
+       },
+       {
+        "ru": "После ein/eine",
+        "en": "After ein/eine",
+        "uz": "ein/eine dan keyin"
+       },
+       {
+        "ru": "Без артикля",
+        "en": "No article",
+        "uz": "Artiklsiz"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "der alte Mann",
+        "ein alter Mann",
+        "alter Wein"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "die alte Frau",
+        "eine alte Frau",
+        "kalte Milch"
+       ],
+       [
+        {
+         "ru": "средний",
+         "en": "neuter",
+         "uz": "o'rta"
+        },
+        "das alte Haus",
+        "ein altes Haus",
+        "kaltes Wasser"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "die alten Häuser",
+        "—",
+        "alte Häuser"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Посмотри на столбец «после ein»: *alter* (как *der*), *altes* (как *das*) — прилагательное «подсказывает» род, потому что *ein* сам этого не сделал.",
+      "en": "Look at the “after ein” column: *alter* (like *der*), *altes* (like *das*) — the adjective shows the gender because *ein* couldn't.",
+      "uz": "«ein dan keyin» ustuniga qarang: *alter* (*der* kabi), *altes* (*das* kabi) — sifat jinsni «ko'rsatadi», chunki *ein* buni qila olmadi."
+     }
+    },
+    {
+     "note": {
+      "ru": "Упрощённое правило для начала: после *der/die/das* в номинативе единственного числа — *-e*, почти во всех остальных падежах и во множественном — *-en*.",
+      "en": "A simple start: after *der/die/das* in the nominative singular → *-e*; almost everywhere else and in the plural → *-en*.",
+      "uz": "Boshlash uchun soddalashtirilgan qoida: birlikdagi nominativda *der/die/das* dan keyin — *-e*, deyarli barcha boshqa kelishiklarda va ko'plikda — *-en*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich habe einen *neuen* Job.",
+       "t": {
+        "ru": "У меня новая работа.",
+        "uz": "Mening yangi ishim bor.",
+        "en": "I have a new job."
+       }
+      },
+      {
+       "s": "Das ist ein *schönes* Kleid.",
+       "t": {
+        "ru": "Это красивое платье.",
+        "uz": "Bu chiroyli ko'ylak.",
+        "en": "That's a beautiful dress."
+       }
+      },
+      {
+       "s": "Mit dem *roten* Auto fahre ich zur Arbeit.",
+       "t": {
+        "ru": "На красной машине я езжу на работу.",
+        "uz": "Qizil mashinada ishga boraman.",
+        "en": "I drive to work in the red car."
+       }
+      },
+      {
+       "s": "Ich trinke gern *heißen* Tee.",
+       "t": {
+        "ru": "Я люблю горячий чай.",
+        "uz": "Issiq choy ichishni yaxshi ko'raman.",
+        "en": "I like hot tea."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11121,6 +11763,132 @@
     "en": "mich-dich-sich-uns-euch-sich.",
     "uz": "mich-dich-sich-uns-euch-sich."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Возвратные глаголы: -ся",
+      "en": "Reflexive verbs",
+      "uz": "O'zlik fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Возвратный глагол — когда действие направлено на самого себя. В русском это «-ся»: умываться, радоваться. В узбекском — «-n»: yuvi_n_moq. В немецком для этого есть отдельное слово-местоимение: *sich*. *sich waschen* — умываться (дословно «мыть себя»).",
+      "en": "A reflexive verb is an action directed at yourself. German uses a separate pronoun, *sich*: *sich waschen* — to wash (oneself).",
+      "uz": "O'zlik fe'l — harakat o'ziga qaratilganda. O'zbek tilida bu «-n» qo'shimchasi: yuvi_n_moq. Nemis tilida buning uchun alohida olmosh-so'z bor: *sich*. *sich waschen* — yuvinmoq (so'zma-so'z «o'zini yuvmoq»)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Себя (акк.)",
+        "en": "Myself (acc.)",
+        "uz": "O'zini (akk.)"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "ich",
+        "mich",
+        "Ich freue mich."
+       ],
+       [
+        "du",
+        "dich",
+        "Du freust dich."
+       ],
+       [
+        "er / sie / es",
+        "sich",
+        "Er freut sich."
+       ],
+       [
+        "wir",
+        "uns",
+        "Wir freuen uns."
+       ],
+       [
+        "ihr",
+        "euch",
+        "Ihr freut euch."
+       ],
+       [
+        "sie / Sie",
+        "sich",
+        "Sie freuen sich."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Для *ich, du, wir, ihr* берут обычные местоимения (*mich, dich, uns, euch*). Слово *sich* — только для *er, sie, es* и *sie/Sie*.",
+      "en": "For *ich, du, wir, ihr* use the normal pronouns; *sich* is only for *er, sie, es* and *sie/Sie*.",
+      "uz": "*ich, du, wir, ihr* uchun oddiy olmoshlar olinadi (*mich, dich, uns, euch*). *sich* so'zi — faqat *er, sie, es* va *sie/Sie* uchun."
+     }
+    },
+    {
+     "p": {
+      "ru": "Важно: в немецком возвратные не всегда совпадают с русскими. *sich freuen* — радоваться (совпадает), но *sich setzen* — садиться, *sich erinnern* — помнить, *sich beeilen* — торопиться. Учи их вместе с *sich*.",
+      "en": "German reflexives don't always match other languages: *sich setzen* (sit down), *sich erinnern* (remember), *sich beeilen* (hurry). Learn them with *sich*.",
+      "uz": "Muhim: nemis tilidagi o'zlik fe'llar o'zbek tili bilan doim mos kelmaydi. *sich freuen* — xursand bo'lmoq, *sich setzen* — o'tirmoq, *sich erinnern* — eslamoq, *sich beeilen* — shoshilmoq. Ularni *sich* bilan birga yodlang."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *freue mich* auf die Ferien.",
+       "t": {
+        "ru": "Я жду не дождусь каникул.",
+        "uz": "Ta'tilni intiqlik bilan kutyapman.",
+        "en": "I'm looking forward to the holidays."
+       }
+      },
+      {
+       "s": "*Setz dich* bitte!",
+       "t": {
+        "ru": "Садись, пожалуйста!",
+        "uz": "O'tir, iltimos!",
+        "en": "Sit down, please!"
+       }
+      },
+      {
+       "s": "Wir müssen *uns beeilen*.",
+       "t": {
+        "ru": "Нам нужно поторопиться.",
+        "uz": "Shoshilishimiz kerak.",
+        "en": "We have to hurry."
+       }
+      },
+      {
+       "s": "Ich *wasche mir* die Hände.",
+       "t": {
+        "ru": "Я мою руки.",
+        "uz": "Qo'llarimni yuvaman.",
+        "en": "I'm washing my hands."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если есть ещё одно дополнение (руки, зубы), местоимение переходит в датив: *Ich wasche mich* (себя), но *Ich wasche mir die Hände* (себе руки).",
+      "en": "If there's another object, the pronoun goes into the dative: *Ich wasche mich*, but *Ich wasche mir die Hände.*",
+      "uz": "Yana bitta to'ldiruvchi bo'lsa (qo'l, tish), olmosh dativga o'tadi: *Ich wasche mich* (o'zimni), lekin *Ich wasche mir die Hände* (o'zimga qo'llarni)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11381,6 +12149,122 @@
     "en": "werden second, infinitive last.",
     "uz": "werden ikkinchi, infinitiv oxirida."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Будущее: werden + инфинитив",
+      "en": "The future: werden + infinitive",
+      "uz": "Kelasi zamon: werden + infinitiv"
+     }
+    },
+    {
+     "p": {
+      "ru": "Будущее время Futur I строится так: *werden* на месте 2 + основной глагол в начальной форме в конце. *Ich werde morgen arbeiten* — Я буду завтра работать.",
+      "en": "Futur I: *werden* in slot 2 + infinitive at the end. *Ich werde morgen arbeiten.*",
+      "uz": "Futur I kelasi zamoni shunday tuziladi: 2-o'rinda *werden* + oxirida asosiy fe'l boshlang'ich shaklda. *Ich werde morgen arbeiten* — Ertaga ishlayman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "werden",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "ich",
+        "werde",
+        "Ich werde dich anrufen."
+       ],
+       [
+        "du",
+        "wirst",
+        "Du wirst es schaffen."
+       ],
+       [
+        "er / sie / es",
+        "wird",
+        "Es wird regnen."
+       ],
+       [
+        "wir / sie / Sie",
+        "werden",
+        "Wir werden sehen."
+       ],
+       [
+        "ihr",
+        "werdet",
+        "Ihr werdet staunen."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Когда его на самом деле используют",
+      "en": "When Germans really use it",
+      "uz": "Nemislar uni aslida qachon ishlatadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Сюрприз: о будущих планах немцы чаще говорят _настоящим_ временем плюс слово времени: *Morgen fahre ich nach Berlin* — Завтра я еду в Берлин. Если из контекста ясно, что это будущее, *werden* не нужен.",
+      "en": "Surprise: for future plans Germans usually use the present plus a time word: *Morgen fahre ich nach Berlin.*",
+      "uz": "Kutilmagan narsa: kelajakdagi rejalar haqida nemislar ko'pincha _hozirgi_ zamon va vaqt so'zi bilan gapiradi: *Morgen fahre ich nach Berlin* — Ertaga Berlinga boraman. Kontekstdan kelajak ekani aniq bo'lsa, *werden* kerak emas."
+     }
+    },
+    {
+     "p": {
+      "ru": "Futur I используют для: обещаний и твёрдых намерений (*Ich werde dir helfen!*), прогнозов (*Morgen wird es kalt*) и предположений о настоящем (*Er wird wohl krank sein* — Он, наверное, болен).",
+      "en": "Futur I is used for promises (*Ich werde dir helfen!*), predictions (*Morgen wird es kalt*) and guesses about now (*Er wird wohl krank sein*).",
+      "uz": "Futur I quyidagilar uchun ishlatiladi: va'dalar va qat'iy niyatlar (*Ich werde dir helfen!*), bashoratlar (*Morgen wird es kalt*) va hozirgi haqida taxminlar (*Er wird wohl krank sein* — U kasal bo'lsa kerak)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *werde* nächstes Jahr in Deutschland *studieren*.",
+       "t": {
+        "ru": "В следующем году я буду учиться в Германии.",
+        "uz": "Kelasi yili Germaniyada o'qiyman.",
+        "en": "Next year I'll study in Germany."
+       }
+      },
+      {
+       "s": "Keine Sorge, alles *wird* gut.",
+       "t": {
+        "ru": "Не волнуйся, всё будет хорошо.",
+        "uz": "Xavotir olma, hammasi yaxshi bo'ladi.",
+        "en": "Don't worry, everything will be fine."
+       }
+      },
+      {
+       "s": "Am Wochenende *besuche* ich meine Eltern.",
+       "t": {
+        "ru": "На выходных я навещаю родителей.",
+        "uz": "Dam olish kunlari ota-onamnikiga boraman.",
+        "en": "At the weekend I'm visiting my parents."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Не путай: *Ich will* (хочу — модальный *wollen*) и *Ich werde* (буду). *Ich will kommen* ≠ *Ich werde kommen*.",
+      "en": "Don't confuse *Ich will* (I want — *wollen*) with *Ich werde* (I will).",
+      "uz": "Adashtirmang: *Ich will* (xohlayman — *wollen* modal fe'li) va *Ich werde* (…aman, kelasi zamon). *Ich will kommen* ≠ *Ich werde kommen*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11642,6 +12526,122 @@
     "en": "Once in the past → als; every time or now → wenn.",
     "uz": "O'tmishda bir marta → als; har safar yoki hozir → wenn."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Als или wenn: два «когда»",
+      "en": "Als or wenn: two kinds of “when”",
+      "uz": "Als yoki wenn: ikki xil «qachon»"
+     }
+    },
+    {
+     "p": {
+      "ru": "В русском одно слово «когда», в немецком для прошлого их два. Выбор зависит от того, _сколько раз_ это было.",
+      "en": "German has two words for “when” in the past. The choice depends on how many times it happened.",
+      "uz": "O'zbek tilida «-ganda» bitta, nemis tilida o'tmish uchun ikki so'z bor. Tanlov bu _necha marta_ bo'lganiga bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Ситуация",
+        "en": "Situation",
+        "uz": "Vaziyat"
+       },
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "один раз в прошлом",
+         "en": "once in the past",
+         "uz": "o'tmishda bir marta"
+        },
+        "als",
+        "Als ich 10 war, …"
+       ],
+       [
+        {
+         "ru": "много раз в прошлом (каждый раз, когда)",
+         "en": "repeatedly in the past",
+         "uz": "o'tmishda ko'p marta (har safar)"
+        },
+        "wenn",
+        "Wenn es regnete, …"
+       ],
+       [
+        {
+         "ru": "настоящее и будущее (всегда)",
+         "en": "present and future",
+         "uz": "hozirgi va kelasi"
+        },
+        "wenn",
+        "Wenn ich Zeit habe, …"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Als* — одно событие или один период в прошлом: детство, одна поездка, один день. *Wenn* — повторялось: «каждый раз, когда». А для настоящего и будущего всегда *wenn*.",
+      "en": "*Als* — one event or one period in the past (childhood, one trip). *Wenn* — repeated (“whenever”), and always for present and future.",
+      "uz": "*Als* — o'tmishdagi bitta voqea yoki bitta davr: bolalik, bitta sayohat, bitta kun. *Wenn* — takrorlangan: «har safar … -ganda». Hozirgi va kelasi zamon uchun esa doim *wenn*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Als* ich ein Kind *war*, wohnten wir in Fergana.",
+       "t": {
+        "ru": "Когда я был ребёнком, мы жили в Фергане.",
+        "uz": "Bolaligimda Farg'onada yashardik.",
+        "en": "When I was a child, we lived in Fergana."
+       }
+      },
+      {
+       "s": "*Als* ich in Berlin *ankam*, regnete es.",
+       "t": {
+        "ru": "Когда я приехал в Берлин, шёл дождь.",
+        "uz": "Berlinga yetib kelganimda yomg'ir yog'ayotgan edi.",
+        "en": "When I arrived in Berlin, it was raining."
+       }
+      },
+      {
+       "s": "*Wenn* meine Oma *kam*, brachte sie immer Kuchen mit.",
+       "t": {
+        "ru": "Когда (каждый раз) бабушка приходила, она приносила пирог.",
+        "uz": "Buvim har safar kelganida pirog olib kelardi.",
+        "en": "Whenever my grandma came, she brought cake."
+       }
+      },
+      {
+       "s": "*Wenn* ich müde *bin*, trinke ich Kaffee.",
+       "t": {
+        "ru": "Когда я устаю, я пью кофе.",
+        "uz": "Charchaganimda qahva ichaman.",
+        "en": "When I'm tired, I drink coffee."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "И *als*, и *wenn* открывают придаточное — глагол уходит в конец. Подсказка: если можно сказать «каждый раз, когда», бери *wenn*.",
+      "en": "Both start a subordinate clause — the verb goes to the end. Tip: if you can say “every time”, use *wenn*.",
+      "uz": "*als* ham, *wenn* ham ergash gap ochadi — fe'l oxirga ketadi. Ishora: «har safar … -ganda» deyish mumkin bo'lsa, *wenn* ni oling."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11907,6 +12907,101 @@
     "en": "W-word or ob → verb to the end.",
     "uz": "W-so'z yoki ob → fe'l oxiriga."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Косвенные вопросы: Weißt du, wo…?",
+      "en": "Indirect questions: Do you know where…?",
+      "uz": "Bilvosita savollar: Bilasanmi, qayerda…?"
+     }
+    },
+    {
+     "p": {
+      "ru": "Косвенный вопрос — это вопрос, «вложенный» в другую фразу: «Ты не знаешь, где вокзал?», «Скажите, пожалуйста, когда начинается урок». Так спрашивают вежливее. В немецком такая вложенная часть — придаточное, поэтому глагол уходит в конец.",
+      "en": "An indirect question is a question inside another sentence: “Do you know where the station is?” It's more polite. In German it's a subordinate clause, so the verb goes to the end.",
+      "uz": "Bilvosita savol — boshqa gap ichiga «joylashtirilgan» savol: «Vokzal qayerdaligini bilasanmi?», «Dars qachon boshlanishini ayta olasizmi?». Shunday so'rash muloyimroq. Nemis tilida bunday ichki qism ergash gap, shuning uchun fe'l oxirga ketadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Прямой вопрос",
+        "en": "Direct question",
+        "uz": "To'g'ri savol"
+       },
+       {
+        "ru": "Косвенный вопрос",
+        "en": "Indirect question",
+        "uz": "Bilvosita savol"
+       }
+      ],
+      "rows": [
+       [
+        "Wo ist der Bahnhof?",
+        "Weißt du, wo der Bahnhof ist?"
+       ],
+       [
+        "Wann beginnt der Kurs?",
+        "Können Sie mir sagen, wann der Kurs beginnt?"
+       ],
+       [
+        "Kommt er heute?",
+        "Ich weiß nicht, ob er heute kommt."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "W-слово или ob",
+      "en": "A W-word or ob",
+      "uz": "W-so'z yoki ob"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если в прямом вопросе было W-слово (*wo, wann, was, wie*), оно и открывает косвенный. Если вопрос был «да/нет» (*Kommt er?*), в косвенном появляется слово *ob* — «ли»: *Ich weiß nicht, ob er kommt* — Я не знаю, придёт ли он.",
+      "en": "If the direct question had a W-word, it opens the indirect one. A yes/no question uses *ob* (whether): *Ich weiß nicht, ob er kommt.*",
+      "uz": "To'g'ri savolda W-so'z bo'lsa (*wo, wann, was, wie*), bilvositasini ham u ochadi. Savol «ha/yo'q» bo'lsa (*Kommt er?*), bilvositada *ob* — «-mi» so'zi paydo bo'ladi: *Ich weiß nicht, ob er kommt* — U kelish-kelmasligini bilmayman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Weißt du, *wie* spät es *ist*?",
+       "t": {
+        "ru": "Ты не знаешь, который час?",
+        "uz": "Soat necha bo'lganini bilasanmi?",
+        "en": "Do you know what time it is?"
+       }
+      },
+      {
+       "s": "Können Sie mir sagen, *wo* die Post *ist*?",
+       "t": {
+        "ru": "Не подскажете, где почта?",
+        "uz": "Pochta qayerdaligini ayta olasizmi?",
+        "en": "Can you tell me where the post office is?"
+       }
+      },
+      {
+       "s": "Ich frage mich, *ob* das richtig *ist*.",
+       "t": {
+        "ru": "Я задаюсь вопросом, правильно ли это.",
+        "uz": "Bu to'g'rimi, deb o'ylayapman.",
+        "en": "I wonder whether that's right."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Полезные начала: *Weißt du, …*, *Können Sie mir sagen, …*, *Ich weiß nicht, …*, *Ich möchte wissen, …* — после каждого запятая и глагол в конце.",
+      "en": "Useful openers: *Weißt du, …*, *Können Sie mir sagen, …*, *Ich weiß nicht, …* — comma, then the verb at the end.",
+      "uz": "Foydali boshlanishlar: *Weißt du, …*, *Können Sie mir sagen, …*, *Ich weiß nicht, …*, *Ich möchte wissen, …* — har biridan keyin vergul va oxirida fe'l."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12169,6 +13264,183 @@
     "en": "Learn the verb with its preposition: warten auf, denken an.",
     "uz": "Fe'lni predlogi bilan o'rgan: warten auf, denken an."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы с постоянным предлогом",
+      "en": "Verbs with a fixed preposition",
+      "uz": "Doimiy predlogli fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Многие немецкие глаголы всегда «ходят» с определённым предлогом: *warten auf* — ждать (кого? чего?), *denken an* — думать о, *sich interessieren für* — интересоваться. Предлог часто не совпадает с русским или узбекским, поэтому учат пару целиком.",
+      "en": "Many German verbs always come with a particular preposition: *warten auf* (wait for), *denken an* (think of), *sich interessieren für* (be interested in). Learn the pair together.",
+      "uz": "Ko'p nemis fe'llari doim ma'lum predlog bilan «yuradi»: *warten auf* — kutmoq, *denken an* — o'ylamoq (haqida), *sich interessieren für* — qiziqmoq. Predlog ko'pincha o'zbek tili bilan mos kelmaydi, shuning uchun juftlik butunligicha yodlanadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол + предлог",
+        "en": "Verb + preposition",
+        "uz": "Fe'l + predlog"
+       },
+       {
+        "ru": "Падеж",
+        "en": "Case",
+        "uz": "Kelishik"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "warten auf",
+        {
+         "ru": "акк.",
+         "en": "acc.",
+         "uz": "akk."
+        },
+        {
+         "ru": "ждать",
+         "en": "wait for",
+         "uz": "kutmoq"
+        },
+        "Ich warte auf den Bus."
+       ],
+       [
+        "denken an",
+        {
+         "ru": "акк.",
+         "en": "acc.",
+         "uz": "akk."
+        },
+        {
+         "ru": "думать о",
+         "en": "think of",
+         "uz": "o'ylamoq"
+        },
+        "Ich denke an dich."
+       ],
+       [
+        "sich freuen auf",
+        {
+         "ru": "акк.",
+         "en": "acc.",
+         "uz": "akk."
+        },
+        {
+         "ru": "ждать с радостью",
+         "en": "look forward to",
+         "uz": "intiqlik bilan kutmoq"
+        },
+        "Ich freue mich auf den Urlaub."
+       ],
+       [
+        "sich interessieren für",
+        {
+         "ru": "акк.",
+         "en": "acc.",
+         "uz": "akk."
+        },
+        {
+         "ru": "интересоваться",
+         "en": "be interested in",
+         "uz": "qiziqmoq"
+        },
+        "Er interessiert sich für Musik."
+       ],
+       [
+        "träumen von",
+        {
+         "ru": "дат.",
+         "en": "dat.",
+         "uz": "dat."
+        },
+        {
+         "ru": "мечтать о",
+         "en": "dream of",
+         "uz": "orzu qilmoq"
+        },
+        "Sie träumt von einem Haus."
+       ],
+       [
+        "sprechen mit / über",
+        {
+         "ru": "дат. / акк.",
+         "en": "dat. / acc.",
+         "uz": "dat. / akk."
+        },
+        {
+         "ru": "говорить с / о",
+         "en": "talk to / about",
+         "uz": "gaplashmoq bilan / haqida"
+        },
+        "Ich spreche mit ihm über das Problem."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Вопросы и слова на da-",
+      "en": "Questions and da- words",
+      "uz": "Savollar va da- so'zlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если речь о вещи, вопрос строят из *wo(r)-* + предлог: *Worauf wartest du?* — Чего ты ждёшь? А ответ без повтора — из *da(r)-* + предлог: *Ich warte darauf* — Я жду этого. Для людей — обычный предлог с местоимением: *Auf wen wartest du? — Auf ihn.*",
+      "en": "For things, the question is *wo(r)-* + preposition (*Worauf wartest du?*) and the answer *da(r)-* + preposition (*Ich warte darauf*). For people use the preposition + pronoun (*Auf wen? — Auf ihn.*).",
+      "uz": "Gap narsa haqida bo'lsa, savol *wo(r)-* + predlogdan yasaladi: *Worauf wartest du?* — Nimani kutyapsan? Javob esa takrorsiz — *da(r)-* + predlogdan: *Ich warte darauf* — Shuni kutyapman. Odamlar uchun — oddiy predlog va olmosh: *Auf wen wartest du? — Auf ihn.*"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *warte* schon lange *auf* dich.",
+       "t": {
+        "ru": "Я тебя давно жду.",
+        "uz": "Seni ancha vaqtdan beri kutyapman.",
+        "en": "I've been waiting for you for ages."
+       }
+      },
+      {
+       "s": "*Woran denkst* du?",
+       "t": {
+        "ru": "О чём ты думаешь?",
+        "uz": "Nima haqida o'ylayapsan?",
+        "en": "What are you thinking about?"
+       }
+      },
+      {
+       "s": "Wir *freuen uns auf* das Wochenende.",
+       "t": {
+        "ru": "Мы ждём выходных.",
+        "uz": "Dam olish kunlarini intiqlik bilan kutyapmiz.",
+        "en": "We're looking forward to the weekend."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*sich freuen auf* — радоваться будущему, *sich freuen über* — радоваться тому, что уже есть. *Ich freue mich über das Geschenk* (подарок уже у меня).",
+      "en": "*sich freuen auf* — about the future; *sich freuen über* — about something you already have.",
+      "uz": "*sich freuen auf* — kelajakdagi narsadan, *sich freuen über* — bor narsadan xursand bo'lmoq. *Ich freue mich über das Geschenk* (sovg'a allaqachon menda)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12429,6 +13701,139 @@
     "en": "Verb last in the clause; after nachdem use the earlier tense.",
     "uz": "Ergash gapda fe'l oxirida; nachdem dan keyin avvalgi zamon."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "До, после, пока: временные придаточные",
+      "en": "Before, after, while: time clauses",
+      "uz": "Oldin, keyin, paytida: payt ergash gaplari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы рассказать, в каком порядке что происходило, используют связки *bevor* (перед тем как), *nachdem* (после того как) и *während* (пока, в то время как). Все они открывают придаточное — глагол в конце.",
+      "en": "To show the order of events, use *bevor* (before), *nachdem* (after) and *während* (while). They all start a subordinate clause — verb at the end.",
+      "uz": "Voqealar qaysi tartibda bo'lganini aytish uchun *bevor* (… -dan oldin), *nachdem* (… -gandan keyin) va *während* (… paytida) bog'lovchilari ishlatiladi. Ularning hammasi ergash gap ochadi — fe'l oxirida."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Связка",
+        "en": "Linker",
+        "uz": "Bog'lovchi"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "bevor",
+        {
+         "ru": "перед тем как",
+         "en": "before",
+         "uz": "… -dan oldin"
+        },
+        "Bevor ich esse, wasche ich mir die Hände."
+       ],
+       [
+        "nachdem",
+        {
+         "ru": "после того как",
+         "en": "after",
+         "uz": "… -gandan keyin"
+        },
+        "Nachdem ich gegessen hatte, ging ich spazieren."
+       ],
+       [
+        "während",
+        {
+         "ru": "пока, в то время как",
+         "en": "while",
+         "uz": "… paytida"
+        },
+        "Während er kocht, höre ich Musik."
+       ],
+       [
+        "seit / seitdem",
+        {
+         "ru": "с тех пор как",
+         "en": "since",
+         "uz": "… -gandan beri"
+        },
+        "Seit ich hier wohne, bin ich glücklich."
+       ],
+       [
+        "bis",
+        {
+         "ru": "пока не, до того как",
+         "en": "until",
+         "uz": "… -guncha"
+        },
+        "Warte, bis ich komme."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Nachdem и времена",
+      "en": "Nachdem and tenses",
+      "uz": "Nachdem va zamonlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "После *nachdem* действие придаточного всегда случилось _раньше_, поэтому в нём на шаг «более прошлое» время. Если главное в Präteritum или Perfekt, в придаточном — Plusquamperfekt (*hatte gegessen*). Если главное в настоящем — в придаточном Perfekt.",
+      "en": "After *nachdem* the clause happened earlier, so it uses a tense one step further back: main clause past → Plusquamperfekt (*hatte gegessen*); main clause present → Perfekt.",
+      "uz": "*nachdem* dan keyingi harakat doim _oldinroq_ bo'lgan, shuning uchun unda bir qadam «ko'proq o'tgan» zamon ishlatiladi. Bosh gap Präteritum yoki Perfekt da bo'lsa, ergash gapda — Plusquamperfekt (*hatte gegessen*). Bosh gap hozirgi zamonda bo'lsa — ergash gapda Perfekt."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Bevor* du gehst, ruf mich an.",
+       "t": {
+        "ru": "Перед тем как уйдёшь, позвони мне.",
+        "uz": "Ketishdan oldin menga qo'ng'iroq qil.",
+        "en": "Before you leave, call me."
+       }
+      },
+      {
+       "s": "*Nachdem* sie die Prüfung *bestanden hatte*, feierte sie.",
+       "t": {
+        "ru": "Сдав экзамен, она отпраздновала.",
+        "uz": "Imtihonni topshirgandan keyin u bayram qildi.",
+        "en": "After she had passed the exam, she celebrated."
+       }
+      },
+      {
+       "s": "*Während* ich *arbeite*, schläft das Baby.",
+       "t": {
+        "ru": "Пока я работаю, малыш спит.",
+        "uz": "Men ishlayotganimda chaqaloq uxlaydi.",
+        "en": "While I work, the baby sleeps."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Während* бывает и предлогом с генитивом: *während des Urlaubs* — во время отпуска. Тогда это не придаточное.",
+      "en": "*Während* can also be a preposition with the genitive: *während des Urlaubs* — then it's not a clause.",
+      "uz": "*Während* genitiv bilan predlog ham bo'ladi: *während des Urlaubs* — ta'til paytida. Unda bu ergash gap emas."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12695,6 +14100,105 @@
     "en": "obwohl: verb last; trotzdem: verb right after.",
     "uz": "obwohl: fe'l oxirida; trotzdem: fe'l darhol keyin."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Хотя и всё равно",
+      "en": "Although and still",
+      "uz": "Garchi va baribir"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба слова выражают противоречие: «что-то мешало, но всё же произошло». Разница в грамматике. *Obwohl* (хотя) открывает придаточное — глагол уходит в конец. *Trotzdem* (всё равно, тем не менее) — наречие, оно занимает место 1 в главном предложении, и глагол идёт сразу за ним.",
+      "en": "Both express a contrast. *Obwohl* (although) opens a subordinate clause — verb at the end. *Trotzdem* (still, nevertheless) is an adverb that takes slot 1 of a main clause — the verb follows right after it.",
+      "uz": "Ikkala so'z ham qarama-qarshilikni bildiradi: «nimadir to'sqinlik qildi, lekin baribir bo'ldi». Farqi grammatikada. *Obwohl* (garchi) ergash gap ochadi — fe'l oxirga ketadi. *Trotzdem* (baribir, shunga qaramay) — ravish, u bosh gapda 1-o'rinni egallaydi va fe'l darhol undan keyin keladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Порядок",
+        "en": "Order",
+        "uz": "Tartib"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "obwohl",
+        {
+         "ru": "…, obwohl + … + глагол",
+         "en": "…, obwohl + … + verb",
+         "uz": "…, obwohl + … + fe'l"
+        },
+        "Ich gehe raus, obwohl es regnet."
+       ],
+       [
+        "trotzdem",
+        {
+         "ru": "…. Trotzdem + глагол + …",
+         "en": "…. Trotzdem + verb + …",
+         "uz": "…. Trotzdem + fe'l + …"
+        },
+        "Es regnet. Trotzdem gehe ich raus."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба примера значат одно и то же: «Идёт дождь, но я выхожу». Просто логика разная: *obwohl* стоит перед причиной («хотя идёт дождь»), а *trotzdem* — перед результатом («всё равно выхожу»).",
+      "en": "Both examples mean the same. *Obwohl* introduces the obstacle (“although it's raining”); *trotzdem* introduces the result (“I still go out”).",
+      "uz": "Ikkala misol bir xil ma'noda: «Yomg'ir yog'yapti, lekin men chiqaman». Faqat mantiq boshqa: *obwohl* sabab oldidan turadi («garchi yomg'ir yog'sa ham»), *trotzdem* esa natija oldidan («baribir chiqaman»)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Obwohl* ich müde *bin*, lerne ich weiter.",
+       "t": {
+        "ru": "Хотя я устал, я продолжаю учиться.",
+        "uz": "Charchagan bo'lsam ham, o'qishni davom ettiraman.",
+        "en": "Although I'm tired, I keep studying."
+       }
+      },
+      {
+       "s": "Das Essen war teuer. *Trotzdem* *hat* es uns geschmeckt.",
+       "t": {
+        "ru": "Еда была дорогой. Тем не менее нам понравилось.",
+        "uz": "Ovqat qimmat edi. Shunga qaramay bizga yoqdi.",
+        "en": "The food was expensive. We still enjoyed it."
+       }
+      },
+      {
+       "s": "Er ist krank, *aber* er arbeitet *trotzdem*.",
+       "t": {
+        "ru": "Он болен, но всё равно работает.",
+        "uz": "U kasal, lekin baribir ishlayapti.",
+        "en": "He's ill, but he's working anyway."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Trotzdem* может стоять и в середине: *Er arbeitet trotzdem.* Но если оно первое — глагол сразу за ним: *Trotzdem arbeitet er.*",
+      "en": "*Trotzdem* can also sit in the middle (*Er arbeitet trotzdem*), but if it comes first, the verb follows immediately.",
+      "uz": "*Trotzdem* o'rtada ham turishi mumkin: *Er arbeitet trotzdem.* Lekin u birinchi tursa — fe'l darhol undan keyin: *Trotzdem arbeitet er.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

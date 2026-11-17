@@ -9970,6 +9970,136 @@
     "en": "have/has + V3; for — how long, since — from when.",
     "uz": "have/has + V3; for — qancha vaqt, since — qachondan beri."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Время, которого нет в русском",
+      "en": "A tense that links past and present",
+      "uz": "O'zbek tilida yo'q zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Present Perfect описывает прошлое действие, которое _важно сейчас_. Не «когда это было», а «что из этого есть теперь». *I have lost my keys* — Я потерял ключи (и сейчас их у меня нет). В русском и узбекском это просто прошедшее время, поэтому Present Perfect кажется странным — но логика простая: результат сейчас.",
+      "en": "The Present Perfect describes a past action that matters now — not when it happened, but what it means now. *I have lost my keys* (I don't have them now).",
+      "uz": "Present Perfect hozir _ahamiyatli_ bo'lgan o'tmishdagi harakatni bildiradi. «Qachon bo'ldi» emas, «hozir undan nima bor». *I have lost my keys* — Kalitlarimni yo'qotdim (hozir ular menda yo'q). O'zbek tilida bu oddiy o'tgan zamon, shuning uchun Present Perfect g'alati tuyuladi — lekin mantiq oddiy: natija hozir."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Have / has* + третья форма глагола (past participle). У правильных глаголов она совпадает с прошедшим: *worked*, *played*. У неправильных — своя, её дают в третьей колонке таблиц: *go – went – gone*, *see – saw – seen*, *do – did – done*.",
+      "en": "*Have / has* + past participle. Regular verbs: same as the past (*worked*). Irregular verbs have their own third form: *gone, seen, done*.",
+      "uz": "*Have / has* + fe'lning uchinchi shakli (past participle). To'g'ri fe'llarda u o'tgan zamon bilan bir xil: *worked*, *played*. Noto'g'rilarida — o'ziniki, jadvallarning uchinchi ustunida: *go – went – gone*, *see – saw – seen*, *do – did – done*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Помощник",
+        "en": "Helper",
+        "uz": "Yordamchi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "have ('ve)",
+        "I've finished my homework."
+       ],
+       [
+        "he / she / it",
+        "has ('s)",
+        "She's visited London."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Три главных случая",
+      "en": "Three main uses",
+      "uz": "Uchta asosiy holat"
+     }
+    },
+    {
+     "p": {
+      "ru": "1) Опыт за всю жизнь, без точной даты: *Have you ever been to Paris?* — Ты когда-нибудь был в Париже? 2) Результат сейчас: *I've broken my phone* — у меня сломан телефон. 3) Действие началось в прошлом и длится до сих пор: *I've lived here for five years* — Я живу здесь пять лет (и сейчас живу).",
+      "en": "1) Life experience with no date: *Have you ever been to Paris?* 2) A result now: *I've broken my phone.* 3) Something that started in the past and continues: *I've lived here for five years.*",
+      "uz": "1) Butun hayotdagi tajriba, aniq sanasiz: *Have you ever been to Paris?* — Hech Parijda bo'lganmisan? 2) Hozirgi natija: *I've broken my phone* — telefonim singan. 3) O'tmishda boshlanib, hozirgacha davom etayotgan harakat: *I've lived here for five years* — Besh yildan beri shu yerda yashayman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I *have* never *eaten* sushi.",
+       "t": {
+        "ru": "Я никогда не ел суши.",
+        "uz": "Men hech qachon sushi yemaganman."
+       }
+      },
+      {
+       "s": "She *has* just *left*.",
+       "t": {
+        "ru": "Она только что ушла.",
+        "uz": "U hozirgina ketdi."
+       }
+      },
+      {
+       "s": "*Have* you *finished* yet?",
+       "t": {
+        "ru": "Ты уже закончил?",
+        "uz": "Tugatdingmi?"
+       }
+      },
+      {
+       "s": "We *'ve known* each other since 2018.",
+       "t": {
+        "ru": "Мы знакомы с 2018 года.",
+        "uz": "Biz 2018-yildan beri tanishmiz."
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Слова-подсказки",
+      "en": "Signal words",
+      "uz": "Ishora so'zlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "*ever* (когда-нибудь), *never* (никогда), *already* (уже), *yet* (уже — в вопросе, ещё — в отрицании), *just* (только что), *for* (в течение: *for two years*), *since* (с какого-то момента: *since Monday*).",
+      "en": "*ever, never, already, yet, just, for* (a period: *for two years*), *since* (a starting point: *since Monday*).",
+      "uz": "*ever* (hech qachon — savolda), *never* (hech qachon), *already* (allaqachon), *yet* (hali — inkorda, savolda «-dimi»), *just* (hozirgina), *for* (davomida: *for two years*), *since* (-dan beri: *since Monday*)."
+     }
+    },
+    {
+     "note": {
+      "ru": "Если названо точное время в прошлом (*yesterday, last year, in 2019*), Present Perfect нельзя — нужен Past Simple. *I saw him yesterday*, а не «I have seen him yesterday».",
+      "en": "With a finished past time (*yesterday, in 2019*) you can't use the Present Perfect — use the Past Simple.",
+      "uz": "O'tmishdagi aniq vaqt aytilsa (*yesterday, last year, in 2019*), Present Perfect ishlatib bo'lmaydi — Past Simple kerak. «I have seen him yesterday» emas, *I saw him yesterday*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10233,6 +10363,127 @@
     "en": "A past time is named — Past Simple; no time, result matters — Present Perfect.",
     "uz": "O'tgan vaqt aytilgan — Past Simple; vaqt yo'q, natija muhim — Present Perfect."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два прошедших — в чём разница",
+      "en": "Two past forms — what's the difference",
+      "uz": "Ikki o'tgan zamon — farqi nimada"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба времени говорят о прошлом, но смотрят на него по-разному. *Past Simple* — это история: действие закончилось, оно «там», в прошлом, и обычно известно когда. *Present Perfect* — мост к настоящему: важно не когда, а что это значит сейчас.",
+      "en": "Both talk about the past, but differently. The Past Simple is a story: finished, “back then”, usually with a time. The Present Perfect is a bridge to now: what matters is the effect now.",
+      "uz": "Ikkala zamon ham o'tmish haqida, lekin unga turlicha qaraydi. *Past Simple* — bu hikoya: harakat tugagan, u «o'sha yerda», o'tmishda, va odatda qachonligi ma'lum. *Present Perfect* — hozirga ko'prik: qachonligi emas, hozir nimani anglatishi muhim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Вопрос",
+        "en": "Question",
+        "uz": "Savol"
+       },
+       "Past Simple",
+       "Present Perfect"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "Известно когда?",
+         "en": "Is the time stated?",
+         "uz": "Qachonligi aytilganmi?"
+        },
+        {
+         "ru": "да: yesterday, in 2020",
+         "en": "yes: yesterday, in 2020",
+         "uz": "ha: yesterday, in 2020"
+        },
+        {
+         "ru": "нет / неважно",
+         "en": "no / not important",
+         "uz": "yo'q / muhim emas"
+        }
+       ],
+       [
+        {
+         "ru": "Период закончился?",
+         "en": "Is the period over?",
+         "uz": "Davr tugaganmi?"
+        },
+        {
+         "ru": "да: last week",
+         "en": "yes: last week",
+         "uz": "ha: last week"
+        },
+        {
+         "ru": "нет: today, this year",
+         "en": "no: today, this year",
+         "uz": "yo'q: today, this year"
+        }
+       ],
+       [
+        {
+         "ru": "Связь с сейчас?",
+         "en": "Link to now?",
+         "uz": "Hozir bilan bog'liqmi?"
+        },
+        {
+         "ru": "нет, просто история",
+         "en": "no, just a story",
+         "uz": "yo'q, shunchaki hikoya"
+        },
+        {
+         "ru": "да, результат или опыт",
+         "en": "yes, result or experience",
+         "uz": "ha, natija yoki tajriba"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I *have visited* Bukhara three times.",
+       "t": {
+        "ru": "Я был в Бухаре три раза (за жизнь).",
+        "uz": "Buxoroda uch marta bo'lganman."
+       }
+      },
+      {
+       "s": "I *visited* Bukhara last summer.",
+       "t": {
+        "ru": "Я был в Бухаре прошлым летом.",
+        "uz": "O'tgan yozda Buxoroda bo'ldim."
+       }
+      },
+      {
+       "s": "*Have* you *seen* my bag? — Yes, I *saw* it in the kitchen.",
+       "t": {
+        "ru": "Ты видел мою сумку? — Да, я видел её на кухне.",
+        "uz": "Sumkamni ko'rdingmi? — Ha, oshxonada ko'rdim."
+       }
+      }
+     ]
+    },
+    {
+     "p": {
+      "ru": "Посмотри на последний пример: вопрос «видел ли» — Present Perfect (результат: где сумка сейчас?). Ответ с конкретным местом и моментом — уже история, поэтому Past Simple. Разговор часто начинается с Perfect и переходит в Past Simple, когда появляются детали.",
+      "en": "In the last example the question asks about a result now (Present Perfect); the answer gives a specific moment, so it becomes a story (Past Simple). Conversations often start with the Perfect and switch to the Past Simple for details.",
+      "uz": "Oxirgi misolga qarang: «ko'rdingmi» savoli — Present Perfect (natija: sumka hozir qayerda?). Aniq joy va payt bilan javob — endi hikoya, shuning uchun Past Simple. Suhbat ko'pincha Perfect bilan boshlanib, tafsilotlar paydo bo'lganda Past Simple ga o'tadi."
+     }
+    },
+    {
+     "note": {
+      "ru": "Слово-маркер решает: _yesterday, ago, last…, in + год, when…?_ → Past Simple. *ever, never, yet, already, just, since, so far* → Present Perfect.",
+      "en": "Signal words decide: *yesterday, ago, last…, in + year, when?* → Past Simple. *ever, never, yet, already, just, since, so far* → Present Perfect.",
+      "uz": "Ishora so'z hal qiladi: *yesterday, ago, last…, in + yil, when…?* → Past Simple. *ever, never, yet, already, just, since, so far* → Present Perfect."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10494,6 +10745,136 @@
     "en": "Real: if + present → will. Imagined: if + past → would.",
     "uz": "Haqiqiy: if + present → will. Xayoliy: if + past → would."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Если… то: условные предложения",
+      "en": "If… then: conditionals",
+      "uz": "Agar… unda: shart gaplar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Условное предложение состоит из двух частей: условие (*if* — если) и результат. В английском есть несколько типов, и выбор зависит от того, насколько _реально_ условие.",
+      "en": "A conditional has two parts: the condition (*if*) and the result. English has several types, chosen by how real the condition is.",
+      "uz": "Shart gap ikki qismdan iborat: shart (*if* — agar) va natija. Ingliz tilida bir necha turi bor va tanlov shart _qanchalik real_ ekaniga bog'liq."
+     }
+    },
+    {
+     "h": {
+      "ru": "Первый тип: реальное будущее",
+      "en": "First conditional: real future",
+      "uz": "Birinchi tur: real kelajak"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для того, что _вполне может_ случиться. В части с *if* — Present Simple (не *will*!), в результате — *will* + глагол. *If it rains, I will stay at home* — Если пойдёт дождь, я останусь дома.",
+      "en": "For things that can really happen. *If* + Present Simple (not *will*!), result with *will*: *If it rains, I will stay at home.*",
+      "uz": "Haqiqatan _bo'lishi mumkin_ bo'lgan narsa uchun. *if* qismida — Present Simple (*will* emas!), natijada — *will* + fe'l. *If it rains, I will stay at home* — Agar yomg'ir yog'sa, uyda qolaman."
+     }
+    },
+    {
+     "note": {
+      "ru": "Главная ловушка: после *if* не ставят *will*, хотя по смыслу это будущее. «Если ты придёшь» — *If you come*, а не «If you will come».",
+      "en": "The main trap: no *will* after *if*, even though it means the future: *If you come*, not “If you will come”.",
+      "uz": "Asosiy tuzoq: *if* dan keyin *will* qo'yilmaydi, garchi ma'nosi kelajak bo'lsa ham. «Agar kelsang» — *If you come*, «If you will come» emas."
+     }
+    },
+    {
+     "h": {
+      "ru": "Второй тип: воображаемое",
+      "en": "Second conditional: imaginary",
+      "uz": "Ikkinchi tur: xayoliy"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для нереального или маловероятного сейчас — мечты, воображаемые ситуации. В части с *if* — Past Simple, в результате — *would* + глагол. *If I had a lot of money, I would travel* — Если бы у меня было много денег, я бы путешествовал. Прошедшее время здесь не значит прошлое — оно показывает «нереальность».",
+      "en": "For unreal or unlikely situations now. *If* + Past Simple, result with *would*: *If I had a lot of money, I would travel.* The past form here signals “unreal”, not past time.",
+      "uz": "Hozirgi real bo'lmagan yoki ehtimoli kam narsa uchun — orzular, xayoliy vaziyatlar. *if* qismida — Past Simple, natijada — *would* + fe'l. *If I had a lot of money, I would travel* — Agar pulim ko'p bo'lganida, sayohat qilardim. Bu yerda o'tgan zamon o'tmishni emas, «haqiqiy emas»likni bildiradi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Часть с if",
+        "en": "If part",
+        "uz": "if qismi"
+       },
+       {
+        "ru": "Результат",
+        "en": "Result",
+        "uz": "Natija"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "1",
+        "Present Simple",
+        "will + verb",
+        "If you study, you will pass."
+       ],
+       [
+        "2",
+        "Past Simple",
+        "would + verb",
+        "If I were you, I would study."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "If you *heat* ice, it *melts*.",
+       "t": {
+        "ru": "Если нагреть лёд, он тает (всегда).",
+        "uz": "Muzni qizdirsang, eriydi (doim)."
+       }
+      },
+      {
+       "s": "If I *see* Ali, I *'ll tell* him.",
+       "t": {
+        "ru": "Если увижу Али, скажу ему.",
+        "uz": "Alini ko'rsam, aytaman."
+       }
+      },
+      {
+       "s": "If I *were* you, I *would* call her.",
+       "t": {
+        "ru": "На твоём месте я бы ей позвонил.",
+        "uz": "Sening o'rningda bo'lganimda, unga qo'ng'iroq qilardim."
+       }
+      },
+      {
+       "s": "What *would* you *do* if you *won* a million?",
+       "t": {
+        "ru": "Что бы ты сделал, если бы выиграл миллион?",
+        "uz": "Million yutsang, nima qilarding?"
+       }
+      }
+     ]
+    },
+    {
+     "p": {
+      "ru": "Есть и «нулевой тип» (первый пример) — для того, что всегда так: законы природы, правила. Тогда в обеих частях Present Simple.",
+      "en": "There's also a “zero conditional” (first example) for things that are always true: Present Simple in both parts.",
+      "uz": "«Nolinchi tur» ham bor (birinchi misol) — har doim shunday bo'ladigan narsalar uchun: tabiat qonunlari, qoidalar. Unda ikkala qismda ham Present Simple."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10761,6 +11142,152 @@
     "en": "Modal + verb without to; mustn’t — forbidden, don’t have to — not necessary.",
     "uz": "Modal + to siz fe'l; mustn’t — mumkin emas, don’t have to — shart emas."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Модальные глаголы",
+      "en": "Modal verbs",
+      "uz": "Modal fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Модальные глаголы показывают отношение к действию: можно, нужно, стоит, должен. После них глагол всегда в начальной форме без *to* (кроме *have to*), и у них нет *-s*: *she must go*, *he should rest*.",
+      "en": "Modals show an attitude to an action: possible, necessary, advisable. After them the verb is basic without *to* (except *have to*), and they never take *-s*.",
+      "uz": "Modal fe'llar harakatga munosabatni bildiradi: mumkin, kerak, arziydi, majbur. Ulardan keyin fe'l doim boshlang'ich shaklda, *to* siz (*have to* dan tashqari), va ular *-s* olmaydi: *she must go*, *he should rest*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "can",
+        {
+         "ru": "могу, умею, можно",
+         "en": "ability, permission",
+         "uz": "qila olaman, mumkin"
+        },
+        "You can sit here."
+       ],
+       [
+        "must",
+        {
+         "ru": "должен (я так считаю, строгое правило)",
+         "en": "strong obligation (my opinion, rules)",
+         "uz": "shart (o'zim shunday hisoblayman, qat'iy qoida)"
+        },
+        "I must call my mum."
+       ],
+       [
+        "have to",
+        {
+         "ru": "приходится (внешняя необходимость)",
+         "en": "necessity from outside",
+         "uz": "majburman (tashqi zarurat)"
+        },
+        "I have to work on Saturday."
+       ],
+       [
+        "should",
+        {
+         "ru": "стоит, следует (совет)",
+         "en": "advice",
+         "uz": "kerak, arziydi (maslahat)"
+        },
+        "You should see a doctor."
+       ],
+       [
+        "mustn't",
+        {
+         "ru": "нельзя (запрет)",
+         "en": "prohibition",
+         "uz": "mumkin emas (taqiq)"
+        },
+        "You mustn't smoke here."
+       ],
+       [
+        "don't have to",
+        {
+         "ru": "не обязательно",
+         "en": "not necessary",
+         "uz": "shart emas"
+        },
+        "You don't have to come."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Must или have to",
+      "en": "Must or have to",
+      "uz": "Must yoki have to"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба значат «должен», но *must* — когда необходимость идёт изнутри, от говорящего («Я должен бросить курить» — сам решил). *Have to* — когда обязанность извне: правила, работа, обстоятельства («Мне приходится вставать в 6 — работа»).",
+      "en": "Both mean obligation. *Must* — it comes from the speaker. *Have to* — it comes from outside: rules, work, circumstances.",
+      "uz": "Ikkalasi ham «majbur» degani, lekin *must* — zarurat ichdan, gapiruvchining o'zidan kelganda («Chekishni tashlashim kerak» — o'zim qaror qildim). *Have to* — majburiyat tashqaridan: qoidalar, ish, vaziyat («Soat 6 da turishga majburman — ish»)."
+     }
+    },
+    {
+     "note": {
+      "ru": "Самая важная разница — в отрицании. *Mustn't* = «нельзя, запрещено». *Don't have to* = «не обязательно, можно не делать». *You mustn't tell him* (запрещено) ≠ *You don't have to tell him* (как хочешь).",
+      "en": "The key difference is in the negative. *Mustn't* = forbidden. *Don't have to* = not necessary. *You mustn't tell him* ≠ *You don't have to tell him.*",
+      "uz": "Eng muhim farq — inkorda. *Mustn't* = «mumkin emas, taqiqlangan». *Don't have to* = «shart emas». *You mustn't tell him* (taqiqlangan) ≠ *You don't have to tell him* (xohlasang)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "You *should* drink more water.",
+       "t": {
+        "ru": "Тебе стоит пить больше воды.",
+        "uz": "Ko'proq suv ichishing kerak."
+       }
+      },
+      {
+       "s": "Students *have to* wear a uniform.",
+       "t": {
+        "ru": "Ученики обязаны носить форму.",
+        "uz": "O'quvchilar forma kiyishi shart."
+       }
+      },
+      {
+       "s": "You *mustn't* use your phone in the exam.",
+       "t": {
+        "ru": "На экзамене нельзя пользоваться телефоном.",
+        "uz": "Imtihonda telefondan foydalanish mumkin emas."
+       }
+      },
+      {
+       "s": "It's Sunday — I *don't have to* get up early.",
+       "t": {
+        "ru": "Воскресенье — мне не нужно рано вставать.",
+        "uz": "Yakshanba — erta turishim shart emas."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11024,6 +11551,125 @@
     "en": "be (right tense) + V3; who did it — by.",
     "uz": "be (kerakli zamonda) + V3; kim tomonidan — by."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Действие важнее того, кто его сделал",
+      "en": "When the action matters more than who did it",
+      "uz": "Kim qilganidan ko'ra harakat muhimroq"
+     }
+    },
+    {
+     "p": {
+      "ru": "Обычно в предложении тот, кто делает, стоит в начале: *Someone built this house in 1900*. Но часто нам неважно или неизвестно, _кто_ это сделал, — важен сам предмет. Тогда используют страдательный залог (Passive): *This house was built in 1900* — Этот дом был построен в 1900 году.",
+      "en": "Usually the doer comes first. But when the doer is unknown or unimportant, we use the passive and put the thing first: *This house was built in 1900.*",
+      "uz": "Odatda gapda harakatni bajaruvchi boshida turadi. Lekin ko'pincha _kim_ qilgani muhim emas yoki noma'lum — narsaning o'zi muhim. Unda majhul nisbat (Passive) ishlatiladi: *This house was built in 1900* — Bu uy 1900-yilda qurilgan. O'zbekcha «qur_il_gan» dagi «-il» ga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*To be* в нужном времени + третья форма глагола (*built, made, written*). Время показывает только *be*: *is made* (настоящее), *was made* (прошедшее), *will be made* (будущее), *has been made* (Present Perfect).",
+      "en": "*Be* in the right tense + past participle. Only *be* shows the tense: *is made, was made, will be made, has been made.*",
+      "uz": "Kerakli zamondagi *to be* + fe'lning uchinchi shakli (*built, made, written*). Zamonni faqat *be* ko'rsatadi: *is made* (hozirgi), *was made* (o'tgan), *will be made* (kelasi), *has been made* (Present Perfect)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "Present Simple",
+        "am / is / are + V3",
+        "English is spoken here."
+       ],
+       [
+        "Past Simple",
+        "was / were + V3",
+        "The car was stolen."
+       ],
+       [
+        "Future",
+        "will be + V3",
+        "The results will be announced."
+       ],
+       [
+        "Present Perfect",
+        "has / have been + V3",
+        "The work has been done."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если всё же нужно сказать, кто сделал, добавляют *by*: *The book was written by Navoi* — Книга была написана Навои.",
+      "en": "To mention the doer, add *by*: *The book was written by Navoi.*",
+      "uz": "Bajaruvchini aytish kerak bo'lsa, *by* qo'shiladi: *The book was written by Navoi* — Kitob Navoiy tomonidan yozilgan."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Rice *is grown* in many countries.",
+       "t": {
+        "ru": "Рис выращивают во многих странах.",
+        "uz": "Guruch ko'p mamlakatlarda yetishtiriladi."
+       }
+      },
+      {
+       "s": "My phone *was stolen* yesterday.",
+       "t": {
+        "ru": "Вчера у меня украли телефон.",
+        "uz": "Kecha telefonim o'g'irlandi."
+       }
+      },
+      {
+       "s": "The bridge *will be finished* next year.",
+       "t": {
+        "ru": "Мост достроят в следующем году.",
+        "uz": "Ko'prik kelasi yili qurib bitkaziladi."
+       }
+      },
+      {
+       "s": "Has the email *been sent*?",
+       "t": {
+        "ru": "Письмо отправлено?",
+        "uz": "Xat yuborildimi?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Passive часто встречается в новостях, науке и инструкциях: *It is made in Uzbekistan*, *Mistakes were made*. В разговоре русское «говорят, что…» часто переводят как *It is said that…*",
+      "en": "The passive is common in news, science and instructions: *It is made in Uzbekistan.*",
+      "uz": "Passive yangiliklar, fan va yo'riqnomalarda ko'p uchraydi: *It is made in Uzbekistan*, *Mistakes were made*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11286,6 +11932,136 @@
     "en": "People — who, things — which, both — that.",
     "uz": "Odamlar — who, narsalar — which, ikkalasi — that."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Который: придаточные определительные",
+      "en": "Who, which, that: relative clauses",
+      "uz": "Qaysiki: aniqlovchi ergash gaplar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы уточнить, о каком человеке или предмете речь, к нему «прицепляют» вторую часть со словом *who / which / that* — «который». *The man who lives next door is a doctor* — Мужчина, который живёт по соседству, — врач.",
+      "en": "To say which person or thing you mean, attach a clause with *who / which / that*: *The man who lives next door is a doctor.*",
+      "uz": "Qaysi odam yoki narsa haqida gap ketayotganini aniqlash uchun unga *who / which / that* so'zi bilan ikkinchi qism «ilinadi». *The man who lives next door is a doctor* — Qo'shnida yashaydigan erkak shifokor. O'zbek tilida bu ko'pincha sifatdosh bilan aytiladi: «yashaydigan erkak»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Для кого",
+        "en": "For",
+        "uz": "Kim uchun"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "who",
+        {
+         "ru": "люди",
+         "en": "people",
+         "uz": "odamlar"
+        },
+        "the girl who sings"
+       ],
+       [
+        "which",
+        {
+         "ru": "вещи, животные",
+         "en": "things, animals",
+         "uz": "narsalar, hayvonlar"
+        },
+        "the book which I read"
+       ],
+       [
+        "that",
+        {
+         "ru": "люди и вещи (разговорно)",
+         "en": "people and things (informal)",
+         "uz": "odamlar va narsalar (so'zlashuv)"
+        },
+        "the film that we saw"
+       ],
+       [
+        "whose",
+        {
+         "ru": "чей",
+         "en": "whose",
+         "uz": "kimning"
+        },
+        "the boy whose dog is lost"
+       ],
+       [
+        "where",
+        {
+         "ru": "где (место)",
+         "en": "where (a place)",
+         "uz": "qayerda (joy)"
+        },
+        "the city where I was born"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Порядок слов в английском — без перестановок: после *who / which* идёт обычное предложение. Важно не повторять местоимение: *the book which I read* (не «which I read it»).",
+      "en": "After *who / which* comes a normal clause. Don't repeat the pronoun: *the book which I read* (not “which I read it”).",
+      "uz": "Ingliz tilida so'z tartibi o'zgarmaydi: *who / which* dan keyin oddiy gap keladi. Olmoshni takrorlamang: *the book which I read* («which I read it» emas)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I have a friend *who* speaks five languages.",
+       "t": {
+        "ru": "У меня есть друг, который говорит на пяти языках.",
+        "uz": "Besh tilda gapiradigan do'stim bor."
+       }
+      },
+      {
+       "s": "This is the phone *which* I bought yesterday.",
+       "t": {
+        "ru": "Это телефон, который я купил вчера.",
+        "uz": "Bu kecha sotib olgan telefonim."
+       }
+      },
+      {
+       "s": "That's the café *where* we met.",
+       "t": {
+        "ru": "Это кафе, где мы познакомились.",
+        "uz": "Bu biz tanishgan kafe."
+       }
+      },
+      {
+       "s": "Do you know the man *whose* car is outside?",
+       "t": {
+        "ru": "Ты знаешь мужчину, чья машина стоит на улице?",
+        "uz": "Mashinasi tashqarida turgan erkakni taniysanmi?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если *who / which / that* — не подлежащее, а дополнение, его можно выбросить: *the book (that) I read*. В разговоре так говорят очень часто.",
+      "en": "If the relative word is the object, it can be dropped: *the book (that) I read.*",
+      "uz": "Agar *who / which / that* ega emas, to'ldiruvchi bo'lsa, uni tushirib qoldirish mumkin: *the book (that) I read*. So'zlashuvda shunday juda ko'p aytiladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11554,6 +12330,123 @@
     "en": "Tense one step back, I → he/she, said vs told me.",
     "uz": "Zamon bir qadam orqaga, I → he/she, said va told me."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Как пересказать чужие слова",
+      "en": "How to report what someone said",
+      "uz": "Birovning so'zlarini qanday yetkazish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Прямая речь — точные слова в кавычках: *He said, “I am tired.”* Косвенная речь — пересказ: *He said that he was tired* — Он сказал, что устал. В русском и узбекском мы просто меняем «я» на «он». В английском ещё и время «сдвигается на шаг назад».",
+      "en": "Direct speech quotes exact words. Reported speech retells them: *He said that he was tired.* In English the tense usually moves one step back.",
+      "uz": "To'g'ri gap — qo'shtirnoq ichidagi aniq so'zlar: *He said, “I am tired.”* O'zlashtirma gap — qayta aytib berish: *He said that he was tired* — U charchaganini aytdi. O'zbek tilida biz «men» ni «u» ga almashtiramiz. Ingliz tilida esa zamon ham «bir qadam orqaga suriladi»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Говорил",
+        "en": "Original",
+        "uz": "Aytilgan"
+       },
+       {
+        "ru": "Пересказ",
+        "en": "Reported",
+        "uz": "Yetkazilgan"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "am / is / are",
+        "was / were",
+        "“I'm busy.” → She said she was busy."
+       ],
+       [
+        "Present Simple",
+        "Past Simple",
+        "“I like it.” → He said he liked it."
+       ],
+       [
+        "Past Simple",
+        "Past Perfect",
+        "“I lost it.” → He said he had lost it."
+       ],
+       [
+        "will",
+        "would",
+        "“I'll help.” → She said she would help."
+       ],
+       [
+        "can",
+        "could",
+        "“I can swim.” → He said he could swim."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Меняются и слова времени и места: *now → then*, *today → that day*, *tomorrow → the next day*, *here → there*. Ведь пересказываем мы уже в другой момент и в другом месте.",
+      "en": "Time and place words change too: *now → then*, *today → that day*, *tomorrow → the next day*, *here → there*.",
+      "uz": "Vaqt va joy so'zlari ham o'zgaradi: *now → then*, *today → that day*, *tomorrow → the next day*, *here → there*. Axir biz boshqa payt va boshqa joyda qayta aytayapmiz."
+     }
+    },
+    {
+     "h": {
+      "ru": "Say или tell",
+      "en": "Say or tell",
+      "uz": "Say yoki tell"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Say* — просто «сказать»: *She said (that)…* *Tell* — «сказать кому-то», после него обязательно человек: *She told me (that)…* Нельзя «She said me» или «She told that».",
+      "en": "*Say* has no person after it: *She said that…* *Tell* needs a person: *She told me that…*",
+      "uz": "*Say* — shunchaki «aytmoq»: *She said (that)…* *Tell* — «kimgadir aytmoq», undan keyin albatta odam keladi: *She told me (that)…* «She said me» yoki «She told that» deb bo'lmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "He *said* that he *was* hungry.",
+       "t": {
+        "ru": "Он сказал, что голоден.",
+        "uz": "U och ekanini aytdi."
+       }
+      },
+      {
+       "s": "She *told* me she *would* call.",
+       "t": {
+        "ru": "Она сказала мне, что позвонит.",
+        "uz": "U menga qo'ng'iroq qilishini aytdi."
+       }
+      },
+      {
+       "s": "They *said* they *had* already *eaten*.",
+       "t": {
+        "ru": "Они сказали, что уже поели.",
+        "uz": "Ular allaqachon ovqatlanganini aytishdi."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вопросы пересказывают без вопросительного порядка: *He asked where I lived* (не «where did I live»). Для «да/нет» — *if*: *She asked if I was ready.*",
+      "en": "Reported questions use normal word order: *He asked where I lived.* Yes/no questions use *if*: *She asked if I was ready.*",
+      "uz": "Savollar savol tartibisiz yetkaziladi: *He asked where I lived* («where did I live» emas). «Ha/yo'q» savoli uchun — *if*: *She asked if I was ready.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11817,6 +12710,131 @@
     "en": "enjoy/finish/avoid → -ing; want/decide/hope → to; preposition → -ing.",
     "uz": "enjoy/finish/avoid → -ing; want/decide/hope → to; predlog → -ing."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Doing или to do",
+      "en": "Doing or to do",
+      "uz": "Doing yoki to do"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда за одним глаголом идёт второй, второй стоит либо с *-ing* (*I enjoy swimming*), либо с *to* (*I want to swim*). Какую форму выбрать, решает _первый_ глагол. Логического правила нет — эти пары запоминают.",
+      "en": "When one verb follows another, the second is either *-ing* (*I enjoy swimming*) or *to* + verb (*I want to swim*). The first verb decides. Learn the pairs.",
+      "uz": "Bir fe'ldan keyin ikkinchisi kelsa, ikkinchisi yo *-ing* bilan (*I enjoy swimming*), yo *to* bilan (*I want to swim*) bo'ladi. Qaysi shaklni tanlashni _birinchi_ fe'l hal qiladi. Mantiqiy qoida yo'q — bu juftliklar yodlanadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "После этих глаголов",
+        "en": "After these verbs",
+        "uz": "Bu fe'llardan keyin"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "enjoy, finish, mind, avoid, keep, stop, suggest",
+        "-ing",
+        "I finished reading."
+       ],
+       [
+        "want, need, decide, hope, plan, learn, promise",
+        "to + verb",
+        "I decided to leave."
+       ],
+       [
+        "like, love, hate, start, begin",
+        {
+         "ru": "обе формы",
+         "en": "both",
+         "uz": "ikkalasi ham"
+        },
+        "I like cooking / to cook."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "-ing после предлогов",
+      "en": "-ing after prepositions",
+      "uz": "Predloglardan keyin -ing"
+     }
+    },
+    {
+     "p": {
+      "ru": "После любого предлога (*in, of, about, before, after, without*) глагол всегда с *-ing*: *I'm interested in learning*, *Thank you for coming*, *before leaving*.",
+      "en": "After any preposition the verb takes *-ing*: *interested in learning*, *thanks for coming*, *before leaving*.",
+      "uz": "Har qanday predlogdan (*in, of, about, before, after, without*) keyin fe'l doim *-ing* bilan: *I'm interested in learning*, *Thank you for coming*, *before leaving*."
+     }
+    },
+    {
+     "h": {
+      "ru": "To — для цели",
+      "en": "To — for a purpose",
+      "uz": "To — maqsad uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "*To* + глагол ещё отвечает на вопрос «зачем?»: *I went to the shop to buy bread* — Я пошёл в магазин, чтобы купить хлеб.",
+      "en": "*To* + verb also answers “why?”: *I went to the shop to buy bread.*",
+      "uz": "*To* + fe'l «nima uchun?» savoliga ham javob beradi: *I went to the shop to buy bread* — Non olish uchun do'konga bordim."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I *enjoy reading* books.",
+       "t": {
+        "ru": "Я люблю читать книги.",
+        "uz": "Kitob o'qishni yoqtiraman."
+       }
+      },
+      {
+       "s": "She *wants to become* a doctor.",
+       "t": {
+        "ru": "Она хочет стать врачом.",
+        "uz": "U shifokor bo'lishni xohlaydi."
+       }
+      },
+      {
+       "s": "He *stopped smoking*.",
+       "t": {
+        "ru": "Он бросил курить.",
+        "uz": "U chekishni tashladi."
+       }
+      },
+      {
+       "s": "We're *thinking about moving*.",
+       "t": {
+        "ru": "Мы подумываем о переезде.",
+        "uz": "Ko'chib o'tish haqida o'ylayapmiz."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Stop* меняет смысл: *stop smoking* — бросить курить, *stop to smoke* — остановиться, чтобы покурить.",
+      "en": "*Stop* changes meaning: *stop smoking* (quit) vs *stop to smoke* (pause in order to smoke).",
+      "uz": "*Stop* ma'noni o'zgartiradi: *stop smoking* — chekishni tashlamoq, *stop to smoke* — chekish uchun to'xtamoq."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12078,6 +13096,108 @@
     "en": "Still going on + for/since → have been -ing.",
     "uz": "Hali davom etyapti + for/since → have been -ing."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Как долго это уже длится",
+      "en": "How long it has been going on",
+      "uz": "Qancha vaqtdan beri davom etyapti"
+     }
+    },
+    {
+     "p": {
+      "ru": "Present Perfect Continuous отвечает на вопрос «как долго?» про действие, которое началось в прошлом и _идёт до сих пор_ (или только что закончилось и видны следы). *I have been waiting for an hour* — Я жду уже час.",
+      "en": "The Present Perfect Continuous answers “how long?” about an action that started in the past and is still going on (or just stopped, with visible results): *I have been waiting for an hour.*",
+      "uz": "Present Perfect Continuous o'tmishda boshlanib, _hozirgacha davom etayotgan_ (yoki hozirgina tugab, izi ko'rinib turgan) harakat haqida «qancha vaqtdan beri?» savoliga javob beradi. *I have been waiting for an hour* — Bir soatdan beri kutyapman."
+     }
+    },
+    {
+     "p": {
+      "ru": "В русском и узбекском мы говорим это настоящим временем: «Я учу английский два года», «Ikki yildan beri ingliz tilini o'rganyapman». В английском настоящее здесь нельзя: *I have been learning English for two years*.",
+      "en": "Many languages use the present here (“I learn English for two years”) — English can't: *I have been learning English for two years.*",
+      "uz": "O'zbek tilida buni hozirgi zamonda aytamiz: «Ikki yildan beri ingliz tilini o'rganyapman». Ingliz tilida bu yerda hozirgi zamon ishlatib bo'lmaydi: *I have been learning English for two years*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Have / has been* + глагол с *-ing*. Почти всегда с *for* (сколько времени) или *since* (с какого момента), или в вопросе *How long…?*",
+      "en": "*Have / has been* + verb-ing, usually with *for*, *since* or *How long…?*",
+      "uz": "*Have / has been* + *-ing* li fe'l. Deyarli doim *for* (qancha vaqt) yoki *since* (qaysi paytdan) bilan, yoki *How long…?* savolida."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "have been + -ing",
+        "We've been living here since 2020."
+       ],
+       [
+        "he / she / it",
+        "has been + -ing",
+        "It's been raining all day."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "How long *have* you *been studying* German?",
+       "t": {
+        "ru": "Как долго ты учишь немецкий?",
+        "uz": "Qancha vaqtdan beri nemis tilini o'rganyapsan?"
+       }
+      },
+      {
+       "s": "She *has been working* here since May.",
+       "t": {
+        "ru": "Она работает здесь с мая.",
+        "uz": "U maydan beri shu yerda ishlayapti."
+       }
+      },
+      {
+       "s": "You look tired. *Have* you *been running*?",
+       "t": {
+        "ru": "Ты выглядишь уставшим. Ты бегал?",
+        "uz": "Charchagan ko'rinasan. Yugurdingmi?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Continuous — про процесс и длительность (*I've been reading this book*), простой Perfect — про результат (*I've read this book* — прочитал). Глаголы *know, like, have* (иметь) в Continuous не ставят: *I've known him for years*.",
+      "en": "Continuous = process and duration; simple Perfect = result. *Know, like, have* (own) don't take the Continuous: *I've known him for years.*",
+      "uz": "Continuous — jarayon va davomiylik haqida (*I've been reading this book* — o'qiyapman), oddiy Perfect — natija haqida (*I've read this book* — o'qib bo'ldim). *know, like, have* (ega bo'lmoq) Continuous da ishlatilmaydi: *I've known him for years*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12345,6 +13465,110 @@
     "en": "Plus → minus, minus → plus; same helper verb.",
     "uz": "Plyus → minus, minus → plyus; o'sha yordamchi fe'l."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Не так ли? — разделительные вопросы",
+      "en": "Isn't it? — question tags",
+      "uz": "Shunday emasmi? — ajratma savollar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В конце утверждения англичане часто добавляют короткий хвостик-вопрос: *It's cold, isn't it?* — Холодно, правда? Так проверяют, согласен ли собеседник, или просто поддерживают разговор. В узбекском похоже на «-ku» или «shunday emasmi?»: Sovuq-ku?",
+      "en": "English often adds a short tag to a statement: *It's cold, isn't it?* — to check agreement or keep the conversation going.",
+      "uz": "Inglizlar darak gap oxiriga ko'pincha qisqa so'roq «dumcha» qo'shadi: *It's cold, isn't it?* — Sovuq, shunday emasmi? Bu bilan suhbatdosh rozimi, tekshiriladi yoki shunchaki suhbat davom ettiriladi. O'zbek tilida «-ku» ga o'xshaydi: Sovuq-ku?"
+     }
+    },
+    {
+     "h": {
+      "ru": "Правило зеркала",
+      "en": "The mirror rule",
+      "uz": "Ko'zgu qoidasi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Хвостик — это «зеркало» утверждения. Утверждение положительное → хвостик отрицательный, и наоборот. В хвостике повторяется тот же помощник (*is, are, can, will, have*), а если его нет — используют *do / does / did*. В конце — местоимение.",
+      "en": "The tag mirrors the sentence: positive → negative tag, negative → positive tag. Repeat the helper (*is, can, will, have*); if there's none, use *do / does / did*. End with a pronoun.",
+      "uz": "Dumcha — gapning «ko'zgusi». Gap ijobiy → dumcha inkor, va aksincha. Dumchada o'sha yordamchi takrorlanadi (*is, are, can, will, have*), agar u bo'lmasa — *do / does / did* ishlatiladi. Oxirida — olmosh."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Утверждение",
+        "en": "Statement",
+        "uz": "Gap"
+       },
+       {
+        "ru": "Хвостик",
+        "en": "Tag",
+        "uz": "Dumcha"
+       }
+      ],
+      "rows": [
+       [
+        "You are tired,",
+        "aren't you?"
+       ],
+       [
+        "She isn't here,",
+        "is she?"
+       ],
+       [
+        "He can swim,",
+        "can't he?"
+       ],
+       [
+        "They live in Tashkent,",
+        "don't they?"
+       ],
+       [
+        "You saw the film,",
+        "didn't you?"
+       ],
+       [
+        "I'm right,",
+        "aren't I?"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "The weather is lovely today, *isn't it*?",
+       "t": {
+        "ru": "Сегодня чудесная погода, правда?",
+        "uz": "Bugun havo ajoyib, shunday emasmi?"
+       }
+      },
+      {
+       "s": "You don't eat meat, *do you*?",
+       "t": {
+        "ru": "Ты ведь не ешь мясо?",
+        "uz": "Sen go'sht yemaysan, to'g'rimi?"
+       }
+      },
+      {
+       "s": "She'll come tomorrow, *won't she*?",
+       "t": {
+        "ru": "Она ведь придёт завтра?",
+        "uz": "U ertaga keladi-ku, shundaymi?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Ловушка: *I am* → *aren't I?* (не «amn't I»). А *Let's go* → *shall we?*",
+      "en": "Traps: *I am* → *aren't I?*; *Let's go* → *shall we?*",
+      "uz": "Tuzoq: *I am* → *aren't I?* («amn't I» emas). *Let's go* → *shall we?*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12608,6 +13832,166 @@
     "en": "With a = some; without a = not much.",
     "uz": "a bilan — «biroz, yetadi»; a siz — «kam»."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Сколько: few, little, both, either, neither",
+      "en": "How many: few, little, both, either, neither",
+      "uz": "Qancha: few, little, both, either, neither"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эти слова говорят о количестве. Главное — помнить, с какими существительными они дружат: исчисляемыми (*friends, books*) или неисчисляемыми (*time, money*).",
+      "en": "These words talk about quantity. Remember which nouns they go with: countable (*friends*) or uncountable (*time*).",
+      "uz": "Bu so'zlar miqdor haqida. Asosiysi — qaysi otlar bilan ishlatilishini eslab qolish: sanaladigan (*friends, books*) yoki sanalmaydigan (*time, money*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "С чем",
+        "en": "With",
+        "uz": "Nima bilan"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "a few",
+        {
+         "ru": "исчисляемые",
+         "en": "countable",
+         "uz": "sanaladigan"
+        },
+        {
+         "ru": "несколько (хватает)",
+         "en": "some (enough)",
+         "uz": "bir nechta (yetarli)"
+        },
+        "I have a few friends."
+       ],
+       [
+        "few",
+        {
+         "ru": "исчисляемые",
+         "en": "countable",
+         "uz": "sanaladigan"
+        },
+        {
+         "ru": "мало (почти нет)",
+         "en": "not many",
+         "uz": "kam (deyarli yo'q)"
+        },
+        "Few people came."
+       ],
+       [
+        "a little",
+        {
+         "ru": "неисчисляемые",
+         "en": "uncountable",
+         "uz": "sanalmaydigan"
+        },
+        {
+         "ru": "немного (хватает)",
+         "en": "some (enough)",
+         "uz": "biroz (yetarli)"
+        },
+        "I have a little time."
+       ],
+       [
+        "little",
+        {
+         "ru": "неисчисляемые",
+         "en": "uncountable",
+         "uz": "sanalmaydigan"
+        },
+        {
+         "ru": "мало (почти нет)",
+         "en": "not much",
+         "uz": "kam (deyarli yo'q)"
+        },
+        "There's little hope."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Маленькое *a* меняет настроение. *A few / a little* — позитивно: «немного есть, и это хорошо». *Few / little* без *a* — негативно: «мало, не хватает».",
+      "en": "The little *a* changes the mood. *A few / a little* is positive (some, enough). *Few / little* is negative (not enough).",
+      "uz": "Kichkina *a* kayfiyatni o'zgartiradi. *A few / a little* — ijobiy: «biroz bor va bu yaxshi». *a* siz *few / little* — salbiy: «kam, yetmaydi»."
+     }
+    },
+    {
+     "h": {
+      "ru": "Both, either, neither — про двоих",
+      "en": "Both, either, neither — about two",
+      "uz": "Both, either, neither — ikkitasi haqida"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эти три слова — только когда речь о _двух_. *Both* — оба. *Either* — любой из двух, один или другой. *Neither* — ни один из двух. *Neither* уже отрицательное, поэтому глагол после него положительный.",
+      "en": "These three are only for two things. *Both* — the two together. *Either* — one or the other. *Neither* — not one and not the other (already negative).",
+      "uz": "Bu uch so'z faqat _ikkita_ narsa haqida gap ketganda. *Both* — ikkalasi ham. *Either* — ikkisidan istalgani. *Neither* — ikkisidan hech biri. *Neither* o'zi inkor, shuning uchun undan keyin fe'l ijobiy."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Both* my parents are teachers.",
+       "t": {
+        "ru": "Оба моих родителя — учителя.",
+        "uz": "Ota-onamning ikkalasi ham o'qituvchi."
+       }
+      },
+      {
+       "s": "You can take *either* bus.",
+       "t": {
+        "ru": "Можешь сесть на любой из двух автобусов.",
+        "uz": "Ikki avtobusdan istalganiga chiqishing mumkin."
+       }
+      },
+      {
+       "s": "*Neither* answer is correct.",
+       "t": {
+        "ru": "Ни один из двух ответов не верен.",
+        "uz": "Ikki javobdan hech biri to'g'ri emas."
+       }
+      },
+      {
+       "s": "We had *a little* money, so we bought *a few* snacks.",
+       "t": {
+        "ru": "У нас было немного денег, и мы купили немного закусок.",
+        "uz": "Biroz pulimiz bor edi, shuning uchun bir nechta yegulik oldik."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Пары: *both … and* (и … и), *either … or* (или … или), *neither … nor* (ни … ни): *Neither Ali nor Sara came.*",
+      "en": "Pairs: *both … and*, *either … or*, *neither … nor*: *Neither Ali nor Sara came.*",
+      "uz": "Juftliklar: *both … and* (ham … ham), *either … or* (yo … yo), *neither … nor* (na … na): *Neither Ali nor Sara came* — Na Ali, na Sara keldi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12872,6 +14256,154 @@
     "en": "Learn each phrasal verb as one unit, with an example.",
     "uz": "Har bir frazali fe'lni misol bilan butunligicha o'rgan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Фразовые глаголы",
+      "en": "Phrasal verbs",
+      "uz": "Frazali fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Фразовый глагол — это глагол плюс маленькое слово (*up, down, on, off, out, after…*), и вместе они дают _новое_ значение. *Give* — давать, но *give up* — бросать (привычку, попытки). *Look* — смотреть, но *look after* — присматривать, заботиться.",
+      "en": "A phrasal verb is a verb plus a small word (*up, off, out, after…*) that together make a new meaning: *give up* (quit), *look after* (take care of).",
+      "uz": "Frazali fe'l — fe'l va kichik so'z (*up, down, on, off, out, after…*), ular birgalikda _yangi_ ma'no beradi. *Give* — bermoq, lekin *give up* — tashlamoq (odatni, urinishni). *Look* — qaramoq, lekin *look after* — g'amxo'rlik qilmoq."
+     }
+    },
+    {
+     "p": {
+      "ru": "Часто значение нельзя угадать по частям — их учат как новые слова. Хорошая новость: в разговорном английском их очень много, так что каждое выученное сразу пригодится.",
+      "en": "Often you can't guess the meaning from the parts — learn them as new words. They're extremely common in spoken English.",
+      "uz": "Ko'pincha ma'noni qismlardan topib bo'lmaydi — ular yangi so'z sifatida yodlanadi. Yaxshi xabar: so'zlashuvda ular juda ko'p, shuning uchun har biri darhol kerak bo'ladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "get up",
+        {
+         "ru": "вставать",
+         "en": "leave bed",
+         "uz": "turmoq (o'rindan)"
+        },
+        "I get up at 7."
+       ],
+       [
+        "give up",
+        {
+         "ru": "бросать, сдаваться",
+         "en": "stop trying, quit",
+         "uz": "tashlamoq, taslim bo'lmoq"
+        },
+        "Don't give up!"
+       ],
+       [
+        "look after",
+        {
+         "ru": "заботиться",
+         "en": "take care of",
+         "uz": "g'amxo'rlik qilmoq"
+        },
+        "She looks after her brother."
+       ],
+       [
+        "look for",
+        {
+         "ru": "искать",
+         "en": "try to find",
+         "uz": "qidirmoq"
+        },
+        "I'm looking for my keys."
+       ],
+       [
+        "find out",
+        {
+         "ru": "узнавать",
+         "en": "discover",
+         "uz": "bilib olmoq"
+        },
+        "I found out the truth."
+       ],
+       [
+        "turn on / off",
+        {
+         "ru": "включать / выключать",
+         "en": "start / stop a device",
+         "uz": "yoqmoq / o'chirmoq"
+        },
+        "Turn off the light."
+       ],
+       [
+        "put on",
+        {
+         "ru": "надевать",
+         "en": "dress in",
+         "uz": "kiymoq"
+        },
+        "Put on your coat."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Куда ставить дополнение",
+      "en": "Where the object goes",
+      "uz": "To'ldiruvchi qayerga qo'yiladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "У многих фразовых глаголов дополнение можно поставить в середину или в конец: *Turn off the light* = *Turn the light off*. Но если дополнение — местоимение (*it, them, him*), оно стоит _только посередине_: *Turn it off* (не «Turn off it»).",
+      "en": "Many phrasal verbs let the object go in the middle or at the end: *Turn off the light* = *Turn the light off*. A pronoun must go in the middle: *Turn it off.*",
+      "uz": "Ko'p frazali fe'llarda to'ldiruvchini o'rtaga yoki oxirga qo'yish mumkin: *Turn off the light* = *Turn the light off*. Lekin to'ldiruvchi olmosh bo'lsa (*it, them, him*), u _faqat o'rtada_ turadi: *Turn it off* («Turn off it» emas)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Can you *pick* me *up* at 6?",
+       "t": {
+        "ru": "Можешь забрать меня в 6?",
+        "uz": "Meni soat 6 da olib keta olasanmi?"
+       }
+      },
+      {
+       "s": "I'll *call* you *back* later.",
+       "t": {
+        "ru": "Я перезвоню тебе позже.",
+        "uz": "Keyinroq sizga qayta qo'ng'iroq qilaman."
+       }
+      },
+      {
+       "s": "We *ran out of* milk.",
+       "t": {
+        "ru": "У нас закончилось молоко.",
+        "uz": "Sutimiz tugab qoldi."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

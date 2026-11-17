@@ -6233,7 +6233,11 @@
          "en": "regular",
          "uz": "to'g'ri"
         },
-        "ge- + основа + -t",
+        {
+         "ru": "ge- + основа + -t",
+         "en": "ge- + stem + -t",
+         "uz": "ge- + o'zak + -t"
+        },
         "machen → gemacht, kaufen → gekauft"
        ],
        [
@@ -14466,6 +14470,154 @@
     "en": "Whose? → des …-s / der. wegen/trotz/während → genitive.",
     "uz": "Kimning? → des …-s / der. wegen/trotz/während → genitiv."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Генитив: чей?",
+      "en": "The genitive: whose?",
+      "uz": "Genitiv: kimning?"
+     }
+    },
+    {
+     "p": {
+      "ru": "Генитив — четвёртый падеж немецкого. Он отвечает на вопрос «чей?» (*Wessen?*) и похож на узбекское «-ning»: otam_ning_ mashinasi. *Das Auto des Mannes* — машина (чья?) мужчины.",
+      "en": "The genitive is the fourth German case. It answers “whose?” (*Wessen?*): *das Auto des Mannes* — the man's car.",
+      "uz": "Genitiv — nemis tilining to'rtinchi kelishigi. U «kimning?» (*Wessen?*) savoliga javob beradi va o'zbekcha «-ning» ga o'xshaydi: otam_ning_ mashinasi. *Das Auto des Mannes* — erkakning mashinasi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Артикль",
+        "en": "Article",
+        "uz": "Artikl"
+       },
+       {
+        "ru": "Слово",
+        "en": "Noun",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "des / eines",
+        "+ -(e)s",
+        "das Haus des Lehrers"
+       ],
+       [
+        {
+         "ru": "средний",
+         "en": "neuter",
+         "uz": "o'rta"
+        },
+        "des / eines",
+        "+ -(e)s",
+        "die Farbe des Autos"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "der / einer",
+        {
+         "ru": "без изменений",
+         "en": "no change",
+         "uz": "o'zgarmaydi"
+        },
+        "der Name der Stadt"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "der",
+        {
+         "ru": "без изменений",
+         "en": "no change",
+         "uz": "o'zgarmaydi"
+        },
+        "die Zimmer der Kinder"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Главная примета генитива мужского и среднего рода — двойной сигнал: *des* перед словом и *-s* или *-es* в конце: *des Vaters*, *des Kindes*. С именами всё проще: *Annas Buch* — книга Анны (без апострофа!).",
+      "en": "Masculine and neuter get a double signal: *des* before and *-s / -es* after: *des Vaters*. With names: *Annas Buch* (no apostrophe).",
+      "uz": "Erkak va o'rta jins genitivining asosiy belgisi — qo'sh signal: so'z oldida *des* va oxirida *-s* yoki *-es*: *des Vaters*, *des Kindes*. Ismlar bilan osonroq: *Annas Buch* — Annaning kitobi (apostrofsiz!)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Предлоги с генитивом",
+      "en": "Prepositions with the genitive",
+      "uz": "Genitiv talab qiladigan predloglar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Генитив встречается после некоторых предлогов, особенно в письменной речи: *wegen* (из-за), *trotz* (несмотря на), *während* (во время), *statt* (вместо), *innerhalb* (в течение, внутри).",
+      "en": "The genitive follows some prepositions, especially in writing: *wegen, trotz, während, statt, innerhalb*.",
+      "uz": "Genitiv ba'zi predloglardan keyin, ayniqsa yozma nutqda uchraydi: *wegen* (… tufayli), *trotz* (… -ga qaramay), *während* (… paytida), *statt* (… o'rniga), *innerhalb* (… ichida)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Das ist das Auto *meines Vaters*.",
+       "t": {
+        "ru": "Это машина моего отца.",
+        "uz": "Bu otamning mashinasi.",
+        "en": "That's my father's car."
+       }
+      },
+      {
+       "s": "*Wegen des Regens* bleiben wir zu Hause.",
+       "t": {
+        "ru": "Из-за дождя мы остаёмся дома.",
+        "uz": "Yomg'ir tufayli uyda qolamiz.",
+        "en": "Because of the rain we're staying at home."
+       }
+      },
+      {
+       "s": "*Trotz der Kälte* gingen wir spazieren.",
+       "t": {
+        "ru": "Несмотря на холод, мы пошли гулять.",
+        "uz": "Sovuqqa qaramay sayrga chiqdik.",
+        "en": "Despite the cold we went for a walk."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В разговоре генитив часто заменяют на *von* + датив: *das Auto von meinem Vater*, *wegen dem Regen*. Но в письме и на экзаменах лучше генитив.",
+      "en": "In speech the genitive is often replaced by *von* + dative: *das Auto von meinem Vater*. In writing and exams, use the genitive.",
+      "uz": "So'zlashuvda genitiv ko'pincha *von* + dativ bilan almashtiriladi: *das Auto von meinem Vater*, *wegen dem Regen*. Lekin yozuvda va imtihonlarda genitiv ma'qul."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14728,6 +14880,78 @@
     "en": "zu + infinitive last; separable: an-zu-rufen; purpose: um … zu.",
     "uz": "zu + infinitiv oxirida; ajraladigan: an-zu-rufen; maqsad: um … zu."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Инфинитив с zu",
+      "en": "The infinitive with zu",
+      "uz": "zu li infinitiv"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда за одним глаголом или выражением идёт второй глагол, перед ним часто ставят *zu* — как английское *to*. *Ich habe keine Lust, heute zu arbeiten* — У меня нет желания сегодня работать. Конструкция с *zu* стоит в конце и отделяется запятой.",
+      "en": "When one verb or expression is followed by another verb, *zu* often goes before it — like English *to*: *Ich habe keine Lust, heute zu arbeiten.*",
+      "uz": "Bir fe'l yoki iboradan keyin ikkinchi fe'l kelsa, uning oldidan ko'pincha *zu* qo'yiladi — ingliz tilidagi *to* kabi. *Ich habe keine Lust, heute zu arbeiten* — Bugun ishlashga xohishim yo'q. *zu* li qurilma oxirida turadi va vergul bilan ajratiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Zu* не нужен после модальных глаголов (*ich kann schwimmen*) и после *möchten, werden, lassen*. Он нужен после большинства других: *versuchen* (пытаться), *vergessen* (забывать), *anfangen* (начинать), *Lust haben*, *Zeit haben*, *es ist wichtig*.",
+      "en": "No *zu* after modals, *möchten, werden, lassen*. Use it after most other verbs and phrases: *versuchen, vergessen, anfangen, Lust haben, es ist wichtig*.",
+      "uz": "*zu* modal fe'llardan (*ich kann schwimmen*) va *möchten, werden, lassen* dan keyin kerak emas. Boshqa ko'pchilik fe'l va iboralardan keyin kerak: *versuchen* (urinmoq), *vergessen* (unutmoq), *anfangen* (boshlamoq), *Lust haben*, *Zeit haben*, *es ist wichtig*."
+     }
+    },
+    {
+     "p": {
+      "ru": "У глаголов с отделяемой приставкой *zu* встаёт в середину: *anrufen → anzurufen*, *aufstehen → aufzustehen*.",
+      "en": "With separable verbs *zu* goes in the middle: *anzurufen*, *aufzustehen*.",
+      "uz": "Ajraladigan old qo'shimchali fe'llarda *zu* o'rtaga kiradi: *anrufen → anzurufen*, *aufstehen → aufzustehen*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Um … zu — чтобы",
+      "en": "Um … zu — in order to",
+      "uz": "Um … zu — … uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Um … zu* отвечает на вопрос «зачем?»: *Ich lerne Deutsch, um in Deutschland zu studieren* — Я учу немецкий, чтобы учиться в Германии. Работает, если тот, кто делает, в обеих частях один и тот же. Если разные — нужно *damit*: *Ich spreche langsam, damit du mich verstehst.*",
+      "en": "*Um … zu* answers “what for?”: *um in Deutschland zu studieren*. It works when the subject is the same; otherwise use *damit*.",
+      "uz": "*Um … zu* «nima uchun?» savoliga javob beradi: *Ich lerne Deutsch, um in Deutschland zu studieren* — Germaniyada o'qish uchun nemis tilini o'rganyapman. Ikkala qismda bajaruvchi bir xil bo'lsa ishlaydi. Har xil bo'lsa — *damit* kerak: *Ich spreche langsam, damit du mich verstehst.*"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich habe vergessen, dich *anzurufen*.",
+       "t": {
+        "ru": "Я забыл тебе позвонить.",
+        "uz": "Senga qo'ng'iroq qilishni unutibman.",
+        "en": "I forgot to call you."
+       }
+      },
+      {
+       "s": "Es ist wichtig, jeden Tag *zu üben*.",
+       "t": {
+        "ru": "Важно заниматься каждый день.",
+        "uz": "Har kuni mashq qilish muhim.",
+        "en": "It's important to practise every day."
+       }
+      },
+      {
+       "s": "Er spart, *um* ein Auto *zu kaufen*.",
+       "t": {
+        "ru": "Он копит, чтобы купить машину.",
+        "uz": "U mashina sotib olish uchun pul yig'yapti.",
+        "en": "He's saving to buy a car."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14993,6 +15217,104 @@
     "en": "Earlier than another past → hatte/war + participle.",
     "uz": "Boshqa o'tmishdan oldin → hatte/war + sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Plusquamperfekt: прошлое до прошлого",
+      "en": "Plusquamperfekt: the past before the past",
+      "uz": "Plusquamperfekt: o'tmishdan oldingi o'tmish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Plusquamperfekt показывает, что одно действие в прошлом случилось _раньше_ другого. «Когда я пришёл, фильм уже начался». Это как английский Past Perfect и узбекское «-gan edi».",
+      "en": "The Plusquamperfekt shows that one past action happened before another — like the English Past Perfect.",
+      "uz": "Plusquamperfekt o'tmishdagi bir harakat boshqasidan _oldinroq_ bo'lganini ko'rsatadi. «Kelganimda film allaqachon boshlangan edi». Bu ingliz tilidagi Past Perfect va o'zbekcha «-gan edi» ga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это Perfekt, в котором *haben / sein* стоят в прошедшем времени: *hatte* или *war* + Partizip II в конце. Выбор *haben* или *sein* — тот же, что в Perfekt.",
+      "en": "It's the Perfekt with *haben / sein* in the past: *hatte* or *war* + Partizip II. Same choice of helper as in the Perfekt.",
+      "uz": "Bu — *haben / sein* o'tgan zamonda turgan Perfekt: *hatte* yoki *war* + oxirida Partizip II. *haben* yoki *sein* tanlovi Perfekt dagi bilan bir xil."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Пример с haben",
+        "en": "With haben",
+        "uz": "haben bilan"
+       },
+       {
+        "ru": "Пример с sein",
+        "en": "With sein",
+        "uz": "sein bilan"
+       }
+      ],
+      "rows": [
+       [
+        "Perfekt",
+        "ich habe gegessen",
+        "ich bin gegangen"
+       ],
+       [
+        "Plusquamperfekt",
+        "ich hatte gegessen",
+        "ich war gegangen"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Als ich ankam, *hatte* der Film schon *begonnen*.",
+       "t": {
+        "ru": "Когда я пришёл, фильм уже начался.",
+        "uz": "Kelganimda film allaqachon boshlangan edi.",
+        "en": "When I arrived, the film had already started."
+       }
+      },
+      {
+       "s": "Sie war müde, weil sie schlecht *geschlafen hatte*.",
+       "t": {
+        "ru": "Она устала, потому что плохо спала.",
+        "uz": "U yomon uxlagani uchun charchagan edi.",
+        "en": "She was tired because she had slept badly."
+       }
+      },
+      {
+       "s": "Nachdem wir *gegessen hatten*, gingen wir spazieren.",
+       "t": {
+        "ru": "Поев, мы пошли гулять.",
+        "uz": "Ovqatlanib bo'lgach, sayrga chiqdik.",
+        "en": "After we had eaten, we went for a walk."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Plusquamperfekt почти всегда рядом с другим прошедшим (Präteritum или Perfekt) и особенно часто после *nachdem*.",
+      "en": "The Plusquamperfekt almost always sits next to another past tense, especially after *nachdem*.",
+      "uz": "Plusquamperfekt deyarli doim boshqa o'tgan zamon (Präteritum yoki Perfekt) yonida, ayniqsa *nachdem* dan keyin tez-tez keladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15254,6 +15576,115 @@
     "en": "Reported words in the news: er sei, er habe, er komme.",
     "uz": "Yangiliklarda birovning so'zlari: er sei, er habe, er komme."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Konjunktiv I: чужие слова",
+      "en": "Konjunktiv I: someone else's words",
+      "uz": "Konjunktiv I: birovning so'zlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Konjunktiv I используют в основном журналисты и в официальных текстах, чтобы передать чужие слова _нейтрально_, не утверждая, что это правда. *Der Minister sagt, er sei zufrieden* — Министр говорит, что (якобы) доволен. В устной речи его почти не используют, но в новостях он везде.",
+      "en": "Konjunktiv I is used mainly in news and formal texts to report someone's words neutrally, without claiming they're true: *Der Minister sagt, er sei zufrieden.*",
+      "uz": "Konjunktiv I asosan jurnalistlar va rasmiy matnlarda birovning so'zlarini _betaraf_, haqiqat deb tasdiqlamasdan yetkazish uchun ishlatiladi. *Der Minister sagt, er sei zufrieden* — Vazir mamnun ekanini aytmoqda. O'zbekcha «… ekan», «… emish» ga o'xshaydi. So'zlashuvda deyarli ishlatilmaydi, lekin yangiliklarda hamma joyda."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Основа глагола + *-e* и личные окончания. На практике важнее всего форма для *er / sie / es*: основа + *-e*: *er habe*, *sie komme*, *es gebe*. Особый глагол — *sein*: *er sei*, *sie seien*.",
+      "en": "Stem + *-e* plus personal endings. In practice the *er / sie / es* form matters most: *er habe, sie komme, es gebe*. Special: *sein* → *er sei*.",
+      "uz": "Fe'l o'zagi + *-e* va shaxs qo'shimchalari. Amalda eng muhimi *er / sie / es* shakli: o'zak + *-e*: *er habe*, *sie komme*, *es gebe*. Alohida fe'l — *sein*: *er sei*, *sie seien*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Обычно (er)",
+        "en": "Indicative (er)",
+        "uz": "Oddiy (er)"
+       },
+       "Konjunktiv I (er)"
+      ],
+      "rows": [
+       [
+        "sein",
+        "ist",
+        "sei"
+       ],
+       [
+        "haben",
+        "hat",
+        "habe"
+       ],
+       [
+        "können",
+        "kann",
+        "könne"
+       ],
+       [
+        "kommen",
+        "kommt",
+        "komme"
+       ],
+       [
+        "geben",
+        "gibt",
+        "gebe"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Er sagt, er *sei* krank.",
+       "t": {
+        "ru": "Он говорит, что болен.",
+        "uz": "U kasal ekanini aytyapti.",
+        "en": "He says he is ill."
+       }
+      },
+      {
+       "s": "Die Firma erklärt, es *gebe* keine Probleme.",
+       "t": {
+        "ru": "Фирма заявляет, что проблем нет.",
+        "uz": "Firma muammolar yo'qligini bildirdi.",
+        "en": "The company states there are no problems."
+       }
+      },
+      {
+       "s": "Sie meint, sie *habe* keine Zeit.",
+       "t": {
+        "ru": "Она считает, что у неё нет времени.",
+        "uz": "U vaqti yo'qligini aytadi.",
+        "en": "She says she has no time."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если форма Konjunktiv I совпадает с обычной (*sie haben = sie haben*), вместо неё берут Konjunktiv II: *Sie sagen, sie hätten keine Zeit.*",
+      "en": "If the Konjunktiv I form looks like the normal one (*sie haben*), use Konjunktiv II instead: *sie hätten*.",
+      "uz": "Konjunktiv I shakli oddiysi bilan bir xil bo'lsa (*sie haben = sie haben*), o'rniga Konjunktiv II olinadi: *Sie sagen, sie hätten keine Zeit.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15518,6 +15949,101 @@
     "en": "Past “would have” → hätte/wäre + participle.",
     "uz": "O'tmishdagi «-ardi» → hätte/wäre + sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Konjunktiv II прошедшего: если бы тогда…",
+      "en": "Past Konjunktiv II: if only then…",
+      "uz": "O'tgan Konjunktiv II: agar o'shanda…"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эта форма — для прошлого, которое уже не изменить: сожаления и упущенные возможности. «Если бы я тогда знал, я бы пришёл». Это как английский третий тип условных и узбекское «-ganimda, …-gan bo'lardim».",
+      "en": "This form is for a past that can't be changed: regrets and missed chances — like the English third conditional.",
+      "uz": "Bu shakl o'zgartirib bo'lmaydigan o'tmish uchun: afsuslar va qo'ldan boy berilgan imkoniyatlar. «O'shanda bilganimda, kelgan bo'lardim». Bu ingliz tilidagi uchinchi tur shart gaplarga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Hätte* или *wäre* + Partizip II. Выбор *hätte / wäre* — как *haben / sein* в Perfekt: *ich hätte gemacht*, *ich wäre gekommen*.",
+      "en": "*Hätte* or *wäre* + Partizip II, chosen like *haben / sein* in the Perfekt: *ich hätte gemacht*, *ich wäre gekommen*.",
+      "uz": "*Hätte* yoki *wäre* + Partizip II. *hätte / wäre* tanlovi Perfekt dagi *haben / sein* kabi: *ich hätte gemacht*, *ich wäre gekommen*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Perfekt (было)",
+        "en": "Perfekt (real)",
+        "uz": "Perfekt (bo'lgan)"
+       },
+       {
+        "ru": "Konjunktiv II прошедшего (было бы)",
+        "en": "Past Konjunktiv II (would have)",
+        "uz": "O'tgan Konjunktiv II (bo'lardi)"
+       }
+      ],
+      "rows": [
+       [
+        "Ich habe gelernt.",
+        "Ich hätte gelernt."
+       ],
+       [
+        "Er ist gekommen.",
+        "Er wäre gekommen."
+       ],
+       [
+        "Wir haben es gewusst.",
+        "Wir hätten es gewusst."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Wenn* ich das *gewusst hätte*, *wäre* ich *gekommen*.",
+       "t": {
+        "ru": "Если бы я это знал, я бы пришёл.",
+        "uz": "Buni bilganimda, kelgan bo'lardim.",
+        "en": "If I had known that, I would have come."
+       }
+      },
+      {
+       "s": "Du *hättest* mich *anrufen* können!",
+       "t": {
+        "ru": "Ты мог бы мне позвонить!",
+        "uz": "Menga qo'ng'iroq qilsang bo'lardi-ku!",
+        "en": "You could have called me!"
+       }
+      },
+      {
+       "s": "Ich *hätte* lieber Tee *getrunken*.",
+       "t": {
+        "ru": "Я бы лучше выпил чаю.",
+        "uz": "Choy ichganim yaxshiroq bo'lardi.",
+        "en": "I'd rather have had tea."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С модальным глаголом получается три глагола подряд в конце: *hätte … machen können / sollen / müssen*. *Du hättest früher kommen sollen* — Тебе следовало прийти раньше.",
+      "en": "With a modal you get *hätte … machen können / sollen / müssen*: *Du hättest früher kommen sollen.*",
+      "uz": "Modal fe'l bilan oxirida uchta fe'l ketma-ket keladi: *hätte … machen können / sollen / müssen*. *Du hättest früher kommen sollen* — Ertaroq kelishing kerak edi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15782,6 +16308,122 @@
     "en": "Modal + … + participle + werden.",
     "uz": "Modal + … + sifatdosh + werden."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Пассив с модальными глаголами",
+      "en": "Passive with modal verbs",
+      "uz": "Modal fe'llar bilan passiv"
+     }
+    },
+    {
+     "p": {
+      "ru": "Иногда нужно сказать не просто «делается», а «должно быть сделано», «может быть сделано», «нельзя делать». Тогда пассив соединяют с модальным глаголом: *Das Formular muss ausgefüllt werden* — Бланк должен быть заполнен.",
+      "en": "To say “must be done”, “can be done”, combine the passive with a modal: *Das Formular muss ausgefüllt werden.*",
+      "uz": "Ba'zan shunchaki «qilinadi» emas, «qilinishi kerak», «qilinishi mumkin», «qilinmasligi kerak» deyish kerak. Unda passiv modal fe'l bilan birlashtiriladi: *Das Formular muss ausgefüllt werden* — Blankani to'ldirish kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Часть",
+        "en": "Part",
+        "uz": "Qism"
+       },
+       {
+        "ru": "Место 2",
+        "en": "Slot 2",
+        "uz": "2-o'rin"
+       },
+       {
+        "ru": "Середина",
+        "en": "Middle",
+        "uz": "O'rtasi"
+       },
+       {
+        "ru": "Конец: Partizip II + werden",
+        "en": "End: Partizip II + werden",
+        "uz": "Oxiri: Partizip II + werden"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "настоящее",
+         "en": "present",
+         "uz": "hozirgi"
+        },
+        "muss",
+        "das Zimmer",
+        "aufgeräumt werden."
+       ],
+       [
+        {
+         "ru": "прошедшее",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "konnte",
+        "das Problem nicht",
+        "gelöst werden."
+       ],
+       [
+        {
+         "ru": "запрет",
+         "en": "prohibition",
+         "uz": "taqiq"
+        },
+        "darf",
+        "hier nicht",
+        "geraucht werden."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Схема: модальный глагол на месте 2, а в самом конце два слова — Partizip II и *werden* (именно в начальной форме). Время показывает модальный глагол: *muss* (сейчас), *musste* (тогда).",
+      "en": "Pattern: modal in slot 2, and at the very end Partizip II + *werden*. The modal shows the tense: *muss* / *musste*.",
+      "uz": "Sxema: modal fe'l 2-o'rinda, eng oxirida esa ikki so'z — Partizip II va *werden* (aynan boshlang'ich shaklda). Zamonni modal fe'l ko'rsatadi: *muss* (hozir), *musste* (o'shanda)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Die Rechnung *muss* bis Freitag *bezahlt werden*.",
+       "t": {
+        "ru": "Счёт нужно оплатить до пятницы.",
+        "uz": "Hisobni jumagacha to'lash kerak.",
+        "en": "The bill must be paid by Friday."
+       }
+      },
+      {
+       "s": "Das *kann* nicht *repariert werden*.",
+       "t": {
+        "ru": "Это нельзя починить.",
+        "uz": "Buni ta'mirlab bo'lmaydi.",
+        "en": "That can't be repaired."
+       }
+      },
+      {
+       "s": "Handys *dürfen* im Unterricht nicht *benutzt werden*.",
+       "t": {
+        "ru": "На уроке нельзя пользоваться телефонами.",
+        "uz": "Darsda telefonlardan foydalanish mumkin emas.",
+        "en": "Phones may not be used in class."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В придаточном модальный уходит в самый конец: *…, weil das Zimmer aufgeräumt werden muss.*",
+      "en": "In a subordinate clause the modal goes last: *…, weil das Zimmer aufgeräumt werden muss.*",
+      "uz": "Ergash gapda modal fe'l eng oxirga ketadi: *…, weil das Zimmer aufgeräumt werden muss.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16042,6 +16684,130 @@
     "en": "Everything except the nominative gets -n.",
     "uz": "Nominativdan boshqasi — doim -n."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "N-склонение: слова, которые любят -n",
+      "en": "N-declension: nouns that love -n",
+      "uz": "N-turlanish: -n ni yaxshi ko'radigan so'zlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Обычно немецкие существительные почти не меняются по падежам — меняется артикль. Но есть группа слов мужского рода, которые во всех падежах, кроме номинатива, получают *-n* или *-en*: *der Student → den Studenten, dem Studenten, des Studenten*.",
+      "en": "Most German nouns barely change by case. But a group of masculine nouns adds *-n / -en* in every case except the nominative: *der Student → den Studenten*.",
+      "uz": "Odatda nemis otlari kelishikka qarab deyarli o'zgarmaydi — artikl o'zgaradi. Lekin erkak jinsidagi bir guruh so'zlar nominativdan boshqa barcha kelishiklarda *-n* yoki *-en* oladi: *der Student → den Studenten, dem Studenten, des Studenten*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Падеж",
+        "en": "Case",
+        "uz": "Kelishik"
+       },
+       {
+        "ru": "Обычное слово",
+        "en": "Normal noun",
+        "uz": "Oddiy so'z"
+       },
+       {
+        "ru": "N-слово",
+        "en": "N-noun",
+        "uz": "N-so'z"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "номинатив",
+         "en": "nominative",
+         "uz": "nominativ"
+        },
+        "der Tisch",
+        "der Kunde"
+       ],
+       [
+        {
+         "ru": "аккузатив",
+         "en": "accusative",
+         "uz": "akkuzativ"
+        },
+        "den Tisch",
+        "den Kunden"
+       ],
+       [
+        {
+         "ru": "датив",
+         "en": "dative",
+         "uz": "dativ"
+        },
+        "dem Tisch",
+        "dem Kunden"
+       ],
+       [
+        {
+         "ru": "генитив",
+         "en": "genitive",
+         "uz": "genitiv"
+        },
+        "des Tisches",
+        "des Kunden"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Как узнать такие слова",
+      "en": "How to recognise them",
+      "uz": "Bunday so'zlarni qanday tanish mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Почти все они — мужского рода и обозначают людей или животных. Подсказки: слова на *-e* (*der Junge, der Kollege, der Kunde, der Löwe*), на *-ent, -ant, -ist* (*der Student, der Präsident, der Polizist*) и несколько отдельных: *der Mensch, der Herr, der Nachbar*.",
+      "en": "Nearly all are masculine people or animals: nouns in *-e* (*der Kollege, der Kunde*), *-ent, -ant, -ist* (*der Student, der Polizist*) and a few others: *der Mensch, der Herr, der Nachbar*.",
+      "uz": "Ularning deyarli hammasi erkak jinsida va odamlar yoki hayvonlarni bildiradi. Ishoralar: *-e* bilan tugaydiganlar (*der Junge, der Kollege, der Kunde, der Löwe*), *-ent, -ant, -ist* bilan (*der Student, der Präsident, der Polizist*) va bir nechta alohidalari: *der Mensch, der Herr, der Nachbar*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich kenne *den Studenten* aus Taschkent.",
+       "t": {
+        "ru": "Я знаю этого студента из Ташкента.",
+        "uz": "Toshkentlik o'sha talabani taniyman.",
+        "en": "I know the student from Tashkent."
+       }
+      },
+      {
+       "s": "Wir helfen *unserem Nachbarn*.",
+       "t": {
+        "ru": "Мы помогаем нашему соседу.",
+        "uz": "Qo'shnimizga yordam beramiz.",
+        "en": "We help our neighbour."
+       }
+      },
+      {
+       "s": "Das ist das Büro *des Präsidenten*.",
+       "t": {
+        "ru": "Это кабинет президента.",
+        "uz": "Bu prezidentning idorasi.",
+        "en": "That's the president's office."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Особое слово: *der Herr* → *Herrn* в единственном числе, но *Herren* во множественном. В письмах: *Sehr geehrter Herr Müller* (номинатив), но *an Herrn Müller* (аккузатив).",
+      "en": "Special: *der Herr* → *Herrn* (singular), *Herren* (plural). In letters: *an Herrn Müller*.",
+      "uz": "Alohida so'z: *der Herr* → birlikda *Herrn*, ko'plikda *Herren*. Xatlarda: *Sehr geehrter Herr Müller* (nominativ), lekin *an Herrn Müller* (akkuzativ)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16303,6 +17069,134 @@
     "en": "Learn the pairs as units; after desto the verb comes next.",
     "uz": "Juftlarni butunligicha o'rgan; desto dan keyin darhol fe'l."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Парные союзы",
+      "en": "Two-part conjunctions",
+      "uz": "Juft bog'lovchilar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Парные союзы состоят из двух частей и соединяют два варианта или две мысли: «и… и», «ни… ни», «или… или». Они делают речь более точной и звучат по-взрослому.",
+      "en": "Two-part conjunctions link two options or ideas: “both… and”, “neither… nor”, “either… or”. They make speech more precise.",
+      "uz": "Juft bog'lovchilar ikki qismdan iborat va ikki variant yoki ikki fikrni bog'laydi: «ham… ham», «na… na», «yo… yo». Ular nutqni aniqroq qiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Союз",
+        "en": "Conjunction",
+        "uz": "Bog'lovchi"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "sowohl … als auch",
+        {
+         "ru": "и … и (оба)",
+         "en": "both … and",
+         "uz": "ham … ham"
+        },
+        "Sie spricht sowohl Deutsch als auch Englisch."
+       ],
+       [
+        "weder … noch",
+        {
+         "ru": "ни … ни",
+         "en": "neither … nor",
+         "uz": "na … na"
+        },
+        "Ich habe weder Zeit noch Geld."
+       ],
+       [
+        "entweder … oder",
+        {
+         "ru": "или … или (одно из двух)",
+         "en": "either … or",
+         "uz": "yo … yo"
+        },
+        "Entweder kommst du mit oder du bleibst hier."
+       ],
+       [
+        "nicht nur … sondern auch",
+        {
+         "ru": "не только … но и",
+         "en": "not only … but also",
+         "uz": "nafaqat … balki"
+        },
+        "Er ist nicht nur klug, sondern auch nett."
+       ],
+       [
+        "zwar … aber",
+        {
+         "ru": "хотя и … но",
+         "en": "admittedly … but",
+         "uz": "garchi … lekin"
+        },
+        "Das Auto ist zwar alt, aber es fährt gut."
+       ],
+       [
+        "je … desto",
+        {
+         "ru": "чем … тем",
+         "en": "the more … the more",
+         "uz": "qancha … shuncha"
+        },
+        "Je mehr ich lerne, desto besser spreche ich."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Weder … noch* уже отрицательное, поэтому *nicht* или *kein* к нему не добавляют. *Je … desto* — особый: после *je* глагол в конце (как в придаточном), а после *desto* — сразу глагол.",
+      "en": "*Weder … noch* is already negative — no *nicht*. *Je … desto* is special: after *je* the verb goes to the end; after *desto* the verb comes right away.",
+      "uz": "*Weder … noch* o'zi inkor, shuning uchun unga *nicht* yoki *kein* qo'shilmaydi. *Je … desto* alohida: *je* dan keyin fe'l oxirida (ergash gapdagidek), *desto* dan keyin esa darhol fe'l keladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Wir fahren *entweder* mit dem Zug *oder* mit dem Bus.",
+       "t": {
+        "ru": "Мы поедем либо на поезде, либо на автобусе.",
+        "uz": "Yo poyezdda, yo avtobusda boramiz.",
+        "en": "We'll go either by train or by bus."
+       }
+      },
+      {
+       "s": "Er hat *weder* angerufen *noch* geschrieben.",
+       "t": {
+        "ru": "Он не позвонил и не написал.",
+        "uz": "U na qo'ng'iroq qildi, na yozdi.",
+        "en": "He neither called nor wrote."
+       }
+      },
+      {
+       "s": "*Je* früher wir *losfahren*, *desto* besser.",
+       "t": {
+        "ru": "Чем раньше мы выедем, тем лучше.",
+        "uz": "Qancha erta yo'lga chiqsak, shuncha yaxshi.",
+        "en": "The earlier we leave, the better."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16568,6 +17462,120 @@
     "en": "-end = doing now; Partizip II = done; plus an ending.",
     "uz": "-end = hozir qilyapti; Partizip II = qilingan; qo'shimcha bilan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Причастия как прилагательные",
+      "en": "Participles as adjectives",
+      "uz": "Sifatdoshlar sifat sifatida"
+     }
+    },
+    {
+     "p": {
+      "ru": "Из глагола можно сделать прилагательное и поставить его перед существительным. Немецкий так делает очень часто, особенно в письменной речи. Есть два вида, и они отличаются по смыслу.",
+      "en": "German often turns a verb into an adjective before a noun, especially in writing. There are two kinds with different meanings.",
+      "uz": "Fe'ldan sifat yasab, uni ot oldidan qo'yish mumkin. Nemis tili buni juda ko'p qiladi, ayniqsa yozma nutqda. Ikki turi bor va ular ma'no jihatidan farq qiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Вид",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Как образуется",
+        "en": "Formed by",
+        "uz": "Qanday yasaladi"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "Partizip I",
+        {
+         "ru": "инфинитив + -d",
+         "en": "infinitive + -d",
+         "uz": "infinitiv + -d"
+        },
+        {
+         "ru": "делающий сейчас (активно)",
+         "en": "doing (active, ongoing)",
+         "uz": "qilayotgan (faol, hozir)"
+        },
+        "das lachende Kind"
+       ],
+       [
+        "Partizip II",
+        {
+         "ru": "ge…t / ge…en",
+         "en": "ge…t / ge…en",
+         "uz": "ge…t / ge…en"
+        },
+        {
+         "ru": "сделанный (пассивно, завершено)",
+         "en": "done (passive, finished)",
+         "uz": "qilingan (majhul, tugagan)"
+        },
+        "das gekochte Ei"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Das lachende Kind* — смеющийся ребёнок (смеётся сейчас). *Das gekochte Ei* — сваренное яйцо (его сварили). В русском это «-ющий» и «-нный», в узбекском — «-ayotgan» и «-ilgan»: kul_ayotgan_ bola, pish_irilgan_ tuxum.",
+      "en": "*Das lachende Kind* — the laughing child. *Das gekochte Ei* — the boiled egg.",
+      "uz": "*Das lachende Kind* — kulayotgan bola (hozir kulyapti). *Das gekochte Ei* — pishirilgan tuxum (uni pishirishgan). O'zbek tilida bu «-ayotgan» va «-ilgan»: kul_ayotgan_ bola, pish_irilgan_ tuxum."
+     }
+    },
+    {
+     "note": {
+      "ru": "Перед существительным у причастия появляются обычные окончания прилагательных: *ein schlafendes Baby*, *mit dem reparierten Auto*.",
+      "en": "Before a noun, participles take normal adjective endings: *ein schlafendes Baby*, *mit dem reparierten Auto*.",
+      "uz": "Ot oldidan sifatdosh oddiy sifat qo'shimchalarini oladi: *ein schlafendes Baby*, *mit dem reparierten Auto*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Vorsicht, *kochendes* Wasser!",
+       "t": {
+        "ru": "Осторожно, кипящая вода!",
+        "uz": "Ehtiyot bo'l, qaynayotgan suv!",
+        "en": "Careful, boiling water!"
+       }
+      },
+      {
+       "s": "Wir haben ein *renoviertes* Haus gekauft.",
+       "t": {
+        "ru": "Мы купили отремонтированный дом.",
+        "uz": "Biz ta'mirlangan uy sotib oldik.",
+        "en": "We bought a renovated house."
+       }
+      },
+      {
+       "s": "Die *wartenden* Gäste wurden unruhig.",
+       "t": {
+        "ru": "Ожидающие гости начали беспокоиться.",
+        "uz": "Kutayotgan mehmonlar bezovtalana boshladi.",
+        "en": "The waiting guests got restless."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16829,6 +17837,139 @@
     "en": "Someone else does it for you → lassen + infinitive.",
     "uz": "O'zing emas, boshqaga qildirasan → lassen + infinitiv."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Lassen: оставлять и поручать",
+      "en": "Lassen: leave and have done",
+      "uz": "Lassen: qoldirmoq va topshirmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Lassen* — один из самых многозначных немецких глаголов. Его главные значения: «оставлять», «позволять» и «поручать сделать кому-то другому». Неправильные формы: *du lässt, er lässt*, Perfekt *hat gelassen*.",
+      "en": "*Lassen* has several meanings: “leave”, “let” and “have something done by someone else”. Forms: *du lässt, er lässt*.",
+      "uz": "*Lassen* — nemis tilidagi eng ko'p ma'noli fe'llardan biri. Asosiy ma'nolari: «qoldirmoq», «ruxsat bermoq» va «boshqa birovga qildirmoq». Noto'g'ri shakllari: *du lässt, er lässt*, Perfekt *hat gelassen*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       },
+       {
+        "ru": "Перевод",
+        "en": "Translation",
+        "uz": "Tarjima"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "оставлять",
+         "en": "leave",
+         "uz": "qoldirmoq"
+        },
+        "Ich lasse den Schlüssel hier.",
+        {
+         "ru": "Я оставлю ключ здесь.",
+         "en": "I'll leave the key here.",
+         "uz": "Kalitni shu yerda qoldiraman."
+        }
+       ],
+       [
+        {
+         "ru": "позволять",
+         "en": "let, allow",
+         "uz": "ruxsat bermoq"
+        },
+        "Lass mich gehen!",
+        {
+         "ru": "Отпусти меня!",
+         "en": "Let me go!",
+         "uz": "Meni qo'yib yubor!"
+        }
+       ],
+       [
+        {
+         "ru": "поручать (кому-то сделать)",
+         "en": "have something done",
+         "uz": "boshqaga qildirmoq"
+        },
+        "Ich lasse mein Auto reparieren.",
+        {
+         "ru": "Я отдаю машину в ремонт (мне её чинят).",
+         "en": "I'm having my car repaired.",
+         "uz": "Mashinamni ta'mirlataman."
+        }
+       ],
+       [
+        {
+         "ru": "оставить в покое",
+         "en": "leave alone",
+         "uz": "tinch qo'ymoq"
+        },
+        "Lass das!",
+        {
+         "ru": "Перестань! Оставь это!",
+         "en": "Stop it!",
+         "uz": "Qo'y buni!"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Самое важное для B2 — значение «поручать»: *lassen* + инфинитив в конце. Как английское *have something done* и узбекское «-tir / -dir»: sochimni oldirdim. *Ich lasse mir die Haare schneiden* — Я стригусь (у парикмахера).",
+      "en": "Most important at B2: “have done” — *lassen* + infinitive at the end, like English *have something done*: *Ich lasse mir die Haare schneiden.*",
+      "uz": "B2 uchun eng muhimi — «qildirmoq» ma'nosi: *lassen* + oxirida infinitiv. Ingliz tilidagi *have something done* va o'zbekcha «-tir / -dir» kabi: sochimni oldirdim. *Ich lasse mir die Haare schneiden* — Sochimni oldiraman (sartaroshda)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Wir *lassen* das Zimmer *streichen*.",
+       "t": {
+        "ru": "Нам красят комнату.",
+        "uz": "Xonani bo'yatyapmiz.",
+        "en": "We're having the room painted."
+       }
+      },
+      {
+       "s": "*Lass* mich das *machen*!",
+       "t": {
+        "ru": "Дай я это сделаю!",
+        "uz": "Buni menga qo'y, o'zim qilaman!",
+        "en": "Let me do that!"
+       }
+      },
+      {
+       "s": "Ich habe mein Handy zu Hause *gelassen*.",
+       "t": {
+        "ru": "Я оставил телефон дома.",
+        "uz": "Telefonimni uyda qoldirdim.",
+        "en": "I left my phone at home."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С инфинитивом в Perfekt используют не *gelassen*, а *lassen*: *Ich habe mein Auto reparieren lassen* (не «reparieren gelassen»).",
+      "en": "With an infinitive, the Perfekt uses *lassen*, not *gelassen*: *Ich habe mein Auto reparieren lassen.*",
+      "uz": "Infinitiv bilan Perfekt da *gelassen* emas, *lassen* ishlatiladi: *Ich habe mein Auto reparieren lassen* («reparieren gelassen» emas)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

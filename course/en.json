@@ -6898,7 +6898,7 @@
     {
      "ex": [
       {
-       "s": "It's cold. I *'ll close* the window.",
+       "s": "It's cold. I*'ll close* the window.",
        "t": {
         "ru": "Холодно. Я закрою окно.",
         "uz": "Sovuq. Derazani yopaman."
@@ -10070,7 +10070,7 @@
        }
       },
       {
-       "s": "We *'ve known* each other since 2018.",
+       "s": "We*'ve known* each other since 2018.",
        "t": {
         "ru": "Мы знакомы с 2018 года.",
         "uz": "Biz 2018-yildan beri tanishmiz."
@@ -10845,7 +10845,7 @@
        }
       },
       {
-       "s": "If I *see* Ali, I *'ll tell* him.",
+       "s": "If I *see* Ali, I*'ll tell* him.",
        "t": {
         "ru": "Если увижу Али, скажу ему.",
         "uz": "Alini ko'rsam, aytaman."
@@ -14667,6 +14667,98 @@
     "en": "Two past events: the earlier one → had + V3.",
     "uz": "O'tmishdagi ikki voqea: oldingisi → had + V3."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Прошлое до прошлого",
+      "en": "The past before the past",
+      "uz": "O'tmishdan oldingi o'tmish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Past Perfect нужен, когда мы рассказываем о прошлом и хотим показать, что одно действие случилось _ещё раньше_ другого. «Когда я пришёл на вокзал, поезд уже ушёл» — сначала ушёл поезд, потом пришёл я. *When I arrived, the train had already left.*",
+      "en": "The Past Perfect shows that one past action happened before another: *When I arrived, the train had already left.*",
+      "uz": "Past Perfect o'tmish haqida gapirganda bir harakat boshqasidan _ham oldinroq_ bo'lganini ko'rsatish uchun kerak. «Vokzalga kelganimda poyezd allaqachon ketib bo'lgan edi» — avval poyezd ketdi, keyin men keldim. *When I arrived, the train had already left.* O'zbekcha «-gan edi» ga juda o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Had* + третья форма глагола, одинаково для всех: *I had seen, she had gone, they had finished*. Коротко — *I'd*, *she'd*.",
+      "en": "*Had* + past participle, the same for everyone: *I had seen, she had gone*. Short: *I'd*, *she'd*.",
+      "uz": "*Had* + fe'lning uchinchi shakli, hamma uchun bir xil: *I had seen, she had gone, they had finished*. Qisqasi — *I'd*, *she'd*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что было раньше",
+        "en": "Earlier action",
+        "uz": "Oldinroq bo'lgan"
+       },
+       {
+        "ru": "Что было потом",
+        "en": "Later action",
+        "uz": "Keyin bo'lgan"
+       }
+      ],
+      "rows": [
+       [
+        "Past Perfect: had left",
+        "Past Simple: arrived"
+       ],
+       [
+        "She had studied hard",
+        "so she passed the exam."
+       ],
+       [
+        "I had never seen snow",
+        "before I moved to Moscow."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "When we got to the cinema, the film *had* already *started*.",
+       "t": {
+        "ru": "Когда мы пришли в кино, фильм уже начался.",
+        "uz": "Kinoga yetib borganimizda film allaqachon boshlangan edi."
+       }
+      },
+      {
+       "s": "She was sad because she *had lost* her ring.",
+       "t": {
+        "ru": "Она грустила, потому что потеряла кольцо.",
+        "uz": "U uzugini yo'qotgani uchun xafa edi."
+       }
+      },
+      {
+       "s": "I *had* never *flown* before that trip.",
+       "t": {
+        "ru": "До той поездки я никогда не летал.",
+        "uz": "O'sha safargacha hech qachon samolyotda uchmagan edim."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если порядок и так ясен (*after, before*, или просто перечисление по порядку), часто хватает Past Simple: *After I finished, I left.* Past Perfect нужен, когда без него порядок перепутается.",
+      "en": "If the order is already clear (*after, before*, or listing in sequence), the Past Simple is often enough. Use the Past Perfect when the order would otherwise be unclear.",
+      "uz": "Tartib baribir aniq bo'lsa (*after, before* yoki ketma-ket sanab o'tilsa), ko'pincha Past Simple yetarli: *After I finished, I left.* Past Perfect usiz tartib chalkashib ketadigan holatda kerak."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -14934,6 +15026,102 @@
     "en": "if part: had V3; result: would have V3.",
     "uz": "if qismi: had V3; natija: would have V3."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Если бы тогда…: третий тип",
+      "en": "If only then…: the third conditional",
+      "uz": "Agar o'shanda…: uchinchi tur"
+     }
+    },
+    {
+     "p": {
+      "ru": "Третий тип условных говорит о прошлом, которое _уже не изменить_. Мы представляем, как всё могло бы быть иначе: «Если бы я тогда учился, я бы сдал экзамен» (но я не учился и не сдал). Часто это сожаление или упрёк.",
+      "en": "The third conditional is about a past that can't be changed — imagining a different past: “If I had studied, I would have passed” (but I didn't).",
+      "uz": "Uchinchi tur shart gaplar _o'zgartirib bo'lmaydigan_ o'tmish haqida. Hammasi boshqacha bo'lishi mumkinligini tasavvur qilamiz: «Agar o'shanda o'qiganimda, imtihondan o'tardim» (lekin o'qimadim va o'tmadim). Ko'pincha bu afsus yoki ta'na."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Часть",
+        "en": "Part",
+        "uz": "Qism"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "условие",
+         "en": "condition",
+         "uz": "shart"
+        },
+        "If + had + V3",
+        "If I had studied,"
+       ],
+       [
+        {
+         "ru": "результат",
+         "en": "result",
+         "uz": "natija"
+        },
+        "would have + V3",
+        "I would have passed."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Звучит длинно, но в разговоре сокращают: *If I'd known, I'd have come* — Если бы я знал, я бы пришёл. Обрати внимание: *'d* в первой части — это *had*, а во второй — *would*.",
+      "en": "In speech it's shortened: *If I'd known, I'd have come.* The first *'d* is *had*, the second is *would*.",
+      "uz": "Uzun eshitiladi, lekin so'zlashuvda qisqartiriladi: *If I'd known, I'd have come* — Bilganimda, kelardim. E'tibor bering: birinchi qismdagi *'d* — *had*, ikkinchisidagi — *would*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "If you *had told* me, I *would have helped*.",
+       "t": {
+        "ru": "Если бы ты мне сказал, я бы помог.",
+        "uz": "Agar menga aytganingda, yordam berardim."
+       }
+      },
+      {
+       "s": "We *would have missed* the bus if we *hadn't run*.",
+       "t": {
+        "ru": "Мы бы опоздали на автобус, если бы не побежали.",
+        "uz": "Yugurmaganimizda, avtobusdan qolib ketardik."
+       }
+      },
+      {
+       "s": "If it *hadn't rained*, the match *wouldn't have been* cancelled.",
+       "t": {
+        "ru": "Если бы не дождь, матч не отменили бы.",
+        "uz": "Yomg'ir yog'maganida, o'yin bekor qilinmasdi."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вместо *would have* можно *could have* (мог бы) или *might have* (может быть, был бы): *If I'd left earlier, I could have caught the train.*",
+      "en": "Instead of *would have* you can use *could have* or *might have*.",
+      "uz": "*would have* o'rniga *could have* (qila olardi) yoki *might have* (ehtimol … bo'lardi) ishlatish mumkin: *If I'd left earlier, I could have caught the train.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15204,6 +15392,111 @@
     "en": "Now → past; before → had V3; others → would.",
     "uz": "Hozir → past; oldin → had V3; boshqalar → would."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "I wish: жаль, что…",
+      "en": "I wish: regrets and wishes",
+      "uz": "I wish: afsus, …sa edi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*I wish* выражает сожаление о том, что есть или было не так, как хотелось. По-русски — «жаль, что…» или «хотел бы, чтобы…», по-узбекски — «…sa edi»: Pulim ko'p bo'lsa edi! Главное — время после *wish* всегда сдвигается на шаг назад.",
+      "en": "*I wish* expresses regret that things are or were not as you'd like. The tense after *wish* always moves one step back.",
+      "uz": "*I wish* narsalar istagandek emasligidan afsusni bildiradi. O'zbekcha — «…sa edi», «qani endi…»: Qani endi pulim ko'p bo'lsa! Asosiysi — *wish* dan keyingi zamon doim bir qadam orqaga suriladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "О чём жалеем",
+        "en": "Regret about",
+        "uz": "Nimadan afsus"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "о настоящем",
+         "en": "the present",
+         "uz": "hozirgi haqida"
+        },
+        "wish + Past Simple",
+        "I wish I had a car."
+       ],
+       [
+        {
+         "ru": "о прошлом",
+         "en": "the past",
+         "uz": "o'tmish haqida"
+        },
+        "wish + Past Perfect",
+        "I wish I had studied harder."
+       ],
+       [
+        {
+         "ru": "о том, что раздражает (хочу, чтобы изменилось)",
+         "en": "an annoying habit",
+         "uz": "bezovta qiladigan narsa"
+        },
+        "wish + would",
+        "I wish it would stop raining."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*I wish I had a car* — у меня нет машины, жаль. *I wish I had studied* — я не учился, жаль. Прошедшее время здесь значит «это не так», а не «это было».",
+      "en": "*I wish I had a car* — I don't have one. *I wish I had studied* — I didn't. The past form signals “not real”.",
+      "uz": "*I wish I had a car* — mashinam yo'q, afsus. *I wish I had studied* — o'qimadim, afsus. Bu yerda o'tgan zamon «bunday emas»ni bildiradi, «bo'lgan edi»ni emas."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I *wish* I *spoke* German.",
+       "t": {
+        "ru": "Жаль, что я не говорю по-немецки.",
+        "uz": "Qani endi nemischa gapirsam."
+       }
+      },
+      {
+       "s": "She *wishes* she *hadn't said* that.",
+       "t": {
+        "ru": "Она жалеет, что сказала это.",
+        "uz": "U buni aytmaganida edi, deb afsuslanadi."
+       }
+      },
+      {
+       "s": "I *wish* you *would* listen to me!",
+       "t": {
+        "ru": "Хоть бы ты меня послушал!",
+        "uz": "Qani endi meni tinglasang!"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В формальной речи после *wish* говорят *were* для всех: *I wish I were taller.* *If only…* — то же, что *I wish*, но эмоциональнее: *If only I had more time!*",
+      "en": "In formal style use *were* for all persons: *I wish I were taller.* *If only…* is a stronger *I wish*.",
+      "uz": "Rasmiy nutqda *wish* dan keyin hamma uchun *were* ishlatiladi: *I wish I were taller.* *If only…* — *I wish* ning o'zi, lekin hissiyotliroq: *If only I had more time!*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15470,6 +15763,125 @@
     "en": "Sure yes → must; sure no → can’t; maybe → might.",
     "uz": "Aniq ha → must; aniq yo'q → can't; balki → might."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Наверное, наверняка, не может быть",
+      "en": "Must, might, can't: guessing",
+      "uz": "Ehtimol, aniq, bo'lishi mumkin emas"
+     }
+    },
+    {
+     "p": {
+      "ru": "Модальные глаголы помогают делать выводы, когда мы не знаем точно. Важно, _насколько_ мы уверены.",
+      "en": "Modal verbs help us make guesses when we aren't sure. What matters is how sure we are.",
+      "uz": "Modal fe'llar aniq bilmaganimizda xulosa chiqarishga yordam beradi. _Qanchalik_ ishonchimiz komilligi muhim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Уверенность",
+        "en": "Certainty",
+        "uz": "Ishonch"
+       },
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "почти 100% да",
+         "en": "almost sure: yes",
+         "uz": "deyarli 100% ha"
+        },
+        "must",
+        "He must be tired."
+       ],
+       [
+        {
+         "ru": "возможно",
+         "en": "possible",
+         "uz": "ehtimol"
+        },
+        "might / may / could",
+        "She might be at home."
+       ],
+       [
+        {
+         "ru": "почти 100% нет",
+         "en": "almost sure: no",
+         "uz": "deyarli 100% yo'q"
+        },
+        "can't",
+        "That can't be true."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*He must be tired* — он наверняка устал (видно по лицу). *She might be at home* — может быть, она дома. *That can't be Ali, he's in London* — это не может быть Али, он в Лондоне.",
+      "en": "*He must be tired* — I'm sure. *She might be at home* — maybe. *That can't be Ali* — impossible.",
+      "uz": "*He must be tired* — u charchagan bo'lsa kerak (yuzidan ko'rinib turibdi). *She might be at home* — balki u uydadir. *That can't be Ali, he's in London* — bu Ali bo'lishi mumkin emas, u Londonda."
+     }
+    },
+    {
+     "note": {
+      "ru": "Противоположность *must* в догадках — *can't*, а не *mustn't*. *Mustn't* значит «нельзя», это запрет, а не догадка.",
+      "en": "The opposite of *must* in guesses is *can't*, not *mustn't* (which means “not allowed”).",
+      "uz": "Taxminlarda *must* ning teskarisi — *can't*, *mustn't* emas. *Mustn't* «mumkin emas» — taqiq, taxmin emas."
+     }
+    },
+    {
+     "h": {
+      "ru": "Догадки о прошлом",
+      "en": "Guesses about the past",
+      "uz": "O'tmish haqida taxminlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для прошлого добавляем *have* + третья форма: *She must have forgotten* — Она, наверное, забыла. *They might have missed the bus* — Может, они опоздали на автобус. *He can't have seen us* — Он не мог нас видеть.",
+      "en": "For the past add *have* + past participle: *must have forgotten*, *might have missed*, *can't have seen*.",
+      "uz": "O'tmish uchun *have* + uchinchi shakl qo'shamiz: *She must have forgotten* — U unutgan bo'lsa kerak. *They might have missed the bus* — Balki ular avtobusdan qolishgandir. *He can't have seen us* — U bizni ko'rgan bo'lishi mumkin emas."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "The lights are off. They *must be* asleep.",
+       "t": {
+        "ru": "Свет выключен. Они, наверное, спят.",
+        "uz": "Chiroqlar o'chiq. Ular uxlayotgan bo'lsa kerak."
+       }
+      },
+      {
+       "s": "I *might* go to the party, I'm not sure.",
+       "t": {
+        "ru": "Может, я пойду на вечеринку, не уверен.",
+        "uz": "Balki ziyofatga borarman, aniq emas."
+       }
+      },
+      {
+       "s": "You *must have been* hungry!",
+       "t": {
+        "ru": "Ты, наверное, был голоден!",
+        "uz": "Qorning juda och bo'lgan bo'lsa kerak!"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15732,6 +16144,115 @@
     "en": "have + thing + V3 = done for me.",
     "uz": "have + narsa + V3 = men uchun qilindi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Have something done: мне сделали",
+      "en": "Have something done",
+      "uz": "Have something done: menga qilib berishdi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда работу делаешь не ты сам, а кто-то для тебя (мастер, парикмахер), в английском говорят *have something done*. «Я подстригся» по-русски звучит так, будто стригся сам, но на самом деле стриг парикмахер: *I had my hair cut*.",
+      "en": "When someone does a job for you (a mechanic, a hairdresser), English says *have something done*: *I had my hair cut.*",
+      "uz": "Ishni o'zingiz emas, kimdir siz uchun qilsa (usta, sartarosh), ingliz tilida *have something done* deyiladi. O'zbek tilida «Sochimni oldirdim» — «-dir» qo'shimchasi shuni bildiradi: *I had my hair cut*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Часть",
+        "en": "Part",
+        "uz": "Qism"
+       },
+       "have",
+       {
+        "ru": "что",
+        "en": "what",
+        "uz": "nima"
+       },
+       {
+        "ru": "третья форма",
+        "en": "past participle",
+        "uz": "uchinchi shakl"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "пример 1",
+         "en": "example 1",
+         "uz": "1-misol"
+        },
+        "I had",
+        "my car",
+        "repaired."
+       ],
+       [
+        {
+         "ru": "пример 2",
+         "en": "example 2",
+         "uz": "2-misol"
+        },
+        "She is having",
+        "her house",
+        "painted."
+       ],
+       [
+        {
+         "ru": "пример 3",
+         "en": "example 3",
+         "uz": "3-misol"
+        },
+        "We'll have",
+        "the documents",
+        "translated."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Порядок строгий: *have* + предмет + третья форма. Время показывает *have*: *I have it done* (регулярно), *I had it done* (вчера), *I'm having it done* (сейчас), *I'll have it done* (завтра).",
+      "en": "The order is fixed: *have* + object + past participle. *Have* shows the tense.",
+      "uz": "Tartib qat'iy: *have* + narsa + uchinchi shakl. Zamonni *have* ko'rsatadi: *I have it done* (muntazam), *I had it done* (kecha), *I'm having it done* (hozir), *I'll have it done* (ertaga)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I *had my phone repaired* yesterday.",
+       "t": {
+        "ru": "Вчера мне починили телефон.",
+        "uz": "Kecha telefonimni ta'mirlatdim."
+       }
+      },
+      {
+       "s": "Where do you *have your hair cut*?",
+       "t": {
+        "ru": "Где ты стрижёшься?",
+        "uz": "Sochingni qayerda oldirasan?"
+       }
+      },
+      {
+       "s": "We need to *have the windows cleaned*.",
+       "t": {
+        "ru": "Нам нужно, чтобы помыли окна.",
+        "uz": "Derazalarni yuvdirishimiz kerak."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В разговоре вместо *have* часто говорят *get*: *I got my car washed.* Смысл тот же.",
+      "en": "In speech *get* often replaces *have*: *I got my car washed.*",
+      "uz": "So'zlashuvda *have* o'rniga ko'pincha *get* deyiladi: *I got my car washed.* Ma'nosi bir xil."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -15997,6 +16518,127 @@
     "en": "Clause → although; noun/-ing → despite; new sentence → However,",
     "uz": "Gap → although; ot/-ing → despite; yangi gap → However,"
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Хотя, несмотря на, однако",
+      "en": "Although, despite, however",
+      "uz": "Garchi, qaramay, biroq"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эти слова связывают две противоположные мысли: «было трудно, но мы справились». Значение у них близкое, а грамматика разная — и именно в ней ошибаются.",
+      "en": "These words link two contrasting ideas. Their meanings are close but their grammar differs — that's where mistakes happen.",
+      "uz": "Bu so'zlar ikki qarama-qarshi fikrni bog'laydi: «qiyin edi, lekin uddaladik». Ma'nolari yaqin, grammatikasi esa boshqa — xato aynan shu yerda bo'ladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Что после него",
+        "en": "What follows",
+        "uz": "Undan keyin nima"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "although / even though",
+        {
+         "ru": "целое предложение (кто + глагол)",
+         "en": "a full clause",
+         "uz": "to'liq gap (ega + fe'l)"
+        },
+        "Although it was cold, we went out."
+       ],
+       [
+        "despite / in spite of",
+        {
+         "ru": "существительное или -ing",
+         "en": "a noun or -ing",
+         "uz": "ot yoki -ing"
+        },
+        "Despite the cold, we went out."
+       ],
+       [
+        "however",
+        {
+         "ru": "новое предложение, после запятой",
+         "en": "a new sentence, then a comma",
+         "uz": "yangi gap, vergul bilan"
+        },
+        "It was cold. However, we went out."
+       ],
+       [
+        "but",
+        {
+         "ru": "середина одного предложения",
+         "en": "the middle of one sentence",
+         "uz": "bitta gap o'rtasida"
+        },
+        "It was cold, but we went out."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Самая частая ошибка — поставить после *despite* целое предложение: «Despite it was cold» — так нельзя. Нужно либо *Despite the cold*, либо *Despite being cold*, либо *Despite the fact that it was cold*.",
+      "en": "The most common mistake: a full clause after *despite* (“Despite it was cold”). Use a noun, *-ing*, or *despite the fact that…*",
+      "uz": "Eng ko'p uchraydigan xato — *despite* dan keyin to'liq gap qo'yish: «Despite it was cold» — bunday bo'lmaydi. Yo *Despite the cold*, yo *Despite being cold*, yo *Despite the fact that it was cold* kerak."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Although* he was tired, he finished the work.",
+       "t": {
+        "ru": "Хотя он устал, он закончил работу.",
+        "uz": "Charchagan bo'lsa ham, ishni tugatdi."
+       }
+      },
+      {
+       "s": "*Despite* the rain, the match continued.",
+       "t": {
+        "ru": "Несмотря на дождь, матч продолжился.",
+        "uz": "Yomg'irga qaramay, o'yin davom etdi."
+       }
+      },
+      {
+       "s": "The plan was good. *However*, it was too expensive.",
+       "t": {
+        "ru": "План был хорош. Однако он был слишком дорогим.",
+        "uz": "Reja yaxshi edi. Biroq u juda qimmat edi."
+       }
+      },
+      {
+       "s": "*In spite of* feeling ill, she went to work.",
+       "t": {
+        "ru": "Несмотря на то что ей было плохо, она пошла на работу.",
+        "uz": "O'zini yomon his qilishiga qaramay, u ishga bordi."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Even though* — более сильное *although*: «хотя на самом деле…». *However* обычно в начале предложения и с запятой.",
+      "en": "*Even though* is a stronger *although*. *However* usually starts a sentence and is followed by a comma.",
+      "uz": "*Even though* — kuchliroq *although*: «garchi aslida…». *However* odatda gap boshida va vergul bilan keladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16260,6 +16902,109 @@
     "en": "In progress then → will be -ing; done by then → will have done.",
     "uz": "O'sha payt jarayonda → will be -ing; o'sha paytgacha tugagan → will have done."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Будущее в процессе и будущее завершённое",
+      "en": "Future continuous and future perfect",
+      "uz": "Kelajakdagi jarayon va tugagan kelajak"
+     }
+    },
+    {
+     "p": {
+      "ru": "Иногда нужно сказать не просто «я сделаю», а точнее: что я _буду делать_ в определённый момент будущего (процесс) или что я _уже сделаю_ к какому-то моменту (результат).",
+      "en": "Sometimes you need more than “I will”: what you'll be in the middle of at a future moment, or what you'll have finished by then.",
+      "uz": "Ba'zan shunchaki «qilaman» emas, aniqroq aytish kerak: kelajakning ma'lum bir paytida nima _qilayotgan_ bo'laman (jarayon) yoki biror paytgacha nimani _qilib bo'lgan_ bo'laman (natija)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "Future Continuous",
+        "will be + -ing",
+        {
+         "ru": "в процессе в момент будущего",
+         "en": "in progress at a future moment",
+         "uz": "kelajakdagi paytda jarayonda"
+        },
+        "At 8 tomorrow I'll be flying to Seoul."
+       ],
+       [
+        "Future Perfect",
+        "will have + V3",
+        {
+         "ru": "уже завершено к моменту будущего",
+         "en": "finished before a future moment",
+         "uz": "kelajakdagi paytgacha tugagan"
+        },
+        "By 2030 I'll have finished university."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Представь линию времени. Future Continuous — ты ставишь точку в будущем и смотришь, что _идёт_ в этот момент: «Завтра в 8 я буду лететь». Future Perfect — смотришь назад из точки будущего: что к ней _уже закончится_. Слово-подсказка — *by* (к): *by Friday*, *by the time you arrive*.",
+      "en": "Picture a timeline. Future Continuous: what's in progress at a point in the future. Future Perfect: what will already be done by then — signal word *by*.",
+      "uz": "Vaqt chizig'ini tasavvur qiling. Future Continuous — kelajakda nuqta qo'yib, o'sha paytda nima _davom etayotganiga_ qaraysiz: «Ertaga soat 8 da uchib ketayotgan bo'laman». Future Perfect — kelajakdagi nuqtadan orqaga qaraysiz: unga qadar nima _tugagan_ bo'ladi. Ishora so'z — *by* (… gacha): *by Friday*, *by the time you arrive*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Don't call at 9 — I*'ll be sleeping*.",
+       "t": {
+        "ru": "Не звони в 9 — я буду спать.",
+        "uz": "Soat 9 da qo'ng'iroq qilma — uxlayotgan bo'laman."
+       }
+      },
+      {
+       "s": "By the time you get home, I*'ll have cooked* dinner.",
+       "t": {
+        "ru": "К тому времени, как ты придёшь, я уже приготовлю ужин.",
+        "uz": "Sen uyga kelguningcha kechki ovqatni tayyorlab qo'yaman."
+       }
+      },
+      {
+       "s": "This time next week we*'ll be lying* on the beach.",
+       "t": {
+        "ru": "В это время на следующей неделе мы будем лежать на пляже.",
+        "uz": "Kelasi hafta shu paytda plyajda yotgan bo'lamiz."
+       }
+      },
+      {
+       "s": "She *will have worked* here for ten years in May.",
+       "t": {
+        "ru": "В мае исполнится десять лет, как она здесь работает.",
+        "uz": "Mayda u bu yerda ishlaganiga o'n yil bo'ladi."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16527,6 +17272,109 @@
     "en": "Past → now: had done … would do. Always → then: did … would have done.",
     "uz": "O'tmish → hozir: had done … would do. Doim → o'shanda: did … would have done."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Смешанные условные",
+      "en": "Mixed conditionals",
+      "uz": "Aralash shart gaplar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Иногда условие и результат относятся к _разным временам_. Например, прошлое решение влияет на настоящее: «Если бы я тогда принял ту работу, я бы сейчас жил в Лондоне». Тогда мы смешиваем второй и третий тип.",
+      "en": "Sometimes the condition and the result belong to different times — a past choice affects the present. Then we mix the second and third conditionals.",
+      "uz": "Ba'zan shart va natija _turli zamonlarga_ tegishli bo'ladi. Masalan, o'tmishdagi qaror hozirga ta'sir qiladi: «O'shanda o'sha ishni qabul qilganimda, hozir Londonda yashardim». Unda ikkinchi va uchinchi turni aralashtiramiz."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Условие (if)",
+        "en": "Condition (if)",
+        "uz": "Shart (if)"
+       },
+       {
+        "ru": "Результат",
+        "en": "Result",
+        "uz": "Natija"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "прошлое → настоящее",
+         "en": "past → present",
+         "uz": "o'tmish → hozir"
+        },
+        "had + V3",
+        "would + verb",
+        "If I had studied medicine, I would be a doctor now."
+       ],
+       [
+        {
+         "ru": "настоящее → прошлое",
+         "en": "present → past",
+         "uz": "hozir → o'tmish"
+        },
+        "Past Simple",
+        "would have + V3",
+        "If I were braver, I would have said something."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Первая строка: не изучал медицину _тогда_ → не врач _сейчас_. Вторая: я _вообще_ не смелый человек → поэтому _тогда_ ничего не сказал. Определи, к какому времени относится каждая часть, и возьми форму из нужного типа.",
+      "en": "Row one: didn't study medicine then → not a doctor now. Row two: I'm not brave in general → so I didn't speak then. Decide the time of each half and use the matching form.",
+      "uz": "Birinchi qator: _o'shanda_ tibbiyotni o'qimadim → _hozir_ shifokor emasman. Ikkinchisi: men _umuman_ jasur odam emasman → shuning uchun _o'shanda_ hech narsa demadim. Har bir qism qaysi zamonga tegishli ekanini aniqlang va kerakli turdan shakl oling."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "If I *hadn't missed* the flight, I *would be* in Paris now.",
+       "t": {
+        "ru": "Если бы я не опоздал на рейс, я бы сейчас был в Париже.",
+        "uz": "Reysga kechikmaganimda, hozir Parijda bo'lardim."
+       }
+      },
+      {
+       "s": "If she *spoke* English, she *would have got* the job.",
+       "t": {
+        "ru": "Если бы она говорила по-английски, её бы взяли на работу.",
+        "uz": "Inglizcha gapirganida, ishga olishardi."
+       }
+      },
+      {
+       "s": "We *wouldn't be* lost if you *had checked* the map.",
+       "t": {
+        "ru": "Мы бы не заблудились, если бы ты посмотрел карту.",
+        "uz": "Xaritaga qaraganingda, adashib qolmasdik."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказки: *now, today, still* в результате → настоящее (*would + verb*). Конкретный прошлый момент (*yesterday, last year*) → прошлое (*would have + V3*).",
+      "en": "Clues: *now, today, still* in the result → present (*would + verb*). A specific past moment → past (*would have + V3*).",
+      "uz": "Ishoralar: natijada *now, today, still* bo'lsa → hozirgi (*would + fe'l*). Aniq o'tgan payt (*yesterday, last year*) → o'tmish (*would have + V3*)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -16801,6 +17649,104 @@
     "en": "-ing = same time, having done = before, done = passive; one subject.",
     "uz": "-ing — bir vaqtda, having done — avval, done — majhul; ega bitta."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Причастные обороты",
+      "en": "Participle clauses",
+      "uz": "Sifatdosh/ravishdosh oborotlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Причастный оборот — короткий способ соединить две мысли без *because, when, after*. Вместо *Because I felt tired, I went to bed* говорят *Feeling tired, I went to bed* — Чувствуя усталость, я лёг спать. Это звучит литературнее и компактнее.",
+      "en": "A participle clause is a short way to join two ideas without *because, when, after*: *Feeling tired, I went to bed.*",
+      "uz": "Oborot — ikki fikrni *because, when, after* siz bog'lashning qisqa usuli. *Because I felt tired, I went to bed* o'rniga *Feeling tired, I went to bed* deyiladi — Charchaganimni his qilib, uxlagani yotdim. O'zbek tilidagi «-ib», «-gach» ravishdoshlariga o'xshaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-ing",
+        {
+         "ru": "одновременно или причина (активно)",
+         "en": "same time or reason (active)",
+         "uz": "bir vaqtda yoki sabab (faol)"
+        },
+        "Walking home, I met Ali."
+       ],
+       [
+        "Having + V3",
+        {
+         "ru": "сначала одно, потом другое",
+         "en": "one action before another",
+         "uz": "avval biri, keyin ikkinchisi"
+        },
+        "Having finished work, she went home."
+       ],
+       [
+        "V3",
+        {
+         "ru": "пассивный смысл",
+         "en": "passive meaning",
+         "uz": "majhul ma'no"
+        },
+        "Built in 1900, the house is very old."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Главное правило: подлежащее у оборота и у главного предложения должно быть _одно и то же_. *Walking home, I met Ali* — шёл я, встретил я. Нельзя: «Walking home, it started to rain» — как будто дождь шёл домой.",
+      "en": "Key rule: the participle and the main clause must share the same subject. *Walking home, I met Ali* — I walked, I met. Not “Walking home, it started to rain”.",
+      "uz": "Asosiy qoida: oborot va bosh gapning egasi _bir xil_ bo'lishi kerak. *Walking home, I met Ali* — men uyga ketayotgan edim, men uchratdim. «Walking home, it started to rain» deb bo'lmaydi — go'yo yomg'ir uyga ketayotgandek."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Seeing* the police, the thief ran away.",
+       "t": {
+        "ru": "Увидев полицию, вор убежал.",
+        "uz": "Politsiyani ko'rib, o'g'ri qochib ketdi."
+       }
+      },
+      {
+       "s": "*Having lived* in Japan, he speaks Japanese well.",
+       "t": {
+        "ru": "Пожив в Японии, он хорошо говорит по-японски.",
+        "uz": "Yaponiyada yashagani uchun u yaponchani yaxshi biladi."
+       }
+      },
+      {
+       "s": "*Written* in simple English, the book is easy to read.",
+       "t": {
+        "ru": "Написанная простым английским, книга легко читается.",
+        "uz": "Oddiy ingliz tilida yozilgani uchun kitobni o'qish oson."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -17066,6 +18012,89 @@
     "en": "rather/better — no to; about someone else and after time — past.",
     "uz": "rather/better — to siz; boshqa odam va time dan keyin — o'tgan zamon."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Would rather, had better, it's time",
+      "en": "Would rather, had better, it's time",
+      "uz": "Would rather, had better, it's time"
+     }
+    },
+    {
+     "p": {
+      "ru": "Три полезных выражения с необычной грамматикой. Они очень частые в живой речи, поэтому стоит знать, как они устроены.",
+      "en": "Three useful expressions with unusual grammar, very common in everyday speech.",
+      "uz": "Grammatikasi g'ayrioddiy uchta foydali ibora. Ular jonli nutqda juda ko'p uchraydi, shuning uchun qanday tuzilganini bilish arziydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Would rather — предпочитаю",
+      "en": "Would rather — prefer",
+      "uz": "Would rather — afzal ko'raman"
+     }
+    },
+    {
+     "p": {
+      "ru": "*I'd rather* + глагол без *to* = «я бы предпочёл»: *I'd rather stay at home* — Я бы лучше остался дома. Сравнение — через *than*: *I'd rather walk than take the bus.* Если хочешь, чтобы _другой человек_ что-то сделал, после *would rather* идёт прошедшее время: *I'd rather you didn't smoke here* — Я бы предпочёл, чтобы ты здесь не курил.",
+      "en": "*I'd rather* + basic verb = I'd prefer: *I'd rather stay at home.* Compare with *than*. For what someone else should do, use the past: *I'd rather you didn't smoke here.*",
+      "uz": "*I'd rather* + *to* siz fe'l = «afzal ko'rardim»: *I'd rather stay at home* — Uyda qolganim yaxshiroq. Solishtirish — *than* orqali: *I'd rather walk than take the bus.* _Boshqa odam_ biror ish qilishini xohlasangiz, *would rather* dan keyin o'tgan zamon keladi: *I'd rather you didn't smoke here* — Bu yerda chekmaganingiz ma'qul."
+     }
+    },
+    {
+     "h": {
+      "ru": "Had better — лучше бы (а то…)",
+      "en": "Had better — strong advice",
+      "uz": "Had better — …ganing ma'qul (aks holda…)"
+     }
+    },
+    {
+     "p": {
+      "ru": "*You'd better* + глагол без *to* — сильный совет с намёком на последствия: *You'd better hurry, or you'll miss the bus* — Ты бы поторопился, а то опоздаешь. Несмотря на *had*, речь о настоящем и будущем. Отрицание: *You'd better not…*",
+      "en": "*You'd better* + basic verb — strong advice with a hint of consequences. Despite *had*, it's about now. Negative: *You'd better not…*",
+      "uz": "*You'd better* + *to* siz fe'l — oqibatga ishora qiluvchi kuchli maslahat: *You'd better hurry, or you'll miss the bus* — Shoshilganing ma'qul, aks holda avtobusga kechikasan. *had* bo'lishiga qaramay, gap hozir va kelajak haqida. Inkor: *You'd better not…*"
+     }
+    },
+    {
+     "h": {
+      "ru": "It's time — пора",
+      "en": "It's time",
+      "uz": "It's time — vaqti keldi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*It's time to go* — пора идти (просто). *It's time we went* — нам давно пора идти (с упрёком: уже опаздываем). Во втором варианте после _it's time + кто_ — прошедшее время, хотя речь о сейчас.",
+      "en": "*It's time to go* — simple. *It's time we went* — we should have gone already (past form, present meaning).",
+      "uz": "*It's time to go* — ketish vaqti keldi (oddiy). *It's time we went* — allaqachon ketishimiz kerak edi (ta'na bilan: kechikyapmiz). Ikkinchi variantda *it's time + kim* dan keyin o'tgan zamon keladi, garchi gap hozir haqida bo'lsa ham."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "I*'d rather* have tea, thanks.",
+       "t": {
+        "ru": "Я бы лучше выпил чаю, спасибо.",
+        "uz": "Rahmat, choy ichganim ma'qul."
+       }
+      },
+      {
+       "s": "You*'d better* take an umbrella.",
+       "t": {
+        "ru": "Ты бы взял зонт.",
+        "uz": "Soyabon olganing ma'qul."
+       }
+      },
+      {
+       "s": "It's late. *It's time* we *went* home.",
+       "t": {
+        "ru": "Поздно. Нам пора домой.",
+        "uz": "Kech bo'ldi. Uyga ketish vaqti keldi."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

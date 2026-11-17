@@ -4959,6 +4959,142 @@
     "en": "preposition + article → one word: a+il = al, in+la = nella, su+i = sui.",
     "uz": "predlog + artikl → bir so'z: a+il = al, in+la = nella, su+i = sui."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Слитные предлоги",
+      "en": "Articulated prepositions",
+      "uz": "Qo'shilgan predloglar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В итальянском пять предлогов — *a, di, da, in, su* — сливаются с определённым артиклем в одно слово. *In + il = nel* (в), *di + la = della* (из, …а). Это не исключение, а правило, которое работает постоянно: *nel libro*, *della casa*, *al cinema*.",
+      "en": "Five Italian prepositions — *a, di, da, in, su* — merge with the definite article: *in + il = nel*, *di + la = della*.",
+      "uz": "Italyan tilida beshta predlog — *a, di, da, in, su* — aniq artikl bilan bitta so'zga qo'shiladi. *In + il = nel* (… da), *di + la = della* (… ning). Bu istisno emas, doim ishlaydigan qoida: *nel libro*, *della casa*, *al cinema*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Предлог",
+        "en": "Preposition",
+        "uz": "Predlog"
+       },
+       "+ il",
+       "+ lo",
+       "+ la",
+       "+ l'",
+       "+ i",
+       "+ gli",
+       "+ le"
+      ],
+      "rows": [
+       [
+        "a",
+        "al",
+        "allo",
+        "alla",
+        "all'",
+        "ai",
+        "agli",
+        "alle"
+       ],
+       [
+        "di",
+        "del",
+        "dello",
+        "della",
+        "dell'",
+        "dei",
+        "degli",
+        "delle"
+       ],
+       [
+        "da",
+        "dal",
+        "dallo",
+        "dalla",
+        "dall'",
+        "dai",
+        "dagli",
+        "dalle"
+       ],
+       [
+        "in",
+        "nel",
+        "nello",
+        "nella",
+        "nell'",
+        "nei",
+        "negli",
+        "nelle"
+       ],
+       [
+        "su",
+        "sul",
+        "sullo",
+        "sulla",
+        "sull'",
+        "sui",
+        "sugli",
+        "sulle"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Таблица выглядит страшно, но логика одна: берём предлог (*in* превращается в *ne-*, *di* — в *de-*) и приклеиваем артикль. Если двойная *l* — значит, артикль начинался с *l*.",
+      "en": "One logic: the preposition (*in* → *ne-*, *di* → *de-*) + the article. A double *l* means the article started with *l*.",
+      "uz": "Jadval qo'rqinchli ko'rinadi, lekin mantiq bitta: predlogni olamiz (*in* *ne-* ga, *di* *de-* ga aylanadi) va artiklni yopishtiramiz. Ikkita *l* bo'lsa — artikl *l* bilan boshlangan."
+     }
+    },
+    {
+     "note": {
+      "ru": "С *con* (с) и *per* (для) не сливаются: *con il*, *per la*. А с городами артикля нет — и слияния тоже: *a Roma*, *di Milano*.",
+      "en": "*Con* and *per* don't merge. Cities have no article, so no merging: *a Roma*.",
+      "uz": "*con* (bilan) va *per* (uchun) qo'shilmaydi: *con il*, *per la*. Shaharlarda esa artikl yo'q — qo'shilish ham yo'q: *a Roma*, *di Milano*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Il libro è *sul* tavolo.",
+       "t": {
+        "ru": "Книга на столе.",
+        "uz": "Kitob stol ustida.",
+        "en": "The book is on the table."
+       }
+      },
+      {
+       "s": "Vado *al* cinema *con gli* amici.",
+       "t": {
+        "ru": "Я иду в кино с друзьями.",
+        "uz": "Do'stlar bilan kinoga boraman.",
+        "en": "I'm going to the cinema with friends."
+       }
+      },
+      {
+       "s": "È la macchina *del* mio vicino.",
+       "t": {
+        "ru": "Это машина моего соседа.",
+        "uz": "Bu qo'shnimning mashinasi.",
+        "en": "It's my neighbour's car."
+       }
+      },
+      {
+       "s": "Le chiavi sono *nella* borsa.",
+       "t": {
+        "ru": "Ключи в сумке.",
+        "uz": "Kalitlar sumkada.",
+        "en": "The keys are in the bag."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5222,6 +5358,110 @@
     "en": "ho/hai/ha… + parlato / avuto / finito; fatto, detto, scritto, letto, visto, preso.",
     "uz": "ho/hai/ha… + parlato / avuto / finito; fatto, detto, scritto, letto, visto, preso."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Passato prossimo с avere",
+      "en": "Passato prossimo with avere",
+      "uz": "avere bilan passato prossimo"
+     }
+    },
+    {
+     "p": {
+      "ru": "Passato prossimo — главное прошедшее время итальянской разговорной речи. Состоит из двух частей: *avere* (или *essere*) в настоящем + причастие. *Ho mangiato* — Я поел (дословно «имею съеденное»).",
+      "en": "The passato prossimo is the main spoken past: *avere* (or *essere*) + past participle. *Ho mangiato* — I ate.",
+      "uz": "Passato prossimo — italyan so'zlashuvining asosiy o'tgan zamoni. U ikki qismdan iborat: hozirgi zamondagi *avere* (yoki *essere*) + sifatdosh. *Ho mangiato* — Ovqatlandim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Группа",
+        "en": "Group",
+        "uz": "Guruh"
+       },
+       {
+        "ru": "Причастие",
+        "en": "Participle",
+        "uz": "Sifatdosh"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-are",
+        "-ato",
+        "parlare → parlato"
+       ],
+       [
+        "-ere",
+        "-uto",
+        "vendere → venduto"
+       ],
+       [
+        "-ire",
+        "-ito",
+        "dormire → dormito"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Много частых неправильных причастий — их нужно запомнить: *fare → fatto*, *dire → detto*, *vedere → visto*, *prendere → preso*, *scrivere → scritto*, *leggere → letto*, *aprire → aperto*, *mettere → messo*, *bere → bevuto*.",
+      "en": "Many common participles are irregular: *fatto, detto, visto, preso, scritto, letto, aperto, messo, bevuto*.",
+      "uz": "Ko'p uchraydigan noto'g'ri sifatdoshlar ko'p — ularni yodlash kerak: *fare → fatto*, *dire → detto*, *vedere → visto*, *prendere → preso*, *scrivere → scritto*, *leggere → letto*, *aprire → aperto*, *mettere → messo*, *bere → bevuto*."
+     }
+    },
+    {
+     "p": {
+      "ru": "С *avere* причастие не меняется: *Lei ha mangiato*, *Loro hanno mangiato*. Слова *già* (уже), *mai*, *ancora* ставят между *avere* и причастием: *Ho già visto il film*.",
+      "en": "With *avere* the participle doesn't change. *Già, mai, ancora* go between: *Ho già visto il film.*",
+      "uz": "*avere* bilan sifatdosh o'zgarmaydi: *Lei ha mangiato*, *Loro hanno mangiato*. *già* (allaqachon), *mai*, *ancora* so'zlari *avere* va sifatdosh orasiga qo'yiladi: *Ho già visto il film*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ieri *ho lavorato* molto.",
+       "t": {
+        "ru": "Вчера я много работал.",
+        "uz": "Kecha ko'p ishladim.",
+        "en": "Yesterday I worked a lot."
+       }
+      },
+      {
+       "s": "*Hai fatto* i compiti?",
+       "t": {
+        "ru": "Ты сделал домашнее задание?",
+        "uz": "Uy vazifasini qildingmi?",
+        "en": "Did you do your homework?"
+       }
+      },
+      {
+       "s": "Non *abbiamo* ancora *mangiato*.",
+       "t": {
+        "ru": "Мы ещё не ели.",
+        "uz": "Hali ovqatlanmadik.",
+        "en": "We haven't eaten yet."
+       }
+      },
+      {
+       "s": "*Ho letto* un libro bellissimo.",
+       "t": {
+        "ru": "Я прочитал прекрасную книгу.",
+        "uz": "Ajoyib kitob o'qidim.",
+        "en": "I read a wonderful book."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5484,6 +5724,147 @@
     "en": "movement and change → essere, the participle agrees: andato/andata/andati/andate.",
     "uz": "harakat va o'zgarish → essere, sifatdosh moslashadi: andato/andata/andati/andate."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Passato prossimo с essere",
+      "en": "Passato prossimo with essere",
+      "uz": "essere bilan passato prossimo"
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые глаголы образуют passato prossimo не с *avere*, а с *essere*. В основном это глаголы движения и изменения состояния (идти, приходить, уезжать, родиться, умереть, остаться) и все возвратные. *Sono andato* — Я пошёл/поехал.",
+      "en": "Verbs of movement, change of state and all reflexive verbs take *essere*: *Sono andato.*",
+      "uz": "Ba'zi fe'llar passato prossimo ni *avere* bilan emas, *essere* bilan yasaydi. Asosan bu harakat va holat o'zgarishi fe'llari (bormoq, kelmoq, jo'namoq, tug'ilmoq, vafot etmoq, qolmoq) va barcha o'zlik fe'llar. *Sono andato* — Bordim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Причастие",
+        "en": "Participle",
+        "uz": "Sifatdosh"
+       }
+      ],
+      "rows": [
+       [
+        "andare / venire",
+        {
+         "ru": "идти / приходить",
+         "en": "go / come",
+         "uz": "bormoq / kelmoq"
+        },
+        "andato / venuto"
+       ],
+       [
+        "partire / arrivare",
+        {
+         "ru": "уезжать / прибывать",
+         "en": "leave / arrive",
+         "uz": "jo'namoq / yetib kelmoq"
+        },
+        "partito / arrivato"
+       ],
+       [
+        "uscire / entrare",
+        {
+         "ru": "выходить / входить",
+         "en": "go out / go in",
+         "uz": "chiqmoq / kirmoq"
+        },
+        "uscito / entrato"
+       ],
+       [
+        "nascere / morire",
+        {
+         "ru": "родиться / умереть",
+         "en": "be born / die",
+         "uz": "tug'ilmoq / vafot etmoq"
+        },
+        "nato / morto"
+       ],
+       [
+        "restare / stare / essere",
+        {
+         "ru": "оставаться / быть",
+         "en": "stay / be",
+         "uz": "qolmoq / bo'lmoq"
+        },
+        "restato / stato / stato"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Причастие согласуется",
+      "en": "The participle agrees",
+      "uz": "Sifatdosh moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "С *essere* причастие ведёт себя как прилагательное и согласуется с подлежащим: *-o, -a, -i, -e*. *Marco è andato*, *Anna è andata*, *Marco e Luca sono andati*, *Anna e Sara sono andate*.",
+      "en": "With *essere* the participle agrees with the subject: *-o, -a, -i, -e*: *Anna è andata*, *sono andati*.",
+      "uz": "*essere* bilan sifatdosh sifat kabi o'zini tutadi va ega bilan moslashadi: *-o, -a, -i, -e*. *Marco è andato*, *Anna è andata*, *Marco e Luca sono andati*, *Anna e Sara sono andate*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ieri *sono andata* al mare.",
+       "t": {
+        "ru": "Вчера я (девушка) ездила на море.",
+        "uz": "Kecha dengizga bordim (qiz).",
+        "en": "Yesterday I went to the sea (female speaker)."
+       }
+      },
+      {
+       "s": "A che ora *sei arrivato*?",
+       "t": {
+        "ru": "Во сколько ты приехал?",
+        "uz": "Soat nechada yetib kelding?",
+        "en": "What time did you arrive?"
+       }
+      },
+      {
+       "s": "*Siamo rimasti* a casa.",
+       "t": {
+        "ru": "Мы остались дома.",
+        "uz": "Uyda qoldik.",
+        "en": "We stayed at home."
+       }
+      },
+      {
+       "s": "Mio nonno *è nato* nel 1950.",
+       "t": {
+        "ru": "Мой дедушка родился в 1950 году.",
+        "uz": "Bobom 1950-yilda tug'ilgan.",
+        "en": "My grandfather was born in 1950."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказка: если глагол отвечает на «куда? откуда?» или означает изменение (стать, родиться), почти всегда *essere*. Если у глагола есть прямое дополнение (кого? что?) — почти всегда *avere*.",
+      "en": "Tip: movement or change → *essere*; a direct object → *avere*.",
+      "uz": "Ishora: fe'l «qayerga? qayerdan?» savoliga javob bersa yoki o'zgarishni bildirsa (bo'lmoq, tug'ilmoq), deyarli doim *essere*. Fe'lning to'g'ri to'ldiruvchisi (kimni? nimani?) bo'lsa — deyarli doim *avere*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5747,6 +6128,121 @@
     "en": "mi-ti-si-ci-vi-si before the verb; in the passato prossimo — essere.",
     "uz": "mi-ti-si-ci-vi-si fe'l oldida; passato prossimo da — essere."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Возвратные глаголы",
+      "en": "Reflexive verbs",
+      "uz": "O'zlik fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Возвратные глаголы описывают действие, направленное на себя. В словаре у них на конце *-si*: *lavarsi* (умываться), *alzarsi* (вставать), *chiamarsi* (называться). В предложении *-si* превращается в местоимение перед глаголом.",
+      "en": "Reflexive verbs end in *-si* in the dictionary: *lavarsi, alzarsi, chiamarsi*. In a sentence *-si* becomes a pronoun before the verb.",
+      "uz": "O'zlik fe'llar o'ziga qaratilgan harakatni bildiradi. Lug'atda ular oxirida *-si* bo'ladi: *lavarsi* (yuvinmoq), *alzarsi* (turmoq), *chiamarsi* (atalmoq). Gapda *-si* fe'l oldidagi olmoshga aylanadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       },
+       "alzarsi"
+      ],
+      "rows": [
+       [
+        "io",
+        "mi",
+        "mi alzo"
+       ],
+       [
+        "tu",
+        "ti",
+        "ti alzi"
+       ],
+       [
+        "lui / lei",
+        "si",
+        "si alza"
+       ],
+       [
+        "noi",
+        "ci",
+        "ci alziamo"
+       ],
+       [
+        "voi",
+        "vi",
+        "vi alzate"
+       ],
+       [
+        "loro",
+        "si",
+        "si alzano"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Come ti chiami?* — «Как тебя зовут?» — возвратный глагол: «как ты себя называешь?». Ответ: *Mi chiamo Dilnoza*. В passato prossimo возвратные всегда с *essere*: *Mi sono alzato alle sette* — Я встал в семь.",
+      "en": "*Come ti chiami? — Mi chiamo…* In the passato prossimo reflexives take *essere*: *Mi sono alzato.*",
+      "uz": "*Come ti chiami?* — «Isming nima?» — o'zlik fe'l: «o'zingni qanday ataysan?». Javob: *Mi chiamo Dilnoza*. Passato prossimo da o'zlik fe'llar doim *essere* bilan: *Mi sono alzato alle sette* — Soat yettida turdim."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Mi sveglio* sempre presto.",
+       "t": {
+        "ru": "Я всегда рано просыпаюсь.",
+        "uz": "Doim erta uyg'onaman.",
+        "en": "I always wake up early."
+       }
+      },
+      {
+       "s": "*Ci vediamo* domani!",
+       "t": {
+        "ru": "Увидимся завтра!",
+        "uz": "Ertaga ko'rishamiz!",
+        "en": "See you tomorrow!"
+       }
+      },
+      {
+       "s": "Lei *si è vestita* in fretta.",
+       "t": {
+        "ru": "Она быстро оделась.",
+        "uz": "U tezda kiyindi.",
+        "en": "She got dressed quickly."
+       }
+      },
+      {
+       "s": "Come *si chiama* tuo fratello?",
+       "t": {
+        "ru": "Как зовут твоего брата?",
+        "uz": "Akangning ismi nima?",
+        "en": "What's your brother's name?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С инфинитивом *-si* меняется на нужное лицо и приклеивается: *Devo alzarmi presto* — Мне надо рано встать.",
+      "en": "With an infinitive the pronoun attaches and matches the person: *Devo alzarmi presto.*",
+      "uz": "Infinitiv bilan *-si* kerakli shaxsga o'zgaradi va yopishadi: *Devo alzarmi presto* — Erta turishim kerak."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6010,6 +6506,124 @@
     "en": "modal verb + infinitive without a preposition: voglio, posso, devo + mangiare.",
     "uz": "modal fe'l + predlogsiz infinitiv: voglio, posso, devo + mangiare."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Хотеть, мочь, быть должным",
+      "en": "Want, can, must",
+      "uz": "Xohlamoq, qila olmoq, majbur bo'lmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "Три модальных глагола показывают отношение к действию: *volere* — хотеть, *potere* — мочь, *dovere* — быть должным. После них второй глагол стоит в начальной форме: *Voglio dormire* — Я хочу спать.",
+      "en": "Three modal verbs: *volere* (want), *potere* (can), *dovere* (must). The next verb is an infinitive: *Voglio dormire.*",
+      "uz": "Uchta modal fe'l harakatga munosabatni bildiradi: *volere* — xohlamoq, *potere* — qila olmoq, *dovere* — majbur bo'lmoq. Ulardan keyin ikkinchi fe'l boshlang'ich shaklda turadi: *Voglio dormire* — Uxlagim kelyapti."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "volere",
+       "potere",
+       "dovere"
+      ],
+      "rows": [
+       [
+        "io",
+        "voglio",
+        "posso",
+        "devo"
+       ],
+       [
+        "tu",
+        "vuoi",
+        "puoi",
+        "devi"
+       ],
+       [
+        "lui / lei",
+        "vuole",
+        "può",
+        "deve"
+       ],
+       [
+        "noi",
+        "vogliamo",
+        "possiamo",
+        "dobbiamo"
+       ],
+       [
+        "voi",
+        "volete",
+        "potete",
+        "dovete"
+       ],
+       [
+        "loro",
+        "vogliono",
+        "possono",
+        "devono"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Все три — неправильные, их формы надо выучить. Обрати внимание на *può* с ударением и на чередования: *voglio — vuoi*, *posso — puoi*, *devo — dobbiamo*.",
+      "en": "All three are irregular. Note *può* with an accent and the stem changes: *voglio / vuoi*, *posso / puoi*.",
+      "uz": "Uchalasi ham noto'g'ri, shakllarini yodlash kerak. Urg'uli *può* ga va almashuvlarga e'tibor bering: *voglio — vuoi*, *posso — puoi*, *devo — dobbiamo*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Вежливо «я бы хотел» — *vorrei* (а не *voglio*, которое звучит резко): *Vorrei un caffè, per favore*. Вежливая просьба — *Può…?* / *Potrebbe…?*: *Può aiutarmi?* — Не могли бы Вы мне помочь?",
+      "en": "Politely: *vorrei* (I'd like), not *voglio*. Requests: *Può aiutarmi?*",
+      "uz": "Muloyim «… xohlardim» — *vorrei* (*voglio* emas, u qo'pol eshitiladi): *Vorrei un caffè, per favore*. Muloyim iltimos — *Può…?* / *Potrebbe…?*: *Può aiutarmi?* — Menga yordam bera olasizmi?"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Voglio* imparare l'italiano.",
+       "t": {
+        "ru": "Я хочу выучить итальянский.",
+        "uz": "Italyan tilini o'rganmoqchiman.",
+        "en": "I want to learn Italian."
+       }
+      },
+      {
+       "s": "*Posso* entrare?",
+       "t": {
+        "ru": "Можно войти?",
+        "uz": "Kirsam bo'ladimi?",
+        "en": "May I come in?"
+       }
+      },
+      {
+       "s": "Domani *devo* lavorare.",
+       "t": {
+        "ru": "Завтра мне нужно работать.",
+        "uz": "Ertaga ishlashim kerak.",
+        "en": "Tomorrow I have to work."
+       }
+      },
+      {
+       "s": "Non *possiamo* venire stasera.",
+       "t": {
+        "ru": "Мы не можем прийти сегодня вечером.",
+        "uz": "Bugun kechqurun kela olmaymiz.",
+        "en": "We can't come tonight."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6270,6 +6884,141 @@
     "en": "the thing liked decides: piace (one) / piacciono (several); who likes — mi, ti, gli, le, ci, vi.",
     "uz": "nima yoqishi hal qiladi: piace (bitta) / piacciono (bir nechta); kimga — mi, ti, gli, le, ci, vi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Piacere: «мне нравится»",
+      "en": "Piacere: “I like”",
+      "uz": "Piacere: «menga yoqadi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Piacere* устроен как русское «нравиться» и узбекское «yoqmoq»: главное в предложении — _то, что нравится_, а человек стоит в дательном падеже. *Mi piace il caffè* — Мне нравится кофе. Дословно «мне нравится кофе», а не «я люблю кофе».",
+      "en": "*Piacere* works like “to please”: the thing liked is the subject, the person is “to me / to you”: *Mi piace il caffè.*",
+      "uz": "*Piacere* xuddi o'zbekcha «yoqmoq» kabi tuzilgan: gapda asosiysi — _yoqadigan narsa_, odam esa jo'nalish kelishigida. *Mi piace il caffè* — Menga qahva yoqadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       {
+        "ru": "Одна вещь / действие",
+        "en": "One thing / action",
+        "uz": "Bitta narsa / harakat"
+       },
+       {
+        "ru": "Много вещей",
+        "en": "Several things",
+        "uz": "Ko'p narsa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "mi — мне",
+         "en": "mi — me",
+         "uz": "mi — menga"
+        },
+        "mi piace",
+        "mi piacciono"
+       ],
+       [
+        {
+         "ru": "ti — тебе",
+         "en": "ti — you",
+         "uz": "ti — senga"
+        },
+        "ti piace",
+        "ti piacciono"
+       ],
+       [
+        {
+         "ru": "gli / le — ему / ей",
+         "en": "gli / le — him / her",
+         "uz": "gli / le — unga"
+        },
+        "gli / le piace",
+        "gli / le piacciono"
+       ],
+       [
+        {
+         "ru": "ci — нам",
+         "en": "ci — us",
+         "uz": "ci — bizga"
+        },
+        "ci piace",
+        "ci piacciono"
+       ],
+       [
+        {
+         "ru": "vi — вам",
+         "en": "vi — you (pl.)",
+         "uz": "vi — sizlarga"
+        },
+        "vi piace",
+        "vi piacciono"
+       ],
+       [
+        {
+         "ru": "gli — им",
+         "en": "gli — them",
+         "uz": "gli — ularga"
+        },
+        "gli piace",
+        "gli piacciono"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Форма глагола зависит от предмета: одна вещь или действие — *piace*, много вещей — *piacciono*. *Mi piace la pizza*, но *Mi piacciono i film italiani*. С глаголом всегда *piace*: *Mi piace leggere* — Я люблю читать.",
+      "en": "The verb agrees with the thing: *piace* (one / an action), *piacciono* (several).",
+      "uz": "Fe'l shakli narsaga bog'liq: bitta narsa yoki harakat — *piace*, ko'p narsa — *piacciono*. *Mi piace la pizza*, lekin *Mi piacciono i film italiani*. Fe'l bilan doim *piace*: *Mi piace leggere* — O'qishni yaxshi ko'raman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ti *piace* il calcio?",
+       "t": {
+        "ru": "Тебе нравится футбол?",
+        "uz": "Senga futbol yoqadimi?",
+        "en": "Do you like football?"
+       }
+      },
+      {
+       "s": "Non mi *piacciono* i ragni.",
+       "t": {
+        "ru": "Я не люблю пауков.",
+        "uz": "Menga o'rgimchaklar yoqmaydi.",
+        "en": "I don't like spiders."
+       }
+      },
+      {
+       "s": "A Marco *piace* cucinare.",
+       "t": {
+        "ru": "Марко любит готовить.",
+        "uz": "Marko ovqat pishirishni yaxshi ko'radi.",
+        "en": "Marco likes cooking."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В прошедшем *piacere* — с *essere*, и причастие согласуется с предметом: *Mi è piaciuto il film*, *Mi è piaciuta la pizza*.",
+      "en": "In the past, *piacere* takes *essere* and agrees with the thing: *Mi è piaciuto il film.*",
+      "uz": "O'tgan zamonda *piacere* — *essere* bilan, sifatdosh narsa bilan moslashadi: *Mi è piaciuto il film* — Film menga yoqdi, *Mi è piaciuta la pizza*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6533,6 +7282,146 @@
     "en": "lo/la/li/le — before the verb; with an infinitive — at the end: vederlo.",
     "uz": "lo/la/li/le — fe'l oldida; infinitiv bilan — oxirida: vederlo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Его, её, их: lo, la, li, le",
+      "en": "Him, her, them: lo, la, li, le",
+      "uz": "Uni, ularni: lo, la, li, le"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы не повторять существительное, его заменяют коротким местоимением и ставят _перед_ глаголом: *Vedi Marco? — Sì, lo vedo* — Ты видишь Марко? — Да, я его вижу.",
+      "en": "To avoid repeating a noun, replace it with a short pronoun before the verb: *Vedi Marco? — Sì, lo vedo.*",
+      "uz": "Otni takrorlamaslik uchun uni qisqa olmosh bilan almashtirib, fe'ldan _oldin_ qo'yamiz: *Vedi Marco? — Sì, lo vedo* — Markoni ko'ryapsanmi? — Ha, uni ko'ryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кого? Что?",
+        "en": "Whom? What?",
+        "uz": "Kimni? Nimani?"
+       },
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "меня",
+         "en": "me",
+         "uz": "meni"
+        },
+        "mi"
+       ],
+       [
+        {
+         "ru": "тебя",
+         "en": "you",
+         "uz": "seni"
+        },
+        "ti"
+       ],
+       [
+        {
+         "ru": "его / это (м.)",
+         "en": "him / it (m.)",
+         "uz": "uni (erkak) / buni"
+        },
+        "lo"
+       ],
+       [
+        {
+         "ru": "её / это (ж.)",
+         "en": "her / it (f.)",
+         "uz": "uni (ayol) / buni"
+        },
+        "la"
+       ],
+       [
+        {
+         "ru": "нас",
+         "en": "us",
+         "uz": "bizni"
+        },
+        "ci"
+       ],
+       [
+        {
+         "ru": "вас",
+         "en": "you (pl.)",
+         "uz": "sizlarni"
+        },
+        "vi"
+       ],
+       [
+        {
+         "ru": "их (м.)",
+         "en": "them (m.)",
+         "uz": "ularni (erkak)"
+        },
+        "li"
+       ],
+       [
+        {
+         "ru": "их (ж.)",
+         "en": "them (f.)",
+         "uz": "ularni (ayol)"
+        },
+        "le"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Lo / la* перед гласной или *h* сокращаются: *L'ho visto* — Я его видел. В passato prossimo причастие согласуется с *lo, la, li, le*: *La pizza? L'ho mangiata*. *I libri? Li ho letti*.",
+      "en": "*Lo / la* shorten before a vowel: *L'ho visto.* In the passato prossimo the participle agrees: *L'ho mangiata*, *Li ho letti*.",
+      "uz": "*lo / la* unli yoki *h* oldidan qisqaradi: *L'ho visto* — Uni ko'rdim. Passato prossimo da sifatdosh *lo, la, li, le* bilan moslashadi: *La pizza? L'ho mangiata*. *I libri? Li ho letti*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Conosci Anna? — Sì, *la* conosco.",
+       "t": {
+        "ru": "Ты знаешь Анну? — Да, знаю.",
+        "uz": "Annani taniysanmi? — Ha, taniyman.",
+        "en": "Do you know Anna? — Yes, I do."
+       }
+      },
+      {
+       "s": "Dove sono le chiavi? Non *le* trovo.",
+       "t": {
+        "ru": "Где ключи? Не могу их найти.",
+        "uz": "Kalitlar qayerda? Topa olmayapman.",
+        "en": "Where are the keys? I can't find them."
+       }
+      },
+      {
+       "s": "*Ti* amo.",
+       "t": {
+        "ru": "Я тебя люблю.",
+        "uz": "Seni sevaman.",
+        "en": "I love you."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С инфинитивом местоимение приклеивается в конец: *Voglio vederlo* = *Lo voglio vedere* — Я хочу его увидеть.",
+      "en": "With an infinitive the pronoun can attach to the end: *Voglio vederlo.*",
+      "uz": "Infinitiv bilan olmosh oxiriga yopishtiriladi: *Voglio vederlo* = *Lo voglio vedere* — Uni ko'rmoqchiman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6795,6 +7684,138 @@
     "en": "to whom? — mi, ti, gli (him/them), le (her), ci, vi; whom? — lo, la, li, le.",
     "uz": "kimga? — mi, ti, gli (unga/ularga), le (unga, ayol), ci, vi; kimni? — lo, la, li, le."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ему, ей, им: gli, le",
+      "en": "To him, to her: gli, le",
+      "uz": "Unga, ularga: gli, le"
+     }
+    },
+    {
+     "p": {
+      "ru": "Косвенные местоимения отвечают на вопрос «кому?» и тоже стоят перед глаголом: *Telefono a Marco → Gli telefono* — Я ему звоню. *Scrivo a Anna → Le scrivo* — Я ей пишу.",
+      "en": "Indirect pronouns answer “to whom?” and go before the verb: *Gli telefono*, *Le scrivo*.",
+      "uz": "Vositali olmoshlar «kimga?» savoliga javob beradi va ular ham fe'ldan oldin turadi: *Telefono a Marco → Gli telefono* — Unga qo'ng'iroq qilaman. *Scrivo a Anna → Le scrivo* — Unga yozaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому?",
+        "en": "To whom?",
+        "uz": "Kimga?"
+       },
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мне",
+         "en": "to me",
+         "uz": "menga"
+        },
+        "mi"
+       ],
+       [
+        {
+         "ru": "тебе",
+         "en": "to you",
+         "uz": "senga"
+        },
+        "ti"
+       ],
+       [
+        {
+         "ru": "ему",
+         "en": "to him",
+         "uz": "unga (erkak)"
+        },
+        "gli"
+       ],
+       [
+        {
+         "ru": "ей / Вам",
+         "en": "to her / to you (polite)",
+         "uz": "unga (ayol) / Sizga"
+        },
+        "le / Le"
+       ],
+       [
+        {
+         "ru": "нам",
+         "en": "to us",
+         "uz": "bizga"
+        },
+        "ci"
+       ],
+       [
+        {
+         "ru": "вам",
+         "en": "to you (pl.)",
+         "uz": "sizlarga"
+        },
+        "vi"
+       ],
+       [
+        {
+         "ru": "им",
+         "en": "to them",
+         "uz": "ularga"
+        },
+        "gli"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Различаются только в третьем лице: прямое *lo / la* (его / её) и косвенное *gli / le* (ему / ей). Решает глагол: *vedere qualcuno* (видеть кого) → *lo*; *telefonare a qualcuno* (звонить кому) → *gli*. Если после глагола стоит *a* + человек — это косвенное.",
+      "en": "Only the third person differs: direct *lo / la* vs indirect *gli / le*. If the verb uses *a* + person, it's indirect.",
+      "uz": "Faqat uchinchi shaxsda farq bor: to'g'ri *lo / la* (uni) va vositali *gli / le* (unga). Fe'l hal qiladi: *vedere qualcuno* (kimnidir ko'rmoq) → *lo*; *telefonare a qualcuno* (kimgadir qo'ng'iroq qilmoq) → *gli*. Fe'ldan keyin *a* + odam kelsa — bu vositali."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Cosa *gli* regali per il compleanno?",
+       "t": {
+        "ru": "Что ты ему подаришь на день рождения?",
+        "uz": "Tug'ilgan kuniga unga nima sovg'a qilasan?",
+        "en": "What are you giving him for his birthday?"
+       }
+      },
+      {
+       "s": "*Le* ho scritto un messaggio.",
+       "t": {
+        "ru": "Я написал ей сообщение.",
+        "uz": "Unga xabar yozdim.",
+        "en": "I wrote her a message."
+       }
+      },
+      {
+       "s": "*Mi* puoi dare il sale?",
+       "t": {
+        "ru": "Можешь дать мне соль?",
+        "uz": "Menga tuzni bera olasanmi?",
+        "en": "Can you give me the salt?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С косвенными местоимениями причастие в passato prossimo _не_ согласуется: *Le ho telefonato* (не «telefonata»).",
+      "en": "The participle does not agree with indirect pronouns: *Le ho telefonato.*",
+      "uz": "Vositali olmoshlar bilan passato prossimo da sifatdosh moslashmaydi: *Le ho telefonato* («telefonata» emas)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7058,6 +8079,145 @@
     "en": "più/meno … di (two things); che (two qualities); il più … di (the most).",
     "uz": "più/meno … di (ikki narsa); che (ikki sifat); il più … di (eng)."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Больше, меньше, так же",
+      "en": "More, less, as … as",
+      "uz": "Ko'proq, kamroq, xuddi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Итальянское сравнение строится словами *più* (более) и *meno* (менее) перед прилагательным и *di* или *che* («чем») после. *Roma è più grande di Firenze* — Рим больше Флоренции.",
+      "en": "Italian comparisons use *più* / *meno* + adjective + *di* (than): *Roma è più grande di Firenze.*",
+      "uz": "Italyancha qiyoslash sifat oldidan *più* (ko'proq) va *meno* (kamroq) so'zlari, keyin esa *di* yoki *che* («-dan») bilan tuziladi. *Roma è più grande di Firenze* — Rim Florensiyadan kattaroq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "больше",
+         "en": "more",
+         "uz": "ko'proq"
+        },
+        "più … di",
+        "Luca è più alto di me."
+       ],
+       [
+        {
+         "ru": "меньше",
+         "en": "less",
+         "uz": "kamroq"
+        },
+        "meno … di",
+        "Il treno è meno caro dell'aereo."
+       ],
+       [
+        {
+         "ru": "так же",
+         "en": "as … as",
+         "uz": "xuddi … kabi"
+        },
+        "(così) … come",
+        "Sono alto come mio padre."
+       ],
+       [
+        {
+         "ru": "самый",
+         "en": "the most",
+         "uz": "eng"
+        },
+        "il più … di",
+        "È il più bravo della classe."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Di или che",
+      "en": "Di or che",
+      "uz": "Di yoki che"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Di* — когда сравниваем два _разных_ предмета или человека: *Marco è più alto di Luca*. *Che* — когда сравниваем два _качества_ или два действия одного предмета: *È più bello che utile* — Он скорее красивый, чем полезный.",
+      "en": "*Di* compares two people or things; *che* compares two qualities or actions: *più bello che utile*.",
+      "uz": "*Di* — ikki _boshqa-boshqa_ narsa yoki odamni solishtirganda: *Marco è più alto di Luca*. *Che* — bitta narsaning ikki _xususiyati_ yoki ikki harakatini solishtirganda: *È più bello che utile* — U foydalidan ko'ra chiroyliroq."
+     }
+    },
+    {
+     "h": {
+      "ru": "Особые формы",
+      "en": "Irregular forms",
+      "uz": "Alohida shakllar"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Buono → migliore* (лучше), *il migliore* (лучший). *Cattivo → peggiore* (хуже). *Bene → meglio* (лучше, наречие), *male → peggio*. Для «очень-очень» — суффикс *-issimo*: *bellissimo*, *buonissimo*.",
+      "en": "*Migliore / il migliore*, *peggiore*, *meglio / peggio*. For “very very”: *-issimo*.",
+      "uz": "*Buono → migliore* (yaxshiroq), *il migliore* (eng yaxshi). *Cattivo → peggiore* (yomonroq). *Bene → meglio* (yaxshiroq, ravish), *male → peggio*. «Juda-juda» uchun *-issimo* qo'shimchasi: *bellissimo*, *buonissimo*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Questa pizza è *migliore di* quella.",
+       "t": {
+        "ru": "Эта пицца лучше той.",
+        "uz": "Bu pitsa anavisidan yaxshiroq.",
+        "en": "This pizza is better than that one."
+       }
+      },
+      {
+       "s": "Mia sorella è *più giovane di* me.",
+       "t": {
+        "ru": "Моя сестра младше меня.",
+        "uz": "Singlim mendan yoshroq.",
+        "en": "My sister is younger than me."
+       }
+      },
+      {
+       "s": "È *il* ristorante *più famoso della* città.",
+       "t": {
+        "ru": "Это самый известный ресторан в городе.",
+        "uz": "Bu shahardagi eng mashhur restoran.",
+        "en": "It's the most famous restaurant in town."
+       }
+      },
+      {
+       "s": "Il panorama è *bellissimo*!",
+       "t": {
+        "ru": "Вид потрясающий!",
+        "uz": "Manzara ajoyib!",
+        "en": "The view is gorgeous!"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7322,6 +8482,123 @@
     "en": "stem + -ò, -ai, -à, -emo, -ete, -anno; -are → -erò; sarò, avrò, andrò, farò.",
     "uz": "o'zak + -ò, -ai, -à, -emo, -ete, -anno; -are → -erò; sarò, avrò, andrò, farò."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Futuro semplice — будущее",
+      "en": "Futuro semplice — the future",
+      "uz": "Futuro semplice — kelasi zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Будущее время используют для планов, обещаний и прогнозов: *Domani pioverà* — Завтра будет дождь. В разговоре итальянцы часто говорят о ближайшем будущем просто настоящим временем: *Domani vado a Roma*.",
+      "en": "The future is for plans, promises and predictions: *Domani pioverà.* For near plans Italians often just use the present.",
+      "uz": "Kelasi zamon rejalar, va'dalar va bashoratlar uchun ishlatiladi: *Domani pioverà* — Ertaga yomg'ir yog'adi. So'zlashuvda italyanlar yaqin kelajak haqida ko'pincha shunchaki hozirgi zamon bilan gapiradi: *Domani vado a Roma*."
+     }
+    },
+    {
+     "p": {
+      "ru": "Строится от инфинитива: *-are* меняется на *-er-*, остальные теряют последнюю *e*, и добавляем окончания *-ò, -ai, -à, -emo, -ete, -anno*. *Parlare → parlerò*, *scrivere → scriverò*, *dormire → dormirò*.",
+      "en": "From the infinitive: *-are* becomes *-er-*; the others drop the final *e*; add *-ò, -ai, -à, -emo, -ete, -anno*.",
+      "uz": "Infinitivdan yasaladi: *-are* *-er-* ga aylanadi, qolganlari oxirgi *e* ni yo'qotadi va *-ò, -ai, -à, -emo, -ete, -anno* qo'shimchalari qo'shiladi. *Parlare → parlerò*, *scrivere → scriverò*, *dormire → dormirò*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "parlare",
+       "essere",
+       "avere"
+      ],
+      "rows": [
+       [
+        "io",
+        "parlerò",
+        "sarò",
+        "avrò"
+       ],
+       [
+        "tu",
+        "parlerai",
+        "sarai",
+        "avrai"
+       ],
+       [
+        "lui / lei",
+        "parlerà",
+        "sarà",
+        "avrà"
+       ],
+       [
+        "noi",
+        "parleremo",
+        "saremo",
+        "avremo"
+       ],
+       [
+        "voi",
+        "parlerete",
+        "sarete",
+        "avrete"
+       ],
+       [
+        "loro",
+        "parleranno",
+        "saranno",
+        "avranno"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "У частых глаголов короткая основа, окончания те же: *andare → andrò*, *fare → farò*, *potere → potrò*, *dovere → dovrò*, *vedere → vedrò*, *venire → verrò*, *volere → vorrò*.",
+      "en": "Common short stems: *andrò, farò, potrò, dovrò, vedrò, verrò, vorrò*.",
+      "uz": "Ko'p ishlatiladigan fe'llarning qisqa o'zagi bor, qo'shimchalari bir xil: *andare → andrò*, *fare → farò*, *potere → potrò*, *dovere → dovrò*, *vedere → vedrò*, *venire → verrò*, *volere → vorrò*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "L'anno prossimo *andrò* in Italia.",
+       "t": {
+        "ru": "В следующем году я поеду в Италию.",
+        "uz": "Kelasi yili Italiyaga boraman.",
+        "en": "Next year I'll go to Italy."
+       }
+      },
+      {
+       "s": "Ti *chiamerò* stasera.",
+       "t": {
+        "ru": "Я позвоню тебе вечером.",
+        "uz": "Kechqurun senga qo'ng'iroq qilaman.",
+        "en": "I'll call you tonight."
+       }
+      },
+      {
+       "s": "Che tempo *farà* domani?",
+       "t": {
+        "ru": "Какая погода будет завтра?",
+        "uz": "Ertaga havo qanday bo'ladi?",
+        "en": "What will the weather be like tomorrow?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Будущее также выражает догадку: *Che ore sono? — Saranno le tre* — Который час? — Наверное, три.",
+      "en": "The future also expresses a guess: *Saranno le tre* — It must be about three.",
+      "uz": "Kelasi zamon taxminni ham bildiradi: *Che ore sono? — Saranno le tre* — Soat necha? — Uch bo'lsa kerak."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7583,6 +8860,127 @@
     "en": "In negatives non + niente/nessuno; ogni and qualche take the singular.",
     "uz": "Inkorda non + niente/nessuno; ogni va qualche — birlik bilan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Что-то, ничего, кто-то, никто",
+      "en": "Something, nothing, someone, no one",
+      "uz": "Nimadir, hech narsa, kimdir, hech kim"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эти слова говорят о неизвестных или отсутствующих людях и вещах. Они идут парами: «есть что-то» — «нет ничего».",
+      "en": "These words talk about unknown or absent people and things, in pairs.",
+      "uz": "Bu so'zlar noma'lum yoki yo'q odamlar va narsalar haqida gapiradi. Ular juft-juft keladi: «nimadir bor» — «hech narsa yo'q»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Есть",
+        "en": "Positive",
+        "uz": "Bor"
+       },
+       {
+        "ru": "Нет",
+        "en": "Negative",
+        "uz": "Yo'q"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       }
+      ],
+      "rows": [
+       [
+        "qualcosa",
+        "niente / nulla",
+        {
+         "ru": "что-то / ничего",
+         "en": "something / nothing",
+         "uz": "nimadir / hech narsa"
+        }
+       ],
+       [
+        "qualcuno",
+        "nessuno",
+        {
+         "ru": "кто-то / никто",
+         "en": "someone / no one",
+         "uz": "kimdir / hech kim"
+        }
+       ],
+       [
+        {
+         "ru": "qualche (+ ед. ч.)",
+         "en": "qualche (+ singular)",
+         "uz": "qualche (+ birlik)"
+        },
+        "nessun / nessuna",
+        {
+         "ru": "несколько / никакой",
+         "en": "some / no",
+         "uz": "bir nechta / hech qanday"
+        }
+       ],
+       [
+        "sempre",
+        "mai",
+        {
+         "ru": "всегда / никогда",
+         "en": "always / never",
+         "uz": "doim / hech qachon"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в русском и узбекском, отрицательные слова идут вместе с *non*: *Non vedo nessuno* — Я никого не вижу. Если они стоят перед глаголом — *non* не нужно: *Nessuno lo sa* — Никто не знает.",
+      "en": "Negative words go with *non*: *Non vedo nessuno.* Before the verb, drop *non*: *Nessuno lo sa.*",
+      "uz": "O'zbek tilidagidek, inkor so'zlar *non* bilan birga keladi: *Non vedo nessuno* — Hech kimni ko'rmayapman. Ular fe'ldan oldin tursa — *non* kerak emas: *Nessuno lo sa* — Hech kim bilmaydi."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Qualche* значит «несколько», но после него существительное в _единственном_ числе: *qualche giorno* — несколько дней, *qualche amico* — несколько друзей.",
+      "en": "*Qualche* means “some / a few” but takes a singular noun: *qualche giorno*.",
+      "uz": "*Qualche* «bir nechta» degani, lekin undan keyin ot _birlikda_ keladi: *qualche giorno* — bir necha kun, *qualche amico* — bir nechta do'st."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Vuoi *qualcosa* da bere? — No, *niente*, grazie.",
+       "t": {
+        "ru": "Хочешь что-нибудь выпить? — Нет, ничего, спасибо.",
+        "uz": "Biror narsa ichasanmi? — Yo'q, hech narsa, rahmat.",
+        "en": "Would you like something to drink? — No, nothing, thanks."
+       }
+      },
+      {
+       "s": "C'è *qualcuno*? — Non c'è *nessuno*.",
+       "t": {
+        "ru": "Есть кто-нибудь? — Никого нет.",
+        "uz": "Kimdir bormi? — Hech kim yo'q.",
+        "en": "Is anyone there? — No one."
+       }
+      },
+      {
+       "s": "Ho *qualche* domanda.",
+       "t": {
+        "ru": "У меня есть несколько вопросов.",
+        "uz": "Bir nechta savolim bor.",
+        "en": "I have a few questions."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7847,6 +9245,142 @@
     "en": "Still going → da + present; ago → fa; a period → per.",
     "uz": "Davom etmoqda → da + presente; oldin → fa; davr → per."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Da, fa, per: как давно и как долго",
+      "en": "Da, fa, per: since, ago, for",
+      "uz": "Da, fa, per: qachondan beri va qancha vaqt"
+     }
+    },
+    {
+     "p": {
+      "ru": "Три коротких слова для времени. Важно понять, _продолжается_ ли действие сейчас и откуда мы на него смотрим.",
+      "en": "Three short time words. The key: is the action still going on?",
+      "uz": "Vaqt uchun uchta qisqa so'z. Harakat hozir ham _davom etyaptimi_ va unga qayerdan qarayapmiz, shuni tushunish muhim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Время глагола",
+        "en": "Verb tense",
+        "uz": "Fe'l zamoni"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "da",
+        {
+         "ru": "уже … (длится до сих пор)",
+         "en": "for / since (still going on)",
+         "uz": "… dan beri (davom etyapti)"
+        },
+        {
+         "ru": "настоящее",
+         "en": "present",
+         "uz": "hozirgi"
+        },
+        "Studio l'italiano da un anno."
+       ],
+       [
+        "fa",
+        {
+         "ru": "… назад",
+         "en": "… ago",
+         "uz": "… oldin"
+        },
+        {
+         "ru": "прошедшее",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "Sono arrivato due giorni fa."
+       ],
+       [
+        "per",
+        {
+         "ru": "в течение (закончено)",
+         "en": "for (a finished period)",
+         "uz": "davomida (tugagan)"
+        },
+        {
+         "ru": "прошедшее",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "Ho vissuto a Roma per tre anni."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Главное: с *da* итальянцы ставят _настоящее_ время, потому что действие продолжается. *Abito qui da cinque anni* — Я живу здесь уже пять лет. Ровно как в русском и узбекском («Besh yildan beri shu yerda yashayman»), но не как в английском.",
+      "en": "With *da* Italian uses the present because the action continues: *Abito qui da cinque anni.*",
+      "uz": "Asosiysi: *da* bilan italyanlar _hozirgi_ zamonni qo'yadi, chunki harakat davom etyapti. *Abito qui da cinque anni* — Besh yildan beri shu yerda yashayman. Xuddi o'zbek tilidagidek, lekin ingliz tilidagidek emas."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Fa* стоит _после_ периода: *un'ora fa* — час назад, *tre anni fa* — три года назад. Это похоже на узбекское «oldin», которое тоже стоит после: «uch yil oldin».",
+      "en": "*Fa* comes after the period: *un'ora fa*, *tre anni fa*.",
+      "uz": "*Fa* davrdan _keyin_ turadi: *un'ora fa* — bir soat oldin, *tre anni fa* — uch yil oldin. Bu o'zbekcha «oldin» ga o'xshaydi, u ham keyin turadi: «uch yil oldin»."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Lavoro qui *da* marzo.",
+       "t": {
+        "ru": "Я работаю здесь с марта.",
+        "uz": "Martdan beri shu yerda ishlayman.",
+        "en": "I've worked here since March."
+       }
+      },
+      {
+       "s": "L'ho visto una settimana *fa*.",
+       "t": {
+        "ru": "Я видел его неделю назад.",
+        "uz": "Uni bir hafta oldin ko'rdim.",
+        "en": "I saw him a week ago."
+       }
+      },
+      {
+       "s": "Abbiamo ballato *per* tutta la notte.",
+       "t": {
+        "ru": "Мы танцевали всю ночь.",
+        "uz": "Tun bo'yi raqs tushdik.",
+        "en": "We danced all night."
+       }
+      },
+      {
+       "s": "*Da* quanto tempo studi?",
+       "t": {
+        "ru": "Как давно ты учишься?",
+        "uz": "Qachondan beri o'qiyapsan?",
+        "en": "How long have you been studying?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

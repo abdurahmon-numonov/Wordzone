@@ -76,6 +76,173 @@
     "en": "consonant + vowel (+ batchim) = one block; silent ㅇ before a vowel.",
     "uz": "undosh + unli (+ patchim) = bitta blok; unlidan oldin jim ㅇ."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Хангыль — алфавит, а не иероглифы",
+      "en": "Hangul is an alphabet, not characters",
+      "uz": "Hangul — alifbo, ierogliflar emas"
+     }
+    },
+    {
+     "p": {
+      "ru": "Корейское письмо *한글* (хангыль) — это настоящий алфавит из 24 простых букв: 14 согласных и 10 гласных. Его специально придумали в XV веке, чтобы любой человек мог выучить его за несколько дней. Хорошая новость: читать по-корейски можно научиться очень быстро.",
+      "en": "Korean writing, *한글* (Hangul), is a true alphabet of 24 letters: 14 consonants and 10 vowels. It was designed in the 15th century to be learned in days.",
+      "uz": "Koreys yozuvi *한글* (hangul) — 24 ta oddiy harfdan iborat haqiqiy alifbo: 14 ta undosh va 10 ta unli. U XV asrda har qanday odam bir necha kunda o'rganishi uchun maxsus yaratilgan. Yaxshi xabar: koreyscha o'qishni juda tez o'rganish mumkin."
+     }
+    },
+    {
+     "h": {
+      "ru": "Буквы складываются в слоги-квадратики",
+      "en": "Letters stack into syllable blocks",
+      "uz": "Harflar bo'g'in-kvadratlarga yig'iladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Буквы пишут не в строчку, а собирают в «квадратики» — по одному слогу. Каждый слог — это согласная + гласная (+ иногда согласная внизу). *ㅎ* [х] + *ㅏ* [а] + *ㄴ* [н] = *한* [хан]. Вот почему корейский текст выглядит как иероглифы, хотя это обычные буквы.",
+      "en": "Letters are grouped into square blocks, one syllable each: consonant + vowel (+ sometimes a final consonant). *ㅎ + ㅏ + ㄴ = 한* [han].",
+      "uz": "Harflar qatorga emas, «kvadratchalarga» — har biriga bitta bo'g'in qilib yig'iladi. Har bir bo'g'in — undosh + unli (+ ba'zan pastda undosh). *ㅎ* [h] + *ㅏ* [a] + *ㄴ* [n] = *한* [han]. Shuning uchun koreys matni ierogliflarga o'xshaydi, garchi bu oddiy harflar bo'lsa ham."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Буква",
+        "en": "Letter",
+        "uz": "Harf"
+       },
+       {
+        "ru": "Звук",
+        "en": "Sound",
+        "uz": "Tovush"
+       },
+       {
+        "ru": "Буква",
+        "en": "Letter",
+        "uz": "Harf"
+       },
+       {
+        "ru": "Звук",
+        "en": "Sound",
+        "uz": "Tovush"
+       }
+      ],
+      "rows": [
+       [
+        "ㄱ",
+        "g / k",
+        "ㅏ",
+        "a"
+       ],
+       [
+        "ㄴ",
+        "n",
+        "ㅓ",
+        {
+         "ru": "о (открытое)",
+         "en": "eo (as in “up”)",
+         "uz": "o (ochiq)"
+        }
+       ],
+       [
+        "ㄷ",
+        "d / t",
+        "ㅗ",
+        "o"
+       ],
+       [
+        "ㄹ",
+        "r / l",
+        "ㅜ",
+        "u"
+       ],
+       [
+        "ㅁ",
+        "m",
+        "ㅡ",
+        {
+         "ru": "ы",
+         "en": "eu",
+         "uz": "i (qattiq)"
+        }
+       ],
+       [
+        "ㅂ",
+        "b / p",
+        "ㅣ",
+        "i"
+       ],
+       [
+        "ㅅ",
+        "s",
+        "ㅐ / ㅔ",
+        "e"
+       ],
+       [
+        "ㅇ",
+        {
+         "ru": "— / нг",
+         "en": "silent / ng",
+         "uz": "— / ng"
+        },
+        "ㅑ",
+        "ya"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "*ㅇ* в начале слога не читается — это просто «заглушка» для слога, который начинается с гласной: *아* [а], *이* [и]. А внизу слога *ㅇ* читается как [нг]: *강* [ганг] — река.",
+      "en": "*ㅇ* is silent at the start of a syllable (*아* = a) but sounds “ng” at the end (*강* = gang).",
+      "uz": "*ㅇ* bo'g'in boshida o'qilmaydi — bu unli bilan boshlanadigan bo'g'in uchun shunchaki «to'ldiruvchi»: *아* [a], *이* [i]. Bo'g'in pastida esa *ㅇ* [ng] deb o'qiladi: *강* [gang] — daryo."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как собран слог",
+      "en": "How a syllable is built",
+      "uz": "Bo'g'in qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Вертикальные гласные (*ㅏ, ㅓ, ㅣ*) ставят _справа_ от согласной: *가* [га], *너* [но]. Горизонтальные (*ㅗ, ㅜ, ㅡ*) — _под_ согласной: *고* [го], *누* [ну]. Конечная согласная (*받침*, «пхатчим») всегда стоит внизу: *밥* [пап] — рис.",
+      "en": "Vertical vowels go to the right of the consonant (*가*), horizontal ones below it (*고*). A final consonant (*받침*) sits at the bottom: *밥* (rice).",
+      "uz": "Vertikal unlilar (*ㅏ, ㅓ, ㅣ*) undoshning _o'ng_ tomoniga qo'yiladi: *가* [ga], *너* [no]. Gorizontallari (*ㅗ, ㅜ, ㅡ*) — undosh _ostiga_: *고* [go], *누* [nu]. Oxirgi undosh (*받침*, «patchim») doim pastda turadi: *밥* [pap] — guruch, ovqat."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*안녕하세요*!",
+       "t": {
+        "ru": "Здравствуйте! [аннёнхасеё]",
+        "uz": "Assalomu alaykum! [annyonghaseyo]",
+        "en": "Hello! [annyeonghaseyo]"
+       }
+      },
+      {
+       "s": "*감사합니다*.",
+       "t": {
+        "ru": "Спасибо. [камсахамнида]",
+        "uz": "Rahmat. [kamsahamnida]",
+        "en": "Thank you. [gamsahamnida]"
+       }
+      },
+      {
+       "s": "*한국어*",
+       "t": {
+        "ru": "корейский язык [хангуго]",
+        "uz": "koreys tili [hanguge]",
+        "en": "Korean language [hangugeo]"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -335,6 +502,134 @@
     "en": "after a consonant 이에요, after a vowel 예요; formal 입니다; negative 이/가 아니에요.",
     "uz": "undoshdan keyin 이에요, unlidan keyin 예요; rasmiy 입니다; inkor 이/가 아니에요."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Я — студент: 이에요 / 예요",
+      "en": "I am a student: 이에요 / 예요",
+      "uz": "Men talabaman: 이에요 / 예요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Корейский очень похож на узбекский по устройству: глагол стоит _в конце_, а связка «есть / являюсь» приклеивается к слову, как узбекское «-man, -san». *저는 학생이에요* [чонын хаксэн-иэё] — Я студент (дословно «я — студент-есть»). Ср.: «Men talaba_man_».",
+      "en": "Korean works much like Uzbek or Turkish: the verb comes last, and “to be” attaches to the noun: *저는 학생이에요* — I am a student.",
+      "uz": "Koreys tili tuzilishi jihatidan o'zbek tiliga juda o'xshaydi: fe'l gap _oxirida_ turadi, «… man / … dir» bog'lamasi esa so'zga xuddi o'zbekcha «-man, -san» kabi yopishadi. *저는 학생이에요* [jonin haksaeng-ieyo] — Men talabaman. Solishtiring: «Men talaba_man_»."
+     }
+    },
+    {
+     "h": {
+      "ru": "이에요 или 예요",
+      "en": "이에요 or 예요",
+      "uz": "이에요 yoki 예요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Форма зависит от того, на что кончается слово — совсем как в узбекском выбор гласной. Если слово кончается на согласную — *이에요* [иэё]: *학생이에요* (студент). Если на гласную — *예요* [её]: *의사예요* (врач).",
+      "en": "If the noun ends in a consonant, add *이에요*: *학생이에요*. If it ends in a vowel, add *예요*: *의사예요*.",
+      "uz": "Shakl so'z nima bilan tugashiga bog'liq — xuddi o'zbek tilida unli tanlanishi kabi. So'z undosh bilan tugasa — *이에요* [ieyo]: *학생이에요* (talabaman). Unli bilan tugasa — *예요* [yeyo]: *의사예요* (shifokorman)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово кончается на",
+        "en": "Noun ends in",
+        "uz": "So'z oxiri"
+       },
+       {
+        "ru": "Связка",
+        "en": "Ending",
+        "uz": "Bog'lama"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "согласную",
+         "en": "a consonant",
+         "uz": "undosh"
+        },
+        "이에요",
+        {
+         "ru": "학생이에요 — [хаксэн-иэё]",
+         "en": "학생이에요 — [haksaeng-ieyo]",
+         "uz": "학생이에요 — [haksaeng-ieyo]"
+        }
+       ],
+       [
+        {
+         "ru": "гласную",
+         "en": "a vowel",
+         "uz": "unli"
+        },
+        "예요",
+        {
+         "ru": "의사예요 — [ыйса-её]",
+         "en": "의사예요 — [uisa-yeyo]",
+         "uz": "의사예요 — [uysa-yeyo]"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Вопрос звучит так же, только с вопросительной интонацией: *학생이에요?* — Вы студент? Отрицание — *아니에요* [аниэё]: *학생이 아니에요* — Я не студент.",
+      "en": "A question is the same with rising intonation: *학생이에요?* Negative: *아니에요*: *학생이 아니에요.*",
+      "uz": "Savol xuddi shunday, faqat so'roq ohangi bilan: *학생이에요?* — Talabamisiz? Inkor — *아니에요* [anieyo]: *학생이 아니에요* — Talaba emasman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Уровни вежливости",
+      "en": "Politeness levels",
+      "uz": "Hurmat darajalari"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском окончание глагола показывает вежливость — как узбекские «sen» и «siz». *-이에요 / 예요* — вежливо-разговорный стиль для большинства ситуаций. *-입니다* [имнида] — официальный: *학생입니다*. Его слышно в новостях, на работе, в выступлениях.",
+      "en": "The ending shows politeness. *-이에요 / 예요* is polite everyday style; *-입니다* is formal: *학생입니다*.",
+      "uz": "Koreys tilida fe'l oxiri hurmat darajasini ko'rsatadi — o'zbekcha «sen» va «siz» kabi. *-이에요 / 예요* — ko'p vaziyatlar uchun muloyim so'zlashuv uslubi. *-입니다* [imnida] — rasmiy: *학생입니다*. U yangiliklarda, ishda, nutqlarda eshitiladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "저는 *우즈베키스탄 사람이에요*.",
+       "t": {
+        "ru": "Я из Узбекистана. (Я узбекистанец.)",
+        "uz": "Men o'zbekistonlikman.",
+        "en": "I'm from Uzbekistan."
+       }
+      },
+      {
+       "s": "이것은 *물이에요*.",
+       "t": {
+        "ru": "Это вода.",
+        "uz": "Bu suv.",
+        "en": "This is water."
+       }
+      },
+      {
+       "s": "제 친구는 *가수예요*.",
+       "t": {
+        "ru": "Мой друг — певец.",
+        "uz": "Do'stim xonanda.",
+        "en": "My friend is a singer."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -594,6 +889,141 @@
     "en": "은/는 — topic (consonant/vowel), 이/가 — subject, 저 → 제가.",
     "uz": "은/는 — mavzu (undosh/unli), 이/가 — ega, 저 → 제가."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Частицы — как узбекские окончания",
+      "en": "Particles — like case endings",
+      "uz": "Yuklamalar — o'zbekcha qo'shimchalar kabi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском роль слова показывают маленькие частицы, приклеенные к его концу, — как узбекские падежные окончания «-ni, -ga, -da». Первые две пары частиц отмечают, _о ком_ речь: *은 / 는* и *이 / 가*.",
+      "en": "Korean marks a word's role with small particles attached to the end — like case endings. The first two pairs mark the subject or topic: *은 / 는* and *이 / 가*.",
+      "uz": "Koreys tilida so'zning vazifasini uning oxiriga yopishtirilgan kichik yuklamalar ko'rsatadi — xuddi o'zbekcha «-ni, -ga, -da» kelishik qo'shimchalari kabi. Birinchi ikki juft yuklama _kim haqida_ gap ketayotganini belgilaydi: *은 / 는* va *이 / 가*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Частица",
+        "en": "Particle",
+        "uz": "Yuklama"
+       },
+       {
+        "ru": "После согласной",
+        "en": "After consonant",
+        "uz": "Undoshdan keyin"
+       },
+       {
+        "ru": "После гласной",
+        "en": "After vowel",
+        "uz": "Unlidan keyin"
+       },
+       {
+        "ru": "Роль",
+        "en": "Role",
+        "uz": "Vazifa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "тема",
+         "en": "topic",
+         "uz": "mavzu"
+        },
+        "은",
+        "는",
+        {
+         "ru": "«что касается…»",
+         "en": "“as for…”",
+         "uz": "«… ga kelsak»"
+        }
+       ],
+       [
+        {
+         "ru": "подлежащее",
+         "en": "subject",
+         "uz": "ega"
+        },
+        "이",
+        "가",
+        {
+         "ru": "«именно он / оно»",
+         "en": "“it's X that…”",
+         "uz": "«aynan u»"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "은/는 — тема разговора",
+      "en": "은/는 — the topic",
+      "uz": "은/는 — suhbat mavzusi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*은 / 는* отмечает тему: «что касается меня — я студент». Его используют, когда представляются, сравнивают или говорят о чём-то уже известном: *저는 알리예요* — Я Али. *저는 커피를 좋아해요, 동생은 차를 좋아해요* — Я люблю кофе, а брат — чай.",
+      "en": "*은 / 는* marks the topic (“as for…”), used for introductions, contrasts and known things: *저는 알리예요.*",
+      "uz": "*은 / 는* mavzuni belgilaydi: «menga kelsak — men talabaman». U tanishganda, solishtirganda yoki ma'lum narsa haqida gapirganda ishlatiladi: *저는 알리예요* — Men Aliman. *저는 커피를 좋아해요, 동생은 차를 좋아해요* — Men qahvani yaxshi ko'raman, ukam esa choyni."
+     }
+    },
+    {
+     "h": {
+      "ru": "이/가 — новое подлежащее",
+      "en": "이/가 — new subject",
+      "uz": "이/가 — yangi ega"
+     }
+    },
+    {
+     "p": {
+      "ru": "*이 / 가* отмечает подлежащее, особенно новую информацию и ответ на «кто?»: *누가 왔어요? — 민수가 왔어요* — Кто пришёл? — Минсу пришёл. Ещё он нужен с *있어요 / 없어요* (есть / нет) и с описаниями: *날씨가 좋아요* — Погода хорошая.",
+      "en": "*이 / 가* marks the subject, especially new info and answers to “who?”: *민수가 왔어요.* Also with *있어요 / 없어요* and descriptions: *날씨가 좋아요.*",
+      "uz": "*이 / 가* egani, ayniqsa yangi ma'lumotni va «kim?» savoliga javobni belgilaydi: *누가 왔어요? — 민수가 왔어요* — Kim keldi? — Minsu keldi. U *있어요 / 없어요* (bor / yo'q) va tasvirlar bilan ham kerak: *날씨가 좋아요* — Havo yaxshi."
+     }
+    },
+    {
+     "note": {
+      "ru": "Выбор формы — по последнему звуку, как в узбекском «-ni / -ning»: после согласной *은, 이*, после гласной *는, 가*. *책은, 책이* (книга), но *커피는, 커피가* (кофе).",
+      "en": "Choose by the last sound: after a consonant *은, 이*; after a vowel *는, 가*: *책은 / 책이*, *커피는 / 커피가*.",
+      "uz": "Shakl oxirgi tovushga qarab tanlanadi: undoshdan keyin *은, 이*, unlidan keyin *는, 가*. *책은, 책이* (kitob), lekin *커피는, 커피가* (qahva)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*저는* 학생이에요.",
+       "t": {
+        "ru": "Я студент.",
+        "uz": "Men talabaman.",
+        "en": "I'm a student."
+       }
+      },
+      {
+       "s": "*날씨가* 좋아요.",
+       "t": {
+        "ru": "Погода хорошая.",
+        "uz": "Havo yaxshi.",
+        "en": "The weather is nice."
+       }
+      },
+      {
+       "s": "*이름이* 뭐예요?",
+       "t": {
+        "ru": "Как вас зовут? (Какое имя?)",
+        "uz": "Ismingiz nima?",
+        "en": "What's your name?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -853,6 +1283,140 @@
     "en": "ㅏ/ㅗ → 아요; others → 어요; 하다 → 해요; vowels merge.",
     "uz": "ㅏ/ㅗ → 아요; qolganlari → 어요; 하다 → 해요; unlilar qo'shiladi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Настоящее время: -아요 / -어요",
+      "en": "Present tense: -아요 / -어요",
+      "uz": "Hozirgi zamon: -아요 / -어요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Корейские глаголы в словаре кончаются на *-다*: *가다* (идти), *먹다* (есть), *하다* (делать). Чтобы получить вежливую разговорную форму, *-다* отбрасывают и добавляют *-아요* или *-어요*. Удобно: форма одна для всех лиц — «я, ты, он» говорят одинаково.",
+      "en": "Dictionary forms end in *-다*: *가다, 먹다, 하다*. Drop *-다* and add *-아요* or *-어요*. The form is the same for every person.",
+      "uz": "Koreys fe'llari lug'atda *-다* bilan tugaydi: *가다* (bormoq), *먹다* (yemoq), *하다* (qilmoq). Muloyim so'zlashuv shaklini olish uchun *-다* tashlanib, *-아요* yoki *-어요* qo'shiladi. Qulay: shakl hamma shaxslar uchun bitta — «men, sen, u» bir xil aytiladi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Гармония гласных",
+      "en": "Vowel harmony",
+      "uz": "Unlilar uyg'unligi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Выбор окончания зависит от последней гласной основы — похоже на то, как в узбекском выбирают «-ga / -ka / -qa» по последнему звуку слова. Если последняя гласная *ㅏ* или *ㅗ* — *-아요*. Все остальные — *-어요*. Глаголы на *하다* — особые: *하다 → 해요*.",
+      "en": "Choose by the stem's last vowel: *ㅏ* or *ㅗ* → *-아요*; anything else → *-어요*. *하다* verbs → *해요*.",
+      "uz": "Qo'shimcha tanlovi o'zakning oxirgi unlisiga bog'liq — o'zbek tilida «-ga / -ka / -qa» so'zning oxirgi tovushiga qarab tanlangani kabi. Oxirgi unli *ㅏ* yoki *ㅗ* bo'lsa — *-아요*. Qolgan hammasi — *-어요*. *하다* bilan tugaydigan fe'llar alohida: *하다 → 해요*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Последняя гласная",
+        "en": "Last vowel",
+        "uz": "Oxirgi unli"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       }
+      ],
+      "rows": [
+       [
+        "ㅏ, ㅗ",
+        "-아요",
+        {
+         "ru": "살다 (жить)",
+         "en": "살다 (live)",
+         "uz": "살다 (yashamoq)"
+        },
+        "살아요"
+       ],
+       [
+        {
+         "ru": "другие",
+         "en": "others",
+         "uz": "boshqalar"
+        },
+        "-어요",
+        {
+         "ru": "먹다 (есть)",
+         "en": "먹다 (eat)",
+         "uz": "먹다 (yemoq)"
+        },
+        "먹어요"
+       ],
+       [
+        "하다",
+        "해요",
+        {
+         "ru": "공부하다 (учиться)",
+         "en": "공부하다 (study)",
+         "uz": "공부하다 (o'qimoq)"
+        },
+        "공부해요"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если основа кончается на гласную, гласные сливаются: *가다 → 가요* (а не «가아요»), *보다 → 봐요*, *마시다 → 마셔요*. Это просто для удобства произношения.",
+      "en": "If the stem ends in a vowel, vowels merge: *가요, 봐요, 마셔요*.",
+      "uz": "O'zak unli bilan tugasa, unlilar qo'shilib ketadi: *가다 → 가요* («가아요» emas), *보다 → 봐요*, *마시다 → 마셔요*. Bu shunchaki aytish qulayligi uchun."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "저는 서울에 *살아요*.",
+       "t": {
+        "ru": "Я живу в Сеуле.",
+        "uz": "Men Seulda yashayman.",
+        "en": "I live in Seoul."
+       }
+      },
+      {
+       "s": "매일 한국어를 *공부해요*.",
+       "t": {
+        "ru": "Я каждый день учу корейский.",
+        "uz": "Har kuni koreys tilini o'rganaman.",
+        "en": "I study Korean every day."
+       }
+      },
+      {
+       "s": "커피를 *마셔요*?",
+       "t": {
+        "ru": "Ты пьёшь кофе?",
+        "uz": "Qahva ichasanmi?",
+        "en": "Do you drink coffee?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Порядок слов как в узбекском: подлежащее — дополнение — глагол в конце. *저는 밥을 먹어요* — Men ovqat yeyman (я — рис — ем).",
+      "en": "Word order is subject — object — verb, like Uzbek: *저는 밥을 먹어요.*",
+      "uz": "So'z tartibi o'zbek tilidagidek: ega — to'ldiruvchi — oxirida fe'l. *저는 밥을 먹어요* — Men ovqat yeyman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1112,6 +1676,105 @@
     "en": "consonant → 을, vowel → 를; verb at the end.",
     "uz": "undosh → 을, unli → 를; fe'l oxirida."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Дополнение: 을 / 를",
+      "en": "The object: 을 / 를",
+      "uz": "To'ldiruvchi: 을 / 를"
+     }
+    },
+    {
+     "p": {
+      "ru": "Частица *을 / 를* отмечает прямое дополнение — то, на что направлено действие (кого? что?). Это ровно узбекское «-ni»: *밥을 먹어요* — Ovqat_ni_ yeyman (рис ем). *영화를 봐요* — Film_ni_ ko'raman (фильм смотрю).",
+      "en": "*을 / 를* marks the direct object (whom? what?) — like a case ending: *밥을 먹어요* (I eat rice), *영화를 봐요* (I watch a film).",
+      "uz": "*을 / 를* yuklamasi to'g'ri to'ldiruvchini — harakat qaratilgan narsani belgilaydi (kimni? nimani?). Bu aynan o'zbekcha «-ni»: *밥을 먹어요* — Ovqatni yeyman. *영화를 봐요* — Filmni ko'raman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово кончается на",
+        "en": "Noun ends in",
+        "uz": "So'z oxiri"
+       },
+       {
+        "ru": "Частица",
+        "en": "Particle",
+        "uz": "Yuklama"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "согласную",
+         "en": "a consonant",
+         "uz": "undosh"
+        },
+        "을",
+        "책을 읽어요."
+       ],
+       [
+        {
+         "ru": "гласную",
+         "en": "a vowel",
+         "uz": "unli"
+        },
+        "를",
+        "커피를 마셔요."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Порядок слов — как в узбекском: кто — что — делает. *저는 사과를 좋아해요* — Men olmani yaxshi ko'raman (я — яблоко — люблю). Благодаря частицам слова можно даже переставлять — роль всё равно видна.",
+      "en": "Word order is subject — object — verb: *저는 사과를 좋아해요.* Thanks to particles, words can even move around.",
+      "uz": "So'z tartibi o'zbek tilidagidek: kim — nimani — qiladi. *저는 사과를 좋아해요* — Men olmani yaxshi ko'raman. Yuklamalar tufayli so'zlarning o'rnini almashtirish ham mumkin — vazifasi baribir ko'rinib turadi."
+     }
+    },
+    {
+     "note": {
+      "ru": "В разговоре частицы часто опускают, если смысл понятен: *커피 마셔요?* — Кофе пьёшь? Но для начинающих лучше всегда их ставить.",
+      "en": "In casual speech particles are often dropped (*커피 마셔요?*), but beginners should use them.",
+      "uz": "So'zlashuvda ma'no tushunarli bo'lsa, yuklamalar ko'pincha tushirib qoldiriladi: *커피 마셔요?* — Qahva ichasanmi? Lekin boshlovchilar uchun ularni doim qo'ygan ma'qul."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "저는 한국어*를* 배워요.",
+       "t": {
+        "ru": "Я учу корейский.",
+        "uz": "Men koreys tilini o'rganyapman.",
+        "en": "I'm learning Korean."
+       }
+      },
+      {
+       "s": "친구가 사진*을* 찍어요.",
+       "t": {
+        "ru": "Друг фотографирует.",
+        "uz": "Do'stim rasmga oladi.",
+        "en": "My friend takes photos."
+       }
+      },
+      {
+       "s": "음악*을* 들어요?",
+       "t": {
+        "ru": "Ты слушаешь музыку?",
+        "uz": "Musiqa tinglaysanmi?",
+        "en": "Do you listen to music?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1372,6 +2035,126 @@
     "en": "N이/가 있어요 = there is; N이/가 없어요 = there isn't; “I have” = 저는 …",
     "uz": "N이/가 있어요 = bor; N이/가 없어요 = yo'q; «menda» = 저는 …"
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Есть и нет: 있어요 / 없어요",
+      "en": "There is / isn't: 있어요 / 없어요",
+      "uz": "Bor va yo'q: 있어요 / 없어요"
+     }
+    },
+    {
+     "p": {
+      "ru": "Два очень полезных слова: *있어요* [иссоё] — «есть, имеется» и *없어요* [опсоё] — «нет». Они работают точно как узбекские «bor» и «yo'q»: *시간이 있어요* — Vaqtim bor. *돈이 없어요* — Pulim yo'q.",
+      "en": "*있어요* means “there is / I have” and *없어요* “there isn't / I don't have”: *시간이 있어요*, *돈이 없어요*.",
+      "uz": "Ikki juda foydali so'z: *있어요* [issoyo] — «bor» va *없어요* [opsoyo] — «yo'q». Ular xuddi o'zbekcha «bor» va «yo'q» kabi ishlaydi: *시간이 있어요* — Vaqtim bor. *돈이 없어요* — Pulim yo'q."
+     }
+    },
+    {
+     "p": {
+      "ru": "То, что есть или чего нет, отмечают частицей *이 / 가*. Владелец — частицей *은 / 는* или без частицы: *저는 동생이 있어요* — У меня есть младший брат (дословно «я — младший брат есть»). Совсем как «Mening ukam bor».",
+      "en": "The thing that exists takes *이 / 가*; the owner takes *은 / 는*: *저는 동생이 있어요* — I have a younger sibling.",
+      "uz": "Bor yoki yo'q narsa *이 / 가* yuklamasi bilan belgilanadi. Ega — *은 / 는* bilan yoki yuklamasiz: *저는 동생이 있어요* — Mening ukam bor. Xuddi o'zbekchadagidek."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       },
+       {
+        "ru": "Перевод",
+        "en": "Translation",
+        "uz": "Tarjima"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "у меня есть",
+         "en": "I have",
+         "uz": "menda bor"
+        },
+        "차가 있어요.",
+        {
+         "ru": "У меня есть машина.",
+         "en": "I have a car.",
+         "uz": "Mashinam bor."
+        }
+       ],
+       [
+        {
+         "ru": "у меня нет",
+         "en": "I don't have",
+         "uz": "menda yo'q"
+        },
+        "시간이 없어요.",
+        {
+         "ru": "У меня нет времени.",
+         "en": "I have no time.",
+         "uz": "Vaqtim yo'q."
+        }
+       ],
+       [
+        {
+         "ru": "находится где-то",
+         "en": "is somewhere",
+         "uz": "qayerdadir bor"
+        },
+        "화장실이 어디에 있어요?",
+        {
+         "ru": "Где туалет?",
+         "en": "Where's the toilet?",
+         "uz": "Hojatxona qayerda?"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*있어요* значит ещё и «находиться»: *지금 집에 있어요* — Я сейчас дома. Полезные выражения: *재미있어요* — интересно (дословно «есть интерес»), *재미없어요* — скучно, *맛있어요* — вкусно, *맛없어요* — невкусно.",
+      "en": "*있어요* also means “to be somewhere”: *집에 있어요.* Useful: *재미있어요* (fun), *맛있어요* (tasty) and their opposites with *없어요*.",
+      "uz": "*있어요* «… da bo'lmoq» degani ham: *지금 집에 있어요* — Hozir uydaman. Foydali iboralar: *재미있어요* — qiziqarli (so'zma-so'z «qiziq bor»), *재미없어요* — zerikarli, *맛있어요* — mazali, *맛없어요* — bemaza."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "오늘 수업이 *있어요*?",
+       "t": {
+        "ru": "Сегодня есть урок?",
+        "uz": "Bugun dars bormi?",
+        "en": "Is there a class today?"
+       }
+      },
+      {
+       "s": "이 근처에 은행이 *없어요*.",
+       "t": {
+        "ru": "Рядом нет банка.",
+        "uz": "Yaqin atrofda bank yo'q.",
+        "en": "There's no bank nearby."
+       }
+      },
+      {
+       "s": "김치가 정말 *맛있어요*!",
+       "t": {
+        "ru": "Кимчи очень вкусное!",
+        "uz": "Kimchi juda mazali!",
+        "en": "The kimchi is really tasty!"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1631,6 +2414,124 @@
     "en": "에 = to / where something is; 에서 = where an action happens / from.",
     "uz": "에 = qayerga / qayerda turadi; 에서 = harakat qayerda / qayerdan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Место: 에 и 에서",
+      "en": "Place: 에 and 에서",
+      "uz": "Joy: 에 va 에서"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для места в корейском две частицы, и это ровно узбекские «-ga / -da» и «-da (harakat)». *에* — куда (направление) и где находится. *에서* — где _происходит действие_. *학교에 가요* — Maktab_ga_ boraman. *학교에서 공부해요* — Maktab_da_ o'qiyman.",
+      "en": "Two place particles: *에* for destination and location of being, *에서* for where an action happens: *학교에 가요*, *학교에서 공부해요*.",
+      "uz": "Koreys tilida joy uchun ikkita yuklama bor. *에* — qayerga (yo'nalish) va qayerda joylashgan. *에서* — harakat _qayerda sodir bo'lishi_. *학교에 가요* — Maktabga boraman. *학교에서 공부해요* — Maktabda o'qiyman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Частица",
+        "en": "Particle",
+        "uz": "Yuklama"
+       },
+       {
+        "ru": "Когда",
+        "en": "When",
+        "uz": "Qachon"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "에",
+        {
+         "ru": "куда (с идти, ехать, приходить)",
+         "en": "to (with go, come)",
+         "uz": "qayerga (bormoq, kelmoq bilan)"
+        },
+        "서울에 가요."
+       ],
+       [
+        "에",
+        {
+         "ru": "где находится (с 있다 / 없다)",
+         "en": "where something is (with 있다)",
+         "uz": "qayerda (있다 / 없다 bilan)"
+        },
+        "집에 있어요."
+       ],
+       [
+        "에서",
+        {
+         "ru": "где происходит действие",
+         "en": "where an action happens",
+         "uz": "harakat qayerda bo'ladi"
+        },
+        "카페에서 일해요."
+       ],
+       [
+        "에서",
+        {
+         "ru": "откуда",
+         "en": "from",
+         "uz": "qayerdan"
+        },
+        "어디에서 왔어요?"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Главная проверка: если глагол — движение (*가다, 오다*) или «быть / находиться» (*있다*) — нужен *에*. Если делаешь что-то в этом месте (ешь, работаешь, учишься) — *에서*.",
+      "en": "Test: movement verbs or *있다* → *에*. Doing something in a place → *에서*.",
+      "uz": "Asosiy tekshiruv: fe'l harakat (*가다, 오다*) yoki «bo'lmoq / joylashmoq» (*있다*) bo'lsa — *에* kerak. O'sha joyda biror ish qilsangiz (yeysiz, ishlaysiz, o'qiysiz) — *에서*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "내일 부산*에* 가요.",
+       "t": {
+        "ru": "Завтра я еду в Пусан.",
+        "uz": "Ertaga Pusanga boraman.",
+        "en": "Tomorrow I'm going to Busan."
+       }
+      },
+      {
+       "s": "엄마는 부엌*에* 있어요.",
+       "t": {
+        "ru": "Мама на кухне.",
+        "uz": "Onam oshxonada.",
+        "en": "Mum is in the kitchen."
+       }
+      },
+      {
+       "s": "도서관*에서* 책을 읽어요.",
+       "t": {
+        "ru": "Я читаю книгу в библиотеке.",
+        "uz": "Kutubxonada kitob o'qiyman.",
+        "en": "I read in the library."
+       }
+      },
+      {
+       "s": "저는 타슈켄트*에서* 왔어요.",
+       "t": {
+        "ru": "Я из Ташкента.",
+        "uz": "Men Toshkentdan keldim.",
+        "en": "I'm from Tashkent."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1890,6 +2791,146 @@
     "en": "before N — 이/그/저; alone — 이것/그것/저것; place — 여기/거기/저기.",
     "uz": "ot oldida — 이/그/저; yakka — 이것/그것/저것; joy — 여기/거기/저기."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Это, то, вон то: 이 · 그 · 저",
+      "en": "This, that, that over there: 이 · 그 · 저",
+      "uz": "Bu, shu, anavi: 이 · 그 · 저"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском, как в узбекском «bu — shu — u», три степени расстояния. *이* [и] — рядом со мной. *그* [кы] — рядом с собеседником или то, о чём уже говорили. *저* [чо] — далеко от нас обоих.",
+      "en": "Three distances: *이* (near me), *그* (near you, or already mentioned), *저* (far from both of us).",
+      "uz": "Koreys tilida, o'zbekcha «bu — shu — u» kabi, masofaning uch darajasi bor. *이* [i] — yonimda. *그* [ki] — suhbatdosh yonida yoki allaqachon gaplashilgan narsa. *저* [cho] — ikkalamizdan uzoqda."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "+ 것 (вещь)",
+        "en": "+ 것 (thing)",
+        "uz": "+ 것 (narsa)"
+       },
+       {
+        "ru": "+ 곳 / 기 (место)",
+        "en": "+ place",
+        "uz": "+ joy"
+       }
+      ],
+      "rows": [
+       [
+        "이",
+        {
+         "ru": "этот (у меня)",
+         "en": "this (near me)",
+         "uz": "bu (menda)"
+        },
+        {
+         "ru": "이것 — это",
+         "en": "이것 — this",
+         "uz": "이것 — bu"
+        },
+        {
+         "ru": "여기 — здесь",
+         "en": "여기 — here",
+         "uz": "여기 — bu yer"
+        }
+       ],
+       [
+        "그",
+        {
+         "ru": "тот (у тебя)",
+         "en": "that (near you)",
+         "uz": "shu (senda)"
+        },
+        {
+         "ru": "그것 — то",
+         "en": "그것 — that",
+         "uz": "그것 — shu"
+        },
+        {
+         "ru": "거기 — там",
+         "en": "거기 — there",
+         "uz": "거기 — u yer"
+        }
+       ],
+       [
+        "저",
+        {
+         "ru": "вон тот (далеко)",
+         "en": "that over there",
+         "uz": "anavi (uzoqda)"
+        },
+        {
+         "ru": "저것 — вон то",
+         "en": "저것 — that over there",
+         "uz": "저것 — anavi"
+        },
+        {
+         "ru": "저기 — вон там",
+         "en": "저기 — over there",
+         "uz": "저기 — ana u yer"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*이, 그, 저* ставят перед существительным: *이 책* — эта книга, *그 사람* — тот человек, *저 건물* — вон то здание. Чтобы сказать «это» без существительного, добавляют *것* [гот] — «вещь»: *이것은 뭐예요?* — Что это?",
+      "en": "Put them before a noun (*이 책, 그 사람*). For “this one / that one” add *것*: *이것은 뭐예요?*",
+      "uz": "*이, 그, 저* ot oldidan qo'yiladi: *이 책* — bu kitob, *그 사람* — o'sha odam, *저 건물* — anavi bino. Otsiz «bu» deyish uchun *것* [got] — «narsa» qo'shiladi: *이것은 뭐예요?* — Bu nima?"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*이것*은 제 가방이에요.",
+       "t": {
+        "ru": "Это моя сумка.",
+        "uz": "Bu mening sumkam.",
+        "en": "This is my bag."
+       }
+      },
+      {
+       "s": "*저* 사람은 누구예요?",
+       "t": {
+        "ru": "Кто вон тот человек?",
+        "uz": "Anavi odam kim?",
+        "en": "Who's that person over there?"
+       }
+      },
+      {
+       "s": "*여기*가 어디예요?",
+       "t": {
+        "ru": "Где мы? (Что это за место?)",
+        "uz": "Bu yer qayer?",
+        "en": "Where is this place?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В разговоре *이것은* сокращается до *이건*, а *이것이* — до *이게*: *이게 뭐예요?* — Что это?",
+      "en": "In speech *이것은* → *이건*, *이것이* → *이게*: *이게 뭐예요?*",
+      "uz": "So'zlashuvda *이것은* *이건* gacha, *이것이* esa *이게* gacha qisqaradi: *이게 뭐예요?* — Bu nima?"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2149,6 +3190,159 @@
     "en": "일·이·삼… for prices, dates, floors; June = 유월, October = 시월.",
     "uz": "일·이·삼… narx, sana, qavat uchun; iyun = 유월, oktabr = 시월."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Две системы чисел",
+      "en": "Two number systems",
+      "uz": "Ikki xil sonlar tizimi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском _две_ системы чисел: китайско-корейская (*일, 이, 삼…*) и исконно корейская (*하나, 둘, 셋…*). Это главная особенность, к которой надо привыкнуть. Китайско-корейские числа используют для дат, денег, телефонов, минут, этажей и номеров.",
+      "en": "Korean has two number systems: Sino-Korean (*일, 이, 삼…*) and native Korean (*하나, 둘, 셋…*). Sino-Korean is for dates, money, phone numbers, minutes and floors.",
+      "uz": "Koreys tilida _ikki_ xil sonlar tizimi bor: xitoy-koreys (*일, 이, 삼…*) va asl koreys (*하나, 둘, 셋…*). Bu ko'nikish kerak bo'lgan asosiy xususiyat. Xitoy-koreys sonlari sanalar, pul, telefon raqamlari, daqiqalar, qavatlar va raqamlar uchun ishlatiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Число",
+        "en": "Number",
+        "uz": "Son"
+       },
+       {
+        "ru": "Корейский",
+        "en": "Korean",
+        "uz": "Koreyscha"
+       },
+       {
+        "ru": "Звучит",
+        "en": "Sounds like",
+        "uz": "O'qilishi"
+       }
+      ],
+      "rows": [
+       [
+        "1",
+        "일",
+        "il"
+       ],
+       [
+        "2",
+        "이",
+        "i"
+       ],
+       [
+        "3",
+        "삼",
+        "sam"
+       ],
+       [
+        "4",
+        "사",
+        "sa"
+       ],
+       [
+        "5",
+        "오",
+        "o"
+       ],
+       [
+        "6",
+        "육",
+        "yuk"
+       ],
+       [
+        "7",
+        "칠",
+        "chil"
+       ],
+       [
+        "8",
+        "팔",
+        "pal"
+       ],
+       [
+        "9",
+        "구",
+        "gu"
+       ],
+       [
+        "10",
+        "십",
+        "sip"
+       ],
+       [
+        "100",
+        "백",
+        "baek"
+       ],
+       [
+        "1000",
+        "천",
+        "cheon"
+       ],
+       [
+        "10 000",
+        "만",
+        "man"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строятся большие числа",
+      "en": "Building bigger numbers",
+      "uz": "Katta sonlar qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Логика очень простая, как в узбекском: десятки — это «два-десять», «три-десять». *11 = 십일* (десять-один), *20 = 이십* (два-десять), *35 = 삼십오* (три-десять-пять), *250 = 이백오십*.",
+      "en": "Very logical: *11 = 십일* (ten-one), *20 = 이십* (two-ten), *35 = 삼십오*, *250 = 이백오십*.",
+      "uz": "Mantiq juda oddiy: o'nliklar «ikki-o'n», «uch-o'n». *11 = 십일* (o'n-bir), *20 = 이십* (ikki-o'n), *35 = 삼십오* (uch-o'n-besh), *250 = 이백오십*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Ловушка: корейцы считают крупные суммы десятками тысяч — *만* (10 000). Поэтому 50 000 — это *오만* («пять-десятитысяч»), а 100 000 — *십만* («десять-десятитысяч»).",
+      "en": "Trap: large numbers are grouped by ten thousand, *만*: 50,000 = *오만* (five-man), 100,000 = *십만*.",
+      "uz": "Tuzoq: koreyslar katta summalarni o'n minglab hisoblaydi — *만* (10 000). Shuning uchun 50 000 — *오만* («besh-o'n ming»), 100 000 esa — *십만* («o'n-o'n ming»)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "이거 *얼마예요*? — *오천* 원이에요.",
+       "t": {
+        "ru": "Сколько это стоит? — 5000 вон.",
+        "uz": "Bu qancha turadi? — 5000 von.",
+        "en": "How much is this? — 5,000 won."
+       }
+      },
+      {
+       "s": "제 전화번호는 *공일공*…이에요.",
+       "t": {
+        "ru": "Мой номер телефона: 010…",
+        "uz": "Telefon raqamim: 010…",
+        "en": "My phone number is 010…"
+       }
+      },
+      {
+       "s": "*삼* 층에 살아요.",
+       "t": {
+        "ru": "Я живу на третьем этаже.",
+        "uz": "Uchinchi qavatda yashayman.",
+        "en": "I live on the third floor."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2410,6 +3604,149 @@
     "en": "native numbers + 명/개/살/시/권; 하나 → 한, 둘 → 두, 셋 → 세, 스물 → 스무.",
     "uz": "o'z sonlari + 명/개/살/시/권; 하나 → 한, 둘 → 두, 셋 → 세, 스물 → 스무."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Исконно корейские числа",
+      "en": "Native Korean numbers",
+      "uz": "Asl koreys sonlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Вторую систему — исконно корейскую — используют для _счёта предметов и людей_, для _возраста_ и _часов_. Она идёт только до 99, дальше используют китайско-корейские числа.",
+      "en": "Native Korean numbers are for counting things and people, for age and for hours. They only go up to 99.",
+      "uz": "Ikkinchi tizim — asl koreys — _narsalar va odamlarni sanash_, _yosh_ va _soat_ uchun ishlatiladi. U faqat 99 gacha boradi, undan keyin xitoy-koreys sonlari ishlatiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Число",
+        "en": "Number",
+        "uz": "Son"
+       },
+       {
+        "ru": "Корейский",
+        "en": "Korean",
+        "uz": "Koreyscha"
+       },
+       {
+        "ru": "Перед счётным словом",
+        "en": "Before a counter",
+        "uz": "Sanoq so'zi oldidan"
+       }
+      ],
+      "rows": [
+       [
+        "1",
+        "하나 (hana)",
+        "한 (han)"
+       ],
+       [
+        "2",
+        "둘 (dul)",
+        "두 (du)"
+       ],
+       [
+        "3",
+        "셋 (set)",
+        "세 (se)"
+       ],
+       [
+        "4",
+        "넷 (net)",
+        "네 (ne)"
+       ],
+       [
+        "5",
+        "다섯 (daseot)",
+        "다섯"
+       ],
+       [
+        "6",
+        "여섯 (yeoseot)",
+        "여섯"
+       ],
+       [
+        "7",
+        "일곱 (ilgop)",
+        "일곱"
+       ],
+       [
+        "8",
+        "여덟 (yeodeol)",
+        "여덟"
+       ],
+       [
+        "9",
+        "아홉 (ahop)",
+        "아홉"
+       ],
+       [
+        "10",
+        "열 (yeol)",
+        "열"
+       ],
+       [
+        "20",
+        "스물 (seumul)",
+        "스무 (seumu)"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Первые четыре числа и 20 сокращаются, когда после них идёт счётное слово: *하나 → 한*, *둘 → 두*, *셋 → 세*, *넷 → 네*, *스물 → 스무*. *한 개* — одна штука, *두 명* — два человека.",
+      "en": "1–4 and 20 shorten before a counter: *한, 두, 세, 네, 스무*: *한 개*, *두 명*.",
+      "uz": "Birinchi to'rtta son va 20 dan keyin sanoq so'zi kelsa, ular qisqaradi: *하나 → 한*, *둘 → 두*, *셋 → 세*, *넷 → 네*, *스물 → 스무*. *한 개* — bitta dona, *두 명* — ikki kishi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Время: смешение двух систем",
+      "en": "Telling time: both systems at once",
+      "uz": "Vaqt: ikki tizim aralash"
+     }
+    },
+    {
+     "p": {
+      "ru": "Самое забавное — время. Часы называют исконно корейскими числами, а минуты — китайско-корейскими. *세 시 이십 분* — 3 часа 20 минут (*세* — исконное «три», *이십* — китайское «двадцать»).",
+      "en": "Hours use native numbers, minutes use Sino-Korean: *세 시 이십 분* — 3:20.",
+      "uz": "Eng qiziqarlisi — vaqt. Soatlar asl koreys sonlari bilan, daqiqalar esa xitoy-koreys sonlari bilan aytiladi. *세 시 이십 분* — soat 3 dan 20 daqiqa o'tdi (*세* — asl «uch», *이십* — xitoycha «yigirma»)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "지금 *몇 시*예요? — *두 시*예요.",
+       "t": {
+        "ru": "Который час? — Два часа.",
+        "uz": "Soat necha? — Ikki.",
+        "en": "What time is it? — Two o'clock."
+       }
+      },
+      {
+       "s": "저는 *스무* 살이에요.",
+       "t": {
+        "ru": "Мне двадцать лет.",
+        "uz": "Men yigirma yoshdaman.",
+        "en": "I'm twenty."
+       }
+      },
+      {
+       "s": "사과 *세* 개 주세요.",
+       "t": {
+        "ru": "Дайте, пожалуйста, три яблока.",
+        "uz": "Uchta olma bering, iltimos.",
+        "en": "Three apples, please."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2673,6 +4010,141 @@
     "en": "Thing → number (한/두/세/네) → counter.",
     "uz": "Narsa → son (한/두/세/네) → sanoq so'zi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Счётные слова",
+      "en": "Counters",
+      "uz": "Sanoq so'zlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "В корейском предметы не считают напрямую («три книги»), а через специальное счётное слово: «книга три штуки». В узбекском есть похожее: «uch *dona* olma», «besh *bosh* qo'y», «ikki *nafar* talaba». В корейском это обязательно, и счётное слово зависит от того, _что_ считаем.",
+      "en": "Korean counts things through counter words: “book three volumes”. The counter depends on what you count.",
+      "uz": "Koreys tilida narsalar to'g'ridan-to'g'ri sanalmaydi, maxsus sanoq so'zi orqali sanaladi. O'zbek tilida ham shunga o'xshash bor: «uch _dona_ olma», «besh _bosh_ qo'y», «ikki _nafar_ talaba». Koreys tilida bu majburiy va sanoq so'zi nimani sanayotganingizga bog'liq."
+     }
+    },
+    {
+     "p": {
+      "ru": "Порядок: предмет + число + счётное слово. *사과 세 개* — яблоко три штуки = три яблока. С этими словами используют исконно корейские числа (*한, 두, 세…*).",
+      "en": "Order: noun + number + counter: *사과 세 개* (three apples). Use native numbers.",
+      "uz": "Tartib: narsa + son + sanoq so'zi. *사과 세 개* — olma uch dona = uchta olma. Bu so'zlar bilan asl koreys sonlari (*한, 두, 세…*) ishlatiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Счётное",
+        "en": "Counter",
+        "uz": "Sanoq so'zi"
+       },
+       {
+        "ru": "Для чего",
+        "en": "For",
+        "uz": "Nima uchun"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "개",
+        {
+         "ru": "вещи вообще",
+         "en": "things in general",
+         "uz": "umuman narsalar"
+        },
+        "사과 두 개"
+       ],
+       [
+        "명",
+        {
+         "ru": "люди",
+         "en": "people",
+         "uz": "odamlar"
+        },
+        "학생 세 명"
+       ],
+       [
+        "마리",
+        {
+         "ru": "животные",
+         "en": "animals",
+         "uz": "hayvonlar"
+        },
+        "고양이 한 마리"
+       ],
+       [
+        "잔",
+        {
+         "ru": "чашки, стаканы",
+         "en": "cups, glasses",
+         "uz": "piyola, stakan"
+        },
+        "커피 두 잔"
+       ],
+       [
+        "권",
+        {
+         "ru": "книги",
+         "en": "books",
+         "uz": "kitoblar"
+        },
+        "책 다섯 권"
+       ],
+       [
+        "병",
+        {
+         "ru": "бутылки",
+         "en": "bottles",
+         "uz": "shishalar"
+        },
+        "물 한 병"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Если не знаешь нужное счётное слово, *개* подойдёт почти для любых предметов — тебя поймут.",
+      "en": "If unsure, *개* works for most objects — you'll be understood.",
+      "uz": "Kerakli sanoq so'zini bilmasangiz, *개* deyarli har qanday narsaga mos keladi — sizni tushunishadi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "커피 *두 잔* 주세요.",
+       "t": {
+        "ru": "Два кофе, пожалуйста.",
+        "uz": "Ikki piyola qahva bering, iltimos.",
+        "en": "Two coffees, please."
+       }
+      },
+      {
+       "s": "우리 반에 학생이 *스무 명* 있어요.",
+       "t": {
+        "ru": "В нашем классе двадцать учеников.",
+        "uz": "Sinfimizda yigirma nafar o'quvchi bor.",
+        "en": "There are twenty students in our class."
+       }
+      },
+      {
+       "s": "고양이가 *몇 마리* 있어요?",
+       "t": {
+        "ru": "Сколько у тебя кошек?",
+        "uz": "Nechta mushuging bor?",
+        "en": "How many cats do you have?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2934,6 +4406,159 @@
     "en": "The question word goes where the answer goes; “who” as subject is 누가.",
     "uz": "So'roq so'zi javob o'rnida; ega bo'lgan «kim» — 누가."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Вопросительные слова",
+      "en": "Question words",
+      "uz": "So'roq so'zlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Корейские вопросительные слова стоят не в начале, как в русском или английском, а _на месте ответа_ — как в узбекском. «Ты куда идёшь?» — *어디에 가요?* — Qayerga ketyapsan? Ответ ставится на то же место: *학교에 가요* — Maktabga ketyapman.",
+      "en": "Korean question words stay where the answer would be, not at the front: *어디에 가요?* → *학교에 가요.*",
+      "uz": "Koreys so'roq so'zlari rus yoki ingliz tilidagidek boshida emas, o'zbek tilidagidek _javob o'rnida_ turadi. *어디에 가요?* — Qayerga ketyapsan? Javob ham shu o'ringa qo'yiladi: *학교에 가요* — Maktabga ketyapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "뭐 / 무엇",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "뭐 먹어요?"
+       ],
+       [
+        "누구",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "누구예요?"
+       ],
+       [
+        "어디",
+        {
+         "ru": "где, куда",
+         "en": "where",
+         "uz": "qayer"
+        },
+        "어디에 살아요?"
+       ],
+       [
+        "언제",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "언제 와요?"
+       ],
+       [
+        "왜",
+        {
+         "ru": "почему",
+         "en": "why",
+         "uz": "nega"
+        },
+        "왜 웃어요?"
+       ],
+       [
+        "어떻게",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday qilib"
+        },
+        "어떻게 가요?"
+       ],
+       [
+        "몇",
+        {
+         "ru": "сколько (с числом)",
+         "en": "how many",
+         "uz": "nechta"
+        },
+        "몇 살이에요?"
+       ],
+       [
+        "얼마",
+        {
+         "ru": "сколько стоит",
+         "en": "how much (price)",
+         "uz": "qancha (narx)"
+        },
+        "얼마예요?"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*누구* в роли подлежащего становится *누가*: *누가 왔어요?* — Кто пришёл? *몇* всегда идёт со счётным словом: *몇 시* (который час), *몇 명* (сколько человек), *몇 살* (сколько лет).",
+      "en": "*누구* as subject becomes *누가*. *몇* always takes a counter: *몇 시, 몇 명, 몇 살*.",
+      "uz": "*누구* ega vazifasida *누가* ga aylanadi: *누가 왔어요?* — Kim keldi? *몇* doim sanoq so'zi bilan keladi: *몇 시* (soat necha), *몇 명* (necha kishi), *몇 살* (necha yosh)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "이름이 *뭐*예요?",
+       "t": {
+        "ru": "Как тебя зовут?",
+        "uz": "Isming nima?",
+        "en": "What's your name?"
+       }
+      },
+      {
+       "s": "화장실이 *어디*예요?",
+       "t": {
+        "ru": "Где туалет?",
+        "uz": "Hojatxona qayerda?",
+        "en": "Where's the toilet?"
+       }
+      },
+      {
+       "s": "생일이 *언제*예요?",
+       "t": {
+        "ru": "Когда у тебя день рождения?",
+        "uz": "Tug'ilgan kuning qachon?",
+        "en": "When's your birthday?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вопросительная интонация в корейском поднимается в конце, а окончание *-요* остаётся тем же: *가요.* (иду) — *가요?* (идёшь?).",
+      "en": "Questions keep the same *-요* ending with rising intonation: *가요.* / *가요?*",
+      "uz": "Koreys tilida so'roq ohangi oxirida ko'tariladi, *-요* qo'shimchasi esa o'zgarmaydi: *가요.* (boraman) — *가요?* (borasanmi?)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

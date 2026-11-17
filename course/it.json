@@ -77,6 +77,162 @@
     "en": "sono-sei-è-siamo-siete-sono; ho-hai-ha-abbiamo-avete-hanno.",
     "uz": "sono-sei-è-siamo-siete-sono; ho-hai-ha-abbiamo-avete-hanno."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два главных глагола",
+      "en": "The two key verbs",
+      "uz": "Ikki asosiy fe'l"
+     }
+    },
+    {
+     "p": {
+      "ru": "Итальянский читается почти так же, как пишется, и звучит очень похоже на русский по гласным. Начнём с двух самых важных глаголов: *essere* [эссере] — «быть» и *avere* [авэре] — «иметь». *Sono studente* — Я студент. *Ho un fratello* — У меня есть брат (дословно «имею брата»).",
+      "en": "Italian is read almost as it's written. Start with *essere* (to be) and *avere* (to have): *Sono studente*, *Ho un fratello*.",
+      "uz": "Italyan tili deyarli qanday yozilsa, shunday o'qiladi. Ikki eng muhim fe'ldan boshlaymiz: *essere* [essere] — «bo'lmoq» va *avere* [avere] — «ega bo'lmoq». *Sono studente* — Men talabaman. *Ho un fratello* — Mening akam bor (so'zma-so'z «akaga egaman»)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "essere",
+       "avere"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "io — я",
+         "en": "io — I",
+         "uz": "io — men"
+        },
+        "sono",
+        "ho"
+       ],
+       [
+        {
+         "ru": "tu — ты",
+         "en": "tu — you",
+         "uz": "tu — sen"
+        },
+        "sei",
+        "hai"
+       ],
+       [
+        {
+         "ru": "lui / lei — он / она / Вы",
+         "en": "lui / lei — he / she / you (polite)",
+         "uz": "lui / lei — u / Siz"
+        },
+        "è",
+        "ha"
+       ],
+       [
+        {
+         "ru": "noi — мы",
+         "en": "noi — we",
+         "uz": "noi — biz"
+        },
+        "siamo",
+        "abbiamo"
+       ],
+       [
+        {
+         "ru": "voi — вы",
+         "en": "voi — you (pl.)",
+         "uz": "voi — sizlar"
+        },
+        "siete",
+        "avete"
+       ],
+       [
+        {
+         "ru": "loro — они",
+         "en": "loro — they",
+         "uz": "loro — ular"
+        },
+        "sono",
+        "hanno"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимение можно опустить",
+      "en": "You can drop the pronoun",
+      "uz": "Olmoshni tushirish mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в узбекском и испанском, форма глагола сама показывает лицо, поэтому *io, tu, lui* обычно не говорят: *Sono stanco* — Я устал. Вежливое «Вы» — *Lei* (с большой буквы), с формой третьего лица: *Lei è italiano?* — Вы итальянец?",
+      "en": "The verb shows the person, so pronouns are usually dropped: *Sono stanco.* Polite “you” is *Lei* with the third-person form.",
+      "uz": "O'zbek tilidagidek, fe'l shaklining o'zi shaxsni ko'rsatadi, shuning uchun *io, tu, lui* odatda aytilmaydi: *Sono stanco* — Charchadim. Hurmat bilan «Siz» — *Lei* (katta harf bilan), uchinchi shaxs shakli bilan: *Lei è italiano?* — Siz italyanmisiz?"
+     }
+    },
+    {
+     "h": {
+      "ru": "Произношение: h не читается",
+      "en": "Pronunciation: h is silent",
+      "uz": "Talaffuz: h o'qilmaydi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*H* в начале слова никогда не читается: *ho* [о], *hai* [аи], *ha* [а], *hanno* [анно]. Она нужна, только чтобы отличать на письме *ho* (имею) от *o* (или), *ha* (имеет) от *a* (в). *È* (есть) с ударением — не путать с *e* (и).",
+      "en": "*H* is always silent: *ho, hai, ha, hanno*. It just distinguishes *ho* (have) from *o* (or), *ha* from *a* (to). *È* (is) ≠ *e* (and).",
+      "uz": "So'z boshidagi *h* hech qachon o'qilmaydi: *ho* [o], *hai* [ai], *ha* [a], *hanno* [anno]. U faqat yozuvda *ho* (egaman) ni *o* (yoki) dan, *ha* (ega) ni *a* (-ga) dan farqlash uchun kerak. Urg'uli *è* (… dir) ni *e* (va) bilan adashtirmang."
+     }
+    },
+    {
+     "note": {
+      "ru": "Возраст и ощущения — через *avere*: *Ho 18 anni* — Мне 18 лет. *Ho fame* — Я голоден, *ho sete* — хочу пить, *ho freddo* — мне холодно, *ho sonno* — хочу спать.",
+      "en": "Age and feelings use *avere*: *Ho 18 anni*, *ho fame*, *ho sete*, *ho freddo*, *ho sonno*.",
+      "uz": "Yosh va his-tuyg'ular *avere* orqali aytiladi: *Ho 18 anni* — 18 yoshdaman. *Ho fame* — Qornim och, *ho sete* — Chanqadim, *ho freddo* — Sovqotyapman, *ho sonno* — Uyqum keldi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Sono* di Tashkent.",
+       "t": {
+        "ru": "Я из Ташкента.",
+        "uz": "Men Toshkentdanman.",
+        "en": "I'm from Tashkent."
+       }
+      },
+      {
+       "s": "Mia sorella *è* medico.",
+       "t": {
+        "ru": "Моя сестра — врач.",
+        "uz": "Opam shifokor.",
+        "en": "My sister is a doctor."
+       }
+      },
+      {
+       "s": "*Abbiamo* una casa grande.",
+       "t": {
+        "ru": "У нас большой дом.",
+        "uz": "Bizning uyimiz katta.",
+        "en": "We have a big house."
+       }
+      },
+      {
+       "s": "Quanti anni *hai*? — *Ho* venti anni.",
+       "t": {
+        "ru": "Сколько тебе лет? — Двадцать.",
+        "uz": "Necha yoshdasan? — Yigirmada.",
+        "en": "How old are you? — Twenty."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -340,6 +496,149 @@
     "en": "il/la — the usual ones; lo — s+consonant, z, gn, ps; l' — before a vowel.",
     "uz": "il/la — oddiy; lo — s+undosh, z, gn, ps; l' — unli oldida."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мужской и женский род",
+      "en": "Masculine and feminine",
+      "uz": "Erkak va ayol jinsi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В итальянском у каждого существительного есть род: мужской или женский. Часто его видно по окончанию: на *-o* — обычно мужской (*il libro*), на *-a* — обычно женский (*la casa*). Слова на *-e* бывают обоих родов: *il pane* (хлеб), *la notte* (ночь).",
+      "en": "Every Italian noun is masculine or feminine. *-o* is usually masculine, *-a* feminine; *-e* can be either.",
+      "uz": "Italyan tilida har bir otning jinsi bor: erkak yoki ayol. Ko'pincha uni oxiridan bilish mumkin: *-o* — odatda erkak (*il libro*), *-a* — odatda ayol (*la casa*). *-e* bilan tugaydiganlar ikkalasi ham bo'ladi: *il pane* (non), *la notte* (tun)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Много артиклей — но есть логика",
+      "en": "Several articles — but there's logic",
+      "uz": "Artikllar ko'p — lekin mantiq bor"
+     }
+    },
+    {
+     "p": {
+      "ru": "В итальянском артикль выбирают не только по роду, но и по _первому звуку_ следующего слова. Так удобнее произносить. Особая группа — слова на _s + согласная_, *z*, *gn*, *ps*: перед ними мужской артикль *lo / uno*.",
+      "en": "Italian articles depend on gender and on the first sound of the next word. Words starting with *s + consonant*, *z*, *gn*, *ps* take *lo / uno*.",
+      "uz": "Italyan tilida artikl faqat jinsga qarab emas, keyingi so'zning _birinchi tovushiga_ qarab ham tanlanadi. Shunday aytish qulayroq. Alohida guruh — *s + undosh*, *z*, *gn*, *ps* bilan boshlanadigan so'zlar: ular oldidan erkak artikli *lo / uno* keladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Когда",
+        "en": "When",
+        "uz": "Qachon"
+       },
+       {
+        "ru": "Тот самый",
+        "en": "the",
+        "uz": "Aynan o'sha"
+       },
+       {
+        "ru": "Какой-то",
+        "en": "a / an",
+        "uz": "Qandaydir"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "муж., обычно",
+         "en": "masc., usual",
+         "uz": "erkak, odatda"
+        },
+        "il",
+        "un",
+        "il libro, un libro"
+       ],
+       [
+        {
+         "ru": "муж., s+согл., z",
+         "en": "masc., s+cons., z",
+         "uz": "erkak, s+undosh, z"
+        },
+        "lo",
+        "uno",
+        "lo studente, uno zaino"
+       ],
+       [
+        {
+         "ru": "муж., гласная",
+         "en": "masc., vowel",
+         "uz": "erkak, unli"
+        },
+        "l'",
+        "un",
+        "l'amico, un amico"
+       ],
+       [
+        {
+         "ru": "жен.",
+         "en": "fem.",
+         "uz": "ayol"
+        },
+        "la",
+        "una",
+        "la casa, una casa"
+       ],
+       [
+        {
+         "ru": "жен., гласная",
+         "en": "fem., vowel",
+         "uz": "ayol, unli"
+        },
+        "l'",
+        "un'",
+        "l'amica, un'amica"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Обрати внимание: *un amico* (друг) пишется без апострофа, а *un'amica* (подруга) — с апострофом. Апостроф появляется только у женского рода.",
+      "en": "*Un amico* (male friend) has no apostrophe; *un'amica* (female friend) does.",
+      "uz": "E'tibor bering: *un amico* (do'st, erkak) apostrofsiz, *un'amica* (dugona) esa apostrof bilan yoziladi. Apostrof faqat ayol jinsida paydo bo'ladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ho *un* cane. *Il* cane si chiama Leo.",
+       "t": {
+        "ru": "У меня есть собака. Собаку зовут Лео.",
+        "uz": "Mening itim bor. Itning ismi Leo.",
+        "en": "I have a dog. The dog is called Leo."
+       }
+      },
+      {
+       "s": "*Lo* zaino è sul tavolo.",
+       "t": {
+        "ru": "Рюкзак на столе.",
+        "uz": "Ryukzak stol ustida.",
+        "en": "The backpack is on the table."
+       }
+      },
+      {
+       "s": "*L'*acqua è fredda.",
+       "t": {
+        "ru": "Вода холодная.",
+        "uz": "Suv sovuq.",
+        "en": "The water is cold."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -605,6 +904,138 @@
     "en": "-are: o-i-a-iamo-ate-ano; -ere/-ire: o-i-e-iamo-ete/ite-ono.",
     "uz": "-are: o-i-a-iamo-ate-ano; -ere/-ire: o-i-e-iamo-ete/ite-ono."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Три группы глаголов",
+      "en": "Three verb groups",
+      "uz": "Uchta fe'l guruhi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Итальянские глаголы в начальной форме кончаются на *-are*, *-ere* или *-ire*: *parlare* — говорить, *scrivere* — писать, *dormire* — спать. В настоящем отрезаем окончание и добавляем новое, по лицу — как в узбекском: *gapir-aman, gapir-asan*.",
+      "en": "Italian infinitives end in *-are, -ere, -ire*. In the present, drop the ending and add a personal one.",
+      "uz": "Italyan fe'llari boshlang'ich shaklda *-are*, *-ere* yoki *-ire* bilan tugaydi: *parlare* — gapirmoq, *scrivere* — yozmoq, *dormire* — uxlamoq. Hozirgi zamonda oxirini kesib, shaxsga qarab yangisini qo'shamiz — xuddi o'zbek tilidagidek: *gapir-aman, gapir-asan*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "parlare",
+       "scrivere",
+       "dormire"
+      ],
+      "rows": [
+       [
+        "io",
+        "parlo",
+        "scrivo",
+        "dormo"
+       ],
+       [
+        "tu",
+        "parli",
+        "scrivi",
+        "dormi"
+       ],
+       [
+        "lui / lei",
+        "parla",
+        "scrive",
+        "dorme"
+       ],
+       [
+        "noi",
+        "parliamo",
+        "scriviamo",
+        "dormiamo"
+       ],
+       [
+        "voi",
+        "parlate",
+        "scrivete",
+        "dormite"
+       ],
+       [
+        "loro",
+        "parlano",
+        "scrivono",
+        "dormono"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Удобно: у *io* всегда *-o*, у *tu* всегда *-i*, у *noi* всегда *-iamo* — для всех трёх групп. Различаются только «он», «вы» и «они».",
+      "en": "Handy: *io* always ends in *-o*, *tu* in *-i*, *noi* in *-iamo* for all three groups.",
+      "uz": "Qulay: *io* da doim *-o*, *tu* da doim *-i*, *noi* da doim *-iamo* — uchala guruh uchun. Faqat «u», «sizlar» va «ular» farq qiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые глаголы на *-ire* добавляют *-isc-* в «сапожке» (кроме *noi* и *voi*): *finire → finisco, finisci, finisce, finiamo, finite, finiscono*. Такие же: *capire* (понимать), *preferire* (предпочитать).",
+      "en": "Some *-ire* verbs add *-isc-*: *finisco, capisco, preferisco* (not in *noi / voi*).",
+      "uz": "*-ire* bilan tugaydigan ba'zi fe'llar *noi* va *voi* dan tashqari *-isc-* qo'shadi: *finire → finisco, finisci, finisce, finiamo, finite, finiscono*. Shunday fe'llar: *capire* (tushunmoq), *preferire* (afzal ko'rmoq)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Ударение у loro",
+      "en": "Stress in the loro form",
+      "uz": "loro shaklida urg'u"
+     }
+    },
+    {
+     "p": {
+      "ru": "В форме *loro* ударение падает на _третий_ слог с конца: *PAR-la-no*, *SCRI-vo-no*, *DOR-mo-no*. Это частая ошибка начинающих — не ставь ударение на *-no*.",
+      "en": "In the *loro* form, stress falls on the third syllable from the end: *PAR-la-no*, not on *-no*.",
+      "uz": "*loro* shaklida urg'u oxiridan _uchinchi_ bo'g'inga tushadi: *PAR-la-no*, *SCRI-vo-no*, *DOR-mo-no*. Bu boshlovchilarning keng tarqalgan xatosi — urg'uni *-no* ga qo'ymang."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Parlo* un po' d'italiano.",
+       "t": {
+        "ru": "Я немного говорю по-итальянски.",
+        "uz": "Men biroz italyancha gapiraman.",
+        "en": "I speak a little Italian."
+       }
+      },
+      {
+       "s": "Dove *abiti*?",
+       "t": {
+        "ru": "Где ты живёшь?",
+        "uz": "Qayerda yashaysan?",
+        "en": "Where do you live?"
+       }
+      },
+      {
+       "s": "*Capisco* tutto.",
+       "t": {
+        "ru": "Я всё понимаю.",
+        "uz": "Hammasini tushunaman.",
+        "en": "I understand everything."
+       }
+      },
+      {
+       "s": "I bambini *dormono*.",
+       "t": {
+        "ru": "Дети спят.",
+        "uz": "Bolalar uxlayapti.",
+        "en": "The children are sleeping."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -867,6 +1298,173 @@
     "en": "-o → -i, -a → -e, -e → -i; città, caffè, film don't change.",
     "uz": "-o → -i, -a → -e, -e → -i; città, caffè, film o'zgarmaydi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Множественное число — меняем гласную",
+      "en": "Plurals — change the vowel",
+      "uz": "Ko'plik — unlini almashtiramiz"
+     }
+    },
+    {
+     "p": {
+      "ru": "В итальянском множественное число образуют не добавлением *-s*, как в английском или испанском, а _заменой последней гласной_. Это проще, чем кажется: всего три правила.",
+      "en": "Italian plurals change the last vowel instead of adding *-s*. Just three rules.",
+      "uz": "Italyan tilida ko'plik ingliz yoki ispan tilidagidek *-s* qo'shish bilan emas, _oxirgi unlini almashtirish_ bilan yasaladi. Bu ko'ringanidan osonroq: bor-yo'g'i uchta qoida."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Ед. ч.",
+        "en": "Singular",
+        "uz": "Birlik"
+       },
+       {
+        "ru": "Мн. ч.",
+        "en": "Plural",
+        "uz": "Ko'plik"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "-o (м.)",
+         "en": "-o (m.)",
+         "uz": "-o (erkak)"
+        },
+        "-i",
+        "il libro → i libri"
+       ],
+       [
+        {
+         "ru": "-a (ж.)",
+         "en": "-a (f.)",
+         "uz": "-a (ayol)"
+        },
+        "-e",
+        "la casa → le case"
+       ],
+       [
+        {
+         "ru": "-e (м. / ж.)",
+         "en": "-e (m. / f.)",
+         "uz": "-e (erkak / ayol)"
+        },
+        "-i",
+        "il fiore → i fiori, la notte → le notti"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Артикли во множественном",
+      "en": "Plural articles",
+      "uz": "Ko'plikdagi artikllar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Мужской род: *il → i*, *lo / l' → gli*. Женский род: *la / l' → le*. *Gli* читается как [льи] — мягкое «ль», как в русском «льётся».",
+      "en": "Masculine: *il → i*, *lo / l' → gli*. Feminine: *la / l' → le*. *Gli* sounds like a soft “lyi”.",
+      "uz": "Erkak jinsi: *il → i*, *lo / l' → gli*. Ayol jinsi: *la / l' → le*. *Gli* [lyi] deb o'qiladi — yumshoq «l»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Ед. ч.",
+        "en": "Singular",
+        "uz": "Birlik"
+       },
+       {
+        "ru": "Мн. ч.",
+        "en": "Plural",
+        "uz": "Ko'plik"
+       }
+      ],
+      "rows": [
+       [
+        "il ragazzo",
+        "i ragazzi"
+       ],
+       [
+        "lo studente",
+        "gli studenti"
+       ],
+       [
+        "l'amico",
+        "gli amici"
+       ],
+       [
+        "la ragazza",
+        "le ragazze"
+       ],
+       [
+        "l'amica",
+        "le amiche"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Исключения",
+      "en": "Exceptions",
+      "uz": "Istisnolar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Не меняются слова с ударением на последнем слоге (*la città → le città*, *il caffè → i caffè*), иностранные (*il bar → i bar*, *il film → i film*) и сокращённые (*la foto → le foto*). Особые: *l'uomo → gli uomini* (люди), *la mano → le mani* (руки).",
+      "en": "No change: stressed final vowel (*città*), foreign words (*bar, film*), short forms (*foto*). Special: *uomo → uomini*, *mano → mani*.",
+      "uz": "Oxirgi bo'g'inga urg'u tushadigan so'zlar (*la città → le città*, *il caffè → i caffè*), chet so'zlar (*il bar → i bar*, *il film → i film*) va qisqartirilganlar (*la foto → le foto*) o'zgarmaydi. Alohidalari: *l'uomo → gli uomini* (odamlar), *la mano → le mani* (qo'llar)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ho due *fratelli*.",
+       "t": {
+        "ru": "У меня два брата.",
+        "uz": "Mening ikkita akam bor.",
+        "en": "I have two brothers."
+       }
+      },
+      {
+       "s": "*Le* ragazze sono simpatiche.",
+       "t": {
+        "ru": "Девушки милые.",
+        "uz": "Qizlar yoqimli.",
+        "en": "The girls are nice."
+       }
+      },
+      {
+       "s": "Mi piacciono *le città* italiane.",
+       "t": {
+        "ru": "Мне нравятся итальянские города.",
+        "uz": "Italyan shaharlari menga yoqadi.",
+        "en": "I like Italian cities."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Слова на *-ca, -ga* добавляют *h*, чтобы сохранить твёрдый звук: *l'amica → le amiche*, *la riga → le righe*.",
+      "en": "*-ca, -ga* add *h* to keep the hard sound: *amiche, righe*.",
+      "uz": "*-ca, -ga* bilan tugaydigan so'zlar qattiq tovushni saqlash uchun *h* qo'shadi: *l'amica → le amiche*, *la riga → le righe*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1130,6 +1728,133 @@
     "en": "casa → piccola, libro → piccolo; with -e gender doesn't matter: grande, grandi.",
     "uz": "casa → piccola, libro → piccolo; -e da jins muhim emas: grande, grandi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Прилагательные согласуются",
+      "en": "Adjectives agree",
+      "uz": "Sifatlar moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Итальянское прилагательное меняется вслед за существительным по роду и числу, как в русском («новый дом — новая машина»). В узбекском прилагательное не меняется, поэтому здесь нужна привычка.",
+      "en": "Italian adjectives agree with the noun in gender and number.",
+      "uz": "Italyan tilida sifat ot bilan jins va son bo'yicha moslashadi. O'zbek tilida sifat o'zgarmaydi («yangi uy — yangi mashina»), shuning uchun bu yerda ko'nikma kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "на -o",
+         "en": "in -o",
+         "uz": "-o bilan"
+        },
+        "alto",
+        "alta",
+        "alti",
+        "alte"
+       ],
+       [
+        {
+         "ru": "на -e",
+         "en": "in -e",
+         "uz": "-e bilan"
+        },
+        "grande",
+        "grande",
+        "grandi",
+        "grandi"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Прилагательные на *-o* имеют четыре формы, а на *-e* — только две: *-e* для единственного и *-i* для множественного, независимо от рода. *Un ragazzo intelligente, una ragazza intelligente, ragazzi intelligenti*.",
+      "en": "*-o* adjectives have four forms; *-e* adjectives only two (*-e / -i*), whatever the gender.",
+      "uz": "*-o* bilan tugaydigan sifatlarning to'rtta shakli bor, *-e* bilan tugaydiganlarniki esa faqat ikkita: birlik uchun *-e*, ko'plik uchun *-i*, jinsdan qat'i nazar. *Un ragazzo intelligente, una ragazza intelligente, ragazzi intelligenti*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Место прилагательного",
+      "en": "Where it goes",
+      "uz": "Qayerda turadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Обычно прилагательное стоит _после_ существительного: *una macchina rossa* — красная машина. Но несколько коротких частых слов любят стоять перед: *bello, buono, grande, piccolo, nuovo, vecchio*: *una bella giornata* — прекрасный день.",
+      "en": "Adjectives usually follow the noun (*una macchina rossa*), but short common ones often go before: *una bella giornata*.",
+      "uz": "Sifat odatda otdan _keyin_ turadi: *una macchina rossa* — qizil mashina. Lekin bir nechta qisqa va ko'p ishlatiladigan so'zlar oldidan turishni yaxshi ko'radi: *bello, buono, grande, piccolo, nuovo, vecchio*: *una bella giornata* — ajoyib kun."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ho una casa *piccola* ma *bella*.",
+       "t": {
+        "ru": "У меня маленький, но красивый дом.",
+        "uz": "Uyim kichkina, lekin chiroyli.",
+        "en": "I have a small but beautiful house."
+       }
+      },
+      {
+       "s": "I miei amici sono *simpatici*.",
+       "t": {
+        "ru": "Мои друзья милые.",
+        "uz": "Do'stlarim yoqimli.",
+        "en": "My friends are nice."
+       }
+      },
+      {
+       "s": "Che *bella* città!",
+       "t": {
+        "ru": "Какой красивый город!",
+        "uz": "Qanday chiroyli shahar!",
+        "en": "What a beautiful city!"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если прилагательное относится к группе из мужского и женского рода, берут мужскую форму множественного числа: *Marco e Anna sono stanchi*.",
+      "en": "For a mixed group, use the masculine plural: *Marco e Anna sono stanchi.*",
+      "uz": "Sifat erkak va ayol jinsidan iborat guruhga tegishli bo'lsa, erkak jinsining ko'plik shakli olinadi: *Marco e Anna sono stanchi*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1394,6 +2119,139 @@
     "en": "non + verb; mai, niente, nessuno come after the verb (double negation).",
     "uz": "non + fe'l; mai, niente, nessuno fe'ldan keyin (ikki karra inkor)."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Отрицание: просто non",
+      "en": "Negation: just non",
+      "uz": "Inkor: shunchaki non"
+     }
+    },
+    {
+     "p": {
+      "ru": "Отрицание в итальянском очень простое: перед глаголом ставят *non*. *Parlo inglese* → *Non parlo inglese* — Я не говорю по-английски. Никаких помощников, как английское *do*.",
+      "en": "Italian negation is simple: *non* before the verb. *Non parlo inglese.*",
+      "uz": "Italyan tilida inkor juda oddiy: fe'l oldidan *non* qo'yiladi. *Parlo inglese* → *Non parlo inglese* — Men inglizcha gapirmayman. Ingliz tilidagi *do* kabi yordamchilar yo'q."
+     }
+    },
+    {
+     "h": {
+      "ru": "Двойное отрицание — норма",
+      "en": "Double negatives are normal",
+      "uz": "Qo'sh inkor — me'yor"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в русском («я ничего не знаю») и узбекском («hech narsa bilmayman»), в итальянском отрицательные слова идут вместе с *non*: *Non so niente*. Это не ошибка, а правило.",
+      "en": "Negative words go together with *non*: *Non so niente* — I don't know anything.",
+      "uz": "O'zbek tilidagidek («hech narsa bilmayman»), italyan tilida inkor so'zlar *non* bilan birga keladi: *Non so niente*. Bu xato emas, qoida."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "non … mai",
+        {
+         "ru": "никогда",
+         "en": "never",
+         "uz": "hech qachon"
+        },
+        "Non bevo mai caffè."
+       ],
+       [
+        "non … niente / nulla",
+        {
+         "ru": "ничего",
+         "en": "nothing",
+         "uz": "hech narsa"
+        },
+        "Non capisco niente."
+       ],
+       [
+        "non … nessuno",
+        {
+         "ru": "никто, никого",
+         "en": "no one",
+         "uz": "hech kim"
+        },
+        "Non c'è nessuno."
+       ],
+       [
+        "non … più",
+        {
+         "ru": "больше не",
+         "en": "no longer",
+         "uz": "endi … emas"
+        },
+        "Non abito più qui."
+       ],
+       [
+        "non … ancora",
+        {
+         "ru": "ещё не",
+         "en": "not yet",
+         "uz": "hali … emas"
+        },
+        "Non ho ancora mangiato."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если *niente, nessuno, mai* стоят _перед_ глаголом, *non* не нужно: *Nessuno è venuto* — Никто не пришёл. *Mai* — «никогда»: *Mai più!* — Больше никогда!",
+      "en": "If *niente, nessuno, mai* come before the verb, drop *non*: *Nessuno è venuto.*",
+      "uz": "*niente, nessuno, mai* fe'ldan _oldin_ tursa, *non* kerak emas: *Nessuno è venuto* — Hech kim kelmadi. *Mai più!* — Boshqa hech qachon!"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Non* ho tempo.",
+       "t": {
+        "ru": "У меня нет времени.",
+        "uz": "Vaqtim yo'q.",
+        "en": "I don't have time."
+       }
+      },
+      {
+       "s": "*Non* mangio *mai* carne.",
+       "t": {
+        "ru": "Я никогда не ем мясо.",
+        "uz": "Men hech qachon go'sht yemayman.",
+        "en": "I never eat meat."
+       }
+      },
+      {
+       "s": "*Non* conosco *nessuno* qui.",
+       "t": {
+        "ru": "Я здесь никого не знаю.",
+        "uz": "Bu yerda hech kimni tanimayman.",
+        "en": "I don't know anyone here."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1658,6 +2516,157 @@
     "en": "chi, che cosa, dove, quando, come, perché; quanto/quanti agree with the noun.",
     "uz": "chi, che cosa, dove, quando, come, perché; quanto/quanti otga moslashadi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Вопрос: та же фраза, другая интонация",
+      "en": "Questions: same words, rising voice",
+      "uz": "Savol: o'sha gap, boshqa ohang"
+     }
+    },
+    {
+     "p": {
+      "ru": "В итальянском вопрос «да/нет» часто звучит точно так же, как утверждение, — только голос поднимается в конце. *Parli italiano.* — Ты говоришь по-итальянски. *Parli italiano?* — Ты говоришь по-итальянски? Как в русском.",
+      "en": "Yes/no questions are often the same words as a statement, with rising intonation: *Parli italiano?*",
+      "uz": "Italyan tilida «ha/yo'q» savoli ko'pincha darak gap bilan aynan bir xil eshitiladi — faqat oxirida ovoz ko'tariladi. *Parli italiano.* — Sen italyancha gapirasan. *Parli italiano?* — Italyancha gapirasanmi?"
+     }
+    },
+    {
+     "h": {
+      "ru": "Вопросительные слова",
+      "en": "Question words",
+      "uz": "So'roq so'zlari"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "chi",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "Chi è?"
+       ],
+       [
+        "che cosa / cosa",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "Cosa fai?"
+       ],
+       [
+        "dove",
+        {
+         "ru": "где",
+         "en": "where",
+         "uz": "qayerda"
+        },
+        "Dove abiti?"
+       ],
+       [
+        "quando",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "Quando parti?"
+       ],
+       [
+        "come",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday"
+        },
+        "Come ti chiami?"
+       ],
+       [
+        "perché",
+        {
+         "ru": "почему / потому что",
+         "en": "why / because",
+         "uz": "nega / chunki"
+        },
+        "Perché studi l'italiano?"
+       ],
+       [
+        "quanto",
+        {
+         "ru": "сколько",
+         "en": "how much",
+         "uz": "qancha"
+        },
+        "Quanto costa?"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Вопросительное слово ставят в начало, а подлежащее часто уходит в конец: *Dove abita Marco?* — Где живёт Марко? *Chi* читается [ки] (*ch* перед *i, e* = [к]), а *che* — [кэ].",
+      "en": "The question word goes first; the subject often moves to the end: *Dove abita Marco?* Note *chi* = [ki], *che* = [ke].",
+      "uz": "So'roq so'zi boshiga qo'yiladi, ega esa ko'pincha oxirga ketadi: *Dove abita Marco?* — Marko qayerda yashaydi? *Chi* [ki] deb o'qiladi (*i, e* oldidagi *ch* = [k]), *che* esa — [ke]."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Perché* значит и «почему», и «потому что»: *Perché ridi? — Perché sono felice* — Почему ты смеёшься? — Потому что я счастлив.",
+      "en": "*Perché* means both “why” and “because”.",
+      "uz": "*Perché* ham «nega», ham «chunki» degani: *Perché ridi? — Perché sono felice* — Nega kulyapsan? — Chunki baxtliman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Come* stai?",
+       "t": {
+        "ru": "Как дела?",
+        "uz": "Qalaysan?",
+        "en": "How are you?"
+       }
+      },
+      {
+       "s": "*Dove* è la stazione?",
+       "t": {
+        "ru": "Где вокзал?",
+        "uz": "Vokzal qayerda?",
+        "en": "Where is the station?"
+       }
+      },
+      {
+       "s": "*Quando* arriva il treno?",
+       "t": {
+        "ru": "Когда приходит поезд?",
+        "uz": "Poyezd qachon keladi?",
+        "en": "When does the train arrive?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1920,6 +2929,154 @@
     "en": "vado-vai-va-andiamo-andate-vanno; faccio-fai-fa-facciamo-fate-fanno.",
     "uz": "vado-vai-va-andiamo-andate-vanno; faccio-fai-fa-facciamo-fate-fanno."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Самые нужные неправильные глаголы",
+      "en": "The most useful irregular verbs",
+      "uz": "Eng kerakli noto'g'ri fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Несколько очень частых итальянских глаголов не следуют правилам. Их надо выучить, зато они встречаются в каждом разговоре.",
+      "en": "A few very common Italian verbs are irregular. Learn them — they appear in every conversation.",
+      "uz": "Bir nechta juda ko'p ishlatiladigan italyan fe'llari qoidalarga bo'ysunmaydi. Ularni yodlash kerak, lekin ular har bir suhbatda uchraydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "andare (идти)",
+        "en": "andare (go)",
+        "uz": "andare (bormoq)"
+       },
+       {
+        "ru": "fare (делать)",
+        "en": "fare (do)",
+        "uz": "fare (qilmoq)"
+       },
+       {
+        "ru": "stare (быть, находиться)",
+        "en": "stare (stay, be)",
+        "uz": "stare (turmoq, bo'lmoq)"
+       },
+       {
+        "ru": "venire (приходить)",
+        "en": "venire (come)",
+        "uz": "venire (kelmoq)"
+       }
+      ],
+      "rows": [
+       [
+        "io",
+        "vado",
+        "faccio",
+        "sto",
+        "vengo"
+       ],
+       [
+        "tu",
+        "vai",
+        "fai",
+        "stai",
+        "vieni"
+       ],
+       [
+        "lui / lei",
+        "va",
+        "fa",
+        "sta",
+        "viene"
+       ],
+       [
+        "noi",
+        "andiamo",
+        "facciamo",
+        "stiamo",
+        "veniamo"
+       ],
+       [
+        "voi",
+        "andate",
+        "fate",
+        "state",
+        "venite"
+       ],
+       [
+        "loro",
+        "vanno",
+        "fanno",
+        "stanno",
+        "vengono"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Stare — особый глагол",
+      "en": "Stare — a special verb",
+      "uz": "Stare — alohida fe'l"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Stare* похож на испанский *estar*: им говорят о самочувствии — *Come stai?* (Как дела?), *Sto bene* (У меня всё хорошо), и о том, что происходит сейчас: *Sto mangiando* — Я сейчас ем.",
+      "en": "*Stare* is used for how you are (*Come stai? Sto bene*) and for actions in progress (*Sto mangiando*).",
+      "uz": "*Stare* kayfiyat haqida — *Come stai?* (Qalaysan?), *Sto bene* (Yaxshiman), va hozir bo'layotgan narsa haqida ishlatiladi: *Sto mangiando* — Hozir ovqatlanyapman."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Fare* очень многозначен: *fare colazione* (завтракать), *fare la spesa* (ходить за продуктами), *fare una foto* (фотографировать), *fa caldo* (жарко), *fa freddo* (холодно).",
+      "en": "*Fare* has many uses: *fare colazione, fare la spesa, fare una foto, fa caldo, fa freddo*.",
+      "uz": "*Fare* juda ko'p ma'noli: *fare colazione* (nonushta qilmoq), *fare la spesa* (oziq-ovqat xarid qilmoq), *fare una foto* (rasmga olmoq), *fa caldo* (issiq), *fa freddo* (sovuq)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Stasera *vado* al cinema.",
+       "t": {
+        "ru": "Сегодня вечером я иду в кино.",
+        "uz": "Bugun kechqurun kinoga boraman.",
+        "en": "Tonight I'm going to the cinema."
+       }
+      },
+      {
+       "s": "Cosa *fai* nel fine settimana?",
+       "t": {
+        "ru": "Что ты делаешь на выходных?",
+        "uz": "Dam olish kunlari nima qilasan?",
+        "en": "What do you do at the weekend?"
+       }
+      },
+      {
+       "s": "*Vieni* con noi?",
+       "t": {
+        "ru": "Пойдёшь с нами?",
+        "uz": "Biz bilan borasanmi?",
+        "en": "Are you coming with us?"
+       }
+      },
+      {
+       "s": "Oggi *fa* molto caldo.",
+       "t": {
+        "ru": "Сегодня очень жарко.",
+        "uz": "Bugun juda issiq.",
+        "en": "It's very hot today."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2182,6 +3339,130 @@
     "en": "c'è + singular, ci sono + plural.",
     "uz": "c'è + birlik, ci sono + ko'plik."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "C'è и ci sono: «есть, имеется»",
+      "en": "C'è and ci sono: “there is / are”",
+      "uz": "C'è va ci sono: «bor»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать, что где-то _что-то есть_, итальянцы используют *c'è* [чэ] для одного предмета и *ci sono* [чи соно] для многих. *C'è una farmacia qui vicino* — Здесь рядом есть аптека. Это как английское *there is / there are* и узбекское «bor».",
+      "en": "To say something exists somewhere: *c'è* (one) and *ci sono* (several). *C'è una farmacia qui vicino.*",
+      "uz": "Biror joyda _biror narsa borligini_ aytish uchun italyanlar bitta narsa uchun *c'è* [che], ko'p narsa uchun *ci sono* [chi sono] ishlatadi. *C'è una farmacia qui vicino* — Yaqin atrofda dorixona bor. Bu o'zbekcha «bor» ga o'xshaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Сколько",
+        "en": "How many",
+        "uz": "Qancha"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "один",
+         "en": "one",
+         "uz": "bitta"
+        },
+        "c'è",
+        "C'è un problema."
+       ],
+       [
+        {
+         "ru": "много",
+         "en": "several",
+         "uz": "ko'p"
+        },
+        "ci sono",
+        "Ci sono molti turisti."
+       ],
+       [
+        {
+         "ru": "нет",
+         "en": "none",
+         "uz": "yo'q"
+        },
+        "non c'è / non ci sono",
+        "Non c'è latte."
+       ],
+       [
+        {
+         "ru": "вопрос",
+         "en": "question",
+         "uz": "savol"
+        },
+        "C'è…? / Ci sono…?",
+        "C'è un bagno?"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ci* здесь значит «там, тут», а *è* — «есть». Перед *è* *ci* теряет *i* и получается *c'è*. Отрицание — *non* в начале: *Non c'è nessuno* — Никого нет.",
+      "en": "*Ci* means “there” and *è* “is”; *ci è* becomes *c'è*. Negative: *Non c'è nessuno.*",
+      "uz": "*Ci* bu yerda «u yerda, bu yerda», *è* esa «bor, … dir» degani. *è* oldidan *ci* *i* ni yo'qotib, *c'è* hosil bo'ladi. Inkor — boshida *non*: *Non c'è nessuno* — Hech kim yo'q."
+     }
+    },
+    {
+     "h": {
+      "ru": "C'è или è",
+      "en": "C'è or è",
+      "uz": "C'è yoki è"
+     }
+    },
+    {
+     "p": {
+      "ru": "*C'è* — когда сообщаем, что что-то _существует_ (часто с *un, una*). *È* — когда говорим, _где_ находится уже известный предмет: *Il bagno è in fondo* — Туалет в конце коридора.",
+      "en": "*C'è* introduces something new; *è* says where a known thing is: *Il bagno è in fondo.*",
+      "uz": "*C'è* — narsa _mavjudligini_ xabar qilganda (ko'pincha *un, una* bilan). *È* — ma'lum narsa _qayerda_ ekanini aytganda: *Il bagno è in fondo* — Hojatxona yo'lak oxirida."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*C'è* qualcuno a casa?",
+       "t": {
+        "ru": "Дома кто-нибудь есть?",
+        "uz": "Uyda kimdir bormi?",
+        "en": "Is anyone at home?"
+       }
+      },
+      {
+       "s": "Nel frigo *ci sono* tre uova.",
+       "t": {
+        "ru": "В холодильнике три яйца.",
+        "uz": "Muzlatgichda uchta tuxum bor.",
+        "en": "There are three eggs in the fridge."
+       }
+      },
+      {
+       "s": "Oggi *non c'è* lezione.",
+       "t": {
+        "ru": "Сегодня нет урока.",
+        "uz": "Bugun dars yo'q.",
+        "en": "There's no class today."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2449,6 +3730,163 @@
     "en": "mio/tuo/suo change with the gender of the thing; no article before singular family members.",
     "uz": "mio/tuo/suo narsa jinsiga qarab o'zgaradi; birlikdagi qarindoshlar oldida artikl yo'q."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мой, твой: il mio, la tua",
+      "en": "My, your: il mio, la tua",
+      "uz": "Mening, sening: il mio, la tua"
+     }
+    },
+    {
+     "p": {
+      "ru": "Особенность итальянского: перед притяжательным словом обычно стоит _артикль_. Не «мой дом», а «тот мой дом»: *la mia casa*, *il mio libro*. Притяжательное согласуется с _предметом_ по роду и числу.",
+      "en": "Italian puts an article before possessives: *la mia casa*, *il mio libro*. They agree with the thing owned.",
+      "uz": "Italyan tilining xususiyati: egalik so'zi oldidan odatda _artikl_ turadi. «Mening uyim» emas, «o'sha mening uyim»: *la mia casa*, *il mio libro*. Egalik so'zi _narsa_ bilan jins va son bo'yicha moslashadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Владелец",
+        "en": "Owner",
+        "uz": "Ega"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "I",
+         "uz": "men"
+        },
+        "il mio",
+        "la mia",
+        "i miei",
+        "le mie"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "il tuo",
+        "la tua",
+        "i tuoi",
+        "le tue"
+       ],
+       [
+        {
+         "ru": "он / она / Вы",
+         "en": "he / she / you (pol.)",
+         "uz": "u / Siz"
+        },
+        "il suo",
+        "la sua",
+        "i suoi",
+        "le sue"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "we",
+         "uz": "biz"
+        },
+        "il nostro",
+        "la nostra",
+        "i nostri",
+        "le nostre"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "il vostro",
+        "la vostra",
+        "i vostri",
+        "le vostre"
+       ],
+       [
+        {
+         "ru": "они",
+         "en": "they",
+         "uz": "ular"
+        },
+        "il loro",
+        "la loro",
+        "i loro",
+        "le loro"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Исключение — родственники в единственном числе: артикль не нужен. *Mia madre* (моя мама), *tuo fratello* (твой брат). Но во множественном — нужен: *i miei fratelli*. И с *loro* — всегда: *la loro madre*.",
+      "en": "Exception: no article with singular family members: *mia madre*, *tuo fratello*. But *i miei fratelli*, *la loro madre*.",
+      "uz": "Istisno — birlikdagi qarindoshlar: artikl kerak emas. *Mia madre* (onam), *tuo fratello* (akang). Lekin ko'plikda — kerak: *i miei fratelli*. *loro* bilan esa — doim: *la loro madre*."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Suo / sua* значит и «его», и «её» — как узбекское «uning». Выбор формы зависит только от рода предмета: *la sua macchina* — его или её машина.",
+      "en": "*Suo / sua* means both “his” and “her”; the form depends on the thing: *la sua macchina*.",
+      "uz": "*Suo / sua* ham «uning (erkak)», ham «uning (ayol)» degani — o'zbekcha «uning» kabi. Shakl faqat narsaning jinsiga bog'liq: *la sua macchina* — uning mashinasi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Il mio* telefono è nuovo.",
+       "t": {
+        "ru": "Мой телефон новый.",
+        "uz": "Telefonim yangi.",
+        "en": "My phone is new."
+       }
+      },
+      {
+       "s": "*Mia* sorella abita a Roma.",
+       "t": {
+        "ru": "Моя сестра живёт в Риме.",
+        "uz": "Opam Rimda yashaydi.",
+        "en": "My sister lives in Rome."
+       }
+      },
+      {
+       "s": "Dove sono *le tue* chiavi?",
+       "t": {
+        "ru": "Где твои ключи?",
+        "uz": "Kalitlaring qayerda?",
+        "en": "Where are your keys?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2713,6 +4151,162 @@
     "en": "Think of the article: il → quel, lo → quello, gli → quegli.",
     "uz": "Artiklni o'ylang: il → quel, lo → quello, gli → quegli."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Этот и тот",
+      "en": "This and that",
+      "uz": "Bu va anavi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Questo* — «этот» (рядом со мной), *quello* — «тот» (далеко). Оба согласуются с существительным по роду и числу.",
+      "en": "*Questo* — this (near me), *quello* — that (far). Both agree with the noun.",
+      "uz": "*Questo* — «bu» (yonimda), *quello* — «anavi» (uzoqda). Ikkalasi ham ot bilan jins va son bo'yicha moslashadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        "questo",
+        "questo",
+        "questa",
+        "questi",
+        "queste"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Questo* меняется просто, как обычное прилагательное на *-o*. А *quello* ведёт себя как артикль — его форма зависит от первого звука следующего слова: *quel libro* (как *il*), *quello studente* (как *lo*), *quell'amico* (как *l'*), *quei libri* (как *i*), *quegli studenti* (как *gli*).",
+      "en": "*Questo* changes like a normal adjective. *Quello* changes like the article: *quel libro, quello studente, quell'amico, quei libri, quegli studenti*.",
+      "uz": "*Questo* oddiy *-o* sifat kabi oson o'zgaradi. *quello* esa artikl kabi o'zini tutadi — shakli keyingi so'zning birinchi tovushiga bog'liq: *quel libro* (*il* kabi), *quello studente* (*lo* kabi), *quell'amico* (*l'* kabi), *quei libri* (*i* kabi), *quegli studenti* (*gli* kabi)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Как артикль",
+        "en": "Like the article",
+        "uz": "Artikl kabi"
+       },
+       {
+        "ru": "Форма quello",
+        "en": "Form of quello",
+        "uz": "quello shakli"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "il",
+        "quel",
+        "quel ragazzo"
+       ],
+       [
+        "lo",
+        "quello",
+        "quello zaino"
+       ],
+       [
+        "l'",
+        "quell'",
+        "quell'albero"
+       ],
+       [
+        "la",
+        "quella",
+        "quella casa"
+       ],
+       [
+        "i",
+        "quei",
+        "quei ragazzi"
+       ],
+       [
+        "gli",
+        "quegli",
+        "quegli amici"
+       ],
+       [
+        "le",
+        "quelle",
+        "quelle case"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Questa* pizza è buonissima.",
+       "t": {
+        "ru": "Эта пицца очень вкусная.",
+        "uz": "Bu pitsa juda mazali.",
+        "en": "This pizza is delicious."
+       }
+      },
+      {
+       "s": "Chi è *quel* ragazzo?",
+       "t": {
+        "ru": "Кто тот парень?",
+        "uz": "Anavi yigit kim?",
+        "en": "Who's that boy?"
+       }
+      },
+      {
+       "s": "*Questi* libri sono miei.",
+       "t": {
+        "ru": "Эти книги мои.",
+        "uz": "Bu kitoblar meniki.",
+        "en": "These books are mine."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Без существительного *quello* имеет полную форму: *Quale vuoi? — Quello* — Какой хочешь? — Тот.",
+      "en": "On its own, *quello* uses its full form: *Quale vuoi? — Quello.*",
+      "uz": "Otsiz *quello* to'liq shaklga ega: *Quale vuoi? — Quello* — Qaysi birini xohlaysan? — Anavisini."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2976,6 +4570,132 @@
     "en": "City — a, country — in, person — da.",
     "uz": "Shahar — a, mamlakat — in, odam — da."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Где и куда: a, in, da",
+      "en": "Where: a, in, da",
+      "uz": "Qayerda va qayerga: a, in, da"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как во французском, в итальянском одни и те же предлоги отвечают и на «где?», и на «куда?»: *Sono a Roma* (в Риме) и *Vado a Roma* (в Рим). Выбор зависит от типа места.",
+      "en": "The same prepositions answer “where” and “where to”: *Sono a Roma*, *Vado a Roma*. The type of place decides.",
+      "uz": "Italyan tilida bir xil predloglar ham «qayerda?», ham «qayerga?» savoliga javob beradi: *Sono a Roma* (Rimda) va *Vado a Roma* (Rimga). Tanlov joyning turiga bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Место",
+        "en": "Place",
+        "uz": "Joy"
+       },
+       {
+        "ru": "Предлог",
+        "en": "Preposition",
+        "uz": "Predlog"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "город",
+         "en": "city",
+         "uz": "shahar"
+        },
+        "a",
+        "a Milano, a Tashkent"
+       ],
+       [
+        {
+         "ru": "страна, регион",
+         "en": "country, region",
+         "uz": "mamlakat, viloyat"
+        },
+        "in",
+        "in Italia, in Uzbekistan"
+       ],
+       [
+        {
+         "ru": "помещения и места (часто без артикля)",
+         "en": "rooms and places (often no article)",
+         "uz": "xonalar va joylar (ko'pincha artiklsiz)"
+        },
+        "in",
+        "in banca, in cucina, in ufficio"
+       ],
+       [
+        {
+         "ru": "некоторые места",
+         "en": "some places",
+         "uz": "ba'zi joylar"
+        },
+        "a",
+        "a casa, a scuola, a letto"
+       ],
+       [
+        {
+         "ru": "к человеку, у кого-то",
+         "en": "to / at someone's",
+         "uz": "kimningdir oldiga, oldida"
+        },
+        "da",
+        "da Marco, dal medico"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Da* — особое слово, похожее на французское *chez*: «к кому-то, у кого-то». *Vado da mia nonna* — Я иду к бабушке. *Sono dal dentista* — Я у стоматолога. Как узбекское «-nikiga»: buvimnikiga.",
+      "en": "*Da* means “to / at someone's place”, like French *chez*: *Vado da mia nonna.*",
+      "uz": "*Da* — alohida so'z: «kimningdir oldiga, kimningdir oldida». *Vado da mia nonna* — Buvimnikiga boryapman. *Sono dal dentista* — Tish shifokori oldidaman. O'zbekcha «-nikiga» kabi."
+     }
+    },
+    {
+     "note": {
+      "ru": "*A casa* — «дома» и «домой», без артикля: *Sono a casa*, *Torno a casa*. Но *nella casa di Marco* — в доме Марко.",
+      "en": "*A casa* means “at home” and “home”, without an article.",
+      "uz": "*A casa* — «uyda» va «uyga», artiklsiz: *Sono a casa*, *Torno a casa*. Lekin *nella casa di Marco* — Markoning uyida."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Abito *a* Samarcanda, *in* Uzbekistan.",
+       "t": {
+        "ru": "Я живу в Самарканде, в Узбекистане.",
+        "uz": "Men O'zbekistonda, Samarqandda yashayman.",
+        "en": "I live in Samarkand, in Uzbekistan."
+       }
+      },
+      {
+       "s": "Stasera resto *a* casa.",
+       "t": {
+        "ru": "Сегодня вечером я остаюсь дома.",
+        "uz": "Bugun kechqurun uyda qolaman.",
+        "en": "Tonight I'm staying at home."
+       }
+      },
+      {
+       "s": "Domani vado *dal* medico.",
+       "t": {
+        "ru": "Завтра я иду к врачу.",
+        "uz": "Ertaga shifokorga boraman.",
+        "en": "Tomorrow I'm going to the doctor."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

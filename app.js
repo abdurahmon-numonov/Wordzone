@@ -1873,15 +1873,18 @@
     syncDisplayForm();
     // Charts measure their container in CSS pixels, which change with the text size.
     if ($('screen-progress').classList.contains('active')) renderProgress();
+    // The browser chrome (address bar, PWA title bar) takes the page colour of the chosen theme.
+    var meta = document.querySelector('meta[name="theme-color"]'), bg = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+    if (meta && bg) meta.setAttribute('content', bg);
   }
   function syncDisplayForm() {
-    document.querySelectorAll('input[name="dispTheme"]').forEach(function (r) { r.checked = r.value === display.theme; });
+    document.querySelectorAll('input[name="themePick"]').forEach(function (r) { r.checked = r.value === display.theme; });
     document.querySelectorAll('input[name="dispSize"]').forEach(function (r) { r.checked = r.value === display.size; });
     $('dispContrast').checked = display.contrast; $('dispSpacing').checked = display.spacing;
   }
   function readDisplayForm() {
     var pick = function (name) { var c = document.querySelector('input[name="' + name + '"]:checked'); return c ? c.value : null; };
-    return { theme: pick('dispTheme'), size: pick('dispSize'), contrast: $('dispContrast').checked, spacing: $('dispSpacing').checked };
+    return { theme: display.theme, size: pick('dispSize'), contrast: $('dispContrast').checked, spacing: $('dispSpacing').checked };
   }
   // Which of the 9 learning languages this device can actually pronounce.
   function renderVoiceCheck() {
@@ -1899,11 +1902,44 @@
   }
   function openDisplay() {
     renderVoiceCheck();
-    displayOpener = document.activeElement;
+    closeThemeMenu(false);
+    displayOpener = $('btnTheme'); // the link lives in the theme menu, which closes now
     syncDisplayForm();
     $('displayDialog').hidden = false;
-    var current = document.querySelector('input[name="dispTheme"]:checked');
+    var current = document.querySelector('input[name="dispSize"]:checked');
     if (current) current.focus();
+  }
+  /* Theme menu: five looks plus "follow the system". Picking one applies it at once; Esc, a click
+     outside or the button itself closes the menu and focus goes back to the button. */
+  function placeThemeMenu() {
+    var menu = $('themeMenu'), r = $('btnTheme').getBoundingClientRect();
+    if (menu.hidden) return;
+    var w = menu.offsetWidth, left = Math.min(Math.max(12, r.right - w), innerWidth - w - 12);
+    menu.style.top = Math.round(r.bottom + 10) + 'px';
+    menu.style.left = Math.round(left) + 'px';
+  }
+  function onThemeOutside(e) {
+    if (!$('themeMenu').contains(e.target) && !$('btnTheme').contains(e.target)) closeThemeMenu(false);
+  }
+  function openThemeMenu() {
+    var menu = $('themeMenu');
+    syncDisplayForm();
+    menu.hidden = false;
+    $('btnTheme').setAttribute('aria-expanded', 'true');
+    placeThemeMenu();
+    var current = menu.querySelector('input[name="themePick"]:checked') || menu.querySelector('input[name="themePick"]');
+    current.focus();
+    setTimeout(function () { document.addEventListener('pointerdown', onThemeOutside, true); }, 0);
+    window.addEventListener('resize', placeThemeMenu);
+  }
+  function closeThemeMenu(refocus) {
+    var menu = $('themeMenu');
+    if (menu.hidden) return;
+    menu.hidden = true;
+    $('btnTheme').setAttribute('aria-expanded', 'false');
+    document.removeEventListener('pointerdown', onThemeOutside, true);
+    window.removeEventListener('resize', placeThemeMenu);
+    if (refocus) $('btnTheme').focus();
   }
   function closeDisplay() {
     $('displayDialog').hidden = true;
@@ -1917,10 +1953,18 @@
     $('btnDisplayClose').onclick = closeDisplay;
     $('btnDisplayReset').onclick = function () { applyDisplay(window.VMDisplay.DEFAULTS, true); };
     $('displayDialog').addEventListener('change', function () { applyDisplay(readDisplayForm(), true); });
-    // ◐ stays a one-click switch between light and dark.
-    $('btnTheme').onclick = function () {
-      applyDisplay(Object.assign({}, display, { theme: document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark' }), true);
-    };
+    $('btnTheme').onclick = function () { if ($('themeMenu').hidden) openThemeMenu(); else closeThemeMenu(true); };
+    $('themeMenu').addEventListener('change', function (e) {
+      if (e.target.name === 'themePick') applyDisplay(Object.assign({}, display, { theme: e.target.value }), true);
+    });
+    $('themeMenu').addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.stopPropagation(); closeThemeMenu(true); }
+      else if (e.key === 'Tab') { // keep Tab inside the small menu: the radios, then the settings link
+        var items = [this.querySelector('input[name="themePick"]:checked') || this.querySelector('input[name="themePick"]'), $('btnDisplay')];
+        var i = items.indexOf(document.activeElement.name === 'themePick' ? items[0] : document.activeElement);
+        if (e.shiftKey ? i <= 0 : i === items.length - 1) { e.preventDefault(); items[e.shiftKey ? items.length - 1 : 0].focus(); }
+      }
+    });
     if (window.matchMedia) {
       var mq = window.matchMedia('(prefers-color-scheme: dark)');
       var follow = function () { if (display.theme === 'system') applyDisplay(display, false); };
@@ -3982,7 +4026,6 @@
 
     $('btnSound').addEventListener('click', toggleSound);
 
-    $('btnSettings').addEventListener('click', function () { openSessionSettings(true); });
     $('btnSessionSettings').addEventListener('click', function () { openSessionSettings(false); });
     $('btnSessionClose').addEventListener('click', closeSessionSettings);
     $('sessionDialog').addEventListener('click', function (e) { if (e.target === this) closeSessionSettings(); });
@@ -3996,7 +4039,7 @@
       if (e.key === 'Escape' && document.body.classList.contains('side-open')) { setSidebar(false); $('btnMenu').focus(); }
     });
     $('btnSideGemini').addEventListener('click', function () {
-      $('btnSettings').click();
+      openSessionSettings(true);
       var chip = document.querySelector('.prov-chip[data-prov="gemini"]');
       if (chip && !window.VMAICore.isGemini(state.cfg.baseUrl)) chip.click();
       setTimeout(function () { $('cfgKey').focus({ preventScroll: true }); }, 400);

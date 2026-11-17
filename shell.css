@@ -128,7 +128,8 @@
   .crumb-here { font-size:15px; }
   .streak-indicator { display:none; }
   .topbar-right { gap:4px; }
-  .topbar-right #btnTheme { display:none; } /* theme lives in the Display dialog of the menu */
+  .topbar-right .icon-btn { width:40px; height:40px; } /* the theme menu stays one tap away on phones */
+  .crumb-here { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .lang-pills button { min-width:32px; padding:0 7px; height:28px; }
   .screen { padding:16px 16px 48px; }
   .hero.hero-banner { padding:26px 20px 30px; border-radius:18px; margin-bottom:28px; }

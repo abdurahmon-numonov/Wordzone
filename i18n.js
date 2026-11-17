@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.40'; // the one place the shown version lives (footer)
+  var VERSION = '2.41'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -292,7 +292,18 @@
     'nav.library': ['Моя библиотека', 'My library', 'Mening kutubxonam'],
     'nav.test': ['Лексический тест', 'Vocabulary test', "Lug'at testi"],
     'top.streak': ['Дни с завершённой тренировкой', 'Days with a finished session', "Mashg'ulot yakunlangan kunlar"],
-    'top.theme': ['Сменить тему', 'Switch theme', "Mavzuni almashtirish"],
+    'top.theme': ['Тема оформления', 'Theme', "Bezak mavzusi"],
+    'theme.title': ['Тема оформления', 'Theme', "Bezak mavzusi"],
+    'theme.light': ['Бумага и чернила', 'Paper and ink', "Qog'oz va siyoh"],
+    'theme.dark': ['Мягкая, для вечера', 'Soft, for the evening', "Yumshoq, kechqurun uchun"],
+    'theme.mint': ['Мята', 'Mint', 'Yalpiz'],
+    'theme.mintD': ['Яркая и бодрая', 'Bright and lively', "Yorqin va tetik"],
+    'theme.midnight': ['Полночь', 'Midnight', 'Yarim tun'],
+    'theme.midnightD': ['Глубокий чёрный, для OLED', 'Deep black, for OLED', "Chuqur qora, OLED uchun"],
+    'theme.dusk': ['Сумерки', 'Dusk', 'Shom'],
+    'theme.duskD': ['Индиго и розовый', 'Indigo and pink', "Indigo va pushti"],
+    'theme.system': ['Как в системе: светлая днём, тёмная ночью', 'Match the system: light by day, dark at night', "Tizimdagidek: kunduzi yorug', kechasi qorong'i"],
+    'theme.more': ['Размер текста, контраст и голоса', 'Text size, contrast and voices', "Matn o'lchami, kontrast va ovozlar"],
     'top.sound': ['Звуки и озвучка (M)', 'Sounds and voice (M)', 'Ovoz va talaffuz (M)'],
     'top.soundOff': ['Выключить звук', 'Mute', "Ovozni o'chirish"],
     'top.soundOn': ['Включить звук', 'Unmute', 'Ovozni yoqish'],

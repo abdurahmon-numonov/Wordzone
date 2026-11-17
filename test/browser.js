@@ -89,9 +89,13 @@ run.server(server);
   assert.equal(await page.locator('.deck-item').count(),1);
   assert.match(await page.locator('#streakCount').innerText(),/^1 /);
   await page.click('#btnTheme');
+  await page.click('label:has(input[name="themePick"][value="dark"])');
+  await page.keyboard.press('Escape');
   assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
   await page.screenshot({path:path.join(output,'03-dark.png'),fullPage:true});
   await page.click('#btnTheme');
+  await page.click('label:has(input[name="themePick"][value="light"])');
+  await page.keyboard.press('Escape');
   await page.setViewportSize({width:390,height:844});
   await page.click('#btnMenu'); await page.locator('body.side-open').waitFor(); await page.waitForTimeout(300); await page.click('#navStudy'); // phones: the sidebar is a drawer
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'mobile horizontal overflow');

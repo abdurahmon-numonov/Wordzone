@@ -33,12 +33,18 @@ assert.equal(D.normalize({ theme: 'system' }, 'dark').theme, 'system', 'the new 
 assert.deepEqual(D.normalize([1, 2]), D.DEFAULTS);
 
 // resolve: system follows the OS, defaults add no attributes
-assert.deepEqual(D.resolve({ theme: 'system' }, true), { theme: 'dark', size: null, contrast: null, spacing: null });
+assert.deepEqual(D.resolve({ theme: 'system' }, true), { theme: 'dark', palette: null, size: null, contrast: null, spacing: null });
 assert.deepEqual(D.resolve({ theme: 'system' }, false).theme, 'light');
-assert.deepEqual(D.resolve({ theme: 'dark', size: 'xl', contrast: true, spacing: true }, false), { theme: 'dark', size: 'xl', contrast: 'high', spacing: 'wide' });
+assert.deepEqual(D.resolve({ theme: 'dark', size: 'xl', contrast: true, spacing: true }, false), { theme: 'dark', palette: null, size: 'xl', contrast: 'high', spacing: 'wide' });
+
+// extra palettes ride on a light or dark base
+assert.deepEqual(D.resolve({ theme: 'mint' }, true), { theme: 'light', palette: 'mint', size: null, contrast: null, spacing: null });
+assert.equal(D.resolve({ theme: 'midnight' }, false).theme, 'dark');
+assert.equal(D.resolve({ theme: 'dusk' }, false).palette, 'dusk');
+assert.equal(D.normalize({}, 'mint').theme, D.DEFAULTS.theme, 'the legacy key only knows light and dark');
 
 // apply sets and removes attributes
-const el = { dataset: { size: 'xl', contrast: 'high' } };
+const el = { dataset: { size: 'xl', contrast: 'high', palette: 'dusk' } };
 D.apply(el, D.resolve({ theme: 'light' }, false));
 assert.deepEqual(el.dataset, { theme: 'light' });
 
@@ -52,9 +58,9 @@ assert.equal(D.save({ setItem() { throw new Error('quota'); } }, D.DEFAULTS), fa
 
 // the inline boot script agrees with display.js for every combination
 const cases = [
-  {}, { 'vm.theme': 'dark' }, { 'vm.theme': 'light' }, { 'vm.theme': 'neon' },
+  {}, { 'vm.theme': 'dark' }, { 'vm.theme': 'light' }, { 'vm.theme': 'neon' }, { 'vm.theme': 'mint' },
   { 'vm.display': '{broken' }, { 'vm.display': '"str"' }, { 'vm.display': 'null' }, { 'vm.display': '[1]' },
-  ...['system', 'light', 'dark', 'purple'].flatMap(theme => ['s', 'm', 'l', 'xl', 'huge'].flatMap(size =>
+  ...['system', 'light', 'dark', 'mint', 'midnight', 'dusk', 'purple'].flatMap(theme => ['s', 'm', 'l', 'xl', 'huge'].flatMap(size =>
     [[false, false], [true, true], [true, false], ['true', 1]].map(([contrast, spacing]) =>
       ({ 'vm.display': JSON.stringify({ theme, size, contrast, spacing }), 'vm.theme': 'dark' }))))
 ];
@@ -64,5 +70,5 @@ for (const entries of cases) for (const dark of [false, true]) {
   assert.deepEqual(runBoot(entries, dark), expected, 'boot script = display.js for ' + JSON.stringify(entries) + ' dark=' + dark);
   checked++;
 }
-assert(boot.length < 600, 'the boot script stays tiny (' + boot.length + ' chars)');
+assert(boot.length < 720, 'the boot script stays tiny (' + boot.length + ' chars)');
 console.log('✓ Display settings: normalisation, system theme, attributes; inline boot script matches display.js in ' + checked + ' cases');

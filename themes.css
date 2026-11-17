@@ -1,0 +1,140 @@
+/* v2.41 — Theme palettes and the theme menu.
+   Each palette rides on a light or dark base (data-theme), so every light/dark rule in the earlier
+   layers still applies; data-palette only swaps the tokens, plus a few signature touches.
+   Mint: bright and lively, chunky "pressable" buttons (a nod to playful learning apps).
+   Midnight: near-black for OLED screens, one electric-violet accent that glows.
+   Dusk: deep indigo with pink and peach, the pastel night palette of popular editor themes.
+   Loaded last. */
+
+/* ---------- Mint (light base) ---------- */
+:root[data-palette="mint"] {
+  --bg: oklch(0.972 0.022 150); --surface: oklch(0.995 0.006 150); --panel: oklch(0.995 0.006 150);
+  --text: oklch(0.25 0.04 155); --muted: oklch(0.44 0.04 155);
+  --stroke: oklch(0.875 0.035 150); --stroke-soft: oklch(0.925 0.025 150);
+  --amber: oklch(0.47 0.13 152); --amber-2: oklch(0.56 0.16 146); --amber-3: oklch(0.47 0.13 152);
+  --navy: oklch(0.4 0.1 155); --navy-2: oklch(0.47 0.12 152); --on-navy: oklch(0.985 0.012 140); --gold: oklch(0.88 0.19 128);
+  --emerald: oklch(0.48 0.13 150); --rose: oklch(0.53 0.18 25); --violet: oklch(0.44 0.04 155); --sky: oklch(0.5 0.12 235);
+  --lime: oklch(0.82 0.2 132); --lime-deep: oklch(0.6 0.17 138); --lime-ink: oklch(0.24 0.06 150);
+  --c-go-bg: linear-gradient(160deg, oklch(0.4 0.1 155) 0%, oklch(0.31 0.08 160) 100%);
+  --c-shadow: 0 1px 0 #ffffff inset, 0 24px 60px -28px oklch(0.45 0.12 150 / .32), 0 2px 6px oklch(0.4 0.1 150 / .06);
+  --c-field: oklch(0.985 0.012 150);
+}
+:root[data-palette="mint"][data-contrast="high"] { --muted: oklch(0.36 0.04 155); --amber: oklch(0.38 0.11 152); --amber-3: oklch(0.38 0.11 152); --stroke: oklch(0.6 0.04 150); --stroke-soft: oklch(0.75 0.03 150); }
+:root[data-palette="mint"] ::selection { background: oklch(0.82 0.2 132 / .45); }
+/* the signature: lime buttons that sit on a solid ledge and press down */
+:root[data-palette="mint"] .btn.primary { background: var(--lime); border-color: var(--lime); color: var(--lime-ink); font-weight: 700;
+  box-shadow: 0 4px 0 var(--lime-deep); transition: transform .12s ease-out, box-shadow .12s ease-out, background-color .15s; }
+:root[data-palette="mint"] .btn.primary:hover { background: oklch(0.86 0.2 132); border-color: oklch(0.86 0.2 132); color: var(--lime-ink); }
+:root[data-palette="mint"] .btn.primary:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--lime-deep); }
+:root[data-palette="mint"] .btn.primary:disabled { box-shadow: none; transform: none; }
+:root[data-palette="mint"] .side-nav .nav-link.active { box-shadow: 0 3px 0 oklch(0.3 0.08 158); }
+
+/* ---------- Midnight (dark base) ---------- */
+:root[data-palette="midnight"] {
+  --bg: oklch(0.12 0.004 285); --surface: oklch(0.165 0.007 285); --panel: oklch(0.165 0.007 285);
+  --text: oklch(0.96 0.004 285); --muted: oklch(0.73 0.012 285);
+  --stroke: oklch(0.27 0.012 285); --stroke-soft: oklch(0.21 0.01 285);
+  --amber: oklch(0.79 0.12 290); --amber-2: oklch(0.71 0.16 290); --amber-3: oklch(0.79 0.12 290);
+  --navy: oklch(0.5 0.2 288); --navy-2: oklch(0.57 0.2 288); --on-navy: oklch(0.985 0.005 285); --gold: oklch(0.9 0.08 295);
+  --emerald: oklch(0.8 0.14 160); --rose: oklch(0.74 0.15 20); --violet: oklch(0.73 0.012 285); --sky: oklch(0.8 0.1 230);
+  --glow: oklch(0.55 0.22 288 / .55);
+  --c-go-bg: linear-gradient(160deg, oklch(0.42 0.17 288) 0%, oklch(0.24 0.09 290) 100%);
+  --c-shadow: 0 0 0 1px oklch(1 0 0 / .05) inset, 0 30px 80px -40px var(--glow);
+  --c-field: oklch(0.13 0.005 285);
+}
+:root[data-palette="midnight"][data-contrast="high"] { --muted: oklch(0.82 0.01 285); --amber: oklch(0.86 0.1 290); --amber-3: oklch(0.86 0.1 290); --stroke: oklch(0.45 0.015 285); --stroke-soft: oklch(0.35 0.012 285); }
+:root[data-palette="midnight"] ::selection { background: oklch(0.55 0.22 288 / .45); }
+:root[data-palette="midnight"] body { background: radial-gradient(900px 420px at 85% -120px, oklch(0.32 0.14 288 / .35), transparent 70%) no-repeat, var(--bg); }
+:root[data-palette="midnight"] .btn.primary, :root[data-palette="midnight"] .btn.primary:hover {
+  background: var(--navy); border-color: oklch(0.65 0.18 288); color: var(--on-navy); box-shadow: 0 10px 30px -10px var(--glow); }
+:root[data-palette="midnight"] .btn.primary:hover { background: var(--navy-2); }
+:root[data-palette="midnight"] .side-nav .nav-link.active { box-shadow: 0 8px 24px -10px var(--glow); }
+
+/* ---------- Dusk (dark base) ---------- */
+:root[data-palette="dusk"] {
+  --bg: oklch(0.215 0.045 285); --surface: oklch(0.26 0.05 285); --panel: oklch(0.26 0.05 285);
+  --text: oklch(0.945 0.02 300); --muted: oklch(0.79 0.04 295);
+  --stroke: oklch(0.37 0.055 288); --stroke-soft: oklch(0.31 0.05 287);
+  --amber: oklch(0.83 0.11 350); --amber-2: oklch(0.77 0.13 350); --amber-3: oklch(0.83 0.11 350);
+  --navy: oklch(0.43 0.11 305); --navy-2: oklch(0.5 0.12 310); --on-navy: oklch(0.97 0.015 320); --gold: oklch(0.85 0.1 60);
+  --emerald: oklch(0.83 0.12 165); --rose: oklch(0.77 0.13 15); --violet: oklch(0.79 0.04 295); --sky: oklch(0.82 0.09 230);
+  --c-go-bg: linear-gradient(160deg, oklch(0.42 0.12 320) 0%, oklch(0.3 0.08 290) 100%);
+  --c-shadow: 0 1px 0 oklch(1 0 0 / .06) inset, 0 30px 70px -36px oklch(0.15 0.05 290 / .9);
+  --c-field: oklch(0.235 0.045 285);
+}
+:root[data-palette="dusk"][data-contrast="high"] { --muted: oklch(0.87 0.03 295); --amber: oklch(0.88 0.09 350); --amber-3: oklch(0.88 0.09 350); --stroke: oklch(0.55 0.06 290); --stroke-soft: oklch(0.45 0.05 288); }
+:root[data-palette="dusk"] ::selection { background: oklch(0.77 0.13 350 / .4); }
+:root[data-palette="dusk"] body { background: radial-gradient(1000px 520px at 100% -160px, oklch(0.4 0.12 340 / .35), transparent 70%) no-repeat, var(--bg); }
+:root[data-palette="dusk"] .btn.primary, :root[data-palette="dusk"] .btn.primary:hover { color: oklch(0.22 0.05 290); }
+
+/* ---------- the theme button: a small dot shows the current accent ---------- */
+.theme-btn { position: relative; }
+.theme-btn[aria-expanded="true"] { border-color: var(--amber); background: color-mix(in oklab, var(--amber) 12%, var(--surface)); color: var(--amber); }
+.theme-btn-dot { position: absolute; right: 6px; bottom: 6px; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--amber); box-shadow: 0 0 0 2px var(--surface); }
+
+/* ---------- the theme menu ---------- */
+.theme-pop { position: fixed; z-index: 60; width: min(340px, calc(100vw - 24px)); padding: 14px; border: 1px solid var(--stroke);
+  border-radius: 18px; background: var(--surface); color: var(--text);
+  box-shadow: 0 24px 60px -24px oklch(0.2 0.03 270 / .45), 0 2px 8px oklch(0.2 0.03 270 / .08);
+  animation: theme-pop-in .18s cubic-bezier(.22, 1, .36, 1); transform-origin: top right; }
+.theme-pop[hidden] { display: none; }
+@keyframes theme-pop-in { from { opacity: 0; transform: translateY(-6px) scale(.98); } to { opacity: 1; transform: none; } }
+.theme-set { margin: 0; padding: 0; border: 0; min-width: 0; }
+.theme-pop-title { padding: 2px 4px 10px; font: 600 13px var(--font-ui); color: var(--text); }
+.theme-grid { display: flex; flex-direction: column; gap: 4px; }
+.theme-opt, .theme-sys { position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px 6px 6px;
+  border: 1px solid transparent; border-radius: 12px; cursor: pointer; transition: background-color .15s, border-color .15s; }
+.theme-opt:hover, .theme-sys:hover { background: var(--bg); }
+.theme-opt input, .theme-sys input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.theme-opt:has(input:checked), .theme-sys:has(input:checked) { border-color: var(--amber); background: color-mix(in oklab, var(--amber) 9%, var(--surface)); }
+.theme-opt:has(input:checked)::after, .theme-sys:has(input:checked)::after { content: ""; position: absolute; right: 12px; top: 50%; width: 10px; height: 6px;
+  margin-top: -5px; border: solid var(--amber); border-width: 0 0 2px 2px; transform: rotate(-45deg); }
+.theme-opt:has(input:focus-visible), .theme-sys:has(input:focus-visible) { outline: 2px solid var(--amber); outline-offset: 2px; }
+.theme-txt { display: flex; flex-direction: column; gap: 1px; min-width: 0; padding-right: 22px; }
+.theme-name { font: 600 14px var(--font-ui); }
+.theme-desc { font: 400 12.5px var(--font-ui); color: var(--muted); }
+
+/* swatches: a tiny screen in each theme's own colours, whatever theme is active */
+.theme-sw { flex: none; display: flex; width: 60px; height: 40px; overflow: hidden; border-radius: 9px; background: var(--sw-bg);
+  box-shadow: inset 0 0 0 1px var(--sw-edge); }
+.sw-side { width: 14px; background: var(--sw-side); }
+.sw-card { flex: 1; display: flex; flex-direction: column; gap: 4px; margin: 7px 6px; padding: 5px; border-radius: 5px; background: var(--sw-surface); }
+.sw-line { height: 3px; border-radius: 2px; background: var(--sw-ink); opacity: .75; }
+.sw-line.short { width: 60%; opacity: .4; }
+.sw-btn { width: 16px; height: 5px; margin-top: auto; border-radius: 3px; background: var(--sw-accent); }
+.sw-light { --sw-bg: #f6f1e7; --sw-surface: #fffdf8; --sw-side: #fffdf8; --sw-ink: #1f2433; --sw-accent: #1c2a52; --sw-edge: #00000014; }
+.sw-dark { --sw-bg: #141824; --sw-surface: #1c2131; --sw-side: #1c2131; --sw-ink: #e9e6dd; --sw-accent: #a9bdf0; --sw-edge: #ffffff14; }
+.sw-mint { --sw-bg: oklch(0.972 0.022 150); --sw-surface: #fff; --sw-side: #fff; --sw-ink: oklch(0.25 0.04 155); --sw-accent: oklch(0.82 0.2 132); --sw-edge: #00000014; }
+.sw-midnight { --sw-bg: oklch(0.12 0.004 285); --sw-surface: oklch(0.165 0.007 285); --sw-side: oklch(0.165 0.007 285); --sw-ink: oklch(0.96 0.004 285); --sw-accent: oklch(0.6 0.22 288); --sw-edge: #ffffff1a; }
+.sw-dusk { --sw-bg: oklch(0.215 0.045 285); --sw-surface: oklch(0.26 0.05 285); --sw-side: oklch(0.3 0.06 300); --sw-ink: oklch(0.945 0.02 300); --sw-accent: oklch(0.83 0.11 350); --sw-edge: #ffffff1a; }
+.sw-mint .sw-btn { box-shadow: 0 2px 0 oklch(0.6 0.17 138); }
+
+.theme-sys { min-height: 44px; margin-top: 11px; padding-left: 10px; font: 500 13px var(--font-ui); color: var(--text); }
+.theme-sys::before { content: ""; position: absolute; left: 4px; right: 4px; top: -7px; height: 1px; background: var(--stroke-soft); }
+.theme-sys > span:last-child { padding-right: 22px; }
+.theme-sys-ico { flex: none; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid currentColor;
+  background: linear-gradient(90deg, currentColor 50%, transparent 50%); opacity: .8; }
+.theme-more { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 44px; margin-top: 8px; padding: 10px 12px;
+  border: 0; border-top: 1px solid var(--stroke-soft); border-radius: 0 0 10px 10px; background: none; color: var(--amber);
+  font: 600 13px var(--font-ui); text-align: left; cursor: pointer; }
+.theme-more::after { content: "→"; }
+.theme-more:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-pop { animation: none; }
+  :root[data-palette="mint"] .btn.primary { transition: none; }
+}
+
+/* ---------- the start banner follows each palette (its base layer hard-codes the navy glow) ---------- */
+:root[data-palette="mint"] .hero.hero-banner { background: radial-gradient(120% 140% at 100% 0%, oklch(0.55 0.15 145) 0%, transparent 55%), linear-gradient(135deg, var(--navy), oklch(0.27 0.07 162)); box-shadow: 0 18px 40px oklch(0.4 0.1 155 / .18); }
+:root[data-palette="midnight"] .hero.hero-banner { background: radial-gradient(120% 140% at 100% 0%, oklch(0.55 0.21 300) 0%, transparent 55%), linear-gradient(135deg, var(--navy), oklch(0.2 0.08 285)); box-shadow: 0 24px 60px -20px var(--glow); }
+:root[data-palette="dusk"] .hero.hero-banner { background: radial-gradient(120% 140% at 100% 0%, oklch(0.55 0.14 345) 0%, transparent 55%), linear-gradient(135deg, var(--navy), oklch(0.27 0.07 285)); box-shadow: 0 18px 40px oklch(0.12 0.04 290 / .5); }
+:root[data-palette="mint"] .hero-banner .btn.hero-cta { background: var(--lime); border-color: var(--lime); color: var(--lime-ink); box-shadow: 0 4px 0 var(--lime-deep); }
+
+/* ---------- gold as text on a light page: the bright fill colour is too pale to read there,
+   so light bases use a deeper "ink" version of it (fills on navy keep the bright one) ---------- */
+:root { --gold-ink: #85652a; }
+:root[data-palette="mint"] { --gold-ink: oklch(0.5 0.14 140); }
+:root:not([data-theme="dark"]) :is(.chapter-level, .lesson-head .eyebrow, .game-record, .side-count.is-full, .stars i.on, .tr-noai::after, .streak-indicator svg) { color: var(--gold-ink); }
+:root:not([data-theme="dark"]) :is(.stop.due .stop-node, .stop.done.due .stop-node, .stop.checkpoint .stop-node) { color: var(--gold-ink); border-color: var(--gold-ink); }

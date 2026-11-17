@@ -1282,7 +1282,12 @@ run.server(server);
     await pg.click('.stop:has-text("to be")');
     assert.equal(await pg.locator('#courseLessonTitle').innerText(), toBe.title.ru);
     // v2.24: the lesson is taught step by step and can't just be scrolled past.
-    assert.match(await pg.locator('#lessonStepLabel').innerText(), /^1 \/ 7/, 'notice · 3 rule parts · build · fix · write');
+    // v2.38: the full theory comes first, then notice · 3 checks · build · fix · write
+    assert.match(await pg.locator('#lessonStepLabel').innerText(), /^1 \/ 8 · ТЕОРИЯ/, 'the lesson opens with the theory');
+    assert(await pg.locator('.theory .theory-table').count() >= 1 && await pg.locator('.theory .theory-ex-row').count() >= 6, 'the theory has tables and examples with translations');
+    assert(!(await pg.locator('#btnStepNext').isDisabled()), 'the theory is read, not answered');
+    await pg.click('#btnStepNext');
+    assert.match(await pg.locator('#lessonStepLabel').innerText(), /^2 \/ 8/);
     assert(await pg.locator('.mark-line mark').count() >= 3, 'the pattern is highlighted in the examples');
     assert(await pg.locator('#btnStepNext').isDisabled(), 'the first question has to be answered before moving on');
     // Options are shown shuffled, so pick one that is wrong by its text.

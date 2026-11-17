@@ -73,6 +73,176 @@
     "en": "bin-bist-ist-sind-seid-sind; habe-hast-hat-haben-habt-haben.",
     "uz": "bin-bist-ist-sind-seid-sind; habe-hast-hat-haben-habt-haben."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два главных глагола",
+      "en": "The two key verbs",
+      "uz": "Ikki asosiy fe'l"
+     }
+    },
+    {
+     "p": {
+      "ru": "В немецком два глагола встречаются буквально в каждом втором предложении: *sein* [зайн] — «быть» и *haben* [ха:бен] — «иметь». С них начинается весь язык: ими говорят, кто ты, какой ты, где ты и что у тебя есть.",
+      "en": "Two verbs appear in almost every other German sentence: *sein* — “to be” and *haben* — “to have”. With them you say who you are, what you're like, where you are and what you have.",
+      "uz": "Nemis tilida ikki fe'l deyarli har ikkinchi gapda uchraydi: *sein* [zayn] — «bo'lmoq» va *haben* [ha:ben] — «ega bo'lmoq». Til ular bilan boshlanadi: kimligingiz, qandayligingiz, qayerdaligingiz va nimangiz borligi shular bilan aytiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Как и в английском, в немецком нельзя сказать «Я студент» без глагола. Нужно: *Ich bin Student* — «Я есть студент». А «у меня есть брат» по-немецки звучит как «я имею брата»: *Ich habe einen Bruder*.",
+      "en": "German can't drop the verb: *Ich bin Student* — “I am a student”. And “I have a brother” is *Ich habe einen Bruder*.",
+      "uz": "Nemis tilida fe'lni tushirib bo'lmaydi: «Men talabaman» — *Ich bin Student* (so'zma-so'z «Men bo'lmoq talaba»). «Mening akam bor» esa «Men akaga egaman» deb aytiladi: *Ich habe einen Bruder*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимения",
+      "en": "Personal pronouns",
+      "uz": "Kishilik olmoshlari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Сначала слова «я, ты, он…». Обрати внимание: *Sie* с большой буквы — вежливое «Вы» (к незнакомым, к старшим), а *sie* с маленькой — «она» или «они». Различают по форме глагола и по смыслу.",
+      "en": "First the pronouns. Note: *Sie* with a capital S is the polite “you” (for strangers and elders); *sie* with a small s means “she” or “they”.",
+      "uz": "Avval «men, sen, u…» so'zlari. E'tibor bering: katta harfli *Sie* — hurmat bilan «Siz» (notanish va kattalarga), kichik harfli *sie* — «u (ayol)» yoki «ular»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "sein",
+       "haben"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "ich — я",
+         "en": "ich — I",
+         "uz": "ich — men"
+        },
+        "bin",
+        "habe"
+       ],
+       [
+        {
+         "ru": "du — ты",
+         "en": "du — you (friend)",
+         "uz": "du — sen"
+        },
+        "bist",
+        "hast"
+       ],
+       [
+        {
+         "ru": "er / sie / es — он / она / оно",
+         "en": "er / sie / es — he / she / it",
+         "uz": "er / sie / es — u"
+        },
+        "ist",
+        "hat"
+       ],
+       [
+        {
+         "ru": "wir — мы",
+         "en": "wir — we",
+         "uz": "wir — biz"
+        },
+        "sind",
+        "haben"
+       ],
+       [
+        {
+         "ru": "ihr — вы (несколько друзей)",
+         "en": "ihr — you (friends)",
+         "uz": "ihr — sizlar (do'stlar)"
+        },
+        "seid",
+        "habt"
+       ],
+       [
+        {
+         "ru": "sie — они / Sie — Вы",
+         "en": "sie — they / Sie — you (polite)",
+         "uz": "sie — ular / Sie — Siz"
+        },
+        "sind",
+        "haben"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Формы *sein* неправильные, их нужно выучить наизусть: *bin, bist, ist, sind, seid, sind*. У *haben* запомни две особые: *du hast*, *er hat* (без b).",
+      "en": "The forms of *sein* are irregular — learn them by heart: *bin, bist, ist, sind, seid, sind*. For *haben* note *du hast*, *er hat* (no b).",
+      "uz": "*sein* shakllari noto'g'ri, ularni yodlash kerak: *bin, bist, ist, sind, seid, sind*. *haben* da ikkitasiga e'tibor bering: *du hast*, *er hat* (b siz)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как произносить",
+      "en": "Pronunciation",
+      "uz": "Talaffuz"
+     }
+    },
+    {
+     "p": {
+      "ru": "*ich* читается [ихь] — мягкий звук, как будто шипящий выдох. *ei* читается [ай]: *sein* [зайн], *mein* [майн]. *s* перед гласной звучит как [з]: *sind* [зинт]. Буква *h* в начале слова — лёгкий выдох: *haben* [ха:бен].",
+      "en": "*ich* has a soft hissing sound at the end. *ei* is said like English “eye”: *sein*, *mein*. *s* before a vowel sounds like “z”: *sind*. *h* at the start is a light breath: *haben*.",
+      "uz": "*ich* [ixʼ] — yumshoq, xuddi shivirlab nafas chiqargandek. *ei* [ay] deb o'qiladi: *sein* [zayn], *mein* [mayn]. Unli oldidagi *s* [z] kabi: *sind* [zint]. So'z boshidagi *h* — yengil nafas: *haben* [ha:ben]."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *bin* müde.",
+       "t": {
+        "ru": "Я устал.",
+        "uz": "Men charchadim.",
+        "en": "I'm tired."
+       }
+      },
+      {
+       "s": "Wir *sind* aus Usbekistan.",
+       "t": {
+        "ru": "Мы из Узбекистана.",
+        "uz": "Biz O'zbekistondanmiz.",
+        "en": "We are from Uzbekistan."
+       }
+      },
+      {
+       "s": "*Hast* du Zeit?",
+       "t": {
+        "ru": "У тебя есть время?",
+        "uz": "Vaqting bormi?",
+        "en": "Do you have time?"
+       }
+      },
+      {
+       "s": "Sie *hat* zwei Kinder.",
+       "t": {
+        "ru": "У неё двое детей.",
+        "uz": "Uning ikkita farzandi bor.",
+        "en": "She has two children."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Возраст в немецком — через *sein*, как в английском: *Ich bin 20 Jahre alt* — мне 20 лет (дословно «я есть 20 лет старый»).",
+      "en": "Age uses *sein*: *Ich bin 20 Jahre alt* — I am 20 years old.",
+      "uz": "Yosh *sein* bilan aytiladi: *Ich bin 20 Jahre alt* — men 20 yoshdaman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -332,6 +502,160 @@
     "en": "Always learn the noun with its article.",
     "uz": "Otni doim artikl bilan o'rgan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "У каждого слова есть род",
+      "en": "Every noun has a gender",
+      "uz": "Har bir otning jinsi bor"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это самое непривычное в немецком. Каждое существительное (слово-предмет) относится к одному из трёх родов: мужскому, женскому или среднему. Род показывает маленькое слово перед ним — артикль: *der* (мужской), *die* (женский), *das* (средний).",
+      "en": "This is the biggest surprise in German. Every noun belongs to one of three genders: masculine, feminine or neuter. A small word before it — the article — shows which: *der*, *die*, *das*.",
+      "uz": "Bu nemis tilidagi eng g'ayrioddiy narsa. Har bir ot (narsani bildiruvchi so'z) uch jinsdan biriga tegishli: erkak, ayol yoki o'rta. Jinsni oldidagi kichik so'z — artikl ko'rsatadi: *der* (erkak), *die* (ayol), *das* (o'rta)."
+     }
+    },
+    {
+     "p": {
+      "ru": "В узбекском рода нет совсем, в русском он есть, но в немецком часто не совпадает: «стол» мужского рода и *der Tisch* тоже, а вот «девочка» — *das Mädchen*, средний род! Поэтому главный совет: учи каждое новое слово сразу с артиклем, как одно целое.",
+      "en": "Gender in German is often not logical: *das Mädchen* (the girl) is neuter! So the main tip: learn every new noun together with its article, as one unit.",
+      "uz": "O'zbek tilida jins umuman yo'q, shuning uchun bu yangi tushuncha. Nemis tilida jins ko'pincha mantiqqa bo'ysunmaydi: «qizcha» — *das Mädchen*, o'rta jins! Shuning uchun asosiy maslahat: har bir yangi so'zni darhol artikli bilan, bir butun qilib yodlang."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Тот самый",
+        "en": "the",
+        "uz": "Aynan o'sha"
+       },
+       {
+        "ru": "Какой-то",
+        "en": "a / an",
+        "uz": "Qandaydir bitta"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "der",
+        "ein",
+        "der Mann, ein Tisch"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "die",
+        "eine",
+        "die Frau, eine Lampe"
+       ],
+       [
+        {
+         "ru": "средний",
+         "en": "neuter",
+         "uz": "o'rta"
+        },
+        "das",
+        "ein",
+        "das Kind, ein Buch"
+       ],
+       [
+        {
+         "ru": "множественное (все роды)",
+         "en": "plural (all genders)",
+         "uz": "ko'plik (hamma jins)"
+        },
+        "die",
+        "—",
+        "die Kinder"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Der/die/das или ein/eine",
+      "en": "Der/die/das or ein/eine",
+      "uz": "Der/die/das yoki ein/eine"
+     }
+    },
+    {
+     "p": {
+      "ru": "Логика как в английском *the* и *a*. *Der, die, das* — «тот самый, известный». *Ein, eine* — «один, какой-то», когда предмет упоминаем впервые. *Ein* — для мужского и среднего рода, *eine* — для женского. Во множественном числе у всех трёх родов один артикль: *die*.",
+      "en": "The logic is like English *the* and *a*. *Der, die, das* = “the one we know”. *Ein, eine* = “a / an”, when it's mentioned for the first time. *Ein* for masculine and neuter, *eine* for feminine. In the plural all genders use *die*.",
+      "uz": "Mantiq ingliz tilidagi *the* va *a* ga o'xshaydi. *Der, die, das* — «aynan o'sha, ma'lum». *Ein, eine* — «bitta, qandaydir», narsa birinchi marta tilga olinganda. *Ein* — erkak va o'rta jins uchun, *eine* — ayol jinsi uchun. Ko'plikda uchala jins uchun bitta artikl: *die*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Das ist *ein* Hund. *Der* Hund heißt Rex.",
+       "t": {
+        "ru": "Это собака. Собаку зовут Рекс.",
+        "uz": "Bu it. Itning ismi Reks.",
+        "en": "This is a dog. The dog is called Rex."
+       }
+      },
+      {
+       "s": "Ich habe *eine* Schwester.",
+       "t": {
+        "ru": "У меня есть сестра.",
+        "uz": "Mening opam bor.",
+        "en": "I have a sister."
+       }
+      },
+      {
+       "s": "*Das* Buch ist interessant.",
+       "t": {
+        "ru": "Эта книга интересная.",
+        "uz": "Kitob qiziqarli.",
+        "en": "The book is interesting."
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Подсказки, как угадать род",
+      "en": "Clues for guessing gender",
+      "uz": "Jinsni topish uchun ishoralar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Точного правила нет, но есть полезные подсказки. Слова на *-ung, -heit, -keit, -ion* почти всегда женского рода: *die Zeitung*, *die Information*. Слова на *-chen* и *-lein* (уменьшительные) — всегда средние: *das Mädchen*. Дни недели и месяцы — мужские: *der Montag*.",
+      "en": "There's no perfect rule, but there are clues. Nouns ending in *-ung, -heit, -keit, -ion* are almost always feminine. Endings *-chen, -lein* are always neuter. Days and months are masculine.",
+      "uz": "Aniq qoida yo'q, lekin foydali ishoralar bor. *-ung, -heit, -keit, -ion* bilan tugaydigan so'zlar deyarli doim ayol jinsida: *die Zeitung*, *die Information*. *-chen* va *-lein* (kichraytiruvchi) — doim o'rta: *das Mädchen*. Hafta kunlari va oylar — erkak: *der Montag*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Все существительные в немецком пишутся с большой буквы: *der Tisch*, *die Stadt*, *das Auto*. Это помогает сразу видеть их в тексте.",
+      "en": "All German nouns are written with a capital letter: *der Tisch*, *die Stadt*. It helps you spot them.",
+      "uz": "Nemis tilida barcha otlar katta harf bilan yoziladi: *der Tisch*, *die Stadt*, *das Auto*. Bu ularni matnda darhol ko'rishga yordam beradi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -593,6 +917,149 @@
     "en": "-e, -st, -t, -en, -t, -en.",
     "uz": "-e, -st, -t, -en, -t, -en."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глагол меняет окончание",
+      "en": "The verb changes its ending",
+      "uz": "Fe'l qo'shimchasini o'zgartiradi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В словаре немецкий глагол стоит в начальной форме и почти всегда кончается на *-en*: *machen* — делать, *wohnen* — жить, *lernen* — учить. Часть без *-en* называется основой: *mach-*, *wohn-*, *lern-*.",
+      "en": "In the dictionary a German verb is in its basic form and almost always ends in *-en*: *machen*, *wohnen*, *lernen*. The part without *-en* is the stem: *mach-*, *wohn-*, *lern-*.",
+      "uz": "Lug'atda nemis fe'li boshlang'ich shaklda turadi va deyarli doim *-en* bilan tugaydi: *machen* — qilmoq, *wohnen* — yashamoq, *lernen* — o'rganmoq. *-en* siz qismi o'zak deyiladi: *mach-*, *wohn-*, *lern-*."
+     }
+    },
+    {
+     "p": {
+      "ru": "В настоящем времени к основе добавляется окончание, которое зависит от того, кто делает действие. Это очень похоже на русский («я делаю, ты делаешь») и узбекский («qilaman, qilasan»): у каждого лица своё окончание.",
+      "en": "In the present tense you add an ending to the stem, depending on who does the action — every person has its own ending.",
+      "uz": "Hozirgi zamonda o'zakka ish-harakatni kim bajarishiga qarab qo'shimcha qo'shiladi. Bu o'zbek tiliga juda o'xshaydi («qilaman, qilasan, qiladi»): har bir shaxsning o'z qo'shimchasi bor."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       "machen",
+       "wohnen"
+      ],
+      "rows": [
+       [
+        "ich",
+        "-e",
+        "mache",
+        "wohne"
+       ],
+       [
+        "du",
+        "-st",
+        "machst",
+        "wohnst"
+       ],
+       [
+        "er / sie / es",
+        "-t",
+        "macht",
+        "wohnt"
+       ],
+       [
+        "wir",
+        "-en",
+        "machen",
+        "wohnen"
+       ],
+       [
+        "ihr",
+        "-t",
+        "macht",
+        "wohnt"
+       ],
+       [
+        "sie / Sie",
+        "-en",
+        "machen",
+        "wohnen"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Короче всего запомнить так: *-e, -st, -t, -en, -t, -en*. Формы для *wir* и *sie/Sie* совпадают с начальной формой глагола.",
+      "en": "Short version: *-e, -st, -t, -en, -t, -en*. The *wir* and *sie/Sie* forms are the same as the dictionary form.",
+      "uz": "Qisqacha yodlang: *-e, -st, -t, -en, -t, -en*. *wir* va *sie/Sie* shakllari fe'lning boshlang'ich shakli bilan bir xil."
+     }
+    },
+    {
+     "h": {
+      "ru": "Маленькие особенности",
+      "en": "Small special cases",
+      "uz": "Kichik xususiyatlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если основа кончается на *-t* или *-d*, для удобства произношения вставляют *-e-*: *arbeiten → du arbeitest, er arbeitet*. Некоторые частые глаголы меняют гласную у *du* и *er/sie/es*: *fahren → du fährst, er fährt*; *sprechen → du sprichst, er spricht*; *lesen → er liest*.",
+      "en": "If the stem ends in *-t* or *-d*, add *-e-* to make it easier to say: *du arbeitest, er arbeitet*. Some common verbs change the vowel for *du* and *er/sie/es*: *fahren → du fährst*; *sprechen → er spricht*; *lesen → er liest*.",
+      "uz": "O'zak *-t* yoki *-d* bilan tugasa, aytish oson bo'lishi uchun *-e-* qo'shiladi: *arbeiten → du arbeitest, er arbeitet*. Ba'zi ko'p ishlatiladigan fe'llar *du* va *er/sie/es* da unlini o'zgartiradi: *fahren → du fährst, er fährt*; *sprechen → du sprichst, er spricht*; *lesen → er liest*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *wohne* in Taschkent.",
+       "t": {
+        "ru": "Я живу в Ташкенте.",
+        "uz": "Men Toshkentda yashayman.",
+        "en": "I live in Tashkent."
+       }
+      },
+      {
+       "s": "*Lernst* du Deutsch?",
+       "t": {
+        "ru": "Ты учишь немецкий?",
+        "uz": "Nemis tilini o'rganyapsanmi?",
+        "en": "Are you learning German?"
+       }
+      },
+      {
+       "s": "Mein Vater *arbeitet* viel.",
+       "t": {
+        "ru": "Мой папа много работает.",
+        "uz": "Dadam ko'p ishlaydi.",
+        "en": "My father works a lot."
+       }
+      },
+      {
+       "s": "Sie *spricht* gut Englisch.",
+       "t": {
+        "ru": "Она хорошо говорит по-английски.",
+        "uz": "U inglizchani yaxshi gapiradi.",
+        "en": "She speaks English well."
+       }
+      }
+     ]
+    },
+    {
+     "p": {
+      "ru": "Удобная новость: в немецком одно настоящее время на всё. *Ich lerne* значит и «я учу (вообще)», и «я учу (прямо сейчас)». Отдельного «continuous», как в английском, нет.",
+      "en": "Good news: German has one present tense for everything. *Ich lerne* means both “I learn” and “I am learning”.",
+      "uz": "Yaxshi xabar: nemis tilida hamma narsa uchun bitta hozirgi zamon bor. *Ich lerne* ham «o'rganaman (umuman)», ham «hozir o'rganyapman» degani."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -852,6 +1319,135 @@
     "en": "Whatever comes first, the verb comes second.",
     "uz": "Birinchi nima bo'lmasin — fe'l ikkinchi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глагол всегда на втором месте",
+      "en": "The verb is always second",
+      "uz": "Fe'l doim ikkinchi o'rinda"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это главное правило немецкого предложения. В обычном утвердительном предложении глагол (изменяемая часть) стоит _вторым элементом_. Неважно, что стоит первым — подлежащее, время или место. Глагол всё равно второй.",
+      "en": "This is the key rule of the German sentence. In a normal statement the conjugated verb is the _second element_. Whatever comes first — the subject, a time or a place — the verb is still second.",
+      "uz": "Bu nemis gapining asosiy qoidasi. Oddiy darak gapda tuslangan fe'l _ikkinchi element_ bo'lib turadi. Birinchi o'rinda nima turishi muhim emas — ega, vaqt yoki joy. Fe'l baribir ikkinchi."
+     }
+    },
+    {
+     "p": {
+      "ru": "В узбекском глагол стоит в конце («Men ertaga Toshkentga boraman»), в русском — где угодно. В немецком порядок строгий: место номер 2 занято глаголом.",
+      "en": "Unlike languages where the verb can float, German keeps slot number 2 for the verb.",
+      "uz": "O'zbek tilida fe'l oxirida turadi («Men ertaga Toshkentga boraman»). Nemis tilida esa tartib qat'iy: 2-o'rin fe'lga band."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Место 1",
+        "en": "Slot 1",
+        "uz": "1-o'rin"
+       },
+       {
+        "ru": "Место 2: глагол",
+        "en": "Slot 2: verb",
+        "uz": "2-o'rin: fe'l"
+       },
+       {
+        "ru": "Дальше",
+        "en": "The rest",
+        "uz": "Qolgani"
+       }
+      ],
+      "rows": [
+       [
+        "Ich",
+        "fahre",
+        "morgen nach Berlin."
+       ],
+       [
+        "Morgen",
+        "fahre",
+        "ich nach Berlin."
+       ],
+       [
+        "Nach Berlin",
+        "fahre",
+        "ich morgen."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Смотри: когда первым стоит *Morgen* (завтра), подлежащее *ich* «перепрыгивает» за глагол. Это называется инверсия. Сказать *Morgen ich fahre* — ошибка.",
+      "en": "Look: when *Morgen* (tomorrow) comes first, the subject *ich* jumps behind the verb. Saying “Morgen ich fahre” is a mistake.",
+      "uz": "Qarang: birinchi o'rinda *Morgen* (ertaga) tursa, ega *ich* fe'ldan keyinga «sakraydi». Bu inversiya deyiladi. *Morgen ich fahre* deyish — xato."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Heute *ist* das Wetter schön.",
+       "t": {
+        "ru": "Сегодня хорошая погода.",
+        "uz": "Bugun havo yaxshi.",
+        "en": "The weather is nice today."
+       }
+      },
+      {
+       "s": "Am Wochenende *spiele* ich Fußball.",
+       "t": {
+        "ru": "На выходных я играю в футбол.",
+        "uz": "Dam olish kunlari futbol o'ynayman.",
+        "en": "At the weekend I play football."
+       }
+      },
+      {
+       "s": "In Samarkand *wohnt* meine Oma.",
+       "t": {
+        "ru": "В Самарканде живёт моя бабушка.",
+        "uz": "Samarqandda buvim yashaydi.",
+        "en": "My grandma lives in Samarkand."
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Рамка: вторая часть уходит в конец",
+      "en": "The frame: the second part goes to the end",
+      "uz": "Ramka: ikkinchi qism oxirga ketadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если глагольная форма состоит из двух частей (например, *möchte … kaufen* — «хочу купить»), изменяемая часть стоит на месте 2, а вторая часть уходит в самый конец. Между ними, как в рамке, всё остальное.",
+      "en": "If the verb has two parts (e.g. *möchte … kaufen*, “would like to buy”), the conjugated part takes slot 2 and the other part goes to the very end, framing the rest.",
+      "uz": "Fe'l ikki qismdan iborat bo'lsa (masalan, *möchte … kaufen* — «sotib olmoqchiman»), tuslangan qismi 2-o'rinda turadi, ikkinchi qismi esa eng oxirga ketadi. Qolgan hamma narsa ular orasida, xuddi ramkadagidek."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *möchte* heute ein Buch *kaufen*.",
+       "t": {
+        "ru": "Я хочу сегодня купить книгу.",
+        "uz": "Bugun kitob sotib olmoqchiman.",
+        "en": "I'd like to buy a book today."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Считай не слова, а части: *Am Wochenende* — это одна часть (место 1), даже если в ней два слова.",
+      "en": "Count parts, not words: *Am Wochenende* is one part (slot 1) even though it has two words.",
+      "uz": "So'zlarni emas, qismlarni sanang: *Am Wochenende* — bitta qism (1-o'rin), garchi ikki so'zdan iborat bo'lsa ham."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1110,6 +1706,152 @@
     "en": "Noun (ein/—) → kein; everything else → nicht.",
     "uz": "Ot (ein/—) → kein; qolgani → nicht."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два способа сказать «нет»",
+      "en": "Two ways to say “not”",
+      "uz": "«Yo'q» deyishning ikki usuli"
+     }
+    },
+    {
+     "p": {
+      "ru": "В немецком есть два слова для отрицания: *nicht* [нихьт] — «не» и *kein* [кайн] — «никакой, ни одного». Выбор простой: если отрицаешь существительное с *ein / eine* или без артикля — бери *kein*. Во всех остальных случаях — *nicht*.",
+      "en": "German has two words for “not”: *nicht* and *kein* (“no, not a”). Rule: to negate a noun with *ein / eine* or no article, use *kein*. Everything else takes *nicht*.",
+      "uz": "Nemis tilida inkor uchun ikki so'z bor: *nicht* [nixt] — «emas, -ma» va *kein* [kayn] — «hech qanday, bitta ham». Tanlov oddiy: *ein / eine* bilan yoki artiklsiz otni inkor qilsangiz — *kein*. Qolgan hamma holatda — *nicht*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Без отрицания",
+        "en": "Positive",
+        "uz": "Inkorsiz"
+       },
+       {
+        "ru": "С отрицанием",
+        "en": "Negative",
+        "uz": "Inkor bilan"
+       },
+       {
+        "ru": "Почему",
+        "en": "Why",
+        "uz": "Nega"
+       }
+      ],
+      "rows": [
+       [
+        "Ich habe ein Auto.",
+        "Ich habe kein Auto.",
+        {
+         "ru": "ein + сущ. → kein",
+         "en": "ein + noun → kein",
+         "uz": "ein + ot → kein"
+        }
+       ],
+       [
+        "Ich trinke Kaffee.",
+        "Ich trinke keinen Kaffee.",
+        {
+         "ru": "сущ. без артикля → kein",
+         "en": "noun, no article → kein",
+         "uz": "artiklsiz ot → kein"
+        }
+       ],
+       [
+        "Ich komme heute.",
+        "Ich komme heute nicht.",
+        {
+         "ru": "отрицаем глагол → nicht",
+         "en": "negating the verb → nicht",
+         "uz": "fe'lni inkor → nicht"
+        }
+       ],
+       [
+        "Das Buch ist gut.",
+        "Das Buch ist nicht gut.",
+        {
+         "ru": "прилагательное → nicht",
+         "en": "adjective → nicht",
+         "uz": "sifat → nicht"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Kein меняется как ein",
+      "en": "Kein changes like ein",
+      "uz": "Kein xuddi ein kabi o'zgaradi"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Kein* — это «отрицательный *ein*», и окончания у него такие же: *kein Mann*, *keine Frau*, *kein Kind*. Но в отличие от *ein*, у *kein* есть множественное число: *keine Kinder* — никаких детей.",
+      "en": "*Kein* is the negative *ein* and takes the same endings: *kein Mann*, *keine Frau*, *kein Kind*. Unlike *ein*, it has a plural: *keine Kinder*.",
+      "uz": "*Kein* — bu «inkor *ein*», qo'shimchalari ham bir xil: *kein Mann*, *keine Frau*, *kein Kind*. Lekin *ein* dan farqli, *kein* ning ko'pligi bor: *keine Kinder* — hech qanday bola yo'q."
+     }
+    },
+    {
+     "h": {
+      "ru": "Где стоит nicht",
+      "en": "Where nicht goes",
+      "uz": "nicht qayerda turadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если отрицается всё предложение, *nicht* обычно стоит ближе к концу: *Ich komme heute nicht.* Но перед прилагательным, местом и второй частью глагола: *nicht gut*, *nicht nach Hause*, *Ich kann nicht schwimmen*.",
+      "en": "When the whole sentence is negated, *nicht* usually goes near the end: *Ich komme heute nicht.* But it goes before adjectives, places and the second verb part: *nicht gut*, *Ich kann nicht schwimmen*.",
+      "uz": "Butun gap inkor qilinsa, *nicht* odatda oxirroqda turadi: *Ich komme heute nicht.* Lekin sifat, joy va fe'lning ikkinchi qismidan oldin keladi: *nicht gut*, *nicht nach Hause*, *Ich kann nicht schwimmen*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich habe *keine* Zeit.",
+       "t": {
+        "ru": "У меня нет времени.",
+        "uz": "Vaqtim yo'q.",
+        "en": "I have no time."
+       }
+      },
+      {
+       "s": "Das ist *kein* Problem.",
+       "t": {
+        "ru": "Это не проблема.",
+        "uz": "Bu muammo emas.",
+        "en": "That's no problem."
+       }
+      },
+      {
+       "s": "Er wohnt *nicht* hier.",
+       "t": {
+        "ru": "Он здесь не живёт.",
+        "uz": "U bu yerda yashamaydi.",
+        "en": "He doesn't live here."
+       }
+      },
+      {
+       "s": "Das Essen ist *nicht* teuer.",
+       "t": {
+        "ru": "Еда недорогая.",
+        "uz": "Ovqat qimmat emas.",
+        "en": "The food isn't expensive."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Быстрая проверка: можно ли было сказать *ein / eine* или ничего перед существительным? Да → *kein*. Нет → *nicht*.",
+      "en": "Quick test: could the noun take *ein / eine* or nothing? Yes → *kein*. Otherwise → *nicht*.",
+      "uz": "Tez tekshiruv: ot oldidan *ein / eine* yoki hech narsa qo'yish mumkinmidi? Ha → *kein*. Yo'q → *nicht*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1369,6 +2111,159 @@
     "en": "The accusative only changes der: den / einen.",
     "uz": "Akkuzativ faqat der ni o'zgartiradi: den / einen."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Что такое падеж",
+      "en": "What a case is",
+      "uz": "Kelishik nima"
+     }
+    },
+    {
+     "p": {
+      "ru": "Падеж показывает, какую роль играет слово в предложении: кто делает действие, а _на кого / на что_ оно направлено. В русском и узбекском падежи меняют окончание самого слова (книг_у_, kitob_ni_). В немецком меняется в основном артикль.",
+      "en": "A case shows the role a word plays: who does the action, and who or what receives it. In German it's mostly the article that changes, not the noun.",
+      "uz": "Kelishik so'zning gapdagi vazifasini ko'rsatadi: ish-harakatni kim bajaradi va u _kimga / nimaga_ qaratilgan. O'zbek tilida kelishik so'zning o'ziga qo'shimcha qo'shadi (kitob_ni_). Nemis tilida esa asosan artikl o'zgaradi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Аккузатив — это падеж прямого дополнения, отвечает на вопрос «кого? что?» (по-узбекски «kimni? nimani?»). *Ich kaufe den Tisch* — Я покупаю (что?) стол.",
+      "en": "The accusative is the case of the direct object — “whom? what?”. *Ich kaufe den Tisch* — I buy (what?) the table.",
+      "uz": "Akkuzativ — to'g'ri to'ldiruvchi kelishigi, «kimni? nimani?» savoliga javob beradi. Bu o'zbek tilidagi tushum kelishigiga o'xshaydi: *Ich kaufe den Tisch* — Men stolni sotib olaman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Меняется только мужской род",
+      "en": "Only the masculine changes",
+      "uz": "Faqat erkak jinsi o'zgaradi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Хорошая новость: в аккузативе меняется только мужской род. *Der* превращается в *den*, *ein* — в *einen*, *kein* — в *keinen*. Женский, средний род и множественное число остаются как были.",
+      "en": "Good news: in the accusative only the masculine changes. *Der → den*, *ein → einen*, *kein → keinen*. Feminine, neuter and plural stay the same.",
+      "uz": "Yaxshi xabar: akkuzativda faqat erkak jinsi o'zgaradi. *Der* → *den*, *ein* → *einen*, *kein* → *keinen*. Ayol, o'rta jins va ko'plik o'zgarmaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Кто? (номинатив)",
+        "en": "Who? (nominative)",
+        "uz": "Kim? (nominativ)"
+       },
+       {
+        "ru": "Кого? Что? (аккузатив)",
+        "en": "Whom? What? (accusative)",
+        "uz": "Kimni? Nimani? (akkuzativ)"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "der / ein",
+        "den / einen"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "die / eine",
+        "die / eine"
+       ],
+       [
+        {
+         "ru": "средний",
+         "en": "neuter",
+         "uz": "o'rta"
+        },
+        "das / ein",
+        "das / ein"
+       ],
+       [
+        {
+         "ru": "множественное",
+         "en": "plural",
+         "uz": "ko'plik"
+        },
+        "die / —",
+        "die / —"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Der* Hund ist groß. Ich sehe *den* Hund.",
+       "t": {
+        "ru": "Собака большая. Я вижу собаку.",
+        "uz": "It katta. Men itni ko'ryapman.",
+        "en": "The dog is big. I see the dog."
+       }
+      },
+      {
+       "s": "Ich habe *einen* Bruder.",
+       "t": {
+        "ru": "У меня есть брат.",
+        "uz": "Mening akam bor.",
+        "en": "I have a brother."
+       }
+      },
+      {
+       "s": "Wir kaufen *eine* Lampe.",
+       "t": {
+        "ru": "Мы покупаем лампу.",
+        "uz": "Biz chiroq sotib olyapmiz.",
+        "en": "We are buying a lamp."
+       }
+      },
+      {
+       "s": "Möchtest du *einen* Kaffee?",
+       "t": {
+        "ru": "Хочешь кофе?",
+        "uz": "Qahva xohlaysanmi?",
+        "en": "Would you like a coffee?"
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Глаголы, после которых нужен аккузатив",
+      "en": "Verbs that take the accusative",
+      "uz": "Akkuzativ talab qiladigan fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Очень многие частые глаголы требуют аккузатив: *haben* (иметь), *sehen* (видеть), *kaufen* (покупать), *brauchen* (нуждаться), *möchten* (хотеть), *essen* (есть), *trinken* (пить), *suchen* (искать). Аккузатив нужен и после *es gibt* — «есть, имеется»: *Es gibt einen Park*.",
+      "en": "Many common verbs take the accusative: *haben, sehen, kaufen, brauchen, möchten, essen, trinken, suchen*. Also *es gibt* (“there is”): *Es gibt einen Park*.",
+      "uz": "Ko'plab ko'p ishlatiladigan fe'llar akkuzativ talab qiladi: *haben* (ega bo'lmoq), *sehen* (ko'rmoq), *kaufen* (sotib olmoq), *brauchen* (muhtoj bo'lmoq), *möchten* (xohlamoq), *essen* (yemoq), *trinken* (ichmoq), *suchen* (qidirmoq). *es gibt* (bor) dan keyin ham: *Es gibt einen Park*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Запомни одну пару: *der → den*, *ein → einen*. Остальное в аккузативе не меняется.",
+      "en": "Remember one pair: *der → den*, *ein → einen*. Nothing else changes in the accusative.",
+      "uz": "Bitta juftlikni yodlang: *der → den*, *ein → einen*. Akkuzativda qolgani o'zgarmaydi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1629,6 +2524,228 @@
     "en": "W-word → verb → subject.",
     "uz": "W-so'z → fe'l → ega."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Вопросы со словом на W",
+      "en": "Questions with a W-word",
+      "uz": "W so'zli savollar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Почти все вопросительные слова в немецком начинаются на букву *W*, поэтому такие вопросы называют W-Fragen. Буква *W* читается как русская [в]: *wo* [во:] — где, *was* [вас] — что.",
+      "en": "Almost all German question words start with *W*, so they're called W-Fragen. German *W* sounds like English “v”: *wo*, *was*.",
+      "uz": "Nemis tilida deyarli barcha so'roq so'zlari *W* harfi bilan boshlanadi, shuning uchun bunday savollar W-Fragen deyiladi. *W* harfi [v] deb o'qiladi: *wo* [vo:] — qayerda, *was* [vas] — nima."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "wer",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "Wer ist das?"
+       ],
+       [
+        "was",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "Was machst du?"
+       ],
+       [
+        "wo",
+        {
+         "ru": "где",
+         "en": "where",
+         "uz": "qayerda"
+        },
+        "Wo wohnst du?"
+       ],
+       [
+        "woher",
+        {
+         "ru": "откуда",
+         "en": "where from",
+         "uz": "qayerdan"
+        },
+        "Woher kommst du?"
+       ],
+       [
+        "wohin",
+        {
+         "ru": "куда",
+         "en": "where to",
+         "uz": "qayerga"
+        },
+        "Wohin fährst du?"
+       ],
+       [
+        "wann",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "Wann beginnt der Kurs?"
+       ],
+       [
+        "wie",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday"
+        },
+        "Wie heißt du?"
+       ],
+       [
+        "warum",
+        {
+         "ru": "почему",
+         "en": "why",
+         "uz": "nega"
+        },
+        "Warum lernst du Deutsch?"
+       ],
+       [
+        "wie viel",
+        {
+         "ru": "сколько",
+         "en": "how much",
+         "uz": "qancha"
+        },
+        "Wie viel kostet das?"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Ловушка: *wer* значит «кто», а не «где»! «Где» — это *wo*. Похоже на английское *where*, но значение другое.",
+      "en": "Trap: *wer* means “who”, not “where”! “Where” is *wo*.",
+      "uz": "Tuzoq: *wer* — «kim», «qayerda» emas! «Qayerda» — *wo*. Inglizcha *where* ga o'xshaydi, lekin ma'nosi boshqa."
+     }
+    },
+    {
+     "h": {
+      "ru": "Порядок слов",
+      "en": "Word order",
+      "uz": "So'z tartibi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Вопросительное слово занимает место 1, а глагол — как всегда — место 2. Подлежащее идёт сразу после глагола. Никаких помощников вроде английского *do* в немецком нет.",
+      "en": "The W-word takes slot 1, the verb — as always — slot 2, and the subject comes right after the verb. No helper like English *do* is needed.",
+      "uz": "So'roq so'zi 1-o'rinni egallaydi, fe'l esa — har doimgidek — 2-o'rinni. Ega fe'ldan keyin darhol keladi. Ingliz tilidagi *do* kabi yordamchilar nemis tilida yo'q."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "1: W-слово",
+        "en": "1: W-word",
+        "uz": "1: W-so'z"
+       },
+       {
+        "ru": "2: глагол",
+        "en": "2: verb",
+        "uz": "2: fe'l"
+       },
+       {
+        "ru": "3: кто",
+        "en": "3: subject",
+        "uz": "3: ega"
+       },
+       {
+        "ru": "Остальное",
+        "en": "Rest",
+        "uz": "Qolgani"
+       }
+      ],
+      "rows": [
+       [
+        "Wo",
+        "wohnst",
+        "du",
+        "jetzt?"
+       ],
+       [
+        "Was",
+        "trinkt",
+        "ihr",
+        "gern?"
+       ],
+       [
+        "Wann",
+        "kommt",
+        "der Bus?",
+        "—"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Wie* heißen Sie?",
+       "t": {
+        "ru": "Как Вас зовут?",
+        "uz": "Ismingiz nima?",
+        "en": "What's your name?"
+       }
+      },
+      {
+       "s": "*Woher* kommst du? — Aus Usbekistan.",
+       "t": {
+        "ru": "Откуда ты? — Из Узбекистана.",
+        "uz": "Qayerdansan? — O'zbekistondan.",
+        "en": "Where are you from? — From Uzbekistan."
+       }
+      },
+      {
+       "s": "*Was* ist dein Hobby?",
+       "t": {
+        "ru": "Какое у тебя хобби?",
+        "uz": "Sevimli mashg'uloting nima?",
+        "en": "What's your hobby?"
+       }
+      }
+     ]
+    },
+    {
+     "p": {
+      "ru": "Интонация в W-вопросе обычно _понижается_ к концу, как в обычной фразе.",
+      "en": "In a W-question the voice usually goes down at the end.",
+      "uz": "W-savolda ovoz odatda oxirida pasayadi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1890,6 +3007,133 @@
     "en": "du: no -st; ihr: -t; Sie: verb + Sie.",
     "uz": "du: -st siz; ihr: -t; Sie: fe'l + Sie."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Как попросить или приказать",
+      "en": "How to ask or tell someone",
+      "uz": "Qanday iltimos yoki buyruq qilinadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Повелительное наклонение (Imperativ) — это форма для просьб, советов и команд: «Иди!», «Садитесь!», «Давай пойдём!». В немецком у неё три варианта — в зависимости от того, к кому обращаешься.",
+      "en": "The imperative is the form for requests, advice and orders: “Come!”, “Sit down!”, “Let's go!”. German has three versions, depending on whom you speak to.",
+      "uz": "Buyruq mayli (Imperativ) — iltimos, maslahat va buyruq uchun shakl: «Kel!», «O'tiring!», «Ketdik!». Nemis tilida uning uch xili bor — kimga murojaat qilayotganingizga qarab."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "К кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       {
+        "ru": "Как строится",
+        "en": "How it's built",
+        "uz": "Qanday tuziladi"
+       },
+       "kommen",
+       "machen"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "du (один друг)",
+         "en": "du (one friend)",
+         "uz": "du (bitta do'st)"
+        },
+        {
+         "ru": "основа, без du",
+         "en": "stem, no du",
+         "uz": "o'zak, du siz"
+        },
+        "Komm!",
+        "Mach!"
+       ],
+       [
+        {
+         "ru": "ihr (несколько друзей)",
+         "en": "ihr (friends)",
+         "uz": "ihr (bir nechta do'st)"
+        },
+        {
+         "ru": "форма ihr, без ihr",
+         "en": "ihr form, no ihr",
+         "uz": "ihr shakli, ihr siz"
+        },
+        "Kommt!",
+        "Macht!"
+       ],
+       [
+        {
+         "ru": "Sie (вежливо)",
+         "en": "Sie (polite)",
+         "uz": "Sie (hurmat)"
+        },
+        {
+         "ru": "глагол + Sie",
+         "en": "verb + Sie",
+         "uz": "fe'l + Sie"
+        },
+        "Kommen Sie!",
+        "Machen Sie!"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Для *du* берём форму *du kommst*, убираем *du* и окончание *-st*: *Komm!* Для *ihr* — просто форма без местоимения: *ihr kommt → Kommt!* Для *Sie* глагол встаёт на первое место, а *Sie* остаётся: *Kommen Sie!*",
+      "en": "For *du*: take *du kommst*, drop *du* and *-st*: *Komm!* For *ihr*: just drop the pronoun: *Kommt!* For *Sie*: the verb moves to the front and *Sie* stays: *Kommen Sie!*",
+      "uz": "*du* uchun *du kommst* shaklini olamiz, *du* va *-st* ni olib tashlaymiz: *Komm!* *ihr* uchun — olmoshsiz shakl: *ihr kommt → Kommt!* *Sie* uchun fe'l birinchi o'ringa chiqadi, *Sie* qoladi: *Kommen Sie!*"
+     }
+    },
+    {
+     "p": {
+      "ru": "Глаголы, которые меняют *e* на *i/ie* (*sprechen → du sprichst*), сохраняют это и в просьбе: *Sprich langsam!* — Говори медленно! *Lies das!* — Прочитай это! А *sein* особенный: *Sei ruhig!* — Тихо! (к другу), *Seien Sie bitte pünktlich!*",
+      "en": "Verbs that change *e* to *i/ie* keep it: *Sprich langsam!*, *Lies das!* *Sein* is special: *Sei ruhig!*, *Seien Sie bitte pünktlich!*",
+      "uz": "*e* ni *i/ie* ga o'zgartiradigan fe'llar (*sprechen → du sprichst*) buyruqda ham shunday qoladi: *Sprich langsam!* — Sekin gapir! *Lies das!* — Buni o'qi! *sein* alohida: *Sei ruhig!* — Jim bo'l! (do'stga), *Seien Sie bitte pünktlich!*"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hilf* mir bitte!",
+       "t": {
+        "ru": "Помоги мне, пожалуйста!",
+        "uz": "Iltimos, menga yordam ber!",
+        "en": "Help me, please!"
+       }
+      },
+      {
+       "s": "*Öffnen Sie* bitte das Fenster.",
+       "t": {
+        "ru": "Откройте, пожалуйста, окно.",
+        "uz": "Iltimos, derazani oching.",
+        "en": "Please open the window."
+       }
+      },
+      {
+       "s": "Kinder, *seid* leise!",
+       "t": {
+        "ru": "Дети, тише!",
+        "uz": "Bolalar, jim bo'linglar!",
+        "en": "Kids, be quiet!"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Bitte* — «пожалуйста» — делает любую команду вежливой. Ставь его после глагола: *Komm bitte!*",
+      "en": "*Bitte* (please) makes any command polite. Put it after the verb: *Komm bitte!*",
+      "uz": "*Bitte* — «iltimos» — har qanday buyruqni muloyim qiladi. Uni fe'ldan keyin qo'ying: *Komm bitte!*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2148,6 +3392,139 @@
     "en": "Learn each noun with its plural: das Buch, die Bücher.",
     "uz": "Otni ko'pligi bilan o'rgan: das Buch, die Bücher."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Множественное число в немецком",
+      "en": "German plurals",
+      "uz": "Nemis tilida ko'plik"
+     }
+    },
+    {
+     "p": {
+      "ru": "В английском почти всегда добавляют *-s*, в узбекском — «-lar». В немецком всё сложнее: способов образовать множественное число несколько. Поэтому новые слова лучше учить в трёх частях: артикль, слово, множественное число. Например: *der Tisch, die Tische*.",
+      "en": "German has several ways to form the plural. So learn new nouns in three parts: article, noun, plural — *der Tisch, die Tische*.",
+      "uz": "O'zbek tilida «-lar» qo'shamiz, nemis tilida esa ko'plik yasashning bir necha usuli bor. Shuning uchun yangi so'zlarni uch qism bilan yodlagan ma'qul: artikl, so'z, ko'plik. Masalan: *der Tisch, die Tische*."
+     }
+    },
+    {
+     "p": {
+      "ru": "Есть и простая часть: во множественном числе артикль _всегда_ *die*, какого бы рода ни было слово: *der Mann → die Männer*, *das Kind → die Kinder*.",
+      "en": "The easy part: in the plural the article is always *die*, whatever the gender: *der Mann → die Männer*, *das Kind → die Kinder*.",
+      "uz": "Oson qismi ham bor: ko'plikda artikl so'z jinsidan qat'i nazar _doim_ *die*: *der Mann → die Männer*, *das Kind → die Kinder*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       {
+        "ru": "Часто у слов",
+        "en": "Often for",
+        "uz": "Ko'pincha"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "-e",
+        {
+         "ru": "мужской род",
+         "en": "masculine nouns",
+         "uz": "erkak jinsi"
+        },
+        "der Tag → die Tage"
+       ],
+       [
+        "-(e)n",
+        {
+         "ru": "женский род",
+         "en": "feminine nouns",
+         "uz": "ayol jinsi"
+        },
+        "die Frau → die Frauen, die Lampe → die Lampen"
+       ],
+       [
+        "-er (+ ä, ö, ü)",
+        {
+         "ru": "средний род",
+         "en": "neuter nouns",
+         "uz": "o'rta jins"
+        },
+        "das Kind → die Kinder, das Buch → die Bücher"
+       ],
+       [
+        "-s",
+        {
+         "ru": "иностранные слова",
+         "en": "foreign words",
+         "uz": "chet so'zlar"
+        },
+        "das Auto → die Autos, das Handy → die Handys"
+       ],
+       [
+        "— (+ ä, ö, ü)",
+        {
+         "ru": "слова на -er, -el, -en",
+         "en": "nouns in -er, -el, -en",
+         "uz": "-er, -el, -en bilan tugaydiganlar"
+        },
+        "der Lehrer → die Lehrer, der Vater → die Väter"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Точки над буквой (умлаут) — *ä, ö, ü* — часто появляются во множественном числе: *der Apfel → die Äpfel*. *ä* читается как [э], *ö* — как русское [ё] без [й] в начале, *ü* — как [ю], но губы трубочкой.",
+      "en": "Umlauts (*ä, ö, ü*) often appear in the plural: *der Apfel → die Äpfel*.",
+      "uz": "Harf ustidagi nuqtalar (umlaut) — *ä, ö, ü* — ko'plikda tez-tez paydo bo'ladi: *der Apfel → die Äpfel*. *ä* [e] deb, *ö* o'zbekcha «o'» ga yaqin, *ü* — «yu» ga yaqin, lablar cho'chchaygan holda o'qiladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich habe zwei *Brüder*.",
+       "t": {
+        "ru": "У меня два брата.",
+        "uz": "Mening ikkita akam bor.",
+        "en": "I have two brothers."
+       }
+      },
+      {
+       "s": "*Die Kinder* spielen im Park.",
+       "t": {
+        "ru": "Дети играют в парке.",
+        "uz": "Bolalar parkda o'ynayapti.",
+        "en": "The children are playing in the park."
+       }
+      },
+      {
+       "s": "Wie viele *Bücher* hast du?",
+       "t": {
+        "ru": "Сколько у тебя книг?",
+        "uz": "Nechta kitobing bor?",
+        "en": "How many books do you have?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Как и в английском, после числа больше одного — множественное число: *drei Äpfel*, а не «drei Apfel».",
+      "en": "After a number above one, always the plural: *drei Äpfel*.",
+      "uz": "Ingliz tilidagi kabi, birdan katta sondan keyin — ko'plik: «drei Apfel» emas, *drei Äpfel*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2407,6 +3784,128 @@
     "en": "Hours — um, days — am, months — im.",
     "uz": "Soat — um, kun — am, oy — im."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Am, um, im: когда?",
+      "en": "Am, um, im: when?",
+      "uz": "Am, um, im: qachon?"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать, _когда_ что-то происходит, в немецком используют три маленьких слова: *um*, *am* и *im*. Выбор зависит от того, что именно ты называешь: точное время, день или более длинный период.",
+      "en": "To say when something happens, German uses three little words: *um*, *am* and *im*. The choice depends on what you name: a clock time, a day or a longer period.",
+      "uz": "Biror narsa qachon bo'lishini aytish uchun nemis tilida uchta kichik so'z ishlatiladi: *um*, *am* va *im*. Tanlov nimani aytayotganingizga bog'liq: aniq vaqt, kun yoki uzunroq davr."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Для чего",
+        "en": "Used for",
+        "uz": "Nima uchun"
+       },
+       {
+        "ru": "Примеры",
+        "en": "Examples",
+        "uz": "Misollar"
+       }
+      ],
+      "rows": [
+       [
+        "um",
+        {
+         "ru": "время на часах",
+         "en": "clock times",
+         "uz": "soat bo'yicha vaqt"
+        },
+        "um 8 Uhr, um halb drei"
+       ],
+       [
+        "am",
+        {
+         "ru": "дни и части дня",
+         "en": "days, parts of the day",
+         "uz": "kunlar va kun qismlari"
+        },
+        "am Montag, am Morgen, am Wochenende"
+       ],
+       [
+        "im",
+        {
+         "ru": "месяцы и времена года",
+         "en": "months and seasons",
+         "uz": "oylar va fasllar"
+        },
+        "im Mai, im Winter, im Sommer"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Am* и *im* — это слияния: *am = an dem*, *im = in dem*. Немцы так говорят всегда, полную форму почти не используют. Исключение-ловушка: *in der Nacht* — ночью (женский род, слияния нет).",
+      "en": "*Am* and *im* are short for *an dem* and *in dem*; Germans always use the short forms. Exception: *in der Nacht* (at night).",
+      "uz": "*Am* va *im* — qo'shilgan shakllar: *am = an dem*, *im = in dem*. Nemislar doim qisqa shaklni ishlatadi. Tuzoq-istisno: *in der Nacht* — kechasi (ayol jinsi, qo'shilmaydi)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Der Film beginnt *um* 20 Uhr.",
+       "t": {
+        "ru": "Фильм начинается в 20 часов.",
+        "uz": "Film soat 20 da boshlanadi.",
+        "en": "The film starts at 8 pm."
+       }
+      },
+      {
+       "s": "*Am* Samstag besuche ich meine Oma.",
+       "t": {
+        "ru": "В субботу я навещаю бабушку.",
+        "uz": "Shanba kuni buvimnikiga boraman.",
+        "en": "On Saturday I visit my grandma."
+       }
+      },
+      {
+       "s": "*Im* Sommer ist es in Taschkent sehr heiß.",
+       "t": {
+        "ru": "Летом в Ташкенте очень жарко.",
+        "uz": "Yozda Toshkentda juda issiq.",
+        "en": "In summer it's very hot in Tashkent."
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Как говорить время",
+      "en": "Telling the time",
+      "uz": "Vaqtni aytish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Полезно знать: *Es ist acht Uhr* — восемь часов. *Viertel nach acht* — четверть девятого. *Halb neun* — половина девятого (внимание: «половина _к девяти_», как в русском). *Viertel vor neun* — без четверти девять.",
+      "en": "Useful: *Es ist acht Uhr* — it's eight. *Viertel nach acht* — quarter past eight. *Halb neun* — half past eight (literally “half to nine”). *Viertel vor neun* — quarter to nine.",
+      "uz": "Bilish foydali: *Es ist acht Uhr* — soat sakkiz. *Viertel nach acht* — sakkizdan chorak o'tdi. *Halb neun* — sakkiz yarim (so'zma-so'z «to'qqizga yarim»). *Viertel vor neun* — to'qqizga chorak bor."
+     }
+    },
+    {
+     "note": {
+      "ru": "Точное время → *um*. День → *am*. Месяц или сезон → *im*. В вопросе: *Um wie viel Uhr?* — Во сколько?",
+      "en": "Clock time → *um*. Day → *am*. Month or season → *im*. Ask: *Um wie viel Uhr?* — At what time?",
+      "uz": "Aniq vaqt → *um*. Kun → *am*. Oy yoki fasl → *im*. Savol: *Um wie viel Uhr?* — Soat nechada?"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2668,6 +4167,111 @@
     "en": "Verb first; answer a “not…?” question with doch if the answer is yes.",
     "uz": "Fe'l oldinga; «…mi emas?» savoliga «ha» bo'lsa — doch."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Вопросы «да или нет»",
+      "en": "Yes/no questions",
+      "uz": "«Ha yoki yo'q» savollari"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если ответ на вопрос — «да» или «нет», вопрос в немецком начинается прямо с глагола. Глагол переходит с места 2 на место 1: *Du kommst* → *Kommst du?* — Ты придёшь?",
+      "en": "For a yes/no question, the German sentence starts with the verb: *Du kommst* → *Kommst du?*",
+      "uz": "Javobi «ha» yoki «yo'q» bo'ladigan savol nemis tilida to'g'ridan-to'g'ri fe'l bilan boshlanadi. Fe'l 2-o'rindan 1-o'ringa o'tadi: *Du kommst* → *Kommst du?* — Kelasanmi?"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hast* du Hunger?",
+       "t": {
+        "ru": "Ты голоден?",
+        "uz": "Qorning ochmi?",
+        "en": "Are you hungry?"
+       }
+      },
+      {
+       "s": "*Sprechen* Sie Englisch?",
+       "t": {
+        "ru": "Вы говорите по-английски?",
+        "uz": "Inglizcha gapirasizmi?",
+        "en": "Do you speak English?"
+       }
+      },
+      {
+       "s": "*Ist* das dein Auto?",
+       "t": {
+        "ru": "Это твоя машина?",
+        "uz": "Bu sening mashinangmi?",
+        "en": "Is that your car?"
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Ja, nein и особое слово doch",
+      "en": "Ja, nein and the special word doch",
+      "uz": "Ja, nein va maxsus so'z doch"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ja* [я:] — да, *nein* [найн] — нет. Но есть третье слово, которого нет ни в русском, ни в английском: *doch* [дох]. Его используют, чтобы сказать «да» на вопрос с отрицанием — то есть возразить.",
+      "en": "*Ja* — yes, *nein* — no. German has a third word: *doch*. It means “yes” as an answer to a _negative_ question — when you contradict it.",
+      "uz": "*Ja* [ya:] — ha, *nein* [nayn] — yo'q. Lekin uchinchi so'z ham bor: *doch* [dox]. U inkorli savolga «ha» deb javob berish — ya'ni e'tiroz bildirish uchun ishlatiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Вопрос",
+        "en": "Question",
+        "uz": "Savol"
+       },
+       {
+        "ru": "Ответ «да»",
+        "en": "“Yes” answer",
+        "uz": "«Ha» javobi"
+       },
+       {
+        "ru": "Ответ «нет»",
+        "en": "“No” answer",
+        "uz": "«Yo'q» javobi"
+       }
+      ],
+      "rows": [
+       [
+        "Kommst du?",
+        "Ja, ich komme.",
+        "Nein, ich komme nicht."
+       ],
+       [
+        "Kommst du nicht?",
+        "Doch, ich komme!",
+        "Nein, ich komme nicht."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Представь: друг спрашивает *Hast du keine Zeit?* — «У тебя нет времени?». Если время есть, по-русски мы путаемся: «Да… то есть есть». По-немецки всё просто: *Doch!* — «Нет, есть!».",
+      "en": "Imagine a friend asks *Hast du keine Zeit?* — “Don't you have time?”. If you do have time, just say *Doch!*",
+      "uz": "Tasavvur qiling: do'stingiz *Hast du keine Zeit?* — «Vaqting yo'qmi?» deb so'raydi. Agar vaqtingiz bo'lsa, shunchaki *Doch!* deysiz — «Yo'q, bor!»."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Doch* — только после вопроса с *nicht* или *kein*, когда ты не согласен с отрицанием.",
+      "en": "*Doch* only answers a question with *nicht* or *kein*, when you disagree with the negative.",
+      "uz": "*Doch* — faqat *nicht* yoki *kein* li savolga, inkorga rozi bo'lmaganda."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2925,6 +4529,163 @@
     "en": "möchte = polite “want”; gern = like doing.",
     "uz": "möchte — muloyim «xohlayman»; gern — «…ni yoqtiraman»."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Хочу и люблю",
+      "en": "Want and like",
+      "uz": "Xohlayman va yoqtiraman"
+     }
+    },
+    {
+     "p": {
+      "ru": "Две очень полезные вещи для начала: как вежливо сказать, чего ты хочешь, и как сказать, что тебе что-то нравится делать.",
+      "en": "Two very useful things for beginners: how to say politely what you want, and how to say you like doing something.",
+      "uz": "Boshlovchilar uchun ikki juda foydali narsa: nima xohlayotganingizni muloyim aytish va biror ishni qilishni yoqtirishingizni aytish."
+     }
+    },
+    {
+     "h": {
+      "ru": "Möchten — «хотел бы»",
+      "en": "Möchten — “would like”",
+      "uz": "Möchten — «xohlardim»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Möchten* [мёхьтен] — вежливое «хотел бы». Так заказывают в кафе, просят в магазине. Формы: *ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten*. Обрати внимание: у *ich* и *er/sie* форма одинаковая — *möchte*.",
+      "en": "*Möchten* is the polite “would like”. Use it in cafés and shops. Forms: *ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten*. Note: *ich* and *er/sie* share the form *möchte*.",
+      "uz": "*Möchten* [mo'xten] — muloyim «xohlardim». Kafeda buyurtma, do'konda so'rov shu bilan qilinadi. Shakllari: *ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten*. E'tibor bering: *ich* va *er/sie* shakli bir xil — *möchte*."
+     }
+    },
+    {
+     "p": {
+      "ru": "С предметом: *Ich möchte einen Tee* — Я хотел бы чай. С действием: второй глагол уходит в конец предложения: *Ich möchte Deutsch lernen* — Я хотел бы учить немецкий.",
+      "en": "With a thing: *Ich möchte einen Tee.* With an action, the second verb goes to the end: *Ich möchte Deutsch lernen.*",
+      "uz": "Narsa bilan: *Ich möchte einen Tee* — Choy xohlardim. Harakat bilan: ikkinchi fe'l gap oxiriga ketadi: *Ich möchte Deutsch lernen* — Nemis tilini o'rganmoqchiman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *möchte* ein Wasser, bitte.",
+       "t": {
+        "ru": "Мне воду, пожалуйста.",
+        "uz": "Iltimos, bir suv.",
+        "en": "I'd like a water, please."
+       }
+      },
+      {
+       "s": "*Möchtest* du heute ins Kino gehen?",
+       "t": {
+        "ru": "Хочешь сегодня пойти в кино?",
+        "uz": "Bugun kinoga borishni xohlaysanmi?",
+        "en": "Would you like to go to the cinema today?"
+       }
+      }
+     ]
+    },
+    {
+     "h": {
+      "ru": "Gern — «люблю, с удовольствием»",
+      "en": "Gern — “like doing”",
+      "uz": "Gern — «yoqtirib, mamnuniyat bilan»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать «я люблю что-то делать», немцы не используют отдельный глагол. Они берут обычный глагол и добавляют после него слово *gern* [герн] — «с удовольствием». *Ich schwimme gern* — Я люблю плавать (дословно «я плаваю с удовольствием»).",
+      "en": "To say you like doing something, German adds *gern* after the verb: *Ich schwimme gern* — I like swimming (literally “I swim gladly”).",
+      "uz": "«Men biror ishni qilishni yaxshi ko'raman» deyish uchun nemislar alohida fe'l ishlatmaydi. Oddiy fe'lni olib, undan keyin *gern* [gern] — «mamnuniyat bilan» so'zini qo'shadi. *Ich schwimme gern* — Suzishni yaxshi ko'raman (so'zma-so'z «Mamnuniyat bilan suzaman»)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Степень",
+        "en": "How much",
+        "uz": "Darajasi"
+       },
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "люблю",
+         "en": "like",
+         "uz": "yoqtiraman"
+        },
+        "gern",
+        "Ich lese gern."
+       ],
+       [
+        {
+         "ru": "люблю больше",
+         "en": "prefer",
+         "uz": "ko'proq yoqtiraman"
+        },
+        "lieber",
+        "Ich trinke lieber Tee."
+       ],
+       [
+        {
+         "ru": "люблю больше всего",
+         "en": "like most",
+         "uz": "eng ko'p yoqtiraman"
+        },
+        "am liebsten",
+        "Ich spiele am liebsten Fußball."
+       ],
+       [
+        {
+         "ru": "не люблю",
+         "en": "don't like",
+         "uz": "yoqtirmayman"
+        },
+        "nicht gern",
+        "Ich koche nicht gern."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ich *tanze gern*.",
+       "t": {
+        "ru": "Я люблю танцевать.",
+        "uz": "Raqs tushishni yaxshi ko'raman.",
+        "en": "I like dancing."
+       }
+      },
+      {
+       "s": "Was machst du *gern*?",
+       "t": {
+        "ru": "Что ты любишь делать?",
+        "uz": "Nima qilishni yaxshi ko'rasan?",
+        "en": "What do you like doing?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Möchten* — хочу сейчас, конкретно. *Gern* — люблю вообще, обычно. *Ich möchte Tee* (сейчас) ≠ *Ich trinke gern Tee* (вообще люблю).",
+      "en": "*Möchten* — want now. *Gern* — like in general. *Ich möchte Tee* (now) ≠ *Ich trinke gern Tee* (in general).",
+      "uz": "*Möchten* — hozir, aniq xohlayman. *Gern* — umuman yoqtiraman. *Ich möchte Tee* (hozir) ≠ *Ich trinke gern Tee* (umuman yoqtiraman)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

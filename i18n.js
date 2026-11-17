@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.37'; // the one place the shown version lives (footer)
+  var VERSION = '2.38'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -417,6 +417,13 @@
     'course.step.build': ['Как строится', 'How it’s built', 'Qanday tuziladi'],
     'course.step.fix': ['Исправь ошибку', 'Fix the mistake', "Xatoni tuzating"],
     'course.step.write': ['Твоя очередь', 'Your turn', 'Sizning navbatingiz'],
+    'course.step.theory': ['Теория', 'Theory', 'Nazariya'],
+    'course.step.recap': ['Проверь себя · {n} из {t}', 'Check yourself · {n} of {t}', "O'zingizni tekshiring · {t} dan {n}"],
+    'course.theoryLead': ['Прочитай спокойно, не торопись. Нажми на динамик, чтобы послушать пример. Потом будут вопросы и упражнения.', 'Read it calmly, no rush. Tap the speaker to hear an example. Questions and exercises come after.', "Shoshilmasdan o'qing. Misolni eshitish uchun karnayni bosing. Keyin savollar va mashqlar bo'ladi."],
+    'course.theoryNext': ['Понятно, дальше →', 'Got it, next →', 'Tushunarli, keyingisi →'],
+    'course.remember': ['Запомни', 'Remember', 'Esda tuting'],
+    'course.inShort': ['Коротко', 'In short', 'Qisqacha'],
+    'course.discoverLeadAfter': ['Прочитай и послушай. Посмотри на выделенные слова и ответь, используя то, что только что узнал.', 'Read and listen. Look at the highlighted words and answer using what you just learned.', "O'qing va tinglang. Ajratilgan so'zlarga qarang va hozirgina o'rganganingiz asosida javob bering."],
     'course.discoverEyebrow': ['ЗАМЕТЬ САМ', 'NOTICE IT YOURSELF', "O'ZINGIZ PAYQANG"],
     'course.discoverLead': ['Прочитай и послушай. Посмотри на выделенные слова — правило пока не подсказываем.', 'Read and listen. Look at the highlighted words — no rule yet.', "O'qing va tinglang. Ajratilgan so'zlarga qarang — qoidani hozircha aytmaymiz."],
     'course.discoverRight': ['Именно это и есть правило — дальше разберём его по кусочкам.', 'That’s exactly the rule — next we’ll take it apart piece by piece.', "Aynan shu qoida — keyin uni qismlarga bo'lib ko'ramiz."],

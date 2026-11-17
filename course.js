@@ -15,6 +15,7 @@
   var UI = ['ru', 'en', 'uz'];
   var LEVELS = ['A1', 'A2', 'B1', 'B2'];
   var KINDS = ['choose', 'error', 'order', 'type'];
+  var THEORY = ['h', 'p', 'ex', 'table', 'note'];
   var PASS = 0.75;                          // 6 of 8 counts as "done"
   var REVIEW_DAYS = [1, 3, 7, 14, 30, 60];  // spaced reviews of a done topic
   var REVIEW_SIZE = 5;
@@ -98,6 +99,7 @@
   // The lesson, step by step.
   function lessonSteps(t) {
     var steps = [];
+    if (t.theory) steps.push({ kind: 'theory' });
     if (t.discover) steps.push({ kind: 'discover' });
     (t.explain.ru || []).forEach(function (_, i) { steps.push({ kind: 'point', i: i }); });
     steps.push({ kind: 'build' });
@@ -155,6 +157,22 @@
       need(Array.isArray(t.checks) && t.explain && t.checks.length === t.explain.ru.length, w + ': one check per rule point');
       (t.checks || []).forEach(function (c, i) { choice(c, w + ' check ' + i, true); langs(c.e, w + ' check ' + i + ' why'); });
       langs(t.write, w + ' write');
+      // v2.38: the full theory read before the interactive steps
+      if (t.theory) {
+        need(Array.isArray(t.theory) && t.theory.length >= 4, w + ': theory blocks');
+        (t.theory || []).forEach(function (b, i) {
+          var at = w + ' theory ' + i, keys = Object.keys(b || {});
+          need(keys.length === 1 && THEORY.indexOf(keys[0]) >= 0, at + ': one known block');
+          if (b.h) langs(b.h, at); if (b.p) langs(b.p, at); if (b.note) langs(b.note, at);
+          if (b.ex) need(Array.isArray(b.ex) && b.ex.length && b.ex.every(function (e) { return e.s && e.t && e.t.ru && e.t.uz; }), at + ': examples with ru and uz');
+          if (b.table) {
+            need(Array.isArray(b.table.rows) && b.table.rows.length && Array.isArray(b.table.head), at + ': table');
+            var cells = (b.table.head || []).slice(); (b.table.rows || []).forEach(function (r) { cells = cells.concat(r); });
+            cells.forEach(function (c) { if (c && typeof c === 'object') langs(c, at + ' cell'); });
+            (b.table.rows || []).forEach(function (r, k) { need(r.length === b.table.head.length, at + ' row ' + k + ': width'); });
+          }
+        });
+      }
       need(Array.isArray(t.ex) && t.ex.length >= 6, w + ': at least 6 exercises');
       (t.ex || []).forEach(function (e, i) {
         var at = w + ' ex ' + i;
@@ -400,7 +418,8 @@
     function renderSummary() {
       var box = $('courseLessonBody'), l = ui(), t = topic;
       box.textContent = '';
-      var rule = h('section', { className: 'lesson-rule' }, [h('h3', { className: 'lesson-h', text: tr('course.rule') })]);
+      if (t.theory) box.appendChild(h('section', { className: 'lesson-rule lesson-theory' }, [h('h3', { className: 'lesson-h', text: tr('course.step.theory') }), theoryArticle(t)]));
+      var rule = h('section', { className: 'lesson-rule' }, [h('h3', { className: 'lesson-h', text: tr(t.theory ? 'course.inShort' : 'course.rule') })]);
       var ol = h('ol', { className: 'lesson-points' });
       (t.explain[l] || t.explain.ru).forEach(function (p) { ol.appendChild(h('li', { text: p })); });
       rule.appendChild(ol);
@@ -431,7 +450,50 @@
       return wrap;
     }
     function stepTitle(step) {
-      return step.kind === 'point' ? tr('course.step.point', { n: step.i + 1, t: topic.explain.ru.length }) : tr('course.step.' + step.kind);
+      if (step.kind === 'point') return tr(topic.theory ? 'course.step.recap' : 'course.step.point', { n: step.i + 1, t: topic.explain.ru.length });
+      return tr('course.step.' + step.kind);
+    }
+    // v2.38: the theory as a short illustrated chapter: headings, plain explanations, tables of forms,
+    // examples with translation and audio, and "remember" boxes. *word* marks a word of the course language,
+    // _word_ stresses a word of the explanation.
+    function richText(tag, cls, s) {
+      var el = h(tag, { className: cls });
+      marked(s).forEach(function (part) {
+        if (part.hi) { el.appendChild(h('mark', { lang: lang, text: part.t })); return; }
+        // _word_ stresses a word of the explanation itself
+        part.t.split('_').forEach(function (bit, i) { if (bit) el.appendChild(i % 2 ? h('strong', { className: 'theory-em', text: bit }) : document.createTextNode(bit)); });
+      });
+      return el;
+    }
+    function cellText(c, l) { return c && typeof c === 'object' ? { s: text(c, l), local: true } : { s: String(c == null ? '' : c), local: false }; }
+    function theoryArticle(t) {
+      var l = ui(), art = h('div', { className: 'theory' });
+      t.theory.forEach(function (b) {
+        if (b.h) art.appendChild(h('h3', { className: 'theory-h', text: text(b.h, l) }));
+        else if (b.p) art.appendChild(richText('p', 'theory-p', text(b.p, l)));
+        else if (b.note) art.appendChild(h('aside', { className: 'theory-note' }, [h('span', { className: 'theory-note-label', text: tr('course.remember') }), richText('p', '', text(b.note, l))]));
+        else if (b.ex) {
+          var list = h('div', { className: 'theory-ex' });
+          b.ex.forEach(function (e) {
+            var tl = e.t && e.t[l] && !(l === lang && e.t[l] === e.s.replace(/\*/g, '')) ? e.t[l] : '';
+            var line = richText('p', 'theory-ex-s', e.s); line.lang = lang;
+            list.appendChild(h('div', { className: 'theory-ex-row' }, [sayBtn(e.s.replace(/\*/g, '')), h('div', {}, [line, tl ? h('p', { className: 'theory-ex-t', text: tl }) : null])]));
+          });
+          art.appendChild(list);
+        } else if (b.table) {
+          var tb = h('table', { className: 'theory-table' }), thead = h('thead'), hr = h('tr'), body = h('tbody');
+          b.table.head.forEach(function (c) { var x = cellText(c, l); hr.appendChild(h('th', { scope: 'col', text: x.s })); });
+          thead.appendChild(hr); tb.appendChild(thead);
+          b.table.rows.forEach(function (r) {
+            var tr2 = h('tr');
+            r.forEach(function (c, i) { var x = cellText(c, l), td = richText(i === 0 ? 'th' : 'td', x.local ? 'is-local' : 'is-lang', x.s); if (i === 0) td.setAttribute('scope', 'row'); if (!x.local) td.lang = lang; tr2.appendChild(td); });
+            body.appendChild(tr2);
+          });
+          tb.appendChild(body);
+          art.appendChild(h('div', { className: 'theory-table-wrap' }, [tb]));
+        }
+      });
+      return art;
     }
     // A multiple-choice question inside the lesson: answer, see why, then move on.
     function lessonQuestion(stage, opts, answer, onAnswered, whyRight, whyWrong) {
@@ -477,7 +539,7 @@
       if (step.kind === 'discover') {
         var d = t.discover;
         card.appendChild(h('span', { className: 'step-eyebrow', text: tr('course.discoverEyebrow') }));
-        card.appendChild(h('p', { className: 'step-lead', text: tr('course.discoverLead') }));
+        card.appendChild(h('p', { className: 'step-lead', text: tr(t.theory ? 'course.discoverLeadAfter' : 'course.discoverLead') }));
         var lines = h('div', { className: 'discover-lines' });
         d.s.forEach(function (s) { lines.appendChild(h('div', { className: 'discover-line' }, [sayBtn(s.replace(/\*/g, '')), markedLine(s)])); });
         card.appendChild(lines);
@@ -499,6 +561,13 @@
           lesson.answered[lesson.i] = true; gate(true);
         }, text(c.e, l), text(c.e, l));
         gate(!!lesson.answered[lesson.i]);
+      } else if (step.kind === 'theory') {
+        card.classList.add('theory-card');
+        card.appendChild(h('span', { className: 'step-eyebrow', text: tr('course.step.theory') }));
+        card.appendChild(h('p', { className: 'step-lead', text: tr('course.theoryLead') }));
+        card.appendChild(theoryArticle(t));
+        nextBtn.textContent = tr('course.theoryNext');
+        gate(true);
       } else if (step.kind === 'build') {
         card.appendChild(h('span', { className: 'step-eyebrow', text: tr('course.step.build') }));
         card.appendChild(h('p', { className: 'step-lead', text: tr('course.buildLead') }));

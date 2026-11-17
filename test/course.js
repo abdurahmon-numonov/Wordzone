@@ -78,7 +78,15 @@ console.log('✓ Course progress: survives backups and merges across devices');
 // v2.24: teaching steps, stars, spaced reviews, checkpoints, the AI writing check.
 assert.deepEqual(C.marked('I *am* tired.'), [{ t: 'I ', hi: false }, { t: 'am', hi: true }, { t: ' tired.', hi: false }]);
 const en = JSON.parse(fs.readFileSync(path.join(root, 'course/en.json'), 'utf8'));
-assert.deepEqual(C.lessonSteps(en.topics[0]).map(s => s.kind), ['discover', 'point', 'point', 'point', 'build', 'fix', 'write']);
+assert.deepEqual(C.lessonSteps(en.topics[0]).map(s => s.kind), ['theory', 'discover', 'point', 'point', 'point', 'build', 'fix', 'write'], 'v2.38: the theory comes first');
+assert.deepEqual(C.lessonSteps(Object.assign({}, en.topics[0], { theory: undefined })).map(s => s.kind), ['discover', 'point', 'point', 'point', 'build', 'fix', 'write'], 'a topic without theory starts with noticing');
+// v2.38: the theory is validated like the rest of a lesson
+{
+  const bad = JSON.parse(JSON.stringify(en)); bad.topics[0].theory[1] = { p: { ru: 'x', en: 'y' } };
+  assert(C.validateLessons(bad).some(e => /theory 1/.test(e)), 'a theory paragraph needs all three languages');
+  const wide = JSON.parse(JSON.stringify(en)); const tb = wide.topics[0].theory.find(b => b.table); tb.table.rows[0].push('extra');
+  assert(C.validateLessons(wide).some(e => /width/.test(e)), 'table rows match the header');
+}
 assert(C.checkFix(en.topics[0].mistake, 'my brother is tired'), 'a fixed sentence is accepted without the final dot');
 assert(!C.checkFix(en.topics[0].mistake, en.topics[0].mistake.wrong), 'the unchanged mistake is not');
 assert.deepEqual([C.stars(5, 8), C.stars(6, 8), C.stars(7, 8), C.stars(8, 8)], [0, 1, 2, 3]);

@@ -5042,6 +5042,147 @@
     "en": "avoir + participle; learn fait, pris, vu, eu.",
     "uz": "avoir + sifatdosh; fait, pris, vu, eu ni yodla."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Passé composé — прошедшее в разговоре",
+      "en": "Passé composé — the spoken past",
+      "uz": "Passé composé — so'zlashuvdagi o'tgan zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда французы рассказывают, что было вчера или на выходных, они используют passé composé. Оно состоит из двух частей: *avoir* в настоящем + причастие глагола. *J'ai mangé* — Я поел (дословно «я имею съеденное»). Похоже на немецкий Perfekt и английский Present Perfect по форме, но по смыслу это просто прошедшее.",
+      "en": "For what happened yesterday or at the weekend, French uses the passé composé: *avoir* in the present + past participle. *J'ai mangé* — I ate.",
+      "uz": "Fransuzlar kecha yoki dam olish kunlari nima bo'lganini gapirganda passé composé ishlatadi. U ikki qismdan iborat: hozirgi zamondagi *avoir* + fe'lning sifatdoshi. *J'ai mangé* — Ovqatlandim (so'zma-so'z «men yeyilganga egaman»)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как сделать причастие",
+      "en": "Making the participle",
+      "uz": "Sifatdoshni qanday yasash"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Группа",
+        "en": "Group",
+        "uz": "Guruh"
+       },
+       {
+        "ru": "Правило",
+        "en": "Rule",
+        "uz": "Qoida"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "глаголы на -er",
+         "en": "-er verbs",
+         "uz": "-er fe'llar"
+        },
+        "-er → -é",
+        "parler → parlé, manger → mangé"
+       ],
+       [
+        {
+         "ru": "глаголы на -ir",
+         "en": "-ir verbs",
+         "uz": "-ir fe'llar"
+        },
+        "-ir → -i",
+        "finir → fini, dormir → dormi"
+       ],
+       [
+        {
+         "ru": "неправильные",
+         "en": "irregular",
+         "uz": "noto'g'ri"
+        },
+        {
+         "ru": "учить наизусть",
+         "en": "learn by heart",
+         "uz": "yodlash kerak"
+        },
+        "faire → fait, voir → vu, prendre → pris, boire → bu"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Глаголы на *-er* — проще всего: *-er* меняется на *-é*, и звучит так же [э]. Неправильные причастия встречаются очень часто: *avoir → eu* [ю], *être → été*, *faire → fait*, *dire → dit*, *lire → lu*, *voir → vu*, *prendre → pris*.",
+      "en": "*-er* verbs are easiest: *-er* → *-é*, same sound. Common irregulars: *eu, été, fait, dit, lu, vu, pris*.",
+      "uz": "*-er* fe'llari eng oson: *-er* *-é* ga aylanadi va xuddi shunday [e] eshitiladi. Noto'g'ri sifatdoshlar juda ko'p uchraydi: *avoir → eu* [yu], *être → été*, *faire → fait*, *dire → dit*, *lire → lu*, *voir → vu*, *prendre → pris*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Отрицание и порядок",
+      "en": "Negatives and order",
+      "uz": "Inkor va tartib"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ne … pas* обнимает только *avoir*, а причастие стоит после: *Je n'ai pas mangé* — Я не ел. Слова *déjà* (уже), *bien*, *beaucoup* обычно встают между *avoir* и причастием: *J'ai déjà vu ce film.*",
+      "en": "*Ne … pas* wraps only *avoir*: *Je n'ai pas mangé.* Short adverbs go between: *J'ai déjà vu ce film.*",
+      "uz": "*Ne … pas* faqat *avoir* ni o'rab oladi, sifatdosh esa keyin keladi: *Je n'ai pas mangé* — Ovqatlanmadim. *déjà* (allaqachon), *bien*, *beaucoup* so'zlari odatda *avoir* va sifatdosh orasiga kiradi: *J'ai déjà vu ce film.*"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Hier, j'*ai regardé* un film.",
+       "t": {
+        "ru": "Вчера я посмотрел фильм.",
+        "uz": "Kecha film ko'rdim.",
+        "en": "Yesterday I watched a film."
+       }
+      },
+      {
+       "s": "Nous *avons fini* nos devoirs.",
+       "t": {
+        "ru": "Мы закончили домашнее задание.",
+        "uz": "Biz uy vazifamizni tugatdik.",
+        "en": "We finished our homework."
+       }
+      },
+      {
+       "s": "Tu *as fait* quoi ce week-end ?",
+       "t": {
+        "ru": "Что ты делал на выходных?",
+        "uz": "Dam olish kunlari nima qilding?",
+        "en": "What did you do this weekend?"
+       }
+      },
+      {
+       "s": "Il *n'a pas* encore *mangé*.",
+       "t": {
+        "ru": "Он ещё не ел.",
+        "uz": "U hali ovqatlanmadi.",
+        "en": "He hasn't eaten yet."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Большинство глаголов образуют passé composé с *avoir*. Небольшая группа (движение и изменение) берёт *être* — это следующая тема.",
+      "en": "Most verbs take *avoir*. A small group (movement, change) takes *être* — that's the next topic.",
+      "uz": "Ko'pchilik fe'llar passé composé ni *avoir* bilan yasaydi. Kichik bir guruh (harakat va o'zgarish) *être* ni oladi — bu keyingi mavzu."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5305,6 +5446,163 @@
     "en": "Movement and reflexives → être + make the participle agree.",
     "uz": "Harakat va o'zlik → être + sifatdoshni moslashtir."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы, которые берут être",
+      "en": "Verbs that take être",
+      "uz": "être oladigan fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Около 17 глаголов (и все возвратные) образуют passé composé не с *avoir*, а с *être*. В основном это глаголы движения и изменения состояния: пришёл, ушёл, родился, умер. *Je suis allé* — Я пошёл/поехал.",
+      "en": "About 17 verbs (and all reflexive verbs) use *être* instead of *avoir* — mostly movement and change of state: *Je suis allé.*",
+      "uz": "Taxminan 17 ta fe'l (va barcha o'zlik fe'llar) passé composé ni *avoir* bilan emas, *être* bilan yasaydi. Asosan bu harakat va holat o'zgarishi fe'llari: keldi, ketdi, tug'ildi, vafot etdi. *Je suis allé* — Men bordim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Пара",
+        "en": "Pair",
+        "uz": "Juftlik"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Причастие",
+        "en": "Participle",
+        "uz": "Sifatdosh"
+       }
+      ],
+      "rows": [
+       [
+        "aller / venir",
+        {
+         "ru": "идти / приходить",
+         "en": "go / come",
+         "uz": "bormoq / kelmoq"
+        },
+        "allé / venu"
+       ],
+       [
+        "arriver / partir",
+        {
+         "ru": "прибывать / уезжать",
+         "en": "arrive / leave",
+         "uz": "yetib kelmoq / jo'namoq"
+        },
+        "arrivé / parti"
+       ],
+       [
+        "entrer / sortir",
+        {
+         "ru": "входить / выходить",
+         "en": "go in / go out",
+         "uz": "kirmoq / chiqmoq"
+        },
+        "entré / sorti"
+       ],
+       [
+        "monter / descendre",
+        {
+         "ru": "подниматься / спускаться",
+         "en": "go up / go down",
+         "uz": "chiqmoq / tushmoq"
+        },
+        "monté / descendu"
+       ],
+       [
+        "naître / mourir",
+        {
+         "ru": "родиться / умереть",
+         "en": "be born / die",
+         "uz": "tug'ilmoq / vafot etmoq"
+        },
+        "né / mort"
+       ],
+       [
+        "rester / tomber",
+        {
+         "ru": "оставаться / падать",
+         "en": "stay / fall",
+         "uz": "qolmoq / yiqilmoq"
+        },
+        "resté / tombé"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Удобно представить «дом»: в него входят, из него выходят, поднимаются по лестнице, спускаются, падают, остаются, приходят, уходят, рождаются и умирают. Плюс *retourner* (возвращаться) и *devenir* (становиться).",
+      "en": "Picture a house: you enter, leave, go up, come down, fall, stay, come, go, are born and die. Plus *retourner* and *devenir*.",
+      "uz": "«Uy» ni tasavvur qiling: unga kiriladi, undan chiqiladi, zinadan ko'tariladi, tushiladi, yiqiladi, qolinadi, kelinadi, ketiladi, tug'iladi va vafot etiladi. Bunga *retourner* (qaytmoq) va *devenir* (bo'lib qolmoq) ham qo'shiladi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Причастие согласуется",
+      "en": "The participle agrees",
+      "uz": "Sifatdosh moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "С *être* причастие ведёт себя как прилагательное: согласуется с подлежащим. Женский род — *+e*, множественное — *+s*. *Il est allé*, *elle est allée*, *ils sont allés*, *elles sont allées*. На слух разницы обычно нет, но на письме она обязательна.",
+      "en": "With *être* the participle agrees with the subject like an adjective: *elle est allée*, *ils sont allés*. You usually can't hear it, but you must write it.",
+      "uz": "*être* bilan sifatdosh xuddi sifat kabi ega bilan moslashadi. Ayol jinsi — *+e*, ko'plik — *+s*. *Il est allé*, *elle est allée*, *ils sont allés*, *elles sont allées*. Eshitishda odatda farq yo'q, lekin yozuvda majburiy."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *suis né* en 2008.",
+       "t": {
+        "ru": "Я родился в 2008 году.",
+        "uz": "Men 2008-yilda tug'ilganman.",
+        "en": "I was born in 2008."
+       }
+      },
+      {
+       "s": "Elle *est arrivée* à huit heures.",
+       "t": {
+        "ru": "Она приехала в восемь часов.",
+        "uz": "U soat sakkizda yetib keldi.",
+        "en": "She arrived at eight."
+       }
+      },
+      {
+       "s": "Nous *sommes restés* à la maison.",
+       "t": {
+        "ru": "Мы остались дома.",
+        "uz": "Biz uyda qoldik.",
+        "en": "We stayed at home."
+       }
+      },
+      {
+       "s": "Ils *sont partis* hier.",
+       "t": {
+        "ru": "Они уехали вчера.",
+        "uz": "Ular kecha jo'nab ketishdi.",
+        "en": "They left yesterday."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Все возвратные глаголы тоже с *être*: *Je me suis levé à 7 heures* — Я встал в 7 часов.",
+      "en": "All reflexive verbs also use *être*: *Je me suis levé à 7 heures.*",
+      "uz": "Barcha o'zlik fe'llar ham *être* bilan: *Je me suis levé à 7 heures* — Soat 7 da turdim."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5567,6 +5865,127 @@
     "en": "Used to / description → -ais, -ait, -aient.",
     "uz": "Avval odatda / tasvir → -ais, -ait, -aient."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Imparfait — «было, бывало»",
+      "en": "Imparfait — how things were",
+      "uz": "Imparfait — «edi, bo'lardi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Imparfait — второе прошедшее время. Оно описывает фон прошлого: как было, что обычно происходило, что длилось. «Когда я был маленьким, я жил в деревне», «Каждое лето мы ездили к бабушке», «Шёл дождь». В узбекском похоже на «-ar edi» и «-ayotgan edi».",
+      "en": "The imparfait describes the background of the past: how things were, habits, ongoing situations — “When I was little, I lived in a village”, “It was raining.”",
+      "uz": "Imparfait — ikkinchi o'tgan zamon. U o'tmishning fonini tasvirlaydi: qanday edi, odatda nima bo'lardi, nima davom etardi. «Kichikligimda qishloqda yashardim», «Har yozda buvimnikiga borardik», «Yomg'ir yog'ayotgan edi». O'zbekcha «-ar edi» va «-ayotgan edi» ga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится — очень регулярно",
+      "en": "How it's built — very regular",
+      "uz": "Qanday tuziladi — juda muntazam"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём форму *nous* в настоящем времени, убираем *-ons* — получаем основу. *Nous parlons → parl-*, *nous finissons → finiss-*, *nous faisons → fais-*. Добавляем окончания — одинаковые для всех глаголов. Единственное исключение — *être*: основа *ét-*.",
+      "en": "Take the *nous* present form, drop *-ons*: *parl-, finiss-, fais-*. Add the same endings for every verb. Only exception: *être* → *ét-*.",
+      "uz": "Hozirgi zamondagi *nous* shaklini olib, *-ons* ni olib tashlaymiz — o'zak hosil bo'ladi. *Nous parlons → parl-*, *nous finissons → finiss-*, *nous faisons → fais-*. Qo'shimchalarni qo'shamiz — ular barcha fe'llar uchun bir xil. Yagona istisno — *être*: o'zagi *ét-*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       "parler",
+       "être"
+      ],
+      "rows": [
+       [
+        "je",
+        "-ais",
+        "parlais",
+        "étais"
+       ],
+       [
+        "tu",
+        "-ais",
+        "parlais",
+        "étais"
+       ],
+       [
+        "il / elle / on",
+        "-ait",
+        "parlait",
+        "était"
+       ],
+       [
+        "nous",
+        "-ions",
+        "parlions",
+        "étions"
+       ],
+       [
+        "vous",
+        "-iez",
+        "parliez",
+        "étiez"
+       ],
+       [
+        "ils / elles",
+        "-aient",
+        "parlaient",
+        "étaient"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "*-ais, -ais, -ait, -aient* звучат одинаково [э]. На слух отличаются только *nous* [-ьён] и *vous* [-ьэ].",
+      "en": "*-ais, -ais, -ait, -aient* all sound the same; only *nous* and *vous* sound different.",
+      "uz": "*-ais, -ais, -ait, -aient* bir xil [e] eshitiladi. Eshitishda faqat *nous* va *vous* farq qiladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Quand j'*étais* petit, j'*habitais* à Khiva.",
+       "t": {
+        "ru": "Когда я был маленьким, я жил в Хиве.",
+        "uz": "Kichikligimda Xivada yashardim.",
+        "en": "When I was little, I lived in Khiva."
+       }
+      },
+      {
+       "s": "Il *faisait* beau et les enfants *jouaient*.",
+       "t": {
+        "ru": "Была хорошая погода, и дети играли.",
+        "uz": "Havo yaxshi edi, bolalar o'ynayotgan edi.",
+        "en": "The weather was nice and the children were playing."
+       }
+      },
+      {
+       "s": "Avant, nous *allions* à la mer chaque été.",
+       "t": {
+        "ru": "Раньше мы каждое лето ездили на море.",
+        "uz": "Oldin har yozda dengizga borardik.",
+        "en": "We used to go to the sea every summer."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5827,6 +6246,130 @@
     "en": "Background → -ait; event → avoir/être + participle.",
     "uz": "Fon → -ait; voqea → avoir/être + sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два прошедших: что выбрать",
+      "en": "Two past tenses: which one",
+      "uz": "Ikki o'tgan zamon: qaysi birini tanlash"
+     }
+    },
+    {
+     "p": {
+      "ru": "Французский рассказ о прошлом всегда смешивает два времени. Представь фильм: *imparfait* — это декорации и фон (какая была погода, что люди делали, как себя чувствовали), а *passé composé* — это события, которые двигают сюжет вперёд (вдруг кто-то вошёл, что-то случилось).",
+      "en": "French stories mix two tenses. Imparfait is the scenery and background; passé composé is the events that move the plot forward.",
+      "uz": "Fransuzcha o'tmish hikoyasi doim ikki zamonni aralashtiradi. Filmni tasavvur qiling: *imparfait* — bu dekoratsiya va fon (havo qanday edi, odamlar nima qilayotgan edi, o'zini qanday his qilardi), *passé composé* esa syujetni oldinga suradigan voqealar (birdan kimdir kirdi, nimadir sodir bo'ldi)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Imparfait",
+        "en": "Imparfait",
+        "uz": "Imparfait"
+       },
+       {
+        "ru": "Passé composé",
+        "en": "Passé composé",
+        "uz": "Passé composé"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "фон, описание",
+         "en": "background, description",
+         "uz": "fon, tasvir"
+        },
+        {
+         "ru": "событие",
+         "en": "event",
+         "uz": "voqea"
+        }
+       ],
+       [
+        {
+         "ru": "длилось (процесс)",
+         "en": "ongoing",
+         "uz": "davom etardi (jarayon)"
+        },
+        {
+         "ru": "произошло и закончилось",
+         "en": "happened, finished",
+         "uz": "bo'ldi va tugadi"
+        }
+       ],
+       [
+        {
+         "ru": "бывало регулярно",
+         "en": "habit",
+         "uz": "muntazam bo'lardi"
+        },
+        {
+         "ru": "один раз / точное число раз",
+         "en": "once / a set number of times",
+         "uz": "bir marta / aniq son marta"
+        }
+       ],
+       [
+        {
+         "ru": "tous les jours, souvent, d'habitude",
+         "en": "tous les jours, souvent, d'habitude",
+         "uz": "tous les jours, souvent, d'habitude"
+        },
+        {
+         "ru": "hier, soudain, une fois, trois fois",
+         "en": "hier, soudain, une fois, trois fois",
+         "uz": "hier, soudain, une fois, trois fois"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Самая типичная схема: длинное действие-фон в imparfait прерывается коротким событием в passé composé. *Je regardais la télé quand le téléphone a sonné* — Я смотрел телевизор (фон), когда зазвонил телефон (событие).",
+      "en": "Typical pattern: a background action in the imparfait interrupted by an event in the passé composé: *Je regardais la télé quand le téléphone a sonné.*",
+      "uz": "Eng odatiy sxema: imparfait dagi uzun fon-harakat passé composé dagi qisqa voqea bilan bo'linadi. *Je regardais la télé quand le téléphone a sonné* — Televizor ko'rayotgan edim (fon), telefon jiringladi (voqea)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Il *pleuvait*, alors je *suis resté* à la maison.",
+       "t": {
+        "ru": "Шёл дождь, поэтому я остался дома.",
+        "uz": "Yomg'ir yog'ayotgan edi, shuning uchun uyda qoldim.",
+        "en": "It was raining, so I stayed home."
+       }
+      },
+      {
+       "s": "Quand j'*étais* enfant, je *jouais* au foot tous les jours.",
+       "t": {
+        "ru": "В детстве я каждый день играл в футбол.",
+        "uz": "Bolaligimda har kuni futbol o'ynardim.",
+        "en": "As a child I played football every day."
+       }
+      },
+      {
+       "s": "Nous *dormions* quand le bruit *a commencé*.",
+       "t": {
+        "ru": "Мы спали, когда начался шум.",
+        "uz": "Shovqin boshlanganda biz uxlayotgan edik.",
+        "en": "We were sleeping when the noise started."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вопрос-подсказка: «что происходило? каким было?» → imparfait. «Что случилось потом?» → passé composé.",
+      "en": "Ask: “What was going on? What was it like?” → imparfait. “What happened next?” → passé composé.",
+      "uz": "Yordamchi savol: «nima bo'layotgan edi? qanday edi?» → imparfait. «Keyin nima bo'ldi?» → passé composé."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6094,6 +6637,128 @@
     "en": "Each person has its own pronoun.",
     "uz": "Har shaxsning o'z olmoshi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Возвратные глаголы",
+      "en": "Reflexive verbs",
+      "uz": "O'zlik fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Возвратный глагол — когда действие направлено на самого себя. В русском это «-ся» (умываться), в узбекском «-n» (yuvinmoq). Во французском перед глаголом ставят маленькое местоимение: *se laver* — мыться, *se lever* — вставать, *s'appeler* — называться.",
+      "en": "A reflexive verb is an action on yourself. French adds a small pronoun before the verb: *se laver*, *se lever*, *s'appeler*.",
+      "uz": "O'zlik fe'l — harakat o'ziga qaratilganda. O'zbek tilida bu «-n» (yuvinmoq). Fransuz tilida fe'l oldidan kichik olmosh qo'yiladi: *se laver* — yuvinmoq, *se lever* — turmoq, *s'appeler* — atalmoq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       },
+       "se lever"
+      ],
+      "rows": [
+       [
+        "je",
+        "me (m')",
+        "je me lève"
+       ],
+       [
+        "tu",
+        "te (t')",
+        "tu te lèves"
+       ],
+       [
+        "il / elle / on",
+        "se (s')",
+        "il se lève"
+       ],
+       [
+        "nous",
+        "nous",
+        "nous nous levons"
+       ],
+       [
+        "vous",
+        "vous",
+        "vous vous levez"
+       ],
+       [
+        "ils / elles",
+        "se (s')",
+        "ils se lèvent"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Местоимение всегда стоит перед глаголом и совпадает с лицом: *je me*, *tu te*, *il se*. Перед гласной *me, te, se* теряют *e*: *Je m'appelle Ali* — Меня зовут Али (дословно «я себя называю Али»).",
+      "en": "The pronoun goes before the verb and matches the person. Before a vowel *me, te, se* become *m', t', s'*: *Je m'appelle Ali.*",
+      "uz": "Olmosh doim fe'ldan oldin turadi va shaxsga mos keladi: *je me*, *tu te*, *il se*. Unli oldidan *me, te, se* *e* ni yo'qotadi: *Je m'appelle Ali* — Mening ismim Ali (so'zma-so'z «men o'zimni Ali deb atayman»)."
+     }
+    },
+    {
+     "p": {
+      "ru": "Отрицание обнимает и местоимение, и глагол: *Je ne me lève pas* — Я не встаю. В passé composé возвратные глаголы всегда с *être*: *Je me suis levé*, *Elle s'est levée*.",
+      "en": "The negative wraps both: *Je ne me lève pas.* In the passé composé they take *être*: *Je me suis levé.*",
+      "uz": "Inkor olmoshni ham, fe'lni ham o'rab oladi: *Je ne me lève pas* — Men turmayapman. Passé composé da o'zlik fe'llar doim *être* bilan: *Je me suis levé*, *Elle s'est levée*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *me lève* à sept heures.",
+       "t": {
+        "ru": "Я встаю в семь часов.",
+        "uz": "Soat yettida turaman.",
+        "en": "I get up at seven."
+       }
+      },
+      {
+       "s": "Comment tu *t'appelles* ?",
+       "t": {
+        "ru": "Как тебя зовут?",
+        "uz": "Isming nima?",
+        "en": "What's your name?"
+       }
+      },
+      {
+       "s": "Nous *nous amusons* bien.",
+       "t": {
+        "ru": "Мы хорошо проводим время.",
+        "uz": "Biz yaxshi vaqt o'tkazyapmiz.",
+        "en": "We're having fun."
+       }
+      },
+      {
+       "s": "Elle *s'est réveillée* tard.",
+       "t": {
+        "ru": "Она проснулась поздно.",
+        "uz": "U kech uyg'ondi.",
+        "en": "She woke up late."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Не все русские «-ся» возвратные во французском и наоборот: *s'asseoir* — садиться, но *se promener* — гулять, *se souvenir* — помнить.",
+      "en": "French reflexives don't always match other languages: *se promener* (walk), *se souvenir* (remember).",
+      "uz": "Fransuz tilidagi o'zlik fe'llar o'zbek tili bilan doim mos kelmaydi: *s'asseoir* — o'tirmoq, *se promener* — sayr qilmoq, *se souvenir* — eslamoq."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6354,6 +7019,158 @@
     "en": "Whom/what → le/la/les; à + person → lui/leur; all before the verb.",
     "uz": "Kimni/nimani → le/la/les; à + odam → lui/leur; hammasi fe'ldan oldin."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Его, её, ему: местоимения-дополнения",
+      "en": "Him, her, to him: object pronouns",
+      "uz": "Uni, unga: to'ldiruvchi olmoshlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы не повторять существительное, его заменяют местоимением: «Ты видишь Анну? — Да, я её вижу». Во французском у таких местоимений две особенности: они стоят _перед_ глаголом, и их два набора — для прямого и косвенного дополнения.",
+      "en": "To avoid repeating a noun, replace it with a pronoun. French object pronouns go *before* the verb, and there are two sets: direct and indirect.",
+      "uz": "Otni takrorlamaslik uchun uni olmosh bilan almashtiramiz: «Annani ko'ryapsanmi? — Ha, uni ko'ryapman». Fransuz tilida bunday olmoshlarning ikki xususiyati bor: ular fe'ldan _oldin_ turadi va ularning ikki to'plami bor — to'g'ri va vositali to'ldiruvchi uchun."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Кого? (прямое)",
+        "en": "Whom? (direct)",
+        "uz": "Kimni? (to'g'ri)"
+       },
+       {
+        "ru": "Кому? (косвенное)",
+        "en": "To whom? (indirect)",
+        "uz": "Kimga? (vositali)"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "me",
+         "uz": "men"
+        },
+        "me",
+        "me"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "te",
+        "te"
+       ],
+       [
+        {
+         "ru": "он",
+         "en": "him / it",
+         "uz": "u (erkak)"
+        },
+        "le",
+        "lui"
+       ],
+       [
+        {
+         "ru": "она",
+         "en": "her / it",
+         "uz": "u (ayol)"
+        },
+        "la",
+        "lui"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "us",
+         "uz": "biz"
+        },
+        "nous",
+        "nous"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "vous",
+        "vous"
+       ],
+       [
+        {
+         "ru": "они",
+         "en": "them",
+         "uz": "ular"
+        },
+        "les",
+        "leur"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Различаются только в третьем лице: *le, la, les* — «его, её, их» (кого? что?); *lui, leur* — «ему / ей, им» (кому?). Решает глагол: *voir quelqu'un* (видеть кого) → *le*; *parler à quelqu'un* (говорить кому) → *lui*. Если после глагола стоит *à* — это косвенное.",
+      "en": "They differ only in the third person. *Le, la, les* — direct; *lui, leur* — indirect. The verb decides: *voir quelqu'un* → *le*; *parler à quelqu'un* → *lui*. If the verb uses *à*, it's indirect.",
+      "uz": "Faqat uchinchi shaxsda farq qiladi: *le, la, les* — «uni, ularni» (kimni? nimani?); *lui, leur* — «unga, ularga» (kimga?). Fe'l hal qiladi: *voir quelqu'un* (kimnidir ko'rmoq) → *le*; *parler à quelqu'un* (kimgadir gapirmoq) → *lui*. Fe'ldan keyin *à* bo'lsa — bu vositali."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tu vois Anna ? — Oui, je *la* vois.",
+       "t": {
+        "ru": "Ты видишь Анну? — Да, я её вижу.",
+        "uz": "Annani ko'ryapsanmi? — Ha, uni ko'ryapman.",
+        "en": "Do you see Anna? — Yes, I see her."
+       }
+      },
+      {
+       "s": "J'appelle mes parents. Je *les* appelle chaque soir.",
+       "t": {
+        "ru": "Я звоню родителям каждый вечер.",
+        "uz": "Ota-onamga har kech qo'ng'iroq qilaman.",
+        "en": "I call my parents every evening."
+       }
+      },
+      {
+       "s": "Tu parles à ton frère ? — Oui, je *lui* parle.",
+       "t": {
+        "ru": "Ты говоришь с братом? — Да, говорю.",
+        "uz": "Akang bilan gaplashyapsanmi? — Ha, unga gapiryapman.",
+        "en": "Are you talking to your brother? — Yes."
+       }
+      },
+      {
+       "s": "Je *leur* donne un cadeau.",
+       "t": {
+        "ru": "Я дарю им подарок.",
+        "uz": "Men ularga sovg'a beraman.",
+        "en": "I'm giving them a present."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С двумя глаголами местоимение стоит перед тем, к которому относится, — обычно перед инфинитивом: *Je vais le voir* — Я его увижу.",
+      "en": "With two verbs, the pronoun goes before the one it belongs to — usually the infinitive: *Je vais le voir.*",
+      "uz": "Ikki fe'l bo'lsa, olmosh o'zi tegishli fe'ldan oldin — odatda infinitivdan oldin turadi: *Je vais le voir* — Men uni ko'raman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6613,6 +7430,144 @@
     "en": "Place / à + thing → y; de / quantity → en.",
     "uz": "Joy / à + narsa → y; de / miqdor → en."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Маленькие, но важные: y и en",
+      "en": "Small but vital: y and en",
+      "uz": "Kichik, lekin muhim: y va en"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Y* [и] и *en* [ан] — два коротких местоимения, которых нет ни в русском, ни в английском. Они заменяют целые выражения, чтобы их не повторять, и, как другие местоимения, стоят перед глаголом.",
+      "en": "*Y* and *en* are two short pronouns with no English equivalent. They replace whole phrases and go before the verb.",
+      "uz": "*Y* [i] va *en* [an] — o'zbek tilida ham, ingliz tilida ham yo'q ikki qisqa olmosh. Ular takrorlamaslik uchun butun iboralarni almashtiradi va boshqa olmoshlar kabi fe'ldan oldin turadi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Y — «туда, там»",
+      "en": "Y — “there”",
+      "uz": "Y — «u yerga, u yerda»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Y* заменяет место (с *à, en, chez, dans*): *Tu vas à Paris ? — Oui, j'y vais* — Ты едешь в Париж? — Да, еду туда. А ещё заменяет _à + вещь_ после некоторых глаголов: *Je pense à mon examen → J'y pense* — Я думаю об этом.",
+      "en": "*Y* replaces a place: *Tu vas à Paris ? — Oui, j'y vais.* It also replaces *à + thing*: *J'y pense.*",
+      "uz": "*Y* joyni almashtiradi (*à, en, chez, dans* bilan): *Tu vas à Paris ? — Oui, j'y vais* — Parijga ketyapsanmi? — Ha, u yerga ketyapman. Shuningdek ba'zi fe'llardan keyin *à + narsa* ni almashtiradi: *Je pense à mon examen → J'y pense* — Bu haqida o'ylayapman."
+     }
+    },
+    {
+     "h": {
+      "ru": "En — «этого, оттуда, сколько-то»",
+      "en": "En — “some, of it, from there”",
+      "uz": "En — «undan, u yerdan, biroz»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*En* заменяет то, что шло с *de*: количество (*du, de la, des*, числа), а также «оттуда». *Tu veux du café ? — Oui, j'en veux* — Хочешь кофе? — Да, хочу (кофе). *Tu as des frères ? — J'en ai deux* — У тебя есть братья? — У меня их двое.",
+      "en": "*En* replaces what came with *de*: amounts (*du, des*, numbers) and “from there”. *J'en veux*, *J'en ai deux.*",
+      "uz": "*En* *de* bilan kelgan narsani almashtiradi: miqdor (*du, de la, des*, sonlar), shuningdek «u yerdan». *Tu veux du café ? — Oui, j'en veux* — Qahva xohlaysanmi? — Ha, xohlayman. *Tu as des frères ? — J'en ai deux* — Akalaring bormi? — Ikkitasi bor."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       },
+       {
+        "ru": "Заменяет",
+        "en": "Replaces",
+        "uz": "Almashtiradi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "y",
+        {
+         "ru": "à / en / chez + место",
+         "en": "à / en / chez + place",
+         "uz": "à / en / chez + joy"
+        },
+        "J'y vais."
+       ],
+       [
+        "y",
+        {
+         "ru": "à + вещь",
+         "en": "à + thing",
+         "uz": "à + narsa"
+        },
+        "J'y pense."
+       ],
+       [
+        "en",
+        {
+         "ru": "du / de la / des + сущ.",
+         "en": "du / de la / des + noun",
+         "uz": "du / de la / des + ot"
+        },
+        "J'en mange."
+       ],
+       [
+        "en",
+        {
+         "ru": "число + сущ. (число остаётся)",
+         "en": "number + noun (keep the number)",
+         "uz": "son + ot (son qoladi)"
+        },
+        "J'en ai trois."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tu habites à Tachkent ? — Oui, j'*y* habite.",
+       "t": {
+        "ru": "Ты живёшь в Ташкенте? — Да, живу там.",
+        "uz": "Toshkentda yashaysanmi? — Ha, o'sha yerda yashayman.",
+        "en": "Do you live in Tashkent? — Yes, I live there."
+       }
+      },
+      {
+       "s": "Il y a du pain ? — Non, il n'*y en* a plus.",
+       "t": {
+        "ru": "Есть хлеб? — Нет, больше нет.",
+        "uz": "Non bormi? — Yo'q, qolmadi.",
+        "en": "Is there bread? — No, there's none left."
+       }
+      },
+      {
+       "s": "Combien de sœurs as-tu ? — J'*en* ai une.",
+       "t": {
+        "ru": "Сколько у тебя сестёр? — Одна.",
+        "uz": "Nechta opang bor? — Bitta.",
+        "en": "How many sisters do you have? — One."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Знаменитое *il y a* — «есть, имеется» — как раз содержит *y*. А *Allons-y !* — «Пошли!»",
+      "en": "The famous *il y a* (there is) contains *y*. *Allons-y !* — “Let's go!”",
+      "uz": "Mashhur *il y a* — «bor» — aynan *y* ni o'z ichiga oladi. *Allons-y !* esa — «Ketdik!»"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6878,6 +7833,143 @@
     "en": "plus/moins/aussi … que; bon → meilleur, bien → mieux.",
     "uz": "plus/moins/aussi … que; bon → meilleur, bien → mieux."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Больше, меньше, так же",
+      "en": "More, less, as",
+      "uz": "Ko'proq, kamroq, xuddi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском сравнение строится с помощью трёх слов перед прилагательным и слова *que* («чем») после. Прилагательное само не меняется (в отличие от английского *-er*), только согласуется по роду и числу.",
+      "en": "French comparisons use three words before the adjective and *que* (than) after it. The adjective itself doesn't take *-er*; it just agrees in gender and number.",
+      "uz": "Fransuz tilida qiyoslash sifat oldidan uchta so'z va undan keyin *que* («-dan») bilan tuziladi. Sifatning o'zi o'zgarmaydi (ingliz tilidagi *-er* dan farqli), faqat jins va son bo'yicha moslashadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "больше",
+         "en": "more",
+         "uz": "ko'proq"
+        },
+        "plus … que",
+        "Paris est plus grand que Lyon."
+       ],
+       [
+        {
+         "ru": "меньше",
+         "en": "less",
+         "uz": "kamroq"
+        },
+        "moins … que",
+        "Ce livre est moins cher que l'autre."
+       ],
+       [
+        {
+         "ru": "так же",
+         "en": "as … as",
+         "uz": "xuddi … kabi"
+        },
+        "aussi … que",
+        "Elle est aussi grande que moi."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Самый: le plus",
+      "en": "The most: le plus",
+      "uz": "Eng: le plus"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для «самый» ставят артикль: *le plus, la plus, les plus*. *C'est la plus belle ville du monde* — Это самый красивый город в мире. После «самый» — *de* (из, в): *le plus grand de la classe*.",
+      "en": "For “the most” add the article: *le / la / les plus*. Then *de*: *la plus belle ville du monde.*",
+      "uz": "«Eng» uchun artikl qo'yiladi: *le plus, la plus, les plus*. *C'est la plus belle ville du monde* — Bu dunyodagi eng chiroyli shahar. «Eng» dan keyin — *de*: *le plus grand de la classe* — sinfdagi eng baland bo'yli."
+     }
+    },
+    {
+     "h": {
+      "ru": "Bon и bien — особые",
+      "en": "Bon and bien are special",
+      "uz": "Bon va bien — alohida"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как английские *good → better*, у французских слов «хороший / хорошо» свои формы. *Bon → meilleur* (лучше, прилагательное), *le meilleur* (лучший). *Bien → mieux* (лучше, наречие), *le mieux* (лучше всего). Сказать «plus bon» нельзя.",
+      "en": "Like *good → better*: *bon → meilleur, le meilleur*; *bien → mieux, le mieux*. Never “plus bon”.",
+      "uz": "Ingliz tilidagi *good → better* kabi, fransuzcha «yaxshi» so'zlarining o'z shakllari bor. *Bon → meilleur* (yaxshiroq, sifat), *le meilleur* (eng yaxshi). *Bien → mieux* (yaxshiroq, ravish), *le mieux* (eng yaxshisi). «plus bon» deb bo'lmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Le train est *plus rapide que* le bus.",
+       "t": {
+        "ru": "Поезд быстрее автобуса.",
+        "uz": "Poyezd avtobusdan tezroq.",
+        "en": "The train is faster than the bus."
+       }
+      },
+      {
+       "s": "Ma sœur est *aussi* sportive *que* moi.",
+       "t": {
+        "ru": "Моя сестра такая же спортивная, как я.",
+        "uz": "Opam men kabi sportchi.",
+        "en": "My sister is as sporty as me."
+       }
+      },
+      {
+       "s": "C'est *le meilleur* restaurant *de* la ville.",
+       "t": {
+        "ru": "Это лучший ресторан в городе.",
+        "uz": "Bu shahardagi eng yaxshi restoran.",
+        "en": "It's the best restaurant in town."
+       }
+      },
+      {
+       "s": "Tu parles *mieux* français *que* moi.",
+       "t": {
+        "ru": "Ты говоришь по-французски лучше меня.",
+        "uz": "Sen fransuzchani mendan yaxshiroq gapirasan.",
+        "en": "You speak French better than me."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "С существительными — *plus de, moins de, autant de*: *Il a plus d'amis que moi* — У него больше друзей, чем у меня.",
+      "en": "With nouns use *plus de, moins de, autant de*: *Il a plus d'amis que moi.*",
+      "uz": "Otlar bilan — *plus de, moins de, autant de*: *Il a plus d'amis que moi* — Uning do'stlari menikidan ko'proq."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7143,6 +8235,154 @@
     "en": "Learn faire, prendre, pouvoir, vouloir, devoir by heart.",
     "uz": "faire, prendre, pouvoir, vouloir, devoir ni yod ol."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Самые нужные неправильные глаголы",
+      "en": "The most useful irregular verbs",
+      "uz": "Eng kerakli noto'g'ri fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Несколько самых частых французских глаголов не подчиняются правилам — их формы надо выучить. Хорошая новость: они встречаются в каждом разговоре, поэтому запоминаются быстро.",
+      "en": "A few of the most common French verbs are irregular. You'll hear them constantly, so they stick quickly.",
+      "uz": "Eng ko'p ishlatiladigan fransuz fe'llarining bir nechtasi qoidalarga bo'ysunmaydi — shakllarini yodlash kerak. Yaxshi xabar: ular har bir suhbatda uchraydi, shuning uchun tez esda qoladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "faire (делать)",
+        "en": "faire (do)",
+        "uz": "faire (qilmoq)"
+       },
+       {
+        "ru": "pouvoir (мочь)",
+        "en": "pouvoir (can)",
+        "uz": "pouvoir (qila olmoq)"
+       },
+       {
+        "ru": "vouloir (хотеть)",
+        "en": "vouloir (want)",
+        "uz": "vouloir (xohlamoq)"
+       },
+       {
+        "ru": "devoir (должен)",
+        "en": "devoir (must)",
+        "uz": "devoir (kerak)"
+       }
+      ],
+      "rows": [
+       [
+        "je",
+        "fais",
+        "peux",
+        "veux",
+        "dois"
+       ],
+       [
+        "tu",
+        "fais",
+        "peux",
+        "veux",
+        "dois"
+       ],
+       [
+        "il / elle",
+        "fait",
+        "peut",
+        "veut",
+        "doit"
+       ],
+       [
+        "nous",
+        "faisons",
+        "pouvons",
+        "voulons",
+        "devons"
+       ],
+       [
+        "vous",
+        "faites",
+        "pouvez",
+        "voulez",
+        "devez"
+       ],
+       [
+        "ils / elles",
+        "font",
+        "peuvent",
+        "veulent",
+        "doivent"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Заметь закономерность: у *pouvoir, vouloir, devoir* формы *je, tu, il* короткие и похожие (*peux, veux, dois*), а у *ils* основа «растягивается» (*peuvent, veulent, doivent*).",
+      "en": "Notice the pattern: short forms for *je, tu, il*, a longer stem for *ils*.",
+      "uz": "Qonuniyatga e'tibor bering: *pouvoir, vouloir, devoir* da *je, tu, il* shakllari qisqa va o'xshash (*peux, veux, dois*), *ils* da esa o'zak «cho'ziladi» (*peuvent, veulent, doivent*)."
+     }
+    },
+    {
+     "p": {
+      "ru": "После *pouvoir, vouloir, devoir* второй глагол стоит в начальной форме: *Je peux venir* — Я могу прийти. *Tu dois travailler* — Ты должен работать. *Faire* очень многозначен: *faire du sport* (заниматься спортом), *faire les courses* (ходить по магазинам), *il fait beau* (хорошая погода).",
+      "en": "After these verbs the next verb is an infinitive: *Je peux venir.* *Faire* has many uses: *faire du sport*, *faire les courses*, *il fait beau*.",
+      "uz": "*pouvoir, vouloir, devoir* dan keyin ikkinchi fe'l boshlang'ich shaklda turadi: *Je peux venir* — Kela olaman. *Tu dois travailler* — Ishlashing kerak. *faire* juda ko'p ma'noli: *faire du sport* (sport bilan shug'ullanmoq), *faire les courses* (xarid qilmoq), *il fait beau* (havo yaxshi)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Qu'est-ce que tu *fais* ce soir ?",
+       "t": {
+        "ru": "Что ты делаешь сегодня вечером?",
+        "uz": "Bugun kechqurun nima qilyapsan?",
+        "en": "What are you doing tonight?"
+       }
+      },
+      {
+       "s": "Je *veux* apprendre le français.",
+       "t": {
+        "ru": "Я хочу выучить французский.",
+        "uz": "Fransuz tilini o'rganmoqchiman.",
+        "en": "I want to learn French."
+       }
+      },
+      {
+       "s": "Vous *pouvez* m'aider ?",
+       "t": {
+        "ru": "Вы можете мне помочь?",
+        "uz": "Menga yordam bera olasizmi?",
+        "en": "Can you help me?"
+       }
+      },
+      {
+       "s": "Nous *devons* partir.",
+       "t": {
+        "ru": "Нам нужно уходить.",
+        "uz": "Ketishimiz kerak.",
+        "en": "We have to leave."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Вежливо «я хотел бы» — *je voudrais* (а не *je veux*, которое звучит резко). Так говорят в магазине и кафе.",
+      "en": "Politely, say *je voudrais* (I would like), not *je veux*, which sounds blunt.",
+      "uz": "Muloyim «… xohlardim» — *je voudrais* (*je veux* emas, u qo'pol eshitiladi). Do'kon va kafeda shunday deyiladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7406,6 +8646,149 @@
     "en": "Infinitive + -ai/-as/-a; learn ser-, aur-, ir-, fer-.",
     "uz": "Infinitiv + -ai/-as/-a; ser-, aur-, ir-, fer- ni yod ol."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Futur simple — простое будущее",
+      "en": "Futur simple — the simple future",
+      "uz": "Futur simple — oddiy kelasi zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Кроме _aller + глагол_ («собираюсь»), во французском есть настоящее будущее время — futur simple. Его используют для планов подальше, обещаний и прогнозов: *Demain, il fera beau* — Завтра будет хорошая погода.",
+      "en": "Besides *aller + verb*, French has the futur simple for more distant plans, promises and predictions: *Demain, il fera beau.*",
+      "uz": "*aller + fe'l* («… moqchiman») dan tashqari, fransuz tilida haqiqiy kelasi zamon — futur simple bor. U uzoqroq rejalar, va'dalar va bashoratlar uchun: *Demain, il fera beau* — Ertaga havo yaxshi bo'ladi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём _целый_ инфинитив и добавляем окончания (они похожи на формы *avoir*). У глаголов на *-re* отбрасываем последнюю *e*: *prendre → prendr-*.",
+      "en": "Take the whole infinitive and add endings (they look like *avoir*). *-re* verbs drop the final *e*: *prendr-*.",
+      "uz": "_Butun_ infinitivni olib, qo'shimcha qo'shamiz (ular *avoir* shakllariga o'xshaydi). *-re* bilan tugaydigan fe'llarda oxirgi *e* tushiriladi: *prendre → prendr-*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       "parler",
+       "finir"
+      ],
+      "rows": [
+       [
+        "je",
+        "-ai",
+        "parlerai",
+        "finirai"
+       ],
+       [
+        "tu",
+        "-as",
+        "parleras",
+        "finiras"
+       ],
+       [
+        "il / elle",
+        "-a",
+        "parlera",
+        "finira"
+       ],
+       [
+        "nous",
+        "-ons",
+        "parlerons",
+        "finirons"
+       ],
+       [
+        "vous",
+        "-ez",
+        "parlerez",
+        "finirez"
+       ],
+       [
+        "ils / elles",
+        "-ont",
+        "parleront",
+        "finiront"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Неправильные основы",
+      "en": "Irregular stems",
+      "uz": "Noto'g'ri o'zaklar"
+     }
+    },
+    {
+     "p": {
+      "ru": "У частых глаголов особая основа, но окончания всё равно те же: *être → ser-* (*je serai*), *avoir → aur-* (*j'aurai*), *aller → ir-* (*j'irai*), *faire → fer-* (*je ferai*), *pouvoir → pourr-*, *vouloir → voudr-*, *venir → viendr-*, *voir → verr-*.",
+      "en": "Common verbs have special stems with the same endings: *serai, aurai, irai, ferai, pourrai, voudrai, viendrai, verrai*.",
+      "uz": "Ko'p ishlatiladigan fe'llarning alohida o'zagi bor, lekin qo'shimchalari bir xil: *être → ser-* (*je serai*), *avoir → aur-* (*j'aurai*), *aller → ir-* (*j'irai*), *faire → fer-* (*je ferai*), *pouvoir → pourr-*, *vouloir → voudr-*, *venir → viendr-*, *voir → verr-*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "L'année prochaine, j'*irai* en France.",
+       "t": {
+        "ru": "В следующем году я поеду во Францию.",
+        "uz": "Kelasi yili Fransiyaga boraman.",
+        "en": "Next year I'll go to France."
+       }
+      },
+      {
+       "s": "Je t'*appellerai* demain.",
+       "t": {
+        "ru": "Я позвоню тебе завтра.",
+        "uz": "Ertaga senga qo'ng'iroq qilaman.",
+        "en": "I'll call you tomorrow."
+       }
+      },
+      {
+       "s": "Ils *seront* contents.",
+       "t": {
+        "ru": "Они будут довольны.",
+        "uz": "Ular xursand bo'lishadi.",
+        "en": "They'll be happy."
+       }
+      },
+      {
+       "s": "Quand tu *auras* le temps, viens me voir.",
+       "t": {
+        "ru": "Когда у тебя будет время, заходи.",
+        "uz": "Vaqting bo'lganda, kelib ket.",
+        "en": "When you have time, come and see me."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "После *quand* о будущем французы ставят futur, а не настоящее, как в английском: *Quand je serai grand…* — Когда я вырасту…",
+      "en": "After *quand* about the future, French uses the future (unlike English): *Quand je serai grand…*",
+      "uz": "Kelajak haqida *quand* dan keyin fransuzlar hozirgi emas, kelasi zamonni qo'yadi: *Quand je serai grand…* — Katta bo'lganimda…"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7669,6 +9052,152 @@
     "en": "Just past — venir de, now — en train de, next — aller.",
     "uz": "Hozirgina — venir de, hozir — en train de, keyin — aller."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Только что, прямо сейчас, вот-вот",
+      "en": "Just now, right now, about to",
+      "uz": "Hozirgina, aynan hozir, endi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Три простые конструкции помогают точно показать момент действия без сложных времён. Все они строятся одинаково: глагол-помощник в настоящем + основной глагол в начальной форме.",
+      "en": "Three simple structures show exactly when something happens, without complex tenses: a helper verb in the present + infinitive.",
+      "uz": "Uchta oddiy qurilma murakkab zamonlarsiz harakat paytini aniq ko'rsatishga yordam beradi. Ularning hammasi bir xil tuziladi: hozirgi zamondagi yordamchi fe'l + boshlang'ich shakldagi asosiy fe'l."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Конструкция",
+        "en": "Structure",
+        "uz": "Qurilma"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "venir de + inf.",
+        {
+         "ru": "только что (прошлое)",
+         "en": "just did (recent past)",
+         "uz": "hozirgina (yaqin o'tmish)"
+        },
+        "Je viens de manger."
+       ],
+       [
+        "être en train de + inf.",
+        {
+         "ru": "прямо сейчас (процесс)",
+         "en": "in the middle of (now)",
+         "uz": "aynan hozir (jarayon)"
+        },
+        "Je suis en train de manger."
+       ],
+       [
+        "aller + inf.",
+        {
+         "ru": "вот-вот, собираюсь (будущее)",
+         "en": "going to (near future)",
+         "uz": "endi, … moqchiman (kelajak)"
+        },
+        "Je vais manger."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Venir de* — дословно «приходить от»: *Il vient de partir* — Он только что ушёл. *Être en train de* — «быть в процессе»: используют, чтобы подчеркнуть, что действие идёт именно сейчас, как английское *-ing*. *Aller* + глагол вы уже знаете — это ближайшее будущее.",
+      "en": "*Venir de* — just did: *Il vient de partir.* *Être en train de* stresses that it's happening now, like English *-ing*. *Aller* + verb — the near future.",
+      "uz": "*Venir de* — so'zma-so'z «… dan kelmoq»: *Il vient de partir* — U hozirgina ketdi. *Être en train de* — «jarayonda bo'lmoq»: harakat aynan hozir davom etayotganini ta'kidlash uchun, ingliz tilidagi *-ing* kabi. *Aller* + fe'l ni allaqachon bilasiz — bu yaqin kelajak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "venir"
+      ],
+      "rows": [
+       [
+        "je",
+        "viens"
+       ],
+       [
+        "tu",
+        "viens"
+       ],
+       [
+        "il / elle",
+        "vient"
+       ],
+       [
+        "nous",
+        "venons"
+       ],
+       [
+        "vous",
+        "venez"
+       ],
+       [
+        "ils / elles",
+        "viennent"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Le film *vient de commencer*.",
+       "t": {
+        "ru": "Фильм только что начался.",
+        "uz": "Film hozirgina boshlandi.",
+        "en": "The film has just started."
+       }
+      },
+      {
+       "s": "Ne fais pas de bruit, le bébé *est en train de dormir*.",
+       "t": {
+        "ru": "Не шуми, малыш спит.",
+        "uz": "Shovqin qilma, chaqaloq uxlayapti.",
+        "en": "Don't make noise, the baby is sleeping."
+       }
+      },
+      {
+       "s": "Nous *venons d'arriver* à l'hôtel.",
+       "t": {
+        "ru": "Мы только что приехали в отель.",
+        "uz": "Biz hozirgina mehmonxonaga yetib keldik.",
+        "en": "We've just arrived at the hotel."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Venir* без *de* значит просто «приходить»: *Je viens demain* — Я приду завтра. А *venir de* + город — «быть родом»: *Je viens de Tachkent* — Я из Ташкента.",
+      "en": "*Venir* alone means “come”; *venir de* + place means “come from”: *Je viens de Tachkent.*",
+      "uz": "*de* siz *venir* shunchaki «kelmoq»: *Je viens demain* — Ertaga kelaman. *venir de* + shahar — «… dan bo'lmoq»: *Je viens de Tachkent* — Men Toshkentdanman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7933,6 +9462,142 @@
     "en": "Still going → depuis + present; ago → il y a; a period → pendant.",
     "uz": "Davom etmoqda → depuis + présent; oldin → il y a; davr → pendant."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Как долго и как давно",
+      "en": "How long and how long ago",
+      "uz": "Qancha vaqt va qancha vaqt oldin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Три коротких слова отвечают на вопросы о времени, и их легко перепутать. Главное — понять, _закончилось_ ли действие и откуда мы смотрим.",
+      "en": "Three short words answer time questions and are easy to mix up. The key: is the action finished, and where are we looking from?",
+      "uz": "Uchta qisqa so'z vaqt haqidagi savollarga javob beradi va ularni adashtirish oson. Asosiysi — harakat _tugaganmi_ va qayerdan qarayapmiz, shuni tushunish."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Время глагола",
+        "en": "Verb tense",
+        "uz": "Fe'l zamoni"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "depuis",
+        {
+         "ru": "уже … (длится до сих пор)",
+         "en": "for / since (still going on)",
+         "uz": "… dan beri (hali davom etyapti)"
+        },
+        {
+         "ru": "настоящее",
+         "en": "present",
+         "uz": "hozirgi"
+        },
+        "J'habite ici depuis 3 ans."
+       ],
+       [
+        "il y a",
+        {
+         "ru": "… назад",
+         "en": "… ago",
+         "uz": "… oldin"
+        },
+        {
+         "ru": "прошедшее",
+         "en": "past",
+         "uz": "o'tgan"
+        },
+        "Je suis arrivé il y a 3 ans."
+       ],
+       [
+        "pendant",
+        {
+         "ru": "в течение (закончено)",
+         "en": "for (a finished period)",
+         "uz": "davomida (tugagan)"
+        },
+        {
+         "ru": "любое",
+         "en": "any",
+         "uz": "istalgan"
+        },
+        "J'ai habité là pendant 3 ans."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Ключевая особенность: с *depuis* французы ставят _настоящее_ время, потому что действие ещё идёт. *J'apprends le français depuis un an* — Я учу французский уже год (и продолжаю). Ровно как в русском и узбекском («Bir yildan beri o'rganyapman»), но не как в английском (*I have been learning*).",
+      "en": "Key point: with *depuis* French uses the present, because the action is still going on: *J'apprends le français depuis un an* (unlike English *I have been learning*).",
+      "uz": "Asosiy xususiyat: *depuis* bilan fransuzlar _hozirgi_ zamonni qo'yadi, chunki harakat hali davom etyapti. *J'apprends le français depuis un an* — Bir yildan beri fransuz tilini o'rganyapman. Xuddi o'zbek tilidagidek («Bir yildan beri o'rganyapman»), lekin ingliz tilidagidek emas (*I have been learning*)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Il pleut *depuis* ce matin.",
+       "t": {
+        "ru": "Дождь идёт с утра.",
+        "uz": "Ertalabdan beri yomg'ir yog'yapti.",
+        "en": "It's been raining since this morning."
+       }
+      },
+      {
+       "s": "J'ai rencontré Ali *il y a* deux semaines.",
+       "t": {
+        "ru": "Я познакомился с Али две недели назад.",
+        "uz": "Ali bilan ikki hafta oldin tanishdim.",
+        "en": "I met Ali two weeks ago."
+       }
+      },
+      {
+       "s": "Nous avons dansé *pendant* toute la nuit.",
+       "t": {
+        "ru": "Мы танцевали всю ночь.",
+        "uz": "Tun bo'yi raqs tushdik.",
+        "en": "We danced all night."
+       }
+      },
+      {
+       "s": "*Depuis* quand tu travailles ici ?",
+       "t": {
+        "ru": "С каких пор ты здесь работаешь?",
+        "uz": "Qachondan beri shu yerda ishlaysan?",
+        "en": "Since when have you worked here?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Depuis* + момент = «с» (*depuis lundi*), *depuis* + период = «уже, в течение» (*depuis deux jours*). *Il y a* в начале фразы может значить и «есть, имеется» — смотри по смыслу.",
+      "en": "*Depuis* + point = since (*depuis lundi*); + period = for (*depuis deux jours*). *Il y a* can also mean “there is”.",
+      "uz": "*Depuis* + payt = «… dan beri» (*depuis lundi*), *depuis* + davr = «… dan beri, davomida» (*depuis deux jours*). Gap boshidagi *il y a* «bor» degani ham bo'lishi mumkin — ma'noga qarang."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

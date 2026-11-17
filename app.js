@@ -1550,7 +1550,7 @@
   /* ---------------- Library, daily practice and lexical resource ---------------- */
   var LIBRARY_KEY = 'vocabulary-master.library.v2';
   var library = { decks: {}, history: {}, goal: 10, streak: { count: 0, last: null, freezes: 2, enabled: true } };
-  var pendingTypedAnswer = null, lexical = null, games = null, fishing = null, account = null;
+  var pendingTypedAnswer = null, lexical = null, games = null, fishing = null, cafe = null, account = null;
   var CONTEXT = {
     serendipity: ['The chance occurrence of a happy discovery.', 'Finding this little bookshop was pure serendipity.'],
     'to remember': ['To keep something in your memory.', 'I try to remember one new word every day.'],
@@ -2064,6 +2064,7 @@
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
     if ($('arcadeHub')) $('arcadeHub').classList.toggle('locked', !ready);
     if (fishing) fishing.refresh();
+    if (cafe) cafe.refresh();
   }
   function renderDeckBars() {
     var d = activeDeck();
@@ -2506,6 +2507,7 @@
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
     if (fishing && id !== 'screen-games') fishing.leave();
+    if (cafe && id !== 'screen-games') cafe.leave();
     show(id); renderDaily();
     if (id === 'screen-games') renderArcade();
     if (id === 'screen-library') renderLibrary();
@@ -3095,6 +3097,15 @@
       openMatch: function (key) { if (library.decks[key]) $('quizDeck').value = key; $('btnMatchStart').click(); var mp = document.querySelector('.match-panel'); if (mp) mp.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     });
     // v2.35: the Games screen holds the big arcade games; the quick trainers moved to the Lexical test.
+    // v2.36: «Чайхана», the second arcade game (3D scene loaded on first open)
+    if (window.VMCafe) cafe = window.VMCafe.mount({
+      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+      tr: tr, toast: toast, fx: playArcadeFx,
+      speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
+      autoSpeak: function () { return !!state.soundEnabled; },
+      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
+    });
     if (window.VMFishing) fishing = window.VMFishing.mount({
       deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
       tr: tr, toast: toast, fx: playArcadeFx,

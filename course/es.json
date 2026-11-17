@@ -73,6 +73,173 @@
     "en": "Who, where from, what like → ser.",
     "uz": "Kim, qayerdan, qanday → ser."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ser — «быть»",
+      "en": "Ser — “to be”",
+      "uz": "Ser — «bo'lmoq»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Испанский для говорящих по-русски и по-узбекски приятный: читается почти так, как пишется. Начнём с главного глагола *ser* [сэр] — «быть». Он нужен, чтобы сказать, кто ты, откуда, какой ты по характеру и чем занимаешься: *Soy estudiante* — Я студент.",
+      "en": "Spanish is read almost exactly as it's written. Start with *ser* — “to be” — for who you are, where you're from, your character and your job: *Soy estudiante.*",
+      "uz": "Ispan tili o'zbek tilida so'zlashuvchilar uchun yoqimli: deyarli qanday yozilsa, shunday o'qiladi. Asosiy fe'l *ser* [ser] — «bo'lmoq» dan boshlaymiz. U kim ekaningiz, qayerdan ekaningiz, xarakteringiz va kasbingizni aytish uchun kerak: *Soy estudiante* — Men talabaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "ser",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "yo — я",
+         "en": "yo — I",
+         "uz": "yo — men"
+        },
+        "soy",
+        "Soy de Uzbekistán."
+       ],
+       [
+        {
+         "ru": "tú — ты",
+         "en": "tú — you",
+         "uz": "tú — sen"
+        },
+        "eres",
+        "Eres muy simpático."
+       ],
+       [
+        {
+         "ru": "él / ella / usted — он / она / Вы",
+         "en": "él / ella / usted — he / she / you (polite)",
+         "uz": "él / ella / usted — u / Siz"
+        },
+        "es",
+        "Ella es médica."
+       ],
+       [
+        {
+         "ru": "nosotros — мы",
+         "en": "nosotros — we",
+         "uz": "nosotros — biz"
+        },
+        "somos",
+        "Somos amigos."
+       ],
+       [
+        {
+         "ru": "vosotros — вы (друзья)",
+         "en": "vosotros — you (friends, Spain)",
+         "uz": "vosotros — sizlar (do'stlar)"
+        },
+        "sois",
+        "Sois estudiantes."
+       ],
+       [
+        {
+         "ru": "ellos / ustedes — они / Вы (мн.)",
+         "en": "ellos / ustedes — they / you (pl.)",
+         "uz": "ellos / ustedes — ular / Sizlar"
+        },
+        "son",
+        "Son de México."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимение можно не говорить",
+      "en": "You can drop the pronoun",
+      "uz": "Olmoshni aytmaslik mumkin"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в узбекском (*kelaman* — уже понятно, что «я»), в испанском форма глагола сама показывает лицо. Поэтому *yo, tú, él* обычно опускают: просто *Soy Ali* — Я Али. Местоимение говорят только для выделения: *Yo soy de Tashkent, y tú?*",
+      "en": "The verb form shows the person, so pronouns are usually dropped: *Soy Ali.* Use them only for emphasis.",
+      "uz": "O'zbek tilidagidek (*kelaman* — «men» ekani tushunarli), ispan tilida fe'l shaklining o'zi shaxsni ko'rsatadi. Shuning uchun *yo, tú, él* odatda tushiriladi: shunchaki *Soy Ali* — Men Aliman. Olmosh faqat ta'kid uchun aytiladi: *Yo soy de Tashkent, ¿y tú?*"
+     }
+    },
+    {
+     "note": {
+      "ru": "*Usted* — вежливое «Вы» к одному человеку — использует форму третьего лица: *Usted es muy amable* — Вы очень любезны.",
+      "en": "*Usted* — polite “you” — takes the third-person form: *Usted es muy amable.*",
+      "uz": "*Usted* — bir kishiga hurmat bilan «Siz» — uchinchi shaxs shaklini ishlatadi: *Usted es muy amable* — Siz juda xushmuomalasiz."
+     }
+    },
+    {
+     "h": {
+      "ru": "Произношение",
+      "en": "Pronunciation",
+      "uz": "Talaffuz"
+     }
+    },
+    {
+     "p": {
+      "ru": "Почти все буквы читаются как пишутся. Особенные: *h* не читается (*hola* [ола]), *j* — как русское [х] (*jefe*), *ñ* — [нь] (*España*), *ll* — [й] (*llamar*), *z* и *ce, ci* в Испании — как английское *th*. Ударение — на предпоследний слог, а если нет — над гласной ставят знак: *médico*.",
+      "en": "Almost every letter is read as written. Special: silent *h*, *j* like a throaty h, *ñ* = “ny”, *ll* = “y”. Stress falls on the second-to-last syllable unless marked: *médico*.",
+      "uz": "Deyarli barcha harflar yozilganidek o'qiladi. Alohidalari: *h* o'qilmaydi (*hola* [ola]), *j* — o'zbekcha [x] kabi (*jefe*), *ñ* — [ny] (*España*), *ll* — [y] (*llamar*). Urg'u oxiridan oldingi bo'g'inga tushadi, bo'lmasa unli ustiga belgi qo'yiladi: *médico*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Soy* de Samarcanda.",
+       "t": {
+        "ru": "Я из Самарканда.",
+        "uz": "Men Samarqanddanman.",
+        "en": "I'm from Samarkand."
+       }
+      },
+      {
+       "s": "Mi padre *es* profesor.",
+       "t": {
+        "ru": "Мой папа — учитель.",
+        "uz": "Dadam o'qituvchi.",
+        "en": "My father is a teacher."
+       }
+      },
+      {
+       "s": "¿De dónde *eres*?",
+       "t": {
+        "ru": "Откуда ты?",
+        "uz": "Qayerdansan?",
+        "en": "Where are you from?"
+       }
+      },
+      {
+       "s": "*Somos* muy buenos amigos.",
+       "t": {
+        "ru": "Мы очень хорошие друзья.",
+        "uz": "Biz juda yaxshi do'stmiz.",
+        "en": "We're very good friends."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В испанском вопрос и восклицание начинаются перевёрнутым знаком: *¿Cómo estás?*, *¡Hola!* Так сразу видно, где начинается вопрос.",
+      "en": "Spanish questions and exclamations open with an upside-down mark: *¿Cómo estás?*, *¡Hola!*",
+      "uz": "Ispan tilida savol va undov teskari belgi bilan boshlanadi: *¿Cómo estás?*, *¡Hola!* Shunda savol qayerdan boshlanishi darhol ko'rinadi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -332,6 +499,146 @@
     "en": "-o → el, -a → la, learn exceptions with the article.",
     "uz": "-o → el, -a → la, istisnolarni artikl bilan o'rgan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два рода: мужской и женский",
+      "en": "Two genders",
+      "uz": "Ikki jins: erkak va ayol"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском у каждого существительного есть род — мужской или женский. Хорошая новость: часто его легко угадать по окончанию. Слова на *-o* обычно мужского рода (*el libro*), на *-a* — женского (*la casa*).",
+      "en": "Every Spanish noun is masculine or feminine — and it's often easy to guess: *-o* is usually masculine (*el libro*), *-a* feminine (*la casa*).",
+      "uz": "Ispan tilida har bir otning jinsi bor — erkak yoki ayol. Yaxshi xabar: ko'pincha uni oxiridan topish oson. *-o* bilan tugaydigan so'zlar odatda erkak jinsida (*el libro*), *-a* bilan — ayol jinsida (*la casa*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Род",
+        "en": "Gender",
+        "uz": "Jins"
+       },
+       {
+        "ru": "Тот самый",
+        "en": "the",
+        "uz": "Aynan o'sha"
+       },
+       {
+        "ru": "Какой-то",
+        "en": "a / an",
+        "uz": "Qandaydir bitta"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "мужской",
+         "en": "masculine",
+         "uz": "erkak"
+        },
+        "el",
+        "un",
+        "el libro, un chico"
+       ],
+       [
+        {
+         "ru": "женский",
+         "en": "feminine",
+         "uz": "ayol"
+        },
+        "la",
+        "una",
+        "la mesa, una chica"
+       ],
+       [
+        {
+         "ru": "мужской мн.",
+         "en": "masculine plural",
+         "uz": "erkak ko'plik"
+        },
+        "los",
+        "unos",
+        "los libros"
+       ],
+       [
+        {
+         "ru": "женский мн.",
+         "en": "feminine plural",
+         "uz": "ayol ko'plik"
+        },
+        "las",
+        "unas",
+        "las mesas"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*El, la, los, las* — «тот самый, известный» (как *the*). *Un, una* — «один, какой-то» (как *a*). *Unos, unas* — «несколько, какие-то».",
+      "en": "*El, la, los, las* = the. *Un, una* = a. *Unos, unas* = some.",
+      "uz": "*El, la, los, las* — «aynan o'sha, ma'lum» (*the* kabi). *Un, una* — «bitta, qandaydir» (*a* kabi). *Unos, unas* — «bir nechta, qandaydir»."
+     }
+    },
+    {
+     "h": {
+      "ru": "Исключения, которые стоит знать",
+      "en": "Exceptions worth knowing",
+      "uz": "Bilish kerak bo'lgan istisnolar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые частые слова нарушают правило: *el día* (день), *el mapa* (карта), *el problema* (проблема) — мужского рода, хотя на *-a*. *La mano* (рука), *la radio* — женского, хотя на *-o*. Слова на *-ción, -dad* — женского: *la canción, la ciudad*.",
+      "en": "Some common words break the rule: *el día, el mapa, el problema* are masculine; *la mano, la radio* feminine. *-ción, -dad* words are feminine.",
+      "uz": "Ba'zi ko'p ishlatiladigan so'zlar qoidani buzadi: *el día* (kun), *el mapa* (xarita), *el problema* (muammo) — *-a* bilan tugasa ham erkak jinsida. *La mano* (qo'l), *la radio* — *-o* bilan tugasa ham ayol jinsida. *-ción, -dad* bilan tugaydiganlar — ayol jinsida: *la canción, la ciudad*."
+     }
+    },
+    {
+     "note": {
+      "ru": "Предлоги *a* и *de* сливаются с *el*: *a + el = al* (*voy al parque*), *de + el = del* (*la casa del profesor*). С *la, los, las* не сливаются.",
+      "en": "*A* and *de* merge with *el*: *al*, *del*. Not with *la, los, las*.",
+      "uz": "*a* va *de* predloglari *el* bilan qo'shiladi: *a + el = al* (*voy al parque*), *de + el = del* (*la casa del profesor*). *la, los, las* bilan qo'shilmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tengo *un* perro. *El* perro se llama Max.",
+       "t": {
+        "ru": "У меня есть собака. Собаку зовут Макс.",
+        "uz": "Mening itim bor. Itning ismi Maks.",
+        "en": "I have a dog. The dog is called Max."
+       }
+      },
+      {
+       "s": "*La* ciudad es muy bonita.",
+       "t": {
+        "ru": "Город очень красивый.",
+        "uz": "Shahar juda chiroyli.",
+        "en": "The city is very beautiful."
+       }
+      },
+      {
+       "s": "*Los* niños están en *el* parque.",
+       "t": {
+        "ru": "Дети в парке.",
+        "uz": "Bolalar parkda.",
+        "en": "The children are in the park."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -593,6 +900,143 @@
     "en": "Adjective after the noun, same gender and number.",
     "uz": "Sifat otdan keyin, rod va son bir xil."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Прилагательные согласуются",
+      "en": "Adjectives agree",
+      "uz": "Sifatlar moslashadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Прилагательное в испанском меняется вслед за существительным — по роду и числу, как в русском («новый дом — новая машина»). *Un chico alto* — высокий парень, *una chica alta* — высокая девушка.",
+      "en": "Spanish adjectives change with the noun — for gender and number: *un chico alto*, *una chica alta*.",
+      "uz": "Ispan tilida sifat otga qarab o'zgaradi — jins va son bo'yicha. *Un chico alto* — baland bo'yli yigit, *una chica alta* — baland bo'yli qiz. O'zbek tilida sifat o'zgarmaydi, ispan tilida esa o'zgaradi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        "-o",
+        "alto",
+        "alta",
+        "altos",
+        "altas"
+       ],
+       [
+        "-e",
+        "grande",
+        "grande",
+        "grandes",
+        "grandes"
+       ],
+       [
+        {
+         "ru": "согласная",
+         "en": "consonant",
+         "uz": "undosh"
+        },
+        "azul",
+        "azul",
+        "azules",
+        "azules"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Прилагательные на *-e* и на согласную не меняются по роду — только по числу. Исключение — национальности: *español → española*, *francés → francesa*.",
+      "en": "Adjectives in *-e* or a consonant don't change for gender, only number. Nationalities do: *español → española*.",
+      "uz": "*-e* va undosh bilan tugaydigan sifatlar jins bo'yicha o'zgarmaydi — faqat son bo'yicha. Istisno — millatlar: *español → española*, *francés → francesa*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Множественное число",
+      "en": "The plural",
+      "uz": "Ko'plik"
+     }
+    },
+    {
+     "p": {
+      "ru": "Если слово кончается на гласную, добавляем *-s*: *casa → casas*. Если на согласную — *-es*: *ciudad → ciudades*, *azul → azules*. Слово на *-z* меняет её на *c*: *lápiz → lápices*.",
+      "en": "Vowel ending → *-s* (*casas*). Consonant → *-es* (*ciudades*). *-z* → *-ces* (*lápices*).",
+      "uz": "So'z unli bilan tugasa, *-s* qo'shamiz: *casa → casas*. Undosh bilan tugasa — *-es*: *ciudad → ciudades*, *azul → azules*. *-z* bilan tugaydigan so'zda u *c* ga aylanadi: *lápiz → lápices*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Место прилагательного",
+      "en": "Where it goes",
+      "uz": "Qayerda turadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как и во французском, прилагательное обычно стоит _после_ существительного: *un coche rojo* — красная машина (дословно «машина красная»). Но *bueno, malo, grande* часто ставят перед: *un buen amigo*, *un gran hombre* (тогда они сокращаются).",
+      "en": "Adjectives usually follow the noun: *un coche rojo*. *Bueno, malo, grande* often go before and shorten: *un buen amigo*, *un gran hombre*.",
+      "uz": "Sifat odatda otdan _keyin_ turadi: *un coche rojo* — qizil mashina (so'zma-so'z «mashina qizil»). Lekin *bueno, malo, grande* ko'pincha oldidan qo'yiladi va qisqaradi: *un buen amigo*, *un gran hombre*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tengo dos gatos *negros*.",
+       "t": {
+        "ru": "У меня две чёрные кошки.",
+        "uz": "Mening ikkita qora mushugim bor.",
+        "en": "I have two black cats."
+       }
+      },
+      {
+       "s": "Es una ciudad muy *antigua*.",
+       "t": {
+        "ru": "Это очень древний город.",
+        "uz": "Bu juda qadimiy shahar.",
+        "en": "It's a very old city."
+       }
+      },
+      {
+       "s": "Mis amigas son *simpáticas*.",
+       "t": {
+        "ru": "Мои подруги милые.",
+        "uz": "Dugonalarim yoqimli.",
+        "en": "My friends are nice."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -853,6 +1297,124 @@
     "en": "Drop -ar/-er/-ir, add the person’s ending.",
     "uz": "-ar/-er/-ir ni olib, shaxs qo'shimchasini qo'sh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Три группы глаголов",
+      "en": "Three verb groups",
+      "uz": "Uchta fe'l guruhi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Все испанские глаголы в начальной форме кончаются на *-ar*, *-er* или *-ir*: *hablar* — говорить, *comer* — есть, *vivir* — жить. В настоящем времени отрезаем окончание и добавляем новое, по лицу — совсем как в узбекском: *gapir-aman, gapir-asan*.",
+      "en": "All Spanish infinitives end in *-ar*, *-er* or *-ir*: *hablar, comer, vivir*. In the present, drop the ending and add a personal one.",
+      "uz": "Barcha ispan fe'llari boshlang'ich shaklda *-ar*, *-er* yoki *-ir* bilan tugaydi: *hablar* — gapirmoq, *comer* — yemoq, *vivir* — yashamoq. Hozirgi zamonda oxirini kesib, shaxsga qarab yangisini qo'shamiz — xuddi o'zbek tilidagidek: *gapir-aman, gapir-asan*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "hablar",
+       "comer",
+       "vivir"
+      ],
+      "rows": [
+       [
+        "yo",
+        "hablo",
+        "como",
+        "vivo"
+       ],
+       [
+        "tú",
+        "hablas",
+        "comes",
+        "vives"
+       ],
+       [
+        "él / ella / usted",
+        "habla",
+        "come",
+        "vive"
+       ],
+       [
+        "nosotros",
+        "hablamos",
+        "comemos",
+        "vivimos"
+       ],
+       [
+        "vosotros",
+        "habláis",
+        "coméis",
+        "vivís"
+       ],
+       [
+        "ellos / ustedes",
+        "hablan",
+        "comen",
+        "viven"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Подсказка: у *yo* всегда *-o*. У *-ar* глаголов в остальных формах звучит *a*, у *-er* и *-ir* — *e*. *-er* и *-ir* отличаются только в *nosotros* и *vosotros*.",
+      "en": "Tip: *yo* always ends in *-o*. *-ar* verbs use *a*, *-er / -ir* verbs use *e*; *-er* and *-ir* differ only for *nosotros* and *vosotros*.",
+      "uz": "Ishora: *yo* da doim *-o*. *-ar* fe'llarining qolgan shakllarida *a* eshitiladi, *-er* va *-ir* da — *e*. *-er* va *-ir* faqat *nosotros* va *vosotros* da farq qiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Одно настоящее время значит и «делаю вообще», и «делаю сейчас»: *Como pan* — Я ем хлеб. Для «прямо сейчас» есть и отдельная форма (*estoy comiendo*), но её вы узнаете позже.",
+      "en": "One present covers both habits and now: *Como pan.* (There's also *estoy comiendo* for right now — later.)",
+      "uz": "Bitta hozirgi zamon ham «umuman qilaman», ham «hozir qilyapman» ma'nosida: *Como pan* — Non yeyapman. «Aynan hozir» uchun alohida shakl ham bor (*estoy comiendo*), uni keyinroq o'rganasiz."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hablo* un poco de español.",
+       "t": {
+        "ru": "Я немного говорю по-испански.",
+        "uz": "Men biroz ispancha gapiraman.",
+        "en": "I speak a little Spanish."
+       }
+      },
+      {
+       "s": "¿Dónde *vives*?",
+       "t": {
+        "ru": "Где ты живёшь?",
+        "uz": "Qayerda yashaysan?",
+        "en": "Where do you live?"
+       }
+      },
+      {
+       "s": "Mis padres *trabajan* en un hospital.",
+       "t": {
+        "ru": "Мои родители работают в больнице.",
+        "uz": "Ota-onam kasalxonada ishlaydi.",
+        "en": "My parents work in a hospital."
+       }
+      },
+      {
+       "s": "*Comemos* a las dos.",
+       "t": {
+        "ru": "Мы обедаем в два.",
+        "uz": "Biz soat ikkida ovqatlanamiz.",
+        "en": "We eat at two."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1114,6 +1676,142 @@
     "en": "Something new → hay; where a specific thing is → está.",
     "uz": "Yangi narsa → hay; aniq narsa qayerda → está."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Второе «быть»: estar",
+      "en": "The second “to be”: estar",
+      "uz": "Ikkinchi «bo'lmoq»: estar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском _два_ глагола «быть». *Ser* — кто ты и какой ты по сути. *Estar* [эстар] — где ты находишься и как ты себя чувствуешь _сейчас_. *Estoy en casa* — Я дома. *Estoy cansado* — Я устал (сейчас).",
+      "en": "Spanish has two verbs “to be”. *Ser* — who and what you are. *Estar* — where you are and how you feel right now: *Estoy en casa*, *Estoy cansado*.",
+      "uz": "Ispan tilida _ikkita_ «bo'lmoq» fe'li bor. *Ser* — kimsan va mohiyatan qandaysan. *Estar* [estar] — qayerdasan va _hozir_ o'zingni qanday his qilyapsan. *Estoy en casa* — Men uydaman. *Estoy cansado* — Charchadim (hozir)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "estar",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "yo",
+        "estoy",
+        "Estoy bien."
+       ],
+       [
+        "tú",
+        "estás",
+        "¿Cómo estás?"
+       ],
+       [
+        "él / ella / usted",
+        "está",
+        "Está en Madrid."
+       ],
+       [
+        "nosotros",
+        "estamos",
+        "Estamos contentos."
+       ],
+       [
+        "vosotros",
+        "estáis",
+        "¿Estáis listos?"
+       ],
+       [
+        "ellos / ustedes",
+        "están",
+        "Están en clase."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Hay — «есть, имеется»",
+      "en": "Hay — “there is / there are”",
+      "uz": "Hay — «bor»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Hay* [ай] значит «есть, имеется» и не меняется: одинаково для одного и для многих. *Hay un banco aquí* — Здесь есть банк. *Hay muchos turistas* — Есть много туристов. Это как английское *there is / there are* и узбекское «bor».",
+      "en": "*Hay* means “there is / there are” and never changes: *Hay un banco aquí*, *Hay muchos turistas*.",
+      "uz": "*Hay* [ay] «bor, mavjud» degani va o'zgarmaydi: bitta uchun ham, ko'p uchun ham bir xil. *Hay un banco aquí* — Bu yerda bank bor. *Hay muchos turistas* — Turistlar ko'p. Bu o'zbekcha «bor» ga o'xshaydi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Hay или está",
+      "en": "Hay or está",
+      "uz": "Hay yoki está"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Hay* — когда сообщаем, что что-то _существует_, впервые упоминаем (обычно с *un, una*, числом или без артикля). *Está / están* — когда говорим, _где_ находится уже известный предмет (с *el, la*, именем).",
+      "en": "*Hay* introduces something new (with *un*, a number or no article). *Está* tells where a known thing is (with *el, la* or a name).",
+      "uz": "*Hay* — narsa _borligini_ birinchi marta xabar qilganda (odatda *un, una*, son bilan yoki artiklsiz). *Está / están* — ma'lum narsa _qayerda_ ekanini aytganda (*el, la*, ism bilan)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Hay* una farmacia cerca.",
+       "t": {
+        "ru": "Рядом есть аптека.",
+        "uz": "Yaqinda dorixona bor.",
+        "en": "There's a pharmacy nearby."
+       }
+      },
+      {
+       "s": "La farmacia *está* en la plaza.",
+       "t": {
+        "ru": "Аптека на площади.",
+        "uz": "Dorixona maydonda.",
+        "en": "The pharmacy is on the square."
+       }
+      },
+      {
+       "s": "¿*Hay* agua en la nevera?",
+       "t": {
+        "ru": "В холодильнике есть вода?",
+        "uz": "Muzlatgichda suv bormi?",
+        "en": "Is there water in the fridge?"
+       }
+      },
+      {
+       "s": "Mis padres *están* de vacaciones.",
+       "t": {
+        "ru": "Мои родители в отпуске.",
+        "uz": "Ota-onam ta'tilda.",
+        "en": "My parents are on holiday."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Место и самочувствие → *estar*. «Есть ли / существует» → *hay*. *¿Dónde está el baño?* — Где туалет? *¿Hay un baño?* — Здесь есть туалет?",
+      "en": "Location and feelings → *estar*. Existence → *hay*.",
+      "uz": "Joy va kayfiyat → *estar*. «Bormi / mavjudmi» → *hay*. *¿Dónde está el baño?* — Hojatxona qayerda? *¿Hay un baño?* — Bu yerda hojatxona bormi?"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1374,6 +2072,131 @@
     "en": "Age, hunger, cold, “have to” → tener.",
     "uz": "Yosh, ochlik, sovuq, «kerak» → tener."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Tener — иметь",
+      "en": "Tener — to have",
+      "uz": "Tener — ega bo'lmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tener* [тэнэр] — «иметь». С ним говорят, что у тебя есть: *Tengo un hermano* — У меня есть брат (дословно «я имею брата»). Это неправильный глагол, его формы надо запомнить.",
+      "en": "*Tener* means “to have”: *Tengo un hermano.* It's irregular — learn its forms.",
+      "uz": "*Tener* [tener] — «ega bo'lmoq». U bilan nimangiz borligini aytasiz: *Tengo un hermano* — Mening akam bor (so'zma-so'z «men akaga egaman»). Bu noto'g'ri fe'l, shakllarini yodlash kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "tener"
+      ],
+      "rows": [
+       [
+        "yo",
+        "tengo"
+       ],
+       [
+        "tú",
+        "tienes"
+       ],
+       [
+        "él / ella / usted",
+        "tiene"
+       ],
+       [
+        "nosotros",
+        "tenemos"
+       ],
+       [
+        "vosotros",
+        "tenéis"
+       ],
+       [
+        "ellos / ustedes",
+        "tienen"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Возраст и ощущения",
+      "en": "Age and feelings",
+      "uz": "Yosh va his-tuyg'ular"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как во французском, возраст и многие ощущения в испанском «имеют»: *Tengo 18 años* — Мне 18 лет. *Tengo hambre* — Я голоден, *tengo frío* — мне холодно, *tengo sed* — хочу пить, *tengo sueño* — хочу спать, *tengo miedo* — мне страшно.",
+      "en": "Age and many feelings use *tener*: *Tengo 18 años*, *tengo hambre* (hungry), *frío* (cold), *sed* (thirsty), *sueño* (sleepy), *miedo* (afraid).",
+      "uz": "Yosh va ko'p his-tuyg'ular ispan tilida «ega bo'lmoq» bilan aytiladi: *Tengo 18 años* — Men 18 yoshdaman. *Tengo hambre* — Qornim och, *tengo frío* — Sovqotyapman, *tengo sed* — Chanqadim, *tengo sueño* — Uyqum keldi, *tengo miedo* — Qo'rqyapman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Tener que — нужно, должен",
+      "en": "Tener que — have to",
+      "uz": "Tener que — kerak, majburman"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tener que* + глагол в начальной форме = «мне нужно / я должен»: *Tengo que estudiar* — Мне нужно учиться. Это как английское *have to*.",
+      "en": "*Tener que* + infinitive = “have to”: *Tengo que estudiar.*",
+      "uz": "*Tener que* + boshlang'ich fe'l = «… im kerak / majburman»: *Tengo que estudiar* — O'qishim kerak. Bu ingliz tilidagi *have to* ga o'xshaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Cuántos años *tienes*? — *Tengo* veinte.",
+       "t": {
+        "ru": "Сколько тебе лет? — Двадцать.",
+        "uz": "Necha yoshdasan? — Yigirmada.",
+        "en": "How old are you? — Twenty."
+       }
+      },
+      {
+       "s": "*Tenemos* dos hijos.",
+       "t": {
+        "ru": "У нас двое детей.",
+        "uz": "Bizning ikkita farzandimiz bor.",
+        "en": "We have two children."
+       }
+      },
+      {
+       "s": "*Tengo* mucho calor.",
+       "t": {
+        "ru": "Мне очень жарко.",
+        "uz": "Menga juda issiq.",
+        "en": "I'm very hot."
+       }
+      },
+      {
+       "s": "Mañana *tienes que* levantarte temprano.",
+       "t": {
+        "ru": "Завтра тебе нужно рано встать.",
+        "uz": "Ertaga erta turishing kerak.",
+        "en": "Tomorrow you have to get up early."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "«Мне холодно» — *tengo frío* (не «estoy frío»: это значило бы «я холодный на ощупь»).",
+      "en": "“I'm cold” is *tengo frío*, not “estoy frío” (that means you're cold to the touch).",
+      "uz": "«Sovqotyapman» — *tengo frío* («estoy frío» emas: bu «men ushlab ko'rganda sovuqman» degani bo'lardi)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1636,6 +2459,164 @@
     "en": "no before the verb; questions in ¿…? with qué/dónde…",
     "uz": "no — fe'ldan oldin; savol ¿…? ichida, qué/dónde… bilan."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Отрицание: просто no",
+      "en": "Negation: just no",
+      "uz": "Inkor: shunchaki no"
+     }
+    },
+    {
+     "p": {
+      "ru": "Отрицание в испанском — одно из самых простых: перед глаголом ставят *no*. *Hablo inglés* → *No hablo inglés* — Я не говорю по-английски. Никаких помощников, как в английском *do*, не нужно.",
+      "en": "Spanish negation is simple: put *no* before the verb. *No hablo inglés.* No helper verbs needed.",
+      "uz": "Ispan tilida inkor — eng oddiylaridan biri: fe'l oldidan *no* qo'yiladi. *Hablo inglés* → *No hablo inglés* — Men inglizcha gapirmayman. Ingliz tilidagi *do* kabi yordamchilar kerak emas."
+     }
+    },
+    {
+     "p": {
+      "ru": "Двойное отрицание в испанском — норма, как в русском: *No tengo nada* — У меня ничего нет (дословно «не имею ничего»). *No viene nadie* — Никто не приходит.",
+      "en": "Double negatives are normal: *No tengo nada* — I don't have anything. *No viene nadie.*",
+      "uz": "Ispan tilida qo'sh inkor — me'yor, xuddi o'zbek tilidagidek: *No tengo nada* — Menda hech narsa yo'q. *No viene nadie* — Hech kim kelmayapti."
+     }
+    },
+    {
+     "h": {
+      "ru": "Вопрос: та же фраза, другая интонация",
+      "en": "Questions: same words, rising voice",
+      "uz": "Savol: o'sha gap, boshqa ohang"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для вопроса «да/нет» часто достаточно интонации и знаков *¿ … ?*: *¿Hablas español?* Можно также поставить глагол перед подлежащим: *¿Habla usted español?*",
+      "en": "For yes/no questions, intonation and *¿ … ?* are enough: *¿Hablas español?*",
+      "uz": "«Ha/yo'q» savoli uchun ko'pincha ohang va *¿ … ?* belgilari yetarli: *¿Hablas español?* Fe'lni egadan oldin qo'yish ham mumkin: *¿Habla usted español?*"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "qué",
+        {
+         "ru": "что",
+         "en": "what",
+         "uz": "nima"
+        },
+        "¿Qué haces?"
+       ],
+       [
+        "quién",
+        {
+         "ru": "кто",
+         "en": "who",
+         "uz": "kim"
+        },
+        "¿Quién es?"
+       ],
+       [
+        "dónde",
+        {
+         "ru": "где",
+         "en": "where",
+         "uz": "qayerda"
+        },
+        "¿Dónde vives?"
+       ],
+       [
+        "cuándo",
+        {
+         "ru": "когда",
+         "en": "when",
+         "uz": "qachon"
+        },
+        "¿Cuándo llegas?"
+       ],
+       [
+        "cómo",
+        {
+         "ru": "как",
+         "en": "how",
+         "uz": "qanday"
+        },
+        "¿Cómo te llamas?"
+       ],
+       [
+        "por qué",
+        {
+         "ru": "почему",
+         "en": "why",
+         "uz": "nega"
+        },
+        "¿Por qué estudias?"
+       ],
+       [
+        "cuánto",
+        {
+         "ru": "сколько",
+         "en": "how much",
+         "uz": "qancha"
+        },
+        "¿Cuánto cuesta?"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "В вопросительных словах всегда стоит ударение: *qué, dónde, cómo*. *Por qué* (почему) пишется раздельно, а *porque* (потому что) — слитно.",
+      "en": "Question words always carry an accent: *qué, dónde, cómo*. *Por qué* (why) is two words; *porque* (because) is one.",
+      "uz": "So'roq so'zlarida doim urg'u belgisi bor: *qué, dónde, cómo*. *Por qué* (nega) alohida, *porque* (chunki) qo'shib yoziladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*No* entiendo.",
+       "t": {
+        "ru": "Я не понимаю.",
+        "uz": "Tushunmayapman.",
+        "en": "I don't understand."
+       }
+      },
+      {
+       "s": "¿*Dónde* está la estación?",
+       "t": {
+        "ru": "Где вокзал?",
+        "uz": "Vokzal qayerda?",
+        "en": "Where's the station?"
+       }
+      },
+      {
+       "s": "*No* conozco a *nadie* aquí.",
+       "t": {
+        "ru": "Я здесь никого не знаю.",
+        "uz": "Bu yerda hech kimni tanimayman.",
+        "en": "I don't know anyone here."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -1897,6 +2878,141 @@
     "en": "To whom (me/te/le) + gusta/gustan + what.",
     "uz": "Kimga (me/te/le) + gusta/gustan + nima."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Gustar: «мне нравится»",
+      "en": "Gustar: “I like”",
+      "uz": "Gustar: «menga yoqadi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Gustar* устроен не так, как английское *like*, но точно так же, как русское «нравиться» и узбекское «yoqmoq». Главное в предложении — _то, что нравится_, а человек стоит в дательном падеже: *Me gusta el café* — Мне нравится кофе (дословно «мне нравится кофе»).",
+      "en": "*Gustar* works like “to please”: the thing liked is the subject, and the person is the indirect object: *Me gusta el café* — Coffee pleases me.",
+      "uz": "*Gustar* ingliz tilidagi *like* dan farqli, lekin xuddi o'zbekcha «yoqmoq» kabi tuzilgan. Gapda asosiysi — _yoqadigan narsa_, odam esa jo'nalish kelishigida turadi: *Me gusta el café* — Menga qahva yoqadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       {
+        "ru": "Одна вещь / действие",
+        "en": "One thing / action",
+        "uz": "Bitta narsa / harakat"
+       },
+       {
+        "ru": "Много вещей",
+        "en": "Several things",
+        "uz": "Ko'p narsa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "me — мне",
+         "en": "me — me",
+         "uz": "me — menga"
+        },
+        "me gusta",
+        "me gustan"
+       ],
+       [
+        {
+         "ru": "te — тебе",
+         "en": "te — you",
+         "uz": "te — senga"
+        },
+        "te gusta",
+        "te gustan"
+       ],
+       [
+        {
+         "ru": "le — ему / ей / Вам",
+         "en": "le — him / her / you",
+         "uz": "le — unga / Sizga"
+        },
+        "le gusta",
+        "le gustan"
+       ],
+       [
+        {
+         "ru": "nos — нам",
+         "en": "nos — us",
+         "uz": "nos — bizga"
+        },
+        "nos gusta",
+        "nos gustan"
+       ],
+       [
+        {
+         "ru": "os — вам",
+         "en": "os — you (pl.)",
+         "uz": "os — sizlarga"
+        },
+        "os gusta",
+        "os gustan"
+       ],
+       [
+        {
+         "ru": "les — им",
+         "en": "les — them",
+         "uz": "les — ularga"
+        },
+        "les gusta",
+        "les gustan"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Форма глагола зависит не от человека, а от _предмета_: одна вещь или действие — *gusta*, много вещей — *gustan*. *Me gusta la música*, но *Me gustan los libros*. С глаголом всегда *gusta*: *Me gusta bailar* — Я люблю танцевать.",
+      "en": "The verb agrees with the thing, not the person: *me gusta la música*, *me gustan los libros*. With an infinitive always *gusta*: *Me gusta bailar.*",
+      "uz": "Fe'l shakli odamga emas, _narsaga_ bog'liq: bitta narsa yoki harakat — *gusta*, ko'p narsa — *gustan*. *Me gusta la música*, lekin *Me gustan los libros*. Fe'l bilan doim *gusta*: *Me gusta bailar* — Raqs tushishni yaxshi ko'raman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Te *gusta* el fútbol?",
+       "t": {
+        "ru": "Тебе нравится футбол?",
+        "uz": "Senga futbol yoqadimi?",
+        "en": "Do you like football?"
+       }
+      },
+      {
+       "s": "No me *gustan* las arañas.",
+       "t": {
+        "ru": "Я не люблю пауков.",
+        "uz": "Menga o'rgimchaklar yoqmaydi.",
+        "en": "I don't like spiders."
+       }
+      },
+      {
+       "s": "A mi madre le *gusta* cocinar.",
+       "t": {
+        "ru": "Моя мама любит готовить.",
+        "uz": "Onam ovqat pishirishni yaxshi ko'radi.",
+        "en": "My mother likes cooking."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Для уточнения добавляют _a + человек_: *A mí me gusta*, *A Ana le gusta*. Отрицание *no* — перед местоимением: *No me gusta*.",
+      "en": "For emphasis or clarity add *a + person*: *A mí me gusta*, *A Ana le gusta*. *No* goes before the pronoun: *No me gusta.*",
+      "uz": "Aniqlashtirish uchun *a + odam* qo'shiladi: *A mí me gusta*, *A Ana le gusta*. *no* inkori olmoshdan oldin turadi: *No me gusta*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2157,6 +3273,149 @@
     "en": "One thing — mi/tu/su; many — mis/tus/sus.",
     "uz": "Bitta narsa — mi/tu/su; ko'p — mis/tus/sus."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мой, твой, его",
+      "en": "My, your, his",
+      "uz": "Mening, sening, uning"
+     }
+    },
+    {
+     "p": {
+      "ru": "Притяжательные слова в испанском стоят перед существительным и согласуются с _предметом_ по числу: *mi libro* — моя книга, *mis libros* — мои книги. *Nuestro* и *vuestro* меняются ещё и по роду: *nuestra casa*.",
+      "en": "Spanish possessives go before the noun and agree with the thing owned: *mi libro*, *mis libros*; *nuestro / nuestra*.",
+      "uz": "Ispan tilida egalik so'zlari otdan oldin turadi va _narsaga_ son bo'yicha moslashadi: *mi libro* — kitobim, *mis libros* — kitoblarim. *nuestro* va *vuestro* jins bo'yicha ham o'zgaradi: *nuestra casa* — uyimiz."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Владелец",
+        "en": "Owner",
+        "uz": "Ega"
+       },
+       {
+        "ru": "Один предмет",
+        "en": "One thing",
+        "uz": "Bitta narsa"
+       },
+       {
+        "ru": "Много предметов",
+        "en": "Several things",
+        "uz": "Ko'p narsa"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "I",
+         "uz": "men"
+        },
+        "mi",
+        "mis"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "tu",
+        "tus"
+       ],
+       [
+        {
+         "ru": "он / она / Вы",
+         "en": "he / she / you (polite)",
+         "uz": "u / Siz"
+        },
+        "su",
+        "sus"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "we",
+         "uz": "biz"
+        },
+        "nuestro / nuestra",
+        "nuestros / nuestras"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "vuestro / vuestra",
+        "vuestros / vuestras"
+       ],
+       [
+        {
+         "ru": "они / Вы (мн.)",
+         "en": "they / you (pl.)",
+         "uz": "ular / Sizlar"
+        },
+        "su",
+        "sus"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "*Su* — очень многозначное: «его, её, их, Ваш». Обычно смысл понятен из контекста. Если нет — говорят *el libro de él* (его книга), *de ella* (её).",
+      "en": "*Su* can mean his, her, their or your (polite). If unclear, say *el libro de él / de ella*.",
+      "uz": "*Su* — juda ko'p ma'noli: «uning, ularning, Sizning». Odatda ma'no kontekstdan tushunarli. Bo'lmasa, *el libro de él* (uning — erkak), *de ella* (uning — ayol) deyiladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Tu* (твой) пишется без ударения, а *tú* (ты) — с ударением. Это два разных слова: *Tú tienes tu libro* — У тебя есть твоя книга.",
+      "en": "*Tu* (your) has no accent; *tú* (you) has one: *Tú tienes tu libro.*",
+      "uz": "*Tu* (sening) urg'u belgisiz, *tú* (sen) esa belgi bilan yoziladi. Bular ikki xil so'z: *Tú tienes tu libro* — Senda kitobing bor."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Mi* hermana vive en Bujará.",
+       "t": {
+        "ru": "Моя сестра живёт в Бухаре.",
+        "uz": "Opam Buxoroda yashaydi.",
+        "en": "My sister lives in Bukhara."
+       }
+      },
+      {
+       "s": "¿Dónde están *tus* llaves?",
+       "t": {
+        "ru": "Где твои ключи?",
+        "uz": "Kalitlaring qayerda?",
+        "en": "Where are your keys?"
+       }
+      },
+      {
+       "s": "*Nuestra* profesora es muy simpática.",
+       "t": {
+        "ru": "Наша учительница очень милая.",
+        "uz": "O'qituvchimiz juda yoqimli.",
+        "en": "Our teacher is very nice."
+       }
+      },
+      {
+       "s": "Ellos y *sus* hijos.",
+       "t": {
+        "ru": "Они и их дети.",
+        "uz": "Ular va ularning bolalari.",
+        "en": "They and their children."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2417,6 +3676,120 @@
     "en": "ir (by person) + a + infinitive.",
     "uz": "ir (shaxsga ko'ra) + a + infinitiv."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ir — идти, ехать",
+      "en": "Ir — to go",
+      "uz": "Ir — bormoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ir* [ир] — «идти, ехать». Неправильный глагол, причём очень неправильный: формы совсем не похожи на начальную. *Voy al trabajo* — Я иду на работу.",
+      "en": "*Ir* (to go) is very irregular — its forms look nothing like the infinitive: *Voy al trabajo.*",
+      "uz": "*Ir* [ir] — «bormoq». Noto'g'ri fe'l, juda noto'g'ri: shakllari boshlang'ich shaklga umuman o'xshamaydi. *Voy al trabajo* — Ishga boryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "ir",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "yo",
+        "voy",
+        "Voy a casa."
+       ],
+       [
+        "tú",
+        "vas",
+        "¿Adónde vas?"
+       ],
+       [
+        "él / ella / usted",
+        "va",
+        "Va al colegio."
+       ],
+       [
+        "nosotros",
+        "vamos",
+        "¡Vamos!"
+       ],
+       [
+        "vosotros",
+        "vais",
+        "¿Vais a la fiesta?"
+       ],
+       [
+        "ellos / ustedes",
+        "van",
+        "Van en autobús."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Ir a + глагол: собираюсь",
+      "en": "Ir a + verb: going to",
+      "uz": "Ir a + fe'l: … moqchiman"
+     }
+    },
+    {
+     "p": {
+      "ru": "Самый простой способ говорить о будущем: *ir* + *a* + глагол в начальной форме. *Voy a estudiar* — Я собираюсь учиться / Я буду учиться. Это как английское *going to*. Не забудь маленькое *a* между ними!",
+      "en": "The easiest future: *ir* + *a* + infinitive. *Voy a estudiar* — I'm going to study. Don't forget the little *a*!",
+      "uz": "Kelajak haqida gapirishning eng oson usuli: *ir* + *a* + boshlang'ich fe'l. *Voy a estudiar* — O'qimoqchiman / O'qiyman. Bu ingliz tilidagi *going to* ga o'xshaydi. Ular orasidagi kichkina *a* ni unutmang!"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mañana *voy a* visitar a mi abuela.",
+       "t": {
+        "ru": "Завтра я навещу бабушку.",
+        "uz": "Ertaga buvimnikiga boraman.",
+        "en": "Tomorrow I'm going to visit my grandma."
+       }
+      },
+      {
+       "s": "¿Qué *vas a* hacer este fin de semana?",
+       "t": {
+        "ru": "Что ты будешь делать на выходных?",
+        "uz": "Dam olish kunlari nima qilmoqchisan?",
+        "en": "What are you going to do this weekend?"
+       }
+      },
+      {
+       "s": "*Va a* llover.",
+       "t": {
+        "ru": "Будет дождь.",
+        "uz": "Yomg'ir yog'adi.",
+        "en": "It's going to rain."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*¡Vamos!* — «Пошли! Давай!» — одно из самых частых слов в испанском. А *Vamos a ver* — «Посмотрим».",
+      "en": "*¡Vamos!* — “Let's go!” — is everywhere. *Vamos a ver* — “Let's see”.",
+      "uz": "*¡Vamos!* — «Ketdik! Qani!» — ispan tilidagi eng ko'p ishlatiladigan so'zlardan biri. *Vamos a ver* — «Ko'ramiz»."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2678,6 +4051,130 @@
     "en": "Near me — este, near you — ese, far — aquel.",
     "uz": "Yonimda — este, senda — ese, uzoqda — aquel."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Этот, тот и тот вдали",
+      "en": "This, that and that over there",
+      "uz": "Bu, u va anavi uzoqdagi"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском _три_ степени расстояния, а не две, как в русском. *Este* — рядом со мной. *Ese* — рядом с тобой или недалеко. *Aquel* — далеко от нас обоих. Похоже на узбекские «bu — shu — u».",
+      "en": "Spanish has three distances: *este* (near me), *ese* (near you / not far), *aquel* (far from both of us).",
+      "uz": "Ispan tilida masofaning _uch_ darajasi bor. *Este* — mening yonimda. *Ese* — sening yoningda yoki uncha uzoq emas. *Aquel* — ikkalamizdan uzoqda. O'zbekcha «bu — shu — u» ga o'xshaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Расстояние",
+        "en": "Distance",
+        "uz": "Masofa"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "рядом со мной",
+         "en": "near me",
+         "uz": "yonimda"
+        },
+        "este",
+        "esta",
+        "estos",
+        "estas"
+       ],
+       [
+        {
+         "ru": "рядом с тобой",
+         "en": "near you",
+         "uz": "yoningda"
+        },
+        "ese",
+        "esa",
+        "esos",
+        "esas"
+       ],
+       [
+        {
+         "ru": "далеко",
+         "en": "far away",
+         "uz": "uzoqda"
+        },
+        "aquel",
+        "aquella",
+        "aquellos",
+        "aquellas"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Все они согласуются с существительным по роду и числу: *este libro*, *esta mesa*, *estos chicos*. Обрати внимание: мужской род единственного числа кончается на *-e* (*este, ese*), а не на *-o*.",
+      "en": "They agree in gender and number: *este libro, esta mesa, estos chicos*. Note the masculine singular ends in *-e*.",
+      "uz": "Ularning hammasi ot bilan jins va son bo'yicha moslashadi: *este libro*, *esta mesa*, *estos chicos*. E'tibor bering: erkak jinsi birligi *-o* emas, *-e* bilan tugaydi (*este, ese*)."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Esto, eso, aquello* — средняя форма для того, что не названо: *¿Qué es esto?* — Что это? *Eso es* — Именно так.",
+      "en": "*Esto, eso, aquello* refer to something unnamed: *¿Qué es esto?*, *Eso es.*",
+      "uz": "*Esto, eso, aquello* — nomi aytilmagan narsa uchun o'rta shakl: *¿Qué es esto?* — Bu nima? *Eso es* — Aynan shunday."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Este* café está muy rico.",
+       "t": {
+        "ru": "Этот кофе очень вкусный.",
+        "uz": "Bu qahva juda mazali.",
+        "en": "This coffee is delicious."
+       }
+      },
+      {
+       "s": "¿Cuánto cuesta *esa* camiseta?",
+       "t": {
+        "ru": "Сколько стоит эта (твоя) футболка?",
+        "uz": "Shu futbolka qancha turadi?",
+        "en": "How much is that T-shirt?"
+       }
+      },
+      {
+       "s": "*Aquellas* montañas son muy altas.",
+       "t": {
+        "ru": "Те горы очень высокие.",
+        "uz": "Anavi tog'lar juda baland.",
+        "en": "Those mountains are very high."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -2938,6 +4435,149 @@
     "en": "Before an adjective — muy; with verbs and nouns — mucho.",
     "uz": "Sifat oldidan — muy; fe'l va ot bilan — mucho."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Muy или mucho",
+      "en": "Muy or mucho",
+      "uz": "Muy yoki mucho"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба переводятся «очень / много», но работают по-разному. *Muy* — «очень», стоит перед прилагательным или наречием и никогда не меняется: *muy grande*, *muy bien*. *Mucho* — «много, сильно», стоит с существительным или после глагола.",
+      "en": "Both can mean “very / a lot”, but differently. *Muy* goes before adjectives and adverbs and never changes: *muy grande*. *Mucho* goes with nouns or after verbs.",
+      "uz": "Ikkalasi ham «juda / ko'p» deb tarjima qilinadi, lekin turlicha ishlaydi. *Muy* — «juda», sifat yoki ravish oldidan turadi va hech qachon o'zgarmaydi: *muy grande*, *muy bien*. *Mucho* — «ko'p, qattiq», ot bilan yoki fe'ldan keyin keladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "С чем",
+        "en": "With",
+        "uz": "Nima bilan"
+       },
+       {
+        "ru": "Меняется?",
+        "en": "Changes?",
+        "uz": "O'zgaradimi?"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "muy",
+        {
+         "ru": "прилагательное, наречие",
+         "en": "adjective, adverb",
+         "uz": "sifat, ravish"
+        },
+        {
+         "ru": "нет",
+         "en": "no",
+         "uz": "yo'q"
+        },
+        "muy caro, muy rápido"
+       ],
+       [
+        "mucho",
+        {
+         "ru": "существительное",
+         "en": "noun",
+         "uz": "ot"
+        },
+        {
+         "ru": "да: -o/-a/-os/-as",
+         "en": "yes: -o/-a/-os/-as",
+         "uz": "ha: -o/-a/-os/-as"
+        },
+        "mucha gente, muchos libros"
+       ],
+       [
+        "mucho",
+        {
+         "ru": "после глагола",
+         "en": "after a verb",
+         "uz": "fe'ldan keyin"
+        },
+        {
+         "ru": "нет",
+         "en": "no",
+         "uz": "yo'q"
+        },
+        "Te quiero mucho."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Bueno или bien",
+      "en": "Bueno or bien",
+      "uz": "Bueno yoki bien"
+     }
+    },
+    {
+     "p": {
+      "ru": "Та же логика, что в английском *good / well*. *Bueno* — прилагательное, описывает предмет: *un libro bueno*. *Bien* — наречие, описывает действие или самочувствие: *Hablas bien* — Ты хорошо говоришь, *Estoy bien* — У меня всё хорошо.",
+      "en": "Like English *good / well*. *Bueno* describes a thing: *un libro bueno*. *Bien* describes an action or how you are: *Hablas bien*, *Estoy bien*.",
+      "uz": "Mantiq ingliz tilidagi *good / well* bilan bir xil. *Bueno* — sifat, narsani tasvirlaydi: *un libro bueno*. *Bien* — ravish, harakat yoki kayfiyatni tasvirlaydi: *Hablas bien* — Yaxshi gapirasan, *Estoy bien* — Hammasi yaxshi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "La comida está *muy* buena.",
+       "t": {
+        "ru": "Еда очень вкусная.",
+        "uz": "Ovqat juda mazali.",
+        "en": "The food is very good."
+       }
+      },
+      {
+       "s": "Hay *muchas* personas en la calle.",
+       "t": {
+        "ru": "На улице много людей.",
+        "uz": "Ko'chada odamlar ko'p.",
+        "en": "There are lots of people in the street."
+       }
+      },
+      {
+       "s": "Trabajas *mucho*.",
+       "t": {
+        "ru": "Ты много работаешь.",
+        "uz": "Sen ko'p ishlaysan.",
+        "en": "You work a lot."
+       }
+      },
+      {
+       "s": "¿Cómo estás? — *Muy bien*, gracias.",
+       "t": {
+        "ru": "Как дела? — Очень хорошо, спасибо.",
+        "uz": "Qalaysan? — Juda yaxshi, rahmat.",
+        "en": "How are you? — Very well, thanks."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Сказать «muy mucho» нельзя. «Очень много» — *muchísimo*: *Me gusta muchísimo*.",
+      "en": "You can't say “muy mucho”. “Very much” is *muchísimo*.",
+      "uz": "«muy mucho» deb bo'lmaydi. «Juda ko'p» — *muchísimo*: *Me gusta muchísimo* — Menga juda-juda yoqadi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -3198,6 +4838,165 @@
     "en": "What it is → ser; where/how it is now → estar.",
     "uz": "Nima/qanday (mohiyat) → ser; qayerda/hozir qanday → estar."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ser или estar: два «быть»",
+      "en": "Ser or estar: two “to be”",
+      "uz": "Ser yoki estar: ikki xil «bo'lmoq»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это одна из главных тем испанского. Упрощённо: *ser* — _что это такое по сути_ (постоянное, определение), *estar* — _в каком состоянии и где_ (временное, положение). Сравни: *Soy alegre* — Я весёлый человек (характер). *Estoy alegre* — Мне сейчас весело (настроение).",
+      "en": "A key Spanish topic. Roughly: *ser* — what something is (identity, lasting traits); *estar* — how and where it is (state, location). *Soy alegre* (I'm a cheerful person) vs *Estoy alegre* (I feel cheerful now).",
+      "uz": "Bu ispan tilining asosiy mavzularidan biri. Soddalashtirib: *ser* — _mohiyatan nima ekani_ (doimiy, ta'rif), *estar* — _qanday holatda va qayerda ekani_ (vaqtinchalik, joylashuv). Solishtiring: *Soy alegre* — Men quvnoq odamman (xarakter). *Estoy alegre* — Hozir kayfiyatim yaxshi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Когда",
+        "en": "When",
+        "uz": "Qachon"
+       },
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "кто, профессия, национальность",
+         "en": "identity, job, nationality",
+         "uz": "kim, kasb, millat"
+        },
+        "ser",
+        "Es médico. Soy uzbeko."
+       ],
+       [
+        {
+         "ru": "характер, внешность",
+         "en": "character, looks",
+         "uz": "xarakter, tashqi ko'rinish"
+        },
+        "ser",
+        "Es alto y simpático."
+       ],
+       [
+        {
+         "ru": "материал, происхождение",
+         "en": "material, origin",
+         "uz": "material, kelib chiqish"
+        },
+        "ser",
+        "La mesa es de madera."
+       ],
+       [
+        {
+         "ru": "время, дата, цена события",
+         "en": "time, date",
+         "uz": "vaqt, sana"
+        },
+        "ser",
+        "Son las tres. Hoy es lunes."
+       ],
+       [
+        {
+         "ru": "где находится",
+         "en": "location",
+         "uz": "qayerda"
+        },
+        "estar",
+        "Madrid está en España."
+       ],
+       [
+        {
+         "ru": "самочувствие, настроение",
+         "en": "feelings, mood",
+         "uz": "kayfiyat, holat"
+        },
+        "estar",
+        "Estoy cansado."
+       ],
+       [
+        {
+         "ru": "временное состояние",
+         "en": "temporary state",
+         "uz": "vaqtinchalik holat"
+        },
+        "estar",
+        "La sopa está fría."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Ловушка: место события — *ser*: *La fiesta es en mi casa* (вечеринка проходит у меня). Место предмета или человека — *estar*: *Mi casa está cerca*.",
+      "en": "Trap: the location of an event uses *ser* (*La fiesta es en mi casa*); the location of a thing or person uses *estar*.",
+      "uz": "Tuzoq: tadbir joyi — *ser*: *La fiesta es en mi casa* (ziyofat menikida bo'ladi). Narsa yoki odam joyi — *estar*: *Mi casa está cerca*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Одно прилагательное — два смысла",
+      "en": "One adjective, two meanings",
+      "uz": "Bitta sifat — ikki ma'no"
+     }
+    },
+    {
+     "p": {
+      "ru": "Некоторые прилагательные меняют значение в зависимости от глагола. *Es aburrido* — он скучный (человек). *Está aburrido* — ему скучно. *Es listo* — он умный. *Está listo* — он готов. *Es rico* — он богатый. *Está rico* — вкусно.",
+      "en": "Some adjectives change meaning: *es aburrido* (boring) / *está aburrido* (bored); *es listo* (clever) / *está listo* (ready); *es rico* (rich) / *está rico* (tasty).",
+      "uz": "Ba'zi sifatlar fe'lga qarab ma'nosini o'zgartiradi. *Es aburrido* — u zerikarli (odam). *Está aburrido* — u zerikkan. *Es listo* — u aqlli. *Está listo* — u tayyor. *Es rico* — u boy. *Está rico* — mazali."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mi hermano *es* ingeniero.",
+       "t": {
+        "ru": "Мой брат — инженер.",
+        "uz": "Akam muhandis.",
+        "en": "My brother is an engineer."
+       }
+      },
+      {
+       "s": "Hoy *estoy* muy ocupado.",
+       "t": {
+        "ru": "Сегодня я очень занят.",
+        "uz": "Bugun juda bandman.",
+        "en": "I'm very busy today."
+       }
+      },
+      {
+       "s": "¿Dónde *está* tu móvil?",
+       "t": {
+        "ru": "Где твой телефон?",
+        "uz": "Telefoning qayerda?",
+        "en": "Where's your phone?"
+       }
+      },
+      {
+       "s": "Esta paella *está* buenísima.",
+       "t": {
+        "ru": "Эта паэлья очень вкусная.",
+        "uz": "Bu paelya juda mazali.",
+        "en": "This paella is delicious."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -3460,6 +5259,175 @@
     "en": "Stressed: e→ie, o→ue, e→i; nosotros/vosotros unchanged.",
     "uz": "Urg'uli: e→ie, o→ue, e→i; nosotros/vosotros o'zgarmaydi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы, которые меняют гласную",
+      "en": "Verbs that change their vowel",
+      "uz": "Unlisini o'zgartiradigan fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "У многих частых испанских глаголов в основе меняется гласная, когда на неё падает ударение. *Querer* (хотеть) → *quiero* (хочу): *e* превратилась в *ie*. *Poder* (мочь) → *puedo*: *o* превратилась в *ue*. Окончания при этом обычные.",
+      "en": "Many common Spanish verbs change the stem vowel when it's stressed: *querer → quiero* (*e → ie*), *poder → puedo* (*o → ue*). The endings are regular.",
+      "uz": "Ko'plab ispan fe'llarida urg'u tushganda o'zakdagi unli o'zgaradi. *Querer* (xohlamoq) → *quiero* (xohlayman): *e* *ie* ga aylandi. *Poder* (qila olmoq) → *puedo*: *o* *ue* ga aylandi. Qo'shimchalar esa oddiy."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       },
+       "yo",
+       "nosotros"
+      ],
+      "rows": [
+       [
+        "e → ie",
+        "querer",
+        "quiero",
+        "queremos"
+       ],
+       [
+        "o → ue",
+        "poder",
+        "puedo",
+        "podemos"
+       ],
+       [
+        "e → i",
+        "pedir",
+        "pido",
+        "pedimos"
+       ],
+       [
+        "u → ue",
+        "jugar",
+        "juego",
+        "jugamos"
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "«Сапожок»: где меняется",
+      "en": "The “boot”: where it changes",
+      "uz": "«Etik»: qayerda o'zgaradi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Гласная меняется во всех формах, _кроме_ *nosotros* и *vosotros*, — там ударение падает на окончание. Если обвести изменённые формы в таблице спряжения, получится фигура, похожая на сапог, — поэтому их называют «глаголы-сапожки».",
+      "en": "The vowel changes in every form except *nosotros* and *vosotros*, where the stress moves to the ending. Circle the changed forms and you get a boot shape.",
+      "uz": "Unli barcha shakllarda o'zgaradi, *nosotros* va *vosotros* _dan tashqari_ — u yerda urg'u qo'shimchaga tushadi. Tuslanish jadvalidagi o'zgargan shakllarni aylantirib chizsangiz, etikka o'xshash shakl hosil bo'ladi — shuning uchun ular «etik fe'llar» deyiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "querer",
+       "poder",
+       "dormir"
+      ],
+      "rows": [
+       [
+        "yo",
+        "quiero",
+        "puedo",
+        "duermo"
+       ],
+       [
+        "tú",
+        "quieres",
+        "puedes",
+        "duermes"
+       ],
+       [
+        "él / ella",
+        "quiere",
+        "puede",
+        "duerme"
+       ],
+       [
+        "nosotros",
+        "queremos",
+        "podemos",
+        "dormimos"
+       ],
+       [
+        "vosotros",
+        "queréis",
+        "podéis",
+        "dormís"
+       ],
+       [
+        "ellos",
+        "quieren",
+        "pueden",
+        "duermen"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿*Quieres* un café?",
+       "t": {
+        "ru": "Хочешь кофе?",
+        "uz": "Qahva xohlaysanmi?",
+        "en": "Do you want a coffee?"
+       }
+      },
+      {
+       "s": "No *puedo* ir hoy.",
+       "t": {
+        "ru": "Я не могу пойти сегодня.",
+        "uz": "Bugun bora olmayman.",
+        "en": "I can't go today."
+       }
+      },
+      {
+       "s": "Los niños *juegan* en el parque.",
+       "t": {
+        "ru": "Дети играют в парке.",
+        "uz": "Bolalar parkda o'ynayapti.",
+        "en": "The children are playing in the park."
+       }
+      },
+      {
+       "s": "Siempre *pido* pollo.",
+       "t": {
+        "ru": "Я всегда заказываю курицу.",
+        "uz": "Men doim tovuq buyurtma qilaman.",
+        "en": "I always order chicken."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Такие глаголы в словарях часто помечают: *querer (ie)*, *poder (ue)*, *pedir (i)*. Учи их вместе с этой пометкой.",
+      "en": "Dictionaries often mark them: *querer (ie)*, *poder (ue)*, *pedir (i)*. Learn them with the mark.",
+      "uz": "Lug'atlarda bunday fe'llar ko'pincha belgilanadi: *querer (ie)*, *poder (ue)*, *pedir (i)*. Ularni shu belgi bilan birga yodlang."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -3721,6 +5689,128 @@
     "en": "Each person has its pronoun: me, te, se, nos, os, se.",
     "uz": "Har shaxsning olmoshi: me, te, se, nos, os, se."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Возвратные глаголы",
+      "en": "Reflexive verbs",
+      "uz": "O'zlik fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Возвратные глаголы описывают действие, направленное на себя. В словаре у них на конце *-se*: *levantarse* — вставать, *ducharse* — принимать душ, *llamarse* — называться. В предложении *-se* превращается в местоимение перед глаголом.",
+      "en": "Reflexive verbs describe actions done to yourself. In the dictionary they end in *-se*: *levantarse, ducharse, llamarse*. In a sentence *-se* becomes a pronoun before the verb.",
+      "uz": "O'zlik fe'llar o'ziga qaratilgan harakatni bildiradi. Lug'atda ular oxirida *-se* bo'ladi: *levantarse* — turmoq, *ducharse* — dush qabul qilmoq, *llamarse* — atalmoq. Gapda *-se* fe'l oldidagi olmoshga aylanadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Местоимение",
+        "en": "Pronoun",
+        "uz": "Olmosh"
+       },
+       "levantarse"
+      ],
+      "rows": [
+       [
+        "yo",
+        "me",
+        "me levanto"
+       ],
+       [
+        "tú",
+        "te",
+        "te levantas"
+       ],
+       [
+        "él / ella / usted",
+        "se",
+        "se levanta"
+       ],
+       [
+        "nosotros",
+        "nos",
+        "nos levantamos"
+       ],
+       [
+        "vosotros",
+        "os",
+        "os levantáis"
+       ],
+       [
+        "ellos / ustedes",
+        "se",
+        "se levantan"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*¿Cómo te llamas?* — «Как тебя зовут?» — как раз возвратный глагол: дословно «как ты себя называешь?». Ответ: *Me llamo Dilnoza*.",
+      "en": "*¿Cómo te llamas?* is reflexive — literally “what do you call yourself?” Answer: *Me llamo Dilnoza.*",
+      "uz": "*¿Cómo te llamas?* — «Isming nima?» — aynan o'zlik fe'l: so'zma-so'z «o'zingni qanday ataysan?». Javob: *Me llamo Dilnoza*."
+     }
+    },
+    {
+     "p": {
+      "ru": "С инфинитивом местоимение можно поставить в конец, приклеив к глаголу: *Voy a ducharme* = *Me voy a duchar* — Я пойду в душ.",
+      "en": "With an infinitive, the pronoun can attach to the end: *Voy a ducharme* = *Me voy a duchar.*",
+      "uz": "Infinitiv bilan olmoshni oxiriga, fe'lga yopishtirib qo'yish mumkin: *Voy a ducharme* = *Me voy a duchar* — Dush qabul qilgani boraman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Me levanto* a las siete.",
+       "t": {
+        "ru": "Я встаю в семь.",
+        "uz": "Soat yettida turaman.",
+        "en": "I get up at seven."
+       }
+      },
+      {
+       "s": "¿A qué hora *te acuestas*?",
+       "t": {
+        "ru": "Во сколько ты ложишься спать?",
+        "uz": "Soat nechada yotasan?",
+        "en": "What time do you go to bed?"
+       }
+      },
+      {
+       "s": "Mis hermanos *se llaman* Ali y Timur.",
+       "t": {
+        "ru": "Моих братьев зовут Али и Тимур.",
+        "uz": "Akalarimning ismi Ali va Temur.",
+        "en": "My brothers are called Ali and Timur."
+       }
+      },
+      {
+       "s": "*Nos divertimos* mucho en la fiesta.",
+       "t": {
+        "ru": "Мы очень весело провели время на вечеринке.",
+        "uz": "Ziyofatda juda xursand bo'ldik.",
+        "en": "We had great fun at the party."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Части тела с возвратными идут с артиклем, а не с «мой»: *Me lavo las manos* — Я мою руки (не «mis manos»).",
+      "en": "Body parts take the article, not a possessive: *Me lavo las manos* (not “mis manos”).",
+      "uz": "O'zlik fe'llar bilan tana a'zolari «mening» bilan emas, artikl bilan keladi: *Me lavo las manos* — Qo'llarimni yuvaman («mis manos» emas)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -3981,6 +6071,116 @@
     "en": "Finished in the past → -é/-ó or -í/-ió.",
     "uz": "O'tmishda tugagan → -é/-ó yoki -í/-ió."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Pretérito indefinido — простое прошедшее",
+      "en": "Pretérito indefinido — the simple past",
+      "uz": "Pretérito indefinido — oddiy o'tgan zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это главное время для законченных событий в прошлом, особенно с точным моментом: вчера, в прошлом году, в 2020-м. *Ayer comí paella* — Вчера я ел паэлью. *En 2019 viajé a México* — В 2019 году я ездил в Мексику.",
+      "en": "The main tense for finished past events, especially with a specific time: *Ayer comí paella.*",
+      "uz": "Bu o'tmishda tugagan voqealar, ayniqsa aniq payt bilan uchun asosiy zamon: kecha, o'tgan yili, 2020-yilda. *Ayer comí paella* — Kecha paelya yedim. *En 2019 viajé a México* — 2019-yilda Meksikaga bordim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "hablar (-ar)",
+       "comer (-er)",
+       "vivir (-ir)"
+      ],
+      "rows": [
+       [
+        "yo",
+        "hablé",
+        "comí",
+        "viví"
+       ],
+       [
+        "tú",
+        "hablaste",
+        "comiste",
+        "viviste"
+       ],
+       [
+        "él / ella / usted",
+        "habló",
+        "comió",
+        "vivió"
+       ],
+       [
+        "nosotros",
+        "hablamos",
+        "comimos",
+        "vivimos"
+       ],
+       [
+        "vosotros",
+        "hablasteis",
+        "comisteis",
+        "vivisteis"
+       ],
+       [
+        "ellos / ustedes",
+        "hablaron",
+        "comieron",
+        "vivieron"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Ударение здесь очень важно: *hablo* — я говорю (сейчас), *habló* — он говорил (вчера). Разница только в ударении и знаке над *o*. Глаголы на *-er* и *-ir* в прошедшем имеют одинаковые окончания.",
+      "en": "Stress matters: *hablo* (I speak) vs *habló* (he spoke). *-er* and *-ir* verbs share the same past endings.",
+      "uz": "Urg'u bu yerda juda muhim: *hablo* — men gapiraman (hozir), *habló* — u gapirdi (kecha). Farq faqat urg'u va *o* ustidagi belgida. *-er* va *-ir* fe'llari o'tgan zamonda bir xil qo'shimchalarga ega."
+     }
+    },
+    {
+     "note": {
+      "ru": "Форма *nosotros* у глаголов на *-ar* и *-ir* совпадает с настоящим: *hablamos* — мы говорим / мы говорили. Смысл понятен из слов *ayer, la semana pasada*.",
+      "en": "The *nosotros* form of *-ar* and *-ir* verbs is the same as the present: *hablamos*. Context words like *ayer* tell you which.",
+      "uz": "*-ar* va *-ir* fe'llarining *nosotros* shakli hozirgi zamon bilan bir xil: *hablamos* — gapiramiz / gapirdik. Ma'no *ayer, la semana pasada* kabi so'zlardan tushunarli."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Ayer* *trabajé* hasta las ocho.",
+       "t": {
+        "ru": "Вчера я работал до восьми.",
+        "uz": "Kecha soat sakkizgacha ishladim.",
+        "en": "Yesterday I worked until eight."
+       }
+      },
+      {
+       "s": "¿*Visitaste* Samarcanda el año pasado?",
+       "t": {
+        "ru": "Ты был в Самарканде в прошлом году?",
+        "uz": "O'tgan yili Samarqandga bordingmi?",
+        "en": "Did you visit Samarkand last year?"
+       }
+      },
+      {
+       "s": "Mis padres *vivieron* en Rusia diez años.",
+       "t": {
+        "ru": "Мои родители десять лет жили в России.",
+        "uz": "Ota-onam Rossiyada o'n yil yashagan.",
+        "en": "My parents lived in Russia for ten years."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -4240,6 +6440,158 @@
     "en": "fui/fue, tuve, estuve, hice, pude, vine, dije — learn them by heart.",
     "uz": "fui/fue, tuve, estuve, hice, pude, vine, dije — yod oling."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Неправильные глаголы в прошедшем",
+      "en": "Irregular verbs in the past",
+      "uz": "O'tgan zamondagi noto'g'ri fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Самые частые испанские глаголы в прошедшем времени меняются сильно. Их немного, но они нужны постоянно: был, пошёл, имел, сделал, сказал. Хорошая новость: у многих из них одинаковые окончания, и ударение _не_ падает на окончание (нет знака).",
+      "en": "The most common Spanish verbs are irregular in the past. There aren't many, and many share the same endings, without written accents.",
+      "uz": "Eng ko'p ishlatiladigan ispan fe'llari o'tgan zamonda kuchli o'zgaradi. Ular ko'p emas, lekin doim kerak: bo'ldi, bordi, ega bo'ldi, qildi, aytdi. Yaxshi xabar: ko'pchiligining qo'shimchalari bir xil va urg'u qo'shimchaga _tushmaydi_ (belgi yo'q)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       "yo",
+       "él / ella",
+       "ellos"
+      ],
+      "rows": [
+       [
+        {
+         "ru": "ser / ir (быть / идти)",
+         "en": "ser / ir (be / go)",
+         "uz": "ser / ir (bo'lmoq / bormoq)"
+        },
+        "fui",
+        "fue",
+        "fueron"
+       ],
+       [
+        {
+         "ru": "tener (иметь)",
+         "en": "tener (have)",
+         "uz": "tener (ega bo'lmoq)"
+        },
+        "tuve",
+        "tuvo",
+        "tuvieron"
+       ],
+       [
+        {
+         "ru": "estar (быть где-то)",
+         "en": "estar (be)",
+         "uz": "estar (bo'lmoq)"
+        },
+        "estuve",
+        "estuvo",
+        "estuvieron"
+       ],
+       [
+        {
+         "ru": "hacer (делать)",
+         "en": "hacer (do)",
+         "uz": "hacer (qilmoq)"
+        },
+        "hice",
+        "hizo",
+        "hicieron"
+       ],
+       [
+        {
+         "ru": "poder (мочь)",
+         "en": "poder (can)",
+         "uz": "poder (qila olmoq)"
+        },
+        "pude",
+        "pudo",
+        "pudieron"
+       ],
+       [
+        {
+         "ru": "decir (сказать)",
+         "en": "decir (say)",
+         "uz": "decir (aytmoq)"
+        },
+        "dije",
+        "dijo",
+        "dijeron"
+       ],
+       [
+        {
+         "ru": "venir (приходить)",
+         "en": "venir (come)",
+         "uz": "venir (kelmoq)"
+        },
+        "vine",
+        "vino",
+        "vinieron"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Удивительно, но *ser* и *ir* в прошедшем совпадают: *fui* значит и «я был», и «я ходил». *Fui a Madrid* — Я ездил в Мадрид. *Fue increíble* — Это было невероятно. Смысл ясен из фразы.",
+      "en": "Surprisingly, *ser* and *ir* share past forms: *fui* = I was / I went. *Fui a Madrid*, *Fue increíble*.",
+      "uz": "Ajablanarli, lekin *ser* va *ir* o'tgan zamonda bir xil: *fui* ham «men edim», ham «men bordim». *Fui a Madrid* — Madridga bordim. *Fue increíble* — Bu aql bovar qilmas edi. Ma'no gapdan tushunarli."
+     }
+    },
+    {
+     "p": {
+      "ru": "Окончания этой группы: *-e, -iste, -o, -imos, -isteis, -ieron*. После *j* в форме «они» — *-eron*: *dijeron*, *trajeron*.",
+      "en": "Endings for this group: *-e, -iste, -o, -imos, -isteis, -ieron* (after *j*: *-eron*).",
+      "uz": "Bu guruh qo'shimchalari: *-e, -iste, -o, -imos, -isteis, -ieron*. «Ular» shaklida *j* dan keyin — *-eron*: *dijeron*, *trajeron*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "El fin de semana *fuimos* a la playa.",
+       "t": {
+        "ru": "На выходных мы ездили на пляж.",
+        "uz": "Dam olish kunlari plyajga bordik.",
+        "en": "At the weekend we went to the beach."
+       }
+      },
+      {
+       "s": "Ayer *tuve* un examen.",
+       "t": {
+        "ru": "Вчера у меня был экзамен.",
+        "uz": "Kecha imtihonim bor edi.",
+        "en": "Yesterday I had an exam."
+       }
+      },
+      {
+       "s": "¿Qué *hiciste* anoche?",
+       "t": {
+        "ru": "Что ты делал вчера вечером?",
+        "uz": "Kecha kechqurun nima qilding?",
+        "en": "What did you do last night?"
+       }
+      },
+      {
+       "s": "Ella me *dijo* la verdad.",
+       "t": {
+        "ru": "Она сказала мне правду.",
+        "uz": "U menga haqiqatni aytdi.",
+        "en": "She told me the truth."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -4502,6 +6854,109 @@
     "en": "Used to / description → -aba / -ía.",
     "uz": "Avval odatda / tasvir → -aba / -ía."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Imperfecto — «было, бывало»",
+      "en": "Imperfecto — how things used to be",
+      "uz": "Imperfecto — «edi, bo'lardi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Второе прошедшее время описывает фон: как было, что бывало регулярно, что длилось. «В детстве я жил в деревне», «Каждое утро мы пили чай», «Было холодно». Это как французский imparfait и узбекское «-ar edi».",
+      "en": "The imperfecto describes background: how things were, habits, ongoing states — “As a child I lived in a village”, “It was cold.”",
+      "uz": "Ikkinchi o'tgan zamon fonni tasvirlaydi: qanday edi, muntazam nima bo'lardi, nima davom etardi. «Bolaligimda qishloqda yashardim», «Har ertalab choy ichardik», «Sovuq edi». Bu o'zbekcha «-ar edi» ga o'xshaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "hablar (-ar)",
+       "comer / vivir (-er, -ir)"
+      ],
+      "rows": [
+       [
+        "yo",
+        "hablaba",
+        "comía"
+       ],
+       [
+        "tú",
+        "hablabas",
+        "comías"
+       ],
+       [
+        "él / ella",
+        "hablaba",
+        "comía"
+       ],
+       [
+        "nosotros",
+        "hablábamos",
+        "comíamos"
+       ],
+       [
+        "vosotros",
+        "hablabais",
+        "comíais"
+       ],
+       [
+        "ellos",
+        "hablaban",
+        "comían"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Очень регулярное время: *-ar* → *-aba*, *-er / -ir* → *-ía*. Неправильных глаголов всего три: *ser* (*era*), *ir* (*iba*), *ver* (*veía*). Формы *yo* и *él* совпадают.",
+      "en": "Very regular: *-ar* → *-aba*, *-er / -ir* → *-ía*. Only three irregulars: *era* (ser), *iba* (ir), *veía* (ver).",
+      "uz": "Juda muntazam zamon: *-ar* → *-aba*, *-er / -ir* → *-ía*. Noto'g'ri fe'llar bor-yo'g'i uchta: *ser* (*era*), *ir* (*iba*), *ver* (*veía*). *yo* va *él* shakllari bir xil."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Cuando *era* niño, *vivía* en Andiyán.",
+       "t": {
+        "ru": "Когда я был ребёнком, я жил в Андижане.",
+        "uz": "Bolaligimda Andijonda yashardim.",
+        "en": "When I was a child, I lived in Andijan."
+       }
+      },
+      {
+       "s": "Todos los veranos *íbamos* a la montaña.",
+       "t": {
+        "ru": "Каждое лето мы ездили в горы.",
+        "uz": "Har yozda tog'ga borardik.",
+        "en": "Every summer we went to the mountains."
+       }
+      },
+      {
+       "s": "*Hacía* frío y *llovía*.",
+       "t": {
+        "ru": "Было холодно, и шёл дождь.",
+        "uz": "Sovuq edi va yomg'ir yog'ardi.",
+        "en": "It was cold and raining."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Слова-подсказки: *siempre, todos los días, a menudo, antes, de niño* (в детстве) — почти всегда imperfecto.",
+      "en": "Clue words: *siempre, todos los días, a menudo, antes, de niño* — almost always imperfecto.",
+      "uz": "Ishora so'zlar: *siempre, todos los días, a menudo, antes, de niño* (bolaligimda) — deyarli doim imperfecto."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -4763,6 +7218,130 @@
     "en": "Background/habit → -aba/-ía; event → -é/-ó.",
     "uz": "Fon/odat → -aba/-ía; voqea → -é/-ó."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два прошедших: что выбрать",
+      "en": "Two past tenses: which one",
+      "uz": "Ikki o'tgan zamon: qaysi birini tanlash"
+     }
+    },
+    {
+     "p": {
+      "ru": "Испанский рассказ о прошлом, как и французский, смешивает два времени. *Imperfecto* — фон и декорации (как было, что длилось). *Indefinido* — события, которые произошли и закончились (что случилось).",
+      "en": "Spanish stories mix two pasts: imperfecto for background, indefinido for completed events.",
+      "uz": "Ispancha o'tmish hikoyasi ikki zamonni aralashtiradi. *Imperfecto* — fon va dekoratsiya (qanday edi, nima davom etardi). *Indefinido* — sodir bo'lib, tugagan voqealar (nima bo'ldi)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Imperfecto",
+        "en": "Imperfecto",
+        "uz": "Imperfecto"
+       },
+       {
+        "ru": "Indefinido",
+        "en": "Indefinido",
+        "uz": "Indefinido"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "описание, фон",
+         "en": "description, background",
+         "uz": "tasvir, fon"
+        },
+        {
+         "ru": "событие",
+         "en": "event",
+         "uz": "voqea"
+        }
+       ],
+       [
+        {
+         "ru": "привычка в прошлом",
+         "en": "past habit",
+         "uz": "o'tmishdagi odat"
+        },
+        {
+         "ru": "один раз / ограниченный период",
+         "en": "once / a set period",
+         "uz": "bir marta / cheklangan davr"
+        }
+       ],
+       [
+        {
+         "ru": "действие длилось",
+         "en": "ongoing action",
+         "uz": "davom etgan harakat"
+        },
+        {
+         "ru": "действие прервало",
+         "en": "interrupting action",
+         "uz": "bo'lgan harakat"
+        }
+       ],
+       [
+        {
+         "ru": "siempre, cada día, antes",
+         "en": "siempre, cada día, antes",
+         "uz": "siempre, cada día, antes"
+        },
+        {
+         "ru": "ayer, una vez, en 2020",
+         "en": "ayer, una vez, en 2020",
+         "uz": "ayer, una vez, en 2020"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Классическая схема: *Cuando dormía, sonó el teléfono* — Когда я спал (длилось — imperfecto), зазвонил телефон (событие — indefinido).",
+      "en": "Classic pattern: *Cuando dormía, sonó el teléfono* — while I was sleeping (imperfecto), the phone rang (indefinido).",
+      "uz": "Klassik sxema: *Cuando dormía, sonó el teléfono* — Uxlayotganimda (davom etardi — imperfecto) telefon jiringladi (voqea — indefinido)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Estaba* en casa cuando *llegó* mi hermano.",
+       "t": {
+        "ru": "Я был дома, когда пришёл мой брат.",
+        "uz": "Akam kelganda men uyda edim.",
+        "en": "I was at home when my brother arrived."
+       }
+      },
+      {
+       "s": "De niño *jugaba* al fútbol, pero un día me *rompí* la pierna.",
+       "t": {
+        "ru": "В детстве я играл в футбол, но однажды сломал ногу.",
+        "uz": "Bolaligimda futbol o'ynardim, lekin bir kuni oyog'imni sindirdim.",
+        "en": "As a child I played football, but one day I broke my leg."
+       }
+      },
+      {
+       "s": "*Hacía* sol, así que *fuimos* al parque.",
+       "t": {
+        "ru": "Было солнечно, поэтому мы пошли в парк.",
+        "uz": "Quyoshli edi, shuning uchun parkka bordik.",
+        "en": "It was sunny, so we went to the park."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Спроси себя: «каким было? что происходило?» → imperfecto. «Что произошло? что потом?» → indefinido.",
+      "en": "Ask: “What was it like? What was going on?” → imperfecto. “What happened next?” → indefinido.",
+      "uz": "O'zingizdan so'rang: «qanday edi? nima bo'layotgan edi?» → imperfecto. «Nima bo'ldi? keyin nima?» → indefinido."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5025,6 +7604,158 @@
     "en": "What/whom → lo/la; to whom → le; le+lo → se lo.",
     "uz": "Nimani/kimni → lo/la; kimga → le; le+lo → se lo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Его, её, ему: lo, la, le",
+      "en": "Him, her, to him: lo, la, le",
+      "uz": "Uni, unga: lo, la, le"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы не повторять существительное, его заменяют коротким местоимением, которое ставят _перед_ глаголом: *¿Ves a Ana? — Sí, la veo* — Ты видишь Ану? — Да, я её вижу.",
+      "en": "To avoid repeating a noun, replace it with a short pronoun placed before the verb: *¿Ves a Ana? — Sí, la veo.*",
+      "uz": "Otni takrorlamaslik uchun uni fe'ldan _oldin_ qo'yiladigan qisqa olmosh bilan almashtiramiz: *¿Ves a Ana? — Sí, la veo* — Anani ko'ryapsanmi? — Ha, uni ko'ryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Кого? Что?",
+        "en": "Whom? What?",
+        "uz": "Kimni? Nimani?"
+       },
+       {
+        "ru": "Кому?",
+        "en": "To whom?",
+        "uz": "Kimga?"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "я",
+         "en": "me",
+         "uz": "men"
+        },
+        "me",
+        "me"
+       ],
+       [
+        {
+         "ru": "ты",
+         "en": "you",
+         "uz": "sen"
+        },
+        "te",
+        "te"
+       ],
+       [
+        {
+         "ru": "он / это (м.р.)",
+         "en": "him / it (m.)",
+         "uz": "u (erkak) / bu"
+        },
+        "lo",
+        "le"
+       ],
+       [
+        {
+         "ru": "она / это (ж.р.)",
+         "en": "her / it (f.)",
+         "uz": "u (ayol) / bu"
+        },
+        "la",
+        "le"
+       ],
+       [
+        {
+         "ru": "мы",
+         "en": "us",
+         "uz": "biz"
+        },
+        "nos",
+        "nos"
+       ],
+       [
+        {
+         "ru": "вы",
+         "en": "you (pl.)",
+         "uz": "sizlar"
+        },
+        "os",
+        "os"
+       ],
+       [
+        {
+         "ru": "они",
+         "en": "them",
+         "uz": "ular"
+        },
+        "los / las",
+        "les"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Lo, la, los, las* — для прямого дополнения (кого? что?), согласуются по роду и числу с предметом: *el libro → lo*, *la carta → la*. *Le, les* — для косвенного (кому?): *Le doy el libro* — Я даю ему книгу.",
+      "en": "*Lo, la, los, las* — direct objects, agreeing with the noun. *Le, les* — indirect (to whom): *Le doy el libro.*",
+      "uz": "*Lo, la, los, las* — to'g'ri to'ldiruvchi uchun (kimni? nimani?), narsa bilan jins va son bo'yicha moslashadi: *el libro → lo*, *la carta → la*. *Le, les* — vositali (kimga?): *Le doy el libro* — Unga kitobni beraman."
+     }
+    },
+    {
+     "p": {
+      "ru": "С инфинитивом и герундием местоимение можно приклеить в конце: *Voy a comprarlo* = *Lo voy a comprar* — Я его куплю.",
+      "en": "With an infinitive or gerund the pronoun can attach at the end: *Voy a comprarlo* = *Lo voy a comprar.*",
+      "uz": "Infinitiv va gerundiy bilan olmoshni oxiriga yopishtirish mumkin: *Voy a comprarlo* = *Lo voy a comprar* — Uni sotib olaman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Tienes el pasaporte? — Sí, *lo* tengo.",
+       "t": {
+        "ru": "Паспорт у тебя? — Да.",
+        "uz": "Pasport sendami? — Ha, menda.",
+        "en": "Have you got the passport? — Yes."
+       }
+      },
+      {
+       "s": "*Te* quiero mucho.",
+       "t": {
+        "ru": "Я тебя очень люблю.",
+        "uz": "Seni juda yaxshi ko'raman.",
+        "en": "I love you very much."
+       }
+      },
+      {
+       "s": "¿Qué *le* compraste a tu madre?",
+       "t": {
+        "ru": "Что ты купил маме?",
+        "uz": "Onangga nima olding?",
+        "en": "What did you buy your mother?"
+       }
+      },
+      {
+       "s": "Las flores son bonitas. ¿*Las* compramos?",
+       "t": {
+        "ru": "Цветы красивые. Купим их?",
+        "uz": "Gullar chiroyli. Ularni olamizmi?",
+        "en": "The flowers are pretty. Shall we buy them?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5282,6 +8013,138 @@
     "en": "más/menos … que; tan … como; el más … de.",
     "uz": "más/menos … que; tan … como; el más … de."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Больше, меньше, такой же",
+      "en": "More, less, as … as",
+      "uz": "Ko'proq, kamroq, xuddi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Испанское сравнение похоже на французское: перед прилагательным ставят *más* (более) или *menos* (менее), а после — *que* (чем). Само прилагательное не меняется, только согласуется по роду.",
+      "en": "Spanish comparisons: *más* or *menos* before the adjective and *que* after it. The adjective doesn't change form.",
+      "uz": "Ispancha qiyoslash: sifat oldidan *más* (ko'proq) yoki *menos* (kamroq), keyin esa *que* («-dan») qo'yiladi. Sifatning o'zi o'zgarmaydi, faqat jins bo'yicha moslashadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "больше",
+         "en": "more",
+         "uz": "ko'proq"
+        },
+        "más … que",
+        "Madrid es más grande que Toledo."
+       ],
+       [
+        {
+         "ru": "меньше",
+         "en": "less",
+         "uz": "kamroq"
+        },
+        "menos … que",
+        "El tren es menos caro que el avión."
+       ],
+       [
+        {
+         "ru": "такой же",
+         "en": "as … as",
+         "uz": "xuddi … kabi"
+        },
+        "tan … como",
+        "Eres tan alto como tu padre."
+       ],
+       [
+        {
+         "ru": "самый",
+         "en": "the most",
+         "uz": "eng"
+        },
+        "el / la más … de",
+        "Es la ciudad más bonita del país."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Особые формы",
+      "en": "Irregular forms",
+      "uz": "Alohida shakllar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Четыре прилагательных имеют свои формы — «больше» к ним не добавляют: *bueno → mejor* (лучше), *malo → peor* (хуже), *grande → mayor* (старше), *pequeño → menor* (младше). *Mi hermano mayor* — мой старший брат.",
+      "en": "Four adjectives have special forms: *mejor, peor, mayor* (older), *menor* (younger). *Mi hermano mayor* — my older brother.",
+      "uz": "To'rtta sifatning o'z shakllari bor — ularga «ko'proq» qo'shilmaydi: *bueno → mejor* (yaxshiroq), *malo → peor* (yomonroq), *grande → mayor* (kattaroq, yoshi), *pequeño → menor* (kichikroq, yoshi). *Mi hermano mayor* — akam."
+     }
+    },
+    {
+     "p": {
+      "ru": "Для «очень-очень» есть суффикс *-ísimo*: *guapo → guapísimo*, *caro → carísimo* — очень дорогой.",
+      "en": "For “extremely” add *-ísimo*: *carísimo* — very expensive.",
+      "uz": "«Juda-juda» uchun *-ísimo* qo'shimchasi bor: *guapo → guapísimo*, *caro → carísimo* — juda qimmat."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mi casa es *más* pequeña *que* la tuya.",
+       "t": {
+        "ru": "Мой дом меньше твоего.",
+        "uz": "Mening uyim seningkidan kichikroq.",
+        "en": "My house is smaller than yours."
+       }
+      },
+      {
+       "s": "Este móvil es *mejor que* el otro.",
+       "t": {
+        "ru": "Этот телефон лучше того.",
+        "uz": "Bu telefon boshqasidan yaxshiroq.",
+        "en": "This phone is better than the other one."
+       }
+      },
+      {
+       "s": "Ana es *la más* alta *de* la clase.",
+       "t": {
+        "ru": "Ана самая высокая в классе.",
+        "uz": "Ana sinfdagi eng baland bo'yli.",
+        "en": "Ana is the tallest in the class."
+       }
+      },
+      {
+       "s": "El examen fue *facilísimo*.",
+       "t": {
+        "ru": "Экзамен был очень лёгким.",
+        "uz": "Imtihon juda oson edi.",
+        "en": "The exam was super easy."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5548,6 +8411,139 @@
     "en": "Goal/for whom → para; cause/through/for money → por.",
     "uz": "Maqsad/kim uchun → para; sabab/orqali/pul evaziga → por."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Por или para",
+      "en": "Por or para",
+      "uz": "Por yoki para"
+     }
+    },
+    {
+     "p": {
+      "ru": "Оба слова часто переводятся «для» или «за», и это одна из самых коварных тем испанского. Простой ключ: *para* смотрит _вперёд_ — на цель, получателя, срок. *Por* смотрит _назад_ или вокруг — на причину, путь, обмен.",
+      "en": "Both often mean “for”. Simple key: *para* looks forward — goal, recipient, deadline. *Por* looks back or around — cause, route, exchange.",
+      "uz": "Ikkala so'z ham ko'pincha «uchun» yoki «… ga» deb tarjima qilinadi va bu ispan tilining eng ayyor mavzularidan biri. Oddiy kalit: *para* _oldinga_ qaraydi — maqsad, oluvchi, muddat. *Por* _orqaga_ yoki atrofga — sabab, yo'l, almashinuv."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Para — вперёд",
+        "en": "Para — forward",
+        "uz": "Para — oldinga"
+       },
+       {
+        "ru": "Por — причина и путь",
+        "en": "Por — cause and route",
+        "uz": "Por — sabab va yo'l"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "цель: para aprender (чтобы)",
+         "en": "goal: para aprender (in order to)",
+         "uz": "maqsad: para aprender (… uchun)"
+        },
+        {
+         "ru": "причина: por la lluvia (из-за)",
+         "en": "cause: por la lluvia (because of)",
+         "uz": "sabab: por la lluvia (… tufayli)"
+        }
+       ],
+       [
+        {
+         "ru": "получатель: para ti (тебе)",
+         "en": "recipient: para ti",
+         "uz": "oluvchi: para ti (senga)"
+        },
+        {
+         "ru": "через, по: por el parque",
+         "en": "through: por el parque",
+         "uz": "orqali: por el parque"
+        }
+       ],
+       [
+        {
+         "ru": "срок: para el lunes (к)",
+         "en": "deadline: para el lunes",
+         "uz": "muddat: para el lunes (… gacha)"
+        },
+        {
+         "ru": "обмен, цена: por 10 euros (за)",
+         "en": "exchange: por 10 euros",
+         "uz": "almashinuv: por 10 euros (… ga)"
+        }
+       ],
+       [
+        {
+         "ru": "направление: para Madrid (в)",
+         "en": "destination: para Madrid",
+         "uz": "yo'nalish: para Madrid (… ga)"
+        },
+        {
+         "ru": "время суток: por la mañana",
+         "en": "part of day: por la mañana",
+         "uz": "kun vaqti: por la mañana (ertalab)"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Este regalo es *para* ti.",
+       "t": {
+        "ru": "Этот подарок тебе.",
+        "uz": "Bu sovg'a senga.",
+        "en": "This present is for you."
+       }
+      },
+      {
+       "s": "Estudio *para* ser médico.",
+       "t": {
+        "ru": "Я учусь, чтобы стать врачом.",
+        "uz": "Shifokor bo'lish uchun o'qiyapman.",
+        "en": "I'm studying to become a doctor."
+       }
+      },
+      {
+       "s": "Gracias *por* tu ayuda.",
+       "t": {
+        "ru": "Спасибо за помощь.",
+        "uz": "Yordamingiz uchun rahmat.",
+        "en": "Thanks for your help."
+       }
+      },
+      {
+       "s": "Paseamos *por* la ciudad.",
+       "t": {
+        "ru": "Мы гуляем по городу.",
+        "uz": "Shahar bo'ylab sayr qilyapmiz.",
+        "en": "We're walking around the city."
+       }
+      },
+      {
+       "s": "Compré el libro *por* diez euros.",
+       "t": {
+        "ru": "Я купил книгу за десять евро.",
+        "uz": "Kitobni o'n yevroga sotib oldim.",
+        "en": "I bought the book for ten euros."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Полезные устойчивые выражения с *por*: *por favor* (пожалуйста), *por eso* (поэтому), *por fin* (наконец), *por ejemplo* (например), *por supuesto* (конечно).",
+      "en": "Fixed phrases with *por*: *por favor, por eso, por fin, por ejemplo, por supuesto*.",
+      "uz": "*por* bilan barqaror iboralar: *por favor* (iltimos), *por eso* (shuning uchun), *por fin* (nihoyat), *por ejemplo* (masalan), *por supuesto* (albatta)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -5808,6 +8804,147 @@
     "en": "Questions and statements — alg-; negatives — nad-/ning-.",
     "uz": "Savol va tasdiqda — alg-; inkorda — nad-/ning-."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Что-то, ничего, кто-то, никто",
+      "en": "Something, nothing, someone, no one",
+      "uz": "Nimadir, hech narsa, kimdir, hech kim"
+     }
+    },
+    {
+     "p": {
+      "ru": "Эти слова говорят о неизвестных или отсутствующих людях и вещах. Они идут парами: «есть что-то» — «нет ничего».",
+      "en": "These words talk about unknown or absent people and things. They come in pairs.",
+      "uz": "Bu so'zlar noma'lum yoki yo'q odamlar va narsalar haqida gapiradi. Ular juft-juft keladi: «nimadir bor» — «hech narsa yo'q»."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Есть",
+        "en": "Positive",
+        "uz": "Bor"
+       },
+       {
+        "ru": "Нет",
+        "en": "Negative",
+        "uz": "Yo'q"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       }
+      ],
+      "rows": [
+       [
+        "algo",
+        "nada",
+        {
+         "ru": "что-то / ничего",
+         "en": "something / nothing",
+         "uz": "nimadir / hech narsa"
+        }
+       ],
+       [
+        "alguien",
+        "nadie",
+        {
+         "ru": "кто-то / никто",
+         "en": "someone / no one",
+         "uz": "kimdir / hech kim"
+        }
+       ],
+       [
+        "alguno (-a, -os, -as)",
+        "ninguno (-a)",
+        {
+         "ru": "какой-то / никакой",
+         "en": "some / none",
+         "uz": "qandaydir / hech qanday"
+        }
+       ],
+       [
+        "siempre",
+        "nunca",
+        {
+         "ru": "всегда / никогда",
+         "en": "always / never",
+         "uz": "doim / hech qachon"
+        }
+       ],
+       [
+        "también",
+        "tampoco",
+        {
+         "ru": "тоже / тоже не",
+         "en": "also / not either",
+         "uz": "ham / ham … emas"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Двойное отрицание — это нормально",
+      "en": "Double negatives are normal",
+      "uz": "Qo'sh inkor — bu me'yor"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как в русском («я никого не видел») и узбекском («hech kimni ko'rmadim»), в испанском отрицательные слова идут вместе с *no*: *No veo a nadie*. Но если *nadie, nada, nunca* стоят _перед_ глаголом, *no* не нужно: *Nadie viene* — Никто не приходит.",
+      "en": "Like many languages, Spanish uses *no* with negative words: *No veo a nadie.* But if *nadie, nada, nunca* come before the verb, drop *no*: *Nadie viene.*",
+      "uz": "O'zbek tilidagidek («hech kimni ko'rmadim»), ispan tilida inkor so'zlar *no* bilan birga keladi: *No veo a nadie*. Lekin *nadie, nada, nunca* fe'ldan _oldin_ tursa, *no* kerak emas: *Nadie viene* — Hech kim kelmayapti."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Alguno* и *ninguno* перед существительным мужского рода теряют *-o*: *algún día* (когда-нибудь), *ningún problema* (никаких проблем). *Ninguno* почти не бывает во множественном числе.",
+      "en": "*Alguno / ninguno* drop *-o* before a masculine noun: *algún día*, *ningún problema*.",
+      "uz": "*Alguno* va *ninguno* erkak jinsidagi ot oldidan *-o* ni yo'qotadi: *algún día* (qachondir), *ningún problema* (hech qanday muammo yo'q). *Ninguno* deyarli ko'plikda ishlatilmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Quieres *algo* de beber? — No, *nada*, gracias.",
+       "t": {
+        "ru": "Хочешь что-нибудь выпить? — Нет, ничего, спасибо.",
+        "uz": "Biror narsa ichasanmi? — Yo'q, hech narsa, rahmat.",
+        "en": "Do you want something to drink? — No, nothing, thanks."
+       }
+      },
+      {
+       "s": "*No* hay *nadie* en casa.",
+       "t": {
+        "ru": "Дома никого нет.",
+        "uz": "Uyda hech kim yo'q.",
+        "en": "There's no one at home."
+       }
+      },
+      {
+       "s": "*Nunca* como carne.",
+       "t": {
+        "ru": "Я никогда не ем мясо.",
+        "uz": "Men hech qachon go'sht yemayman.",
+        "en": "I never eat meat."
+       }
+      },
+      {
+       "s": "A mí *tampoco* me gusta.",
+       "t": {
+        "ru": "Мне тоже не нравится.",
+        "uz": "Menga ham yoqmaydi.",
+        "en": "I don't like it either."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6068,6 +9205,141 @@
     "en": "To whom + verb (agrees with the thing) + what.",
     "uz": "Kimga + fe'l (narsaga mos) + nima."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы как gustar",
+      "en": "Verbs like gustar",
+      "uz": "gustar kabi fe'llar"
+     }
+    },
+    {
+     "p": {
+      "ru": "Вы уже знаете, как работает *gustar*: главное в предложении — то, что нравится, а человек стоит в дательном падеже (*me, te, le…*). Точно так же устроена целая группа глаголов о чувствах и ощущениях.",
+      "en": "*Gustar* has a whole family of verbs that work the same way: the thing is the subject, the person is the indirect object (*me, te, le…*).",
+      "uz": "*gustar* qanday ishlashini allaqachon bilasiz: gapda asosiysi — yoqadigan narsa, odam esa jo'nalish kelishigida (*me, te, le…*). His-tuyg'ular haqidagi butun bir guruh fe'llar xuddi shunday tuzilgan."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "encantar",
+        {
+         "ru": "очень нравиться, обожать",
+         "en": "love",
+         "uz": "juda yoqmoq"
+        },
+        "Me encanta el chocolate."
+       ],
+       [
+        "interesar",
+        {
+         "ru": "интересовать",
+         "en": "interest",
+         "uz": "qiziqtirmoq"
+        },
+        "Nos interesa la historia."
+       ],
+       [
+        "doler",
+        {
+         "ru": "болеть (о части тела)",
+         "en": "hurt",
+         "uz": "og'rimoq"
+        },
+        "Me duele la cabeza."
+       ],
+       [
+        "molestar",
+        {
+         "ru": "мешать, раздражать",
+         "en": "bother",
+         "uz": "bezovta qilmoq"
+        },
+        "¿Te molesta el ruido?"
+       ],
+       [
+        "parecer",
+        {
+         "ru": "казаться",
+         "en": "seem",
+         "uz": "tuyulmoq"
+        },
+        "Me parece buena idea."
+       ],
+       [
+        "faltar",
+        {
+         "ru": "не хватать",
+         "en": "be missing",
+         "uz": "yetishmaslik"
+        },
+        "Me faltan dos euros."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Как и с *gustar*, глагол согласуется с _предметом_: одна вещь — *-a / -e*, много — *-an / -en*. *Me duele la espalda* — У меня болит спина. *Me duelen los pies* — У меня болят ноги.",
+      "en": "As with *gustar*, the verb agrees with the thing: *me duele la espalda*, *me duelen los pies*.",
+      "uz": "*gustar* dagidek, fe'l _narsaga_ moslashadi: bitta narsa — *-a / -e*, ko'p — *-an / -en*. *Me duele la espalda* — Belim og'riyapti. *Me duelen los pies* — Oyoqlarim og'riyapti."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "A mi hermana le *encantan* los gatos.",
+       "t": {
+        "ru": "Моя сестра обожает кошек.",
+        "uz": "Singlim mushuklarni juda yaxshi ko'radi.",
+        "en": "My sister loves cats."
+       }
+      },
+      {
+       "s": "¿Te *duele* algo?",
+       "t": {
+        "ru": "У тебя что-нибудь болит?",
+        "uz": "Biror joying og'riyaptimi?",
+        "en": "Does anything hurt?"
+       }
+      },
+      {
+       "s": "No me *interesan* los deportes.",
+       "t": {
+        "ru": "Меня не интересует спорт.",
+        "uz": "Sport meni qiziqtirmaydi.",
+        "en": "Sports don't interest me."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "По-узбекски эти фразы строятся так же: «boshim og'riyapti», «menga yoqadi» — человек не делает действие, а «получает» его.",
+      "en": "In these verbs the person doesn't act — they “receive” the feeling.",
+      "uz": "O'zbek tilida bu iboralar ham xuddi shunday tuziladi: «boshim og'riyapti», «menga yoqadi» — odam harakatni bajarmaydi, balki uni «qabul qiladi»."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6326,6 +9598,127 @@
     "en": "Period still open or life experience → he + -ado/-ido.",
     "uz": "Davr davom etmoqda yoki tajriba → he + -ado/-ido."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Pretérito perfecto: he hablado",
+      "en": "Pretérito perfecto: he hablado",
+      "uz": "Pretérito perfecto: he hablado"
+     }
+    },
+    {
+     "p": {
+      "ru": "Pretérito perfecto — прошедшее, связанное с настоящим. В Испании его используют для того, что случилось в ещё не закончившийся период (_сегодня, на этой неделе, в этом году_) или для опыта без точной даты. *Hoy he comido paella* — Сегодня я ел паэлью.",
+      "en": "The perfecto is a past linked to the present. In Spain it's used for actions in an unfinished period (*today, this week*) or for life experience: *Hoy he comido paella.*",
+      "uz": "Pretérito perfecto — hozir bilan bog'liq o'tgan zamon. Ispaniyada u hali tugamagan davrdagi (_bugun, shu hafta, shu yil_) voqealar yoki aniq sanasiz tajriba uchun ishlatiladi. *Hoy he comido paella* — Bugun paelya yedim."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Глагол *haber* в настоящем + причастие. Причастие: *-ar → -ado* (*hablado*), *-er / -ir → -ido* (*comido, vivido*). Оно не меняется по роду и числу.",
+      "en": "*Haber* in the present + participle: *-ado* for *-ar*, *-ido* for *-er / -ir*. The participle never changes.",
+      "uz": "Hozirgi zamondagi *haber* fe'li + sifatdosh. Sifatdosh: *-ar → -ado* (*hablado*), *-er / -ir → -ido* (*comido, vivido*). U jins va son bo'yicha o'zgarmaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "haber",
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "yo",
+        "he",
+        "He terminado."
+       ],
+       [
+        "tú",
+        "has",
+        "¿Has comido?"
+       ],
+       [
+        "él / ella / usted",
+        "ha",
+        "Ha llovido."
+       ],
+       [
+        "nosotros",
+        "hemos",
+        "Hemos llegado."
+       ],
+       [
+        "vosotros",
+        "habéis",
+        "¿Habéis visto?"
+       ],
+       [
+        "ellos / ustedes",
+        "han",
+        "Han salido."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Неправильные причастия, которые встречаются постоянно: *hacer → hecho*, *decir → dicho*, *ver → visto*, *escribir → escrito*, *poner → puesto*, *volver → vuelto*, *abrir → abierto*, *romper → roto*.",
+      "en": "Common irregular participles: *hecho, dicho, visto, escrito, puesto, vuelto, abierto, roto*.",
+      "uz": "Doim uchraydigan noto'g'ri sifatdoshlar: *hacer → hecho*, *decir → dicho*, *ver → visto*, *escribir → escrito*, *poner → puesto*, *volver → vuelto*, *abrir → abierto*, *romper → roto*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Esta semana *he trabajado* mucho.",
+       "t": {
+        "ru": "На этой неделе я много работал.",
+        "uz": "Shu hafta ko'p ishladim.",
+        "en": "I've worked a lot this week."
+       }
+      },
+      {
+       "s": "¿*Has estado* alguna vez en Bujará?",
+       "t": {
+        "ru": "Ты когда-нибудь был в Бухаре?",
+        "uz": "Hech Buxoroda bo'lganmisan?",
+        "en": "Have you ever been to Bukhara?"
+       }
+      },
+      {
+       "s": "Todavía no *he hecho* los deberes.",
+       "t": {
+        "ru": "Я ещё не сделал домашнее задание.",
+        "uz": "Hali uy vazifamni qilmadim.",
+        "en": "I haven't done my homework yet."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Между *haber* и причастием ничего не ставят — даже *no* и местоимения идут перед *haber*: *No lo he visto* — Я его не видел.",
+      "en": "Nothing goes between *haber* and the participle — *no* and pronouns go before: *No lo he visto.*",
+      "uz": "*haber* va sifatdosh orasiga hech narsa qo'yilmaydi — hatto *no* va olmoshlar ham *haber* dan oldin turadi: *No lo he visto* — Uni ko'rmadim."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6587,6 +9980,127 @@
     "en": "Infinitive + -é/-ás/-á; learn tendr-, har-, dir-.",
     "uz": "Infinitiv + -é/-ás/-á; tendr-, har-, dir- ni yodla."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Futuro simple: hablaré",
+      "en": "Futuro simple: hablaré",
+      "uz": "Futuro simple: hablaré"
+     }
+    },
+    {
+     "p": {
+      "ru": "Кроме _ir a + глагол_, в испанском есть простое будущее время. Его используют для прогнозов, обещаний и планов подальше: *El año que viene viajaré a Japón* — В следующем году я поеду в Японию.",
+      "en": "Besides *ir a*, Spanish has a simple future for predictions, promises and distant plans: *Viajaré a Japón.*",
+      "uz": "*ir a + fe'l* dan tashqari ispan tilida oddiy kelasi zamon bor. U bashoratlar, va'dalar va uzoqroq rejalar uchun ishlatiladi: *El año que viene viajaré a Japón* — Kelasi yili Yaponiyaga boraman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится — очень просто",
+      "en": "How it's built — very easy",
+      "uz": "Qanday tuziladi — juda oson"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём _целый_ инфинитив и добавляем окончания — одинаковые для всех трёх групп: *-é, -ás, -á, -emos, -éis, -án*. *Hablar → hablaré*, *comer → comeré*, *vivir → viviré*.",
+      "en": "Take the whole infinitive and add the same endings for all verbs: *-é, -ás, -á, -emos, -éis, -án*.",
+      "uz": "_Butun_ infinitivni olib, uchala guruh uchun bir xil qo'shimchalarni qo'shamiz: *-é, -ás, -á, -emos, -éis, -án*. *Hablar → hablaré*, *comer → comeré*, *vivir → viviré*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Окончание",
+        "en": "Ending",
+        "uz": "Qo'shimcha"
+       },
+       "hablar"
+      ],
+      "rows": [
+       [
+        "yo",
+        "-é",
+        "hablaré"
+       ],
+       [
+        "tú",
+        "-ás",
+        "hablarás"
+       ],
+       [
+        "él / ella",
+        "-á",
+        "hablará"
+       ],
+       [
+        "nosotros",
+        "-emos",
+        "hablaremos"
+       ],
+       [
+        "vosotros",
+        "-éis",
+        "hablaréis"
+       ],
+       [
+        "ellos",
+        "-án",
+        "hablarán"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "У некоторых частых глаголов основа короче, но окончания те же: *tener → tendré*, *poder → podré*, *hacer → haré*, *decir → diré*, *salir → saldré*, *venir → vendré*, *querer → querré*, *saber → sabré*.",
+      "en": "Some common verbs have short stems: *tendré, podré, haré, diré, saldré, vendré, querré, sabré*.",
+      "uz": "Ba'zi ko'p ishlatiladigan fe'llarning o'zagi qisqaroq, lekin qo'shimchalari bir xil: *tener → tendré*, *poder → podré*, *hacer → haré*, *decir → diré*, *salir → saldré*, *venir → vendré*, *querer → querré*, *saber → sabré*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mañana *lloverá* en el norte.",
+       "t": {
+        "ru": "Завтра на севере будет дождь.",
+        "uz": "Ertaga shimolda yomg'ir yog'adi.",
+        "en": "Tomorrow it will rain in the north."
+       }
+      },
+      {
+       "s": "Te lo *diré* después.",
+       "t": {
+        "ru": "Я скажу тебе это потом.",
+        "uz": "Buni senga keyinroq aytaman.",
+        "en": "I'll tell you later."
+       }
+      },
+      {
+       "s": "¿Qué *harás* después de la universidad?",
+       "t": {
+        "ru": "Что ты будешь делать после университета?",
+        "uz": "Universitetdan keyin nima qilasan?",
+        "en": "What will you do after university?"
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Futuro ещё выражает предположение о настоящем: *¿Dónde está Ana? — Estará en casa* — Где Ана? — Наверное, дома.",
+      "en": "The future also expresses a guess about now: *Estará en casa* — She's probably at home.",
+      "uz": "Futuro hozirgi haqida taxminni ham bildiradi: *¿Dónde está Ana? — Estará en casa* — Ana qayerda? — Uyda bo'lsa kerak."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -6845,6 +10359,114 @@
     "en": "Polite, advice, wish → -ía.",
     "uz": "Muloyim, maslahat, orzu → -ía."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Condicional — «бы»",
+      "en": "Condicional — “would”",
+      "uz": "Condicional — «-ardi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Condicional — испанское «бы»: для вежливых просьб, желаний, советов и воображаемых ситуаций. *Me gustaría un café* — Я бы хотел кофе. *Deberías descansar* — Тебе стоило бы отдохнуть.",
+      "en": "The condicional is “would”: polite requests, wishes, advice, imagined situations: *Me gustaría un café.*",
+      "uz": "Condicional — ispancha «-ardi / bo'lardi»: muloyim iltimoslar, orzular, maslahatlar va xayoliy vaziyatlar uchun. *Me gustaría un café* — Qahva xohlardim. *Deberías descansar* — Dam olishing kerak edi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Строится как futuro: целый инфинитив + окончания *-ía, -ías, -ía, -íamos, -íais, -ían* (как у imperfecto глаголов на *-er*). Неправильные основы — те же, что в futuro: *tendría, podría, haría, diría, querría*.",
+      "en": "Built like the future: whole infinitive + *-ía* endings. Same irregular stems: *tendría, podría, haría, diría*.",
+      "uz": "Futuro kabi tuziladi: butun infinitiv + *-ía, -ías, -ía, -íamos, -íais, -ían* qo'shimchalari. Noto'g'ri o'zaklar futuro dagidek: *tendría, podría, haría, diría, querría*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Для чего",
+        "en": "Use",
+        "uz": "Nima uchun"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "вежливая просьба",
+         "en": "polite request",
+         "uz": "muloyim iltimos"
+        },
+        "¿Podrías ayudarme?"
+       ],
+       [
+        {
+         "ru": "желание",
+         "en": "wish",
+         "uz": "orzu"
+        },
+        "Me encantaría ir a Japón."
+       ],
+       [
+        {
+         "ru": "совет",
+         "en": "advice",
+         "uz": "maslahat"
+        },
+        "Yo que tú, hablaría con él."
+       ],
+       [
+        {
+         "ru": "воображаемое",
+         "en": "imagined",
+         "uz": "xayoliy"
+        },
+        "Con más dinero, viajaría más."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿*Podría* traerme la cuenta?",
+       "t": {
+        "ru": "Не могли бы Вы принести счёт?",
+        "uz": "Hisobni olib kela olasizmi?",
+        "en": "Could you bring me the bill?"
+       }
+      },
+      {
+       "s": "*Sería* genial verte.",
+       "t": {
+        "ru": "Было бы здорово тебя увидеть.",
+        "uz": "Seni ko'rish ajoyib bo'lardi.",
+        "en": "It would be great to see you."
+       }
+      },
+      {
+       "s": "Yo que tú, no *diría* nada.",
+       "t": {
+        "ru": "На твоём месте я бы ничего не говорил.",
+        "uz": "Sening o'rningda hech narsa demasdim.",
+        "en": "If I were you, I wouldn't say anything."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Yo que tú* — «на твоём месте» — лучший способ дать совет: *Yo que tú, estudiaría más.*",
+      "en": "*Yo que tú* (if I were you) is the classic way to give advice.",
+      "uz": "*Yo que tú* — «sening o'rningda» — maslahat berishning eng yaxshi usuli: *Yo que tú, estudiaría más.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7105,6 +10727,123 @@
     "en": "yo minus -o + the “opposite” vowel: -ar → e, -er/-ir → a.",
     "uz": "yo dan -o ni olib + «teskari» unli: -ar → e, -er/-ir → a."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Subjuntivo: что это",
+      "en": "The subjunctive: what it is",
+      "uz": "Subjuntivo: bu nima"
+     }
+    },
+    {
+     "p": {
+      "ru": "Subjuntivo — особое наклонение для того, что _не факт_: желания, просьбы, эмоции, сомнения. Оно почти всегда стоит после *que*: *Quiero que vengas* — Я хочу, чтобы ты пришёл. В русском похожий смысл даёт «чтобы».",
+      "en": "The subjunctive is a mood for things that aren't facts — wishes, requests, emotions, doubts. It almost always follows *que*: *Quiero que vengas.*",
+      "uz": "Subjuntivo — _fakt bo'lmagan_ narsalar uchun alohida mayl: istaklar, iltimoslar, his-tuyg'ular, shubhalar. U deyarli doim *que* dan keyin keladi: *Quiero que vengas* — Kelishingni xohlayman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится: «гласная наоборот»",
+      "en": "How it's built: “swap the vowel”",
+      "uz": "Qanday tuziladi: «unlini almashtir»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём форму *yo* настоящего времени, убираем *-o* и добавляем «чужую» гласную: у глаголов на *-ar* — *e*, у глаголов на *-er / -ir* — *a*. *Hablo → hable*, *como → coma*, *tengo → tenga*, *hago → haga*.",
+      "en": "Take the *yo* present form, drop *-o*, add the “opposite” vowel: *-ar* verbs take *e*, *-er / -ir* verbs take *a*: *hable, coma, tenga, haga*.",
+      "uz": "Hozirgi zamondagi *yo* shaklini olib, *-o* ni olib tashlab, «begona» unlini qo'shamiz: *-ar* fe'llarida — *e*, *-er / -ir* fe'llarida — *a*. *Hablo → hable*, *como → coma*, *tengo → tenga*, *hago → haga*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "hablar",
+       "comer",
+       "tener"
+      ],
+      "rows": [
+       [
+        "(que) yo",
+        "hable",
+        "coma",
+        "tenga"
+       ],
+       [
+        "tú",
+        "hables",
+        "comas",
+        "tengas"
+       ],
+       [
+        "él / ella",
+        "hable",
+        "coma",
+        "tenga"
+       ],
+       [
+        "nosotros",
+        "hablemos",
+        "comamos",
+        "tengamos"
+       ],
+       [
+        "vosotros",
+        "habléis",
+        "comáis",
+        "tengáis"
+       ],
+       [
+        "ellos",
+        "hablen",
+        "coman",
+        "tengan"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Совсем неправильных всего шесть, их удобно запомнить: *ser → sea*, *estar → esté*, *ir → vaya*, *haber → haya*, *saber → sepa*, *dar → dé*.",
+      "en": "Only six fully irregular verbs: *sea, esté, vaya, haya, sepa, dé*.",
+      "uz": "To'liq noto'g'rilari bor-yo'g'i oltita, ularni eslab qolish oson: *ser → sea*, *estar → esté*, *ir → vaya*, *haber → haya*, *saber → sepa*, *dar → dé*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Espero que *estés* bien.",
+       "t": {
+        "ru": "Надеюсь, у тебя всё хорошо.",
+        "uz": "Yaxshi ekansan deb umid qilaman.",
+        "en": "I hope you're well."
+       }
+      },
+      {
+       "s": "Es importante que *hablemos*.",
+       "t": {
+        "ru": "Важно, чтобы мы поговорили.",
+        "uz": "Gaplashib olishimiz muhim.",
+        "en": "It's important that we talk."
+       }
+      },
+      {
+       "s": "Ojalá *haga* buen tiempo mañana.",
+       "t": {
+        "ru": "Хоть бы завтра была хорошая погода.",
+        "uz": "Qani endi ertaga havo yaxshi bo'lsa.",
+        "en": "I hope the weather's nice tomorrow."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7366,6 +11105,132 @@
     "en": "Different people → que + subjunctive; same person → infinitive.",
     "uz": "Turli odamlar → que + subjuntivo; bir odam → infinitiv."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Subjuntivo после желаний и эмоций",
+      "en": "Subjunctive after wishes and feelings",
+      "uz": "Istak va his-tuyg'ulardan keyin subjuntivo"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда первая часть фразы выражает желание, просьбу или чувство, а во второй — _другой_ человек, во второй части нужен subjuntivo. *Quiero que me llames* — Я хочу, чтобы ты мне позвонил.",
+      "en": "When the first part expresses a wish, request or feeling, and the second part has a different subject, use the subjunctive: *Quiero que me llames.*",
+      "uz": "Gapning birinchi qismi istak, iltimos yoki his-tuyg'uni bildirsa va ikkinchi qismda _boshqa_ odam bo'lsa, ikkinchi qismda subjuntivo kerak. *Quiero que me llames* — Menga qo'ng'iroq qilishingni xohlayman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Выражение",
+        "en": "Expression",
+        "uz": "Ibora"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "желание",
+         "en": "wish",
+         "uz": "istak"
+        },
+        "querer que, esperar que, ojalá",
+        "Ojalá vengas."
+       ],
+       [
+        {
+         "ru": "просьба, совет",
+         "en": "request, advice",
+         "uz": "iltimos, maslahat"
+        },
+        "pedir que, recomendar que",
+        "Te pido que me ayudes."
+       ],
+       [
+        {
+         "ru": "радость",
+         "en": "joy",
+         "uz": "quvonch"
+        },
+        "alegrarse de que, me alegra que",
+        "Me alegra que estés aquí."
+       ],
+       [
+        {
+         "ru": "грусть, страх",
+         "en": "sadness, fear",
+         "uz": "qayg'u, qo'rquv"
+        },
+        "sentir que, tener miedo de que",
+        "Siento que estés enfermo."
+       ],
+       [
+        {
+         "ru": "раздражение",
+         "en": "annoyance",
+         "uz": "bezovtalik"
+        },
+        "molestar que",
+        "Me molesta que llegues tarde."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если человек тот же — subjuntivo не нужен, ставим инфинитив: *Quiero viajar* — Я хочу путешествовать. *Quiero que viajes* — Я хочу, чтобы ты путешествовал.",
+      "en": "Same person → infinitive: *Quiero viajar.* Different person → subjunctive: *Quiero que viajes.*",
+      "uz": "Odam bir xil bo'lsa — subjuntivo kerak emas, infinitiv qo'yamiz: *Quiero viajar* — Sayohat qilmoqchiman. *Quiero que viajes* — Sayohat qilishingni xohlayman."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Ojalá* — «хоть бы, дай бог» — пришло из арабского «in sha Allah» и всегда требует subjuntivo: *¡Ojalá apruebe el examen!* — Хоть бы сдать экзамен! По-узбекски очень похоже: «Inshoolloh».",
+      "en": "*Ojalá* (if only, hopefully) comes from Arabic “in sha Allah” and always takes the subjunctive.",
+      "uz": "*Ojalá* — «qani endi, xudo xohlasa» — arabcha «in sha Alloh» dan kelgan va doim subjuntivo talab qiladi: *¡Ojalá apruebe el examen!* — Qani endi imtihondan o'tsam! O'zbekcha «Inshoolloh» ga juda o'xshash."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mis padres quieren que *estudie* medicina.",
+       "t": {
+        "ru": "Родители хотят, чтобы я учился на врача.",
+        "uz": "Ota-onam tibbiyotni o'qishimni xohlaydi.",
+        "en": "My parents want me to study medicine."
+       }
+      },
+      {
+       "s": "Me alegro de que *te guste*.",
+       "t": {
+        "ru": "Я рад, что тебе нравится.",
+        "uz": "Senga yoqqanidan xursandman.",
+        "en": "I'm glad you like it."
+       }
+      },
+      {
+       "s": "Te recomiendo que *pruebes* el plov.",
+       "t": {
+        "ru": "Советую тебе попробовать плов.",
+        "uz": "Oshni tatib ko'rishingni maslahat beraman.",
+        "en": "I recommend you try the plov."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7628,6 +11493,126 @@
     "en": "Sure → indicative; doubt/evaluate → subjunctive.",
     "uz": "Ishonaman → indicativo; shubha/baho → subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Мнение: indicativo или subjuntivo",
+      "en": "Opinions: indicative or subjunctive",
+      "uz": "Fikr: indicativo yoki subjuntivo"
+     }
+    },
+    {
+     "p": {
+      "ru": "После глаголов мнения (*creo que, pienso que, me parece que* — я думаю, мне кажется) в _утверждении_ ставят обычное время (indicativo): *Creo que tienes razón* — Я думаю, ты прав. А в _отрицании_ — subjuntivo: *No creo que tengas razón* — Не думаю, что ты прав.",
+      "en": "After opinion verbs (*creo que, pienso que*) a positive statement takes the indicative (*Creo que tienes razón*); a negative one takes the subjunctive (*No creo que tengas razón*).",
+      "uz": "Fikr fe'llaridan (*creo que, pienso que, me parece que* — menimcha, o'ylaymanki) keyin _tasdiqda_ oddiy zamon (indicativo) qo'yiladi: *Creo que tienes razón* — Menimcha, sen haqsan. _Inkorda_ esa — subjuntivo: *No creo que tengas razón* — Haq ekaningga ishonmayman."
+     }
+    },
+    {
+     "p": {
+      "ru": "Логика: когда я уверен — это факт, обычное время. Когда сомневаюсь или отрицаю — это уже не факт, нужен subjuntivo.",
+      "en": "Logic: certainty = fact = indicative. Doubt or denial = not a fact = subjunctive.",
+      "uz": "Mantiq: ishonchim komil bo'lsa — bu fakt, oddiy zamon. Shubha qilsam yoki inkor etsam — bu endi fakt emas, subjuntivo kerak."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Уверенность / мнение",
+        "en": "Certainty / opinion",
+        "uz": "Ishonch / fikr"
+       },
+       {
+        "ru": "Сомнение / оценка",
+        "en": "Doubt / evaluation",
+        "uz": "Shubha / baho"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "Creo que + indicativo",
+         "en": "Creo que + indicative",
+         "uz": "Creo que + indicativo"
+        },
+        {
+         "ru": "No creo que + subjuntivo",
+         "en": "No creo que + subjunctive",
+         "uz": "No creo que + subjuntivo"
+        }
+       ],
+       [
+        {
+         "ru": "Es verdad que + indicativo",
+         "en": "Es verdad que + indicative",
+         "uz": "Es verdad que + indicativo"
+        },
+        {
+         "ru": "Dudo que + subjuntivo",
+         "en": "Dudo que + subjunctive",
+         "uz": "Dudo que + subjuntivo"
+        }
+       ],
+       [
+        {
+         "ru": "Está claro que + indicativo",
+         "en": "Está claro que + indicative",
+         "uz": "Está claro que + indicativo"
+        },
+        {
+         "ru": "Es importante / necesario que + subjuntivo",
+         "en": "Es importante que + subjunctive",
+         "uz": "Es importante que + subjuntivo"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Оценочные выражения с _es + прилагательное + que_ (*es importante que, es necesario que, es mejor que, es normal que*) всегда требуют subjuntivo — это не факт, а оценка.",
+      "en": "Evaluations with *es + adjective + que* (*es importante, es mejor, es normal*) always take the subjunctive.",
+      "uz": "*es + sifat + que* li baholash iboralari (*es importante que, es necesario que, es mejor que, es normal que*) doim subjuntivo talab qiladi — bu fakt emas, baho."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Pienso que el examen *es* fácil.",
+       "t": {
+        "ru": "Я думаю, что экзамен лёгкий.",
+        "uz": "Menimcha, imtihon oson.",
+        "en": "I think the exam is easy."
+       }
+      },
+      {
+       "s": "No pienso que el examen *sea* fácil.",
+       "t": {
+        "ru": "Не думаю, что экзамен лёгкий.",
+        "uz": "Imtihon oson deb o'ylamayman.",
+        "en": "I don't think the exam is easy."
+       }
+      },
+      {
+       "s": "Es mejor que *salgamos* temprano.",
+       "t": {
+        "ru": "Лучше выйти пораньше.",
+        "uz": "Ertaroq chiqqanimiz ma'qul.",
+        "en": "It's better if we leave early."
+       }
+      },
+      {
+       "s": "Dudo que *venga* hoy.",
+       "t": {
+        "ru": "Сомневаюсь, что он придёт сегодня.",
+        "uz": "Bugun kelishiga shubha qilaman.",
+        "en": "I doubt he'll come today."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -7890,6 +11875,134 @@
     "en": "Yes: él form / irregulars; no: no + subjunctive.",
     "uz": "Ha: él shakli / noto'g'rilar; yo'q: no + subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Imperativo: просьбы и команды",
+      "en": "The imperative",
+      "uz": "Buyruq mayli"
+     }
+    },
+    {
+     "p": {
+      "ru": "Испанский императив имеет особенность: _утвердительная_ и _отрицательная_ формы для *tú* разные. «Говори!» — *¡Habla!*, но «Не говори!» — *¡No hables!* Отрицательная форма — это subjuntivo.",
+      "en": "Spanish has different positive and negative imperatives for *tú*: *¡Habla!* but *¡No hables!* The negative is the subjunctive.",
+      "uz": "Ispan tilida buyruq maylining xususiyati bor: *tú* uchun _ijobiy_ va _inkor_ shakllar har xil. «Gapir!» — *¡Habla!*, lekin «Gapirma!» — *¡No hables!* Inkor shakl — bu subjuntivo."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       {
+        "ru": "Да",
+        "en": "Positive",
+        "uz": "Ijobiy"
+       },
+       {
+        "ru": "Нет",
+        "en": "Negative",
+        "uz": "Inkor"
+       }
+      ],
+      "rows": [
+       [
+        "tú (hablar)",
+        "¡Habla!",
+        "¡No hables!"
+       ],
+       [
+        "tú (comer)",
+        "¡Come!",
+        "¡No comas!"
+       ],
+       [
+        "usted",
+        "¡Hable!",
+        "¡No hable!"
+       ],
+       [
+        "vosotros",
+        "¡Hablad!",
+        "¡No habléis!"
+       ],
+       [
+        "ustedes",
+        "¡Hablen!",
+        "¡No hablen!"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Утвердительная форма для *tú* обычно совпадает с формой «он» настоящего времени: *él habla → ¡Habla!* Для *usted, ustedes* и всех отрицаний берут subjuntivo.",
+      "en": "The positive *tú* form usually equals the *él* present form. *Usted, ustedes* and all negatives use the subjunctive.",
+      "uz": "*tú* uchun ijobiy shakl odatda hozirgi zamondagi «u» shakli bilan bir xil: *él habla → ¡Habla!* *usted, ustedes* va barcha inkorlar uchun subjuntivo olinadi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Восемь коротких неправильных форм для *tú*: *ven* (приходи), *di* (скажи), *sal* (выходи), *haz* (делай), *ten* (имей), *ve* (иди), *pon* (положи), *sé* (будь).",
+      "en": "Eight short irregular *tú* forms: *ven, di, sal, haz, ten, ve, pon, sé*.",
+      "uz": "*tú* uchun sakkizta qisqa noto'g'ri shakl: *ven* (kel), *di* (ayt), *sal* (chiq), *haz* (qil), *ten* (ol, ega bo'l), *ve* (bor), *pon* (qo'y), *sé* (bo'l)."
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимения",
+      "en": "Pronouns",
+      "uz": "Olmoshlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В утвердительной команде местоимения _приклеиваются_ в конец: *¡Dímelo!* — Скажи мне это! *¡Siéntate!* — Садись! В отрицательной — стоят перед глаголом: *¡No me lo digas!* — Не говори мне этого!",
+      "en": "In positive commands pronouns attach to the end: *¡Dímelo!*, *¡Siéntate!* In negatives they go before: *¡No me lo digas!*",
+      "uz": "Ijobiy buyruqda olmoshlar oxiriga _yopishtiriladi_: *¡Dímelo!* — Buni menga ayt! *¡Siéntate!* — O'tir! Inkorda — fe'ldan oldin turadi: *¡No me lo digas!* — Buni menga aytma!"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*¡Ven* aquí!",
+       "t": {
+        "ru": "Иди сюда!",
+        "uz": "Bu yoqqa kel!",
+        "en": "Come here!"
+       }
+      },
+      {
+       "s": "*¡No toques* eso!",
+       "t": {
+        "ru": "Не трогай это!",
+        "uz": "Unga tegma!",
+        "en": "Don't touch that!"
+       }
+      },
+      {
+       "s": "*Pase*, por favor.",
+       "t": {
+        "ru": "Проходите, пожалуйста.",
+        "uz": "Kiring, iltimos.",
+        "en": "Come in, please."
+       }
+      },
+      {
+       "s": "*¡Levántate*, ya es tarde!",
+       "t": {
+        "ru": "Вставай, уже поздно!",
+        "uz": "Tur, kech bo'ldi!",
+        "en": "Get up, it's late!"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -8149,6 +12262,116 @@
     "en": "Default que; after a preposition for people quien; place donde; idea lo que.",
     "uz": "Odatda que; ko'makchidan keyin odam — quien; joy — donde; g'oya — lo que."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Который: que, quien, donde, lo que",
+      "en": "Relatives: que, quien, donde, lo que",
+      "uz": "Nisbiy so'zlar: que, quien, donde, lo que"
+     }
+    },
+    {
+     "p": {
+      "ru": "Относительные слова соединяют две фразы. Хорошая новость: в испанском главное слово почти всегда одно — *que*. Оно подходит и для людей, и для вещей: *el chico que vive aquí* (парень, который здесь живёт), *el libro que leo* (книга, которую я читаю).",
+      "en": "Relatives join two sentences. In Spanish the main one is almost always *que*, for people and things: *el chico que vive aquí*, *el libro que leo*.",
+      "uz": "Nisbiy so'zlar ikki gapni bog'laydi. Yaxshi xabar: ispan tilida asosiy so'z deyarli doim bitta — *que*. U odamlar uchun ham, narsalar uchun ham mos: *el chico que vive aquí* (shu yerda yashaydigan yigit), *el libro que leo* (men o'qiyotgan kitob)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Когда",
+        "en": "When",
+        "uz": "Qachon"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "que",
+        {
+         "ru": "почти всегда",
+         "en": "almost always",
+         "uz": "deyarli doim"
+        },
+        "La mujer que trabaja aquí."
+       ],
+       [
+        "quien / quienes",
+        {
+         "ru": "люди после предлога",
+         "en": "people after a preposition",
+         "uz": "predlogdan keyin odamlar"
+        },
+        "El amigo con quien viajo."
+       ],
+       [
+        "donde",
+        {
+         "ru": "место",
+         "en": "place",
+         "uz": "joy"
+        },
+        "La ciudad donde nací."
+       ],
+       [
+        "lo que",
+        {
+         "ru": "«то, что» (идея, не предмет)",
+         "en": "“what, the thing that”",
+         "uz": "«… gan narsa»"
+        },
+        "No entiendo lo que dices."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Lo que* — очень полезное выражение: оно значит «то, что» и относится не к конкретному предмету, а к идее: *Lo que necesito es dormir* — Что мне нужно, так это поспать.",
+      "en": "*Lo que* means “what / the thing that”: *Lo que necesito es dormir.*",
+      "uz": "*Lo que* — juda foydali ibora: u «… gan narsa» degani va aniq narsaga emas, fikrga tegishli: *Lo que necesito es dormir* — Menga kerak narsa — uxlash."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Tengo un amigo *que* habla cinco idiomas.",
+       "t": {
+        "ru": "У меня есть друг, который говорит на пяти языках.",
+        "uz": "Besh tilda gapiradigan do'stim bor.",
+        "en": "I have a friend who speaks five languages."
+       }
+      },
+      {
+       "s": "Esta es la casa *donde* vivía mi abuelo.",
+       "t": {
+        "ru": "Это дом, где жил мой дедушка.",
+        "uz": "Bu bobom yashagan uy.",
+        "en": "This is the house where my grandfather lived."
+       }
+      },
+      {
+       "s": "Haz *lo que* quieras.",
+       "t": {
+        "ru": "Делай что хочешь.",
+        "uz": "Xohlaganingni qil.",
+        "en": "Do whatever you want."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -8411,6 +12634,90 @@
     "en": "Whatever happened first → había + participle.",
     "uz": "Avvalroq bo'lgan → había + sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Pluscuamperfecto: прошлое до прошлого",
+      "en": "Pluscuamperfecto: the past before the past",
+      "uz": "Pluscuamperfecto: o'tmishdan oldingi o'tmish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Pluscuamperfecto показывает, что одно действие в прошлом случилось _раньше_ другого. «Когда я пришёл, фильм уже начался». Это как английский Past Perfect и узбекское «-gan edi».",
+      "en": "The pluscuamperfecto shows that one past action happened before another — like the English Past Perfect.",
+      "uz": "Pluscuamperfecto o'tmishdagi bir harakat boshqasidan _oldinroq_ bo'lganini ko'rsatadi. «Kelganimda film allaqachon boshlangan edi». Bu o'zbekcha «-gan edi» ga o'xshaydi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Строится как perfecto, только *haber* стоит в imperfecto: *había, habías, había, habíamos, habíais, habían* + причастие (*hablado, comido, hecho*).",
+      "en": "Like the perfecto, but *haber* is in the imperfecto: *había* + participle.",
+      "uz": "Perfecto kabi tuziladi, faqat *haber* imperfecto da turadi: *había, habías, había, habíamos, habíais, habían* + sifatdosh (*hablado, comido, hecho*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "perfecto",
+        "He comido."
+       ],
+       [
+        "pluscuamperfecto",
+        "Había comido."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Cuando llegué, la clase ya *había empezado*.",
+       "t": {
+        "ru": "Когда я пришёл, урок уже начался.",
+        "uz": "Kelganimda dars allaqachon boshlangan edi.",
+        "en": "When I arrived, the class had already started."
+       }
+      },
+      {
+       "s": "Nunca *había visto* tanta nieve.",
+       "t": {
+        "ru": "Я никогда не видел столько снега.",
+        "uz": "Hech qachon bunchalik ko'p qor ko'rmagan edim.",
+        "en": "I had never seen so much snow."
+       }
+      },
+      {
+       "s": "Me dijo que *había perdido* las llaves.",
+       "t": {
+        "ru": "Он сказал, что потерял ключи.",
+        "uz": "U kalitlarini yo'qotganini aytdi.",
+        "en": "He told me he had lost his keys."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Слова *ya* (уже) и *todavía no* (ещё не) часто сопровождают это время: *Ya se había ido* — Он уже ушёл (к тому моменту).",
+      "en": "*Ya* (already) and *todavía no* (not yet) often go with it: *Ya se había ido.*",
+      "uz": "*ya* (allaqachon) va *todavía no* (hali … emas) so'zlari bu zamon bilan ko'p keladi: *Ya se había ido* — U allaqachon ketgan edi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -8673,6 +12980,127 @@
     "en": "Now → estar; still → seguir; for X time → llevar.",
     "uz": "Hozir → estar; hali ham → seguir; X vaqtdan beri → llevar."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Перифразы: estar, seguir, llevar + gerundio",
+      "en": "Periphrases: estar, seguir, llevar + gerund",
+      "uz": "Perifrazalar: estar, seguir, llevar + gerundiy"
+     }
+    },
+    {
+     "p": {
+      "ru": "Gerundio — форма глагола на *-ando* (для *-ar*) и *-iendo* (для *-er / -ir*): *hablando, comiendo, viviendo*. С несколькими глаголами она образует очень полезные выражения о процессе.",
+      "en": "The gerund ends in *-ando* or *-iendo*: *hablando, comiendo*. With a few verbs it forms useful expressions about ongoing actions.",
+      "uz": "Gerundiy — *-ando* (*-ar* uchun) va *-iendo* (*-er / -ir* uchun) bilan tugaydigan fe'l shakli: *hablando, comiendo, viviendo*. U bir nechta fe'llar bilan jarayon haqida juda foydali iboralar hosil qiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Конструкция",
+        "en": "Structure",
+        "uz": "Qurilma"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "estar + gerundio",
+        {
+         "ru": "прямо сейчас",
+         "en": "right now",
+         "uz": "aynan hozir"
+        },
+        "Estoy comiendo."
+       ],
+       [
+        "seguir + gerundio",
+        {
+         "ru": "продолжать, всё ещё",
+         "en": "keep / still",
+         "uz": "davom ettirmoq, hali ham"
+        },
+        "Sigue lloviendo."
+       ],
+       [
+        {
+         "ru": "llevar + время + gerundio",
+         "en": "llevar + time + gerundio",
+         "uz": "llevar + vaqt + gerundio"
+        },
+        {
+         "ru": "уже (сколько времени)",
+         "en": "have been … for",
+         "uz": "… dan beri"
+        },
+        "Llevo dos años estudiando español."
+       ],
+       [
+        "acabar de + infinitivo",
+        {
+         "ru": "только что",
+         "en": "have just",
+         "uz": "hozirgina"
+        },
+        "Acabo de llegar."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Estar + gerundio* — это испанский «continuous»: *¿Qué estás haciendo?* — Что ты сейчас делаешь? *Llevar* — особенно удобный: *Llevo una hora esperando* — Я жду уже час (по-узбекски «bir soatdan beri kutyapman»).",
+      "en": "*Estar + gerund* is the Spanish continuous. *Llevar* is very handy: *Llevo una hora esperando* — I've been waiting for an hour.",
+      "uz": "*Estar + gerundiy* — ispancha «continuous»: *¿Qué estás haciendo?* — Hozir nima qilyapsan? *Llevar* ayniqsa qulay: *Llevo una hora esperando* — Bir soatdan beri kutyapman."
+     }
+    },
+    {
+     "note": {
+      "ru": "Неправильные gerundio: *leer → leyendo*, *ir → yendo*, *dormir → durmiendo*, *pedir → pidiendo*, *decir → diciendo*.",
+      "en": "Irregular gerunds: *leyendo, yendo, durmiendo, pidiendo, diciendo*.",
+      "uz": "Noto'g'ri gerundiylar: *leer → leyendo*, *ir → yendo*, *dormir → durmiendo*, *pedir → pidiendo*, *decir → diciendo*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Los niños *están jugando* en el jardín.",
+       "t": {
+        "ru": "Дети играют в саду.",
+        "uz": "Bolalar bog'da o'ynayapti.",
+        "en": "The children are playing in the garden."
+       }
+      },
+      {
+       "s": "¿*Sigues trabajando* en el banco?",
+       "t": {
+        "ru": "Ты всё ещё работаешь в банке?",
+        "uz": "Hali ham bankda ishlayapsanmi?",
+        "en": "Are you still working at the bank?"
+       }
+      },
+      {
+       "s": "*Llevamos* tres horas *conduciendo*.",
+       "t": {
+        "ru": "Мы едем уже три часа.",
+        "uz": "Uch soatdan beri mashina haydayapmiz.",
+        "en": "We've been driving for three hours."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -8932,6 +13360,112 @@
     "en": "To whom before what; le/les + lo → se lo.",
     "uz": "Kimga — nimadan oldin; le/les + lo → se lo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Два местоимения: me lo, se lo",
+      "en": "Two pronouns: me lo, se lo",
+      "uz": "Ikki olmosh: me lo, se lo"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда в предложении есть и «кому?», и «что?», оба можно заменить местоимениями. Порядок строгий: сначала «кому» (*me, te, le, nos…*), потом «что» (*lo, la, los, las*). *Me das el libro → Me lo das* — Ты мне его даёшь.",
+      "en": "When both “to whom” and “what” are pronouns, the order is fixed: indirect first, then direct: *Me lo das.*",
+      "uz": "Gapda ham «kimga?», ham «nimani?» bo'lsa, ikkalasini ham olmosh bilan almashtirish mumkin. Tartib qat'iy: avval «kimga» (*me, te, le, nos…*), keyin «nimani» (*lo, la, los, las*). *Me das el libro → Me lo das* — Uni menga beryapsan."
+     }
+    },
+    {
+     "h": {
+      "ru": "Le превращается в se",
+      "en": "Le becomes se",
+      "uz": "Le se ga aylanadi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Главная особенность: если рядом встречаются *le / les* и *lo / la*, то *le / les* превращается в *se* — иначе получилось бы неудобное «le lo». *Le doy el regalo → Se lo doy* — Я ему его дарю.",
+      "en": "Key rule: *le / les* before *lo / la* becomes *se* (no “le lo”): *Se lo doy.*",
+      "uz": "Asosiy xususiyat: *le / les* va *lo / la* yonma-yon kelsa, *le / les* *se* ga aylanadi — aks holda noqulay «le lo» hosil bo'lardi. *Le doy el regalo → Se lo doy* — Uni unga sovg'a qilaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Полная фраза",
+        "en": "Full sentence",
+        "uz": "To'liq gap"
+       },
+       {
+        "ru": "С местоимениями",
+        "en": "With pronouns",
+        "uz": "Olmoshlar bilan"
+       }
+      ],
+      "rows": [
+       [
+        "Te doy la llave.",
+        "Te la doy."
+       ],
+       [
+        "Nos explican el problema.",
+        "Nos lo explican."
+       ],
+       [
+        "Le compro las flores.",
+        "Se las compro."
+       ],
+       [
+        "Les envío el paquete.",
+        "Se lo envío."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "С инфинитивом, герундием и утвердительным императивом оба местоимения приклеиваются в конец: *Voy a dártelo* (Я тебе его дам), *¡Dímelo!* (Скажи мне это!).",
+      "en": "With infinitives, gerunds and positive commands, both attach to the end: *dártelo*, *¡Dímelo!*",
+      "uz": "Infinitiv, gerundiy va ijobiy buyruq bilan ikkala olmosh oxiriga yopishtiriladi: *Voy a dártelo* (Uni senga beraman), *¡Dímelo!* (Buni menga ayt!)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "¿Me prestas tu bici? — Sí, *te la* presto.",
+       "t": {
+        "ru": "Одолжишь мне велосипед? — Да, одолжу.",
+        "uz": "Velosipedingni berib turasanmi? — Ha, beraman.",
+        "en": "Will you lend me your bike? — Yes, I will."
+       }
+      },
+      {
+       "s": "¿Le diste el mensaje a Ana? — Sí, *se lo* di.",
+       "t": {
+        "ru": "Ты передал Ане сообщение? — Да.",
+        "uz": "Anaga xabarni berdingmi? — Ha, berdim.",
+        "en": "Did you give Ana the message? — Yes, I did."
+       }
+      },
+      {
+       "s": "Quiero *contártelo* todo.",
+       "t": {
+        "ru": "Я хочу тебе всё рассказать.",
+        "uz": "Senga hammasini aytib bermoqchiman.",
+        "en": "I want to tell you everything."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Порядок легко запомнить по буквам: сначала человек (*me, te, se*), потом вещь (*lo, la*). «Человек раньше вещи».",
+      "en": "Easy order: person first (*me, te, se*), thing second (*lo, la*).",
+      "uz": "Tartibni eslab qolish oson: avval odam (*me, te, se*), keyin narsa (*lo, la*). «Odam narsadan oldin»."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9190,6 +13724,132 @@
     "en": "At the start — como; after — porque; result — así que / por eso.",
     "uz": "Boshida — como; keyin — porque; natija — así que / por eso."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Почему и поэтому",
+      "en": "Why and so",
+      "uz": "Nega va shuning uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "Для связной речи нужны слова причины и следствия. В испанском у причины несколько оттенков, и важно знать, где какое слово стоит.",
+      "en": "Connected speech needs cause and consequence words. Spanish has several shades of cause, each with its own position.",
+      "uz": "Izchil nutq uchun sabab va natija so'zlari kerak. Ispan tilida sababning bir necha tusi bor va qaysi so'z qayerda turishini bilish muhim."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "porque",
+        {
+         "ru": "потому что (после главной части)",
+         "en": "because (after the main clause)",
+         "uz": "chunki (bosh gapdan keyin)"
+        },
+        "No salgo porque llueve."
+       ],
+       [
+        "como",
+        {
+         "ru": "так как (в начале)",
+         "en": "as, since (at the start)",
+         "uz": "… gani uchun (boshida)"
+        },
+        "Como llueve, no salgo."
+       ],
+       [
+        "ya que / puesto que",
+        {
+         "ru": "поскольку (книжно)",
+         "en": "since (formal)",
+         "uz": "modomiki (kitobiy)"
+        },
+        "Ya que estás aquí, ayúdame."
+       ],
+       [
+        "por eso",
+        {
+         "ru": "поэтому",
+         "en": "that's why",
+         "uz": "shuning uchun"
+        },
+        "Llueve, por eso no salgo."
+       ],
+       [
+        "así que",
+        {
+         "ru": "так что",
+         "en": "so",
+         "uz": "demak, shuning uchun"
+        },
+        "Estoy cansado, así que me voy."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Como* в значении «так как» всегда в начале предложения: *Como no tenía dinero, no fui* — Так как у меня не было денег, я не пошёл. А *porque* — после главной части: *No fui porque no tenía dinero*.",
+      "en": "*Como* (as) always starts the sentence; *porque* follows the main clause.",
+      "uz": "«… gani uchun» ma'nosidagi *como* doim gap boshida: *Como no tenía dinero, no fui* — Pulim yo'qligi uchun bormadim. *porque* esa bosh gapdan keyin: *No fui porque no tenía dinero*."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Estudio español *porque* quiero vivir en Madrid.",
+       "t": {
+        "ru": "Я учу испанский, потому что хочу жить в Мадриде.",
+        "uz": "Ispan tilini o'rganyapman, chunki Madridda yashamoqchiman.",
+        "en": "I'm learning Spanish because I want to live in Madrid."
+       }
+      },
+      {
+       "s": "*Como* era tarde, tomamos un taxi.",
+       "t": {
+        "ru": "Так как было поздно, мы взяли такси.",
+        "uz": "Kech bo'lgani uchun taksi oldik.",
+        "en": "As it was late, we took a taxi."
+       }
+      },
+      {
+       "s": "No dormí bien, *así que* estoy cansado.",
+       "t": {
+        "ru": "Я плохо спал, так что устал.",
+        "uz": "Yaxshi uxlamadim, shuning uchun charchadim.",
+        "en": "I didn't sleep well, so I'm tired."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Не путай: *porque* (потому что) — слитно, *¿por qué?* (почему?) — раздельно и с ударением.",
+      "en": "Don't confuse *porque* (because) with *¿por qué?* (why?).",
+      "uz": "Adashtirmang: *porque* (chunki) — qo'shib, *¿por qué?* (nega?) — alohida va urg'u bilan yoziladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9454,6 +14114,137 @@
     "en": "Past/conditional + que → the -ra form.",
     "uz": "O'tgan/condicional + que → -ra shakli."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Imperfecto de subjuntivo: hablara",
+      "en": "Imperfect subjunctive: hablara",
+      "uz": "O'tgan subjuntivo: hablara"
+     }
+    },
+    {
+     "p": {
+      "ru": "Это прошедшая форма subjuntivo. Она нужна, когда главная часть стоит в прошедшем или в condicional и требует subjuntivo: *Quería que vinieras* — Я хотел, чтобы ты пришёл. А ещё — в воображаемых условиях с *si*: *Si tuviera dinero…* — Если бы у меня были деньги…",
+      "en": "The past subjunctive is used when the main clause is past or conditional and needs a subjunctive (*Quería que vinieras*), and in imaginary *si* clauses (*Si tuviera dinero…*).",
+      "uz": "Bu subjuntivo ning o'tgan shakli. U bosh qism o'tgan zamonda yoki condicional da turib, subjuntivo talab qilganda kerak: *Quería que vinieras* — Kelishingni xohlagan edim. Shuningdek *si* li xayoliy shartlarda: *Si tuviera dinero…* — Pulim bo'lganida…"
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём форму «они» в pretérito indefinido, убираем *-ron* и добавляем *-ra, -ras, -ra, -ramos, -rais, -ran*. *Hablaron → hablara*, *tuvieron → tuviera*, *fueron → fuera*. Все неправильности indefinido сохраняются автоматически!",
+      "en": "Take the *ellos* preterite, drop *-ron*, add *-ra, -ras, -ra, -ramos, -rais, -ran*: *hablara, tuviera, fuera*. All preterite irregularities carry over.",
+      "uz": "Pretérito indefinido dagi «ular» shaklini olib, *-ron* ni olib tashlab, *-ra, -ras, -ra, -ramos, -rais, -ran* qo'shamiz. *Hablaron → hablara*, *tuvieron → tuviera*, *fueron → fuera*. Indefinido ning barcha noto'g'riliklari avtomatik saqlanadi!"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Indefinido (ellos)",
+        "en": "Preterite (ellos)",
+        "uz": "Indefinido (ular)"
+       },
+       {
+        "ru": "Основа",
+        "en": "Stem",
+        "uz": "O'zak"
+       },
+       {
+        "ru": "yo",
+        "en": "yo",
+        "uz": "yo"
+       },
+       {
+        "ru": "nosotros",
+        "en": "nosotros",
+        "uz": "nosotros"
+       }
+      ],
+      "rows": [
+       [
+        "hablaron",
+        "habla-",
+        "hablara",
+        "habláramos"
+       ],
+       [
+        "comieron",
+        "comie-",
+        "comiera",
+        "comiéramos"
+       ],
+       [
+        "tuvieron",
+        "tuvie-",
+        "tuviera",
+        "tuviéramos"
+       ],
+       [
+        "fueron",
+        "fue-",
+        "fuera",
+        "fuéramos"
+       ],
+       [
+        "hicieron",
+        "hicie-",
+        "hiciera",
+        "hiciéramos"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Mi madre quería que *estudiara* medicina.",
+       "t": {
+        "ru": "Мама хотела, чтобы я учился на врача.",
+        "uz": "Onam tibbiyotni o'qishimni xohlagan edi.",
+        "en": "My mother wanted me to study medicine."
+       }
+      },
+      {
+       "s": "Me pidió que le *ayudara*.",
+       "t": {
+        "ru": "Он попросил меня помочь ему.",
+        "uz": "U mendan yordam berishimni so'radi.",
+        "en": "He asked me to help him."
+       }
+      },
+      {
+       "s": "Ojalá *tuviera* más tiempo.",
+       "t": {
+        "ru": "Если бы у меня было больше времени.",
+        "uz": "Qani endi vaqtim ko'proq bo'lsa.",
+        "en": "I wish I had more time."
+       }
+      },
+      {
+       "s": "Habla como si lo *supiera* todo.",
+       "t": {
+        "ru": "Он говорит так, будто всё знает.",
+        "uz": "U hamma narsani biladigandek gapiradi.",
+        "en": "He talks as if he knew everything."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Есть вторая форма на *-se* (*hablase, tuviese*) — значит то же самое, чаще встречается в Испании и в книгах.",
+      "en": "There's an equivalent *-se* form (*hablase, tuviese*), more common in Spain and in books.",
+      "uz": "*-se* bilan ikkinchi shakli ham bor (*hablase, tuviese*) — ma'nosi bir xil, Ispaniyada va kitoblarda ko'proq uchraydi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9715,6 +14506,122 @@
     "en": "Real → present; imaginary → -ra/-ría; too late → hubiera/habría.",
     "uz": "Real → presente; xayoliy → -ra/-ría; kech → hubiera/habría."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Условные предложения: si…",
+      "en": "Conditional sentences: si…",
+      "uz": "Shart gaplar: si…"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском, как и во французском, после *si* («если») есть строгие правила. Тип предложения зависит от того, насколько реально условие.",
+      "en": "As in French, *si* clauses follow strict patterns depending on how real the condition is.",
+      "uz": "Ispan tilida ham, fransuz tilidagidek, *si* («agar») dan keyin qat'iy qoidalar bor. Gap turi shart qanchalik real ekaniga bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "После si",
+        "en": "After si",
+        "uz": "si dan keyin"
+       },
+       {
+        "ru": "Результат",
+        "en": "Result",
+        "uz": "Natija"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "реальное",
+         "en": "real",
+         "uz": "real"
+        },
+        "presente",
+        "futuro / presente",
+        "Si llueve, me quedo en casa."
+       ],
+       [
+        {
+         "ru": "воображаемое сейчас",
+         "en": "imaginary now",
+         "uz": "hozirgi xayoliy"
+        },
+        "imperfecto de subjuntivo",
+        "condicional",
+        "Si tuviera dinero, viajaría."
+       ],
+       [
+        {
+         "ru": "невозможное в прошлом",
+         "en": "impossible past",
+         "uz": "o'tmishda imkonsiz"
+        },
+        "pluscuamperfecto de subjuntivo",
+        "condicional compuesto",
+        "Si hubiera estudiado, habría aprobado."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Третий тип — сожаления о прошлом. *Hubiera* — это subjuntivo от *haber*: *si hubiera sabido* — если бы я знал. А результат: *habría venido* — я бы пришёл.",
+      "en": "Type 3 is for regrets: *Si hubiera sabido, habría venido.*",
+      "uz": "Uchinchi tur — o'tmish haqidagi afsuslar. *Hubiera* — *haber* ning subjuntivo shakli: *si hubiera sabido* — bilganimda. Natija: *habría venido* — kelgan bo'lardim."
+     }
+    },
+    {
+     "note": {
+      "ru": "Главное правило: после *si* никогда не ставят futuro, condicional и presente de subjuntivo. «Si tendré» и «si tendría» — ошибки.",
+      "en": "Key rule: never use the future, conditional or present subjunctive right after *si*.",
+      "uz": "Asosiy qoida: *si* dan keyin hech qachon futuro, condicional va presente de subjuntivo qo'yilmaydi. «Si tendré» va «si tendría» — xato."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Si* me *llamas*, te *contaré* todo.",
+       "t": {
+        "ru": "Если позвонишь, я всё тебе расскажу.",
+        "uz": "Qo'ng'iroq qilsang, hammasini aytib beraman.",
+        "en": "If you call me, I'll tell you everything."
+       }
+      },
+      {
+       "s": "*Si* *viviera* en la playa, *nadaría* cada día.",
+       "t": {
+        "ru": "Если бы я жил у моря, я бы плавал каждый день.",
+        "uz": "Dengiz bo'yida yashaganimda, har kuni suzardim.",
+        "en": "If I lived by the beach, I'd swim every day."
+       }
+      },
+      {
+       "s": "*Si* *hubieras venido*, te *habrías divertido*.",
+       "t": {
+        "ru": "Если бы ты пришёл, тебе было бы весело.",
+        "uz": "Kelganingda, maza qilarding.",
+        "en": "If you had come, you'd have had fun."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -9978,6 +14885,114 @@
     "en": "Said in the past → one step back in tense.",
     "uz": "O'tmishda aytdi → zamon bir qadam orqaga."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Косвенная речь",
+      "en": "Reported speech",
+      "uz": "O'zlashtirma gap"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда мы пересказываем чужие слова глаголом в прошедшем (*dijo que, me preguntó si*), времена во второй части сдвигаются на шаг назад — как в английском и французском.",
+      "en": "When the reporting verb is past (*dijo que*), tenses shift one step back, as in English and French.",
+      "uz": "Birovning so'zlarini o'tgan zamondagi fe'l bilan yetkazganimizda (*dijo que, me preguntó si*), ikkinchi qismdagi zamonlar bir qadam orqaga suriladi — ingliz va fransuz tillaridagidek."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Сказал",
+        "en": "Said",
+        "uz": "Aytgan"
+       },
+       {
+        "ru": "Пересказ",
+        "en": "Reported",
+        "uz": "Yetkazilgan"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "presente",
+        "imperfecto",
+        "«Estoy cansado.» → Dijo que estaba cansado."
+       ],
+       [
+        "indefinido / perfecto",
+        "pluscuamperfecto",
+        "«He terminado.» → Dijo que había terminado."
+       ],
+       [
+        "futuro",
+        "condicional",
+        "«Vendré.» → Dijo que vendría."
+       ],
+       [
+        "imperativo",
+        "imperfecto de subjuntivo",
+        "«¡Ven!» → Me dijo que viniera."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Последняя строка важна: пересказанная команда превращается в subjuntivo. *«Cierra la puerta» → Me pidió que cerrara la puerta* — Он попросил меня закрыть дверь.",
+      "en": "A reported command becomes the subjunctive: *Me pidió que cerrara la puerta.*",
+      "uz": "Oxirgi qator muhim: yetkazilgan buyruq subjuntivo ga aylanadi. *«Cierra la puerta» → Me pidió que cerrara la puerta* — U mendan eshikni yopishni so'radi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Слова времени тоже меняются: *hoy → ese día*, *mañana → al día siguiente*, *ayer → el día anterior*, *aquí → allí*. Вопросы пересказывают через *si* (ли) или через вопросительное слово.",
+      "en": "Time and place words change too: *mañana → al día siguiente*, *aquí → allí*. Questions use *si* or the question word.",
+      "uz": "Vaqt so'zlari ham o'zgaradi: *hoy → ese día*, *mañana → al día siguiente*, *ayer → el día anterior*, *aquí → allí*. Savollar *si* (… mi) yoki so'roq so'zi orqali yetkaziladi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ana dijo que *tenía* hambre.",
+       "t": {
+        "ru": "Ана сказала, что голодна.",
+        "uz": "Ana qorni ochligini aytdi.",
+        "en": "Ana said she was hungry."
+       }
+      },
+      {
+       "s": "Me preguntó *si* *había visto* la película.",
+       "t": {
+        "ru": "Он спросил, видел ли я фильм.",
+        "uz": "U filmni ko'rgan-ko'rmaganimni so'radi.",
+        "en": "He asked me if I had seen the film."
+       }
+      },
+      {
+       "s": "El profesor nos dijo que *estudiáramos* más.",
+       "t": {
+        "ru": "Учитель сказал нам больше заниматься.",
+        "uz": "O'qituvchi bizga ko'proq o'qishni aytdi.",
+        "en": "The teacher told us to study more."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Если пересказ в настоящем (*dice que*), времена не меняются: *Dice que está cansado.*",
+      "en": "With a present reporting verb (*dice que*), tenses don't change.",
+      "uz": "Yetkazish hozirgi zamonda bo'lsa (*dice que*), zamonlar o'zgarmaydi: *Dice que está cansado.*"
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10237,6 +15252,112 @@
     "en": "Formal → ser + participle; everyday → se + verb agreeing with the thing.",
     "uz": "Rasmiy → ser + sifatdosh; kundalik → se + narsaga mos fe'l."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Пассив: ser + participio и se",
+      "en": "The passive: ser + participle and se",
+      "uz": "Passiv: ser + sifatdosh va se"
+     }
+    },
+    {
+     "p": {
+      "ru": "В испанском есть два способа сказать, что действие «делается», когда исполнитель неважен. Первый — как в английском: *ser* + причастие. *El puente fue construido en 1900* — Мост был построен в 1900 году. Он звучит книжно — так пишут в новостях и учебниках.",
+      "en": "Spanish has two passives. The first is like English: *ser* + participle — *El puente fue construido en 1900.* It sounds formal.",
+      "uz": "Ispan tilida bajaruvchi muhim bo'lmaganda harakat «qilinishini» aytishning ikki usuli bor. Birinchisi — ingliz tilidagidek: *ser* + sifatdosh. *El puente fue construido en 1900* — Ko'prik 1900-yilda qurilgan. Bu kitobiy eshitiladi — yangiliklar va darsliklarda shunday yoziladi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Причастие согласуется с подлежащим: *La casa fue vendida*, *Los libros fueron publicados*. Исполнителя вводят словом *por*: *escrito por Cervantes*.",
+      "en": "The participle agrees with the subject; the doer is introduced by *por*: *escrito por Cervantes*.",
+      "uz": "Sifatdosh ega bilan moslashadi: *La casa fue vendida*, *Los libros fueron publicados*. Bajaruvchi *por* so'zi bilan kiritiladi: *escrito por Cervantes*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Пассив с se — самый частый",
+      "en": "The se passive — the most common",
+      "uz": "se li passiv — eng ko'p uchraydigani"
+     }
+    },
+    {
+     "p": {
+      "ru": "В живой речи гораздо чаще используют *se* + глагол в 3-м лице: *Se habla español* — Здесь говорят по-испански. *Se venden pisos* — Продаются квартиры. Глагол согласуется с предметом: один — *se vende*, много — *se venden*.",
+      "en": "In everyday Spanish, *se* + third-person verb is much more common: *Se habla español*, *Se venden pisos.* The verb agrees with the thing.",
+      "uz": "Jonli nutqda *se* + 3-shaxsdagi fe'l ancha ko'p ishlatiladi: *Se habla español* — Bu yerda ispancha gapiriladi. *Se venden pisos* — Kvartiralar sotiladi. Fe'l narsa bilan moslashadi: bitta — *se vende*, ko'p — *se venden*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "книжный",
+         "en": "formal",
+         "uz": "kitobiy"
+        },
+        "ser + participio (+ por)",
+        "La novela fue escrita por Cervantes."
+       ],
+       [
+        {
+         "ru": "разговорный",
+         "en": "everyday",
+         "uz": "so'zlashuv"
+        },
+        "se + verbo (3ª persona)",
+        "Aquí se come muy bien."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "En Uzbekistán *se cultiva* mucho algodón.",
+       "t": {
+        "ru": "В Узбекистане выращивают много хлопка.",
+        "uz": "O'zbekistonda ko'p paxta yetishtiriladi.",
+        "en": "A lot of cotton is grown in Uzbekistan."
+       }
+      },
+      {
+       "s": "La ciudad *fue fundada* en el siglo XV.",
+       "t": {
+        "ru": "Город был основан в XV веке.",
+        "uz": "Shahar XV asrda asos solingan.",
+        "en": "The city was founded in the 15th century."
+       }
+      },
+      {
+       "s": "¿Cómo *se dice* «gracias» en uzbeko?",
+       "t": {
+        "ru": "Как сказать «спасибо» по-узбекски?",
+        "uz": "O'zbekchada «gracias» qanday aytiladi?",
+        "en": "How do you say “thank you” in Uzbek?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10500,6 +15621,114 @@
     "en": "Future after cuando → subjunctive; habit → indicative.",
     "uz": "cuando dan keyin kelajak → subjuntivo; odat → indicativo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Cuando + subjuntivo: о будущем",
+      "en": "Cuando + subjunctive: about the future",
+      "uz": "Cuando + subjuntivo: kelajak haqida"
+     }
+    },
+    {
+     "p": {
+      "ru": "Важная особенность испанского: после слов времени (*cuando* — когда, *en cuanto* — как только, *hasta que* — пока не, *antes de que* — прежде чем), если речь о _будущем_, ставят subjuntivo. *Cuando llegue a casa, te llamaré* — Когда приду домой, позвоню тебе.",
+      "en": "Key point: after time words (*cuando, en cuanto, hasta que, antes de que*), if the action is in the future, use the subjunctive: *Cuando llegue a casa, te llamaré.*",
+      "uz": "Ispan tilining muhim xususiyati: vaqt so'zlaridan (*cuando* — qachonki, *en cuanto* — … bilanoq, *hasta que* — … guncha, *antes de que* — … dan oldin) keyin, gap _kelajak_ haqida bo'lsa, subjuntivo qo'yiladi. *Cuando llegue a casa, te llamaré* — Uyga kelganimda senga qo'ng'iroq qilaman."
+     }
+    },
+    {
+     "p": {
+      "ru": "Логика: будущее ещё не факт, поэтому subjuntivo. А если речь о привычке или прошлом (это факт), ставят обычное время: *Cuando llego a casa, siempre ceno* — Когда прихожу домой, я всегда ужинаю.",
+      "en": "Logic: the future isn't a fact yet → subjunctive. Habits and the past are facts → indicative: *Cuando llego a casa, siempre ceno.*",
+      "uz": "Mantiq: kelajak hali fakt emas, shuning uchun subjuntivo. Gap odat yoki o'tmish haqida bo'lsa (bu fakt), oddiy zamon qo'yiladi: *Cuando llego a casa, siempre ceno* — Uyga kelganimda doim kechki ovqat qilaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "будущее",
+         "en": "future",
+         "uz": "kelajak"
+        },
+        "cuando + subjuntivo",
+        "Cuando tenga tiempo, iré."
+       ],
+       [
+        {
+         "ru": "привычка",
+         "en": "habit",
+         "uz": "odat"
+        },
+        "cuando + presente",
+        "Cuando tengo tiempo, voy."
+       ],
+       [
+        {
+         "ru": "прошлое",
+         "en": "past",
+         "uz": "o'tmish"
+        },
+        "cuando + pasado",
+        "Cuando tuve tiempo, fui."
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Важно: *antes de que* — всегда с subjuntivo, даже о прошлом. И не ставь futuro после *cuando*: «cuando tendré» — ошибка.",
+      "en": "*Antes de que* always takes the subjunctive. Never use the future after *cuando*.",
+      "uz": "Muhim: *antes de que* — doim subjuntivo bilan, hatto o'tmish haqida ham. *cuando* dan keyin futuro qo'ymang: «cuando tendré» — xato."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*En cuanto* *sepa* algo, te aviso.",
+       "t": {
+        "ru": "Как только что-нибудь узнаю, сообщу тебе.",
+        "uz": "Biror narsani bilishim bilanoq senga xabar beraman.",
+        "en": "As soon as I know something, I'll let you know."
+       }
+      },
+      {
+       "s": "Espera aquí *hasta que* *vuelva*.",
+       "t": {
+        "ru": "Жди здесь, пока я не вернусь.",
+        "uz": "Men qaytgunimcha shu yerda kut.",
+        "en": "Wait here until I come back."
+       }
+      },
+      {
+       "s": "Llámame *antes de que* *salgas*.",
+       "t": {
+        "ru": "Позвони мне, прежде чем выйдешь.",
+        "uz": "Chiqishingdan oldin menga qo'ng'iroq qil.",
+        "en": "Call me before you leave."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10762,6 +15991,105 @@
     "en": "I know it is so → indicative; even if / doesn’t matter → subjunctive.",
     "uz": "Shunday ekanini bilaman → indicativo; hatto/ahamiyatsiz → subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Aunque: хотя / даже если",
+      "en": "Aunque: although / even if",
+      "uz": "Aunque: garchi / hatto … bo'lsa ham"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Aunque* значит «хотя», но смысл зависит от времени после него. С обычным временем (indicativo) — это факт: *Aunque llueve, salgo* — Хотя идёт дождь (и это правда), я выхожу. С subjuntivo — это предположение или неважно: *Aunque llueva, saldré* — Даже если пойдёт дождь, я выйду.",
+      "en": "*Aunque* + indicative = a fact (“although it's raining”). *Aunque* + subjunctive = a possibility or something irrelevant (“even if it rains”).",
+      "uz": "*Aunque* «garchi» degani, lekin ma'no undan keyingi zamonga bog'liq. Oddiy zamon (indicativo) bilan — bu fakt: *Aunque llueve, salgo* — Yomg'ir yog'ayotgan bo'lsa ham (bu rost), chiqaman. Subjuntivo bilan — bu taxmin yoki muhim emas: *Aunque llueva, saldré* — Hatto yomg'ir yog'sa ham, chiqaman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "aunque + indicativo",
+        {
+         "ru": "факт: хотя (это правда)",
+         "en": "fact: although",
+         "uz": "fakt: garchi (bu rost)"
+        },
+        "Aunque es caro, lo compro."
+       ],
+       [
+        "aunque + subjuntivo",
+        {
+         "ru": "возможно / неважно: даже если",
+         "en": "possible / irrelevant: even if",
+         "uz": "ehtimol / muhim emas: hatto … sa ham"
+        },
+        "Aunque sea caro, lo compraré."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Есть и другие слова уступки: *a pesar de* + существительное или инфинитив (несмотря на): *A pesar del frío, fuimos* — Несмотря на холод, мы пошли. *Sin embargo* (однако) начинает новое предложение.",
+      "en": "Other concession words: *a pesar de* + noun or infinitive (despite); *sin embargo* (however) starts a new clause.",
+      "uz": "To'siqsizlikning boshqa so'zlari ham bor: *a pesar de* + ot yoki infinitiv (… ga qaramay): *A pesar del frío, fuimos* — Sovuqqa qaramay bordik. *Sin embargo* (biroq) yangi gapni boshlaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Aunque* *estoy* cansado, voy a terminar.",
+       "t": {
+        "ru": "Хотя я устал, я закончу.",
+        "uz": "Charchagan bo'lsam ham, tugataman.",
+        "en": "Although I'm tired, I'm going to finish."
+       }
+      },
+      {
+       "s": "*Aunque* me lo *pidas* mil veces, no iré.",
+       "t": {
+        "ru": "Даже если попросишь тысячу раз, я не пойду.",
+        "uz": "Ming marta so'rasang ham, bormayman.",
+        "en": "Even if you ask me a thousand times, I won't go."
+       }
+      },
+      {
+       "s": "*A pesar de* estudiar mucho, suspendió.",
+       "t": {
+        "ru": "Несмотря на то что много учился, он провалился.",
+        "uz": "Ko'p o'qiganiga qaramay, imtihondan yiqildi.",
+        "en": "Despite studying a lot, he failed."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказка: если можно сказать «даже если», бери subjuntivo. Если «хотя на самом деле» — indicativo.",
+      "en": "Tip: “even if” → subjunctive; “although (in fact)” → indicative.",
+      "uz": "Ishora: «hatto … sa ham» deyish mumkin bo'lsa, subjuntivo ni oling. «Garchi aslida» bo'lsa — indicativo."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11023,6 +16351,150 @@
     "en": "By then → habré; would have → habría.",
     "uz": "O'sha paytgacha → habré; «qilgan bo'lardim» → habría."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Futuro perfecto и condicional compuesto",
+      "en": "Future perfect and conditional perfect",
+      "uz": "Futuro perfecto va condicional compuesto"
+     }
+    },
+    {
+     "p": {
+      "ru": "Два составных времени, которые строятся одинаково: *haber* + причастие. Различается только форма *haber*: в будущем (*habré*) или в condicional (*habría*).",
+      "en": "Two compound tenses built the same way: *haber* + participle, with *haber* in the future (*habré*) or conditional (*habría*).",
+      "uz": "Bir xil tuziladigan ikki murakkab zamon: *haber* + sifatdosh. Farq faqat *haber* shaklida: kelasi zamonda (*habré*) yoki condicional da (*habría*)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "futuro perfecto",
+        "habré + participio",
+        {
+         "ru": "уже сделаю (к моменту)",
+         "en": "will have done",
+         "uz": "qilib bo'lgan bo'laman"
+        },
+        "A las seis habré terminado."
+       ],
+       [
+        "condicional compuesto",
+        "habría + participio",
+        {
+         "ru": "сделал бы (но не сделал)",
+         "en": "would have done",
+         "uz": "qilgan bo'lardim"
+        },
+        "Habría venido, pero estaba enfermo."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Futuro perfecto ещё выражает догадку о недавнем прошлом: *Ya habrá llegado* — Он, наверное, уже приехал. А condicional compuesto — догадку о более далёком прошлом или результат в условиях третьего типа: *Si hubiera sabido, habría venido.*",
+      "en": "The future perfect also guesses about the recent past: *Ya habrá llegado.* The conditional perfect is the result in type-3 conditionals.",
+      "uz": "Futuro perfecto yaqin o'tmish haqida taxminni ham bildiradi: *Ya habrá llegado* — U allaqachon yetib kelgan bo'lsa kerak. Condicional compuesto esa uchinchi tur shart gaplardagi natija: *Si hubiera sabido, habría venido.*"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "futuro",
+       "condicional"
+      ],
+      "rows": [
+       [
+        "yo",
+        "habré",
+        "habría"
+       ],
+       [
+        "tú",
+        "habrás",
+        "habrías"
+       ],
+       [
+        "él / ella",
+        "habrá",
+        "habría"
+       ],
+       [
+        "nosotros",
+        "habremos",
+        "habríamos"
+       ],
+       [
+        "vosotros",
+        "habréis",
+        "habríais"
+       ],
+       [
+        "ellos",
+        "habrán",
+        "habrían"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Para junio *habré terminado* la carrera.",
+       "t": {
+        "ru": "К июню я закончу учёбу.",
+        "uz": "Iyungacha o'qishni tugatgan bo'laman.",
+        "en": "By June I'll have finished my degree."
+       }
+      },
+      {
+       "s": "¿Dónde está Ana? — *Habrá salido*.",
+       "t": {
+        "ru": "Где Ана? — Наверное, вышла.",
+        "uz": "Ana qayerda? — Chiqib ketgan bo'lsa kerak.",
+        "en": "Where's Ana? — She must have gone out."
+       }
+      },
+      {
+       "s": "Yo en tu lugar no lo *habría hecho*.",
+       "t": {
+        "ru": "На твоём месте я бы этого не сделал.",
+        "uz": "Sening o'rningda buni qilmagan bo'lardim.",
+        "en": "In your place I wouldn't have done it."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11285,6 +16757,114 @@
     "en": "Exists and known → indicative; wanted or none → subjunctive.",
     "uz": "Bor va bilaman → indicativo; izlayman yoki yo'q → subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Ищу того, кто…: subjuntivo в относительных",
+      "en": "Looking for someone who…: subjunctive in relatives",
+      "uz": "… adigan kishini qidiryapman: nisbiy gapda subjuntivo"
+     }
+    },
+    {
+     "p": {
+      "ru": "После *que* («который») обычно стоит обычное время. Но если мы говорим о человеке или предмете, который _может не существовать_ или нам неизвестен, ставят subjuntivo. *Busco a alguien que hable chino* — Ищу кого-нибудь, кто говорит по-китайски (не знаю, есть ли такой).",
+      "en": "After *que* the indicative is normal. But if the person or thing may not exist or is unknown, use the subjunctive: *Busco a alguien que hable chino.*",
+      "uz": "*que* («qaysiki») dan keyin odatda oddiy zamon keladi. Lekin _mavjud bo'lmasligi mumkin_ yoki bizga noma'lum odam yoki narsa haqida gapirsak, subjuntivo qo'yiladi. *Busco a alguien que hable chino* — Xitoycha gapiradigan birortasini qidiryapman (bunday odam bormi, bilmayman)."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Ситуация",
+        "en": "Situation",
+        "uz": "Vaziyat"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "известный, существующий",
+         "en": "known, real",
+         "uz": "ma'lum, mavjud"
+        },
+        "que + indicativo",
+        "Tengo un amigo que habla chino."
+       ],
+       [
+        {
+         "ru": "неизвестный, искомый",
+         "en": "unknown, sought",
+         "uz": "noma'lum, izlanayotgan"
+        },
+        "que + subjuntivo",
+        "Busco un amigo que hable chino."
+       ],
+       [
+        {
+         "ru": "не существует",
+         "en": "doesn't exist",
+         "uz": "mavjud emas"
+        },
+        "que + subjuntivo",
+        "No conozco a nadie que hable chino."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Сравни: *Vivo en una casa que tiene jardín* — Я живу в доме, где есть сад (факт). *Quiero una casa que tenga jardín* — Хочу дом, где был бы сад (такого дома у меня пока нет).",
+      "en": "Compare: *Vivo en una casa que tiene jardín* (fact) vs *Quiero una casa que tenga jardín* (wish).",
+      "uz": "Solishtiring: *Vivo en una casa que tiene jardín* — Bog'i bor uyda yashayman (fakt). *Quiero una casa que tenga jardín* — Bog'i bor uy xohlayman (bunday uyim hali yo'q)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Necesito un piso que *esté* cerca del centro.",
+       "t": {
+        "ru": "Мне нужна квартира рядом с центром.",
+        "uz": "Markazga yaqin kvartira kerak.",
+        "en": "I need a flat near the centre."
+       }
+      },
+      {
+       "s": "¿Hay alguien aquí que *sepa* nadar?",
+       "t": {
+        "ru": "Здесь есть кто-нибудь, кто умеет плавать?",
+        "uz": "Bu yerda suzishni biladigan biror kishi bormi?",
+        "en": "Is there anyone here who can swim?"
+       }
+      },
+      {
+       "s": "No hay nada que *pueda* hacer.",
+       "t": {
+        "ru": "Я ничего не могу сделать.",
+        "uz": "Qila oladigan hech narsam yo'q.",
+        "en": "There's nothing I can do."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Подсказки: *busco, necesito, quiero* (ищу, нужен, хочу) + неопределённый предмет, а также *no hay nadie / nada que…* — почти всегда subjuntivo.",
+      "en": "Clues: *busco, necesito, quiero* + an unknown thing, or *no hay nadie / nada que…* → subjunctive.",
+      "uz": "Ishoralar: *busco, necesito, quiero* (qidiryapman, kerak, xohlayman) + noaniq narsa, shuningdek *no hay nadie / nada que…* — deyarli doim subjuntivo."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11549,6 +17129,105 @@
     "en": "Same person — para + inf.; another — para que + subjunctive.",
     "uz": "Bir odam — para + inf.; boshqa — para que + subjuntivo."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Para que: чтобы",
+      "en": "Para que: so that",
+      "uz": "Para que: … sin deb, … uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "*Para* + инфинитив — «чтобы» (когда человек тот же): *Estudio para aprender* — Я учусь, чтобы (я) узнать. *Para que* + subjuntivo — «чтобы», когда во второй части _другой_ человек: *Te lo explico para que lo entiendas* — Я объясняю, чтобы ты понял.",
+      "en": "*Para* + infinitive when the subject is the same (*Estudio para aprender*). *Para que* + subjunctive when it's different (*Te lo explico para que lo entiendas*).",
+      "uz": "*Para* + infinitiv — «… uchun» (odam bir xil bo'lganda): *Estudio para aprender* — Bilish uchun o'qiyman. *Para que* + subjuntivo — ikkinchi qismda _boshqa_ odam bo'lganda: *Te lo explico para que lo entiendas* — Tushunishing uchun tushuntiryapman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       {
+        "ru": "Форма",
+        "en": "Form",
+        "uz": "Shakl"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "тот же человек",
+         "en": "same person",
+         "uz": "bir xil odam"
+        },
+        "para + infinitivo",
+        "Trabajo para ganar dinero."
+       ],
+       [
+        {
+         "ru": "другой человек",
+         "en": "different person",
+         "uz": "boshqa odam"
+        },
+        "para que + subjuntivo",
+        "Trabajo para que mis hijos estudien."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Para que* всегда требует subjuntivo, потому что цель — это ещё не факт. Если главная часть в прошедшем, subjuntivo тоже в прошедшем: *Lo hice para que estuvieras contento* — Я сделал это, чтобы ты был доволен.",
+      "en": "*Para que* always takes the subjunctive (a goal isn't a fact). After a past main clause, use the past subjunctive: *para que estuvieras contento.*",
+      "uz": "*Para que* doim subjuntivo talab qiladi, chunki maqsad hali fakt emas. Bosh qism o'tgan zamonda bo'lsa, subjuntivo ham o'tgan zamonda: *Lo hice para que estuvieras contento* — Xursand bo'lishing uchun shunday qildim."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Habla más alto *para que* todos te *oigan*.",
+       "t": {
+        "ru": "Говори громче, чтобы все тебя слышали.",
+        "uz": "Hamma eshitishi uchun balandroq gapir.",
+        "en": "Speak louder so everyone can hear you."
+       }
+      },
+      {
+       "s": "Ahorro *para* comprar un coche.",
+       "t": {
+        "ru": "Я коплю, чтобы купить машину.",
+        "uz": "Mashina sotib olish uchun pul yig'yapman.",
+        "en": "I'm saving to buy a car."
+       }
+      },
+      {
+       "s": "Te dejé las llaves *para que* *pudieras* entrar.",
+       "t": {
+        "ru": "Я оставил тебе ключи, чтобы ты мог войти.",
+        "uz": "Kira olishing uchun kalitlarni qoldirdim.",
+        "en": "I left you the keys so you could get in."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Так же работают *sin que* (без того, чтобы) и *a fin de que* (с тем чтобы): *Salió sin que nadie lo viera* — Он ушёл так, что никто не видел.",
+      "en": "*Sin que* and *a fin de que* work the same way: *Salió sin que nadie lo viera.*",
+      "uz": "*sin que* (… masdan) va *a fin de que* (… maqsadida) ham xuddi shunday ishlaydi: *Salió sin que nadie lo viera* — U hech kim ko'rmasdan chiqib ketdi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11814,6 +17493,133 @@
     "en": "Mood — ponerse, character — volverse, career — hacerse, result — quedarse.",
     "uz": "Kayfiyat — ponerse, xarakter — volverse, kasb — hacerse, natija — quedarse."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Глаголы изменения: стать",
+      "en": "Verbs of change: become",
+      "uz": "O'zgarish fe'llari: bo'lib qolmoq"
+     }
+    },
+    {
+     "p": {
+      "ru": "В русском есть одно слово «стать», в английском — *become / get*. В испанском для этого несколько глаголов, и выбор зависит от того, _какое_ это изменение: быстрое или постепенное, временное или навсегда, по своей воле или само.",
+      "en": "Spanish has several verbs for “become”, chosen by the type of change: quick or gradual, temporary or permanent, chosen or not.",
+      "uz": "O'zbek tilida «bo'lib qolmoq, aylanmoq» bor. Ispan tilida buning uchun bir necha fe'l bor va tanlov o'zgarish _qanday_ ekaniga bog'liq: tez yoki asta-sekin, vaqtinchalik yoki doimiy, o'z xohishi bilan yoki o'z-o'zidan."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Глагол",
+        "en": "Verb",
+        "uz": "Fe'l"
+       },
+       {
+        "ru": "Какое изменение",
+        "en": "Type of change",
+        "uz": "O'zgarish turi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "ponerse",
+        {
+         "ru": "быстрое, временное (эмоции, цвет)",
+         "en": "quick, temporary (mood, colour)",
+         "uz": "tez, vaqtinchalik (his-tuyg'u, rang)"
+        },
+        "Se puso nervioso."
+       ],
+       [
+        "volverse",
+        {
+         "ru": "резкое, глубокое (характер)",
+         "en": "sudden, deep (character)",
+         "uz": "keskin, chuqur (xarakter)"
+        },
+        "Se volvió muy egoísta."
+       ],
+       [
+        "hacerse",
+        {
+         "ru": "постепенное, своими усилиями (профессия, вера)",
+         "en": "gradual, by effort (job, beliefs)",
+         "uz": "asta-sekin, o'z harakati bilan (kasb, e'tiqod)"
+        },
+        "Se hizo médico."
+       ],
+       [
+        "llegar a ser",
+        {
+         "ru": "после долгого пути, успех",
+         "en": "after a long process, success",
+         "uz": "uzoq yo'ldan keyin, muvaffaqiyat"
+        },
+        "Llegó a ser presidente."
+       ],
+       [
+        "quedarse",
+        {
+         "ru": "результат, состояние после события",
+         "en": "result, state after an event",
+         "uz": "natija, voqeadan keyingi holat"
+        },
+        "Se quedó sorprendido."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Ponerse* — для того, что быстро проходит: *ponerse rojo* (покраснеть), *ponerse triste* (загрустить). *Hacerse* — когда человек сам этого добился: *hacerse rico* (разбогатеть). *Quedarse* — состояние после события: *quedarse sin dinero* (остаться без денег), *quedarse ciego* (ослепнуть).",
+      "en": "*Ponerse* for passing states (*ponerse rojo*). *Hacerse* for effort (*hacerse rico*). *Quedarse* for the state after an event (*quedarse sin dinero*).",
+      "uz": "*Ponerse* — tez o'tib ketadigan narsa uchun: *ponerse rojo* (qizarib ketmoq), *ponerse triste* (xafa bo'lmoq). *Hacerse* — odam bunga o'zi erishganda: *hacerse rico* (boyib ketmoq). *Quedarse* — voqeadan keyingi holat: *quedarse sin dinero* (pulsiz qolmoq), *quedarse ciego* (ko'r bo'lib qolmoq)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Cuando la vio, *se puso* rojo.",
+       "t": {
+        "ru": "Когда он её увидел, он покраснел.",
+        "uz": "Uni ko'rganda qizarib ketdi.",
+        "en": "When he saw her, he turned red."
+       }
+      },
+      {
+       "s": "Mi primo *se hizo* abogado.",
+       "t": {
+        "ru": "Мой двоюродный брат стал адвокатом.",
+        "uz": "Amakivachcham advokat bo'ldi.",
+        "en": "My cousin became a lawyer."
+       }
+      },
+      {
+       "s": "Después del accidente, *se volvió* muy prudente.",
+       "t": {
+        "ru": "После аварии он стал очень осторожным.",
+        "uz": "Avariyadan keyin u juda ehtiyotkor bo'lib qoldi.",
+        "en": "After the accident he became very careful."
+       }
+      },
+      {
+       "s": "Nos *quedamos* sin batería.",
+       "t": {
+        "ru": "У нас сел аккумулятор.",
+        "uz": "Batareyamiz tugab qoldi.",
+        "en": "Our battery died."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",

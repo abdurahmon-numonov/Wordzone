@@ -9859,6 +9859,173 @@
     "en": "Politeness, advice, dream → future stem + -ais.",
     "uz": "Muloyimlik, maslahat, orzu → futur o'zagi + -ais."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Conditionnel — «бы»",
+      "en": "Conditionnel — “would”",
+      "uz": "Conditionnel — «-ardi, edi»"
+     }
+    },
+    {
+     "p": {
+      "ru": "Conditionnel présent — это французское «бы»: для вежливых просьб, желаний, советов и воображаемых ситуаций. *Je voudrais un café* — Я бы хотел кофе. *Tu devrais dormir* — Тебе стоило бы поспать.",
+      "en": "The conditionnel is the French “would”: polite requests, wishes, advice and imagined situations. *Je voudrais un café.* *Tu devrais dormir.*",
+      "uz": "Conditionnel présent — fransuzcha «-ardi / bo'lardi»: muloyim iltimoslar, orzular, maslahatlar va xayoliy vaziyatlar uchun. *Je voudrais un café* — Qahva xohlardim. *Tu devrais dormir* — Uxlashing kerak edi."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится — легко, если знаешь futur",
+      "en": "How it's built — easy if you know the future",
+      "uz": "Qanday tuziladi — futur ni bilsangiz, oson"
+     }
+    },
+    {
+     "p": {
+      "ru": "Основа — та же, что у futur simple (*parler-, ser-, aur-, ir-, fer-, pourr-, voudr-*), а окончания — от imparfait (*-ais, -ais, -ait, -ions, -iez, -aient*). Две знакомые части складываются в новое время.",
+      "en": "Stem from the futur simple + imparfait endings. Two things you know combine into a new tense.",
+      "uz": "O'zak — futur simple dagi bilan bir xil (*parler-, ser-, aur-, ir-, fer-, pourr-, voudr-*), qo'shimchalar esa imparfait dan (*-ais, -ais, -ait, -ions, -iez, -aient*). Ikki tanish qism birlashib, yangi zamon hosil qiladi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "parler",
+       "être",
+       "pouvoir"
+      ],
+      "rows": [
+       [
+        "je",
+        "parlerais",
+        "serais",
+        "pourrais"
+       ],
+       [
+        "tu",
+        "parlerais",
+        "serais",
+        "pourrais"
+       ],
+       [
+        "il / elle",
+        "parlerait",
+        "serait",
+        "pourrait"
+       ],
+       [
+        "nous",
+        "parlerions",
+        "serions",
+        "pourrions"
+       ],
+       [
+        "vous",
+        "parleriez",
+        "seriez",
+        "pourriez"
+       ],
+       [
+        "ils / elles",
+        "parleraient",
+        "seraient",
+        "pourraient"
+       ]
+      ]
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Для чего",
+        "en": "Use",
+        "uz": "Nima uchun"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "вежливая просьба",
+         "en": "polite request",
+         "uz": "muloyim iltimos"
+        },
+        "Pourriez-vous m'aider ?"
+       ],
+       [
+        {
+         "ru": "желание",
+         "en": "wish",
+         "uz": "orzu"
+        },
+        "J'aimerais voyager au Japon."
+       ],
+       [
+        {
+         "ru": "совет",
+         "en": "advice",
+         "uz": "maslahat"
+        },
+        "Tu devrais appeler ta mère."
+       ],
+       [
+        {
+         "ru": "воображаемое",
+         "en": "imagined",
+         "uz": "xayoliy"
+        },
+        "À ta place, je partirais."
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je *voudrais* réserver une table.",
+       "t": {
+        "ru": "Я бы хотел забронировать столик.",
+        "uz": "Stol band qilmoqchi edim.",
+        "en": "I'd like to book a table."
+       }
+      },
+      {
+       "s": "On *pourrait* aller au cinéma.",
+       "t": {
+        "ru": "Мы могли бы пойти в кино.",
+        "uz": "Kinoga borsak bo'lardi.",
+        "en": "We could go to the cinema."
+       }
+      },
+      {
+       "s": "Vous *devriez* essayer ce plat.",
+       "t": {
+        "ru": "Вам стоило бы попробовать это блюдо.",
+        "uz": "Bu taomni tatib ko'rishingiz kerak.",
+        "en": "You should try this dish."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Не путай на слух *je parlerai* (будущее, [-рэ]) и *je parlerais* (conditionnel, [-рэ] чуть открытее). На письме разница — одна буква *s*.",
+      "en": "*Je parlerai* (future) and *je parlerais* (conditional) sound almost the same; in writing it's one *s*.",
+      "uz": "*je parlerai* (kelasi zamon) va *je parlerais* (conditionnel) deyarli bir xil eshitiladi. Yozuvda farq — bitta *s* harfi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10117,6 +10284,120 @@
     "en": "Real: present → future; dream: imperfect → conditional.",
     "uz": "Real: présent → futur; orzu: imparfait → conditionnel."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Если…: si + время",
+      "en": "If…: si + tense",
+      "uz": "Agar…: si + zamon"
+     }
+    },
+    {
+     "p": {
+      "ru": "Во французском условные предложения с *si* («если») подчиняются строгому правилу: какое время стоит после *si*, такое и определяет второе. Главное — после *si* никогда не ставят будущее или conditionnel.",
+      "en": "French *si* clauses follow a strict rule: the tense after *si* decides the other one. Never use the future or conditional right after *si*.",
+      "uz": "Fransuz tilida *si* («agar») li shart gaplar qat'iy qoidaga bo'ysunadi: *si* dan keyin qaysi zamon tursa, ikkinchisini u belgilaydi. Asosiysi — *si* dan keyin hech qachon kelasi zamon yoki conditionnel qo'yilmaydi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "После si",
+        "en": "After si",
+        "uz": "si dan keyin"
+       },
+       {
+        "ru": "Результат",
+        "en": "Result",
+        "uz": "Natija"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "реально",
+         "en": "real",
+         "uz": "real"
+        },
+        "présent",
+        "futur / présent",
+        "Si tu viens, on ira au parc."
+       ],
+       [
+        {
+         "ru": "воображаемо",
+         "en": "imaginary",
+         "uz": "xayoliy"
+        },
+        "imparfait",
+        "conditionnel",
+        "Si j'avais de l'argent, je voyagerais."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Первый тип — для того, что вполне может случиться: *S'il pleut, je resterai à la maison* — Если пойдёт дождь, я останусь дома. Второй — для мечты или маловероятного: *Si j'étais riche, j'achèterais une maison* — Если бы я был богат, я бы купил дом.",
+      "en": "Type 1 for real possibilities: *S'il pleut, je resterai à la maison.* Type 2 for dreams: *Si j'étais riche, j'achèterais une maison.*",
+      "uz": "Birinchi tur — haqiqatan bo'lishi mumkin bo'lgan narsa uchun: *S'il pleut, je resterai à la maison* — Agar yomg'ir yog'sa, uyda qolaman. Ikkinchisi — orzu yoki ehtimoli kam narsa uchun: *Si j'étais riche, j'achèterais une maison* — Boy bo'lganimda, uy sotib olardim."
+     }
+    },
+    {
+     "note": {
+      "ru": "*Si* + *il* сливаются в *s'il*: *s'il te plaît* (пожалуйста — дословно «если тебе угодно»). Но *si elle* не сливается.",
+      "en": "*Si* + *il* → *s'il* (*s'il te plaît*). *Si elle* doesn't merge.",
+      "uz": "*si* + *il* qo'shilib *s'il* bo'ladi: *s'il te plaît* (iltimos — so'zma-so'z «agar senga yoqsa»). *si elle* qo'shilmaydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Si* tu *as* faim, il y *a* du pain.",
+       "t": {
+        "ru": "Если ты голоден, есть хлеб.",
+        "uz": "Qorning och bo'lsa, non bor.",
+        "en": "If you're hungry, there's bread."
+       }
+      },
+      {
+       "s": "*Si* nous *partons* tôt, nous *arriverons* à midi.",
+       "t": {
+        "ru": "Если выедем рано, приедем к полудню.",
+        "uz": "Erta jo'nasak, peshinda yetib boramiz.",
+        "en": "If we leave early, we'll arrive at noon."
+       }
+      },
+      {
+       "s": "*Si* j'*étais* toi, je ne *dirais* rien.",
+       "t": {
+        "ru": "На твоём месте я бы ничего не говорил.",
+        "uz": "Sening o'rningda bo'lsam, hech narsa demasdim.",
+        "en": "If I were you, I wouldn't say anything."
+       }
+      },
+      {
+       "s": "Qu'est-ce que tu *ferais* *si* tu *gagnais* au loto ?",
+       "t": {
+        "ru": "Что бы ты сделал, если бы выиграл в лотерею?",
+        "uz": "Lotereyada yutsang, nima qilarding?",
+        "en": "What would you do if you won the lottery?"
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10382,6 +10663,137 @@
     "en": "ils form − ent + -e; learn sois, aie, aille, fasse.",
     "uz": "ils shakli − ent + -e; sois, aie, aille, fasse ni yod ol."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Subjonctif — особое наклонение",
+      "en": "The subjunctive",
+      "uz": "Subjonctif — alohida mayl"
+     }
+    },
+    {
+     "p": {
+      "ru": "Subjonctif — это форма глагола, которая используется _после_ определённых слов: когда что-то нужно, желательно, вызывает эмоции или сомнение. Чаще всего — после *il faut que* (нужно, чтобы): *Il faut que tu partes* — Нужно, чтобы ты ушёл. В русском похожий смысл передаёт «чтобы».",
+      "en": "The subjunctive is a verb form used after certain expressions — necessity, wishes, emotions, doubt. Most common: *il faut que*: *Il faut que tu partes.*",
+      "uz": "Subjonctif — ma'lum so'zlardan _keyin_ ishlatiladigan fe'l shakli: biror narsa zarur, istalgan bo'lsa, his-tuyg'u yoki shubha uyg'otsa. Ko'pincha — *il faut que* (… kerak) dan keyin: *Il faut que tu partes* — Ketishing kerak."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как строится",
+      "en": "How it's built",
+      "uz": "Qanday tuziladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Берём форму *ils* в настоящем, убираем *-ent* — получаем основу: *ils parlent → parl-*, *ils finissent → finiss-*, *ils prennent → prenn-*. Добавляем окончания *-e, -es, -e, -ions, -iez, -ent*. Для большинства глаголов формы *je, tu, il, ils* совпадают с настоящим временем!",
+      "en": "Take the *ils* present form, drop *-ent*, add *-e, -es, -e, -ions, -iez, -ent*. For most verbs *je, tu, il, ils* look like the present!",
+      "uz": "Hozirgi zamondagi *ils* shaklini olib, *-ent* ni olib tashlaymiz — o'zak hosil bo'ladi: *ils parlent → parl-*, *ils finissent → finiss-*, *ils prennent → prenn-*. *-e, -es, -e, -ions, -iez, -ent* qo'shimchalarini qo'shamiz. Ko'pchilik fe'llarda *je, tu, il, ils* shakllari hozirgi zamon bilan bir xil!"
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кто",
+        "en": "Who",
+        "uz": "Kim"
+       },
+       "parler",
+       "finir",
+       "être",
+       "avoir",
+       "faire"
+      ],
+      "rows": [
+       [
+        "que je",
+        "parle",
+        "finisse",
+        "sois",
+        "aie",
+        "fasse"
+       ],
+       [
+        "que tu",
+        "parles",
+        "finisses",
+        "sois",
+        "aies",
+        "fasses"
+       ],
+       [
+        "qu'il",
+        "parle",
+        "finisse",
+        "soit",
+        "ait",
+        "fasse"
+       ],
+       [
+        "que nous",
+        "parlions",
+        "finissions",
+        "soyons",
+        "ayons",
+        "fassions"
+       ],
+       [
+        "que vous",
+        "parliez",
+        "finissiez",
+        "soyez",
+        "ayez",
+        "fassiez"
+       ],
+       [
+        "qu'ils",
+        "parlent",
+        "finissent",
+        "soient",
+        "aient",
+        "fassent"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "Неправильных немного, но они частые: *être, avoir, faire, aller (aille), pouvoir (puisse), savoir (sache), vouloir (veuille)*. Их стоит выучить отдельно.",
+      "en": "A few common irregulars: *être, avoir, faire, aller (aille), pouvoir (puisse), savoir (sache), vouloir (veuille)*.",
+      "uz": "Noto'g'rilari kam, lekin ko'p uchraydi: *être, avoir, faire, aller (aille), pouvoir (puisse), savoir (sache), vouloir (veuille)*. Ularni alohida o'rganish arziydi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Il faut que tu *fasses* tes devoirs.",
+       "t": {
+        "ru": "Нужно, чтобы ты сделал уроки.",
+        "uz": "Darslaringni qilishing kerak.",
+        "en": "You need to do your homework."
+       }
+      },
+      {
+       "s": "Il faut que nous *soyons* à l'heure.",
+       "t": {
+        "ru": "Нам нужно быть вовремя.",
+        "uz": "O'z vaqtida bo'lishimiz kerak.",
+        "en": "We need to be on time."
+       }
+      },
+      {
+       "s": "Il faut qu'elle *parte* maintenant.",
+       "t": {
+        "ru": "Ей нужно уйти сейчас.",
+        "uz": "U hozir ketishi kerak.",
+        "en": "She has to leave now."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10645,6 +11057,152 @@
     "en": "Different people → que + subjunctive; same → infinitive; espérer → indicative.",
     "uz": "Turli odamlar → que + subjonctif; bitta → infinitiv; espérer → indicatif."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Subjonctif после желаний и эмоций",
+      "en": "Subjunctive after wishes and feelings",
+      "uz": "Istak va his-tuyg'ulardan keyin subjonctif"
+     }
+    },
+    {
+     "p": {
+      "ru": "Subjonctif нужен, когда в первой части выражено _отношение_ к действию: хочу, чтобы…; рад, что…; боюсь, что…; жаль, что… Обязательное условие — в двух частях _разные_ люди. *Je veux que tu viennes* — Я хочу, чтобы ты пришёл.",
+      "en": "Use the subjunctive after expressions of attitude — wanting, being glad, afraid, sorry — when the two parts have different subjects: *Je veux que tu viennes.*",
+      "uz": "Birinchi qismda harakatga _munosabat_ bildirilganda subjonctif kerak: … ishini xohlayman; … ganidan xursandman; … dan qo'rqaman; … ga afsus. Majburiy shart — ikki qismda _boshqa-boshqa_ odamlar. *Je veux que tu viennes* — Kelishingni xohlayman."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Тип",
+        "en": "Type",
+        "uz": "Turi"
+       },
+       {
+        "ru": "Выражение",
+        "en": "Expression",
+        "uz": "Ibora"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "желание",
+         "en": "wish",
+         "uz": "istak"
+        },
+        "vouloir que, souhaiter que",
+        {
+         "ru": "хотеть, чтобы",
+         "en": "want … to",
+         "uz": "… ishini xohlamoq"
+        }
+       ],
+       [
+        {
+         "ru": "радость",
+         "en": "joy",
+         "uz": "quvonch"
+        },
+        "être content que",
+        {
+         "ru": "радоваться, что",
+         "en": "be glad that",
+         "uz": "… dan xursand bo'lmoq"
+        }
+       ],
+       [
+        {
+         "ru": "грусть",
+         "en": "sadness",
+         "uz": "qayg'u"
+        },
+        "être triste que, regretter que",
+        {
+         "ru": "жалеть, что",
+         "en": "be sorry that",
+         "uz": "… dan afsuslanmoq"
+        }
+       ],
+       [
+        {
+         "ru": "страх",
+         "en": "fear",
+         "uz": "qo'rquv"
+        },
+        "avoir peur que",
+        {
+         "ru": "бояться, что",
+         "en": "be afraid that",
+         "uz": "… dan qo'rqmoq"
+        }
+       ],
+       [
+        {
+         "ru": "удивление",
+         "en": "surprise",
+         "uz": "hayrat"
+        },
+        "être surpris que",
+        {
+         "ru": "удивляться, что",
+         "en": "be surprised that",
+         "uz": "… dan hayron bo'lmoq"
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Если человек один и тот же, subjonctif не нужен — ставят инфинитив: *Je veux partir* — Я хочу уйти (я хочу, я уйду). Но *Je veux que tu partes* — Я хочу, чтобы ты ушёл.",
+      "en": "Same subject → infinitive: *Je veux partir.* Different subjects → subjunctive: *Je veux que tu partes.*",
+      "uz": "Odam bitta bo'lsa, subjonctif kerak emas — infinitiv qo'yiladi: *Je veux partir* — Ketmoqchiman (men xohlayman, men ketaman). Lekin *Je veux que tu partes* — Ketishingni xohlayman."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je suis content que tu *sois* là.",
+       "t": {
+        "ru": "Я рад, что ты здесь.",
+        "uz": "Bu yerdaligingdan xursandman.",
+        "en": "I'm glad you're here."
+       }
+      },
+      {
+       "s": "Ma mère veut que je *fasse* médecine.",
+       "t": {
+        "ru": "Мама хочет, чтобы я учился на врача.",
+        "uz": "Onam shifokorlikka o'qishimni xohlaydi.",
+        "en": "My mother wants me to study medicine."
+       }
+      },
+      {
+       "s": "J'ai peur qu'il *soit* en retard.",
+       "t": {
+        "ru": "Я боюсь, что он опоздает.",
+        "uz": "U kechikib qolishidan qo'rqaman.",
+        "en": "I'm afraid he'll be late."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Espérer que* (надеяться) — исключение: после него обычное настоящее или будущее, а не subjonctif. *J'espère que tu vas bien.*",
+      "en": "Exception: *espérer que* takes the indicative: *J'espère que tu vas bien.*",
+      "uz": "*espérer que* (umid qilmoq) — istisno: undan keyin subjonctif emas, oddiy hozirgi yoki kelasi zamon keladi. *J'espère que tu vas bien* — Yaxshi ekansan deb umid qilaman."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -10909,6 +11467,138 @@
     "en": "Verb next → qui; subject next → que; place → où; de → dont.",
     "uz": "Keyin fe'l → qui; ega → que; joy → où; de → dont."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Который: qui, que, où, dont",
+      "en": "Who, which: qui, que, où, dont",
+      "uz": "Qaysiki: qui, que, où, dont"
+     }
+    },
+    {
+     "p": {
+      "ru": "Относительные местоимения соединяют две фразы и заменяют «который». Во французском их выбор зависит не от рода предмета (как в немецком), а от его _роли_ во второй части предложения.",
+      "en": "Relative pronouns join two sentences. In French the choice depends on the role the word plays in the second part, not its gender.",
+      "uz": "Nisbiy olmoshlar ikki gapni bog'laydi va «qaysiki» ni almashtiradi. Fransuz tilida ularni tanlash narsaning jinsiga emas, ikkinchi qismdagi _vazifasiga_ bog'liq."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Роль",
+        "en": "Role",
+        "uz": "Vazifa"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "qui",
+        {
+         "ru": "подлежащее (кто? что? делает)",
+         "en": "subject (does the action)",
+         "uz": "ega (kim? nima? bajaradi)"
+        },
+        "L'homme qui parle est mon père."
+       ],
+       [
+        "que",
+        {
+         "ru": "прямое дополнение (кого? что?)",
+         "en": "direct object (whom? what?)",
+         "uz": "to'g'ri to'ldiruvchi (kimni? nimani?)"
+        },
+        "Le livre que je lis est bon."
+       ],
+       [
+        "où",
+        {
+         "ru": "место или время (где? когда?)",
+         "en": "place or time",
+         "uz": "joy yoki vaqt (qayerda? qachon?)"
+        },
+        "La ville où j'habite est belle."
+       ],
+       [
+        "dont",
+        {
+         "ru": "с de (о котором, чей)",
+         "en": "with de (of which, whose)",
+         "uz": "de bilan (… haqida, kimning)"
+        },
+        "Le film dont je parle est génial."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Простая проверка: если сразу после пробела идёт глагол — нужно *qui* (оно и есть подлежащее): *la fille qui chante*. Если после идёт новое подлежащее (*je, tu, Ali*) — нужно *que*: *la fille que je connais*.",
+      "en": "Quick test: verb right after → *qui* (*la fille qui chante*). A new subject after → *que* (*la fille que je connais*).",
+      "uz": "Oddiy tekshiruv: bo'sh joydan keyin darhol fe'l kelsa — *qui* kerak (u egadir): *la fille qui chante*. Keyin yangi ega (*je, tu, Ali*) kelsa — *que* kerak: *la fille que je connais*."
+     }
+    },
+    {
+     "p": {
+      "ru": "*Dont* заменяет всё, что шло с *de*: *parler de* (говорить о), *avoir besoin de* (нуждаться в). *J'ai besoin de ce livre → le livre dont j'ai besoin* — книга, которая мне нужна.",
+      "en": "*Dont* replaces anything with *de*: *le livre dont j'ai besoin* (from *avoir besoin de*).",
+      "uz": "*Dont* *de* bilan kelgan hamma narsani almashtiradi: *parler de* (… haqida gapirmoq), *avoir besoin de* (… ga muhtoj bo'lmoq). *J'ai besoin de ce livre → le livre dont j'ai besoin* — menga kerak bo'lgan kitob."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "C'est le professeur *qui* m'a aidé.",
+       "t": {
+        "ru": "Это учитель, который мне помог.",
+        "uz": "Bu menga yordam bergan o'qituvchi.",
+        "en": "That's the teacher who helped me."
+       }
+      },
+      {
+       "s": "La robe *que* tu portes est jolie.",
+       "t": {
+        "ru": "Платье, которое на тебе, красивое.",
+        "uz": "Kiygan ko'ylaging chiroyli.",
+        "en": "The dress you're wearing is pretty."
+       }
+      },
+      {
+       "s": "Je me souviens du jour *où* on s'est rencontrés.",
+       "t": {
+        "ru": "Я помню день, когда мы познакомились.",
+        "uz": "Tanishgan kunimizni eslayman.",
+        "en": "I remember the day we met."
+       }
+      },
+      {
+       "s": "C'est l'ami *dont* je t'ai parlé.",
+       "t": {
+        "ru": "Это друг, о котором я тебе рассказывал.",
+        "uz": "Bu senga aytgan do'stim.",
+        "en": "That's the friend I told you about."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Que* перед гласной сокращается до *qu'*: *le film qu'il regarde*. А *qui* — никогда: *l'ami qui arrive*.",
+      "en": "*Que* becomes *qu'* before a vowel; *qui* never does.",
+      "uz": "*que* unli oldidan *qu'* gacha qisqaradi: *le film qu'il regarde*. *qui* esa hech qachon: *l'ami qui arrive*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11174,6 +11864,97 @@
     "en": "Whatever was earlier → avais/étais + participle.",
     "uz": "Avvalroq bo'lgan → avais/étais + sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Plus-que-parfait — прошлое до прошлого",
+      "en": "Plus-que-parfait — the past before the past",
+      "uz": "Plus-que-parfait — o'tmishdan oldingi o'tmish"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда в рассказе о прошлом нужно показать, что одно действие случилось _ещё раньше_ другого, используют plus-que-parfait. «Когда я пришёл, они уже поели». Это как английский Past Perfect и узбекское «-gan edi».",
+      "en": "The plus-que-parfait shows that one past action happened before another — like the English Past Perfect.",
+      "uz": "O'tmish haqidagi hikoyada bir harakat boshqasidan _ham oldinroq_ bo'lganini ko'rsatish kerak bo'lsa, plus-que-parfait ishlatiladi. «Men kelganimda ular allaqachon ovqatlanib bo'lgan edi». Bu o'zbekcha «-gan edi» ga o'xshaydi."
+     }
+    },
+    {
+     "p": {
+      "ru": "Строится как passé composé, только *avoir / être* стоят в imparfait: *j'avais mangé* (я поел — раньше), *j'étais parti* (я ушёл — раньше). Правила выбора *avoir / être* и согласования причастия — те же.",
+      "en": "Built like the passé composé with *avoir / être* in the imparfait: *j'avais mangé*, *j'étais parti*. Same helper choice and agreement.",
+      "uz": "Passé composé kabi tuziladi, faqat *avoir / être* imparfait da turadi: *j'avais mangé* (ovqatlangan edim), *j'étais parti* (ketgan edim). *avoir / être* tanlovi va sifatdosh moslashuvi qoidalari bir xil."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "с avoir",
+        "en": "with avoir",
+        "uz": "avoir bilan"
+       },
+       {
+        "ru": "с être",
+        "en": "with être",
+        "uz": "être bilan"
+       }
+      ],
+      "rows": [
+       [
+        "passé composé",
+        "j'ai fini",
+        "je suis allé"
+       ],
+       [
+        "plus-que-parfait",
+        "j'avais fini",
+        "j'étais allé"
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Quand je suis arrivé, le train *était* déjà *parti*.",
+       "t": {
+        "ru": "Когда я пришёл, поезд уже ушёл.",
+        "uz": "Men kelganimda poyezd allaqachon ketgan edi.",
+        "en": "When I arrived, the train had already left."
+       }
+      },
+      {
+       "s": "Elle était fatiguée parce qu'elle *avait* mal *dormi*.",
+       "t": {
+        "ru": "Она устала, потому что плохо спала.",
+        "uz": "U yomon uxlagani uchun charchagan edi.",
+        "en": "She was tired because she had slept badly."
+       }
+      },
+      {
+       "s": "Il m'a dit qu'il *avait vu* le film.",
+       "t": {
+        "ru": "Он сказал, что смотрел фильм.",
+        "uz": "U filmni ko'rganini aytdi.",
+        "en": "He told me he had seen the film."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Plus-que-parfait также нужен в сожалениях с *si*: *Si j'avais su…* — Если бы я знал… (об этом в B2).",
+      "en": "It also appears in regrets with *si*: *Si j'avais su…* (more at B2).",
+      "uz": "Plus-que-parfait *si* bilan afsuslarda ham kerak: *Si j'avais su…* — Bilganimda edi… (bu haqda B2 da)."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11437,6 +12218,120 @@
     "en": "Yes: verb-pronoun (moi, toi); no: ne + pronoun + verb + pas.",
     "uz": "Ha: fe'l-olmosh (moi, toi); yo'q: ne + olmosh + fe'l + pas."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Impératif — просьбы и команды",
+      "en": "The imperative",
+      "uz": "Buyruq mayli"
+     }
+    },
+    {
+     "p": {
+      "ru": "Повелительное наклонение у французов простое: это форма настоящего времени _без_ местоимения. Есть всего три формы — для *tu*, *nous* (давайте) и *vous*.",
+      "en": "The French imperative is the present form without the pronoun, in three persons: *tu*, *nous* (let's), *vous*.",
+      "uz": "Fransuz tilida buyruq mayli oddiy: bu olmoshsiz hozirgi zamon shakli. Faqat uchta shakl bor — *tu*, *nous* (keling …aylik) va *vous* uchun."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Кому",
+        "en": "To whom",
+        "uz": "Kimga"
+       },
+       "parler",
+       "finir",
+       "aller"
+      ],
+      "rows": [
+       [
+        "tu",
+        "Parle !",
+        "Finis !",
+        "Va !"
+       ],
+       [
+        "nous",
+        "Parlons !",
+        "Finissons !",
+        "Allons !"
+       ],
+       [
+        "vous",
+        "Parlez !",
+        "Finissez !",
+        "Allez !"
+       ]
+      ]
+     }
+    },
+    {
+     "note": {
+      "ru": "У глаголов на *-er* (и у *aller*) в форме *tu* выпадает *-s*: *tu parles → Parle !*, *tu vas → Va !* Особые: *être → Sois / Soyons / Soyez*, *avoir → Aie / Ayons / Ayez*.",
+      "en": "*-er* verbs (and *aller*) drop the *-s* in the *tu* form: *Parle !*, *Va !* Irregular: *Sois / Soyez*, *Aie / Ayez*.",
+      "uz": "*-er* fe'llarida (va *aller* da) *tu* shaklida *-s* tushib qoladi: *tu parles → Parle !*, *tu vas → Va !* Alohidalari: *être → Sois / Soyons / Soyez*, *avoir → Aie / Ayons / Ayez*."
+     }
+    },
+    {
+     "h": {
+      "ru": "Местоимения после глагола",
+      "en": "Pronouns after the verb",
+      "uz": "Fe'ldan keyingi olmoshlar"
+     }
+    },
+    {
+     "p": {
+      "ru": "В утвердительной команде местоимения встают _после_ глагола через дефис, а *me* и *te* превращаются в *moi* и *toi*: *Regarde-moi !* — Посмотри на меня! *Lève-toi !* — Вставай! *Donne-le-moi !* — Дай мне его!",
+      "en": "In a positive command, pronouns go after the verb with a hyphen, and *me, te* become *moi, toi*: *Regarde-moi !*, *Lève-toi !*",
+      "uz": "Ijobiy buyruqda olmoshlar fe'ldan _keyin_ chiziqcha bilan keladi, *me* va *te* esa *moi* va *toi* ga aylanadi: *Regarde-moi !* — Menga qara! *Lève-toi !* — Tur! *Donne-le-moi !* — Uni menga ber!"
+     }
+    },
+    {
+     "p": {
+      "ru": "В отрицательной команде всё возвращается на обычные места: *Ne me regarde pas !* — Не смотри на меня! *Ne te lève pas !*",
+      "en": "In a negative command everything goes back to normal order: *Ne me regarde pas !*",
+      "uz": "Inkor buyruqda hammasi odatdagi joyiga qaytadi: *Ne me regarde pas !* — Menga qarama! *Ne te lève pas !*"
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "*Écoute* bien !",
+       "t": {
+        "ru": "Слушай внимательно!",
+        "uz": "Yaxshilab tingla!",
+        "en": "Listen carefully!"
+       }
+      },
+      {
+       "s": "*Allons* au parc !",
+       "t": {
+        "ru": "Пойдём в парк!",
+        "uz": "Parkka boraylik!",
+        "en": "Let's go to the park!"
+       }
+      },
+      {
+       "s": "*Asseyez-vous*, s'il vous plaît.",
+       "t": {
+        "ru": "Садитесь, пожалуйста.",
+        "uz": "O'tiring, iltimos.",
+        "en": "Sit down, please."
+       }
+      },
+      {
+       "s": "*Ne t'inquiète pas.*",
+       "t": {
+        "ru": "Не волнуйся.",
+        "uz": "Xavotir olma.",
+        "en": "Don't worry."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11696,6 +12591,102 @@
     "en": "Statement → que; yes/no → si; what → ce que; command → de + inf.",
     "uz": "Tasdiq → que; ha/yo'q → si; nima → ce que; buyruq → de + inf."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Косвенная речь: он говорит, что…",
+      "en": "Reported speech: he says that…",
+      "uz": "O'zlashtirma gap: u … deydi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Когда мы пересказываем чьи-то слова _в настоящем_ (*il dit que*, *elle demande si*), времена глаголов не меняются. Меняются только местоимения и притяжательные — как в русском и узбекском: «я» становится «он».",
+      "en": "When the reporting verb is in the present (*il dit que*), tenses stay the same. Only pronouns and possessives change.",
+      "uz": "Birovning so'zlarini _hozirgi zamonda_ yetkazganimizda (*il dit que*, *elle demande si*), fe'llar zamoni o'zgarmaydi. Faqat olmoshlar va egalik so'zlari o'zgaradi — xuddi o'zbek tilidagidek: «men» «u» ga aylanadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Прямая речь",
+        "en": "Direct speech",
+        "uz": "Ko'chirma gap"
+       },
+       {
+        "ru": "Косвенная речь",
+        "en": "Reported speech",
+        "uz": "O'zlashtirma gap"
+       }
+      ],
+      "rows": [
+       [
+        "Il dit : « Je suis fatigué. »",
+        "Il dit qu'il est fatigué."
+       ],
+       [
+        "Elle demande : « Tu viens ? »",
+        "Elle demande si tu viens."
+       ],
+       [
+        "Il demande : « Où tu habites ? »",
+        "Il demande où tu habites."
+       ],
+       [
+        "Il demande : « Qu'est-ce que tu veux ? »",
+        "Il demande ce que tu veux."
+       ],
+       [
+        "Elle dit : « Viens ! »",
+        "Elle dit de venir."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Утверждение пересказывают через *que* (что). Вопрос «да/нет» — через *si* (ли). Вопрос со словом — тем же словом (*où, quand, pourquoi*). *Qu'est-ce que* превращается в *ce que*, а *qu'est-ce qui* — в *ce qui*. Команда — через *de* + инфинитив.",
+      "en": "Statements → *que*. Yes/no → *si*. Question words stay. *Qu'est-ce que* → *ce que*. Commands → *de* + infinitive.",
+      "uz": "Darak gap *que* (… ki) orqali yetkaziladi. «Ha/yo'q» savoli — *si* (… mi) orqali. So'roq so'zli savol — o'sha so'z bilan (*où, quand, pourquoi*). *Qu'est-ce que* *ce que* ga, *qu'est-ce qui* *ce qui* ga aylanadi. Buyruq — *de* + infinitiv orqali."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ali dit *qu'il* arrive demain.",
+       "t": {
+        "ru": "Али говорит, что приедет завтра.",
+        "uz": "Ali ertaga kelishini aytyapti.",
+        "en": "Ali says he's arriving tomorrow."
+       }
+      },
+      {
+       "s": "Je me demande *si* elle a raison.",
+       "t": {
+        "ru": "Я задаюсь вопросом, права ли она.",
+        "uz": "U haqmi, deb o'ylayapman.",
+        "en": "I wonder if she's right."
+       }
+      },
+      {
+       "s": "Dis-moi *ce que* tu penses.",
+       "t": {
+        "ru": "Скажи мне, что ты думаешь.",
+        "uz": "Nima o'ylayotganingni ayt.",
+        "en": "Tell me what you think."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В пересказе исчезает порядок слов вопроса: не «Il demande où habites-tu», а *Il demande où tu habites*.",
+      "en": "Reported questions use normal word order: *Il demande où tu habites.*",
+      "uz": "O'zlashtirma gapda savol tartibi yo'qoladi: «Il demande où habites-tu» emas, *Il demande où tu habites*."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -11959,6 +12950,133 @@
     "en": "en + -ant: “while / by / if”.",
     "uz": "en + -ant: «…ayotib / …ib / …sa»."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Gérondif: en parlant",
+      "en": "The gérondif: en parlant",
+      "uz": "Gérondif: en parlant"
+     }
+    },
+    {
+     "p": {
+      "ru": "Gérondif — это *en* + глагол с окончанием *-ant*. Он показывает, что два действия происходят _одновременно_ одним человеком, или объясняет _как_ что-то делается. *Je mange en regardant la télé* — Я ем, смотря телевизор. По-узбекски — «-ib» или «-ayotib»: televizor ko'rib ovqatlanaman.",
+      "en": "The gérondif is *en* + verb in *-ant*. It shows two actions at the same time by the same person, or how something is done: *Je mange en regardant la télé.*",
+      "uz": "Gérondif — bu *en* + *-ant* qo'shimchali fe'l. U ikki harakat bir odam tomonidan _bir vaqtda_ bajarilayotganini ko'rsatadi yoki biror ish _qanday_ qilinishini tushuntiradi. *Je mange en regardant la télé* — Televizor ko'rib ovqatlanaman."
+     }
+    },
+    {
+     "h": {
+      "ru": "Как образовать",
+      "en": "How to form it",
+      "uz": "Qanday yasaladi"
+     }
+    },
+    {
+     "p": {
+      "ru": "Как и у imparfait, берём форму *nous* в настоящем, убираем *-ons* и добавляем *-ant*: *nous parlons → parlant*, *nous finissons → finissant*, *nous faisons → faisant*. Исключения: *être → étant*, *avoir → ayant*, *savoir → sachant*.",
+      "en": "Take the *nous* present form, drop *-ons*, add *-ant*: *parlant, finissant, faisant*. Exceptions: *étant, ayant, sachant*.",
+      "uz": "imparfait dagidek, hozirgi zamondagi *nous* shaklini olib, *-ons* ni olib tashlab, *-ant* qo'shamiz: *nous parlons → parlant*, *nous finissons → finissant*, *nous faisons → faisant*. Istisnolar: *être → étant*, *avoir → ayant*, *savoir → sachant*."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Смысл",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       },
+       {
+        "ru": "Перевод",
+        "en": "Translation",
+        "uz": "Tarjima"
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "одновременно",
+         "en": "at the same time",
+         "uz": "bir vaqtda"
+        },
+        "Il chante en travaillant.",
+        {
+         "ru": "Он поёт, работая.",
+         "en": "He sings while working.",
+         "uz": "U ishlab qo'shiq aytadi."
+        }
+       ],
+       [
+        {
+         "ru": "способ (как?)",
+         "en": "manner (how?)",
+         "uz": "usul (qanday?)"
+        },
+        "On apprend en pratiquant.",
+        {
+         "ru": "Учатся практикуясь.",
+         "en": "You learn by practising.",
+         "uz": "Mashq qilib o'rganiladi."
+        }
+       ],
+       [
+        {
+         "ru": "условие (если)",
+         "en": "condition (if)",
+         "uz": "shart (agar)"
+        },
+        "En partant tôt, tu arriveras à l'heure.",
+        {
+         "ru": "Выйдя рано, ты успеешь.",
+         "en": "If you leave early, you'll be on time.",
+         "uz": "Erta chiqsang, o'z vaqtida yetasan."
+        }
+       ]
+      ]
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Ne téléphone pas *en conduisant* !",
+       "t": {
+        "ru": "Не говори по телефону за рулём!",
+        "uz": "Mashina haydayotib telefonda gaplashma!",
+        "en": "Don't phone while driving!"
+       }
+      },
+      {
+       "s": "J'ai trouvé ce café *en me promenant*.",
+       "t": {
+        "ru": "Я нашёл это кафе, гуляя.",
+        "uz": "Bu kafeni sayr qilib yurib topdim.",
+        "en": "I found this café while walking."
+       }
+      },
+      {
+       "s": "*En travaillant* beaucoup, tu réussiras.",
+       "t": {
+        "ru": "Если будешь много работать, у тебя получится.",
+        "uz": "Ko'p ishlasang, muvaffaqiyatga erishasan.",
+        "en": "By working hard, you'll succeed."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "Главное условие: оба действия делает _один и тот же_ человек. *Je l'ai vu en sortant* — Я его увидел, когда (я) выходил.",
+      "en": "Key rule: the same person does both actions: *Je l'ai vu en sortant* — I saw him as I was leaving.",
+      "uz": "Asosiy shart: ikkala harakatni _bir xil_ odam bajaradi. *Je l'ai vu en sortant* — Chiqayotib uni ko'rdim."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12224,6 +13342,107 @@
     "en": "être in the right tense + participle agreeing with the subject.",
     "uz": "Kerakli zamondagi être + egaga moslashgan sifatdosh."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Пассивный залог",
+      "en": "The passive voice",
+      "uz": "Majhul nisbat"
+     }
+    },
+    {
+     "p": {
+      "ru": "Пассив нужен, когда важнее _что_ сделано, чем _кто_ сделал. *La tour Eiffel a été construite en 1889* — Эйфелева башня была построена в 1889 году. Строится как в английском: *être* в нужном времени + причастие.",
+      "en": "The passive focuses on what was done, not who did it: *La tour Eiffel a été construite en 1889.* It's *être* + past participle.",
+      "uz": "Passiv _kim_ qilganidan ko'ra _nima_ qilinganini ta'kidlash kerak bo'lganda ishlatiladi. *La tour Eiffel a été construite en 1889* — Eyfel minorasi 1889-yilda qurilgan. Ingliz tilidagidek tuziladi: kerakli zamondagi *être* + sifatdosh."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Время",
+        "en": "Tense",
+        "uz": "Zamon"
+       },
+       {
+        "ru": "Схема",
+        "en": "Pattern",
+        "uz": "Sxema"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "présent",
+        "est / sont + participe",
+        "Le français est parlé ici."
+       ],
+       [
+        "passé composé",
+        "a été / ont été + participe",
+        "La lettre a été envoyée."
+       ],
+       [
+        "imparfait",
+        "était / étaient + participe",
+        "La maison était entourée d'arbres."
+       ],
+       [
+        "futur",
+        "sera / seront + participe",
+        "Le pont sera ouvert en mai."
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "Причастие согласуется с подлежащим, как прилагательное: *Le gâteau est préparé*, *La salade est préparée*, *Les repas sont préparés*. Того, кто сделал, вводят словом *par*: *Ce livre a été écrit par Hugo* — Эта книга написана Гюго.",
+      "en": "The participle agrees with the subject. The doer is introduced by *par*: *écrit par Hugo*.",
+      "uz": "Sifatdosh ega bilan sifat kabi moslashadi: *Le gâteau est préparé*, *La salade est préparée*, *Les repas sont préparés*. Bajaruvchi *par* so'zi bilan kiritiladi: *Ce livre a été écrit par Hugo* — Bu kitob Gyugo tomonidan yozilgan."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Le musée *est fermé* le lundi.",
+       "t": {
+        "ru": "Музей закрыт по понедельникам.",
+        "uz": "Muzey dushanba kunlari yopiq.",
+        "en": "The museum is closed on Mondays."
+       }
+      },
+      {
+       "s": "Ces photos *ont été prises* à Samarcande.",
+       "t": {
+        "ru": "Эти фото сделаны в Самарканде.",
+        "uz": "Bu suratlar Samarqandda olingan.",
+        "en": "These photos were taken in Samarkand."
+       }
+      },
+      {
+       "s": "Le voleur *a été arrêté* par la police.",
+       "t": {
+        "ru": "Вора арестовала полиция.",
+        "uz": "O'g'ri politsiya tomonidan qo'lga olindi.",
+        "en": "The thief was arrested by the police."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "В разговоре французы часто избегают пассива и говорят с *on*: *On parle français ici* — Здесь говорят по-французски. Звучит естественнее.",
+      "en": "In speech the French often prefer *on*: *On parle français ici.*",
+      "uz": "So'zlashuvda fransuzlar ko'pincha passivdan qochib, *on* bilan gapiradi: *On parle français ici* — Bu yerda fransuzcha gapiriladi. Tabiiyroq eshitiladi."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12487,6 +13706,145 @@
     "en": "The pronoun takes the gender and number of the thing it replaces.",
     "uz": "Olmosh almashtirgan narsaning rodi va sonini oladi."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Тот, который; мой",
+      "en": "The one; mine",
+      "uz": "O'shanisi; meniki"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы не повторять существительное, французы заменяют его местоимением. *Celui* — «тот (самый)», *le mien* — «мой» (без существительного). Оба согласуются по роду и числу с тем словом, которое заменяют.",
+      "en": "To avoid repeating a noun, French uses *celui* (the one) and *le mien* (mine). Both agree with the noun they replace.",
+      "uz": "Otni takrorlamaslik uchun fransuzlar uni olmosh bilan almashtiradi. *Celui* — «o'sha (aynan)», *le mien* — «meniki» (otsiz). Ikkalasi ham almashtirayotgan so'zi bilan jins va son bo'yicha moslashadi."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Что",
+        "en": "What",
+        "uz": "Nima"
+       },
+       {
+        "ru": "муж.",
+        "en": "masc.",
+        "uz": "erkak"
+       },
+       {
+        "ru": "жен.",
+        "en": "fem.",
+        "uz": "ayol"
+       },
+       {
+        "ru": "муж. мн.",
+        "en": "masc. pl.",
+        "uz": "erkak ko'p."
+       },
+       {
+        "ru": "жен. мн.",
+        "en": "fem. pl.",
+        "uz": "ayol ko'p."
+       }
+      ],
+      "rows": [
+       [
+        {
+         "ru": "тот",
+         "en": "the one",
+         "uz": "o'sha"
+        },
+        "celui",
+        "celle",
+        "ceux",
+        "celles"
+       ],
+       [
+        {
+         "ru": "мой",
+         "en": "mine",
+         "uz": "meniki"
+        },
+        "le mien",
+        "la mienne",
+        "les miens",
+        "les miennes"
+       ],
+       [
+        {
+         "ru": "твой",
+         "en": "yours",
+         "uz": "seniki"
+        },
+        "le tien",
+        "la tienne",
+        "les tiens",
+        "les tiennes"
+       ],
+       [
+        {
+         "ru": "его / её",
+         "en": "his / hers",
+         "uz": "uniki"
+        },
+        "le sien",
+        "la sienne",
+        "les siens",
+        "les siennes"
+       ],
+       [
+        {
+         "ru": "наш",
+         "en": "ours",
+         "uz": "bizniki"
+        },
+        "le nôtre",
+        "la nôtre",
+        "les nôtres",
+        "les nôtres"
+       ]
+      ]
+     }
+    },
+    {
+     "p": {
+      "ru": "*Celui* не стоит один — после него обязательно идёт *-ci / -là*, *qui / que* или *de*: *celui-ci* (этот), *celle que je préfère* (та, которую я предпочитаю), *celui de mon frère* (тот, что у моего брата).",
+      "en": "*Celui* never stands alone — it's followed by *-ci / -là*, *qui / que* or *de*: *celui-ci*, *celle que je préfère*, *celui de mon frère*.",
+      "uz": "*Celui* yolg'iz turmaydi — undan keyin albatta *-ci / -là*, *qui / que* yoki *de* keladi: *celui-ci* (bunisi), *celle que je préfère* (men afzal ko'rganim), *celui de mon frère* (akamniki)."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Quel gâteau tu veux ? — *Celui-ci*.",
+       "t": {
+        "ru": "Какой торт ты хочешь? — Вот этот.",
+        "uz": "Qaysi tortni xohlaysan? — Bunisini.",
+        "en": "Which cake do you want? — This one."
+       }
+      },
+      {
+       "s": "Ta voiture est rouge, *la mienne* est bleue.",
+       "t": {
+        "ru": "Твоя машина красная, моя синяя.",
+        "uz": "Sening mashinang qizil, meniki ko'k.",
+        "en": "Your car is red, mine is blue."
+       }
+      },
+      {
+       "s": "Ce n'est pas mon sac, c'est *celui de* Leïla.",
+       "t": {
+        "ru": "Это не моя сумка, это сумка Лейлы.",
+        "uz": "Bu mening sumkam emas, Layloniki.",
+        "en": "It's not my bag, it's Leila's."
+       }
+      }
+     ]
+    }
+   ],
    "ex": [
     {
      "k": "choose",
@@ -12752,6 +14110,139 @@
     "en": "Cause: parce que/comme/puisque; with a noun: grâce à/à cause de; result: donc.",
     "uz": "Sabab: parce que/comme/puisque; ot bilan: grâce à/à cause de; natija: donc."
    },
+   "theory": [
+    {
+     "h": {
+      "ru": "Почему и поэтому",
+      "en": "Why and so",
+      "uz": "Nega va shuning uchun"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы рассуждать связно, нужны слова причины (почему?) и следствия (что из этого вышло?). Во французском у причины несколько оттенков.",
+      "en": "To reason clearly you need words for cause (why?) and consequence (so what?). French has several shades of cause.",
+      "uz": "Izchil fikr yuritish uchun sabab (nega?) va natija (undan nima chiqdi?) so'zlari kerak. Fransuz tilida sababning bir necha tusi bor."
+     }
+    },
+    {
+     "table": {
+      "head": [
+       {
+        "ru": "Слово",
+        "en": "Word",
+        "uz": "So'z"
+       },
+       {
+        "ru": "Значение",
+        "en": "Meaning",
+        "uz": "Ma'nosi"
+       },
+       {
+        "ru": "Пример",
+        "en": "Example",
+        "uz": "Misol"
+       }
+      ],
+      "rows": [
+       [
+        "parce que",
+        {
+         "ru": "потому что (новая информация)",
+         "en": "because (new info)",
+         "uz": "chunki (yangi ma'lumot)"
+        },
+        "Je reste parce que je suis malade."
+       ],
+       [
+        "puisque",
+        {
+         "ru": "раз уж (причина известна обоим)",
+         "en": "since (known reason)",
+         "uz": "modomiki (ikkalamizga ma'lum sabab)"
+        },
+        "Puisque tu es là, aide-moi."
+       ],
+       [
+        "comme",
+        {
+         "ru": "так как (в начале фразы)",
+         "en": "as (at the start)",
+         "uz": "chunki (gap boshida)"
+        },
+        "Comme il pleuvait, on est restés."
+       ],
+       [
+        "grâce à",
+        {
+         "ru": "благодаря (хорошее)",
+         "en": "thanks to (good)",
+         "uz": "tufayli (yaxshi)"
+        },
+        "J'ai réussi grâce à toi."
+       ],
+       [
+        "à cause de",
+        {
+         "ru": "из-за (плохое)",
+         "en": "because of (bad)",
+         "uz": "sababli (yomon)"
+        },
+        "Le match est annulé à cause de la pluie."
+       ]
+      ]
+     }
+    },
+    {
+     "h": {
+      "ru": "Следствие",
+      "en": "Consequence",
+      "uz": "Natija"
+     }
+    },
+    {
+     "p": {
+      "ru": "Чтобы сказать «поэтому, значит, так что», используют *donc* (значит), *alors* (тогда, ну и), *c'est pourquoi* (вот почему), *si … que* (так … что): *Il était si fatigué qu'il s'est endormi* — Он был так устал, что уснул.",
+      "en": "For consequences: *donc*, *alors*, *c'est pourquoi*, *si … que*: *Il était si fatigué qu'il s'est endormi.*",
+      "uz": "«Shuning uchun, demak» deyish uchun *donc* (demak), *alors* (unda, xullas), *c'est pourquoi* (shuning uchun), *si … que* (shunchalik … ki) ishlatiladi: *Il était si fatigué qu'il s'est endormi* — U shunchalik charchagan ediki, uxlab qoldi."
+     }
+    },
+    {
+     "ex": [
+      {
+       "s": "Je n'ai pas mangé *parce que* je n'avais pas faim.",
+       "t": {
+        "ru": "Я не ел, потому что не был голоден.",
+        "uz": "Qornim och bo'lmagani uchun ovqatlanmadim.",
+        "en": "I didn't eat because I wasn't hungry."
+       }
+      },
+      {
+       "s": "*Comme* il fait beau, on va à la plage.",
+       "t": {
+        "ru": "Так как погода хорошая, мы идём на пляж.",
+        "uz": "Havo yaxshi bo'lgani uchun plyajga boramiz.",
+        "en": "As the weather is nice, we're going to the beach."
+       }
+      },
+      {
+       "s": "Je pense, *donc* je suis.",
+       "t": {
+        "ru": "Я мыслю, следовательно, существую.",
+        "uz": "Fikrlayman, demak, mavjudman.",
+        "en": "I think, therefore I am."
+       }
+      }
+     ]
+    },
+    {
+     "note": {
+      "ru": "*Comme* в значении «так как» всегда стоит в начале предложения. *Grâce à* — для хорошего, *à cause de* — для плохого.",
+      "en": "*Comme* (as) always starts the sentence. *Grâce à* for good things, *à cause de* for bad ones.",
+      "uz": "«Chunki» ma'nosidagi *comme* doim gap boshida turadi. *Grâce à* — yaxshi narsa uchun, *à cause de* — yomon narsa uchun."
+     }
+    }
+   ],
    "ex": [
     {
      "k": "choose",

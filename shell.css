@@ -998,3 +998,22 @@ button.stop.done:hover .stop-node { color:var(--bg); border-color:var(--emerald)
   .journey-node { width:28px; height:28px; }
   .journey-stop:not(:last-child)::after { top:20px; left:calc(50% + 18px); right:calc(-50% + 18px); }
 }
+
+/* v2.44 — the back of the card: the translation, then the definition and an example in the language being learned,
+   each under a short label; the studied word is highlighted inside the example. */
+.card-face.back .card-hint:empty { display:none; }
+.card-face.back:has(.ctx-row) .card-word { font-size:clamp(28px, 4.2vw, 42px); margin:6px 0 0; }
+.card-face.back .context-block { display:grid; align-content:start; gap:14px; width:100%; max-width:560px; max-height:none; margin:12px auto 0; overflow:visible;
+  text-align:left; font-size:14px; color:var(--text); }
+.card-face.back .context-block:has(.ctx-row) { flex:1 1 auto; min-height:0; overflow-y:auto; padding-top:12px; border-top:1px solid var(--stroke-soft); overscroll-behavior:contain; }
+.ctx-row { display:grid; align-content:start; gap:3px; }
+.ctx-label { font:500 12px/1.2 var(--font-ui); color:var(--muted); }
+.context-block .ctx-text { margin:0; font:400 14.5px/1.45 var(--font-ui); color:var(--text); text-wrap:pretty; }
+.ctx-example { display:flex; align-items:flex-start; gap:8px; }
+.context-block .ctx-example + .ctx-example { margin-top:4px; }
+.ctx-example .speak-mini { flex:none; margin-top:-2px; }
+.ctx-mark { padding:0 2px; border-radius:4px; background:color-mix(in oklab, var(--emerald) 24%, transparent); color:inherit; font-weight:600; }
+@media (max-width:640px) {
+  .card-face.back .context-block { gap:8px; margin-top:10px; }
+  .context-block .ctx-text { font-size:13.5px; }
+}

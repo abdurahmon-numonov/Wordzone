@@ -920,7 +920,7 @@
     setReading('cardReading', fwd && !isListen() ? c.reading : '');
     setReading('cardReadingBack', !fwd || isListen() ? c.reading : '');
     $('cardSub').textContent = tr(fwd ? 'card.subFwd' : 'card.subRev');
-    $('cardHint').textContent = state.cfg.simple ? '' : (c.hint || '');
+    $('cardHint').textContent = ''; // v2.44: the memory hook moved to the first press of "Hint", on the front
     if (L) {
       renderCardContext(c);
       $('sessionLanguage').textContent = langByCode(state.cfg.source).label + ' → ' + target.label;
@@ -978,17 +978,43 @@
       box.appendChild(list);
     }
     if (state.cfg.simple) return;
-    if (c.definition) box.appendChild(h('span', { className: 'context-def', text: c.definition }));
-    (c.examples || []).filter(Boolean).forEach(function (ex) {
-      var line = h('span', { className: 'context-example' });
-      line.lang = state.cfg.source;
-      var b = h('button', { className: 'speak-btn speak-mini', type: 'button' });
-      b.innerHTML = SPEAK_ICON;
-      b.addEventListener('click', function (e) { e.stopPropagation(); e.preventDefault(); speakText(ex, state.cfg.source, b); });
-      line.appendChild(h('span', { text: ex }));
-      line.appendChild(b);
-      box.appendChild(line);
-    });
+    var src = state.cfg.source, srcLabel = langByCode(src).label;
+    if (c.definition) {
+      var def = h('p', { className: 'ctx-text', text: c.definition }); def.lang = src;
+      box.appendChild(h('div', { className: 'ctx-row' }, [h('span', { className: 'ctx-label', text: tr('card.defLabel', { l: srcLabel }) }), def]));
+    }
+    var exs = (c.examples || []).filter(Boolean);
+    if (exs.length) {
+      var row = h('div', { className: 'ctx-row' }, [h('span', { className: 'ctx-label', text: tr(exs.length > 1 ? 'card.exLabels' : 'card.exLabel') })]);
+      exs.forEach(function (ex) {
+        var line = h('p', { className: 'ctx-text ctx-example' });
+        line.lang = src;
+        var txt = h('span', {}); txt.appendChild(markWord(ex, c.original)); line.appendChild(txt); // one flex item, so no gaps around the mark
+        var b = h('button', { className: 'speak-btn speak-mini', type: 'button', 'aria-label': tr('card.speakEx') });
+        b.innerHTML = SPEAK_ICON;
+        b.addEventListener('click', function (e) { e.stopPropagation(); e.preventDefault(); speakText(ex, src, b); });
+        line.appendChild(b);
+        row.appendChild(line);
+      });
+      box.appendChild(row);
+    }
+  }
+  // The studied word inside its example sentence, highlighted. Finds inflected forms too ("rage" → "raged",
+  // "boast" → "boasting") by matching the start of a word; phrases are matched as they are. Built from text nodes.
+  function markWord(sentence, word) {
+    var frag = document.createDocumentFragment();
+    var w = String(word || '').replace(/^(to|the|a|an)\s+/i, '').trim(), lower = sentence.toLocaleLowerCase(), at = -1, len = 0;
+    if (w && /\s/.test(w)) { at = lower.indexOf(w.toLocaleLowerCase()); len = w.length; }
+    else if (w) {
+      var stem = w.toLocaleLowerCase().slice(0, Math.max(3, w.length - (w.length > 5 ? 2 : 1)));
+      var re = /[\p{L}\p{M}'’-]+/gu, m;
+      while ((m = re.exec(sentence))) { if (m[0].toLocaleLowerCase().indexOf(stem) === 0) { at = m.index; len = m[0].length; break; } }
+    }
+    if (at < 0) { frag.appendChild(document.createTextNode(sentence)); return frag; }
+    frag.appendChild(document.createTextNode(sentence.slice(0, at)));
+    frag.appendChild(h('mark', { className: 'ctx-mark', text: sentence.slice(at, at + len) }));
+    frag.appendChild(document.createTextNode(sentence.slice(at + len)));
+    return frag;
   }
 
   function setReading(id, text) {
@@ -1636,7 +1662,9 @@
     var c = state.current;
     if (!c || state.revealed || answerLocked) return;
     state.hintLevel = (state.hintLevel || 0) + 1;
-    $('cardSub').textContent = '💡 ' + L.hint(expectedAnswer(), state.hintLevel);
+    // v2.44: the AI's memory hook comes first (it used to sit on the back, next to the answer); then letters
+    var hook = !state.cfg.simple && !isListen() && state.curSide === 'fwd' && c.hint ? c.hint : '';
+    $('cardSub').textContent = '💡 ' + (hook && state.hintLevel === 1 ? hook : L.hint(expectedAnswer(), state.hintLevel - (hook ? 1 : 0)));
     if (isTyping()) $('typedAnswer').focus();
   }
   function practiceDeck(d, mode) {
@@ -1839,7 +1867,7 @@
     renderGoal($('goalStripProg'), true);
     $('progTiles').textContent = '';
     [tile(tr('prog.tileToday'), String(fc.days[0]), fc.fresh ? trn('prog.tileNew', fc.fresh) : ''),
-     tile(tr('prog.tileStreak'), trn('streak.days', library.streak.count), tr('prog.tileBest', { n: trn('streak.days', best) })),
+     tile(tr('prog.tileStreak'), trn('streak.days', library.streak.count || 0), tr('prog.tileBest', { n: trn('streak.days', best) })),
      tile(tr('prog.tileAccuracy'), acc.pct == null ? '—' : acc.pct + '%', trn('act.answers', acc.answers)),
      tile(tr('prog.tileWords'), String(translated.length), tr('prog.tileMature', { n: mat.mature }))
     ].forEach(function (t) { $('progTiles').appendChild(t); });
@@ -2571,7 +2599,7 @@
   function renderDaily() {
     renderSteps();
     var h = library.history[L.day()] || { answers: 0 };
-    $('streakCount').textContent = trn('streak.days', library.streak.count);
+    $('streakCount').textContent = trn('streak.days', library.streak.count || 0);
     $('dailyTitle').textContent = tr(h.answers >= library.goal ? 'daily.done' : 'daily.almost');
     $('dailyText').textContent = tr('daily.text', { a: h.answers, g: library.goal });
     $('dailyBar').style.width = Math.min(100, h.answers / library.goal * 100) + '%';

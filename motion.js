@@ -6,9 +6,11 @@
   var systemMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var motionChoice = 'system';
   try { motionChoice = localStorage.getItem('vm.motion') || 'system'; } catch (e) {}
-  // Weak phones (<=2 GB RAM, <=2 cores) and data-saver mode start with 3D off; the 3D button still turns it on.
+  // 3D is on by default, as it always was. It starts off only when the system asks for less motion, or on a
+  // truly tiny device (1 GB RAM or less). "2 cores" and data-saver used to switch it off too, which hid the card
+  // flip and tilt on ordinary laptops; the 3D button still turns it on or off and the choice is remembered.
   var nav = window.navigator || {};
-  var lowEnd = (nav.deviceMemory && nav.deviceMemory <= 2) || (nav.hardwareConcurrency && nav.hardwareConcurrency <= 2) || !!(nav.connection && nav.connection.saveData);
+  var lowEnd = !!(nav.deviceMemory && nav.deviceMemory <= 1);
   var reduced = { get matches() { return motionChoice === 'off' || (motionChoice !== 'on' && (systemMotion.matches || lowEnd)); } };
   function tr(key) { return window.VMI18n ? window.VMI18n.t(key) : key; }
   if (window.VMI18n) window.VMI18n.onChange(function () { updateMotionPreference(); });

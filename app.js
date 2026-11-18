@@ -449,23 +449,39 @@
 
   /* ---------------- AI & Translation ---------------- */
 
-  async function checkServerStatus() {
-    try {
-      var r = await fetch('/api/ai', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{"action":"status"}', signal: AbortSignal.timeout(8000) });
-      if (r.ok) {
-        var d = await r.json();
-        state.serverHasKey = Boolean(d.serverKeyConfigured);
-        state.serverProvider = d.provider || '';
-        if (d.account && window.VMAccount && L && !account) mountAccount(d.account);
-        if (document.body) document.body.classList.toggle('server-ai', state.serverHasKey); // the site's own key: nothing to connect
-        state.serverAvailable = true;
-      } else {
-        state.serverAvailable = false;
+  // Asks the server whether it has its own AI key. A slow cold start or a network blip used to switch the AI
+  // off for the whole visit (every word then went to the free translator), so transient failures now retry,
+  // and only a definite "there is no API here" (404 / 405 / 501) turns the server route off.
+  var statusPending = null;
+  function checkServerStatus(quick) {
+    if (statusPending) return statusPending;
+    statusPending = (async function () {
+      var waits = quick ? [0] : [0, 1500, 4000];
+      for (var i = 0; i < waits.length; i++) {
+        if (waits[i]) await new Promise(function (r) { setTimeout(r, waits[i]); });
+        try {
+          var r = await fetch('/api/ai', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{"action":"status"}', signal: AbortSignal.timeout(10000) });
+          if (r.ok) {
+            var d = await r.json();
+            state.serverHasKey = Boolean(d.serverKeyConfigured);
+            state.serverProvider = d.provider || '';
+            if (d.account && window.VMAccount && L && !account) mountAccount(d.account);
+            if (document.body) document.body.classList.toggle('server-ai', state.serverHasKey); // the site's own key: nothing to connect
+            state.serverAvailable = true;
+            break;
+          }
+          if (r.status === 404 || r.status === 405 || r.status === 501) { state.serverAvailable = false; break; }
+        } catch (e) { /* timeout or offline: try again */ }
       }
-    } catch (e) {
-      state.serverAvailable = false;
-    }
-    updateApiStatus();
+      updateApiStatus();
+      if (state.serverHasKey || state.cfg.apiKey) healNoAI();
+    })().finally(function () { statusPending = null; });
+    return statusPending;
+  }
+  // Before giving up on the AI, ask the server once more (the first check may have failed on a blip).
+  async function aiReady() {
+    if (!state.serverHasKey && !state.cfg.apiKey && state.serverAvailable !== false && navigator.onLine !== false) await checkServerStatus(true);
+    return state.serverHasKey || Boolean(state.cfg.apiKey);
   }
 
   var ownKeyOpen = false;
@@ -528,8 +544,8 @@
         if (r.status === 404 || r.status === 405 || r.status === 501 || j.code === 'no-key') state.serverAvailable = false;
         else throw aiError(j.code || 'provider-unavailable', j.error);
       } catch (e) {
-        if (e instanceof TypeError) state.serverAvailable = false;
-        else throw e;
+        if (e && e.code) throw e;
+        throw aiError(e && e.name === 'TimeoutError' ? 'provider-timeout' : 'provider-unavailable'); // retried by aiBatch
       }
     }
 
@@ -720,7 +736,7 @@
     // AI first, batch by batch. A failed batch is retried, then split in halves, so one bad answer
     // never sends the whole list to the free translator. Words the AI still could not do are marked noAI
     // (badge on the card, "translate again" in the deck menu) instead of getting a fake hint.
-    var canTryAI = state.serverHasKey || Boolean(state.cfg.apiKey);
+    var canTryAI = await aiReady();
     var aiCards = [], left = needTranslation.slice(), lastErr = null;
     if (canTryAI) {
       var parts = aiChunks(needTranslation), done = 0;
@@ -760,10 +776,11 @@
   }
 
   // One AI request with a retry for transient errors. Resolves to { items } or { code, fatal }.
-  var FATAL_AI = { 'no-key': 1, 'provider-auth': 1, 'rate-limited': 1, 'provider-rate-limit': 1, 'forbidden-origin': 1, 'provider-bad-request': 1 };
+  var FATAL_AI = { 'no-key': 1, 'provider-auth': 1, 'rate-limited': 1, 'forbidden-origin': 1, 'provider-bad-request': 1 };
+  var AI_WAITS = [900, 2500]; // pauses before the 2nd and 3rd try (tests may shorten them)
   async function aiBatch(words, opts) {
     var code = null;
-    for (var attempt = 0; attempt < 2; attempt++) {
+    for (var attempt = 0; attempt <= AI_WAITS.length; attempt++) {
       try {
         var parsed = await callAI(words, opts);
         var items = (parsed || []).map(aiCard).filter(function (c) { return c.translation && c.translation !== '—'; });
@@ -774,10 +791,11 @@
         console.warn('AI batch failed:', code);
         if (FATAL_AI[code]) return { code: code, fatal: true };
       }
-      if (state.cancelled) break;
-      await new Promise(function (r) { setTimeout(r, 900); });
+      if (state.cancelled || attempt === AI_WAITS.length) break;
+      // Gemini's free tier answers 429 for a few seconds when busy: wait longer before the next try
+      await new Promise(function (r) { setTimeout(r, code === 'provider-rate-limit' ? AI_WAITS[attempt] * 3 : AI_WAITS[attempt]); });
     }
-    return { code: code };
+    return { code: code, fatal: code === 'provider-rate-limit' };
   }
   function aiCard(p) {
     var c = { original: p.original, translation: p.translation || '—', hint: p.hint || '', definition: p.definition || '', examples: p.examples || [] };
@@ -2908,23 +2926,42 @@
 
   /* Words the AI could not translate (free translator or "—") can be sent to the AI again, deck by deck. */
   function needsAI(c) { return Boolean(c.noAI) || !c.translation || c.translation === '—'; }
+  // Words that fell back to the free translator (AI busy, offline, a blip) are redone quietly once the AI answers
+  // again: at most 40 words per visit, a few seconds after loading, never while a deck is being built.
+  var healed = false;
+  function healNoAI() {
+    if (healed) return;
+    healed = true;
+    setTimeout(async function () {
+      var budget = 40, fixed = 0;
+      var keys = Object.keys(library.decks).filter(function (k) { return library.decks[k].cards.some(function (c) { return c.noAI && c.translation && c.translation !== '—'; }); });
+      for (var i = 0; i < keys.length && budget > 0; i++) {
+        if ($('screen-loading').classList.contains('active') || retranslating || navigator.onLine === false) return;
+        var n = library.decks[keys[i]].cards.filter(function (c) { return c.noAI; }).length;
+        fixed += await retranslateDeck(keys[i], null, Math.min(budget, n));
+        budget -= n;
+      }
+      if (fixed) toast(trn('toast.healed', fixed), 'ok', 5000);
+    }, 4000);
+  }
   function retranslateItem(key, before) {
     var d = library.decks[key], n = d ? d.cards.filter(needsAI).length : 0;
     if (!n) return [];
     return [{ label: tr('deck.retranslate', { n: n }), icon: '✦', run: function () { if (before) before(); retranslateDeck(key); } }];
   }
   var retranslating = false;
-  async function retranslateDeck(key, only) {
+  async function retranslateDeck(key, only, silent) {
     var d = library.decks[key];
     if (!d || retranslating) return 0;
-    if (!(state.serverHasKey || state.cfg.apiKey)) { toast(tr('aiErr.no-key'), 'err', 6000); return 0; }
+    if (!(await aiReady())) { if (!silent) toast(tr('aiErr.no-key'), 'err', 6000); return 0; }
     // "only": one card from the training screen, which may not be in the library yet.
     var todo = only ? only.map(function (w) { return { original: w }; }) : d.cards.filter(needsAI);
     if (!todo.length) return 0;
     retranslating = true;
     var fixed = 0, err = null, LIM = window.VMAICore.LIMITS;
     var words = todo.map(function (c) { return c.original; }).filter(function (w) { return w.length <= LIM.wordLength; });
-    toast(tr('toast.retranslating', { n: words.length }), 'ok', 3000);
+    if (silent) words = words.slice(0, silent);
+    if (!silent) toast(tr('toast.retranslating', { n: words.length }), 'ok', 3000);
     try {
       var queue = [];
       for (var i = 0; i < words.length; i += CHUNK) queue.push(words.slice(i, i + CHUNK));
@@ -2956,6 +2993,7 @@
       if (state.current && $('screen-train').classList.contains('active') && !state.revealed) renderCard();
       else if (state.current) renderCardContext(state.current);
     }
+    if (silent) return fixed;
     var reason = err ? tr('aiErr.' + err) : '';
     if (reason === 'aiErr.' + err) reason = '';
     if (fixed === todo.length) toast(trn('toast.retranslated', fixed), 'ok', 4000);

@@ -814,6 +814,21 @@ run.server(server);
   await page.locator('.journey-btn').nth(1).click();
   assert.equal(await page.evaluate(() => document.activeElement.id), 'chapter-A2', 'a stop jumps to its chapter');
 
+  step('3D: an "off" saved before v2.45 is cleared once, a new choice sticks');
+  await page.emulateMedia({ reducedMotion: 'no-preference' }); // this suite runs with "reduce motion" on
+  await page.evaluate(() => { localStorage.setItem('vm.motion', 'off'); localStorage.removeItem('vm.motion.v2'); });
+  await reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'on', 'the old "off" no longer hides the tilt and flip');
+  await page.click('#btnMotion');
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'off', 'the button still turns 3D off');
+  await reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'off', 'and that new choice is kept');
+  await page.click('#btnMotion');
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'on');
+  await page.evaluate(() => localStorage.removeItem('vm.motion'));
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await reload();
+
   step('dashboard shell: Gemini shortcut, library filters, breadcrumb, phone drawer');
   await page.click('#btnSideGemini');
   await page.locator('#apiBox[open]').waitFor();

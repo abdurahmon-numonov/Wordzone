@@ -5,7 +5,15 @@
   'use strict';
   var systemMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var motionChoice = 'system';
-  try { motionChoice = localStorage.getItem('vm.motion') || 'system'; } catch (e) {}
+  try {
+    // v2.45: an "off" saved before this version (often by accident, or by the old auto-off on "weak" devices)
+    // is cleared once, so the card tilts and flips again as on the original site. Choices made from now on stick.
+    if (!localStorage.getItem('vm.motion.v2')) {
+      if (localStorage.getItem('vm.motion') === 'off') localStorage.removeItem('vm.motion');
+      localStorage.setItem('vm.motion.v2', '1');
+    }
+    motionChoice = localStorage.getItem('vm.motion') || 'system';
+  } catch (e) {}
   // 3D is on by default, as it always was. It starts off only when the system asks for less motion, or on a
   // truly tiny device (1 GB RAM or less). "2 cores" and data-saver used to switch it off too, which hid the card
   // flip and tilt on ordinary laptops; the 3D button still turns it on or off and the choice is remembered.

@@ -1028,7 +1028,7 @@ html:not([data-ready]) .boot { display:flex; }
 .boot-note { max-width:calc(100vw - 32px); box-sizing:border-box; text-align:center; text-wrap:balance; margin-top:12px; padding:7px 14px; border:1px solid var(--stroke); border-radius:999px; background:var(--surface); color:var(--text);
   font:500 13px/1.3 var(--font-ui); box-shadow:0 8px 24px -12px rgba(0,0,0,.35); opacity:0; animation:boot-note .3s ease-out 3s forwards; }
 @keyframes boot-note { to { opacity:1; } }
-html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; opacity:.72; }
+html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
 .app-shell { transition:opacity .25s ease-out; }
 #arcadeHub[aria-busy="true"] .arcade-cta { opacity:.6; }
 @media (prefers-reduced-motion: reduce) {

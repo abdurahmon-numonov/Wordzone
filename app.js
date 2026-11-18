@@ -4026,7 +4026,12 @@
     loadCfg();
     if (L) {
       // Offline support and "install app"; plain http (except localhost) cannot register workers.
-      if ('serviceWorker' in navigator && window.isSecureContext) navigator.serviceWorker.register('sw.js').catch(function () {});
+      // The worker saves the whole site for offline use (several MB on first install). It starts only after the page
+      // has fully loaded and settled, so on a slow connection it never takes bandwidth from what the learner sees.
+      if ('serviceWorker' in navigator && window.isSecureContext) {
+        var regWorker = function () { setTimeout(function () { navigator.serviceWorker.register('sw.js').catch(function () {}); }, 3000); };
+        if (document.readyState === 'complete') regWorker(); else window.addEventListener('load', regWorker, { once: true });
+      }
       var installEvt = null;
       window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvt = e; $('btnInstall').hidden = false; });
       window.addEventListener('appinstalled', function () { $('btnInstall').hidden = true; });

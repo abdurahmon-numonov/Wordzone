@@ -12,8 +12,13 @@ const SHELL = ['./', 'index.html', 'app.min.css?v=' + V, 'core.min.js?v=' + V, '
   'vendor/fonts/fonts.css?v=' + V, 'icons/icon-192.png'];
 const PAGE_WAIT = 3500;
 
+// Files without a version in the URL (course texts, libraries, icons) rarely change between releases: an update
+// copies them from the previous cache instead of downloading ~4 MB again; using them online still refreshes them.
+const REUSE = url => !/[?&]v=/.test(url) && /^(course|vendor|motion|icons)\//.test(url);
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then(c => Promise.all(SHELL.map(url =>
+    (REUSE(url) ? caches.match(url) : Promise.resolve(null)).then(hit => hit ? c.put(url, hit) : c.add(url))
+  ))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));

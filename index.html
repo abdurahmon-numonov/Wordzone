@@ -10,17 +10,17 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.41" />
-  <link rel="stylesheet" href="styles.css?v=2.41" />
-  <link rel="stylesheet" href="editorial.css?v=2.41" />
-  <link rel="stylesheet" href="shell.css?v=2.41" />
-  <link rel="stylesheet" href="motion.css?v=2.41" />
-  <link rel="stylesheet" href="composer.css?v=2.41" />
-  <link rel="stylesheet" href="onboarding.css?v=2.41" />
-  <link rel="stylesheet" href="arcade.css?v=2.41" />
-  <link rel="stylesheet" href="cafe.css?v=2.41" />
-  <link rel="stylesheet" href="defense.css?v=2.41" />
-  <link rel="stylesheet" href="themes.css?v=2.41" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.42" />
+  <link rel="stylesheet" href="styles.css?v=2.42" />
+  <link rel="stylesheet" href="editorial.css?v=2.42" />
+  <link rel="stylesheet" href="shell.css?v=2.42" />
+  <link rel="stylesheet" href="motion.css?v=2.42" />
+  <link rel="stylesheet" href="composer.css?v=2.42" />
+  <link rel="stylesheet" href="onboarding.css?v=2.42" />
+  <link rel="stylesheet" href="arcade.css?v=2.42" />
+  <link rel="stylesheet" href="cafe.css?v=2.42" />
+  <link rel="stylesheet" href="defense.css?v=2.42" />
+  <link rel="stylesheet" href="themes.css?v=2.42" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -113,6 +113,7 @@
           <span class="scene-caption" data-i18n="hero.caption">Нажми. Переверни. Запомни.</span>
         </div>
       </div>
+      <section class="goal-strip" id="goalStrip" hidden aria-label="Цель" data-i18n-attr="aria-label:goal.aria"></section>
       <div class="workspace-heading composer-heading"><h2 data-i18n="composer.title">Новая тренировка</h2><p data-i18n="composer.sub">Три шага — и карточки готовы.</p></div>
       <div class="composer" id="composer">
         <section class="c-step c-step-deck" aria-labelledby="cStep1">
@@ -451,10 +452,15 @@
       <div class="library-intro"><div><span class="eyebrow" data-i18n="prog.eyebrow">ПРОГРЕСС</span><h1 data-i18n="prog.h1">Как идёт обучение</h1><p data-i18n="prog.sub">Что ждёт впереди, насколько прочно держатся слова и где нужна помощь.</p></div><div class="deck-bar prog-deck" data-deck-bar="progress"></div><label class="filter-field prog-deck deck-synced"><span data-i18n="home.deck">Колода</span><span class="select-wrap"><select id="progDeck" tabindex="-1"></select></span></label></div>
       <p class="quiz-empty" id="progEmpty" hidden><span data-i18n="prog.empty">Статистика появится после первых ответов.</span> <button class="link" type="button" id="btnProgEmpty" data-i18n="lib.emptyBtn">Добавить слова →</button></p>
       <div id="progBody">
+        <section class="goal-strip" id="goalStripProg" hidden aria-label="Цель" data-i18n-attr="aria-label:goal.aria"></section>
         <div class="prog-tiles" id="progTiles"></div>
         <section class="panel prog-panel" aria-labelledby="progForecastTitle">
           <div class="prog-head"><h2 id="progForecastTitle" data-i18n="prog.forecast">Повторения впереди</h2><div class="segmented" id="progRange"><button type="button" data-days="7" class="on" data-i18n="prog.days7">7 дней</button><button type="button" data-days="30" data-i18n="prog.days30">30 дней</button></div></div>
           <figure class="chart" id="forecastChart"></figure>
+        </section>
+        <section class="panel prog-panel" aria-labelledby="progGrowthTitle" id="progGrowth">
+          <h2 id="progGrowthTitle" data-i18n="prog.growth">Выученные слова за 30 дней</h2>
+          <figure class="chart" id="growthChart"></figure>
         </section>
         <section class="panel prog-panel" aria-labelledby="progAccuracyTitle">
           <h2 id="progAccuracyTitle" data-i18n="prog.accuracy">Ответы и точность за 30 дней</h2>
@@ -471,7 +477,7 @@
       </div>
     </section>
   </main>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.41</span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.42</span></footer>
   </div>
   </div>
 
@@ -697,6 +703,19 @@
       <div class="actions editor-actions"><button class="btn primary" type="submit" data-i18n="ask.save">Сохранить</button><button class="btn" type="button" id="editorCancel" data-i18n="share.cancel">Отмена</button></div>
     </form>
   </div>
+  <div class="overlay" id="goalDialog" hidden role="dialog" aria-modal="true" aria-labelledby="goalDlgTitle">
+    <form class="panel share-card ask-card goal-form" id="goalForm" novalidate>
+      <h2 id="goalDlgTitle" data-i18n="goal.dlgTitle">Твоя цель</h2>
+      <p class="mini" data-i18n="goal.dlgText">Укажи дату и сколько слов хочешь выучить — посчитаем, сколько учить в день. Выученное слово — то, что ты вспомнил два раза подряд.</p>
+      <label class="field"><span data-i18n="goal.name">Название (необязательно)</span><input id="goalName" type="text" maxlength="40" autocomplete="off" placeholder="IELTS 7.5" /></label>
+      <div class="goal-fields">
+        <label class="field"><span data-i18n="goal.date">Дата</span><input id="goalDate" type="date" required aria-describedby="goalErr" /></label>
+        <label class="field"><span data-i18n="goal.words">Сколько слов выучить</span><input id="goalWords" type="number" min="10" max="20000" step="10" inputmode="numeric" required aria-describedby="goalErr" /></label>
+      </div>
+      <p class="goal-err" id="goalErr" role="alert" hidden></p>
+      <div class="actions"><button class="btn primary" type="submit" data-i18n="ask.save">Сохранить</button><button class="btn" type="button" id="goalCancel" data-i18n="share.cancel">Отмена</button><button class="btn goal-remove" type="button" id="goalRemove" hidden data-i18n="goal.remove">Убрать цель</button></div>
+    </form>
+  </div>
   <div class="overlay" id="askDialog" hidden role="dialog" aria-modal="true" aria-labelledby="askTitle">
     <form class="panel share-card ask-card" id="askForm" novalidate>
       <h2 id="askTitle"></h2>
@@ -778,21 +797,21 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer src="display.js?v=2.41"></script>
-  <script defer src="i18n.js?v=2.41"></script>
-  <script defer src="motion.js?v=2.41"></script>
-  <script defer src="languages.js?v=2.41"></script>
-  <script defer src="grammar.js?v=2.41"></script>
-  <script defer src="learning.js?v=2.41"></script>
-  <script defer src="writing.js?v=2.41"></script>
-  <script defer src="ai-core.js?v=2.41"></script>
-  <script defer src="share.js?v=2.41"></script>
-  <script defer src="games.js?v=2.41"></script>
-  <script defer src="fishing.js?v=2.41"></script>
-  <script defer src="cafe.js?v=2.41"></script>
-  <script defer src="defense.js?v=2.41"></script>
-  <script defer src="course.js?v=2.41"></script>
-  <script defer src="account.js?v=2.41"></script>
-  <script defer src="app.js?v=2.41"></script>
+  <script defer src="display.js?v=2.42"></script>
+  <script defer src="i18n.js?v=2.42"></script>
+  <script defer src="motion.js?v=2.42"></script>
+  <script defer src="languages.js?v=2.42"></script>
+  <script defer src="grammar.js?v=2.42"></script>
+  <script defer src="learning.js?v=2.42"></script>
+  <script defer src="writing.js?v=2.42"></script>
+  <script defer src="ai-core.js?v=2.42"></script>
+  <script defer src="share.js?v=2.42"></script>
+  <script defer src="games.js?v=2.42"></script>
+  <script defer src="fishing.js?v=2.42"></script>
+  <script defer src="cafe.js?v=2.42"></script>
+  <script defer src="defense.js?v=2.42"></script>
+  <script defer src="course.js?v=2.42"></script>
+  <script defer src="account.js?v=2.42"></script>
+  <script defer src="app.js?v=2.42"></script>
 </body>
 </html>

@@ -252,3 +252,47 @@ console.log('✓ Backups: prototype keys are never accepted as languages');
   assert.equal(merged.translation, 'дом'); assert.equal(merged.noAI, undefined); assert.equal(merged.streak, 3, 'progress stays');
   console.log('✓ Meanings and the no-AI mark: kept in backups, AI translation wins a merge');
 }
+
+{
+  // v2.42: a personal goal with a deadline, and daily "learned" snapshots for the chart
+  const t = L.cleanTarget({ name: '  IELTS\u0007 7.5  ', date: '2027-01-01', words: 300, set: 5, junk: 1 });
+  assert.deepEqual(t, { date: '2027-01-01', words: 300, name: 'IELTS 7.5', set: 5 }, 'name trimmed, control characters and unknown fields dropped');
+  assert.equal(L.cleanTarget({ date: '2027-13', words: 10 }), null, 'a goal needs a real date');
+  assert.equal(L.cleanTarget({ date: '2027-01-01', words: 3 }).words, 10, 'at least 10 words');
+  assert.equal(L.cleanTarget({ date: '2027-01-01', words: 1e9 }).words, L.TARGET_MAX_WORDS);
+  assert.equal(L.cleanTarget({ date: '2027-01-01' }).words, 500, 'a sensible default');
+  assert.equal(L.cleanTarget({ date: '2027-01-01', words: 50, name: 'x'.repeat(90) }).name.length, 40);
+
+  const plan = L.planTarget({ date: '2026-12-01', words: 100 }, 40, '2026-11-21');
+  assert.deepEqual(plan, { days: 10, left: 60, learned: 40, words: 100, pct: 40, perDay: 6, state: 'active' });
+  assert.equal(L.planTarget({ date: '2026-12-01', words: 100 }, 100, '2026-11-21').state, 'done');
+  assert.equal(L.planTarget({ date: '2026-12-01', words: 100 }, 10, '2026-12-01').state, 'past', 'the date itself is not a study day');
+  assert.equal(L.planTarget({ date: '2026-12-01', words: 100 }, 10, '2026-12-05').days, 0);
+  assert.equal(L.planTarget(null, 1, '2026-11-21'), null);
+
+  const lib = { decks: { a: { cards: [{ streak: 2 }, { streak: 5 }, { streak: 1 }, {}] }, b: { cards: [{ streak: 2 }] } } };
+  assert.equal(L.learnedCount(lib), 3, 'learned = recalled twice in a row');
+
+  const series = L.knownSeries({ '2026-11-01': { known: 4 }, '2026-11-19': { answers: 2, known: 7 }, '2026-11-20': { answers: 1 } }, 4, '2026-11-21');
+  assert.deepEqual(series.map(d => d.known), [4, 7, 7, 7], 'a snapshot older than the window starts the line; gaps repeat the last value');
+  assert.deepEqual(L.knownSeries({}, 2, '2026-11-21').map(d => d.known), [null, null], 'no data, no invented points');
+
+  // backups and cloud sync keep both
+  const backup = { version: 2, library: { decks: {}, history: { '2026-11-19': { answers: 3, correct: 2, known: 9 }, '2026-11-20': { answers: 1, correct: 1, known: -4 } }, goal: 10,
+    streak: { count: 1, last: '2026-11-19', freezes: 2, enabled: true }, target: { date: '2027-01-01', words: 300, name: 'SAT' } } };
+  const restored = L.restoreBackup(backup, ['en', 'ru']);
+  assert.equal(restored.history['2026-11-19'].known, 9);
+  assert.equal(restored.history['2026-11-20'].known, undefined, 'a negative snapshot is dropped');
+  assert.deepEqual(restored.target, { date: '2027-01-01', words: 300, name: 'SAT' });
+  assert.equal(L.restoreBackup(Object.assign({}, backup, { library: Object.assign({}, backup.library, { target: { date: 'soon' } }) }), ['en', 'ru']).target, undefined);
+
+  const phone = { decks: {}, history: { '2026-11-19': { answers: 5, correct: 5, known: 3 } }, streak: {}, target: { date: '2027-01-01', words: 300, set: 100 } };
+  const laptop = { decks: {}, history: { '2026-11-19': { answers: 2, correct: 1, known: 8 } }, streak: {}, target: { date: '2027-03-01', words: 800, set: 200 } };
+  const m = L.mergeLibrary(phone, laptop);
+  assert.equal(m.history['2026-11-19'].answers, 5, 'more answers win, as before');
+  assert.equal(m.history['2026-11-19'].known, 8, 'the higher learned count is kept');
+  assert.equal(m.target.words, 800, 'the goal set most recently wins');
+  assert.equal(L.mergeLibrary(laptop, phone).target.words, 800, 'whichever side it comes from');
+  assert.equal(L.mergeLibrary({ decks: {}, history: {}, streak: {} }, { decks: {}, history: {}, streak: {} }).target, undefined);
+  console.log('✓ Goal with a deadline: clean, plan, learned snapshots, backups and cloud merge');
+}

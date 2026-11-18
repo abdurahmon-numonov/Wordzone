@@ -313,6 +313,34 @@
       var t = now(), prog = progress();
       return topicsOf(lang).filter(function (x) { return isDue(prog[lang + '.' + x.id], t); });
     }
+    /* The four levels as stops of a journey along the Silk Road (Tashkent → Samarkand → Bukhara → Khiva):
+       done levels are ticked, the first unfinished one says "you are here". Each stop jumps to its chapter. */
+    function journey(topics, prog) {
+      var stops = LEVELS.map(function (level) {
+        var list = topics.filter(function (t) { return t.level === level; });
+        var done = list.filter(function (t) { return topicState(prog[lang + '.' + t.id]) === 'done'; }).length;
+        return { level: level, total: list.length, done: done };
+      }).filter(function (s) { return s.total; });
+      var current = stops.findIndex(function (s) { return s.done < s.total; });
+      var ol = h('ol', { className: 'journey-stops' });
+      stops.forEach(function (s, i) {
+        var st = s.done === s.total ? 'done' : i === current ? 'current' : 'next';
+        var btn = h('button', { type: 'button', className: 'journey-btn', 'aria-label': tr('course.journeyStop', { l: s.level, c: tr('course.city.' + s.level), d: s.done, n: s.total }) }, [
+          h('span', { className: 'journey-node', 'aria-hidden': 'true', text: st === 'done' ? '✓' : '' }),
+          h('span', { className: 'journey-city', 'aria-hidden': 'true', text: tr('course.city.' + s.level) }),
+          h('span', { className: 'journey-meta', 'aria-hidden': 'true', text: s.level + ' · ' + s.done + '/' + s.total })
+        ]);
+        if (st === 'current') btn.setAttribute('aria-current', 'step');
+        btn.onclick = function () {
+          var ch = document.getElementById('chapter-' + s.level);
+          if (ch) { ch.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); ch.focus({ preventScroll: true }); }
+        };
+        var li = h('li', { className: 'journey-stop ' + st }, [btn]);
+        li.style.setProperty('--fill', (s.total ? Math.round(s.done / s.total * 100) : 0) + '%');
+        ol.appendChild(li);
+      });
+      return h('nav', { className: 'journey', 'aria-label': tr('course.journey') }, [ol]);
+    }
     function renderPath() {
       var box = $('coursePath'), info = langInfo(lang), topics = topicsOf(lang), prog = progress(), l = ui();
       box.removeAttribute('aria-busy');
@@ -345,13 +373,14 @@
         bar.firstChild.style.width = (topics.length ? Math.round(done / topics.length * 100) : 0) + '%';
         head.appendChild(bar);
         box.appendChild(head);
+        box.appendChild(journey(topics, prog));
       }
       var n = 0, t0 = now();
       LEVELS.forEach(function (level) {
         var list = topics.filter(function (t) { return t.level === level; });
         if (!list.length) return;
         var cp = info.ready ? prog[lang + '.check-' + level.toLowerCase()] : null;
-        var chapter = h('section', { className: 'chapter', 'aria-label': level + ' · ' + tr('course.lvl.' + level) }, [
+        var chapter = h('section', { className: 'chapter', id: 'chapter-' + level, tabindex: '-1', 'aria-label': level + ' · ' + tr('course.lvl.' + level) }, [
           h('header', { className: 'chapter-head' }, [h('span', { className: 'chapter-level', text: level }), h('span', { className: 'chapter-name', text: tr('course.lvl.' + level) }),
             cp && cp.done ? h('span', { className: 'chapter-badge', text: '✓ ' + tr('course.cpPassed') }) : null])
         ]);

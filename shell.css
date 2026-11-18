@@ -931,3 +931,70 @@ button.stop.done:hover .stop-node { color:var(--bg); border-color:var(--emerald)
   .theory-table { font-size:14px; } .theory-table .is-lang { font-size:15px; }
 }
 .theory-em { font-weight:700; color:var(--text); }
+
+/* v2.42 — personal goal with a deadline (study + progress screens) and its dialog. */
+.goal-strip { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:18px 22px; margin:0 0 26px; padding:16px 20px;
+  border:1px solid var(--stroke); border-radius:16px; background:var(--surface); }
+.goal-strip[hidden] { display:none; }
+.goal-strip:not(.is-set) { grid-template-columns:minmax(0,1fr) auto; padding:14px 18px; border-style:dashed; background:transparent; }
+.goal-ask { margin:0; font:400 14px/1.5 var(--font-ui); color:var(--muted); text-wrap:pretty; }
+.goal-ask strong { color:var(--text); font-weight:600; }
+.goal-when { display:flex; flex-direction:column; align-items:center; justify-content:center; min-width:76px; padding-right:22px; border-right:1px solid var(--stroke-soft); text-align:center; }
+.goal-days { font:500 40px/1 var(--font-display); color:var(--amber); font-variant-numeric:tabular-nums; }
+.goal-days-l { margin-top:4px; font:500 11.5px/1.25 var(--font-ui); color:var(--muted); }
+.goal-done .goal-days { color:var(--emerald); }
+.goal-past .goal-days { color:var(--muted); }
+.goal-main { min-width:0; }
+.goal-name { margin:0 0 9px; font:600 15px/1.3 var(--font-ui); color:var(--text); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.goal-bar { display:block; height:6px; border-radius:6px; overflow:hidden; background:var(--stroke-soft); }
+.goal-bar i { display:block; height:100%; min-width:6px; border-radius:inherit; background:var(--amber); transition:width .5s cubic-bezier(.22,1,.36,1); }
+.goal-meta { display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 16px; margin:8px 0 0; font:400 13px/1.4 var(--font-ui); color:var(--muted); }
+.goal-pace { color:var(--text); font-weight:500; }
+.goal-btn { justify-self:end; white-space:nowrap; min-height:40px; }
+#screen-progress .goal-strip { margin-bottom:18px; }
+.goal-fields { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.goal-form .field { margin-top:12px; }
+.goal-form .field input { width:100%; box-sizing:border-box; font-size:14px; }
+.goal-err { margin:10px 0 0; font:500 13px var(--font-ui); color:var(--rose); }
+.goal-remove { margin-left:auto; color:var(--rose); border-color:transparent; background:transparent; }
+.chart-goal { stroke:var(--amber); stroke-width:1.5; stroke-dasharray:5 5; }
+.chart-goal-label { font:600 11px var(--font-ui); fill:var(--amber); }
+.bar-known { fill:color-mix(in oklab, var(--amber) 70%, var(--surface)); }
+@media (max-width:640px) {
+  .goal-strip.is-set { grid-template-columns:auto minmax(0,1fr); padding:14px 16px; gap:12px 16px; }
+  .goal-strip.is-set .goal-btn { grid-column:2; justify-self:start; min-height:36px; margin-top:-4px; }
+  .goal-when { min-width:60px; padding-right:16px; }
+  .goal-days { font-size:32px; }
+  .goal-strip:not(.is-set) { grid-template-columns:1fr; }
+  .goal-strip:not(.is-set) .goal-btn { justify-self:start; }
+  .goal-fields { grid-template-columns:1fr; gap:0; }
+}
+@media (prefers-reduced-motion: reduce) { .goal-bar i { transition:none; } }
+
+/* v2.42 — grammar course: the four levels as a journey along the Silk Road. */
+.journey { margin:18px 0 30px; }
+.journey-stops { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); }
+.journey-stop { position:relative; display:flex; justify-content:center; }
+.journey-stop:not(:last-child)::after { content:""; position:absolute; z-index:0; top:22px; left:calc(50% + 20px); right:calc(-50% + 20px); height:3px; border-radius:3px;
+  background:linear-gradient(90deg, var(--amber) var(--fill, 0%), var(--stroke-soft) var(--fill, 0%)); }
+.journey-btn { position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; gap:5px; min-width:0; max-width:100%; padding:6px 6px 8px;
+  border:0; border-radius:12px; background:none; color:var(--text); cursor:pointer; }
+.journey-btn:hover .journey-city { color:var(--amber); }
+.journey-btn:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+.journey-node { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; border:2px solid var(--stroke); background:var(--surface);
+  font:700 14px/1 var(--font-ui); color:var(--bg); box-sizing:border-box; }
+.journey-stop.done .journey-node { border-color:var(--amber); background:var(--amber); }
+.journey-stop.current .journey-node { border-color:var(--amber); box-shadow:0 0 0 5px color-mix(in oklab, var(--amber) 18%, transparent); }
+.journey-stop.current .journey-node::after { content:""; width:10px; height:10px; border-radius:50%; background:var(--amber); }
+.journey-city { font:500 16px/1.2 var(--font-display); color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%; }
+.journey-stop.next .journey-city { color:var(--muted); }
+.journey-meta { font:500 11px/1.2 var(--font-mono); color:var(--muted); letter-spacing:.02em; }
+.journey-stop.current .journey-meta { color:var(--amber); }
+.chapter:focus { outline:none; }
+.chapter:focus-visible { outline:2px solid var(--amber); outline-offset:6px; border-radius:8px; }
+@media (max-width:640px) {
+  .journey-city { font-size:13.5px; }
+  .journey-meta { font-size:10px; }
+  .journey-node { width:28px; height:28px; }
+  .journey-stop:not(:last-child)::after { top:20px; left:calc(50% + 18px); right:calc(-50% + 18px); }
+}

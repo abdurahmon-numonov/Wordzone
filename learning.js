@@ -293,8 +293,10 @@
       });
       Object.keys(lib.history || {}).forEach(function (day) {
         var h = lib.history[day], prev = history[day];
+        var known = Math.max(h.known != null ? h.known : -1, prev && prev.known != null ? prev.known : -1);
         if (!prev || (h.answers || 0) > (prev.answers || 0)) history[day] = Object.assign({}, h, prev && prev.celebrated ? { celebrated: true } : {});
         else if (h.celebrated) prev.celebrated = true;
+        if (known >= 0) history[day].known = known;
       });
     });
     Object.keys(decks).forEach(function (k) { delete decks[k].index; });
@@ -308,6 +310,8 @@
       out.grammar = grammar;
     }
     if (a.course || b.course) out.course = mergeCourse(a.course, b.course);
+    var ta = cleanTarget(a.target), tb = cleanTarget(b.target);
+    if (ta || tb) out.target = !tb || (ta && (ta.set || 0) >= (tb.set || 0)) ? ta : tb;
     return out;
   }
   /* Grammar course progress (v2.23): library.course["en.present-perfect"] = { seen, best, total, last, done }. */
@@ -401,6 +405,7 @@
       var h = incoming.history[k] || {};
       history[k] = { answers: count(h.answers), correct: Math.min(count(h.answers), count(h.correct)) };
       if (h.celebrated) history[k].celebrated = true;
+      if (h.known != null && Number(h.known) >= 0) history[k].known = Math.round(count(h.known));
     });
     var s = incoming.streak;
     var streak = { count: count(s.count), last: DATE.test(s.last || '') ? s.last : null, freezes: Math.min(2, count(s.freezes)), enabled: s.enabled !== false };
@@ -412,12 +417,54 @@
       if (Object.keys(grammar).length) out.grammar = grammar;
     }
     if (incoming.course) { var course = cleanCourse(incoming.course); if (Object.keys(course).length) out.course = course; }
+    var target = cleanTarget(incoming.target);
+    if (target) out.target = target;
     return out;
   }
+  /* A personal goal with a deadline ("IELTS 7.5 on 24 May, 500 words learned"). Learned = streak >= 2,
+     the same rule the library uses. Nothing here reads the clock: `today` is passed in. */
+  var TARGET_MAX_WORDS = 20000;
+  function cleanTarget(t) {
+    if (!t || typeof t !== 'object' || !DATE.test(t.date || '')) return null;
+    var out = { date: t.date, words: Math.max(10, Math.min(TARGET_MAX_WORDS, Math.round(Number(t.words) || 0))) };
+    if (!(Number(t.words) > 0)) out.words = 500;
+    var name = typeof t.name === 'string' ? t.name.replace(/[\u0000-\u001f\u007f]/g, '').replace(/\s+/g, ' ').trim().slice(0, 40) : '';
+    if (name) out.name = name;
+    if (Number(t.set) > 0) out.set = Math.round(Number(t.set));
+    return out;
+  }
+  function learnedCount(library) {
+    var n = 0;
+    Object.keys((library && library.decks) || {}).forEach(function (k) { (library.decks[k].cards || []).forEach(function (c) { if ((c.streak || 0) >= 2) n++; }); });
+    return n;
+  }
+  // days left until the date (the date itself is not a study day), words still to learn and the daily pace that gets there
+  function planTarget(target, learned, today) {
+    var t = cleanTarget(target);
+    if (!t || !DATE.test(today || '')) return null;
+    var days = gap(today, t.date), left = Math.max(0, t.words - (learned || 0));
+    var state = left === 0 ? 'done' : days <= 0 ? 'past' : 'active';
+    return { days: Math.max(0, days), left: left, learned: learned || 0, words: t.words, pct: Math.min(100, Math.round((learned || 0) / t.words * 100)),
+      perDay: state === 'active' ? Math.ceil(left / days) : 0, state: state };
+  }
+  // Learned words by day for the last `days` days, from the snapshots kept in history ("known");
+  // a day without a snapshot repeats the one before it, days before the first snapshot are null.
+  function knownSeries(history, days, today) {
+    var out = [], last = null;
+    var first = Object.keys(history || {}).filter(function (k) { return DATE.test(k) && history[k] && history[k].known != null && k < addDay(today, -(days - 1)); }).sort().pop();
+    if (first) last = history[first].known;
+    for (var i = days - 1; i >= 0; i--) {
+      var d = addDay(today, -i), h = history && history[d];
+      if (h && h.known != null) last = h.known;
+      out.push({ date: d, known: last });
+    }
+    return out;
+  }
+  function addDay(date, n) { var t = new Date(date + 'T00:00:00Z'); t.setUTCDate(t.getUTCDate() + n); return t.toISOString().slice(0, 10); }
   function librarySize(library) {
     var keys = Object.keys((library && library.decks) || {});
     return { decks: keys.length, words: keys.reduce(function (n, k) { return n + library.decks[k].cards.length; }, 0) };
   }
   return { forecast: forecast, maturity: maturity, weakest: weakest, accuracy: accuracy, longestStreak: longestStreak, trimHistory: trimHistory,
-    backupFile: backupFile, restoreBackup: restoreBackup, librarySize: librarySize, day: day, gap: gap, reconcile: reconcile, complete: complete, validate: validate, grade: grade, schedule: schedule, quiz: quiz, swapPairs: swapPairs, reverseCards: reverseCards, hint: hint, pick: pick, pairs: pairs, activity: activity, status: status, mergeLibrary: mergeLibrary, DECK_KEY: DECK_KEY, deckId: deckId, deckKey: deckKey, cleanName: cleanName, keyFor: keyFor, NAME_MAX: NAME_MAX, MAX_DECKS: MAX_DECKS, deckCount: deckCount, canAddDeck: canAddDeck, cleanCourse: cleanCourse, mergeCourse: mergeCourse, cleanMeanings: cleanMeanings };
+    backupFile: backupFile, restoreBackup: restoreBackup, librarySize: librarySize, day: day, gap: gap, reconcile: reconcile, complete: complete, validate: validate, grade: grade, schedule: schedule, quiz: quiz, swapPairs: swapPairs, reverseCards: reverseCards, hint: hint, pick: pick, pairs: pairs, activity: activity, status: status, mergeLibrary: mergeLibrary, DECK_KEY: DECK_KEY, deckId: deckId, deckKey: deckKey, cleanName: cleanName, keyFor: keyFor, NAME_MAX: NAME_MAX, MAX_DECKS: MAX_DECKS, deckCount: deckCount, canAddDeck: canAddDeck, cleanCourse: cleanCourse, mergeCourse: mergeCourse, cleanMeanings: cleanMeanings, cleanTarget: cleanTarget, planTarget: planTarget, learnedCount: learnedCount, knownSeries: knownSeries, TARGET_MAX_WORDS: TARGET_MAX_WORDS };
 });

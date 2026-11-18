@@ -1768,7 +1768,10 @@
     // One SVG unit = one CSS pixel (viewBox follows the real width), so labels never stretch.
     var n = labels.length, W = Math.max(280, Math.round(host.clientWidth || 600)), H = 170, top = 18, bottom = 24, plotH = H - top - bottom;
     var totals = labels.map(function (_, i) { return series.reduce(function (s, se) { return s + se.values[i]; }, 0); });
-    var max = Math.max(1, Math.max.apply(null, totals));
+    var dataMax = Math.max(1, Math.max.apply(null, totals));
+    // A goal far above the data would flatten every bar: then the scale follows the data and the goal shows as "↑".
+    var goalOff = opts.goal && opts.goal.value > dataMax * 2.5;
+    var max = goalOff ? dataMax * 1.25 : Math.max(dataMax, opts.goal ? opts.goal.value * 1.08 : 0);
     var slot = W / n, bw = Math.max(3, Math.min(48, slot * 0.66));
     var chart = svg('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'chart-svg', 'aria-hidden': 'true', focusable: 'false' });
     chart.appendChild(svg('line', { x1: 0, x2: W, y1: top + plotH, y2: top + plotH, class: 'chart-axis' }));
@@ -1781,6 +1784,11 @@
       if (n <= 7 && totals[i]) { var v = svg('text', { x: (x + bw / 2).toFixed(1), y: (y - 5).toFixed(1), 'text-anchor': 'middle', class: 'chart-value' }); v.textContent = totals[i]; chart.appendChild(v); }
       if (n <= 7 || i % 5 === 0 || i === n - 1) { var t = svg('text', { x: (x + bw / 2).toFixed(1), y: H - 6, 'text-anchor': 'middle', class: 'chart-label' }); t.textContent = label; chart.appendChild(t); }
     });
+    if (opts.goal) {
+      var gy = goalOff ? top - 4 : +(top + plotH - opts.goal.value / max * plotH).toFixed(1);
+      if (!goalOff) chart.appendChild(svg('line', { x1: 0, x2: W, y1: gy, y2: gy, class: 'chart-goal' }));
+      var gl = svg('text', { x: W - 4, y: goalOff ? 12 : gy - 5, 'text-anchor': 'end', class: 'chart-goal-label' }); gl.textContent = (goalOff ? '↑ ' : '') + opts.goal.label; chart.appendChild(gl);
+    }
     host.appendChild(chart);
     if (opts.caption) host.appendChild(h('figcaption', { className: 'chart-caption', text: opts.caption }));
     if (opts.legend) host.appendChild(h('div', { className: 'chart-legend', 'aria-hidden': 'true' }, series.map(function (se) { return h('span', { className: 'legend-item ' + se.cls, text: se.name }); })));
@@ -1810,6 +1818,7 @@
     var fc = L.forecast(cards, progressDays, now), mat = L.maturity(cards), acc = L.accuracy(library.history, 30, today);
     var best = Math.max(L.longestStreak(library.history), library.streak.count);
 
+    renderGoal($('goalStripProg'), true);
     $('progTiles').textContent = '';
     [tile(tr('prog.tileToday'), String(fc.days[0]), fc.fresh ? trn('prog.tileNew', fc.fresh) : ''),
      tile(tr('prog.tileStreak'), trn('streak.days', library.streak.count), tr('prog.tileBest', { n: trn('streak.days', best) })),
@@ -1822,6 +1831,16 @@
     var fcTotal = fc.days.reduce(function (a, b) { return a + b; }, 0);
     barChart($('forecastChart'), fcLabels, [{ name: tr('prog.reviews'), values: fc.days, cls: 'bar-due' }],
       { caption: tr('prog.forecastCaption', { today: fc.days[0], total: fcTotal, days: progressDays }), tableCaption: tr('prog.forecast'), columnLabel: tr('prog.day'), rowLabels: fcRows });
+
+    var ks = L.knownSeries(library.history, 30, today), learnedNow = L.learnedCount(library);
+    ks[ks.length - 1].known = learnedNow; // today is always current
+    var plan = library.target && L.planTarget(library.target, learnedNow, today);
+    var growthCaption = tr('prog.growthCaption', { n: learnedNow }) + (plan ? ' ' + tr('prog.growthGoal', { t: plan.words, date: longDate(library.target.date) }) : '') +
+      (ks.filter(function (d) { return d.known != null; }).length < 3 ? ' ' + tr('prog.growthSoon') : '');
+    barChart($('growthChart'), ks.map(function (d, i) { return dayLabel(d.date, i === ks.length - 1 ? 0 : 1, true); }),
+      [{ name: tr('prog.learned'), values: ks.map(function (d) { return d.known || 0; }), cls: 'bar-known' }],
+      { caption: growthCaption, tableCaption: tr('prog.growth'), columnLabel: tr('prog.day'), rowLabels: ks.map(function (d) { return longDate(d.date); }),
+        goal: plan ? { value: plan.words, label: tr('prog.goalLine', { t: plan.words }) } : null });
 
     var accRows = acc.days.map(function (d) { return longDate(d.date); });
     barChart($('accuracyChart'), acc.days.map(function (d, i) { return dayLabel(d.date, i === acc.days.length - 1 ? 0 : 1, true); }),
@@ -2522,6 +2541,7 @@
     var key = L.day();
     var h = library.history[key] || { answers: 0, correct: 0 };
     h.answers++; if (ok) h.correct++;
+    h.known = L.learnedCount(library); // a daily point for the "words learned" chart
     library.history[key] = h;
     if (h.answers >= library.goal && !h.celebrated) {
       h.celebrated = true;
@@ -2542,6 +2562,90 @@
     $('dailyGoal').value = library.goal;
     $('batchSize').value = String(library.batch || 0);
     renderHomeDeck();
+    renderGoal($('goalStrip'), L.librarySize(library).words > 0 || !!library.target);
+  }
+  /* ===== personal goal with a deadline: days left, words learned, the daily pace that gets there ===== */
+  function renderGoal(host, show) {
+    if (!host) return;
+    host.textContent = '';
+    host.hidden = !show;
+    if (!show) return;
+    var plan = library.target && L.planTarget(library.target, L.learnedCount(library), L.day());
+    host.classList.toggle('is-set', !!plan);
+    if (!plan) {
+      host.appendChild(h('p', { className: 'goal-ask' }, [h('strong', { text: tr('goal.ask') + ' ' }), tr('goal.askText')]));
+      var set = h('button', { className: 'chip-btn goal-btn', type: 'button', text: tr('goal.set') });
+      set.onclick = openGoalDialog;
+      host.appendChild(set);
+      return;
+    }
+    var t = library.target;
+    var when = h('div', { className: 'goal-when goal-' + plan.state }, plan.state === 'active'
+      ? [h('strong', { className: 'goal-days', text: String(plan.days) }), h('span', { className: 'goal-days-l', text: trn('goal.daysWord', plan.days) })]
+      : [h('strong', { className: 'goal-days', 'aria-hidden': 'true', text: plan.state === 'done' ? '✓' : '—' })]);
+    var bar = h('span', { className: 'goal-bar', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(plan.words), 'aria-valuenow': String(Math.min(plan.learned, plan.words)),
+      'aria-label': tr('goal.learned', { n: plan.learned, t: plan.words }) }, [h('i', {})]);
+    bar.firstChild.style.width = plan.pct + '%';
+    var meta = plan.state === 'done' ? tr('goal.done') : plan.state === 'past' ? tr('goal.past') : trn('goal.pace', plan.perDay);
+    var main = h('div', { className: 'goal-main' }, [
+      h('p', { className: 'goal-name', text: tr('goal.when', { name: t.name || tr('goal.default'), date: longDate(t.date) }) }),
+      bar,
+      h('p', { className: 'goal-meta' }, [h('span', { text: tr('goal.learned', { n: plan.learned, t: plan.words }) }), h('span', { className: 'goal-pace', text: meta })])
+    ]);
+    var edit = h('button', { className: 'chip-btn goal-btn', type: 'button', text: tr('goal.edit'), 'aria-label': tr('goal.editAria') });
+    edit.onclick = openGoalDialog;
+    [when, main, edit].forEach(function (n) { host.appendChild(n); });
+  }
+  var goalOpener = null, goalHost = null;
+  function openGoalDialog() {
+    goalOpener = document.activeElement;
+    goalHost = goalOpener && goalOpener.closest ? (goalOpener.closest('.goal-strip') || {}).id : null;
+    var t = library.target, tomorrow = addDays(L.day(), 1);
+    $('goalName').value = t && t.name || '';
+    $('goalDate').value = t ? t.date : addDays(L.day(), 60);
+    $('goalDate').min = tomorrow;
+    $('goalWords').value = t ? t.words : Math.max(100, Math.ceil((L.learnedCount(library) + 300) / 50) * 50);
+    $('goalRemove').hidden = !t;
+    $('goalErr').hidden = true;
+    $('goalDialog').hidden = false;
+    $(t ? 'goalDate' : 'goalName').focus();
+  }
+  function closeGoalDialog() {
+    if ($('goalDialog').hidden) return;
+    $('goalDialog').hidden = true;
+    // the strip is redrawn after a save, so the opener may be gone: focus the same strip's new button
+    var b = goalOpener && document.contains(goalOpener) ? goalOpener : goalHost && document.querySelector('#' + goalHost + ' .goal-btn');
+    if (b) b.focus({ preventScroll: true });
+  }
+  function goalChanged(msg) {
+    var key = L.day(), today = library.history[key] || { answers: 0, correct: 0 };
+    today.known = L.learnedCount(library); library.history[key] = today;
+    persistLibrary(); renderDaily();
+    if ($('screen-progress').classList.contains('active')) renderProgress();
+    toast(msg, 'ok');
+  }
+  function initGoalDialog() {
+    $('goalForm').onsubmit = function (e) {
+      e.preventDefault();
+      var date = $('goalDate').value, words = Number($('goalWords').value), err = '';
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date <= L.day()) err = 'goal.errDate';
+      else if (!(words >= 10 && words <= L.TARGET_MAX_WORDS)) err = 'goal.errWords';
+      if (err) {
+        $('goalErr').textContent = tr(err); $('goalErr').hidden = false;
+        $(err === 'goal.errDate' ? 'goalDate' : 'goalWords').focus();
+        return;
+      }
+      library.target = L.cleanTarget({ name: $('goalName').value, date: date, words: words, set: Date.now() });
+      goalChanged(tr('goal.saved'));
+      closeGoalDialog();
+    };
+    $('goalCancel').onclick = closeGoalDialog;
+    $('goalRemove').onclick = function () { delete library.target; goalChanged(tr('goal.removed')); closeGoalDialog(); };
+    $('goalDialog').addEventListener('click', function (e) { if (e.target === this) closeGoalDialog(); });
+    $('goalDialog').addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closeGoalDialog(); }
+      else if (e.key === 'Tab') trapIn($('goalDialog'), e);
+    });
   }
   function navigateLearning(id) {
     stopMatch();
@@ -3876,6 +3980,7 @@
     checkServerStatus();
     if (L) initLearningUI();
     initAskDialog();
+    initGoalDialog();
     initDeckEditor();
     if (L) initCourse();
     if (L) maybeOnboard();

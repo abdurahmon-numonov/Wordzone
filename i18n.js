@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.43'; // the one place the shown version lives (footer)
+  var VERSION = '2.44'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -880,6 +880,10 @@
     'toast.retranslatePart': ['ИИ перевёл {a} из {b}.', 'The AI translated {a} of {b}.', 'AI {b} tadan {a} tasini tarjima qildi.'],
     'card.noAI': ['⚠ переведено без ИИ — может быть неточно', '⚠ translated without AI — may be inaccurate', "⚠ AI siz tarjima — noaniq bo'lishi mumkin"],
     'card.noAIBtn': ['Перевести через ИИ', 'Translate with AI', 'AI bilan tarjima'],
+    'card.defLabel': ['Определение · {l}', 'Definition · {l}', "Ta'rif · {l}"],
+    'card.exLabel': ['Пример', 'Example', 'Misol'],
+    'card.exLabels': ['Примеры', 'Examples', 'Misollar'],
+    'card.speakEx': ['Озвучить пример', 'Read the example aloud', "Misolni ovoz chiqarib o'qish"],
     'card.meanings': ['Значения', 'Meanings', "Ma'nolar"],
     'aiErr.provider-auth': ['Провайдер отклонил API-ключ — проверь его в настройках.', 'The provider rejected the API key — check it in settings.', "Provayder API kalitini rad etdi — sozlamalarda tekshir."],
     'aiErr.provider-rate-limit': ['Провайдер ограничил число запросов.', 'The provider is rate limiting.', "Provayder so'rovlar sonini chekladi."],

@@ -326,7 +326,7 @@
       };
       if (window.VMDefense3D) return make();
       loading.hidden = false;
-      var s = doc.createElement('script'); s.src = 'vendor/defense3d.js?v=2.42'; s.onload = make; s.onerror = useFlat; doc.head.appendChild(s);
+      var s = doc.createElement('script'); s.src = 'vendor/defense3d.js?v=2.43'; s.onload = make; s.onerror = useFlat; doc.head.appendChild(s);
     }
     function sizeScene() {
       if (!scene3) return;

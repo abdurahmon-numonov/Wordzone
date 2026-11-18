@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.42'; // the one place the shown version lives (footer)
+  var VERSION = '2.43'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -875,6 +875,7 @@
     'aiErr.no-key': ['ИИ-ключ не настроен: на сервере нет ключа, а свой ключ не указан в настройках.', 'No AI key: the server has none and no own key is set in settings.', "AI kaliti yo'q: serverda kalit yo'q, sozlamalarda o'z kaliting ham ko'rsatilmagan."],
     'deck.retranslate': ['Перевести заново через ИИ ({n})', 'Translate again with AI ({n})', 'AI bilan qayta tarjima ({n})'],
     'toast.retranslating': ['Перевожу через ИИ: {n}…', 'Translating with AI: {n}…', 'AI bilan tarjima qilyapman: {n}…'],
+    'toast.healed': [['ИИ дополнил {n} слово: перевод, определение и примеры', 'ИИ дополнил {n} слова: перевод, определение и примеры', 'ИИ дополнил {n} слов: перевод, определение и примеры'], ['The AI completed {n} word: translation, definition and examples', 'The AI completed {n} words: translation, definition and examples'], ["AI {n} ta so'zni to'ldirdi: tarjima, ta'rif va misollar"]],
     'toast.retranslated': [['ИИ перевёл {n} слово ✓', 'ИИ перевёл {n} слова ✓', 'ИИ перевёл {n} слов ✓'], ['The AI translated {n} word ✓', 'The AI translated {n} words ✓'], ["AI {n} ta so'zni tarjima qildi ✓"]],
     'toast.retranslatePart': ['ИИ перевёл {a} из {b}.', 'The AI translated {a} of {b}.', 'AI {b} tadan {a} tasini tarjima qildi.'],
     'card.noAI': ['⚠ переведено без ИИ — может быть неточно', '⚠ translated without AI — may be inaccurate', "⚠ AI siz tarjima — noaniq bo'lishi mumkin"],

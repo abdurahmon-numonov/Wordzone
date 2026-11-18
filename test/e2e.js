@@ -357,6 +357,23 @@ run.server(server);
   await deckMenu(enDeck, 'Перевести заново через ИИ');
   await page.waitForFunction(k => JSON.parse(localStorage.getItem(k)).decks['en-ru'].cards.find(c => c.original === 'compass').translation === 'ИИ:compass', LIB);
   assert(!(await library(page)).decks['en-ru'].cards.find(c => c.original === 'compass').noAI, 'the mark is gone after the AI translated it');
+  // v2.43: a status check that fails at load (cold start, network blip) used to switch the AI off for the
+  // whole visit, silently sending every word to the free translator. Now the build asks the server again.
+  await page.click('#navStudy');
+  let blockStatus = true;
+  await page.route(/\/api\/ai/, route => (blockStatus && (route.request().postData() || '').includes('"status"')) ? route.abort('failed') : route.continue());
+  await reload();
+  await page.waitForTimeout(7000); // all three status attempts fail
+  assert.equal(await page.evaluate(() => document.body.classList.contains('server-ai')), false, 'the site key is not known yet');
+  blockStatus = false;
+  await page.fill('#input', 'lighthouse');
+  await startWords(page);
+  await page.locator('#screen-train.active').waitFor();
+  const light = (await library(page)).decks['en-ru'].cards.find(c => c.original === 'lighthouse');
+  assert.equal(light.translation, 'ИИ:lighthouse', 'the build re-checked the server and used the AI');
+  assert(!light.noAI, 'no free-translator fallback');
+  await page.unroute(/\/api\/ai/);
+  await page.click('#btnExit'); await page.click('#btnNewSet');
   await page.click('#navStudy');
   llm.mode = 'ok'; delete process.env.OPENAI_API_KEY;
   await reload();

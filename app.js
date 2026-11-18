@@ -182,10 +182,12 @@
   function updateSoundUI() {
     var b = $('btnSound');
     if (b) {
-      b.innerHTML = state.soundEnabled ? ICON_SOUND_ON : ICON_SOUND_OFF;
+      if (b.classList.contains('set-switch')) b.setAttribute('aria-pressed', String(state.soundEnabled));
+      else b.innerHTML = state.soundEnabled ? ICON_SOUND_ON : ICON_SOUND_OFF;
       b.classList.toggle('active', state.soundEnabled);
       if (typeof b.setAttribute === 'function') {
-        b.setAttribute('aria-label', tr(state.soundEnabled ? 'top.soundOff' : 'top.soundOn'));
+        if (b.classList.contains('set-switch')) b.removeAttribute('aria-label'); // the visible label "Sound" + pressed state
+        else b.setAttribute('aria-label', tr(state.soundEnabled ? 'top.soundOff' : 'top.soundOn'));
       }
     }
   }
@@ -263,13 +265,23 @@
       b.classList.toggle('active', on);
       if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
     });
+    document.querySelectorAll('#tabbar .tab[data-nav]').forEach(function (t) {
+      var on = t.dataset.nav === NAV_FOR[id];
+      t.classList.toggle('active', on);
+      if (on) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
+    });
+    var more = $('tabMore'); if (more) more.classList.toggle('active', /^(navGames|navTest|navGrammar)$/.test(NAV_FOR[id] || ''));
+    if (document.body) document.body.dataset.screen = id;
     var crumb = $('crumbHere');
     if (crumb && CRUMB_FOR[id]) crumb.textContent = tr(CRUMB_FOR[id]);
   }
+  var sideOpener = null;
   function setSidebar(open) {
     document.body.classList.toggle('side-open', open);
     $('sideBackdrop').hidden = !open;
     $('btnMenu').setAttribute('aria-expanded', String(open));
+    if ($('tabMore')) $('tabMore').setAttribute('aria-expanded', String(open));
+    if (open) sideOpener = document.activeElement;
     if (open) { var first = document.querySelector('#sidebar .nav-link'); if (first) first.focus(); }
   }
   function show(id) {
@@ -1984,6 +1996,10 @@
     var w = menu.offsetWidth, left = Math.min(Math.max(12, r.right - w), innerWidth - w - 12);
     menu.style.top = Math.round(r.bottom + 10) + 'px';
     menu.style.left = Math.round(left) + 'px';
+    // The settings menu scrolls when it is taller than the window (large text sizes zoom the page, so measure).
+    menu.style.maxHeight = '';
+    var z = menu.getBoundingClientRect().width / (menu.offsetWidth || 1) || 1;
+    menu.style.maxHeight = Math.max(220, (innerHeight - 20) / z - menu.offsetTop) + 'px';
   }
   function onThemeOutside(e) {
     if (!$('themeMenu').contains(e.target) && !$('btnTheme').contains(e.target)) closeThemeMenu(false);
@@ -2026,11 +2042,7 @@
     });
     $('themeMenu').addEventListener('keydown', function (e) {
       if (e.key === 'Escape') { e.stopPropagation(); closeThemeMenu(true); }
-      else if (e.key === 'Tab') { // keep Tab inside the small menu: the radios, then the settings link
-        var items = [this.querySelector('input[name="themePick"]:checked') || this.querySelector('input[name="themePick"]'), $('btnDisplay')];
-        var i = items.indexOf(document.activeElement.name === 'themePick' ? items[0] : document.activeElement);
-        if (e.shiftKey ? i <= 0 : i === items.length - 1) { e.preventDefault(); items[e.shiftKey ? items.length - 1 : 0].focus(); }
-      }
+      else if (e.key === 'Tab') trapIn(this, e); // keep Tab inside the settings menu
     });
     if (window.matchMedia) {
       var mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -2245,6 +2257,7 @@
     var locked = !!d;
     ['sourceLang', 'targetLang'].forEach(function (id) { var s = $(id); if (s) s.disabled = locked; });
     if ($('pairLocked')) $('pairLocked').hidden = !locked;
+    updatePairSummary();
   }
   /* Sidebar: "My decks". */
   function renderSideDecks() {
@@ -2279,6 +2292,7 @@
       list.appendChild(h('li', { className: 'side-deck-row' }, [b, more]));
     });
     $('sideDecksEmpty').hidden = n > 0;
+    if ($('sideDecksBlock')) $('sideDecksBlock').hidden = n === 0; // no decks yet: the words box on the home screen makes the first
     var count = $('sideDeckCount');
     count.textContent = n + '/' + L.MAX_DECKS;
     count.setAttribute('aria-label', tr('decks.count', { n: n, m: L.MAX_DECKS }));
@@ -2378,9 +2392,47 @@
     var d = key ? library.decks[key] : null;
     $('homeDeckNote').hidden = !d;
     if (d) $('homeDeckNote').textContent = tr('deck.homeNote', { n: deckLabel(d), p: pairLabel(d) });
-    var due = d ? L.pick(d.cards, 'due').length : 0, ready = d ? L.pick(d.cards, 'all').length : 0;
-    $('btnHomePractice').hidden = !ready;
-    if (ready) $('btnHomePractice').textContent = due ? tr('deck.practiceDue', { n: due }) : tr('deck.practiceAll');
+    renderToday();
+  }
+  /* Home, top: newcomers (no words yet) see the welcome banner; everyone else sees one clear next step,
+     "review the words that are due", or, when nothing is due, "add new words". */
+  var todayKey = '';
+  function renderToday() {
+    var card = $('todayCard'), hero = $('heroBanner'); if (!card || !hero) return;
+    var keys = Object.keys(library.decks).filter(function (k) { return library.decks[k].cards.length; });
+    var fresh = !keys.length;
+    card.hidden = fresh; hero.hidden = !fresh;
+    if ($('cMore') && $('cMore').dataset.touched !== '1') $('cMore').open = fresh; // "no words at hand?" is open for newcomers only, unless the learner toggled it
+    var dueOf = function (k) { return L.pick(library.decks[k].cards, 'due').length; };
+    var key = hasDeck(state.cfg.deck) && library.decks[state.cfg.deck].cards.length ? state.cfg.deck : '';
+    if (!key || !dueOf(key)) { // the active deck has nothing due: the deck with the most due words, else stay
+      var best = keys.slice().sort(function (a, b) { return dueOf(b) - dueOf(a); })[0];
+      if (best && (dueOf(best) || !key)) key = best;
+    }
+    todayKey = key;
+    var btn = $('btnHomePractice'), add = $('btnTodayAdd');
+    if (fresh || !key) { btn.hidden = true; return; }
+    var d = library.decks[key], due = dueOf(key), ready = L.pick(d.cards, 'all').length;
+    $('todayTitle').textContent = due ? trn('today.due', due) : tr('today.clear');
+    $('todaySub').textContent = tr(due ? 'today.dueSub' : 'today.clearSub', { n: deckLabel(d) });
+    btn.hidden = !ready;
+    btn.textContent = tr(due ? 'today.go' : 'deck.practiceAll');
+    btn.className = 'btn ' + (due ? 'primary' : 'today-again'); // nothing due: adding words is the main step
+    add.className = 'btn today-add' + (due ? '' : ' primary');
+    card.classList.toggle('is-clear', !due);
+  }
+  // Step 1 shows the deck and language pair as one line; "Change" opens the full controls.
+  function updatePairSummary() {
+    var el = $('pairSummary'); if (!el) return;
+    var d = activeDeck(), pair = pairLabel(d || { source: state.cfg.source, target: state.cfg.target });
+    el.textContent = '';
+    if (d && d.name) el.appendChild(h('strong', { text: d.name + ' · ' }));
+    el.appendChild(h('span', { text: pair }));
+  }
+  function setPairPanel(open) {
+    $('pairPanel').hidden = !open;
+    $('btnPairEdit').setAttribute('aria-expanded', String(open));
+    $('btnPairEdit').textContent = tr(open ? 'composer.done' : 'composer.change');
   }
   var deckOpener = null;
   function openDeckDialog(words) {
@@ -3333,7 +3385,10 @@
     $('btnPickerGo').onclick = confirmPicker;
     $('btnPickerNew').onclick = function () { openDeckDialog(); };
     $('deckPicker').addEventListener('click', function (e) { if (e.target === this) confirmPicker(); });
-    $('btnHomePractice').onclick = function () { var d = library.decks[state.cfg.deck]; if (d) practiceDeck(d, 'due'); };
+    $('btnHomePractice').onclick = function () { var d = library.decks[todayKey]; if (d) practiceDeck(d, 'due'); };
+    $('btnPairEdit').onclick = function () { setPairPanel($('pairPanel').hidden); };
+    ['sourceLang', 'targetLang'].forEach(function (id) { $(id).addEventListener('change', updatePairSummary); });
+    $('cMore').querySelector('summary').addEventListener('click', function () { $('cMore').dataset.touched = '1'; });
     $('btnNewDeck').onclick = function () { openDeckDialog(); };
     $('btnHomeNewDeck').onclick = function () { openDeckDialog(); };
     $('deckCancel').onclick = closeDeckDialog;
@@ -4216,16 +4271,19 @@
     $('btnSessionSettings').addEventListener('click', function () { openSessionSettings(false); });
     $('btnSessionClose').addEventListener('click', closeSessionSettings);
     $('sessionDialog').addEventListener('click', function (e) { if (e.target === this) closeSessionSettings(); });
-    $('btnHeroDemo').addEventListener('click', function () { $('btnDemo').click(); });
-    $('btnHeroOwn').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
+    $('btnTodayAdd').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
 
     $('btnOwnKey').addEventListener('click', function () { ownKeyOpen = !ownKeyOpen; updateApiStatus(); if (ownKeyOpen) $('cfgKey').focus(); });
     $('btnMenu').addEventListener('click', function () { setSidebar(!document.body.classList.contains('side-open')); });
-    $('sideBackdrop').addEventListener('click', function () { setSidebar(false); $('btnMenu').focus(); });
+    var backToOpener = function () { var o = sideOpener && sideOpener.getClientRects().length ? sideOpener : $('btnMenu'); if (o && o.focus) o.focus(); };
+    $('sideBackdrop').addEventListener('click', function () { setSidebar(false); backToOpener(); });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && document.body.classList.contains('side-open')) { setSidebar(false); $('btnMenu').focus(); }
+      if (e.key === 'Escape' && document.body.classList.contains('side-open')) { setSidebar(false); backToOpener(); }
     });
+    document.querySelectorAll('#tabbar .tab[data-nav]').forEach(function (t) { t.addEventListener('click', function () { $(t.dataset.nav).click(); }); });
+    $('tabMore').addEventListener('click', function () { setSidebar(!document.body.classList.contains('side-open')); });
     $('btnSideGemini').addEventListener('click', function () {
+      closeThemeMenu(false);
       openSessionSettings(true);
       var chip = document.querySelector('.prov-chip[data-prov="gemini"]');
       if (chip && !window.VMAICore.isGemini(state.cfg.baseUrl)) chip.click();

@@ -27,7 +27,8 @@
     var button = document.getElementById('btnMotion');
     if (button) {
       button.setAttribute('aria-pressed', String(!reduced.matches));
-      button.setAttribute('aria-label', tr(reduced.matches ? 'motion.onAria' : 'motion.offAria'));
+      if (button.classList.contains('set-switch')) button.removeAttribute('aria-label'); // visible label + pressed state
+      else button.setAttribute('aria-label', tr(reduced.matches ? 'motion.onAria' : 'motion.offAria'));
       button.title = tr(reduced.matches ? 'motion.offTitle' : 'motion.onTitle');
       button.classList.toggle('active', !reduced.matches);
     }

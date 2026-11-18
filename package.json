@@ -10,7 +10,7 @@
     "coverage": "c8 --include learning.js --include languages.js --include grammar.js --include i18n.js --include ai-core.js --include share.js --include display.js --include api/ai.js --check-coverage --lines 95 --branches 85 --functions 90 npm test",
     "coverage:e2e": "node test/e2e.js --coverage",
     "screens": "node test/screens.js",
-    "build": "node tools/build.js",
+    "bundle": "node tools/build.js",
     "dev": "node tools/dev-server.js",
     "start": "node tools/dev-server.js"
   },

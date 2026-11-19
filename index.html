@@ -10,20 +10,14 @@
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.45" />
-  <link rel="stylesheet" href="styles.css?v=2.45" />
-  <link rel="stylesheet" href="editorial.css?v=2.45" />
-  <link rel="stylesheet" href="shell.css?v=2.45" />
-  <link rel="stylesheet" href="motion.css?v=2.45" />
-  <link rel="stylesheet" href="composer.css?v=2.45" />
-  <link rel="stylesheet" href="onboarding.css?v=2.45" />
-  <link rel="stylesheet" href="arcade.css?v=2.45" />
-  <link rel="stylesheet" href="cafe.css?v=2.45" />
-  <link rel="stylesheet" href="defense.css?v=2.45" />
-  <link rel="stylesheet" href="themes.css?v=2.45" />
+  <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
+  <link rel="preload" href="core.min.js?v=2.46" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.46" />
+  <link rel="stylesheet" href="app.min.css?v=2.46" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
+  <div class="boot" role="status" aria-live="polite"><span class="boot-bar" aria-hidden="true"></span><span class="boot-note" lang="ru">Загружаем… · <span lang="uz">Yuklanmoqda…</span> · <span lang="en">Loading…</span></span></div>
   <div class="app-shell">
   <aside class="sidebar" id="sidebar" aria-label="Меню" data-i18n-attr="aria-label:side.aria">
     <a class="logo" href="#" id="logoHome" title="Wordzone — на главную" data-i18n-attr="title:nav.home">
@@ -477,7 +471,7 @@
       </div>
     </section>
   </main>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.45</span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.46</span></footer>
   </div>
   </div>
 
@@ -580,66 +574,36 @@
   <div class="overlay onboard" id="onboarding" hidden role="dialog" aria-modal="true" aria-labelledby="tourH1">
     <div class="panel onboard-card tour" id="tourCard" data-step="1">
       <div class="tour-top">
-        <span class="tour-count" id="tourCount">1 / 4</span>
+        <span class="tour-count" id="tourCount">1 / 2</span>
         <button class="link tour-skip" id="btnTourSkip" type="button" data-i18n="tour.skip">Пропустить</button>
       </div>
       <div class="tour-scene" id="tourScene">
         <section class="tour-step is-current" data-step="1" aria-labelledby="tourH1">
-          <h2 class="tour-h" id="tourH1" tabindex="-1" data-i18n-html="tour.s1.h">Свои слова — <em>свои карточки.</em></h2>
-          <p class="tour-p" data-i18n="tour.s1.p">Вставь список слов или целый абзац. ИИ переведёт, добавит примеры и соберёт колоду.</p>
-          <div class="tour-stage tour-pick" role="group" aria-labelledby="tourPickHint">
-            <p class="tour-hint" id="tourPickHint" data-i18n="tour.s1.hint">Нажми на слова, которые хочешь выучить</p>
-            <p class="tour-quote" lang="en">“I won’t <button type="button" class="tour-word" data-w="giveup" aria-pressed="false">give up</button>, <button type="button" class="tour-word" data-w="although" aria-pressed="true">although</button> the <button type="button" class="tour-word" data-w="road" aria-pressed="false">road</button> is long.”</p>
-            <div class="tour-deck" aria-live="polite">
-              <span class="tour-deck-label" data-i18n="tour.s1.deck">В колоду</span>
-              <span class="tour-deck-cards" id="tourDeckCards"></span>
-            </div>
-          </div>
-        </section>
-        <section class="tour-step" data-step="2" aria-labelledby="tourH2" hidden>
-          <h2 class="tour-h" id="tourH2" tabindex="-1" data-i18n-html="tour.s2.h">Слово вернётся, <em>когда начнёшь забывать.</em></h2>
-          <p class="tour-p" data-i18n="tour.s2.p">Вспомни перевод, переверни карточку и честно ответь. Дальше Wordzone сам решит, когда показать её снова.</p>
+          <h2 class="tour-h" id="tourH1" tabindex="-1" data-i18n-html="tour.h">Вспомни — <em>и переверни.</em></h2>
+          <p class="tour-p" data-i18n="tour.p">Вставляешь свои слова — ИИ делает карточки. Ты вспоминаешь, а Wordzone решает, когда повторить.</p>
           <div class="tour-stage tour-recall">
             <button type="button" class="tour-card" id="tourFlip" aria-pressed="false">
               <span class="tour-face tour-front"><span class="tour-face-top">English</span><strong lang="en">although</strong><span class="tour-face-foot" data-i18n="tour.s2.front">Вспомни и нажми</span></span>
-              <span class="tour-face tour-back" aria-hidden="true"><span class="tour-face-top" data-i18n="tour.s2.backTop">Перевод</span><strong data-i18n="tour.s2.back">хотя</strong><span class="tour-face-foot" lang="en">although it rained, we went out</span></span>
+              <span class="tour-face tour-back" aria-hidden="true"><span class="tour-face-top" data-i18n="tour.s2.backTop">Перевод</span><strong data-i18n="tour.s2.back">хотя</strong><span class="tour-face-foot" lang="en">Although it rained, we went out.</span></span>
             </button>
             <div class="tour-grade" id="tourGrade" role="group" data-i18n-attr="aria-label:tour.s2.gradeLabel" aria-label="Как ты справился?" hidden>
-              <button type="button" class="tour-grade-btn is-again" data-g="again" data-i18n="tour.s2.again">Забыл</button>
-              <button type="button" class="tour-grade-btn is-known" data-g="known" data-i18n="tour.s2.known">Помню</button>
+              <button type="button" class="tour-grade-btn is-again" data-g="again" aria-pressed="false" data-i18n="tour.s2.again">Забыл</button>
+              <button type="button" class="tour-grade-btn is-known" data-g="known" aria-pressed="false" data-i18n="tour.s2.known">Помню</button>
             </div>
-            <div class="tour-curve" id="tourCurve" data-g="">
-              <ol class="tour-ticks" aria-hidden="true"><li data-t="0" data-i18n="tour.s2.t0">сейчас</li><li data-t="1" data-i18n="tour.s2.t1">1 день</li><li data-t="2" data-i18n="tour.s2.t2">4 дня</li><li data-t="3" data-i18n="tour.s2.t3">2 недели</li></ol>
-              <p class="tour-curve-note" id="tourCurveNote" role="status"></p>
-            </div>
+            <p class="tour-note" id="tourCurveNote" role="status"></p>
           </div>
         </section>
-        <section class="tour-step" data-step="3" aria-labelledby="tourH3" hidden>
-          <h2 class="tour-h" id="tourH3" tabindex="-1" data-i18n-html="tour.s3.h">Грамматика по шагам — <em>на шести языках.</em></h2>
-          <p class="tour-p" data-i18n="tour.s3.p">По 46 тем на курс, от A1 до B2: короткое правило, живые примеры и тренировка. Слова из колоды можно озвучить и прогнать в играх.</p>
-          <div class="tour-stage tour-langs">
-            <div class="tour-plates" role="group" data-i18n-attr="aria-label:tour.s3.pick" aria-label="Посмотреть курс">
-              <button type="button" class="tour-plate" data-l="en" aria-pressed="true"><b lang="en">Aa</b><span lang="en">English</span></button>
-              <button type="button" class="tour-plate" data-l="es" aria-pressed="false"><b lang="es">Ññ</b><span lang="es">Español</span></button>
-              <button type="button" class="tour-plate" data-l="fr" aria-pressed="false"><b lang="fr">Éé</b><span lang="fr">Français</span></button>
-              <button type="button" class="tour-plate" data-l="de" aria-pressed="false"><b lang="de">Ää</b><span lang="de">Deutsch</span></button>
-              <button type="button" class="tour-plate" data-l="it" aria-pressed="false"><b lang="it">Ii</b><span lang="it">Italiano</span></button>
-              <button type="button" class="tour-plate" data-l="ko" aria-pressed="false"><b lang="ko">한</b><span lang="ko">한국어</span></button>
-            </div>
-            <p class="tour-lesson" role="status"><span class="tour-lesson-k" data-i18n="tour.s3.first">Первая тема</span> <span id="tourLesson"></span></p>
-            <p class="tour-extras"><span data-i18n="tour.s3.x1">озвучка</span><span data-i18n="tour.s3.x2">3 мини-игры</span><span data-i18n="tour.s3.x3">словарный тест</span></p>
+        <form class="tour-step tour-form" data-step="2" id="onboardForm" aria-labelledby="onboardTitle" hidden>
+          <h2 class="tour-h" id="onboardTitle" tabindex="-1" data-i18n-html="onb.title">Какой язык <em>учим?</em></h2>
+          <p class="tour-p" data-i18n="onb.sub">Внутри: карточки, грамматика A1–B2 на 6 языках и 3 игры. Поменять можно в любой момент.</p>
+          <div class="tour-fields">
+            <label class="field"><span data-i18n="onb.native">Мой родной язык</span><span class="select-wrap"><select id="onbNative" required></select></span></label>
+            <label class="field"><span data-i18n="onb.learn">Я хочу выучить</span><span class="select-wrap"><select id="onbLearn" required></select></span></label>
           </div>
-        </section>
-        <form class="tour-step tour-form" data-step="4" id="onboardForm" aria-labelledby="onboardTitle" hidden>
-          <h2 class="tour-h" id="onboardTitle" tabindex="-1" data-i18n-html="onb.title">Последний шаг — <em>два вопроса.</em></h2>
-          <p class="mini" data-i18n="onb.sub">Два вопроса — и можно начинать. Поменять можно в любой момент.</p>
-          <label class="field"><span data-i18n="onb.native">Мой родной язык</span><span class="select-wrap"><select id="onbNative" required></select></span></label>
-          <label class="field"><span data-i18n="onb.learn">Я хочу выучить</span><span class="select-wrap"><select id="onbLearn" required></select></span></label>
           <p class="mini onb-ui" id="onbUiNote" hidden></p>
           <div class="actions tour-actions"><button class="btn primary big" type="button" id="btnTourTry5" data-i18n="tour.try5">Попробовать на 5 словах</button><button class="btn ghost big" type="submit" id="btnOnboardGo" data-i18n="tour.own">Добавить свои слова</button></div>
         </form>
       </div>
-      <svg class="tour-thread" width="100%" height="12" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path class="tour-thread-track" d="M2 6 C 60 1, 110 11, 150 6 S 240 1, 298 6" pathLength="100" /><path id="tourThread" class="tour-thread-fill" d="M2 6 C 60 1, 110 11, 150 6 S 240 1, 298 6" pathLength="100" /></svg>
       <div class="tour-nav" id="tourNav">
         <button class="link tour-prev" id="btnTourBack" type="button" data-i18n="tour.back" hidden>← Назад</button>
         <button class="btn primary tour-next" id="btnTourNext" type="button" data-i18n="tour.next">Дальше →</button>
@@ -797,21 +761,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer src="display.js?v=2.45"></script>
-  <script defer src="i18n.js?v=2.45"></script>
-  <script defer src="motion.js?v=2.45"></script>
-  <script defer src="languages.js?v=2.45"></script>
-  <script defer src="grammar.js?v=2.45"></script>
-  <script defer src="learning.js?v=2.45"></script>
-  <script defer src="writing.js?v=2.45"></script>
-  <script defer src="ai-core.js?v=2.45"></script>
-  <script defer src="share.js?v=2.45"></script>
-  <script defer src="games.js?v=2.45"></script>
-  <script defer src="fishing.js?v=2.45"></script>
-  <script defer src="cafe.js?v=2.45"></script>
-  <script defer src="defense.js?v=2.45"></script>
-  <script defer src="course.js?v=2.45"></script>
-  <script defer src="account.js?v=2.45"></script>
-  <script defer src="app.js?v=2.45"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.46"></script>
+  <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

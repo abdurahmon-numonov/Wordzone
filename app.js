@@ -7,6 +7,8 @@
   var I18N = window.VMI18n;
   function tr(key, vars) { return I18N ? I18N.t(key, vars) : key; }
   function trn(key, n, vars) { return I18N ? I18N.tn(key, n, vars) : String(n); }
+  // v2.46: the version in this script's own URL (?v=…), reused for files loaded later (the arcade bundle)
+  var ASSET_V = ((document.currentScript && /[?&]v=([\w.]+)/.exec(document.currentScript.src)) || [])[1] || '';
 
   // Languages come from languages.js (one list for the app, the AI contract, the server and the tests).
   var LANGUAGES = window.VMLanguages;
@@ -2168,6 +2170,54 @@
     });
   }
   // The Games screen needs a working deck with at least 4 words; otherwise it offers the demo deck.
+  /* v2.46: the three big games (Fishing, Café, Defense, ~200 KB) are not part of the first load. They arrive in
+     arcade.min.js once the page is idle, or at once when the Games screen opens; a click on a game before then
+     waits for the file and goes through. Everything else in the app starts without them. */
+  var arcadeMounted = false, arcadeLoading = null;
+  function mountArcade() {
+    if (arcadeMounted || !(window.VMCafe && window.VMDefense && window.VMFishing)) return;
+    arcadeMounted = true;
+    // v2.36: «Чайхана», the second arcade game (3D scene loaded on first open)
+      if (window.VMCafe) cafe = window.VMCafe.mount({
+        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+        tr: tr, toast: toast, fx: playArcadeFx,
+        speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
+        autoSpeak: function () { return !!state.soundEnabled; },
+        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
+      });
+      // v2.37: «Оборона», the third arcade game, a 3D tower defense paid for with right answers
+      if (window.VMDefense) defense = window.VMDefense.mount({
+        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+        tr: tr, toast: toast, fx: playArcadeFx,
+        speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
+        autoSpeak: function () { return false; },
+        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
+      });
+      if (window.VMFishing) fishing = window.VMFishing.mount({
+        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+        tr: tr, toast: toast, fx: playArcadeFx,
+        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); },
+        moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; }
+      });
+    if ($('screen-games').classList.contains('active')) renderArcade();
+  }
+  function loadArcade() {
+    if (window.VMCafe && window.VMDefense && window.VMFishing) { mountArcade(); return Promise.resolve(); }
+    if (!arcadeLoading) {
+      $('arcadeHub').setAttribute('aria-busy', 'true');
+      arcadeLoading = new Promise(function (ok, fail) {
+        var s = document.createElement('script');
+        s.src = 'arcade.min.js' + (ASSET_V ? '?v=' + ASSET_V : '');
+        s.onload = ok; s.onerror = fail;
+        document.head.appendChild(s);
+      }).then(mountArcade, function () { arcadeLoading = null; toast(tr('toast.arcadeOffline'), 'err', 5000); })
+        .finally(function () { $('arcadeHub').removeAttribute('aria-busy'); });
+    }
+    return arcadeLoading;
+  }
   function renderArcade() {
     var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
@@ -2705,7 +2755,7 @@
     if (cafe && id !== 'screen-games') cafe.leave();
     if (defense && id !== 'screen-games') defense.leave();
     show(id); renderDaily();
-    if (id === 'screen-games') renderArcade();
+    if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
     if (id === 'screen-test') { fillQuizDecks(); if (games) games.refresh(); }
     if (id === 'screen-progress') renderProgress();
@@ -3313,31 +3363,15 @@
       openMatch: function (key) { if (library.decks[key]) $('quizDeck').value = key; $('btnMatchStart').click(); var mp = document.querySelector('.match-panel'); if (mp) mp.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     });
     // v2.35: the Games screen holds the big arcade games; the quick trainers moved to the Lexical test.
-    // v2.36: «Чайхана», the second arcade game (3D scene loaded on first open)
-    if (window.VMCafe) cafe = window.VMCafe.mount({
-      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-      tr: tr, toast: toast, fx: playArcadeFx,
-      speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
-      autoSpeak: function () { return !!state.soundEnabled; },
-      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-    });
-    // v2.37: «Оборона», the third arcade game, a 3D tower defense paid for with right answers
-    if (window.VMDefense) defense = window.VMDefense.mount({
-      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-      tr: tr, toast: toast, fx: playArcadeFx,
-      speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
-      autoSpeak: function () { return false; },
-      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-    });
-    if (window.VMFishing) fishing = window.VMFishing.mount({
-      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-      tr: tr, toast: toast, fx: playArcadeFx,
-      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); },
-      moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; }
-    });
+    mountArcade(); // in a full bundle the games are already here; otherwise they arrive with loadArcade()
+    $('arcadeHub').addEventListener('click', function (e) {
+      var tile = e.target.closest('[data-arcade]');
+      if (!tile || arcadeMounted) return;
+      e.preventDefault(); e.stopImmediatePropagation();
+      loadArcade().then(function () { if (arcadeMounted) tile.click(); });
+    }, true);
+    // fetch the games quietly once the page has settled, so they open instantly later
+    (window.requestIdleCallback || function (f) { return setTimeout(f, 1) })(function () { setTimeout(loadArcade, 2500); });
     $('btnProgEmpty').onclick = function () { navigateLearning('screen-setup'); $('input').focus(); };
     var progressResize = null;
     window.addEventListener('resize', function () { clearTimeout(progressResize); progressResize = setTimeout(function () { if ($('screen-progress').classList.contains('active')) renderProgress(); }, 150); });
@@ -3533,10 +3567,10 @@
     createDeck('', state.cfg.source, state.cfg.target);
   }
 
-  /* First-run tour: three short screens, then the language questions. Moving on "flies through" the card:
-     the current screen comes towards the viewer and fades, the next one rises from the depth. */
+  /* First-run welcome: two short screens. 1 — flip one real card and grade it (that is the whole method);
+     2 — the two language questions. Moving on slides the next screen in. */
   var tour = (function () {
-    var TOTAL = 4, step = 1, running = [], swipeX = null, swipeY = null;
+    var TOTAL = 2, step = 1, running = [], swipeX = null, swipeY = null;
     function card() { return $('tourCard'); }
     function steps() { return Array.prototype.slice.call(card().querySelectorAll('.tour-step')); }
     function stepEl(n) { return card().querySelector('.tour-step[data-step="' + n + '"]'); }
@@ -3557,10 +3591,8 @@
       $('btnTourBack').hidden = step === 1;
       $('btnTourNext').hidden = step === TOTAL;
       $('btnTourSkip').hidden = step === TOTAL;
-      c.querySelectorAll('.tour-dots i').forEach(function (d, i) { d.className = i + 1 === step ? 'on' : i + 1 < step ? 'done' : ''; });
       $('onboarding').setAttribute('aria-labelledby', heading(step).id);
       $('tourLive').textContent = tr('tour.stepOf', { n: step, t: TOTAL });
-      $('tourThread').style.strokeDashoffset = String(100 - step / TOTAL * 100); // the thread is the one progress bar
     }
     function show(n, dir) {
       if (n < 1 || n > TOTAL || n === step) return;
@@ -3573,15 +3605,10 @@
       sync();
       var done = function () { from.hidden = true; from.inert = false; heading(n).focus({ preventScroll: true }); };
       if (still()) { done(); return; }
-      var fwd = dir > 0;
-      card().classList.remove('replay'); void card().offsetWidth; card().classList.add('replay'); // restarts the illustration
+      var d = dir > 0 ? 1 : -1;
       from.classList.add('is-leaving');
-      var out = play(from, fwd
-        ? [{ opacity: 1, transform: 'scale(1)', filter: 'blur(0)' }, { opacity: 0, transform: 'scale(1.35)', filter: 'blur(6px)' }]
-        : [{ opacity: 1, transform: 'scale(1)', filter: 'blur(0)' }, { opacity: 0, transform: 'scale(.72) translateY(18px)', filter: 'blur(4px)' }], { duration: 520 });
-      play(to, fwd
-        ? [{ opacity: 0, transform: 'scale(.72) translateY(18px)', filter: 'blur(4px)' }, { opacity: 1, transform: 'scale(1) translateY(0)', filter: 'blur(0)' }]
-        : [{ opacity: 0, transform: 'scale(1.35)', filter: 'blur(6px)' }, { opacity: 1, transform: 'scale(1)', filter: 'blur(0)' }], { delay: 120 });
+      var out = play(from, [{ opacity: 1, transform: 'translateX(0)' }, { opacity: 0, transform: 'translateX(' + (-24 * d) + 'px)' }], { duration: 200, easing: 'ease-in' });
+      play(to, [{ opacity: 0, transform: 'translateX(' + (32 * d) + 'px)' }, { opacity: 1, transform: 'translateX(0)' }], { duration: 380, delay: 140 });
       var clean = function () { from.classList.remove('is-leaving'); done(); };
       if (out) out.finished.then(clean, clean); else clean();
     }
@@ -3615,39 +3642,24 @@
       if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
       if (dx < 0) next(); else back();
     }
-    /* Each screen lets the newcomer do the thing once: pick words from a line, recall and grade a card, open a course. */
-    var demo = { words: { although: true }, flipped: false, grade: '', lang: 'en' };
+    /* The one thing to try: recall, flip, grade, and see when the card comes back. */
+    var demo = { flipped: false, grade: '' };
     function renderDemo() {
-      var c = card();
-      c.querySelectorAll('.tour-word').forEach(function (b) { b.setAttribute('aria-pressed', String(!!demo.words[b.dataset.w])); });
-      var box = $('tourDeckCards'); box.textContent = '';
-      var picked = Array.prototype.filter.call(c.querySelectorAll('.tour-word'), function (b) { return demo.words[b.dataset.w]; });
-      if (!picked.length) box.appendChild(Object.assign(document.createElement('span'), { className: 'tour-deck-empty', textContent: tr('tour.s1.empty') }));
-      picked.forEach(function (b) {
-        var chip = document.createElement('span'); chip.className = 'tour-mini';
-        var w = document.createElement('b'); w.lang = 'en'; w.textContent = b.textContent;
-        var g = document.createElement('span'); g.textContent = tr('tour.w.' + b.dataset.w);
-        chip.appendChild(w); chip.appendChild(g); box.appendChild(chip);
-      });
-      var flip = $('tourFlip');
+      var c = card(), flip = $('tourFlip');
       flip.setAttribute('aria-pressed', String(demo.flipped)); flip.classList.toggle('is-flipped', demo.flipped);
       flip.querySelector('.tour-front').setAttribute('aria-hidden', String(demo.flipped));
       flip.querySelector('.tour-back').setAttribute('aria-hidden', String(!demo.flipped));
       $('tourGrade').hidden = !demo.flipped;
       c.querySelectorAll('.tour-grade-btn').forEach(function (b) { b.setAttribute('aria-pressed', String(demo.grade === b.dataset.g)); });
-      $('tourCurve').dataset.g = demo.grade;
+      c.dataset.grade = demo.grade;
       $('tourCurveNote').textContent = tr(demo.grade === 'known' ? 'tour.s2.noteKnown' : demo.grade === 'again' ? 'tour.s2.noteAgain' : demo.flipped ? 'tour.s2.noteFlip' : 'tour.s2.noteIdle');
-      c.querySelectorAll('.tour-plate').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.l === demo.lang)); });
-      $('tourLesson').textContent = tr('tour.s3.' + demo.lang);
     }
     var wired = false;
     function open() {
       if (!wired) {
         wired = true;
-        card().querySelectorAll('.tour-word').forEach(function (b) { b.onclick = function () { demo.words[b.dataset.w] = !demo.words[b.dataset.w]; renderDemo(); }; });
         $('tourFlip').onclick = function () { demo.flipped = !demo.flipped; if (!demo.flipped) demo.grade = ''; renderDemo(); };
         card().querySelectorAll('.tour-grade-btn').forEach(function (b) { b.onclick = function () { demo.grade = b.dataset.g; renderDemo(); }; });
-        card().querySelectorAll('.tour-plate').forEach(function (b) { b.onclick = function () { demo.lang = b.dataset.l; renderDemo(); }; });
         if (I18N && I18N.onChange) I18N.onChange(function () { if (!$('onboarding').hidden) renderDemo(); });
         $('btnTourNext').onclick = next;
         $('btnTourBack').onclick = back;
@@ -3658,12 +3670,11 @@
       }
       document.addEventListener('keydown', onKey, true);
       step = 1;
-      demo = { words: { although: true }, flipped: false, grade: '', lang: 'en' };
+      demo = { flipped: false, grade: '' };
       renderDemo();
       steps().forEach(function (s) { var n = Number(s.dataset.step); s.hidden = n !== 1; s.classList.toggle('is-current', n === 1); s.inert = false; });
       sync();
       $('onboarding').hidden = false;
-      card().classList.add('replay');
       heading(1).focus({ preventScroll: true });
     }
     function close() { finishRunning(); $('onboarding').hidden = true; document.removeEventListener('keydown', onKey, true); }
@@ -4015,7 +4026,12 @@
     loadCfg();
     if (L) {
       // Offline support and "install app"; plain http (except localhost) cannot register workers.
-      if ('serviceWorker' in navigator && window.isSecureContext) navigator.serviceWorker.register('sw.js').catch(function () {});
+      // The worker saves the whole site for offline use (several MB on first install). It starts only after the page
+      // has fully loaded and settled, so on a slow connection it never takes bandwidth from what the learner sees.
+      if ('serviceWorker' in navigator && window.isSecureContext) {
+        var regWorker = function () { setTimeout(function () { navigator.serviceWorker.register('sw.js').catch(function () {}); }, 3000); };
+        if (document.readyState === 'complete') regWorker(); else window.addEventListener('load', regWorker, { once: true });
+      }
       var installEvt = null;
       window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvt = e; $('btnInstall').hidden = false; });
       window.addEventListener('appinstalled', function () { $('btnInstall').hidden = true; });
@@ -4427,5 +4443,6 @@
   }
 
 
-  document.addEventListener('DOMContentLoaded', init);
+  // v2.46: data-ready ends the loading bar and unlocks the page (set even if start-up hit an error)
+  document.addEventListener('DOMContentLoaded', function () { try { init(); } finally { if (document.documentElement) document.documentElement.dataset.ready = '1'; } });
 })();

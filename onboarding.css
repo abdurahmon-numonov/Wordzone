@@ -1,5 +1,4 @@
-/* v2.29 — first-run tour as a 30-second first lesson.
-   Each screen: the idea in one line, then one thing to try with your own hands.
+/* v2.46 — first-run welcome in two short screens: flip one card, then pick the languages.
    Resting state is complete: with motion off or without a tap nothing is missing. */
 
 .onboard-card.tour { width:min(600px,calc(100vw - 32px)); padding:24px 32px 20px; border-radius:22px; }
@@ -12,117 +11,58 @@
 .tour-h em { color:var(--amber); }
 .tour-p { font-size:15.5px; line-height:1.55; color:color-mix(in oklab,var(--text) 72%,var(--muted)); max-width:52ch; text-wrap:pretty; }
 
-/* The hands-on area: the same ruled "notebook" paper the app uses, a little warmer inside. */
-.tour-stage { position:relative; margin-top:20px; min-height:200px; padding:18px 20px; border:1px solid var(--stroke-soft); border-radius:16px; background:var(--bg); overflow:hidden; isolation:isolate; }
-.tour-stage::before { content:''; position:absolute; inset:0; z-index:-1; background:repeating-linear-gradient(0deg,transparent 0 31px,var(--stroke-soft) 31px 32px); opacity:.5; pointer-events:none; }
-.tour-hint { margin:0 0 6px; font:500 12.5px/1.4 var(--font-ui); color:var(--muted); }
+/* The hands-on area: one real card, centred, nothing else to decode. */
+.tour-stage { margin-top:22px; display:flex; flex-direction:column; align-items:center; gap:14px; padding:24px 20px 18px; border:1px solid var(--stroke-soft); border-radius:18px; background:var(--bg); }
 
-/* 1 · pick words straight out of a sentence */
-.tour-quote { margin:0; font:italic 400 27px/1.75 var(--font-display); letter-spacing:-.3px; color:var(--text); }
-.tour-word { font:inherit; letter-spacing:inherit; color:inherit; background:transparent; border:0; border-bottom:2px dashed color-mix(in oklab,var(--gold) 80%,var(--text)); border-radius:6px 6px 2px 2px; padding:0 4px; margin:0 -1px; cursor:pointer; transition:background-color .2s, border-color .2s, color .2s; }
-.tour-word:hover { background:color-mix(in oklab,var(--gold) 14%,transparent); }
-.tour-word[aria-pressed="true"] { background:linear-gradient(176deg,transparent 0 46%,color-mix(in oklab,var(--gold) 48%,transparent) 47% 92%,transparent 93%); border-bottom-style:solid; border-bottom-color:color-mix(in oklab,var(--gold) 70%,var(--text)); }
-.tour-word:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
-.tour-deck { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-top:14px; padding-top:14px; border-top:1px solid var(--stroke-soft); }
-.tour-deck-label { font:500 11px var(--font-mono); letter-spacing:.06em; color:var(--muted); }
-.tour-deck-cards { display:flex; flex-wrap:wrap; gap:8px; min-height:38px; align-items:center; }
-.tour-deck-empty { font-size:13px; color:var(--muted); }
-.tour-mini { display:inline-flex; align-items:baseline; gap:8px; padding:7px 12px; border:1px solid var(--stroke); border-radius:10px; background:var(--surface); box-shadow:0 8px 16px -14px #1c223388; }
-.tour-mini b { font:italic 500 16px var(--font-display); color:var(--text); }
-.tour-mini span { font-size:13px; color:color-mix(in oklab,var(--text) 70%,var(--muted)); }
-
-/* 2 · recall, flip, grade — and see when it comes back */
-.tour-recall { display:grid; grid-template-columns:212px 1fr; grid-template-rows:auto auto; column-gap:24px; row-gap:14px; align-content:center; align-items:start; }
-.tour-card { grid-row:1 / 3; position:relative; width:212px; height:150px; padding:0; border:0; background:none; color:inherit; font:inherit; text-align:left; cursor:pointer; perspective:900px; border-radius:14px; }
+.tour-card { position:relative; width:min(320px,100%); height:178px; padding:0; border:0; background:none; color:inherit; font:inherit; text-align:left; cursor:pointer; perspective:1000px; border-radius:16px; }
 .tour-card:focus-visible { outline:2px solid var(--amber); outline-offset:4px; }
-.tour-face { position:absolute; inset:0; display:flex; flex-direction:column; padding:14px 16px; border:1px solid var(--stroke); border-radius:14px; background:var(--surface); box-shadow:0 18px 30px -22px #1c2233aa; backface-visibility:hidden; transition:transform .7s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+.tour-face { position:absolute; inset:0; display:flex; flex-direction:column; padding:16px 18px; border:1px solid var(--stroke); border-radius:16px; background:var(--surface); box-shadow:0 20px 34px -24px #1c2233aa; backface-visibility:hidden; transition:transform .7s cubic-bezier(.22,1,.36,1), box-shadow .25s, translate .25s; }
 .tour-back { transform:rotateY(180deg); border-color:var(--emerald); }
 .tour-card.is-flipped .tour-front { transform:rotateY(-180deg); }
 .tour-card.is-flipped .tour-back { transform:rotateY(0); }
-.tour-card:hover .tour-face { box-shadow:0 22px 34px -20px #1c2233bb; }
+.tour-card:hover .tour-face { box-shadow:0 24px 38px -22px #1c2233bb; translate:0 -2px; }
 .tour-face-top { font:500 10px var(--font-mono); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
-.tour-face strong { margin:auto 0 6px; font:italic 500 32px/1.05 var(--font-display); letter-spacing:-.8px; color:var(--text); }
-.tour-back strong { font-style:normal; font-size:28px; color:var(--emerald); }
-.tour-face-foot { font-size:12px; line-height:1.35; color:var(--muted); }
+.tour-face strong { margin:auto 0 8px; font:italic 500 40px/1.05 var(--font-display); letter-spacing:-1px; color:var(--text); }
+.tour-back strong { font-style:normal; font-size:34px; color:var(--emerald); }
+.tour-face-foot { font-size:13px; line-height:1.4; color:color-mix(in oklab,var(--text) 62%,var(--muted)); }
 .tour-front .tour-face-foot::after { content:' ↻'; color:var(--amber); }
+.tour-back .tour-face-foot { font-style:italic; }
 
-.tour-grade { display:flex; gap:8px; }
+.tour-grade { display:flex; gap:10px; width:min(320px,100%); }
 .tour-grade[hidden] { display:none; }
-.tour-grade-btn { flex:1; min-height:40px; padding:8px 14px; border:1.5px solid; border-radius:999px; background:var(--surface); font:600 14px var(--font-ui); cursor:pointer; transition:background-color .2s, color .2s; }
+.tour-grade-btn { flex:1; min-height:44px; padding:8px 14px; border:1.5px solid; border-radius:999px; background:var(--surface); font:600 14px var(--font-ui); cursor:pointer; transition:background-color .2s, color .2s; }
 .tour-grade-btn.is-known { color:var(--emerald); border-color:var(--emerald); }
 .tour-grade-btn.is-again { color:var(--rose); border-color:var(--rose); }
 .tour-grade-btn.is-known[aria-pressed="true"] { background:var(--emerald); color:var(--surface); }
 .tour-grade-btn.is-again[aria-pressed="true"] { background:var(--rose); color:var(--surface); }
 .tour-grade-btn:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+.tour-note { margin:0; max-width:40ch; min-height:2.9em; text-align:center; font-size:14px; line-height:1.45; color:color-mix(in oklab,var(--text) 80%,var(--muted)); text-wrap:pretty; }
+.tour[data-grade="known"] .tour-note { color:var(--emerald); }
 
-.tour-curve { grid-column:2; }
-.tour-ticks { position:relative; display:flex; justify-content:space-between; margin:0 0 10px; padding:16px 0 0; list-style:none; font:500 11px var(--font-mono); color:var(--muted); }
-.tour-ticks::before { content:''; position:absolute; left:4px; right:4px; top:4px; height:2px; border-radius:2px; background:var(--stroke); }
-.tour-ticks li { position:relative; }
-.tour-ticks li::before { content:''; position:absolute; top:-16px; left:0; width:10px; height:10px; border-radius:50%; background:var(--surface); border:2px solid var(--stroke); box-sizing:border-box; transition:background-color .3s, border-color .3s, scale .3s; }
-.tour-ticks li:last-child::before { left:auto; right:0; }
-.tour-ticks li:last-child { text-align:right; }
-.tour-curve[data-g="known"] .tour-ticks li { color:var(--text); }
-.tour-curve[data-g="known"] .tour-ticks li::before { background:var(--emerald); border-color:var(--emerald); }
-.tour-curve[data-g="known"] .tour-ticks::before { background:linear-gradient(90deg,var(--emerald),color-mix(in oklab,var(--emerald) 40%,var(--stroke))); }
-.tour-curve[data-g="again"] .tour-ticks li:first-child { color:var(--text); }
-.tour-curve[data-g="again"] .tour-ticks li:first-child::before { background:var(--rose); border-color:var(--rose); scale:1.25; }
-.tour-curve-note { margin:0; min-height:4.2em; font-size:13.5px; line-height:1.45; color:color-mix(in oklab,var(--text) 78%,var(--muted)); }
+/* 2 · the two questions */
+.tour-fields { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:20px; }
+.tour-fields .field { margin:0; }
 
-/* 3 · the four ready courses, one tap each */
-.tour-plates { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:8px; }
-.tour-plate { display:flex; flex-direction:column; align-items:flex-start; gap:2px; min-height:88px; padding:12px; border:1px solid var(--stroke); border-radius:14px; background:var(--surface); color:var(--text); font:inherit; text-align:left; cursor:pointer; transition:background-color .25s, border-color .25s, color .25s, translate .25s; }
-.tour-plate b { font:500 28px/1 var(--font-display); color:var(--amber); margin-bottom:auto; }
-.tour-plate span { font-size:12.5px; font-weight:600; }
-.tour-plate:hover { translate:0 -2px; }
-.tour-plate[aria-pressed="true"] { background:var(--navy); border-color:var(--navy); color:var(--on-navy); box-shadow:0 16px 30px -18px #1c2233aa; }
-.tour-plate[aria-pressed="true"] b { color:var(--gold); }
-:root[data-theme="dark"] .tour-plate[aria-pressed="true"] { border-color:var(--gold); }
-.tour-plate:focus-visible { outline:2px solid var(--amber); outline-offset:3px; }
-.tour-lesson { margin:16px 0 0; font:italic 400 20px/1.3 var(--font-display); color:var(--text); min-height:1.3em; }
-.tour-lesson-k { font:500 11px var(--font-mono); font-style:normal; letter-spacing:.06em; color:var(--muted); margin-right:4px; }
-.tour-extras { display:flex; flex-wrap:wrap; gap:6px 0; margin:14px 0 0; font-size:13px; color:color-mix(in oklab,var(--text) 70%,var(--muted)); }
-.tour-extras span + span::before { content:'·'; margin:0 10px; color:var(--amber); }
-
-/* 4 · the two questions */
-.tour-form .tour-h { font-size:34px; }
-.tour-form > .mini { font-size:14px; }
-
-/* One progress bar: the thread fills as you go. */
-.tour-thread { margin:20px 0 10px; }
-.tour-thread path { fill:none; stroke-width:2; stroke-linecap:round; }
-.tour-thread .tour-thread-track { stroke:color-mix(in oklab,var(--stroke) 70%,var(--muted)); opacity:.6; stroke-dasharray:none; }
-.tour-thread .tour-thread-fill { stroke:var(--amber); opacity:1; stroke-dasharray:100; stroke-dashoffset:75; transition:stroke-dashoffset .7s cubic-bezier(.65,0,.35,1); }
-.tour-nav { grid-template-columns:1fr auto; }
+.tour-nav { grid-template-columns:1fr auto; margin-top:20px; }
 .tour-next { grid-column:2; min-width:148px; }
 
 @media (prefers-reduced-motion:no-preference) {
-  :root:not([data-motion="off"]) .tour-mini { animation:tourChipIn .45s cubic-bezier(.22,1,.36,1); }
-  :root:not([data-motion="off"]) .tour-step.is-current .tour-stage { animation:tourStageIn .6s cubic-bezier(.22,1,.36,1) .12s backwards; }
-  :root:not([data-motion="off"]) .tour-step[data-step="1"].is-current .tour-word[aria-pressed="false"] { animation:tourNudge 2.4s ease-in-out 1.2s 2; }
+  :root:not([data-motion="off"]) .tour-step[data-step="1"].is-current .tour-card:not(.is-flipped) { animation:tourWiggle 3.2s ease-in-out 1.4s 2; }
 }
 @media (prefers-reduced-motion:reduce) {
-  .tour-face, .tour-thread .tour-thread-fill { transition:none; }
+  .tour-face { transition:none; }
 }
-@keyframes tourChipIn { from { opacity:0; transform:translateY(-14px) scale(.9); } }
-@keyframes tourStageIn { from { opacity:0; transform:translateY(10px); } }
-@keyframes tourNudge { 0%,70%,100% { background-color:transparent; } 80% { background-color:color-mix(in oklab,var(--gold) 22%,transparent); } }
+@keyframes tourWiggle { 0%,80%,100% { rotate:0deg; } 86% { rotate:-2deg; } 92% { rotate:1.5deg; } }
 
 @media (max-width:560px) {
   .onboard-card.tour { padding:18px 18px 14px; border-radius:20px; }
-  .tour-h, .tour-form .tour-h { font-size:28px; letter-spacing:-.9px; }
+  .tour-h { font-size:29px; letter-spacing:-.9px; }
   .tour-p { font-size:14.5px; }
-  .tour-stage { margin-top:16px; min-height:0; padding:14px; }
-  .tour-quote { font-size:22px; line-height:1.7; }
-  .tour-recall { grid-template-columns:1fr; row-gap:12px; }
-  .tour-card { grid-row:auto; width:100%; height:128px; }
-  .tour-curve { grid-column:1; }
-  .tour-curve-note { min-height:0; }
-  .tour-plates { grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; }
-  .tour-plate { min-height:74px; padding:10px 9px; border-radius:12px; }
-  .tour-plate b { font-size:23px; }
-  .tour-plate span { font-size:11px; }
-  .tour-lesson { font-size:18px; }
+  .tour-stage { margin-top:16px; padding:18px 14px 14px; gap:12px; }
+  .tour-card { height:160px; }
+  .tour-face strong { font-size:36px; }
+  .tour-back strong { font-size:30px; }
+  .tour-fields { grid-template-columns:1fr; margin-top:16px; }
   .tour-next { min-width:124px; }
 }
-@media (max-height:700px) and (min-width:561px) { .tour-stage { min-height:0; } .tour-h { font-size:32px; } }
+@media (max-height:700px) and (min-width:561px) { .tour-h { font-size:32px; } .tour-card { height:156px; } }

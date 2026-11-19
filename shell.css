@@ -1017,3 +1017,22 @@ button.stop.done:hover .stop-node { color:var(--bg); border-color:var(--emerald)
   .card-face.back .context-block { gap:8px; margin-top:10px; }
   .context-block .ctx-text { font-size:13.5px; }
 }
+
+/* v2.46 — loading bar: shown until app.js has started (html[data-ready]); on a slow connection a short note
+   appears after 3 s, and the page underneath looks and acts inactive so nothing seems broken. */
+.boot { display:none; position:fixed; z-index:95; top:0; left:0; right:0; flex-direction:column; align-items:center; pointer-events:none; }
+html:not([data-ready]) .boot { display:flex; }
+.boot-bar { position:relative; width:100%; height:3px; overflow:hidden; background:color-mix(in oklab, var(--amber) 18%, transparent); }
+.boot-bar::after { content:""; position:absolute; top:0; bottom:0; left:-40%; width:40%; border-radius:3px; background:var(--amber); animation:boot-run 1.1s cubic-bezier(.45,0,.2,1) infinite; }
+@keyframes boot-run { to { left:100%; } }
+.boot-note { max-width:calc(100vw - 32px); box-sizing:border-box; text-align:center; text-wrap:balance; margin-top:12px; padding:7px 14px; border:1px solid var(--stroke); border-radius:999px; background:var(--surface); color:var(--text);
+  font:500 13px/1.3 var(--font-ui); box-shadow:0 8px 24px -12px rgba(0,0,0,.35); opacity:0; animation:boot-note .3s ease-out 3s forwards; }
+@keyframes boot-note { to { opacity:1; } }
+html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
+.app-shell { transition:opacity .25s ease-out; }
+#arcadeHub[aria-busy="true"] .arcade-cta { opacity:.6; }
+@media (prefers-reduced-motion: reduce) {
+  .boot-bar::after { animation:none; left:0; width:100%; opacity:.6; }
+  .boot-note { animation-duration:0s; }
+  .app-shell { transition:none; }
+}

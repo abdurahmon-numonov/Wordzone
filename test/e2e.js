@@ -1278,6 +1278,26 @@ run.server(server);
     await ctx.close();
   }
 
+  step('chosen deck: with the words box empty the main button practises that deck, typing switches it back');
+  {
+    const ctx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce' });
+    await ctx.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+    await ctx.addInitScript(([l]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('wordloop.cfg', JSON.stringify({ source: 'en', target: 'ru', deck: 'en-ru' })); } } catch (e) {} }, [nudgeLib]);
+    const dp = await ctx.newPage(); watch(dp); dp.on('pageerror', e => errors.push(e.message));
+    await dp.goto(origin);
+    assert.equal(await dp.locator('#btnStartLabel').innerText(), 'Повторить колоду');
+    assert.match(await dp.locator('#startDeckNote').innerText(), /English → Русский/);
+    assert.equal(await dp.locator('#pairSummary').innerText(), 'English → Русский', 'a deck named after its pair is shown once');
+    await dp.fill('#input', 'lantern');
+    assert.equal(await dp.locator('#btnStartLabel').innerText(), 'Создать тренировку');
+    assert(await dp.locator('#startDeckNote').isHidden());
+    await dp.fill('#input', '');
+    await dp.click('#btnStart');
+    await dp.locator('#screen-train.active').waitFor();
+    assert.equal(await dp.locator('#cardWord').innerText(), 'harbor', 'the chosen deck starts without typing anything');
+    await ctx.close();
+  }
+
   step('accounts: sign up on one device, sign in on another, progress merges both ways, nothing secret leaves');
   const lib = (decks) => JSON.stringify({ decks, history: { '2026-01-05': { answers: 4, correct: 3 } }, goal: 10, streak: { count: 1, last: '2026-01-05', freezes: 2, enabled: true } });
   const deviceA = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce' });

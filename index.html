@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.50" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.50" />
-  <link rel="stylesheet" href="app.min.css?v=2.50" />
+  <link rel="preload" href="core.min.js?v=2.51" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.51" />
+  <link rel="stylesheet" href="app.min.css?v=2.51" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -162,9 +162,10 @@
             <h3 class="sr-only" id="cStep3" data-i18n="composer.s3">Запуск</h3>
             <div class="actions c-go">
               <button class="btn primary big" id="btnStart" type="button">
-              <span data-i18n="setup.start">Создать тренировку</span>
+              <span id="btnStartLabel">Создать тренировку</span>
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
             </button>
+              <p class="start-deck-note" id="startDeckNote" hidden></p>
               <div class="c-go-meta"><span class="status-indicator" id="statusIndicator">● Готов к работе</span><button class="chip-btn gear-btn" id="btnSessionSettings" type="button" aria-haspopup="dialog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span data-i18n="set.open">Режим тренировки</span></button></div>
             </div>
             <details class="c-more" id="cMore">
@@ -793,7 +794,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.50"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.51"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

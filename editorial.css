@@ -194,7 +194,7 @@ input[type="checkbox"] { accent-color:var(--amber); width:15px; height:15px; }
 @media(max-width:1000px) {
   .topnav { margin-left:30px; gap:18px; } .hero { gap:25px; }
   .topbar { padding:20px 25px; } .screen { padding:25px 25px 60px; }
-  .gh-link { display:none; } .library-grid { grid-template-columns:1fr 1fr; }
+  .library-grid { grid-template-columns:1fr 1fr; }
   .app-footer { margin:0 25px; }
 }
 @media(max-width:720px) {

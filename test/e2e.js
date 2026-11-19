@@ -93,6 +93,15 @@ const server = http.createServer((req, res) => {
 });
 
 const step = name => console.log('  · ' + name);
+// v2.47: some home controls sit behind "Change", "No words at hand?" or the Settings menu; open what hides one.
+async function reveal(pg, sel) {
+  await pg.evaluate(s => {
+    const el = document.querySelector(s); if (!el) return;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    const panel = el.closest('#pairPanel'); if (panel && panel.hidden) document.getElementById('btnPairEdit').click();
+    const menu = el.closest('#themeMenu'); if (menu && menu.hidden) document.getElementById('btnTheme').click();
+  }, sel);
+}
 async function waitToast(page, text) {
   await page.waitForFunction(t => document.getElementById('toast').textContent.includes(t), text, { timeout: 15000 });
 }
@@ -397,6 +406,7 @@ run.server(server);
   await page.click('.toast-action');
   assert.equal(await page.inputValue('#input'), 'sun - солнце\nmoon', 'clearing the list can be undone');
 
+  await reveal(page, '#btnDemo');
   await page.click('#btnDemo');
   await page.locator('#screen-train.active').waitFor();
   await waitCardReady(page, '');
@@ -564,6 +574,7 @@ run.server(server);
   await sendCtx.grantPermissions(['clipboard-read', 'clipboard-write'], { origin });
   const sender = await sendCtx.newPage(); watch(sender); sender.on('pageerror', e => errors.push(e.message)); sender.on('dialog', d => d.accept());
   await sender.goto(origin);
+  await reveal(sender, '#btnDemo');
   await sender.click('#btnDemo'); await sender.click('#btnExit'); await sender.click('#btnNewSet');
   await sender.click('#navLibrary');
   await sender.locator('.deck-item [data-act="share"]').first().click();
@@ -819,10 +830,12 @@ run.server(server);
   await page.evaluate(() => { localStorage.setItem('vm.motion', 'off'); localStorage.removeItem('vm.motion.v2'); });
   await reload();
   assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'on', 'the old "off" no longer hides the tilt and flip');
+  await reveal(page, '#btnMotion');
   await page.click('#btnMotion');
   assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'off', 'the button still turns 3D off');
   await reload();
   assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'off', 'and that new choice is kept');
+  await reveal(page, '#btnMotion');
   await page.click('#btnMotion');
   assert.equal(await page.evaluate(() => document.documentElement.dataset.motion), 'on');
   await page.evaluate(() => localStorage.removeItem('vm.motion'));
@@ -830,6 +843,7 @@ run.server(server);
   await reload();
 
   step('dashboard shell: Gemini shortcut, library filters, breadcrumb, phone drawer');
+  await reveal(page, '#btnSideGemini');
   await page.click('#btnSideGemini');
   await page.locator('#apiBox[open]').waitFor();
   assert.equal(await page.inputValue('#cfgBaseUrl'), 'https://generativelanguage.googleapis.com/v1beta/openai');
@@ -855,11 +869,11 @@ run.server(server);
   assert.equal(await page.locator('.deck-item').count(), decks, 'clearing the filters shows every deck again');
   await page.setViewportSize({ width: 375, height: 800 });
   assert(!(await page.locator('#navTest').isVisible()) || !(await page.locator('#navTest').evaluate(el => el.getBoundingClientRect().right > 0)), 'on a phone the menu starts closed');
-  await page.click('#btnMenu');
-  assert.equal(await page.getAttribute('#btnMenu', 'aria-expanded'), 'true');
+  await page.click('#tabMore');
+  assert.equal(await page.getAttribute('#tabMore', 'aria-expanded'), 'true');
   await page.keyboard.press('Escape');
-  assert.equal(await page.getAttribute('#btnMenu', 'aria-expanded'), 'false', 'Escape closes the menu');
-  await page.click('#btnMenu');
+  assert.equal(await page.getAttribute('#tabMore', 'aria-expanded'), 'false', 'Escape closes the menu');
+  await page.click('#tabMore');
   await page.locator('body.side-open').waitFor();
   await page.waitForTimeout(300);
   await page.click('#navTest');
@@ -885,6 +899,7 @@ run.server(server);
   const a2 = Object.entries(libD.decks).find(([, d]) => d.name === 'Deutsch A2');
   assert(a2 && /^de-ru:[a-z0-9]+$/.test(a2[0]), 'a named deck gets its own key (' + (a2 && a2[0]) + ')');
   assert.equal(a2[1].cards.length, 4);
+  await reveal(page, '#btnHomeNewDeck');
   await page.click('#btnHomeNewDeck');
   await page.fill('#deckName', 'Deutsch B1'); await page.selectOption('#deckSource', 'de'); await page.selectOption('#deckTarget', 'ru');
   await page.fill('#deckWords', 'Wald - лес\nStadt - город\nBrot - хлеб\nZeit - время');
@@ -916,6 +931,7 @@ run.server(server);
   libD = await libNow();
   assert.equal(libD.decks[a2d[0]].cards.length, 5, 'new words land in the chosen deck'); assert.equal(libD.decks[b1[0]].cards.length, 4);
   assert(await page.locator('#btnHomePractice').isVisible(), 'the chosen deck can be practised from the home screen');
+  await reveal(page, '#btnHomeNewDeck');
   await page.click('#btnHomeNewDeck'); // v2.30: one "+ New" button on the deck card (the duplicate link is hidden)
   assert(await page.locator('#deckDialog').isVisible(), 'another language pair means a new deck');
   await page.keyboard.press('Escape');
@@ -1324,6 +1340,7 @@ run.server(server);
     assert.match(await pg.locator('#sideDeckFull').innerText(), /Достигнут максимум — 10 колод/);
     await pg.click('#btnNewDeck', { force: true });
     assert(await pg.locator('#deckDialog').isHidden(), 'no 11th deck from the sidebar');
+    await reveal(pg, '#btnHomeNewDeck');
     await pg.click('#btnHomeNewDeck');
     assert(await pg.locator('#deckDialog').isHidden(), 'nor from the home screen');
     await pg.click('#sideDeckFull .link');
@@ -1462,9 +1479,11 @@ run.server(server);
 
   step('interface language: RU → EN → UZ, choice survives a reload');
   await page.click('#navStudy');
+  await reveal(page, '#uiLang');
   await page.click('#uiLang [data-lang="en"]');
   assert.equal(await page.locator('#navStudy').innerText(), 'Study words');
   assert.equal(await page.evaluate(() => document.documentElement.lang), 'en');
+  await reveal(page, '#uiLang');
   await page.click('#uiLang [data-lang="uz"]');
   assert.equal(await page.locator('#navStudy').innerText(), "So'z o'rganish");
   await reload();

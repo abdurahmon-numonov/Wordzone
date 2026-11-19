@@ -70,8 +70,6 @@
 /* ---------- the theme button: a small dot shows the current accent ---------- */
 .theme-btn { position: relative; }
 .theme-btn[aria-expanded="true"] { border-color: var(--amber); background: color-mix(in oklab, var(--amber) 12%, var(--surface)); color: var(--amber); }
-.theme-btn-dot { position: absolute; right: 6px; bottom: 6px; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--amber); box-shadow: 0 0 0 2px var(--surface); }
 
 /* ---------- the theme menu ---------- */
 .theme-pop { position: fixed; z-index: 60; width: min(340px, calc(100vw - 24px)); padding: 14px; border: 1px solid var(--stroke);

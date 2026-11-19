@@ -20,6 +20,15 @@ const server = http.createServer((req,res) => {
 let browser;
 const run = require('./harness.js')('test/browser.js', { deadlineMs: 240000 });
 run.server(server);
+// v2.47: some home controls sit behind "No words at hand?" or the Settings menu.
+async function reveal(pg, sel) {
+  await pg.evaluate(s => {
+    const el = document.querySelector(s); if (!el) return;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    const menu = el.closest('#themeMenu'); if (menu && menu.hidden) document.getElementById('btnTheme').click();
+  }, sel);
+}
+
 (async () => {
   await new Promise(r => server.listen(0,'127.0.0.1',r));
   browser = run.browser(await chromium.launch({headless:true}));
@@ -33,6 +42,7 @@ run.server(server);
   assert.equal(await page.title(),'Wordzone — слова становятся знаниями');
   assert.equal(await page.locator('.bg, canvas#fx, .spot').count(),0,'no ambient background layers');
   await page.screenshot({path:path.join(output,'01-desktop.png'),fullPage:true});
+  await reveal(page, '#btnDemo');
   await page.click('#btnDemo');
   await page.locator('#screen-train.active').waitFor();
   await page.click('#btnReveal');
@@ -97,7 +107,7 @@ run.server(server);
   await page.click('label:has(input[name="themePick"][value="light"])');
   await page.keyboard.press('Escape');
   await page.setViewportSize({width:390,height:844});
-  await page.click('#btnMenu'); await page.locator('body.side-open').waitFor(); await page.waitForTimeout(300); await page.click('#navStudy'); // phones: the sidebar is a drawer
+  await page.click('#tabMore'); await page.locator('body.side-open').waitFor(); await page.waitForTimeout(300); await page.click('#navStudy'); // phones: the sidebar is a drawer
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'mobile horizontal overflow');
   await page.screenshot({path:path.join(output,'04-mobile.png'),fullPage:true});
   // Motion is a real EffectCraft export, used in actual learning flows.
@@ -119,6 +129,7 @@ run.server(server);
   await motionPage.fill('#dailyGoal','1');
   await motionPage.locator('#dailyGoal').press('Tab');
   await motionPage.click('#navStudy');
+  await reveal(motionPage, '#btnDemo');
   await motionPage.click('#btnDemo');
   await motionPage.waitForFunction(()=>window.lottie && window.VM_EDITORIAL_MOTION);
   assert.equal(await motionPage.evaluate(()=>window.VM_EDITORIAL_MOTION.nm),'EditorialAchievement');
@@ -207,16 +218,19 @@ run.server(server);
   assert.equal(await motionPage.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length),0);
   await motionPage.click('#btnNewSet');
   assert.equal(await motionPage.locator('html').getAttribute('data-motion'),'off');
+  await reveal(motionPage, '#btnMotion');
   await motionPage.click('#btnMotion');
   assert.equal(await motionPage.locator('html').getAttribute('data-motion'),'on');
   await motionPage.click('#heroFlip');
   await motionPage.waitForTimeout(380);
   assert(await motionPage.locator('.hero-turner').evaluate(el=>{const a=el.getAnimations().at(-1);if(!a)return false;a.pause();a.currentTime=450;const rotated=Math.abs(new DOMMatrixReadOnly(getComputedStyle(el).transform).m13)>.15;a.play();return rotated;}),'explicit 3D preference must work even with OS reduced motion');
+  await reveal(motionPage, '#btnMotion');
   await motionPage.click('#btnMotion');
   assert.equal(await motionPage.locator('html').getAttribute('data-motion'),'off');
   assert.equal(await motionPage.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length),0);
   await motionPage.setViewportSize({width:390,height:844});
   assert(await motionPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await reveal(motionPage, '#btnMotion');
   await motionPage.click('#btnMotion');
   await motionPage.fill('#input','apple - яблоко\nbook - книга');
   await motionPage.click('#btnStart');
@@ -245,7 +259,7 @@ run.server(server);
   await cdp.detach();
   await motionPage.click('#btnReveal'); await motionPage.waitForTimeout(700);
   await motionPage.click('#btnKnew2');
-  await motionPage.click('#btnMenu'); await motionPage.locator('body.side-open').waitFor(); await motionPage.waitForTimeout(300); await motionPage.click('#navStudy');
+  await motionPage.click('#tabMore'); await motionPage.locator('body.side-open').waitFor(); await motionPage.waitForTimeout(300); await motionPage.click('#navStudy');
   await motionPage.waitForTimeout(600);
   assert.equal(await motionPage.locator('#screen-setup.active').count(),1,'navigation cancels a pending handoff');
   assert.equal(await motionPage.locator('.deck-stage.is-swapping').count(),0);

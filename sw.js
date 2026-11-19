@@ -4,7 +4,7 @@
    - The page itself and the course files go to the network first, so updates arrive at once; on a slow
      connection the saved page is shown after 3.5 s and the fresh one is stored for next time.
    - API calls are never cached. */
-const V = '2.48';
+const V = '2.49';
 const CACHE = 'vm-v' + V;
 const SHELL = ['./', 'index.html', 'app.min.css?v=' + V, 'core.min.js?v=' + V, 'arcade.min.js?v=' + V,
   'course/catalog.json', 'course/en.json', 'course/de.json', 'course/es.json', 'course/fr.json', 'course/it.json', 'course/ko.json',

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.48'; // the one place the shown version lives (footer)
+  var VERSION = '2.49'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -47,6 +47,11 @@
     'tips.unlock.games': ['Повторяй те же слова в игре: «Клёв», «Чайхана» и «Оборона».', 'Practise the same words in a game: Nibble, Chaikhana and Defense.', "Xuddi shu so'zlarni o'yinda takrorlang: «Ov», «Choyxona» va «Mudofaa»."],
     'tips.unlock.grammar': ['Короткие уроки A1–B2 — удобно между тренировками.', 'Short A1–B2 lessons, handy between practices.', 'Qisqa A1–B2 darslar — mashg\'ulotlar orasida qulay.'],
     'tips.unlock.test': ['Мини-тест и тренажёры проверят, что ты запомнил.', 'A mini test and trainers check what you remember.', 'Mini test va trenajyorlar nimani eslab qolganingizni tekshiradi.'],
+    'nudge.title': ['Сохрани свой прогресс', 'Keep your progress safe', 'Natijangizni saqlang'],
+    'nudge.text': [["Твоё {n} слово и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере.", "Твои {n} слова и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере.", "Твои {n} слов и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере."], ["Your {n} word and grammar progress live only in this browser for now. A free account keeps them on the server, on any phone or computer.", "Your {n} words and grammar progress live only in this browser for now. A free account keeps them on the server, on any phone or computer."], ["{n} ta so'zingiz va grammatika hozircha faqat shu brauzerda. Bepul akkaunt ularni serverda saqlaydi — istalgan telefon yoki kompyuterda bo'ladi."]],
+    'nudge.signUp': ['Создать аккаунт', 'Create account', 'Akkaunt yaratish'],
+    'nudge.later': ['Не сейчас', 'Not now', 'Hozir emas'],
+    'nudge.signIn': ['У меня уже есть аккаунт', 'I already have an account', 'Menda akkaunt bor'],
     'side.more': ['Ещё', 'More', 'Yana'],
     'tab.aria': ['Разделы', 'Sections', "Bo'limlar"],
     'tab.study': ['Учить', 'Study', "O'rganish"],

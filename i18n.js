@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.47'; // the one place the shown version lives (footer)
+  var VERSION = '2.48'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -16,6 +16,37 @@
     'nav.home': ['Wordzone — на главную', 'Wordzone — home', 'Wordzone — bosh sahifa'],
     'side.aria': ['Меню', 'Menu', 'Menyu'],
     'side.menu': ['Меню', 'Menu', 'Menyu'],
+    'prefs.tips': ['Подсказки', 'Tips', 'Maslahatlar'],
+    'tips.kicker': ['Подсказка', 'Tip', 'Maslahat'],
+    'tips.kickerNew': ['Новый раздел', 'New for you', 'Yangi bo\'lim'],
+    'tips.next': ['Дальше →', 'Next →', 'Keyingi →'],
+    'tips.ok': ['Понятно', 'Got it', 'Tushunarli'],
+    'tips.skip': ['Пропустить', 'Skip', 'O\'tkazib yuborish'],
+    'tips.of': ['Подсказка {n} из {m}', 'Tip {n} of {m}', 'Maslahat {n}/{m}'],
+    'tips.newBadge': ['новое', 'new', 'yangi'],
+    'tips.lib1.h': ['Твои колоды', 'Your decks', 'To\'plamlaringiz'],
+    'tips.lib1': ['В каждой колоде можно повторить слова, отдельно погонять трудные, добавить новые или поделиться колодой.', 'In each deck you can review, drill the hard words, add new ones or share the deck.', 'Har bir to\'plamda so\'zlarni takrorlash, qiyinlarini alohida mashq qilish, yangisini qo\'shish yoki ulashish mumkin.'],
+    'tips.lib2.h': ['Все слова сразу', 'All words at once', 'Barcha so\'zlar birda'],
+    'tips.lib2': ['Здесь слова из всех колод в одной таблице. Найти любое слово можно через поиск выше.', 'Every word from every deck in one table. Use the search above to find any word.', 'Bu yerda barcha to\'plamlardagi so\'zlar bitta jadvalda. Istalgan so\'zni yuqoridagi qidiruv orqali toping.'],
+    'tips.prog1.h': ['Твой прогресс', 'Your progress', 'Natijangiz'],
+    'tips.prog1': ['Сколько слов выучено и сколько повторений ждёт впереди. Цифры растут после каждой тренировки.', 'How many words you know and how many reviews are coming. The numbers grow after every practice.', 'Nechta so\'z yodlangani va oldinda nechta takrorlash borligi. Har mashg\'ulotdan keyin raqamlar o\'sadi.'],
+    'tips.gram1.h': ['Курс грамматики', 'Grammar course', 'Grammatika kursi'],
+    'tips.gram1': ['Короткие уроки от A1 до B2: выбери язык и проходи темы по порядку.', 'Short lessons from A1 to B2: pick a language and go through the topics in order.', 'A1 dan B2 gacha qisqa darslar: tilni tanlang va mavzularni tartib bilan o\'ting.'],
+    'tips.gram2.h': ['Грамматика из твоих слов', 'Grammar from your words', 'So\'zlaringizdan grammatika'],
+    'tips.gram2': ['ИИ находит правила в примерах из твоих колод и делает из них упражнения.', 'AI finds the rules in the examples from your decks and turns them into exercises.', 'Sun\'iy intellekt to\'plamlaringizdagi misollardan qoidalarni topib, mashqlar yasaydi.'],
+    'tips.games1.h': ['Игры на твоих словах', 'Games with your words', 'So\'zlaringiz bilan o\'yinlar'],
+    'tips.games1': ['«Клёв», «Чайхана» и «Оборона». Слова в играх берутся из колоды, выбранной сверху.', 'Nibble, Chaikhana and Defense. The games use the words of the deck chosen above.', "«Ov», «Choyxona» va «Mudofaa». O'yinlardagi so'zlar yuqorida tanlangan to'plamdan olinadi."],
+    'tips.test1.h': ['Проверь себя', 'Check yourself', 'O\'zingizni sinang'],
+    'tips.test1': ['Мини-тест и «Найди пару» быстро покажут, какие слова уже запомнились.', 'The mini test and “Find the pair” quickly show which words have stuck.', 'Mini test va «Juftini top» qaysi so\'zlar yodda qolganini tez ko\'rsatadi.'],
+    'tips.test2.h': ['Тренажёры', 'Trainers', 'Trenajyorlar'],
+    'tips.test2': ['Короткие упражнения по твоим словам: контекст, буквы, скорость, сундуки и босс.', 'Short exercises with your words: context, letters, speed, chests and a boss.', 'So\'zlaringiz bo\'yicha qisqa mashqlar: kontekst, harflar, tezlik, sandiqlar va boss.'],
+    'tips.train1.h': ['Как идёт тренировка', 'How practice works', 'Mashg\'ulot qanday o\'tadi'],
+    'tips.train1': ['Вспомни перевод, переверни карточку и честно оцени себя. Трудные слова вернутся раньше, лёгкие — позже.', 'Recall the meaning, flip the card and rate yourself honestly. Hard words come back sooner, easy ones later.', 'Tarjimani eslang, kartani aylantiring va o\'zingizni halol baholang. Qiyin so\'zlar tezroq, osonlari kechroq qaytadi.'],
+    'tips.train1Keys': ['Вспомни перевод, переверни карточку и честно оцени себя. Без мыши: пробел — перевернуть, 1–4 — оценить.', 'Recall the meaning, flip the card and rate yourself honestly. No mouse needed: Space flips, 1–4 rates.', 'Tarjimani eslang, kartani aylantiring va o\'zingizni halol baholang. Sichqonchasiz: probel — aylantirish, 1–4 — baholash.'],
+    'tips.unlock.progress': ['Первая тренировка позади. Здесь видно, как растёт твой словарь.', 'First practice done. See how your vocabulary grows here.', 'Birinchi mashg\'ulot tugadi. Bu yerda lug\'atingiz qanday o\'sayotgani ko\'rinadi.'],
+    'tips.unlock.games': ['Повторяй те же слова в игре: «Клёв», «Чайхана» и «Оборона».', 'Practise the same words in a game: Nibble, Chaikhana and Defense.', "Xuddi shu so'zlarni o'yinda takrorlang: «Ov», «Choyxona» va «Mudofaa»."],
+    'tips.unlock.grammar': ['Короткие уроки A1–B2 — удобно между тренировками.', 'Short A1–B2 lessons, handy between practices.', 'Qisqa A1–B2 darslar — mashg\'ulotlar orasida qulay.'],
+    'tips.unlock.test': ['Мини-тест и тренажёры проверят, что ты запомнил.', 'A mini test and trainers check what you remember.', 'Mini test va trenajyorlar nimani eslab qolganingizni tekshiradi.'],
     'side.more': ['Ещё', 'More', 'Yana'],
     'tab.aria': ['Разделы', 'Sections', "Bo'limlar"],
     'tab.study': ['Учить', 'Study', "O'rganish"],

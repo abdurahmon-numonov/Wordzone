@@ -272,6 +272,7 @@
     });
     var more = $('tabMore'); if (more) more.classList.toggle('active', /^(navGames|navTest|navGrammar)$/.test(NAV_FOR[id] || ''));
     if (document.body) document.body.dataset.screen = id;
+    if (window.VMTips) window.VMTips.screen(id);
     var crumb = $('crumbHere');
     if (crumb && CRUMB_FOR[id]) crumb.textContent = tr(CRUMB_FOR[id]);
   }
@@ -1401,6 +1402,7 @@
   }
 
   function showSummary() {
+    if (window.VMTips && state.answers > 0) window.VMTips.sessionDone(); // a practice with answers opens the next sections
     if (nextCardTimer) {
       clearTimeout(nextCardTimer);
       nextCardTimer = null;
@@ -4458,6 +4460,13 @@
         showSummary();
       }
     });
+
+    // Step-by-step introduction: someone who has practised before starts with every section open.
+    if (window.VMTips) {
+      var practised = Object.keys(library.decks).some(function (k) { return library.decks[k].cards.some(function (c) { return c.reps > 0 || c.due; }); });
+      window.VMTips.init({ experienced: practised });
+      if (I18N && I18N.onChange) I18N.onChange(function () { window.VMTips.refresh(); });
+    }
   }
 
   function setDir(dir) {

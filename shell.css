@@ -1193,3 +1193,35 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
   .save-nudge-actions .btn { flex:1; }
   .save-nudge-in { text-align:center; }
 }
+
+/* ---------- v2.50 — calmer practice screen: fewer buttons and less text under the card ---------- */
+.hint-keys[hidden] { display:none; }
+#screen-train .card .flip-hint { display:none; } /* the Space key is already on the "Show translation" button */
+#screen-train .stage-tools { gap:8px; }
+#screen-train .stage-tools .chip-btn { min-height:40px; padding:8px 14px; border-color:var(--stroke); background:transparent; color:color-mix(in oklab,var(--text) 82%,var(--muted)); font-size:13.5px; }
+#screen-train .stage-tools .chip-btn:hover:not(:disabled) { background:var(--surface); color:var(--text); }
+#screen-train .stage-tools .chip-btn:disabled { opacity:.45; }
+.tools-more { position:relative; }
+#btnToolsMore[aria-expanded="true"] { background:var(--surface); color:var(--text); }
+.tools-menu { position:absolute; bottom:calc(100% + 8px); left:50%; translate:-50% 0; z-index:30; display:grid; min-width:220px; padding:6px;
+  border:1px solid var(--stroke); border-radius:14px; background:var(--surface); box-shadow:0 22px 44px -22px #1c223366; }
+.tools-menu[hidden] { display:none; }
+.tools-item { display:flex; align-items:center; gap:10px; min-height:42px; padding:8px 12px; border:0; border-radius:10px; background:none; color:var(--text);
+  font:500 14px var(--font-ui); text-align:left; cursor:pointer; white-space:nowrap; }
+.tools-item svg { width:16px; height:16px; flex:none; }
+.tools-item:hover { background:var(--bg); }
+.tools-item:focus-visible { outline:2px solid var(--amber); outline-offset:-2px; }
+.tools-keys { border-top:1px solid var(--stroke-soft); border-radius:0 0 10px 10px; margin-top:4px; }
+.tools-keys[aria-pressed="true"]::after { content:"✓"; margin-left:auto; color:var(--emerald); font-weight:700; }
+@media (hover:none) { .tools-keys { display:none; } } /* touch screens have no keyboard shortcuts */
+/* Key labels on the answer buttons only where there is a keyboard. */
+@media (hover:none), (max-width:720px) { #screen-train .answer-row kbd { display:none; } }
+@media (prefers-reduced-motion:no-preference) {
+  :root:not([data-motion="off"]) .tools-menu:not([hidden]) { animation:toolsIn .18s ease-out; }
+}
+@keyframes toolsIn { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+@media (max-width:520px) {
+  #screen-train .stage-tools { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+  #screen-train .stage-tools .chip-btn, #screen-train .tools-more > .chip-btn { width:100%; justify-content:center; padding:8px 4px; font-size:12.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .tools-menu { left:auto; right:0; translate:none; }
+}

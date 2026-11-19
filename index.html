@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.49" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.49" />
-  <link rel="stylesheet" href="app.min.css?v=2.49" />
+  <link rel="preload" href="core.min.js?v=2.50" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.50" />
+  <link rel="stylesheet" href="app.min.css?v=2.50" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -259,7 +259,7 @@
 
         <p class="sr-only" id="cardKeysHint" data-i18n="a11y.keys">Пробел — перевернуть, 1 — не помню, 2 — знал, 3 — трудно, 4 — легко.</p>
         <div class="sr-only" id="srStatus" role="status" aria-live="polite"></div>
-        <div class="hint-keys" aria-hidden="true">
+        <div class="hint-keys" id="hintKeys" aria-hidden="true" hidden>
           <span><kbd>Space</kbd> <i data-i18n="keys.flip">перевернуть</i></span>
           <span><kbd>1</kbd> <i data-i18n="keys.forgot">не помню</i></span>
           <span><kbd>2</kbd> <i data-i18n="keys.knew">знал</i></span>
@@ -304,15 +304,21 @@
         </div>
 
         <div class="stage-tools">
-          <button class="chip-btn" id="btnSpeakCur" type="button" title="Озвучить (S)" data-i18n-attr="title:tools.speakTitle">
+          <button class="chip-btn" id="btnUndo" type="button" disabled title="Отменить последний ответ (U)" data-i18n="tools.undo" data-i18n-attr="title:tools.undoTitle">↶ Отменить</button>
+          <button class="chip-btn" id="btnHint" type="button" title="Первые буквы ответа (H)" data-i18n="tools.hint" data-i18n-attr="title:tools.hintTitle">💡 Подсказка</button>
+          <div class="tools-more">
+            <button class="chip-btn" id="btnToolsMore" type="button" aria-expanded="false" aria-controls="toolsMenu"><span data-i18n="tools.more">Ещё</span> <span aria-hidden="true">▾</span></button>
+            <div class="tools-menu" id="toolsMenu" hidden>
+            <button class="tools-item" id="btnSpeakCur" type="button" title="Озвучить (S)" data-i18n-attr="title:tools.speakTitle">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M18.8 5.2a9 9 0 0 1 0 13.6" /></svg>
             <span data-i18n="tools.speak">Озвучить</span>
           </button>
-          <button class="chip-btn" id="btnUndo" type="button" disabled title="Отменить последний ответ (U)" data-i18n="tools.undo" data-i18n-attr="title:tools.undoTitle">↶ Отменить</button>
-          <button class="chip-btn" id="btnHint" type="button" title="Первые буквы ответа (H)" data-i18n="tools.hint" data-i18n-attr="title:tools.hintTitle">💡 Подсказка</button>
-          <button class="chip-btn" id="btnDirCycle" type="button" data-i18n="tools.dir">↻ Направление</button>
-          <button class="chip-btn" id="btnShuffle" type="button" data-i18n="tools.shuffle">⤨ Перемешать</button>
-          <button class="chip-btn" id="btnNewSetTrain" type="button" title="Выбрать новый набор слов" data-i18n="tools.newSet" data-i18n-attr="title:tools.newSetTitle">✦ Новый набор</button>
+            <button class="tools-item" id="btnDirCycle" type="button" data-i18n="tools.dir">↻ Направление</button>
+            <button class="tools-item" id="btnShuffle" type="button" data-i18n="tools.shuffle">⤨ Перемешать</button>
+            <button class="tools-item" id="btnNewSetTrain" type="button" title="Выбрать новый набор слов" data-i18n="tools.newSet" data-i18n-attr="title:tools.newSetTitle">✦ Новый набор</button>
+              <button class="tools-item tools-keys" id="btnKeys" type="button" aria-pressed="false" aria-controls="hintKeys"><span aria-hidden="true">⌨</span> <span data-i18n="tools.keys">Горячие клавиши</span></button>
+            </div>
+          </div>
           <button class="chip-btn chip-exit" id="btnExit" type="button" title="Завершить сессию" data-i18n="tools.exit" data-i18n-attr="title:tools.exitTitle">Ливнуть ✕</button>
         </div>
       </div>
@@ -787,7 +793,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.49"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.50"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

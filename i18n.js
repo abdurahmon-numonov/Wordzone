@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.49'; // the one place the shown version lives (footer)
+  var VERSION = '2.50'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -698,6 +698,8 @@
     'btn.next': ['Дальше →', 'Next →', 'Keyingi →'],
     'btn.forgot': ['Не вспомнил — повторить', "Didn't recall — repeat", 'Eslay olmadim — takrorlash'],
     'btn.remembered': ['Запомнил', 'Got it', 'Esladim'],
+    'tools.more': ['Ещё', 'More', 'Yana'],
+    'tools.keys': ['Горячие клавиши', 'Keyboard shortcuts', 'Tezkor tugmalar'],
     'tools.speak': ['Озвучить', 'Speak', "O'qish"],
     'tools.speakTitle': ['Озвучить (S)', 'Speak (S)', "O'qish (S)"],
     'tools.hint': ['💡 Подсказка', '💡 Hint', '💡 Yordam'],

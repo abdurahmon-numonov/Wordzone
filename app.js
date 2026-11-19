@@ -4376,6 +4376,31 @@
     } catch (e) {}
     $('btnExit').addEventListener('click', showSummary);
 
+    /* Practice tools: Undo, Hint and Exit stay in sight; the rarer ones live under "More". */
+    var toolsMenu = $('toolsMenu'), toolsBtn = $('btnToolsMore');
+    var setToolsMenu = function (open, focusBtn) {
+      toolsMenu.hidden = !open; toolsBtn.setAttribute('aria-expanded', String(open));
+      if (open) { var first = toolsMenu.querySelector('button:not([hidden])'); if (first) first.focus(); }
+      else if (focusBtn) toolsBtn.focus();
+    };
+    toolsBtn.addEventListener('click', function () { setToolsMenu(toolsMenu.hidden); });
+    toolsMenu.addEventListener('click', function (e) { if (e.target.closest('button')) setToolsMenu(false); });
+    document.addEventListener('pointerdown', function (e) { if (!toolsMenu.hidden && !e.target.closest('.tools-more')) setToolsMenu(false); }, true);
+    document.addEventListener('keydown', function (e) { // Escape closes the menu first, not the practice
+      if (e.key === 'Escape' && !toolsMenu.hidden) { e.preventDefault(); e.stopPropagation(); setToolsMenu(false, true); }
+    }, true);
+    toolsMenu.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      var items = [].slice.call(toolsMenu.querySelectorAll('button')).filter(function (b) { return b.offsetParent; });
+      var i = items.indexOf(document.activeElement); e.preventDefault();
+      items[(i + (e.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length].focus();
+    });
+    // The keyboard shortcuts row is hidden by default; "Keyboard shortcuts" in "More" shows it (remembered).
+    var keysOn = false; try { keysOn = localStorage.getItem('vm.keys-row') === '1'; } catch (e) {}
+    var applyKeys = function () { $('hintKeys').hidden = !keysOn; $('btnKeys').setAttribute('aria-pressed', String(keysOn)); };
+    applyKeys();
+    $('btnKeys').addEventListener('click', function () { keysOn = !keysOn; try { localStorage.setItem('vm.keys-row', keysOn ? '1' : '0'); } catch (e) {} applyKeys(); });
+
     $('btnShuffle').addEventListener('click', function () {
       shuffle(state.roundQueue);
       if (window.VMMotion) updateNextPreview();

@@ -557,7 +557,8 @@ run.server(server);
   assert.equal(await tp.evaluate(() => document.activeElement.className), 'coach-next', 'the bubble takes focus');
   await tp.keyboard.press('Enter');
   await coach.waitFor({ state: 'detached' }).catch(() => {}); assert.equal(await coach.count(), 0, 'Enter closes the bubble');
-  for (let i = 0; i < 3; i++) { await tp.keyboard.press('Space'); await tp.waitForTimeout(250); await tp.keyboard.press('2'); await tp.waitForTimeout(450); }
+  await tp.click('#btnReveal'); await tp.locator('#btnKnew2').waitFor(); await tp.click('#btnKnew2'); // one real answer
+  await tp.waitForFunction(() => document.getElementById('stKnown').textContent === '1');
   await tp.keyboard.press('Escape');
   await tp.locator('#summary:not([hidden])').waitFor();
   await tp.keyboard.press('Escape');

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.50'; // the one place the shown version lives (footer)
+  var VERSION = '2.51'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -633,6 +633,8 @@
     'steps.1': ['Вставь слова или текст', 'Paste your words or text', "So'z yoki matnni joylang"],
     'steps.2': ['ИИ делает карточки и правила', 'AI makes flashcards and rules', 'AI kartalar va qoidalar tuzadi'],
     'steps.3': ['Повторяй с интервалами', 'Practise with spaced repetition', 'Oraliqli takrorlash bilan mashq qiling'],
+    'setup.startDeck': ['Повторить колоду', 'Practise this deck', "To'plamni takrorlash"],
+    'setup.startDeckNote': ['Поле пустое — начнём колоду «{n}». Впиши слова, чтобы добавить новые.', 'The box is empty, so we will practise “{n}”. Type words to add new ones.', "Maydon bo'sh — «{n}» to'plamini boshlaymiz. Yangi so'z qo'shish uchun ularni yozing."],
     'setup.start': ['Создать тренировку', 'Start training', "Mashg'ulotni boshlash"],
     'setup.demo': ['Попробовать демо-колоду (14 слов)', 'Try the demo deck (14 words)', "Demo kolodani sinab ko'rish (14 so'z)"],
     'setup.resume': ['Продолжить прошлую сессию — ', 'Continue your last session — ', 'Oldingi sessiyani davom ettirish — '],

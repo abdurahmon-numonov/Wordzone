@@ -1570,6 +1570,9 @@
     var raw = $('input').value;
     var parsed = parseInput(raw);
     if (!parsed.items.length) {
+      // Nothing typed but a deck with words is chosen: practise that deck (due words first, otherwise all of it).
+      var chosen = L && activeDeck();
+      if (chosen && chosen.cards.length) { practiceDeck(chosen, 'due'); return; }
       toast(tr('toast.pasteWords'), 'err');
       $('input').focus();
       return;
@@ -2397,6 +2400,7 @@
     if (d) $('homeDeckNote').textContent = tr('deck.homeNote', { n: deckLabel(d), p: pairLabel(d) });
     renderToday();
     renderSaveNudge();
+    updateStartLabel();
   }
   /* Home, top: newcomers (no words yet) see the welcome banner; everyone else sees one clear next step,
      "review the words that are due", or, when nothing is due, "add new words". */
@@ -2444,7 +2448,7 @@
     var el = $('pairSummary'); if (!el) return;
     var d = activeDeck(), pair = pairLabel(d || { source: state.cfg.source, target: state.cfg.target });
     el.textContent = '';
-    if (d && d.name) el.appendChild(h('strong', { text: d.name + ' · ' }));
+    if (d && d.name && d.name !== pair) el.appendChild(h('strong', { text: d.name + ' · ' }));
     el.appendChild(h('span', { text: pair }));
   }
   function setPairPanel(open) {
@@ -4528,7 +4532,18 @@
   }
 
   var statTimer = null;
+  // The main button says what it will do: practise the chosen deck when the box is empty, build cards when it is not.
+  function updateStartLabel() {
+    var label = $('btnStartLabel'); if (!label) return;
+    var d = L && activeDeck(), empty = !parseInput($('input').value).items.length;
+    var deckMode = Boolean(empty && d && d.cards.length);
+    label.textContent = tr(deckMode ? 'setup.startDeck' : 'setup.start');
+    $('btnStart').classList.toggle('is-deck', deckMode);
+    var note = $('startDeckNote');
+    if (note) { note.hidden = !deckMode; if (deckMode) note.textContent = tr('setup.startDeckNote', { n: deckLabel(d) }); }
+  }
   function updateInputStat(silent) {
+    updateStartLabel();
     clearTimeout(statTimer);
     var applyStats = function () {
       var val = $('input').value;

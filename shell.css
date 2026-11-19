@@ -1168,3 +1168,28 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
 @keyframes coachRing { 0% { box-shadow:0 0 0 2px var(--gold), 0 0 0 0 color-mix(in srgb,var(--gold) 45%,transparent); } 100% { box-shadow:0 0 0 2px var(--gold), 0 0 0 7px color-mix(in srgb,var(--gold) 22%,transparent); } }
 .prefs-switches { grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); }
 .side-nav .nav-link.nav-minor.active { color:var(--on-navy); } /* the quieter "More" items still read on the dark active pill */
+
+/* ---------- v2.49 — "save your progress": one calm card after a few practices ---------- */
+.save-nudge { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:14px 18px; margin:-14px 0 32px; padding:16px 18px;
+  border:1px solid var(--stroke); border-radius:18px; background:var(--surface); box-shadow:0 14px 30px -26px #1c223366; }
+.save-nudge[hidden] { display:none; }
+.save-nudge-icon { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; color:var(--emerald); background:color-mix(in srgb,var(--emerald) 13%,transparent); }
+.save-nudge-title { margin:0 0 3px; font:600 16px/1.3 var(--font-ui); letter-spacing:0; color:var(--text); }
+.save-nudge-text { margin:0; max-width:62ch; font-size:14px; line-height:1.5; color:color-mix(in oklab,var(--text) 76%,var(--muted)); text-wrap:pretty; }
+.save-nudge-actions { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:8px 10px; }
+.save-nudge-actions .btn { min-height:42px; white-space:nowrap; }
+.save-nudge-later { background:transparent; border-color:var(--stroke); color:var(--text); }
+.save-nudge-later:hover { background:var(--bg); }
+.save-nudge-in { flex-basis:100%; text-align:right; font-size:13px; min-height:28px; }
+.save-nudge .btn:focus-visible, .save-nudge-in:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+@media (prefers-reduced-motion:no-preference) {
+  :root:not([data-motion="off"]) .save-nudge:not([hidden]) { animation:nudgeIn .35s cubic-bezier(.22,1,.36,1); }
+}
+@keyframes nudgeIn { from { opacity:0; translate:0 6px; } to { opacity:1; translate:0 0; } }
+@media (max-width:720px) {
+  .save-nudge { grid-template-columns:auto minmax(0,1fr); align-items:start; margin:-8px 0 24px; padding:16px; }
+  .save-nudge-icon { width:40px; height:40px; }
+  .save-nudge-actions { grid-column:1 / -1; justify-content:stretch; }
+  .save-nudge-actions .btn { flex:1; }
+  .save-nudge-in { text-align:center; }
+}

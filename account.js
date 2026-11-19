@@ -152,6 +152,7 @@
       $('accountLabel').textContent = u ? u.email.split('@')[0] : api.tr('acc.signIn');
       $('btnAccount').classList.toggle('signed-in', Boolean(u));
       $('btnAccount').title = u ? api.tr('acc.signedInAs', { e: u.email }) : api.tr('acc.cta');
+      try { doc.dispatchEvent(new CustomEvent('vm-account', { detail: { signedIn: Boolean(u) } })); } catch (e) {}
       if (u) {
         $('accEmailShown').textContent = u.email;
         var when = meta.at ? new Date(meta.at).toLocaleString(api.lang(), { hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short' }) : '';
@@ -274,7 +275,8 @@
     return {
       changed: function () { if (quiet) return; meta.dirty = true; writeMeta(); if (c.user()) schedule(3000); },
       refresh: render,
-      user: function () { return c.user(); }
+      user: function () { return c.user(); },
+      open: function (m) { if (m === 'in' || m === 'up') mode = m; open(); } // e.g. the "save your progress" card opens sign-up
     };
   }
 

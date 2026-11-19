@@ -1403,6 +1403,7 @@
 
   function showSummary() {
     if (window.VMTips && state.answers > 0) window.VMTips.sessionDone(); // a practice with answers opens the next sections
+    if (state.answers > 0) { var nd = nudgeState(); nd.n = (nd.n || 0) + 1; saveNudge(nd); }
     if (nextCardTimer) {
       clearTimeout(nextCardTimer);
       nextCardTimer = null;
@@ -2395,6 +2396,7 @@
     $('homeDeckNote').hidden = !d;
     if (d) $('homeDeckNote').textContent = tr('deck.homeNote', { n: deckLabel(d), p: pairLabel(d) });
     renderToday();
+    renderSaveNudge();
   }
   /* Home, top: newcomers (no words yet) see the welcome banner; everyone else sees one clear next step,
      "review the words that are due", or, when nothing is due, "add new words". */
@@ -2422,6 +2424,20 @@
     btn.className = 'btn ' + (due ? 'primary' : 'today-again'); // nothing due: adding words is the main step
     add.className = 'btn today-add' + (due ? '' : ' primary');
     card.classList.toggle('is-clear', !due);
+  }
+  /* "Save your progress": after a few practices, someone without an account sees one calm card on the home screen.
+     Never before learning, never for signed-in people, "Not now" hides it; it comes back once, 5 practices later. */
+  var NUDGE_KEY = 'vm.save-nudge', NUDGE_AFTER = 3, NUDGE_AGAIN = 5;
+  function nudgeState() { try { return JSON.parse(localStorage.getItem(NUDGE_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function saveNudge(v) { try { localStorage.setItem(NUDGE_KEY, JSON.stringify(v)); } catch (e) {} }
+  function renderSaveNudge() {
+    var box = $('saveNudge'); if (!box) return;
+    var nd = nudgeState(), n = nd.n || 0, words = 0;
+    Object.keys(library.decks).forEach(function (k) { words += library.decks[k].cards.length; });
+    var due = n >= NUDGE_AFTER && (!nd.later || (nd.later < 2 && n >= nd.at + NUDGE_AGAIN));
+    var show = Boolean(account && !account.user() && words > 0 && due);
+    box.hidden = !show;
+    if (show) $('saveNudgeText').textContent = trn('nudge.text', words);
   }
   // Step 1 shows the deck and language pair as one line; "Change" opens the full controls.
   function updatePairSummary() {
@@ -4059,6 +4075,7 @@
         return other ? { v: 1, library: L.mergeLibrary(local.library, other), cfg: local.cfg } : local;
       }
     });
+    renderSaveNudge(); // the first account render happens inside mount(), before `account` is set
   }
 
   function refreshLanguage() {
@@ -4273,6 +4290,14 @@
     $('btnSessionSettings').addEventListener('click', function () { openSessionSettings(false); });
     $('btnSessionClose').addEventListener('click', closeSessionSettings);
     $('sessionDialog').addEventListener('click', function (e) { if (e.target === this) closeSessionSettings(); });
+    $('btnNudgeSignUp').addEventListener('click', function () { if (account) account.open('up'); });
+    $('btnNudgeSignIn').addEventListener('click', function () { if (account) account.open('in'); });
+    $('btnNudgeLater').addEventListener('click', function () {
+      var nd = nudgeState(); nd.later = (nd.later || 0) + 1; nd.at = nd.n || 0; saveNudge(nd);
+      $('saveNudge').hidden = true;
+      var next = $('btnHomePractice'); if (next && !next.hidden) next.focus(); else $('btnTodayAdd').focus();
+    });
+    document.addEventListener('vm-account', renderSaveNudge);
     $('btnTodayAdd').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
 
     $('btnOwnKey').addEventListener('click', function () { ownKeyOpen = !ownKeyOpen; updateApiStatus(); if (ownKeyOpen) $('cfgKey').focus(); });

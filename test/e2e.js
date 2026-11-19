@@ -1253,6 +1253,30 @@ run.server(server);
   await onb.keyboard.press('ArrowLeft');
   await onbCtx.close();
 
+  step('save-progress card: after 3 practices without an account, opens sign-up, "Not now" hides it, never before');
+  const nudgeLib = JSON.stringify({ decks: { 'en-ru': { source: 'en', target: 'ru', created: 1, cards: [{ original: 'harbor', translation: 'гавань', examples: [], streak: 0, fails: 0 }] } }, history: { '2026-01-05': { answers: 4, correct: 3 } }, goal: 10, streak: { count: 1, last: '2026-01-05', freezes: 2, enabled: true } });
+  for (const [n, expected] of [[2, false], [3, true]]) {
+    const ctx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce' });
+    await ctx.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+    await ctx.addInitScript(([l, k]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('vm.save-nudge', JSON.stringify({ n: k })); } } catch (e) {} }, [nudgeLib, n]);
+    const np = await ctx.newPage(); watch(np); np.on('pageerror', e => errors.push(e.message));
+    await np.goto(origin);
+    await np.locator('#btnAccount:not([hidden])').waitFor();
+    assert.equal(await np.locator('#saveNudge').isVisible(), expected, n + ' practices: card ' + (expected ? 'shown' : 'not yet'));
+    if (expected) {
+      assert.match(await np.locator('#saveNudgeText').innerText(), /1 слово/);
+      await np.click('#btnNudgeSignUp');
+      assert.equal(await np.getAttribute('#accTabUp', 'aria-selected'), 'true', 'the card opens sign-up');
+      await np.keyboard.press('Escape');
+      assert.equal(await np.evaluate(() => document.activeElement.id), 'btnNudgeSignUp', 'focus comes back to the card');
+      await np.click('#btnNudgeLater');
+      assert.equal(await np.locator('#saveNudge').isVisible(), false);
+      await np.reload(); await np.locator('#btnAccount:not([hidden])').waitFor();
+      assert.equal(await np.locator('#saveNudge').isVisible(), false, '"Not now" is remembered');
+    }
+    await ctx.close();
+  }
+
   step('accounts: sign up on one device, sign in on another, progress merges both ways, nothing secret leaves');
   const lib = (decks) => JSON.stringify({ decks, history: { '2026-01-05': { answers: 4, correct: 3 } }, goal: 10, streak: { count: 1, last: '2026-01-05', freezes: 2, enabled: true } });
   const deviceA = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce' });

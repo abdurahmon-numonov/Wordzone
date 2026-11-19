@@ -15,7 +15,7 @@ const crypto = require('crypto');
 
 const root = path.join(__dirname, '..');
 const BUNDLES = {
-  'core.min.js': ['display.js', 'i18n.js', 'motion.js', 'languages.js', 'grammar.js', 'learning.js', 'writing.js', 'ai-core.js', 'share.js', 'games.js', 'course.js', 'account.js', 'app.js'],
+  'core.min.js': ['display.js', 'i18n.js', 'motion.js', 'languages.js', 'grammar.js', 'learning.js', 'writing.js', 'ai-core.js', 'share.js', 'games.js', 'course.js', 'account.js', 'tips.js', 'app.js'],
   'arcade.min.js': ['fishing.js', 'cafe.js', 'defense.js'],
   'app.min.css': ['styles.css', 'editorial.css', 'shell.css', 'motion.css', 'composer.css', 'onboarding.css', 'arcade.css', 'cafe.css', 'defense.css', 'themes.css']
 };

@@ -1126,3 +1126,45 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
 @media (max-width:1000px) { body:not([data-screen="screen-train"]):not([data-screen="screen-loading"]) .toast { bottom:calc(82px + env(safe-area-inset-bottom)); } }
 .today .btn { min-height:48px; padding:12px 22px; font-size:15px; font-weight:600; white-space:nowrap; }
 .today.is-clear .today-add { order:-1; }
+
+/* ---------- v2.48 — step-by-step introduction: "new" dots and small tip bubbles ---------- */
+.new-dot { display:inline-block; flex:none; width:8px; height:8px; margin-left:auto; border-radius:50%; background:var(--gold); box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 28%,transparent); }
+.nav-link .new-dot { margin-left:auto; }
+.tab { position:relative; }
+.tab .new-dot { position:absolute; top:7px; left:calc(50% + 9px); margin:0; }
+@media (prefers-reduced-motion:no-preference) {
+  :root:not([data-motion="off"]) .new-dot { animation:newDot 2.4s ease-in-out 3; }
+}
+@keyframes newDot { 0%,100% { box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 28%,transparent); } 50% { box-shadow:0 0 0 6px color-mix(in srgb,var(--gold) 10%,transparent); } }
+
+.coach { position:fixed; z-index:70; width:min(320px,calc(100vw - 24px)); padding:16px 18px 14px; border-radius:16px;
+  background:linear-gradient(150deg,var(--navy),var(--navy-2)); color:var(--on-navy); box-shadow:0 24px 48px -20px #0b1230cc, 0 0 0 1px #ffffff14; }
+.coach[hidden], .coach-ring[hidden] { display:none; }
+.coach-kicker { margin:0 0 6px; font:500 10.5px var(--font-mono); letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
+.coach-title { margin:0 0 6px; font:500 21px/1.15 var(--font-display); letter-spacing:-.01em; color:var(--on-navy); }
+.coach-text { margin:0; font-size:14px; line-height:1.5; color:#f6f1e7e6; text-wrap:pretty; }
+.coach-foot { display:flex; align-items:center; gap:8px; margin-top:14px; }
+.coach-dots { display:flex; gap:5px; margin-right:auto; }
+.coach-dots i { width:6px; height:6px; border-radius:50%; background:#f6f1e74d; }
+.coach-dots i.on { width:16px; border-radius:3px; background:var(--gold); }
+.coach-skip, .coach-next { min-height:38px; padding:7px 14px; border-radius:999px; font:600 13.5px var(--font-ui); cursor:pointer; }
+.coach-skip { border:0; background:none; color:#f6f1e7c7; }
+.coach-skip:hover { color:var(--on-navy); }
+.coach-skip[hidden] { display:none; }
+.coach-next { margin-left:auto; border:0; background:var(--gold); color:#1c2233; }
+.coach-dots:not(:empty) ~ .coach-next { margin-left:0; }
+.coach-next:hover { background:#d4b06a; }
+.coach button:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+.coach-arrow { position:absolute; left:var(--arrow-x,50%); width:14px; height:14px; margin-left:-7px; transform:rotate(45deg); background:var(--navy); }
+.coach[data-side="below"] .coach-arrow { top:-6px; }
+.coach[data-side="above"] .coach-arrow { bottom:-6px; background:var(--navy-2); }
+.coach[data-side="inside"] .coach-arrow { display:none; }
+.coach-ring { position:fixed; z-index:69; border-radius:14px; pointer-events:none; box-shadow:0 0 0 2px var(--gold), 0 0 0 7px color-mix(in srgb,var(--gold) 22%,transparent); }
+@media (prefers-reduced-motion:no-preference) {
+  :root:not([data-motion="off"]) .coach.is-in { animation:coachIn .26s cubic-bezier(.22,1,.36,1); }
+  :root:not([data-motion="off"]) .coach-ring:not([hidden]) { animation:coachRing 1.6s ease-out 1; }
+}
+@keyframes coachIn { from { opacity:0; translate:0 6px; } to { opacity:1; translate:0 0; } }
+@keyframes coachRing { 0% { box-shadow:0 0 0 2px var(--gold), 0 0 0 0 color-mix(in srgb,var(--gold) 45%,transparent); } 100% { box-shadow:0 0 0 2px var(--gold), 0 0 0 7px color-mix(in srgb,var(--gold) 22%,transparent); } }
+.prefs-switches { grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); }
+.side-nav .nav-link.nav-minor.active { color:var(--on-navy); } /* the quieter "More" items still read on the dark active pill */

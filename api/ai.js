@@ -18,6 +18,7 @@
  *   ALLOWED_ORIGINS       extra comma-separated origins allowed to call (the deployment's own host always is)
  *   AI_ALLOWED_HOSTS      extra provider hosts for "bring your own key" requests
  *   AI_RATE_LIMIT / AI_RATE_LIMIT_BYOK / AI_RATE_WINDOW_MS   per-IP limits (default 30 / 120 per 10 min)
+ *   AI_RATE_LIMIT_GLOBAL  requests per window for one instance with the server key, all addresses together (default 600)
  *
  * Limits of this design: the rate limiter lives in the memory of one serverless instance, so it resets on cold
  * starts and is not shared between instances; for hard guarantees put Vercel KV / Upstash or the Vercel firewall
@@ -66,6 +67,15 @@ function callerOrigin(req) {
   try { return new URL(header(req, 'referer')).origin; } catch (e) { return ''; }
 }
 
+// One extra ceiling for the whole instance, so many addresses together cannot burn through the operator's AI quota.
+let globalHits = [];
+function globalLimit(limit) {
+  const now = Date.now(), windowMs = WINDOW_MS();
+  globalHits = globalHits.filter(t => now - t < windowMs);
+  if (globalHits.length >= limit) return Math.max(1, Math.ceil((globalHits[0] + windowMs - now) / 1000));
+  globalHits.push(now);
+  return 0;
+}
 function rateLimit(ip, limit) {
   const now = Date.now(), windowMs = WINDOW_MS();
   const recent = (hits.get(ip) || []).filter(t => now - t < windowMs);
@@ -167,7 +177,8 @@ module.exports = async (req, res) => {
   if (!serverKey && !clientKey) return fail(501, 'no-key', 'No API key: the server has none configured and the request did not include one.');
   if (!serverKey && (clientKey.length > 400 || !/^[\x21-\x7e]+$/.test(clientKey))) return error(res, 400, 'bad-request', 'Malformed API key.');
 
-  const retryAfter = rateLimit(clientIp(req), serverKey ? num(process.env.AI_RATE_LIMIT, 30) : num(process.env.AI_RATE_LIMIT_BYOK, 120));
+  const retryAfter = rateLimit(clientIp(req), serverKey ? num(process.env.AI_RATE_LIMIT, 30) : num(process.env.AI_RATE_LIMIT_BYOK, 120)) ||
+    (serverKey ? globalLimit(num(process.env.AI_RATE_LIMIT_GLOBAL, 600)) : 0);
   if (retryAfter) return fail(429, 'rate-limited', 'Too many requests. Try again in ' + retryAfter + ' s.', { 'Retry-After': String(retryAfter) });
 
   // A server key is pinned to the operator's endpoint and model; a caller's own key may pick a known provider.
@@ -233,3 +244,4 @@ module.exports = async (req, res) => {
 
 module.exports._resetRateLimit = () => hits.clear();
 module.exports._rateLimitSize = () => hits.size;
+module.exports._resetGlobal = () => { globalHits = []; };

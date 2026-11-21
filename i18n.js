@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.0'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.1'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -16,6 +16,7 @@
     'nav.home': ['Wordzone — на главную', 'Wordzone — home', 'Wordzone — bosh sahifa'],
     'side.aria': ['Меню', 'Menu', 'Menyu'],
     'side.menu': ['Меню', 'Menu', 'Menyu'],
+    'side.hide': ['Скрыть меню', 'Hide menu', 'Menyuni yashirish'],
     'prefs.tips': ['Подсказки', 'Tips', 'Maslahatlar'],
     'tips.kicker': ['Подсказка', 'Tip', 'Maslahat'],
     'tips.kickerNew': ['Новый раздел', 'New for you', 'Yangi bo\'lim'],

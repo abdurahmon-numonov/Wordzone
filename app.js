@@ -276,6 +276,16 @@
     var crumb = $('crumbHere');
     if (crumb && CRUMB_FOR[id]) crumb.textContent = tr(CRUMB_FOR[id]);
   }
+  /* Desktop: hide / show the left menu; the choice is remembered (the phone keeps its drawer). */
+  var SIDE_KEY = 'vm.side-collapsed';
+  function desktopWide() { return window.matchMedia ? window.matchMedia('(min-width:1001px)').matches : true; }
+  function setSideCollapsed(on, focus) {
+    document.body.classList.toggle('side-collapsed', on);
+    $('btnSideCollapse').setAttribute('aria-expanded', String(!on));
+    if (desktopWide()) $('btnMenu').setAttribute('aria-expanded', String(!on));
+    try { localStorage.setItem(SIDE_KEY, on ? '1' : '0'); } catch (e) {}
+    if (focus) { var target = on ? $('btnMenu') : $('btnSideCollapse'); if (target && target.focus) target.focus(); }
+  }
   var sideOpener = null;
   function setSidebar(open) {
     document.body.classList.toggle('side-open', open);
@@ -4467,7 +4477,12 @@
     $('btnTodayAdd').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
 
     $('btnOwnKey').addEventListener('click', function () { ownKeyOpen = !ownKeyOpen; updateApiStatus(); if (ownKeyOpen) $('cfgKey').focus(); });
-    $('btnMenu').addEventListener('click', function () { setSidebar(!document.body.classList.contains('side-open')); });
+    $('btnMenu').addEventListener('click', function () {
+      if (desktopWide()) setSideCollapsed(!document.body.classList.contains('side-collapsed'), true); // wide screen: show / hide the menu
+      else setSidebar(!document.body.classList.contains('side-open'));
+    });
+    $('btnSideCollapse').addEventListener('click', function () { setSideCollapsed(true, true); });
+    try { if (localStorage.getItem(SIDE_KEY) === '1') setSideCollapsed(true, false); } catch (e) {}
     var backToOpener = function () { var o = sideOpener && sideOpener.getClientRects().length ? sideOpener : $('btnMenu'); if (o && o.focus) o.focus(); };
     $('sideBackdrop').addEventListener('click', function () { setSidebar(false); backToOpener(); });
     document.addEventListener('keydown', function (e) {

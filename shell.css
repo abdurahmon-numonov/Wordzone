@@ -44,6 +44,15 @@
 .app-main .topbar { position:sticky; top:0; z-index:30; max-width:none; margin:0; display:flex; align-items:center; gap:14px; padding:14px 32px;
   background:color-mix(in srgb,var(--bg) 88%,transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--stroke); }
 .menu-btn { display:none; }
+/* Desktop: the left menu can be hidden (button in its corner) and brought back from the top bar (v2.56.1). */
+.sidebar .side-collapse { position:absolute; top:20px; right:12px; width:36px; height:36px; color:var(--muted); }
+.sidebar .side-collapse:hover { color:var(--text); }
+@media (min-width:1001px) {
+  body.side-collapsed .app-shell { grid-template-columns:minmax(0,1fr); background:none; }
+  body.side-collapsed .sidebar { display:none; }
+  body.side-collapsed .menu-btn { display:inline-flex; }
+}
+@media (max-width:1000px) { .sidebar .side-collapse { display:none; } }
 .crumbs { display:flex; align-items:baseline; gap:8px; min-width:0; margin-right:auto; }
 .crumb-root { font:600 10px var(--font-ui); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); white-space:nowrap; }
 .crumb-sep { color:var(--stroke); }

@@ -1284,7 +1284,7 @@
 
     if (L) {
       L.schedule(c, knew ? (rating === 'hard' || rating === 'easy' ? rating : 'good') : 'again');
-      recordAnswer(knew); archiveCards(); saveSession();
+      recordAnswer(knew); hwTrack(knew); archiveCards(); saveSession();
     }
     state.revealed = false;
     // Keep the answer side visible throughout the departure. Reset only after
@@ -1415,6 +1415,7 @@
 
     state.elapsed = Math.floor((Date.now() - state.startedAt) / 1000);
     if (L && state.answers > 0 && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); renderDaily(); }
+    hwFlush(); // the teacher's results of a homework deck
     var acc = state.answers ? Math.round((state.known / state.answers) * 100) : 0;
     var mastered = state.cards.filter(function (c) { return c.streak >= 2 && c.fails === 0; }).length;
 
@@ -2586,8 +2587,55 @@
     var list = $('hwList'); list.textContent = '';
     deck.cards.slice(0, 5).forEach(function (c) { list.appendChild(h('li', {}, [h('strong', { text: c.original, lang: deck.source }), h('span', { text: c.translation, lang: deck.target })])); });
     $('hwMore').textContent = n > 5 ? tr('share.more', { n: n - 5 }) : '';
+    var tracked = Boolean(hw.id && window.VMTeacher); // a link from a teacher who is signed in: results go to them
+    $('hwNameWrap').hidden = !tracked; $('hwNameError').textContent = '';
+    if (tracked) $('hwName').value = hwRead(window.VMTeacher.STUDENT_KEY, window.VMTeacher.normalizeStudent).name;
     $('hwInvite').hidden = false;
-    $('hwStart').focus();
+    (tracked && !$('hwName').value ? $('hwName') : $('hwStart')).focus();
+  }
+  /* Results for the teacher (v2.56). A student who opened a tracked homework link gave a name; every answer in a practice
+     of that deck is counted here and sent to the teacher when the practice ends, the page is hidden or the device is back
+     online. What is not sent yet waits in localStorage. Nothing else about the student is sent. */
+  function hwRead(key, norm) { try { return norm(JSON.parse(localStorage.getItem(key) || 'null')); } catch (e) { return norm(null); } }
+  function hwWrite(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {} }
+  function hwEnroll(deckKey, id, name) {
+    var T = window.VMTeacher, stu = hwRead(T.STUDENT_KEY, T.normalizeStudent);
+    if (!stu.key) { try { stu.key = T.newId(); } catch (e) { return; } } // no secure random numbers: no tracking, learning still works
+    stu.name = name;
+    hwWrite(T.STUDENT_KEY, stu);
+    hwWrite(T.LINKS_KEY, T.rememberLink(hwRead(T.LINKS_KEY, T.normalizeLinks), deckKey, id));
+  }
+  function hwTrack(ok) {
+    var T = window.VMTeacher;
+    if (!T || !state.cfg.deck) return;
+    var link = hwRead(T.LINKS_KEY, T.normalizeLinks)[state.cfg.deck];
+    if (link) hwWrite(T.PENDING_KEY, T.addTally(hwRead(T.PENDING_KEY, T.normalizePending), link.id, ok, state.cards.length));
+  }
+  var hwFlushing = false;
+  async function hwFlush(keepalive) {
+    var T = window.VMTeacher;
+    if (!T || !account || hwFlushing) return;
+    var stu = hwRead(T.STUDENT_KEY, T.normalizeStudent), ids = Object.keys(hwRead(T.PENDING_KEY, T.normalizePending));
+    if (!stu.key || !stu.name || !ids.length) return;
+    hwFlushing = true;
+    try {
+      for (var i = 0; i < ids.length; i++) {
+        for (;;) {
+          var got = T.takeTally(hwRead(T.PENDING_KEY, T.normalizePending), ids[i]);
+          if (!got.take) break;
+          hwWrite(T.PENDING_KEY, got.rest);
+          try { await account.client.submitResult({ homework: ids[i], student: stu.key, name: stu.name, answered: got.take.answered, correct: got.take.correct, words: got.take.words }, { keepalive: keepalive }); }
+          catch (e) {
+            if (e.code === 'unknown' || e.code === 'invalid' || e.code === 'full') { // never accepted (deleted homework, full class): drop what is left
+              var rest = hwRead(T.PENDING_KEY, T.normalizePending); delete rest[ids[i]]; hwWrite(T.PENDING_KEY, rest);
+              break;
+            }
+            hwWrite(T.PENDING_KEY, T.giveBack(hwRead(T.PENDING_KEY, T.normalizePending), ids[i], got.take)); // offline or busy: later
+            return;
+          }
+        }
+      }
+    } finally { hwFlushing = false; }
   }
   function closeHomework() {
     $('hwInvite').hidden = true; previewDeck = null;
@@ -2597,8 +2645,14 @@
   function takeHomework(startNow) {
     var deck = previewDeck;
     if (!deck) return;
+    var hw = deck.hw || {}, tracked = Boolean(hw.id && window.VMTeacher), name = '';
+    if (tracked) {
+      name = $('hwName').value.replace(/\s+/g, ' ').trim().slice(0, 40);
+      if (!name) { $('hwNameError').textContent = tr('hw.nameNeeded'); $('hwName').focus(); return; }
+    }
     var got = mergeSharedDeck(deck);
     if (!got) return;
+    if (tracked) hwEnroll(got.key, hw.id, name);
     $('hwInvite').hidden = true; previewDeck = null;
     var d = library.decks[got.key];
     if (startNow) { navigateLearning('screen-setup'); practiceDeck(d, 'all'); }
@@ -2908,7 +2962,9 @@
       translate: teacherTranslate,
       qr: async function (text) { await loadQr(); return qrSvg(text); },
       linkBase: function () { return location.origin + location.pathname; },
-      preview: function (deck) { showHomework(deck); }
+      preview: function (deck) { showHomework(deck); },
+      // The account (homework kept in it, the students' results). Null until the site's Supabase is known.
+      cloud: function () { return account ? { client: account.client, signedIn: function () { return Boolean(account.user()); }, signIn: function () { account.open('in'); } } : null; }
     });
     if (I18N && I18N.onChange) I18N.onChange(function () { if (teacher) teacher.relabel(); });
   }
@@ -3571,6 +3627,7 @@
     $('hwStart').onclick = function () { takeHomework(true); };
     $('hwLater').onclick = function () { takeHomework(false); };
     $('hwClose').onclick = closeHomework;
+    $('hwName').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); takeHomework(true); } });
     window.addEventListener('hashchange', openSharedLink);
     setTimeout(openSharedLink, 0);
     $('btnMatchStart').onclick = startMatch;
@@ -4180,6 +4237,7 @@
       }
     });
     renderSaveNudge(); // the first account render happens inside mount(), before `account` is set
+    hwFlush(); // results that could not be sent last time
   }
 
   function refreshLanguage() {
@@ -4226,17 +4284,21 @@
     if (I18N) {
       I18N.apply();
       var pills = function () {
-        document.querySelectorAll('#uiLang [data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === I18N.lang())); });
+        document.querySelectorAll('[data-ui-lang] [data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === I18N.lang())); });
       };
       pills();
       var current = document.querySelector('.screen.active'); if (current) updateShell(current.id);
-      $('uiLang').addEventListener('click', function (e) {
-        var b = e.target.closest('[data-lang]');
-        if (b && b.dataset.lang !== I18N.lang()) I18N.set(b.dataset.lang);
+      document.querySelectorAll('[data-ui-lang]').forEach(function (group) { // the top bar and the settings window
+        group.addEventListener('click', function (e) {
+          var b = e.target.closest('[data-lang]');
+          if (b && b.dataset.lang !== I18N.lang()) I18N.set(b.dataset.lang);
+        });
       });
       I18N.onChange(function () { pills(); refreshLanguage(); });
     }
     updateSoundUI();
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') hwFlush(true); });
+    window.addEventListener('online', function () { hwFlush(); });
     checkServerStatus();
     if (L) initLearningUI();
     initAskDialog();

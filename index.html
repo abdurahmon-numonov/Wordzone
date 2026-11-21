@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.55.0" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.55.0" />
-  <link rel="stylesheet" href="app.min.css?v=2.55.0" />
+  <link rel="preload" href="core.min.js?v=2.56.0" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.0" />
+  <link rel="stylesheet" href="app.min.css?v=2.56.0" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -56,6 +56,7 @@
     <div class="crumbs"><span class="crumb-root" data-i18n="crumb.root">Учебная зона</span><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" id="crumbHere">Учить слова</span></div>
     <div class="topbar-right">
       <span class="streak-indicator" title="Дни с завершённой тренировкой" data-i18n-attr="title:top.streak"><svg width="16" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3c1 5-4 6-4 10a4 4 0 0 0 8 0c0-1-1-3-1-3 5 3 6 10 0 12C3 25 1 12 12 3Z"/></svg><span id="streakCount">0 дней</span></span>
+      <div class="lang-pills top-lang" id="topLang" data-ui-lang role="group" aria-label="Язык интерфейса" data-i18n-attr="aria-label:top.uiLang"><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="uz" lang="uz" aria-pressed="false">UZ</button><button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button></div>
       <button class="acc-btn" id="btnAccount" type="button" hidden aria-haspopup="dialog"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span id="accountLabel">Войти</span></button>
       <button class="icon-btn" id="btnInstall" type="button" hidden title="Установить приложение" aria-label="Установить приложение" data-i18n-attr="title:top.install,aria-label:top.install"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></svg></button>
       <button class="icon-btn theme-btn" id="btnTheme" type="button" title="Настройки" aria-label="Настройки" aria-haspopup="dialog" aria-expanded="false" aria-controls="themeMenu" data-i18n-attr="title:prefs.title,aria-label:prefs.title"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg></button>
@@ -490,6 +491,10 @@
               <label class="field t-field"><span data-i18n="teach.due">Выучить до</span><input id="tDue" type="date" /></label>
             </div>
             <label class="field t-field"><span data-i18n="teach.note">Сообщение ученикам</span><input id="tNote" type="text" maxlength="200" autocomplete="off" placeholder="Выучите к пятнице, будет словарный диктант." data-i18n-attr="placeholder:teach.notePh" /></label>
+            <div class="t-track" id="tTrack" hidden>
+              <p class="t-track-on" id="tTrackOn" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> <span data-i18n="teach.trackOn">Вы вошли в аккаунт: вы увидите, кто из учеников учил слова и как точно отвечал.</span></p>
+              <div class="t-track-off" id="tTrackOff" hidden><p data-i18n="teach.trackOff">Хотите видеть результаты учеников? Войдите в бесплатный аккаунт — ученики по-прежнему без регистрации, они только вводят имя.</p><button class="chip-btn" type="button" id="tTrackSignIn" data-i18n="acc.signIn">Войти</button></div>
+            </div>
           </div>
         </section>
         <section class="c-step c-step-go" aria-labelledby="tStep4">
@@ -520,15 +525,35 @@
             <button class="btn block" type="button" id="tShareNative" hidden data-i18n="share.native">Поделиться…</button>
             <p class="t-label" data-i18n="teach.way2">…или покажите QR-код на доске</p>
             <button class="btn block" type="button" id="tShowClass"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> <span data-i18n="teach.showClass">Показать классу на весь экран</span></button>
+            <p class="mini t-done-track" id="tDoneTrack"></p>
             <div class="t-done-more"><button class="link" type="button" id="tTry" data-i18n="teach.try">Посмотреть, что увидит ученик</button><button class="link" type="button" id="tAnother" data-i18n="teach.another">+ Создать ещё одну домашку</button></div>
           </div>
           <figure class="share-qr t-qr" id="tQr"></figure>
         </div>
       </section>
 
+      <section class="panel t-results" id="tResults" hidden aria-labelledby="tResTitle" tabindex="-1">
+        <span class="eyebrow" data-i18n="teach.resEyebrow">РЕЗУЛЬТАТЫ УЧЕНИКОВ</span>
+        <h2 id="tResTitle"></h2>
+        <p class="mini" id="tResMeta"></p>
+        <div class="t-res-sum">
+          <div><b id="tResStudents">0</b><span data-i18n="teach.resStudents">учеников</span></div>
+          <div><b id="tResAccuracy">—</b><span data-i18n="teach.resAccuracy">верных ответов</span></div>
+          <div><b id="tResAnswers">0</b><span data-i18n="teach.resAnswers">всего ответов</span></div>
+        </div>
+        <div class="t-res-tools">
+          <label class="field t-field t-res-sort"><span data-i18n="teach.resSort">Сортировать</span><span class="select-wrap"><select id="tSort"><option value="recent" data-i18n="teach.sortRecent">по активности</option><option value="name" data-i18n="teach.sortName">по имени</option><option value="accuracy" data-i18n="teach.sortAccuracy">сначала слабые</option><option value="practice" data-i18n="teach.sortPractice">по объёму занятий</option></select></span></label>
+          <button class="chip-btn" type="button" id="tResRefresh" data-i18n="teach.resRefresh">Обновить</button>
+        </div>
+        <p class="mini t-res-state" id="tResState" role="status"></p>
+        <p class="t-res-empty" id="tResEmpty" hidden data-i18n="teach.resEmpty">Пока никто не занимался. Отправьте ссылку ученикам — как только кто-то начнёт, он появится здесь.</p>
+        <div class="t-table-wrap" id="tResWrap" hidden><table class="t-table t-res-table"><thead><tr><th scope="col" data-i18n="teach.colStudent">Ученик</th><th scope="col" data-i18n="teach.colAcc">Верно</th><th scope="col" data-i18n="teach.colWords">Слов</th><th scope="col" data-i18n="teach.colTries">Занятий</th><th scope="col" data-i18n="teach.colLast">Был(а)</th><th scope="col"><span class="sr-only" data-i18n="teach.remove">Убрать</span></th></tr></thead><tbody id="tResBody"></tbody></table></div>
+        <div class="actions t-review-actions"><button class="btn" type="button" id="tResBack" data-i18n="teach.resBack">← К моим домашкам</button></div>
+      </section>
+
       <section class="t-mine" id="tMine" hidden aria-labelledby="tMineTitle">
         <div class="grid-head"><h2 id="tMineTitle" data-i18n="teach.mine">Мои домашки</h2><span id="tMineCount"></span></div>
-        <p class="mini" data-i18n="teach.mineNote">Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.</p>
+        <p class="mini" id="tMineNote">Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.</p>
         <ul class="t-list" id="tList"></ul>
       </section>
     </section>
@@ -788,7 +813,7 @@
     <h2 class="prefs-title" id="themeMenuTitle" data-i18n="prefs.title">Настройки</h2>
     <div class="prefs-row">
       <span class="prefs-label" id="prefsLangLabel" data-i18n="top.uiLang">Язык интерфейса</span>
-      <div class="lang-pills" id="uiLang" role="group" aria-labelledby="prefsLangLabel"><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="uz" lang="uz" aria-pressed="false">UZ</button><button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button></div>
+      <div class="lang-pills" id="uiLang" data-ui-lang role="group" aria-labelledby="prefsLangLabel"><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="uz" lang="uz" aria-pressed="false">UZ</button><button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button></div>
     </div>
     <fieldset class="theme-set">
       <legend class="theme-pop-title prefs-label" data-i18n="theme.title">Тема оформления</legend>
@@ -877,6 +902,11 @@
       <div class="hw-facts"><span id="hwWords"></span><span id="hwPair"></span><span class="hw-due" id="hwDue" hidden></span></div>
       <ol class="preview-list" id="hwList"></ol>
       <p class="mini" id="hwMore"></p>
+      <div class="hw-name" id="hwNameWrap" hidden>
+        <label class="field t-field"><span data-i18n="hw.name">Как тебя зовут?</span><input id="hwName" type="text" maxlength="40" autocomplete="name" data-i18n-attr="placeholder:hw.namePh" placeholder="Имя и фамилия" /></label>
+        <p class="mini" data-i18n="hw.nameNote">Учитель увидит твоё имя и результаты тренировок по этим словам. Больше ничего не передаётся.</p>
+        <p class="acc-error" id="hwNameError" role="alert"></p>
+      </div>
       <div class="actions hw-actions"><button class="btn primary big" type="button" id="hwStart" data-i18n="hw.start">Начать учить →</button><button class="btn" type="button" id="hwLater" data-i18n="hw.later">Сохранить на потом</button></div>
       <p class="mini hw-howto" data-i18n="hw.howto">Слова сохранятся в «Мои колоды». Возвращайся каждый день — повторения подстроятся под тебя.</p>
       <button class="link" type="button" id="hwClose" data-i18n="share.close">Закрыть</button>
@@ -898,7 +928,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.55.0"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.56.0"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

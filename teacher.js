@@ -3,6 +3,8 @@
    Words without a translation are translated (AI, else the free translator), the teacher checks them in a
    table, then gets a #deck=… link (share.js, with homework meta) and a QR code to show the class.
    Nothing goes to a server: the words live in the link, the teacher's list of homework lives in localStorage.
+   v2.56: a teacher who is signed in keeps homework in the account (supabase/teacher.sql) and sees each student's results;
+   a student who opens such a link gives a name, and every practice on that deck adds to the totals the teacher sees.
    The pure helpers are tested in Node (test/teacher.js); mount() wires the "For teachers" screen. */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
@@ -36,7 +38,7 @@
     (Array.isArray(raw.list) ? raw.list : []).forEach(function (it) {
       if (!it || typeof it !== 'object' || out.list.length >= MAX_LIST) return;
       var link = typeof it.link === 'string' ? it.link : '';
-      if (!/^https?:\/\/[^\s#]+#deck=\d+\.[A-Za-z0-9_-]+$/.test(link) || !ok[it.source] || !ok[it.target]) return;
+      if (!LINK_RE.test(link) || !ok[it.source] || !ok[it.target]) return;
       out.list.push({
         id: str(it.id, 40) || String(it.created || out.list.length),
         title: str(it.title, 60) || '—',
@@ -46,6 +48,7 @@
         created: Number(it.created) > 0 ? Number(it.created) : 0,
         link: link
       });
+      if (it.cloud === true && isId(it.id)) out.list[out.list.length - 1].cloud = true; // tracked in the account: its results can be opened
     });
     return out;
   }
@@ -87,16 +90,163 @@
   };
   function exampleWords(source) { return (EXAMPLES[source] || EXAMPLES.en).join('\n'); }
 
+
+  /* ---------- v2.56: homework in the account, the students' results ---------- */
+  var UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+  var LINK_RE = /^https?:\/\/[^\s#]+#deck=\d+\.[A-Za-z0-9_-]+$/;
+  var MAX_LINK = 9000;      // the database refuses longer links
+  var MAX_SEND = 2000;      // answers in one result sent to the teacher (the database function's limit)
+  var MAX_LINKS = 60;       // decks remembered as homework on a student's device
+  var STUDENT_KEY = 'vm.student', LINKS_KEY = 'vm.hw-links', PENDING_KEY = 'vm.hw-pending';
+
+  function isId(s) { return typeof s === 'string' && UUID.test(s); }
+  function int(n, lo, hi) { n = Math.floor(Number(n)); return isFinite(n) ? Math.max(lo, Math.min(hi, n)) : lo; }
+  // A random id (version 4). Throws when the browser has no secure random numbers: the caller then makes a plain link.
+  function newId(c) {
+    c = c || (typeof crypto !== 'undefined' ? crypto : null);
+    if (c && typeof c.randomUUID === 'function') return c.randomUUID();
+    if (!c || typeof c.getRandomValues !== 'function') throw new Error('no-crypto');
+    var b = c.getRandomValues(new Uint8Array(16)), hex = [];
+    b[6] = (b[6] & 15) | 64; b[8] = (b[8] & 63) | 128;
+    for (var i = 0; i < 16; i++) hex.push((b[i] + 256).toString(16).slice(1));
+    return hex.slice(0, 4).join('') + '-' + hex.slice(4, 6).join('') + '-' + hex.slice(6, 8).join('') + '-' + hex.slice(8, 10).join('') + '-' + hex.slice(10).join('');
+  }
+
+  // Student side. The device key tells the teacher it is the same student next time; the name is what the teacher reads.
+  function normalizeStudent(raw) {
+    var out = { key: '', name: '' };
+    if (raw && typeof raw === 'object') {
+      if (isId(raw.key)) out.key = raw.key;
+      out.name = str(raw.name, 40);
+    }
+    return out;
+  }
+  // deck key → { id } for decks that came from a tracked homework link.
+  function normalizeLinks(raw) {
+    var out = {}, n = 0;
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out;
+    Object.keys(raw).forEach(function (k) {
+      var v = raw[k];
+      if (n >= MAX_LINKS || !k || k.length > 120 || !v || typeof v !== 'object' || !isId(v.id)) return;
+      out[k] = { id: v.id }; n++;
+    });
+    return out;
+  }
+  function rememberLink(links, deckKey, id) {
+    var out = {};
+    Object.keys(links).forEach(function (k) { if (k !== deckKey) out[k] = links[k]; });
+    var keys = Object.keys(out);
+    while (keys.length >= MAX_LINKS) delete out[keys.shift()]; // the oldest go first
+    out[deckKey] = { id: id };
+    return out;
+  }
+  // Answers not yet sent: { homeworkId: { a: answers, c: correct, w: most words in one practice } }.
+  function normalizePending(raw) {
+    var out = {};
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return out;
+    Object.keys(raw).forEach(function (id) {
+      var v = raw[id];
+      if (!isId(id) || !v || typeof v !== 'object') return;
+      var a = int(v.a, 0, 1e6), c = int(v.c, 0, a), w = int(v.w, 0, MAX_WORDS);
+      if (a > 0) out[id] = { a: a, c: c, w: w };
+    });
+    return out;
+  }
+  function addTally(pending, id, ok, words) {
+    var out = normalizePending(pending);
+    if (!isId(id)) return out;
+    var t = out[id] || { a: 0, c: 0, w: 0 };
+    t.a = Math.min(t.a + 1, 1e6); if (ok) t.c = Math.min(t.c + 1, t.a);
+    t.w = Math.max(t.w, int(words, 0, MAX_WORDS));
+    out[id] = t;
+    return out;
+  }
+  // Takes up to MAX_SEND answers of one homework out of the pending ones; what does not fit stays for the next send.
+  function takeTally(pending, id) {
+    var rest = normalizePending(pending), t = rest[id];
+    if (!t) return { take: null, rest: rest };
+    var a = Math.min(t.a, MAX_SEND), c = Math.min(t.c, a), take = { answered: a, correct: c, words: t.w };
+    if (t.a > a) rest[id] = { a: t.a - a, c: t.c - c, w: t.w }; else delete rest[id];
+    return { take: take, rest: rest };
+  }
+  function giveBack(pending, id, take) {
+    var out = normalizePending(pending), t = out[id] || { a: 0, c: 0, w: 0 };
+    out[id] = { a: Math.min(t.a + take.answered, 1e6), c: Math.min(t.c + take.correct, Math.min(t.a + take.answered, 1e6)), w: Math.max(t.w, take.words) };
+    return out;
+  }
+
+  // Teacher side: what the database returns is checked before the screen draws it.
+  function normalizeCloud(raw, codes) {
+    var ok = Object.create(null), out = [];
+    (codes || []).forEach(function (c) { ok[c] = true; });
+    (Array.isArray(raw) ? raw : []).forEach(function (it) {
+      if (!it || typeof it !== 'object' || !isId(it.id) || !LINK_RE.test(String(it.link)) || !ok[it.source] || !ok[it.target] || out.length >= 100) return;
+      var created = Date.parse(it.created_at);
+      out.push({ id: it.id, title: str(it.title, 60) || '—', source: it.source, target: it.target, n: int(it.n, 0, MAX_WORDS), due: validDay(it.due) ? it.due : '',
+        created: created > 0 ? created : 0, link: it.link, cloud: true });
+    });
+    return out;
+  }
+  // The account's homework first-class; devices' own list adds what was made before signing in. When the account list
+  // was read, a homework that used to be tracked but is gone (deleted on another device) is not shown any more.
+  function mergeLists(local, cloud, cloudRead) {
+    var seen = Object.create(null), out = [];
+    cloud.forEach(function (it) { seen[it.id] = true; out.push(it); });
+    local.forEach(function (it) { if (!seen[it.id] && !(cloudRead && it.cloud)) out.push(it); });
+    return out.sort(function (a, b) { return (b.created || 0) - (a.created || 0); });
+  }
+  function normalizeResults(raw) {
+    var out = [];
+    (Array.isArray(raw) ? raw : []).forEach(function (r) {
+      if (!r || typeof r !== 'object' || typeof r.student_key !== 'string' || !/^[A-Za-z0-9-]{8,64}$/.test(r.student_key)) return;
+      var a = int(r.answered, 0, 1e7);
+      var first = Date.parse(r.first_at), last = Date.parse(r.last_at);
+      out.push({ key: r.student_key, name: str(r.student_name, 40) || '—', answered: a, correct: int(r.correct, 0, a), words: int(r.words, 0, MAX_WORDS),
+        attempts: Math.max(1, int(r.attempts, 1, 1e7)), first: first > 0 ? first : 0, last: last > 0 ? last : 0 });
+    });
+    return out;
+  }
+  function accuracy(r) { return r.answered > 0 ? Math.round(r.correct / r.answered * 100) : 0; }
+  function summarize(rows) {
+    var a = 0, c = 0;
+    rows.forEach(function (r) { a += r.answered; c += r.correct; });
+    return { students: rows.length, answered: a, correct: c, accuracy: a > 0 ? Math.round(c / a * 100) : 0 };
+  }
+  // by: 'recent' (default) | 'name' | 'accuracy' (weakest first) | 'practice' (most practice first)
+  function sortRows(rows, by) {
+    var cmp = { recent: function (x, y) { return y.last - x.last; },
+      name: function (x, y) { return x.name.localeCompare(y.name); },
+      accuracy: function (x, y) { return accuracy(x) - accuracy(y) || y.answered - x.answered; },
+      practice: function (x, y) { return y.answered - x.answered || y.attempts - x.attempts; } }[by] || function (x, y) { return y.last - x.last; };
+    return rows.slice().sort(cmp);
+  }
+
   /* ---------- the screen ---------- */
   function mount(d) {
     var $ = function (id) { return document.getElementById(id); };
     var tr = d.tr, h = d.h, codes = d.LANGUAGES.KNOWN_CODES;
     var store = load(), rows = [], busy = false, made = null, token = 0;
+    var cloudList = [], cloudRead = false, cloudToken = 0, lastOn = false, viewing = null;
 
     function load() { try { return normalizeStore(JSON.parse(localStorage.getItem(KEY) || 'null'), codes); } catch (e) { return normalizeStore(null, codes); } }
     function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) { d.toast(tr('teach.errStore'), 'err', 5000); } }
     function locale() { var l = d.uiLang(); return l === 'uz' ? 'uz-Latn' : l; }
     function label(code) { return d.langLabel(code); }
+    // v2.56: the account (Supabase) is optional: without it everything works as in v2.55, on this device only.
+    function cloud() { var c = d.cloud && d.cloud(); return c && c.client ? c : null; }
+    function signedIn() { var c = cloud(); return Boolean(c && c.signedIn()); }
+    function renderTrack() {
+      var c = cloud();
+      $('tTrack').hidden = !c;
+      if (c) { var on = c.signedIn(); $('tTrackOn').hidden = !on; $('tTrackOff').hidden = on; }
+    }
+    async function loadCloud() {
+      var c = cloud(), my = ++cloudToken;
+      if (!c || !c.signedIn()) { cloudList = []; cloudRead = false; renderList(); return; }
+      try { var got = normalizeCloud(await c.client.hwList(), codes); if (my !== cloudToken) return; cloudList = got; cloudRead = true; }
+      catch (e) { if (my !== cloudToken) return; cloudRead = false; } // offline or not set up yet: the device's own list stays
+      renderList();
+    }
 
     function fillLangs() {
       var L = d.LANGUAGES, s = $('tSource').value || store.last.source || d.defaultSource(), t = $('tTarget').value || store.last.target || d.defaultTarget();
@@ -122,8 +272,8 @@
     }
     function error(msg, el) { $('tError').textContent = msg; if (el) el.focus(); }
     function showOnly(which) {
-      $('tForm').hidden = which !== 'form'; $('tReview').hidden = which !== 'review'; $('tDone').hidden = which !== 'done';
-      if (which !== 'form') { var sec = $(which === 'review' ? 'tReview' : 'tDone'); sec.focus({ preventScroll: true }); }
+      $('tForm').hidden = which !== 'form'; $('tReview').hidden = which !== 'review'; $('tDone').hidden = which !== 'done'; $('tResults').hidden = which !== 'results';
+      if (which !== 'form') { var sec = $({ review: 'tReview', done: 'tDone', results: 'tResults' }[which]); sec.focus({ preventScroll: true }); }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -209,6 +359,8 @@
       if (!good.length) { d.toast(tr('teach.errNoWords'), 'err', 3000); return; }
       var title = str($('tTitle').value, 60) || tr('teach.defaultTitle', { d: formatDay(todayISO(), locale()) });
       var hw = { by: str($('tBy').value, 40), due: validDay($('tDue').value) ? $('tDue').value : '', note: str($('tNote').value, 200) };
+      var id = '';
+      if (signedIn()) { try { id = newId(); hw.id = id; } catch (e) { id = ''; } } // signed in: the results of this homework come to the teacher
       var deck = { name: title, source: $('tSource').value, target: $('tTarget').value, cards: good, hw: hw };
       var link;
       try {
@@ -219,7 +371,22 @@
         }
       } catch (e) { d.toast(tr('shareErr.encode'), 'err', 5000); return; }
       if (link.length > d.share.LIMITS.linkChars) { d.toast(tr('teach.errLong'), 'err', 7000); return; }
-      made = { id: 'hw' + Date.now().toString(36), title: title, source: deck.source, target: deck.target, n: good.length, due: hw.due, created: Date.now(), link: link };
+      var tracked = false;
+      if (id) {
+        setBusy(true);
+        if (link.length <= MAX_LINK) {
+          try { await cloud().client.hwCreate({ id: id, title: title, source: deck.source, target: deck.target, n: good.length, due: hw.due || null, link: link }); tracked = true; }
+          catch (e) { /* the link below still works, just without results */ }
+        }
+        setBusy(false);
+        if (!tracked) {
+          delete hw.id;
+          try { link = await makeLink(deck); } catch (e) { d.toast(tr('shareErr.encode'), 'err', 5000); return; }
+          d.toast(tr('teach.errCloud'), 'err', 8000);
+        }
+      }
+      made = { id: tracked ? id : 'hw' + Date.now().toString(36), title: title, source: deck.source, target: deck.target, n: good.length, due: hw.due, created: Date.now(), link: link };
+      if (tracked) { made.cloud = true; cloudList = [made].concat(cloudList.filter(function (x) { return x.id !== made.id; })); } // the account list already knows it
       store = addToList(store, made);
       store.last = { source: deck.source, target: deck.target, by: hw.by };
       save();
@@ -238,6 +405,7 @@
       $('tDoneName').textContent = it.title + ' · ' + metaLine(it);
       $('tLink').value = it.link;
       $('tShareNative').hidden = typeof navigator.share !== 'function';
+      $('tDoneTrack').textContent = it.cloud ? tr('teach.doneTracked') : cloud() && !signedIn() ? tr('teach.doneNotTracked') : '';
       $('tShowClass').disabled = it.link.length > CLASS_QR;
       $('tShowClass').title = it.link.length > CLASS_QR ? tr('teach.qrTooLong') : '';
       showOnly('done');
@@ -280,25 +448,86 @@
 
     /* My homework */
     function renderList() {
-      var list = $('tList'); list.textContent = '';
-      $('tMine').hidden = !store.list.length;
-      $('tMineCount').textContent = store.list.length ? String(store.list.length) : '';
-      store.list.forEach(function (it) {
+      var list = $('tList'), all = mergeLists(store.list, cloudList, cloudRead); list.textContent = '';
+      $('tMine').hidden = !all.length;
+      $('tMineCount').textContent = all.length ? String(all.length) : '';
+      $('tMineNote').textContent = tr(signedIn() ? 'teach.mineNoteCloud' : 'teach.mineNote');
+      all.forEach(function (it) {
         var left = daysLeft(it.due);
         var due = it.due ? h('span', { class: 't-due' + (left !== null && left < 0 ? ' past' : left !== null && left <= 1 ? ' soon' : ''), text: left < 0 ? tr('teach.duePast') : left === 0 ? tr('teach.dueToday') : left === 1 ? tr('teach.dueTomorrow') : tr('teach.until', { d: formatDay(it.due, locale()) }) }) : null;
         var bCopy = h('button', { type: 'button', class: 'chip-btn' }, [tr('teach.copyLink')]);
         var bQr = h('button', { type: 'button', class: 'chip-btn' }, [tr('teach.qr')]);
         var bDel = h('button', { type: 'button', class: 'chip-btn t-del-hw', 'aria-label': tr('teach.delete') + ': ' + it.title }, [tr('teach.delete')]);
+        var bRes = it.cloud ? h('button', { type: 'button', class: 'chip-btn t-res-btn' }, [tr('teach.results')]) : null;
+        if (bRes) bRes.onclick = function () { openResults(it); };
         bCopy.onclick = function () { copy(it.link); };
         bQr.onclick = function () { showClass(it); };
-        bDel.onclick = function () {
+        bDel.onclick = async function () {
+          if (it.cloud) { // tracked: the students' results go with it, so it cannot be undone
+            if (!window.confirm(tr('teach.deleteConfirm', { t: it.title }))) return;
+            try { await cloud().client.hwDelete(it.id); } catch (e) { d.toast(tr('teach.errCloudDel'), 'err', 5000); return; }
+            store.list = store.list.filter(function (x) { return x.id !== it.id; }); save();
+            cloudList = cloudList.filter(function (x) { return x.id !== it.id; });
+            if (viewing && viewing.id === it.id) closeResults();
+            renderList(); d.toast(tr('teach.deletedCloud'), 'ok', 5000);
+            return;
+          }
           var before = store.list.slice();
           store.list = store.list.filter(function (x) { return x !== it; }); save(); renderList();
           d.toast(tr('teach.deleted'), 'ok', 7000, { label: tr('undo.action'), run: function () { store.list = before; save(); renderList(); } });
         };
         list.appendChild(h('li', { class: 't-item' }, [
           h('div', { class: 't-item-copy' }, [h('strong', { text: it.title }), h('span', { class: 'mini', text: metaLine(Object.assign({}, it, { due: '' })) }), due]),
-          h('div', { class: 't-item-actions' }, [bCopy, bQr, bDel])
+          h('div', { class: 't-item-actions' }, [bRes, bCopy, bQr, bDel])
+        ]));
+      });
+    }
+
+
+    /* Results: who practised, how accurately, when (v2.56) */
+    function dayLabel(ts) {
+      if (!ts) return '—';
+      var iso = todayISO(ts), left = daysLeft(iso);
+      return left === 0 ? tr('teach.resToday') : left === -1 ? tr('teach.resYesterday') : formatDay(iso, locale());
+    }
+    async function openResults(it) {
+      viewing = { id: it.id, rows: [] };
+      $('tResTitle').textContent = it.title;
+      $('tResMeta').textContent = metaLine(it);
+      renderResults();
+      showOnly('results');
+      await loadResults();
+    }
+    function closeResults() { viewing = null; showOnly('form'); }
+    async function loadResults() {
+      var c = cloud(), v = viewing;
+      if (!c || !v) return;
+      $('tResState').textContent = tr('teach.resLoading');
+      try { var got = normalizeResults(await c.client.hwResults(v.id)); if (viewing !== v) return; v.rows = got; }
+      catch (e) { if (viewing === v) $('tResState').textContent = tr(e.code === 'signed-out' ? 'teach.resSignedOut' : 'teach.resError'); return; }
+      $('tResState').textContent = '';
+      renderResults();
+    }
+    function renderResults() {
+      var v = viewing; if (!v) return;
+      var sum = summarize(v.rows), body = $('tResBody');
+      $('tResStudents').textContent = String(sum.students);
+      $('tResAccuracy').textContent = sum.students ? sum.accuracy + '%' : '—';
+      $('tResAnswers').textContent = String(sum.answered);
+      $('tResEmpty').hidden = v.rows.length > 0; $('tResWrap').hidden = !v.rows.length;
+      body.textContent = '';
+      sortRows(v.rows, $('tSort').value).forEach(function (r) {
+        var acc = accuracy(r);
+        var del = h('button', { type: 'button', class: 'icon-btn t-del', 'aria-label': tr('teach.resRemove', { n: r.name }), title: tr('teach.remove') }, ['×']);
+        del.onclick = async function () {
+          if (!window.confirm(tr('teach.resRemoveConfirm', { n: r.name }))) return;
+          try { await cloud().client.hwDeleteResult(v.id, r.key); } catch (e) { d.toast(tr('teach.resError'), 'err', 4000); return; }
+          v.rows = v.rows.filter(function (x) { return x !== r; }); renderResults();
+        };
+        body.appendChild(h('tr', {}, [
+          h('th', { scope: 'row', class: 't-res-name' }, [r.name]),
+          h('td', { class: 't-res-acc' + (r.answered >= 10 && acc < 60 ? ' low' : '') }, [h('strong', { text: acc + '%' }), h('span', { class: 'mini', text: r.correct + ' / ' + r.answered })]),
+          h('td', {}, [String(r.words)]), h('td', {}, [String(r.attempts)]), h('td', {}, [dayLabel(r.last)]), h('td', {}, [del])
         ]));
       });
     }
@@ -321,17 +550,33 @@
     $('tShowClass').onclick = function () { if (made) showClass(made); };
     $('tTry').onclick = function () { if (made) tryIt(made); };
     $('tAnother').onclick = another;
+    $('tTrackSignIn').onclick = function () { var c = cloud(); if (c) c.signIn(); };
+    $('tResBack').onclick = closeResults;
+    $('tResRefresh').onclick = loadResults;
+    $('tSort').onchange = renderResults;
+    document.addEventListener('vm-account', function (e) { // signing in or out changes what the teacher sees
+      var on = Boolean(e.detail && e.detail.signedIn);
+      renderTrack();
+      if (on === lastOn) return;
+      lastOn = on;
+      if (!on) { if (viewing) closeResults(); loadCloud(); }
+      else if ($('screen-teacher').classList.contains('active')) loadCloud();
+    });
     $('tClassClose').onclick = closeClass;
     $('tClass').addEventListener('click', function (e) { if (e.target === this) closeClass(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('tClass').hidden) closeClass(); });
     document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement && !$('tClass').hidden) closeClass(); });
-    updateCount(); renderList();
+    updateCount(); renderList(); renderTrack();
 
     return {
-      open: function () { store = load(); fillLangs(); renderList(); },
-      relabel: function () { fillLangs(); updateCount(); renderList(); if (!$('tReview').hidden) renderRows(); if (made && !$('tDone').hidden) $('tDoneName').textContent = made.title + ' · ' + metaLine(made); }
+      open: function () { store = load(); fillLangs(); renderList(); renderTrack(); lastOn = signedIn(); loadCloud(); },
+      relabel: function () { fillLangs(); updateCount(); renderList(); renderTrack(); renderResults(); if (!$('tReview').hidden) renderRows(); if (made && !$('tDone').hidden) $('tDoneName').textContent = made.title + ' · ' + metaLine(made); }
     };
   }
 
-  return { KEY: KEY, MAX_WORDS: MAX_WORDS, CLASS_QR: CLASS_QR, normalizeStore: normalizeStore, addToList: addToList, daysLeft: daysLeft, formatDay: formatDay, todayISO: todayISO, rowsFrom: rowsFrom, exampleWords: exampleWords, validDay: validDay, mount: mount };
+  return { KEY: KEY, MAX_WORDS: MAX_WORDS, CLASS_QR: CLASS_QR, normalizeStore: normalizeStore, addToList: addToList, daysLeft: daysLeft, formatDay: formatDay, todayISO: todayISO, rowsFrom: rowsFrom, exampleWords: exampleWords, validDay: validDay, mount: mount,
+    MAX_LINK: MAX_LINK, MAX_SEND: MAX_SEND, STUDENT_KEY: STUDENT_KEY, LINKS_KEY: LINKS_KEY, PENDING_KEY: PENDING_KEY,
+    isId: isId, newId: newId, normalizeStudent: normalizeStudent, normalizeLinks: normalizeLinks, rememberLink: rememberLink,
+    normalizePending: normalizePending, addTally: addTally, takeTally: takeTally, giveBack: giveBack,
+    normalizeCloud: normalizeCloud, mergeLists: mergeLists, normalizeResults: normalizeResults, accuracy: accuracy, summarize: summarize, sortRows: sortRows };
 });

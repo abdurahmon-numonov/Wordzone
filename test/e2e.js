@@ -1078,6 +1078,16 @@ run.server(server);
   assert(await onb.locator('#soarStage .so-missed li').count() >= 1, 'the missed words are listed for review');
   assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз', 'play again is focused');
   assert.equal(await onb.evaluate(() => JSON.parse(localStorage.getItem('vm.soar')).best), 10, 'the best score is kept');
+  // v2.54.2: Space or Enter after the flight starts a new one, wherever the focus is
+  await onb.evaluate(() => document.getElementById('btnArcadeBack').focus());
+  await onb.waitForTimeout(550); await onb.keyboard.press('Enter');
+  await onb.waitForFunction(() => window.soarState().mode === 'play');
+  await onb.evaluate(() => { window.soarAnswer(false); window.soarAnswer(false); window.soarAnswer(false); });
+  await onb.locator('#soarStage .so-panel.over:not([hidden])').waitFor();
+  await onb.waitForTimeout(550); await onb.keyboard.press(' ');
+  await onb.waitForFunction(() => window.soarState().mode === 'play');
+  await onb.evaluate(() => { window.soarAnswer(false); window.soarAnswer(false); window.soarAnswer(false); });
+  await onb.locator('#soarStage .so-panel.over:not([hidden]) .so-exit').waitFor();
   // v2.54: «Разрежь слово» — the second card; a real swipe cuts a tile
   await onb.click('#btnArcadeBack');
   await onb.locator('#arcadeHub:not([hidden])').waitFor();
@@ -1106,8 +1116,9 @@ run.server(server);
   await onb.evaluate(() => { window.sliceAnswer(false); window.sliceAnswer(false); });
   await onb.locator('#sliceStage .so-panel.over:not([hidden])').waitFor();
   assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз');
-  await onb.click('#btnArcadeBack');
-  assert(await onb.locator('#sliceStage').isHidden() && await onb.locator('#arcadeHub').isVisible(), 'back to the cards');
+  await onb.click('#sliceStage .so-panel.over .so-exit');
+  assert(await onb.locator('#sliceStage').isHidden() && await onb.locator('#arcadeHub').isVisible(), '«← Все игры» in the result goes back to the cards');
+  assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.dataset.arcadeOpen), 'slice');
   await onb.click('#navTest');
   await onb.locator('#gamesHub:not([hidden])').waitFor();
   const answersBefore = await onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));

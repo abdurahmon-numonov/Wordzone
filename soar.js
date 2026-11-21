@@ -183,6 +183,7 @@
       var go = btn('so-btn primary', tr('soar.resume')); go.addEventListener('click', resume);
       var quit = btn('so-btn', tr('soar.end')); quit.addEventListener('click', function () { finish(); });
       var row = el('div', 'so-row'); row.append(go, quit);
+      if (api.exit) { var out = btn('so-btn so-exit', tr('arcade.back')); out.addEventListener('click', api.exit); row.append(out); }
       panel.append(h, row);
       go.focus({ preventScroll: true });
     }
@@ -200,6 +201,7 @@
       }
       var again = btn('so-btn primary', tr('soar.again')); again.addEventListener('click', start);
       var row = el('div', 'so-row'); row.append(again);
+      if (api.exit) { var out = btn('so-btn so-exit', tr('arcade.back')); out.addEventListener('click', api.exit); row.append(out); } // back to the game cards
       panel.append(row, el('p', 'so-keys', tr('soar.keys')));
       again.focus({ preventScroll: true });
     }
@@ -226,7 +228,7 @@
     function resume() { if (g.mode !== 'paused') return; g.mode = 'play'; panel.hidden = true; renderHud(); host.focus({ preventScroll: true }); last = 0; loop(); }
     function finish() {
       if (g.mode === 'over') return;
-      g.mode = 'over';
+      g.mode = 'over'; g.overAt = Date.now();
       if (g.score > (store.best || 0)) { store.best = g.score; g.newBest = g.score > 0; }
       saveStore();
       if (g.right + g.wrong > 0 && api.complete) api.complete();
@@ -447,6 +449,7 @@
       var t = e.target, typing = t && (t.tagName === 'INPUT' && t.type !== 'checkbox' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT');
       if (typing) return;
       if (g.mode === 'play' && (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'w' || e.key === 'W')) { e.preventDefault(); flap(); return; }
+      if (g.mode === 'over' && (e.key === ' ' || e.key === 'Enter') && !(t && t.closest && t.closest('.so-exit'))) { e.preventDefault(); if (Date.now() - (g.overAt || 0) > 500) start(); return; }
       if (e.key === 'Escape' || e.key === 'p' || e.key === 'P') {
         if (g.mode === 'play') { e.preventDefault(); e.stopPropagation(); pause(); }
         else if (g.mode === 'paused' && e.key !== 'Escape') { e.preventDefault(); resume(); }

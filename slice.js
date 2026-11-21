@@ -157,6 +157,7 @@
       var go = btn('so-btn primary', tr('soar.resume')); go.addEventListener('click', resume);
       var quit = btn('so-btn', tr('slice.end')); quit.addEventListener('click', function () { finish(); });
       var row = el('div', 'so-row'); row.append(go, quit);
+      if (api.exit) { var out = btn('so-btn so-exit', tr('arcade.back')); out.addEventListener('click', api.exit); row.append(out); }
       panel.append(h, row); go.focus({ preventScroll: true });
     }
     function panelOver() {
@@ -171,6 +172,7 @@
       }
       var again = btn('so-btn primary', tr('soar.again')); again.addEventListener('click', start);
       var row = el('div', 'so-row'); row.append(again);
+      if (api.exit) { var out = btn('so-btn so-exit', tr('arcade.back')); out.addEventListener('click', api.exit); row.append(out); } // back to the game cards
       panel.append(row, el('p', 'so-keys', tr('soar.keys')));
       again.focus({ preventScroll: true });
     }
@@ -196,7 +198,7 @@
     function resume() { if (g.mode !== 'paused') return; g.mode = 'play'; panel.hidden = true; renderHud(); host.focus({ preventScroll: true }); last = 0; loop(); }
     function finish() {
       if (g.mode === 'over') return;
-      g.mode = 'over'; blade = [];
+      g.mode = 'over'; g.overAt = Date.now(); blade = [];
       if (g.score > (store.best || 0)) { store.best = g.score; g.newBest = g.score > 0; }
       saveStore();
       if (g.right + g.wrong > 0 && api.complete) api.complete();
@@ -410,6 +412,7 @@
       if (!visible) return;
       var t = e.target, typing = t && (t.tagName === 'INPUT' && t.type !== 'checkbox' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT');
       if (typing) return;
+      if (g.mode === 'over' && (e.key === ' ' || e.key === 'Enter') && !(t && t.closest && t.closest('.so-exit'))) { e.preventDefault(); if (Date.now() - (g.overAt || 0) > 500) start(); return; }
       if (g.mode === 'play' && /^[1-4]$/.test(e.key)) {
         var n = +e.key, tile = null;
         g.tiles.forEach(function (o) { if (o.state === 'fly' && o.key === n) tile = o; });

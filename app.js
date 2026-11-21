@@ -2852,11 +2852,11 @@
     $('dailyBar').style.width = Math.min(100, h.answers / library.goal * 100) + '%';
     $('freezeEnabled').checked = library.streak.enabled;
     $('freezeBalance').textContent = tr('freeze.left', { n: library.streak.freezes });
-    $('dailyGoal').value = library.goal;
     $('batchSize').value = String(library.batch || 0);
     renderHomeDeck();
-    // home shows the exam goal only once it is set (it is set on the Progress screen)
+    // v2.56.3: the invitation to set a goal lives in the library; home shows the goal only once it is set
     renderGoal($('goalStrip'), !!library.target);
+    renderGoal($('goalStripLib'), L.librarySize(library).words > 0 || !!library.target);
   }
   /* ===== personal goal with a deadline: days left, words learned, the daily pace that gets there ===== */
   function renderGoal(host, show) {
@@ -3646,7 +3646,6 @@
     $('btnHint').onclick = showHint;
     $('btnHintTyping').onclick = showHint;
     $('freezeEnabled').onchange =function () { library.streak.enabled = this.checked; persistLibrary(); renderDaily(); };
-    $('dailyGoal').onchange = function () { library.goal = Math.max(1, Math.min(200, Number(this.value) || 10)); persistLibrary(); renderDaily(); };
     $('btnExportLibrary').onclick = function () {
       // Library exports never include API keys or provider configuration.
       var blob = new Blob([JSON.stringify(L.backupFile(library), null, 2)], { type: 'application/json' });

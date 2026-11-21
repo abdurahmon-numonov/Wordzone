@@ -110,5 +110,69 @@ const rejectsWith = async (p, code, why) => assert.rejects(p, e => e.code === co
   assert.doesNotThrow(() => L.restoreBackup(L.backupFile(m), ['en', 'ru', 'de']), 'the merge is a valid library');
   const twice = L.mergeLibrary(m, laptop);
   assert.deepEqual(twice.decks, m.decks, 'merging again changes nothing');
-  console.log('✓ Accounts: Supabase sign-up/confirm/sign-in/refresh/sign-out/reset, RLS on progress, offline and revoked sessions, sync plan, library merge');
+
+  // ---- v2.56: homework in the teacher's account and the students' results (supabase/teacher.sql)
+  {
+    const hs = fake(), cfg = { url: 'https://demo.supabase.co', key: hs.KEY };
+    const make = async email => { const cl = A.client(cfg, { fetch: hs.fetch, storage: memoryStorage() }); assert.deepEqual(await cl.signUp(email, 'passw0rd!', ''), { signedIn: true }); return cl; };
+    const teacher = await make('t1@example.com'), other = await make('t2@example.com');
+    const student = A.client(cfg, { fetch: hs.fetch, storage: memoryStorage() }); // nobody signed in
+    const H = '11111111-1111-4111-8111-111111111111', link = 'https://wordzone.app/#deck=1.abc';
+    const row = { id: H, title: 'Unit 5', source: 'en', target: 'ru', n: 3, due: '2026-11-28', link };
+
+    await teacher.hwCreate(row);
+    const mine = await teacher.hwList();
+    assert.equal(mine.length, 1); assert.equal(mine[0].title, 'Unit 5'); assert.equal(mine[0].teacher_id, undefined);
+    assert.deepEqual(await other.hwList(), [], 'another teacher does not see this homework');
+    await rejectsWith(student.hwList(), 'signed-out', 'a student has no teacher session');
+    await assert.rejects(teacher.hwCreate(Object.assign({}, row, { id: '22222222-2222-4222-8222-222222222222', title: '' })), 'an empty title is refused');
+    await assert.rejects(teacher.hwCreate(row), 'the same id twice is refused');
+    assert.equal(hs.handle('GET', '/rest/v1/homework', { apikey: hs.KEY }, null)[0], 401, 'the public key alone reads no homework');
+
+    // a student sends results without signing in; the totals add up
+    const S1 = 'aaaaaaaa-1111-4111-8111-aaaaaaaaaaaa';
+    await student.submitResult({ homework: H, student: S1, name: '  Ali  ', answered: 10, correct: 7, words: 5 });
+    await student.submitResult({ homework: H, student: S1, name: 'Ali', answered: 5, correct: 5, words: 8 });
+    await student.submitResult({ homework: H, student: 'bbbbbbbb-2222', name: 'Vali', answered: 4, correct: 1, words: 3 });
+    const res = await teacher.hwResults(H);
+    assert.equal(res.length, 2);
+    const ali = res.find(r => r.student_key === S1);
+    assert.deepEqual([ali.student_name, ali.answered, ali.correct, ali.words, ali.attempts], ['Ali', 15, 12, 8, 2], 'totals add up, words keeps the best practice, name is trimmed');
+    assert.deepEqual(await other.hwResults(H), [], 'another teacher sees no results');
+    assert.equal(hs.handle('GET', '/rest/v1/homework_results', { apikey: hs.KEY }, null)[0], 401, 'a student cannot read results');
+    const tok = [...hs.tokens].find(([, id]) => id === teacher.user().id)[0];
+    assert.equal(hs.handle('POST', '/rest/v1/homework_results', { apikey: hs.KEY, authorization: 'Bearer ' + tok }, { homework_id: H }, )[0], 403, 'results are written only through the function');
+
+    // what the database function refuses is told apart from a bad connection
+    const send = over => student.submitResult(Object.assign({ homework: H, student: S1, name: 'Ali', answered: 3, correct: 2, words: 3 }, over));
+    await rejectsWith(send({ homework: '33333333-3333-4333-8333-333333333333' }), 'unknown', 'a deleted or invented homework');
+    await rejectsWith(send({ correct: 4 }), 'invalid', 'more correct than answered');
+    await rejectsWith(send({ answered: 2001, correct: 0 }), 'invalid', 'too many answers at once');
+    await rejectsWith(send({ answered: 0, correct: 0 }), 'invalid', 'nothing answered');
+    await rejectsWith(send({ name: '   ' }), 'invalid', 'empty name');
+    await rejectsWith(send({ name: 'x'.repeat(41) }), 'invalid', 'long name');
+    await rejectsWith(send({ student: 'short' }), 'invalid', 'bad student key');
+    await rejectsWith(send({ words: 301 }), 'invalid', 'too many words');
+    hs.state.offline = true;
+    await rejectsWith(send({}), 'offline', 'no network: the caller keeps the result and tries again');
+    hs.state.offline = false;
+    assert.equal((await teacher.hwResults(H)).find(r => r.student_key === S1).answered, 15, 'refused results change nothing');
+
+    // a full homework (500 students) takes no new student, but the ones in it can go on
+    for (let i = 0; i < 498; i++) hs.results.set(H + '|k' + i, { homework_id: H, student_key: 'fill' + String(i).padStart(6, '0'), student_name: 'x', answered: 1, correct: 1, words: 1, attempts: 1, first_at: 'a', last_at: 'a' });
+    await rejectsWith(send({ student: 'cccccccc-3333' }), 'full', 'the 501st student');
+    await send({});
+    hs.results.forEach((r, k) => { if (r.student_key.startsWith('fill')) hs.results.delete(k); });
+
+    // the teacher removes one student, then the whole homework (results go with it)
+    await teacher.hwDeleteResult(H, S1);
+    assert.deepEqual((await teacher.hwResults(H)).map(r => r.student_name), ['Vali']);
+    await other.hwDelete(H);
+    assert.equal((await teacher.hwList()).length, 1, "another teacher cannot delete this homework");
+    await teacher.hwDelete(H);
+    assert.deepEqual(await teacher.hwList(), []);
+    assert.equal(hs.results.size, 0, 'results are deleted with their homework');
+    await rejectsWith(send({}), 'unknown', 'the link of a deleted homework');
+  }
+  console.log('✓ Accounts: Supabase sign-up/confirm/sign-in/refresh/sign-out/reset, RLS on progress, offline and revoked sessions, sync plan, library merge, homework results (RLS, checks, totals)');
 })().catch(e => { console.error(e); process.exitCode = 1; });

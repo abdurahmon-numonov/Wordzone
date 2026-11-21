@@ -41,12 +41,16 @@
       Object.keys(o.headers || {}).forEach(function (h) { headers[h] = o.headers[h]; });
       var res;
       try {
-        res = await doFetch(base + path, { method: o.method || 'GET', headers: headers, body: o.body === undefined ? undefined : JSON.stringify(o.body),
+        res = await doFetch(base + path, { method: o.method || 'GET', headers: headers, body: o.body === undefined ? undefined : JSON.stringify(o.body), keepalive: o.keepalive || undefined,
           signal: typeof AbortSignal !== 'undefined' && AbortSignal.timeout ? AbortSignal.timeout(20000) : undefined });
       } catch (e) { throw fail('offline'); }
       var text = '', json = null;
       try { text = await res.text(); json = text ? JSON.parse(text) : null; } catch (e) { json = null; }
-      if (!res.ok) throw fail(errorCode(res.status, json), res.status);
+      if (!res.ok) {
+        var err = fail(errorCode(res.status, json), res.status);
+        err.sql = json && typeof json.code === 'string' ? json.code : ''; // Postgres error code from a database function (v2.56)
+        throw err;
+      }
       return json;
     }
     function keep(json) {
@@ -110,6 +114,41 @@
       wipe: async function () {
         var t = await token(), u = load().user;
         await req('/rest/v1/progress?user_id=eq.' + encodeURIComponent(u.id), { method: 'DELETE', token: t });
+      },
+
+      /* Homework in the teacher's account and the students' results (v2.56, supabase/teacher.sql).
+         Row-level security shows a teacher only their own homework and the results of those. */
+      hwList: async function () {
+        var rows = await req('/rest/v1/homework?select=id,title,source,target,n,due,link,created_at&order=created_at.desc&limit=100', { token: await token() });
+        return Array.isArray(rows) ? rows : [];
+      },
+      hwCreate: async function (row) {
+        await req('/rest/v1/homework', { method: 'POST', token: await token(), body: row, headers: { Prefer: 'return=minimal' } });
+      },
+      hwDelete: async function (id) { // the results of this homework go with it
+        await req('/rest/v1/homework?id=eq.' + encodeURIComponent(id), { method: 'DELETE', token: await token() });
+      },
+      hwResults: async function (id) {
+        var rows = await req('/rest/v1/homework_results?select=student_key,student_name,answered,correct,words,attempts,first_at,last_at&homework_id=eq.' + encodeURIComponent(id) + '&order=last_at.desc&limit=500', { token: await token() });
+        return Array.isArray(rows) ? rows : [];
+      },
+      hwDeleteResult: async function (id, studentKey) {
+        await req('/rest/v1/homework_results?homework_id=eq.' + encodeURIComponent(id) + '&student_key=eq.' + encodeURIComponent(studentKey), { method: 'DELETE', token: await token() });
+      },
+      // A student's result. No sign-in: the database function checks everything. It adds to the student's totals.
+      // Throws .code 'unknown' (the teacher deleted the homework), 'invalid' or 'full' (will never work: drop it),
+      // otherwise a transient code ('offline', 'rate-limit', 'server') and the caller tries again later.
+      submitResult: async function (r, opts) {
+        try {
+          await req('/rest/v1/rpc/submit_homework_result', { method: 'POST', keepalive: Boolean(opts && opts.keepalive), body: {
+            p_homework: r.homework, p_student: r.student, p_name: r.name, p_answered: r.answered, p_correct: r.correct, p_words: r.words } });
+        } catch (e) {
+          if (e.sql === 'P0002') throw fail('unknown', e.status);
+          if (e.sql === '22023') throw fail('invalid', e.status);
+          if (e.sql === '53400') throw fail('full', e.status);
+          if (e.status === 404 || e.status === 401 || e.status === 403) throw fail('invalid', e.status); // no such function / key: retrying cannot help
+          throw e;
+        }
       }
     };
   }
@@ -276,6 +315,7 @@
       changed: function () { if (quiet) return; meta.dirty = true; writeMeta(); if (c.user()) schedule(3000); },
       refresh: render,
       user: function () { return c.user(); },
+      client: c, // homework and results (v2.56) use the same client and session
       open: function (m) { if (m === 'in' || m === 'up') mode = m; open(); } // e.g. the "save your progress" card opens sign-up
     };
   }

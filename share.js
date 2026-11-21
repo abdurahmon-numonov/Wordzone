@@ -9,6 +9,8 @@
   'use strict';
   var VERSION = 1;
   var LIMITS = { linkChars: 8000, qrChars: 1200, cards: 1000, original: 200, translation: 300, example: 300, examples: 2, reading: 200, inflatedBytes: 512 * 1024 };
+  var HW = { by: 40, note: 200 }; // homework from a teacher (v2.55): who gave it, by when, a short note
+  var UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i; // v2.56: the id of a homework kept in the teacher's account
   var CONTROL = new RegExp('[\\u0000-\\u001f\\u007f-\\u009f\\u2028\\u2029]+', 'g');
 
   function fail(code) { var e = new Error(code); e.code = code; return e; }
@@ -57,7 +59,26 @@
     if (readings.some(Boolean)) payload.r = readings;
     var name = typeof deck.name === 'string' ? clean(deck.name).slice(0, 60) : '';
     if (name) payload.n = name;
+    var hw = homeworkOf(deck.hw);
+    if (hw) payload.h = hw;
     return payload;
+  }
+  // Homework meta on the wire: { b: teacher, d: 'YYYY-MM-DD', m: note, i: id }. Empty parts are left out; {} still marks homework.
+  // i (v2.56) is the id of the homework in the teacher's account: with it a student's results reach the teacher. Older
+  // versions of the site ignore it.
+  function validDay(d) {
+    if (typeof d !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(d)) return false;
+    var t = new Date(d + 'T00:00:00Z');
+    return !isNaN(t) && t.toISOString().slice(0, 10) === d;
+  }
+  function homeworkOf(hw) {
+    if (!hw || typeof hw !== 'object') return null;
+    var out = {}, by = typeof hw.by === 'string' ? clean(hw.by).slice(0, HW.by) : '', note = typeof hw.note === 'string' ? clean(hw.note).slice(0, HW.note) : '';
+    if (by) out.b = by;
+    if (validDay(hw.due)) out.d = hw.due;
+    if (note) out.m = note;
+    if (typeof hw.id === 'string' && UUID.test(hw.id)) out.i = hw.id.toLowerCase();
+    return out;
   }
   async function encodeDeck(deck) {
     var payload = payloadOf(deck);
@@ -95,6 +116,16 @@
       var name = clean(data.n);
       if (name) out.name = name;
     }
+    if (data.h !== undefined) {
+      var h = data.h;
+      if (!h || typeof h !== 'object' || Array.isArray(h)) throw fail('bad-deck');
+      if (h.b !== undefined && (typeof h.b !== 'string' || h.b.length > HW.by)) throw fail('bad-deck');
+      if (h.m !== undefined && (typeof h.m !== 'string' || h.m.length > HW.note)) throw fail('bad-deck');
+      if (h.d !== undefined && !validDay(h.d)) throw fail('bad-deck');
+      if (h.i !== undefined && (typeof h.i !== 'string' || !UUID.test(h.i))) throw fail('bad-deck');
+      out.hw = { by: h.b ? clean(h.b) : '', due: h.d || '', note: h.m ? clean(h.m) : '' };
+      if (h.i) out.hw.id = h.i.toLowerCase();
+    }
     return out;
   }
   // Throws .code: 'bad-link' (not ours / damaged), 'unsupported-version', 'too-large', 'bad-deck'.
@@ -116,5 +147,5 @@
     var m = /^#deck=(.*)$/.exec(String(hash || ''));
     return m ? m[1] : null;
   }
-  return { VERSION: VERSION, LIMITS: LIMITS, payloadOf: payloadOf, encodeDeck: encodeDeck, decodeDeck: decodeDeck, validatePayload: validatePayload, codeFromHash: codeFromHash };
+  return { VERSION: VERSION, LIMITS: LIMITS, HW: HW, validDay: validDay, payloadOf: payloadOf, encodeDeck: encodeDeck, decodeDeck: decodeDeck, validatePayload: validatePayload, codeFromHash: codeFromHash };
 });

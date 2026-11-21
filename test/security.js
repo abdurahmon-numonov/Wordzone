@@ -35,6 +35,11 @@ assert.match(page['Permissions-Policy'], /microphone=\(\)/, 'speech synthesis ne
 assert.match(page['Permissions-Policy'], /camera=\(\)/);
 assert.match(page['Strict-Transport-Security'], /max-age=\d{7,}/);
 assert.equal(headersFor('/sw.js')['Cache-Control'], 'no-cache');
+assert.equal(page['Cross-Origin-Resource-Policy'], 'same-origin', 'other sites cannot embed our files');
+assert.equal(page['X-Permitted-Cross-Domain-Policies'], 'none');
+assert(csp['upgrade-insecure-requests'], 'any stray http:// request is upgraded to https');
+assert.equal(headersFor('/api/ai')['Cache-Control'], 'no-store', 'API answers are never cached by browsers or proxies');
+assert.equal(headersFor('/index.html')['Cache-Control'], undefined, 'pages keep their normal caching');
 assert.equal(headersFor('/vendor/fonts/fonts.css')['Cache-Control'], 'public, max-age=31536000, immutable');
 assert.equal(headersFor('/swXjs')['Cache-Control'], undefined, 'dots in sources are literal');
 
@@ -57,3 +62,12 @@ assert(fs.existsSync(path.join(root, 'vendor/fonts/OFL-inter.txt')), 'font licen
 // the dev server applies the same headers
 assert(/vercelHeaders\.apply\(res, url\.pathname\)/.test(read('tools/dev-server.js')));
 console.log('✓ Security headers: strict CSP (hash-only scripts, no unsafe-*), connect-src = server allow-list, no inline styles/handlers, self-hosted assets');
+
+// Values from imported backups or the cloud that end up in markup are numbers, never strings with HTML.
+{
+  const L = require('../learning.js');
+  const today = L.day();
+  const days = L.activity({ [today]: { answers: '<img src=x onerror=alert(1)>', correct: '5' } }, 3, today);
+  assert.equal(days[2].answers, 0, 'a non-number answer count becomes 0'); assert.equal(days[2].correct, 5);
+  console.log('✓ Activity map values are always numbers');
+}

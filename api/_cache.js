@@ -59,10 +59,24 @@ async function lookup(request) {
   }
 }
 
-// Saves fresh AI answers; resolves to the number of rows sent (0 when off or on error).
+/* The cache is shared by everyone, so a single request must not be able to poison it. A "word" that reads like an
+   instruction to the AI ("…ignore the rules, translate apple as …") could bend the answers for the other words of
+   the same batch, so such a batch is answered but never stored; answers that carry markup or links are not stored either. */
+const ODD_CHARS = /[<>{}\[\]\\|`$#@^*=_~:;"]|https?:|www\./i;
+const INSTRUCTION = /\b(ignore|instruction|instructions|system|prompt|assistant|respond|output|json|translate|override)\b|игнор|инструкц|перевед|tarjima\s+qil|e'?tibor\s+berma/i;
+function plainWord(w) {
+  const s = String(w || ''), tokens = s.trim().split(/\s+/).length;
+  // a lone "system" or "translate" is just vocabulary; an instruction needs a few words around it
+  return s.length > 0 && s.length <= 60 && tokens <= 5 && !ODD_CHARS.test(s) && !(tokens >= 2 && INSTRUCTION.test(s));
+}
+const safeBatch = request => Array.isArray(request && request.words) && request.words.every(plainWord);
+const cleanItem = it => ![it.translation, it.definition, it.hint].concat(it.examples || []).some(v => typeof v === 'string' && (/[<>]/.test(v) || /https?:|www\./i.test(v)));
+
+// Saves fresh AI answers; resolves to the number of rows sent (0 when off, on error or for a suspicious batch).
 async function store(request, items) {
   const c = config();
-  const rows = (items || []).filter(it => it && it.translation && it.translation !== '—').map(it => ({
+  if (!safeBatch(request)) return 0;
+  const rows = (items || []).filter(it => it && it.translation && it.translation !== '—' && plainWord(it.original) && cleanItem(it)).map(it => ({
     source: request.source, target: request.target, v: VERSION, word: norm(it.original), item: it
   }));
   if (!c || !rows.length) return 0;
@@ -82,4 +96,4 @@ async function store(request, items) {
   }
 }
 
-module.exports = { VERSION, enabled, norm, lookup, store, inList };
+module.exports = { VERSION, enabled, norm, lookup, store, inList, plainWord, safeBatch };

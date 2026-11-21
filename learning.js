@@ -234,7 +234,7 @@
     for (var i = days - 1; i >= 0; i--) {
       var key = day(new Date(p[0], p[1] - 1, p[2] - i));
       var h = (history || {})[key] || {};
-      out.push({ date: key, answers: h.answers || 0, correct: h.correct || 0 });
+      out.push({ date: key, answers: Math.max(0, Number(h.answers) || 0), correct: Math.max(0, Number(h.correct) || 0) }); // numbers only: these end up in markup
     }
     return out;
   }

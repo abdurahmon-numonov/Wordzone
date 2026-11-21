@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.55.0" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.55.0" />
-  <link rel="stylesheet" href="app.min.css?v=2.55.0" />
+  <link rel="preload" href="core.min.js?v=2.56.0" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.0" />
+  <link rel="stylesheet" href="app.min.css?v=2.56.0" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -459,6 +459,11 @@
         <li><span class="t-how-n" aria-hidden="true">2</span><strong data-i18n="teach.how2">Получите ссылку и QR-код</strong><span data-i18n="teach.how2s">Отправьте в чат класса или покажите QR на доске.</span></li>
         <li><span class="t-how-n" aria-hidden="true">3</span><strong data-i18n="teach.how3">Ученики учат</strong><span data-i18n="teach.how3s">Открывают ссылку — и сразу начинают тренировку.</span></li>
       </ol>
+      <aside class="t-cloud" id="tCloud" hidden aria-labelledby="tCloudTitle">
+        <span class="t-cloud-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span>
+        <div class="t-cloud-copy"><strong id="tCloudTitle"></strong><span id="tCloudText"></span><span class="t-cloud-state" id="tCloudState" role="status" hidden></span></div>
+        <button class="btn primary" type="button" id="tCloudBtn" data-i18n="teach.cloudBtn">Войти или создать аккаунт</button>
+      </aside>
 
       <form class="composer t-form" id="tForm" novalidate>
         <section class="c-step" aria-labelledby="tStep1">
@@ -520,6 +525,7 @@
             <button class="btn block" type="button" id="tShareNative" hidden data-i18n="share.native">Поделиться…</button>
             <p class="t-label" data-i18n="teach.way2">…или покажите QR-код на доске</p>
             <button class="btn block" type="button" id="tShowClass"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> <span data-i18n="teach.showClass">Показать классу на весь экран</span></button>
+            <p class="t-done-cloud" id="tDoneCloud" hidden data-i18n="teach.doneCloud">Когда ученики позанимаются, их результаты появятся ниже, в «Мои домашки» → «Результаты».</p>
             <div class="t-done-more"><button class="link" type="button" id="tTry" data-i18n="teach.try">Посмотреть, что увидит ученик</button><button class="link" type="button" id="tAnother" data-i18n="teach.another">+ Создать ещё одну домашку</button></div>
           </div>
           <figure class="share-qr t-qr" id="tQr"></figure>
@@ -528,7 +534,8 @@
 
       <section class="t-mine" id="tMine" hidden aria-labelledby="tMineTitle">
         <div class="grid-head"><h2 id="tMineTitle" data-i18n="teach.mine">Мои домашки</h2><span id="tMineCount"></span></div>
-        <p class="mini" data-i18n="teach.mineNote">Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.</p>
+        <p class="mini" id="tMineNote">Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.</p>
+        <p class="quiz-empty" id="tMineEmpty" hidden data-i18n="teach.mineEmpty">Пока нет домашек. Создайте первую выше.</p>
         <ul class="t-list" id="tList"></ul>
       </section>
     </section>
@@ -877,9 +884,25 @@
       <div class="hw-facts"><span id="hwWords"></span><span id="hwPair"></span><span class="hw-due" id="hwDue" hidden></span></div>
       <ol class="preview-list" id="hwList"></ol>
       <p class="mini" id="hwMore"></p>
+      <label class="field t-field hw-name" id="hwNameWrap" hidden><span data-i18n="hw.name">Твоё имя и фамилия — их увидит учитель</span><input id="hwName" type="text" maxlength="40" autocomplete="name" placeholder="Ali Karimov" data-i18n-attr="placeholder:hw.namePh" /></label>
+      <p class="acc-error" id="hwNameError" role="alert"></p>
       <div class="actions hw-actions"><button class="btn primary big" type="button" id="hwStart" data-i18n="hw.start">Начать учить →</button><button class="btn" type="button" id="hwLater" data-i18n="hw.later">Сохранить на потом</button></div>
       <p class="mini hw-howto" data-i18n="hw.howto">Слова сохранятся в «Мои колоды». Возвращайся каждый день — повторения подстроятся под тебя.</p>
       <button class="link" type="button" id="hwClose" data-i18n="share.close">Закрыть</button>
+    </div>
+  </div>
+
+  <!-- a teacher looks at the students' results (v2.56, signed in) -->
+  <div class="overlay" id="tResults" hidden role="dialog" aria-modal="true" aria-labelledby="tResTitle">
+    <div class="panel share-card t-res-card">
+      <span class="eyebrow" data-i18n="teach.resEyebrow">РЕЗУЛЬТАТЫ УЧЕНИКОВ</span>
+      <h2 id="tResTitle"></h2>
+      <p class="mini" id="tResMeta"></p>
+      <div class="t-res-bar"><p class="t-res-summary" id="tResSummary" role="status"></p><button class="chip-btn" type="button" id="tResRefresh" data-i18n="teach.refresh">↻ Обновить</button></div>
+      <p class="quiz-empty" id="tResEmpty" hidden data-i18n="teach.resEmpty">Пока никто не занимался. Ученики появятся здесь после первой тренировки по ссылке.</p>
+      <div class="t-table-wrap t-res-wrap"><table class="t-table t-res-table" id="tResTable" hidden><thead><tr><th scope="col" data-i18n="teach.colName">Ученик</th><th scope="col" data-i18n="teach.colTimes">Занимался</th><th scope="col" data-i18n="teach.colAnswers">Ответов</th><th scope="col" data-i18n="teach.colAcc">Точность</th><th scope="col" data-i18n="teach.colLast">Последний раз</th></tr></thead><tbody id="tResRows"></tbody></table></div>
+      <p class="mini" data-i18n="teach.resNote">Каждая тренировка ученика прибавляется сюда. Точность — доля верных ответов за все тренировки.</p>
+      <button class="link" type="button" id="tResClose" data-i18n="share.close">Закрыть</button>
     </div>
   </div>
 
@@ -898,7 +921,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.55.0"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.56.0"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

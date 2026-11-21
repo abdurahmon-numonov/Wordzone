@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.55.0'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.0'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -54,6 +54,42 @@
     'nudge.signIn': ['У меня уже есть аккаунт', 'I already have an account', 'Menda akkaunt bor'],
     'side.more': ['Ещё', 'More', 'Yana'],
 
+
+    // v2.56 — teacher accounts: homework in the cloud, student results
+    "teach.cloudOffTitle": ["Хотите видеть результаты учеников?", "Want to see your students’ results?", "O'quvchilar natijalarini ko'rmoqchimisiz?"],
+    "teach.cloudOff": ["Войдите в аккаунт — домашки сохранятся на любом устройстве, и вы увидите, кто из учеников занимался и с какой точностью. Без входа всё тоже работает, но без результатов.", "Sign in — your homework is saved on any device, and you see which students practised and how accurately. Without signing in everything still works, just without results.", "Akkauntga kiring — uy vazifalari istalgan qurilmada saqlanadi va qaysi o'quvchi qancha aniqlik bilan shug'ullanganini ko'rasiz. Kirmasdan ham hammasi ishlaydi, faqat natijalarsiz."],
+    "teach.cloudBtn": ["Войти или создать аккаунт", "Sign in or create an account", "Kirish yoki akkaunt yaratish"],
+    "teach.cloudOnTitle": ["Результаты учеников включены", "Student results are on", "O'quvchilar natijalari yoqilgan"],
+    "teach.cloudOn": ["Домашки сохраняются в аккаунте {e}. Результаты — в «Мои домашки» ниже.", "Homework is saved to the account {e}. Results are in “My homework” below.", "Uy vazifalari {e} akkauntida saqlanadi. Natijalar pastdagi «Mening uy vazifalarim» bo'limida."],
+    "teach.cloudOffline": ["Нет интернета — результаты обновятся, когда связь вернётся.", "No internet — results will update when you are back online.", "Internet yo'q — aloqa tiklanganda natijalar yangilanadi."],
+    "teach.cloudNotSetUp": ["Результаты ещё не настроены на сервере сайта. Домашки работают как обычно.", "Results are not set up on the site’s server yet. Homework works as usual.", "Natijalar hali sayt serverida sozlanmagan. Uy vazifalari odatdagidek ishlaydi."],
+    "teach.cloudErr": ["Не получилось связаться с сервером. Попробуйте ещё раз чуть позже.", "Could not reach the server. Please try again a bit later.", "Server bilan bog'lanib bo'lmadi. Birozdan keyin qayta urinib ko'ring."],
+    "teach.cloudFail": ["Домашка готова, но сохранить её в аккаунт не вышло — результаты по этой ссылке не придут.", "The homework is ready, but it could not be saved to your account — results for this link will not arrive.", "Uy vazifasi tayyor, lekin akkauntga saqlab bo'lmadi — bu havola bo'yicha natijalar kelmaydi."],
+    "teach.doneCloud": ["Когда ученики позанимаются, их результаты появятся ниже, в «Мои домашки» → «Результаты».", "When students practise, their results appear below in “My homework” → “Results”.", "O'quvchilar shug'ullangach, natijalari pastda «Mening uy vazifalarim» → «Natijalar»da paydo bo'ladi."],
+    "teach.mineCloud": ["Сохранены в вашем аккаунте — видны на любом устройстве после входа.", "Saved to your account — visible on any device after signing in.", "Akkauntingizda saqlangan — kirgandan keyin istalgan qurilmada ko'rinadi."],
+    "teach.mineEmpty": ["Пока нет домашек. Создайте первую выше.", "No homework yet. Create the first one above.", "Hozircha uy vazifasi yo'q. Birinchisini yuqorida yarating."],
+    "teach.results": ["Результаты", "Results", "Natijalar"],
+    "teach.resultsOf": ["Результаты: {t}", "Results: {t}", "Natijalar: {t}"],
+    "teach.students": [["{n} ученик", "{n} ученика", "{n} учеников"], ["{n} student", "{n} students"], ["{n} ta o'quvchi"]],
+    "teach.times": [["{n} раз", "{n} раза", "{n} раз"], ["{n} time", "{n} times"], ["{n} marta"]],
+    "teach.deleteSure": ["Точно? Результаты тоже удалятся", "Sure? Results are deleted too", "Aniqmi? Natijalar ham o'chadi"],
+    "teach.deletedCloud": ["Домашка и её результаты удалены. Ссылка у учеников откроется как обычная колода.", "The homework and its results are deleted. Students’ links will open as a normal deck.", "Uy vazifasi va natijalari o'chirildi. O'quvchilardagi havola oddiy to'plam sifatida ochiladi."],
+    "teach.resEyebrow": ["РЕЗУЛЬТАТЫ УЧЕНИКОВ", "STUDENT RESULTS", "O'QUVCHILAR NATIJALARI"],
+    "teach.refresh": ["↻ Обновить", "↻ Refresh", "↻ Yangilash"],
+    "teach.resEmpty": ["Пока никто не занимался. Ученики появятся здесь после первой тренировки по ссылке.", "Nobody has practised yet. Students appear here after their first practice from the link.", "Hozircha hech kim shug'ullanmadi. O'quvchilar havola orqali birinchi mashg'ulotdan keyin shu yerda paydo bo'ladi."],
+    "teach.colName": ["Ученик", "Student", "O'quvchi"],
+    "teach.colTimes": ["Занимался", "Practised", "Shug'ullandi"],
+    "teach.colAnswers": ["Ответов", "Answers", "Javoblar"],
+    "teach.colAcc": ["Точность", "Accuracy", "Aniqlik"],
+    "teach.colLast": ["Последний раз", "Last time", "Oxirgi marta"],
+    "teach.resNote": ["Каждая тренировка ученика прибавляется сюда. Точность — доля верных ответов за все тренировки.", "Every practice a student finishes adds up here. Accuracy is the share of correct answers across all practices.", "O'quvchining har bir mashg'uloti shu yerga qo'shiladi. Aniqlik — barcha mashg'ulotlardagi to'g'ri javoblar ulushi."],
+    "teach.resLoading": ["Загружаем…", "Loading…", "Yuklanmoqda…"],
+    "teach.resAvg": ["средняя точность {p}%", "average accuracy {p}%", "o'rtacha aniqlik {p}%"],
+    "teach.late": ["после срока", "late", "muddatdan keyin"],
+    "hw.name": ["Твоё имя и фамилия — их увидит учитель", "Your first and last name — your teacher will see it", "Ism va familiyang — uni o'qituvchi ko'radi"],
+    "hw.namePh": ["например, Ali Karimov", "e.g. Ali Karimov", "masalan, Ali Karimov"],
+    "hw.needName": ["Напиши своё имя, чтобы учитель увидел твой результат.", "Type your name so your teacher can see your result.", "O'qituvchi natijangni ko'rishi uchun ismingni yoz."],
+    "hw.sent": ["✓ Результат отправлен учителю", "✓ Result sent to your teacher", "✓ Natija o'qituvchiga yuborildi"],
     // v2.55 — for teachers: homework decks by link / QR
     "side.teacher": ["Для учителя", "For teachers", "O'qituvchi uchun"],
     "nav.teacher": ["Домашка ученикам", "Homework for students", "O'quvchilarga uy vazifasi"],

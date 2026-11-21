@@ -107,6 +107,16 @@
           headers: { Prefer: 'resolution=merge-duplicates,return=representation' } });
         return Array.isArray(rows) && rows[0] ? rows[0].updated_at : null;
       },
+      // Any other table or function (v2.56: teacher homework). auth: 'need' = only signed in, otherwise the user's
+      // token when there is one and the public key alone when not (a student without an account).
+      rest: async function (path, o) {
+        o = o || {};
+        var t;
+        if (o.auth === 'need' || load()) {
+          try { t = await token(); } catch (e) { if (o.auth === 'need') throw e; }
+        }
+        return req('/rest/v1/' + path, { method: o.method, body: o.body, headers: o.headers, token: t });
+      },
       wipe: async function () {
         var t = await token(), u = load().user;
         await req('/rest/v1/progress?user_id=eq.' + encodeURIComponent(u.id), { method: 'DELETE', token: t });
@@ -276,6 +286,7 @@
       changed: function () { if (quiet) return; meta.dirty = true; writeMeta(); if (c.user()) schedule(3000); },
       refresh: render,
       user: function () { return c.user(); },
+      rest: function (path, o) { return c.rest(path, o); },
       open: function (m) { if (m === 'in' || m === 'up') mode = m; open(); } // e.g. the "save your progress" card opens sign-up
     };
   }

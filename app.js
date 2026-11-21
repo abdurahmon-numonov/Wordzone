@@ -864,6 +864,7 @@
     state.round = resume ? (resume.round || 1) : 1;
     state.known = 0; state.forgot = 0; state.answers = 0;
     state.startedAt = Date.now(); state.elapsed = 0;
+    state.sessionDeck = state.cfg.deck || '';
     combo = 0; undoSnap = null;
     answerLocked = false; summaryRecorded = false;
     if (L) { enrichLocalContext(state.cards); archiveCards(); }
@@ -1414,7 +1415,7 @@
     }
 
     state.elapsed = Math.floor((Date.now() - state.startedAt) / 1000);
-    if (L && state.answers > 0 && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); renderDaily(); }
+    if (L && state.answers > 0 && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); renderDaily(); reportHomework(); }
     var acc = state.answers ? Math.round((state.known / state.answers) * 100) : 0;
     var mastered = state.cards.filter(function (c) { return c.streak >= 2 && c.fails === 0; }).length;
 
@@ -2586,8 +2587,11 @@
     var list = $('hwList'); list.textContent = '';
     deck.cards.slice(0, 5).forEach(function (c) { list.appendChild(h('li', {}, [h('strong', { text: c.original, lang: deck.source }), h('span', { text: c.translation, lang: deck.target })])); });
     $('hwMore').textContent = n > 5 ? tr('share.more', { n: n - 5 }) : '';
+    var withResults = Boolean(hw.id && hwStudent);
+    $('hwNameWrap').hidden = !withResults; $('hwNameError').textContent = '';
+    if (withResults && !$('hwName').value) $('hwName').value = hwStudent.name();
     $('hwInvite').hidden = false;
-    $('hwStart').focus();
+    (withResults && !$('hwName').value ? $('hwName') : $('hwStart')).focus();
   }
   function closeHomework() {
     $('hwInvite').hidden = true; previewDeck = null;
@@ -2597,8 +2601,11 @@
   function takeHomework(startNow) {
     var deck = previewDeck;
     if (!deck) return;
+    var hwId = deck.hw && deck.hw.id, name = $('hwName').value.replace(/\s+/g, ' ').trim();
+    if (hwId && hwStudent && !name) { $('hwNameError').textContent = tr('hw.needName'); $('hwName').focus(); return; }
     var got = mergeSharedDeck(deck);
     if (!got) return;
+    if (hwId && hwStudent) hwStudent.link(got.key, hwId, name);
     $('hwInvite').hidden = true; previewDeck = null;
     var d = library.decks[got.key];
     if (startNow) { navigateLearning('screen-setup'); practiceDeck(d, 'all'); }
@@ -2880,7 +2887,7 @@
     stopMatch();
     clearTimeout(nextCardTimer); nextCardTimer = null;
     clearInterval(state.timer);
-    if (state.answers && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); }
+    if (state.answers && !summaryRecorded) { L.complete(library.streak, L.day()); summaryRecorded = true; persistLibrary(); reportHomework(); }
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
@@ -2895,6 +2902,13 @@
   }
   /* For teachers (v2.55, teacher.js): homework decks handed out as a link / QR code. */
   var teacher = null;
+  // v2.56: a student's practice on a homework deck is reported to the teacher (Supabase RPC, no account needed).
+  var hwStudent = window.VMTeacher ? window.VMTeacher.student({ rest: function () { return account ? account.rest : null; } }) : null;
+  function reportHomework() {
+    if (!hwStudent || !state.answers || !state.sessionDeck || !hwStudent.linked(state.sessionDeck)) return;
+    hwStudent.report(state.sessionDeck, { answered: state.answers, correct: state.known, words: Math.min(state.cards.length, state.answers) })
+      .then(function (sent) { if (sent) toast(tr('hw.sent'), 'ok', 3500); }, function () {});
+  }
   function initTeacher() {
     if (!window.VMTeacher || !$('screen-teacher')) return;
     teacher = window.VMTeacher.mount({
@@ -2908,7 +2922,13 @@
       translate: teacherTranslate,
       qr: async function (text) { await loadQr(); return qrSvg(text); },
       linkBase: function () { return location.origin + location.pathname; },
-      preview: function (deck) { showHomework(deck); }
+      preview: function (deck) { showHomework(deck); },
+      cloud: {
+        ready: function () { return Boolean(account); },
+        user: function () { return account ? account.user() : null; },
+        open: function () { if (account) account.open('in'); },
+        rest: function (path, o) { return account.rest(path, o); }
+      }
     });
     if (I18N && I18N.onChange) I18N.onChange(function () { if (teacher) teacher.relabel(); });
   }
@@ -3571,6 +3591,9 @@
     $('hwStart').onclick = function () { takeHomework(true); };
     $('hwLater').onclick = function () { takeHomework(false); };
     $('hwClose').onclick = closeHomework;
+    $('hwName').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); takeHomework(true); } });
+    $('hwName').addEventListener('input', function () { $('hwNameError').textContent = ''; });
+    window.addEventListener('online', function () { if (hwStudent && account) hwStudent.flush(); });
     window.addEventListener('hashchange', openSharedLink);
     setTimeout(openSharedLink, 0);
     $('btnMatchStart').onclick = startMatch;
@@ -4180,6 +4203,8 @@
       }
     });
     renderSaveNudge(); // the first account render happens inside mount(), before `account` is set
+    if (teacher) teacher.cloudChanged();
+    if (hwStudent) hwStudent.flush().then(function (n) { if (n) toast(tr('hw.sent'), 'ok', 3500); }, function () {});
   }
 
   function refreshLanguage() {

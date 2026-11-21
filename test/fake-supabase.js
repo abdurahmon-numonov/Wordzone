@@ -1,5 +1,8 @@
 /* A tiny in-memory stand-in for the parts of Supabase the app uses (Auth + the progress table with RLS).
-   Used by test/account.js (as a fetch function) and by test/e2e.js (behind the local HTTP server). */
+   Used by test/account.js (as a fetch function) and by test/e2e.js (behind the local HTTP server).
+   v2.56: also supabase/teacher.sql — homework (own rows only), homework_results (the teacher of the homework
+   reads them) and rpc/submit_homework_result (anyone, only into existing homework). state.teacherTables = false
+   answers 404 as if the script was never run. */
 function fakeSupabase(opts) {
   opts = opts || {};
   const KEY = opts.key || 'anon-test-key';
@@ -9,7 +12,9 @@ function fakeSupabase(opts) {
   const rows = new Map();       // user id -> { data, updated_at }
   const log = [];
   let n = 0, clock = Date.parse('2026-01-01T00:00:00Z');
-  const state = { autoConfirm: opts.autoConfirm !== false, expiresIn: opts.expiresIn || 3600, mails: [] };
+  const homework = new Map();   // id -> row (+ teacher_id)
+  const results = new Map();    // homework id + '|' + student key -> row
+  const state = { teacherTables: true, autoConfirm: opts.autoConfirm !== false, expiresIn: opts.expiresIn || 3600, mails: [] };
 
   const byId = id => [...users.values()].find(u => u.id === id);
   function session(u) {
@@ -75,6 +80,44 @@ function fakeSupabase(opts) {
       }
       if (method === 'DELETE') { rows.delete(id); return [204, null]; }
     }
+    if (/^\/rest\/v1\/(homework|homework_results|rpc\/submit_homework_result)$/.test(p) && !state.teacherTables)
+      return [404, { code: 'PGRST205', message: "Could not find the table in the schema cache" }];
+    if (p === '/rest/v1/homework') {
+      const id = bearer(headers);
+      if (!id) return method === 'GET' ? [200, []] : [401, { code: '42501', message: 'permission denied for table homework' }];
+      if (method === 'POST') {
+        if (!body || !/^[0-9a-f-]{36}$/.test(body.id) || homework.has(body.id)) return [409, { code: '23505', message: 'duplicate key' }];
+        homework.set(body.id, Object.assign({}, body, { teacher_id: id, created_at: new Date().toISOString() }));
+        return [201, null];
+      }
+      const mine = [...homework.values()].filter(h => h.teacher_id === id);
+      if (method === 'GET') return [200, mine.sort((a, b) => b.created_at < a.created_at ? -1 : 1).map(h => {
+        const out = { id: h.id, title: h.title, source: h.source, target: h.target, n: h.n, due: h.due, link: h.link, created_at: h.created_at };
+        if (/homework_results\(count\)/.test(q.get('select') || '')) out.homework_results = [{ count: [...results.values()].filter(r => r.homework_id === h.id).length }];
+        return out;
+      })];
+      if (method === 'DELETE') {
+        const hid = (q.get('id') || '').replace(/^eq\./, ''), h = homework.get(hid);
+        if (h && h.teacher_id === id) { homework.delete(hid); for (const [k, r] of results) if (r.homework_id === hid) results.delete(k); }
+        return [204, null];
+      }
+    }
+    if (p === '/rest/v1/homework_results' && method === 'GET') {
+      const id = bearer(headers), hid = (q.get('homework_id') || '').replace(/^eq\./, ''), h = homework.get(hid);
+      if (!id || !h || h.teacher_id !== id) return [200, []];
+      return [200, [...results.values()].filter(r => r.homework_id === hid).sort((a, b) => b.last_at < a.last_at ? -1 : 1)];
+    }
+    if (p === '/rest/v1/rpc/submit_homework_result' && method === 'POST') {
+      const b = body || {};
+      if (!homework.has(b.p_homework)) return [404, { code: 'P0002', message: 'unknown homework' }];
+      const name = String(b.p_name || '').trim();
+      if (!/^[A-Za-z0-9-]{8,64}$/.test(b.p_student || '') || !name || name.length > 40 || !(b.p_answered >= 1 && b.p_answered <= 2000) || !(b.p_correct >= 0 && b.p_correct <= b.p_answered))
+        return [400, { code: '22023', message: 'bad input' }];
+      const k = b.p_homework + '|' + b.p_student, now = new Date().toISOString(), old = results.get(k);
+      results.set(k, old ? Object.assign(old, { student_name: name, answered: old.answered + b.p_answered, correct: old.correct + b.p_correct, words: Math.max(old.words, b.p_words), attempts: old.attempts + 1, last_at: now })
+        : { homework_id: b.p_homework, student_key: b.p_student, student_name: name, answered: b.p_answered, correct: b.p_correct, words: b.p_words, attempts: 1, first_at: now, last_at: now });
+      return [204, null];
+    }
     return [404, { message: 'not found' }];
   }
 
@@ -87,6 +130,6 @@ function fakeSupabase(opts) {
     const text = json == null ? '' : JSON.stringify(json);
     return { ok: status >= 200 && status < 300, status, text: async () => text };
   }
-  return { handle, fetch: fetchFn, users, rows, tokens, log, state, KEY };
+  return { handle, fetch: fetchFn, users, rows, tokens, log, state, KEY, homework, results };
 }
 module.exports = fakeSupabase;

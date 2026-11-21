@@ -39,6 +39,7 @@ curl -s -X POST https://ВАШ-ДОМЕН/api/ai -H "Origin: https://ВАШ-ДО
 
 1. Создать проект на [supabase.com](https://supabase.com) (бесплатного плана хватает).
 2. SQL Editor → выполнить `supabase/schema.sql`. Он создаёт таблицу `progress` (одна строка на пользователя) и включает RLS: каждый видит только свою строку.
+   Для раздела «Для учителя» (v2.56) там же выполнить `supabase/teacher.sql`: таблицы `homework` и `homework_results` и функция `submit_homework_result`. Без него домашки работают, но результаты учеников не приходят. Повторный запуск безопасен.
 3. Authentication → URL Configuration:
    - **Site URL** — адрес сайта, например `https://wordex-app.vercel.app`;
    - в **Redirect URLs** добавить тот же адрес.

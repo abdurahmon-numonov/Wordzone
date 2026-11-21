@@ -55,12 +55,14 @@ async function reveal(pg, sel) {
   assert.match(await page.locator('#streakCount').innerText(),/^1 /);
   await page.screenshot({path:path.join(output,'02-library.png'),fullPage:true});
   const downloadPromise = page.waitForEvent('download');
+  await page.click('#btnTheme'); // v2.56.5: the backup is in Settings
   await page.click('#btnExportLibrary');
   const download = await downloadPromise;
   const backup = JSON.parse(fs.readFileSync(await download.path(),'utf8'));
   assert.equal(backup.version,2);
   assert(!JSON.stringify(backup).includes('apiKey'));
   page.once('dialog',d=>d.accept());
+  await page.keyboard.press('Escape');
   await page.locator('#importLibrary').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});
   await page.waitForFunction(()=>document.querySelector('#toast').textContent.includes('Библиотека восстановлена'));
   assert.equal(await page.locator('.deck-item').count(),1);
@@ -126,8 +128,9 @@ async function reveal(pg, sel) {
   assert(await motionPage.locator('.hero-turner').evaluate(el=>Math.abs(new DOMMatrixReadOnly(getComputedStyle(el).transform).m13)>.15),'hero must visibly rotate in 3D, not just fade');
   await motionPage.screenshot({path:path.join(output,'07-hero-turn.png'),fullPage:true});
   await motionPage.click('#navLibrary');
-  await motionPage.fill('#dailyGoal','1');
-  await motionPage.locator('#dailyGoal').press('Tab');
+  // v2.56.5: no daily goal field on the page any more; set the goal in storage for this check
+  await motionPage.evaluate(()=>{const k='vocabulary-master.library.v2';const l=JSON.parse(localStorage.getItem(k)||'null');if(l){l.goal=1;localStorage.setItem(k,JSON.stringify(l));}});
+  await motionPage.reload(); await motionPage.waitForTimeout(600);
   await motionPage.click('#navStudy');
   await reveal(motionPage, '#btnDemo');
   await motionPage.click('#btnDemo');

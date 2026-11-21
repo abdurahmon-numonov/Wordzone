@@ -1023,7 +1023,6 @@ html:not([data-ready]) .boot { display:flex; }
 @keyframes boot-note { to { opacity:1; } }
 html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
 .app-shell { transition:opacity .25s ease-out; }
-#arcadeHub[aria-busy="true"] .arcade-cta { opacity:.6; }
 @media (prefers-reduced-motion: reduce) {
   .boot-bar::after { animation:none; left:0; width:100%; opacity:.6; }
   .boot-note { animation-duration:0s; }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Builds the files the page actually loads from the unchanged source files:
  *   core.min.js    every script the app needs at start, in the same order as before
- *   arcade.min.js  the three big games (Fishing, Café, Defense), loaded when idle or when Games opens
+ *   arcade.min.js  the Games screen's game («Взлёт»), loaded when idle or when Games opens
  *   app.min.css    every stylesheet except the fonts (their url()s are relative to vendor/fonts)
  * Each source is minified on its own (esbuild transform: top-level names stay, so the files still talk to each
  * other through the same globals) and joined in order. The first line lists a hash of every source, so
@@ -16,8 +16,8 @@ const crypto = require('crypto');
 const root = path.join(__dirname, '..');
 const BUNDLES = {
   'core.min.js': ['display.js', 'i18n.js', 'motion.js', 'languages.js', 'grammar.js', 'learning.js', 'writing.js', 'ai-core.js', 'share.js', 'games.js', 'course.js', 'account.js', 'tips.js', 'app.js'],
-  'arcade.min.js': ['fishing.js', 'cafe.js', 'defense.js'],
-  'app.min.css': ['styles.css', 'editorial.css', 'shell.css', 'motion.css', 'composer.css', 'onboarding.css', 'arcade.css', 'cafe.css', 'defense.css', 'themes.css']
+  'arcade.min.js': ['soar.js'],
+  'app.min.css': ['styles.css', 'editorial.css', 'shell.css', 'motion.css', 'composer.css', 'onboarding.css', 'arcade.css', 'soar.css', 'themes.css']
 };
 
 function loadEsbuild() {

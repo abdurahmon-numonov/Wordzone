@@ -1614,7 +1614,7 @@
   /* ---------------- Library, daily practice and lexical resource ---------------- */
   var LIBRARY_KEY = 'vocabulary-master.library.v2';
   var library = { decks: {}, history: {}, goal: 10, streak: { count: 0, last: null, freezes: 2, enabled: true } };
-  var pendingTypedAnswer = null, lexical = null, games = null, fishing = null, cafe = null, defense = null, account = null;
+  var pendingTypedAnswer = null, lexical = null, games = null, account = null;
   var CONTEXT = {
     serendipity: ['The chance occurrence of a happy discovery.', 'Finding this little bookshop was pure serendipity.'],
     'to remember': ['To keep something in your memory.', 'I try to remember one new word every day.'],
@@ -2191,58 +2191,37 @@
   /* v2.46: the three big games (Fishing, Café, Defense, ~200 KB) are not part of the first load. They arrive in
      arcade.min.js once the page is idle, or at once when the Games screen opens; a click on a game before then
      waits for the file and goes through. Everything else in the app starts without them. */
-  var arcadeMounted = false, arcadeLoading = null;
+  var arcadeMounted = false, arcadeLoading = null, soar = null;
   function mountArcade() {
-    if (arcadeMounted || !(window.VMCafe && window.VMDefense && window.VMFishing)) return;
+    if (arcadeMounted || !window.VMSoar) return;
     arcadeMounted = true;
-    // v2.36: «Чайхана», the second arcade game (3D scene loaded on first open)
-      if (window.VMCafe) cafe = window.VMCafe.mount({
-        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-        tr: tr, toast: toast, fx: playArcadeFx,
-        speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
-        autoSpeak: function () { return !!state.soundEnabled; },
-        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-      });
-      // v2.37: «Оборона», the third arcade game, a 3D tower defense paid for with right answers
-      if (window.VMDefense) defense = window.VMDefense.mount({
-        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-        tr: tr, toast: toast, fx: playArcadeFx,
-        speak: function (text) { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; if (d) speakText(text, d.source); },
-        autoSpeak: function () { return false; },
-        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-      });
-      if (window.VMFishing) fishing = window.VMFishing.mount({
-        deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
-        tr: tr, toast: toast, fx: playArcadeFx,
-        answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
-        complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); },
-        moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; }
-      });
+    // v2.53: «Взлёт», the one fast game of the Games screen (replaces Fishing, Café and Defense)
+    soar = window.VMSoar.mount({
+      deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
+      tr: tr, fx: playArcadeFx,
+      answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
+      complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
+    });
+    $('soarStage').removeAttribute('aria-busy');
+    window.soarState = soar && soar._state; window.soarAnswer = soar && soar._answer; // test hooks, like the trainers'
     if ($('screen-games').classList.contains('active')) renderArcade();
   }
   function loadArcade() {
-    if (window.VMCafe && window.VMDefense && window.VMFishing) { mountArcade(); return Promise.resolve(); }
+    if (window.VMSoar) { mountArcade(); return Promise.resolve(); }
     if (!arcadeLoading) {
-      $('arcadeHub').setAttribute('aria-busy', 'true');
       arcadeLoading = new Promise(function (ok, fail) {
         var s = document.createElement('script');
         s.src = 'arcade.min.js' + (ASSET_V ? '?v=' + ASSET_V : '');
         s.onload = ok; s.onerror = fail;
         document.head.appendChild(s);
-      }).then(mountArcade, function () { arcadeLoading = null; toast(tr('toast.arcadeOffline'), 'err', 5000); })
-        .finally(function () { $('arcadeHub').removeAttribute('aria-busy'); });
+      }).then(mountArcade, function () { arcadeLoading = null; toast(tr('toast.arcadeOffline'), 'err', 5000); });
     }
     return arcadeLoading;
   }
   function renderArcade() {
     var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
-    if ($('arcadeHub')) $('arcadeHub').classList.toggle('locked', !ready);
-    if (fishing) fishing.refresh();
-    if (cafe) cafe.refresh();
-    if (defense) defense.refresh();
+    if (soar) { if ($('screen-games').classList.contains('active')) soar.show(); else soar.hide(); }
   }
   function renderDeckBars() {
     var d = activeDeck();
@@ -2825,9 +2804,7 @@
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
-    if (fishing && id !== 'screen-games') fishing.leave();
-    if (cafe && id !== 'screen-games') cafe.leave();
-    if (defense && id !== 'screen-games') defense.leave();
+    if (soar && id !== 'screen-games') soar.hide(); // the flight pauses and stops drawing off its screen
     show(id); renderDaily();
     if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
@@ -3439,15 +3416,9 @@
       moreSentences: function (d) { return function (c) { var ctx = d.source === 'en' && CONTEXT[c.original.toLowerCase()]; return ctx ? [ctx[1]] : []; }; },
       openMatch: function (key) { if (library.decks[key]) $('quizDeck').value = key; $('btnMatchStart').click(); var mp = document.querySelector('.match-panel'); if (mp) mp.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
     });
-    // v2.35: the Games screen holds the big arcade games; the quick trainers moved to the Lexical test.
-    mountArcade(); // in a full bundle the games are already here; otherwise they arrive with loadArcade()
-    $('arcadeHub').addEventListener('click', function (e) {
-      var tile = e.target.closest('[data-arcade]');
-      if (!tile || arcadeMounted) return;
-      e.preventDefault(); e.stopImmediatePropagation();
-      loadArcade().then(function () { if (arcadeMounted) tile.click(); });
-    }, true);
-    // fetch the games quietly once the page has settled, so they open instantly later
+    // v2.53: the Games screen holds «Взлёт»; the quick trainers live on the Lexical test screen.
+    mountArcade(); // in a full bundle the game is already here; otherwise it arrives with loadArcade()
+    // fetch the game quietly once the page has settled, so it opens instantly later
     (window.requestIdleCallback || function (f) { return setTimeout(f, 1) })(function () { setTimeout(loadArcade, 2500); });
     $('btnProgEmpty').onclick = function () { navigateLearning('screen-setup'); $('input').focus(); };
     var progressResize = null;

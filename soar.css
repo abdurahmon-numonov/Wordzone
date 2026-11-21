@@ -69,3 +69,4 @@
   .so-title { font-size:26px; }
 }
 @media (prefers-reduced-motion:reduce) { .so-score.bump, .so-stage[aria-busy="true"]::after { animation:none; } .so-combo { transition:none; } }
+.so-btn.so-exit { min-width:0; }

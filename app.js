@@ -2212,6 +2212,7 @@
     var gameApi = {
       deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
       tr: tr, fx: playArcadeFx,
+      exit: function () { closeArcade(); }, // «← Все игры» inside a game's panels
       answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
       complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
     };
@@ -2271,7 +2272,7 @@
     var was = arcadeOpen;
     arcadeOpen = null; renderArcade();
     var card = document.querySelector('[data-arcade-open="' + was + '"]');
-    if (card) card.focus({ preventScroll: true });
+    if (card) { card.focus({ preventScroll: true }); card.scrollIntoView({ block: 'nearest', behavior: 'instant' }); }
   }
   function ready4() { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; return !!(d && d.cards.length >= 4); }
   function renderDeckBars() {

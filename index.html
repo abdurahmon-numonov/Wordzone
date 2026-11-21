@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.54.1" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.54.1" />
-  <link rel="stylesheet" href="app.min.css?v=2.54.1" />
+  <link rel="preload" href="core.min.js?v=2.55.0" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.55.0" />
+  <link rel="stylesheet" href="app.min.css?v=2.55.0" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -39,6 +39,8 @@
       <button type="button" class="nav-link nav-minor" id="navGrammar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 18 5-13 5 13M5 13.5h6"/><path d="M15 12.5a3 3 0 0 1 6 0V18m0-3.5c-.8-.6-1.8-1-3-1-1.7 0-3 1-3 2.2 0 1.3 1.1 2.3 2.6 2.3 1.4 0 2.6-.8 3.4-2"/></svg><span data-i18n="nav.grammar">Грамматика</span></button>
       <button type="button" class="nav-link nav-minor" id="navGames"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="12" rx="4"/><path d="M7 11v4M5 13h4"/><circle cx="15.5" cy="12" r="1"/><circle cx="18" cy="14.5" r="1"/></svg><span data-i18n="nav.games">Игры</span></button>
       <button type="button" class="nav-link nav-minor" id="navTest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg><span data-i18n="nav.test">Лексический тест</span></button>
+      <p class="side-group" data-i18n="side.teacher">Для учителя</p>
+      <button type="button" class="nav-link nav-minor" id="navTeacher"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11v5c3.5 2.5 8.5 2.5 12 0v-5"/><path d="M22 9v6"/></svg><span data-i18n="nav.teacher">Домашка ученикам</span></button>
       <div class="side-decks-block" id="sideDecksBlock">
         <div class="side-group-row"><p class="side-group" id="sideDecksTitle" data-i18n="decks.title">Мои колоды</p><span class="side-count" id="sideDeckCount"></span><button class="side-plus" id="btnNewDeck" type="button" title="Создать новую колоду" aria-label="Создать новую колоду" data-i18n-attr="title:deck.new,aria-label:deck.new">+</button></div>
         <ul class="side-decks" id="sideDecks" aria-labelledby="sideDecksTitle"></ul>
@@ -449,6 +451,87 @@
       </div>
     </section>
 
+    <!-- ============ FOR TEACHERS (v2.55): homework decks shared by link / QR ============ -->
+    <section class="screen" id="screen-teacher">
+      <div class="library-intro"><div><span class="eyebrow" data-i18n="teach.eyebrow">ДЛЯ УЧИТЕЛЯ</span><h1 data-i18n="teach.h1">Задайте слова на дом</h1><p data-i18n="teach.sub">Впишите слова — ученики получат ссылку и выучат их здесь, карточками и играми. Ученикам не нужна регистрация.</p></div></div>
+      <ol class="t-how" aria-label="Как это работает" data-i18n-attr="aria-label:steps.aria">
+        <li><span class="t-how-n" aria-hidden="true">1</span><strong data-i18n="teach.how1">Впишите слова</strong><span data-i18n="teach.how1s">Можно сразу с переводом или без — переведёт ИИ.</span></li>
+        <li><span class="t-how-n" aria-hidden="true">2</span><strong data-i18n="teach.how2">Получите ссылку и QR-код</strong><span data-i18n="teach.how2s">Отправьте в чат класса или покажите QR на доске.</span></li>
+        <li><span class="t-how-n" aria-hidden="true">3</span><strong data-i18n="teach.how3">Ученики учат</strong><span data-i18n="teach.how3s">Открывают ссылку — и сразу начинают тренировку.</span></li>
+      </ol>
+
+      <form class="composer t-form" id="tForm" novalidate>
+        <section class="c-step" aria-labelledby="tStep1">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">1</span></span>
+          <div class="c-body">
+            <div class="c-head"><h3 id="tStep1" data-i18n="teach.s1">Название и языки</h3><p class="c-hint" data-i18n="teach.s1h">Название увидят ученики. Например: «Unit 5 — Travel».</p></div>
+            <label class="field t-field"><span data-i18n="teach.title">Название задания</span><input id="tTitle" type="text" maxlength="60" autocomplete="off" placeholder="Unit 5 — Travel" data-i18n-attr="placeholder:teach.titlePh" /></label>
+            <div class="t-langs">
+              <label class="field t-field"><span data-i18n="teach.learn">Ученики учат</span><span class="select-wrap"><select id="tSource"></select></span></label>
+              <span class="t-arrow" aria-hidden="true">→</span>
+              <label class="field t-field"><span data-i18n="teach.native">Перевод на</span><span class="select-wrap"><select id="tTarget"></select></span></label>
+            </div>
+          </div>
+        </section>
+        <section class="c-step" aria-labelledby="tStep2">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">2</span></span>
+          <div class="c-body">
+            <div class="c-head c-head-row"><div><h3 id="tStep2" data-i18n="teach.s2">Слова</h3><p class="c-hint" data-i18n="teach.s2h">Одно слово на строку. С переводом — через тире: apple — яблоко. Без перевода ИИ переведёт сам, а вы проверите.</p></div><button class="chip-btn" type="button" id="tExample" data-i18n="teach.example">Вставить пример</button></div>
+            <textarea id="tWords" class="t-words" rows="8" spellcheck="false" aria-labelledby="tStep2" placeholder="travel — путешествие&#10;luggage — багаж&#10;passport&#10;boarding pass" data-i18n-attr="placeholder:teach.wordsPh"></textarea>
+            <p class="mini t-count" id="tCount" aria-live="polite"></p>
+          </div>
+        </section>
+        <section class="c-step" aria-labelledby="tStep3">
+          <span class="c-mark" aria-hidden="true"><span class="c-num">3</span></span>
+          <div class="c-body">
+            <div class="c-head"><h3 id="tStep3"><span data-i18n="teach.s3">Для учеников</span> <span class="t-optional" data-i18n="teach.optional">необязательно</span></h3><p class="c-hint" data-i18n="teach.s3h">Ученики увидят это, когда откроют ссылку.</p></div>
+            <div class="t-meta">
+              <label class="field t-field"><span data-i18n="teach.by">Ваше имя</span><input id="tBy" type="text" maxlength="40" autocomplete="name" placeholder="Ms. Karimova" data-i18n-attr="placeholder:teach.byPh" /></label>
+              <label class="field t-field"><span data-i18n="teach.due">Выучить до</span><input id="tDue" type="date" /></label>
+            </div>
+            <label class="field t-field"><span data-i18n="teach.note">Сообщение ученикам</span><input id="tNote" type="text" maxlength="200" autocomplete="off" placeholder="Выучите к пятнице, будет словарный диктант." data-i18n-attr="placeholder:teach.notePh" /></label>
+          </div>
+        </section>
+        <section class="c-step c-step-go" aria-labelledby="tStep4">
+          <span class="c-mark" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span>
+          <div class="c-body">
+            <div class="c-head"><h3 id="tStep4" data-i18n="teach.s4">Готово? Получите ссылку</h3><p class="c-hint" data-i18n="teach.s4h">Сначала покажем перевод — его можно поправить.</p></div>
+            <p class="acc-error t-error" id="tError" role="alert"></p>
+            <div class="c-go"><button class="btn primary big t-go" type="submit" id="tMake"><span data-i18n="teach.make">Создать домашку</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </div>
+        </section>
+      </form>
+
+      <section class="panel t-review" id="tReview" hidden aria-labelledby="tReviewTitle" tabindex="-1">
+        <span class="eyebrow" data-i18n="teach.reviewEyebrow">ПОСЛЕДНИЙ ШАГ</span>
+        <h2 id="tReviewTitle" data-i18n="teach.reviewTitle">Проверьте перевод</h2>
+        <p class="mini" id="tReviewInfo"></p>
+        <p class="t-busy" id="tBusy" role="status" hidden><span class="t-spinner" aria-hidden="true"></span><span id="tBusyText"></span></p>
+        <div class="t-table-wrap"><table class="t-table"><thead><tr><th scope="col" id="tColWord" data-i18n="vault.word">Слово</th><th scope="col" id="tColTr" data-i18n="vault.translation">Перевод</th><th scope="col"><span class="sr-only" data-i18n="teach.remove">Убрать</span></th></tr></thead><tbody id="tRows"></tbody></table></div>
+        <div class="actions t-review-actions"><button class="btn primary big" type="button" id="tPublish" data-i18n="teach.publish">Всё верно — получить ссылку</button><button class="btn" type="button" id="tBack" data-i18n="teach.back">← Изменить слова</button></div>
+      </section>
+
+      <section class="panel t-done" id="tDone" hidden aria-labelledby="tDoneTitle" tabindex="-1">
+        <div class="t-done-head"><span class="t-done-check" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span><div><span class="eyebrow" id="tDoneName"></span><h2 id="tDoneTitle" data-i18n="teach.doneTitle">Домашка готова! Отправьте её ученикам</h2></div></div>
+        <div class="t-done-grid">
+          <div class="t-done-main">
+            <p class="t-label" data-i18n="teach.way1">Отправьте ссылку в чат класса</p>
+            <div class="share-link"><input id="tLink" type="text" readonly aria-label="Ссылка на колоду" data-i18n-attr="aria-label:share.linkLabel" /><button class="btn primary" type="button" id="tCopy" data-i18n="share.copy">Копировать</button></div>
+            <button class="btn block" type="button" id="tShareNative" hidden data-i18n="share.native">Поделиться…</button>
+            <p class="t-label" data-i18n="teach.way2">…или покажите QR-код на доске</p>
+            <button class="btn block" type="button" id="tShowClass"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> <span data-i18n="teach.showClass">Показать классу на весь экран</span></button>
+            <div class="t-done-more"><button class="link" type="button" id="tTry" data-i18n="teach.try">Посмотреть, что увидит ученик</button><button class="link" type="button" id="tAnother" data-i18n="teach.another">+ Создать ещё одну домашку</button></div>
+          </div>
+          <figure class="share-qr t-qr" id="tQr"></figure>
+        </div>
+      </section>
+
+      <section class="t-mine" id="tMine" hidden aria-labelledby="tMineTitle">
+        <div class="grid-head"><h2 id="tMineTitle" data-i18n="teach.mine">Мои домашки</h2><span id="tMineCount"></span></div>
+        <p class="mini" data-i18n="teach.mineNote">Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.</p>
+        <ul class="t-list" id="tList"></ul>
+      </section>
+    </section>
     <section class="screen" id="screen-progress">
       <div class="library-intro"><div><span class="eyebrow" data-i18n="prog.eyebrow">ПРОГРЕСС</span><h1 data-i18n="prog.h1">Как идёт обучение</h1><p data-i18n="prog.sub">Что ждёт впереди, насколько прочно держатся слова и где нужна помощь.</p></div><div class="deck-bar prog-deck" data-deck-bar="progress"></div><label class="filter-field prog-deck deck-synced"><span data-i18n="home.deck">Колода</span><span class="select-wrap"><select id="progDeck" tabindex="-1"></select></span></label></div>
       <p class="quiz-empty" id="progEmpty" hidden><span data-i18n="prog.empty">Статистика появится после первых ответов.</span> <button class="link" type="button" id="btnProgEmpty" data-i18n="lib.emptyBtn">Добавить слова →</button></p>
@@ -784,11 +867,38 @@
     </div>
   </div>
 
+  <!-- a homework link opened by a student -->
+  <div class="overlay" id="hwInvite" hidden role="dialog" aria-modal="true" aria-labelledby="hwTitle">
+    <div class="panel share-card hw-card">
+      <span class="hw-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11v5c3.5 2.5 8.5 2.5 12 0v-5"/></svg><span data-i18n="hw.eyebrow">Домашнее задание</span></span>
+      <h2 id="hwTitle"></h2>
+      <p class="hw-from" id="hwFrom"></p>
+      <blockquote class="hw-note" id="hwNote" hidden></blockquote>
+      <div class="hw-facts"><span id="hwWords"></span><span id="hwPair"></span><span class="hw-due" id="hwDue" hidden></span></div>
+      <ol class="preview-list" id="hwList"></ol>
+      <p class="mini" id="hwMore"></p>
+      <div class="actions hw-actions"><button class="btn primary big" type="button" id="hwStart" data-i18n="hw.start">Начать учить →</button><button class="btn" type="button" id="hwLater" data-i18n="hw.later">Сохранить на потом</button></div>
+      <p class="mini hw-howto" data-i18n="hw.howto">Слова сохранятся в «Мои колоды». Возвращайся каждый день — повторения подстроятся под тебя.</p>
+      <button class="link" type="button" id="hwClose" data-i18n="share.close">Закрыть</button>
+    </div>
+  </div>
+
+  <!-- a teacher shows the homework QR to the class -->
+  <div class="overlay t-class" id="tClass" hidden role="dialog" aria-modal="true" aria-labelledby="tClassTitle">
+    <div class="t-class-card">
+      <p class="t-class-kicker" data-i18n="teach.classKicker">Наведите камеру телефона на код</p>
+      <h2 id="tClassTitle"></h2>
+      <figure class="t-class-qr" id="tClassQr"></figure>
+      <p class="t-class-sub" id="tClassSub"></p>
+      <button class="btn" type="button" id="tClassClose" data-i18n="share.close">Закрыть</button>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.54.1"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.55.0"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

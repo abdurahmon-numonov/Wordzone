@@ -1,0 +1,176 @@
+/* v2.55 — "For teachers": homework decks by link / QR, and the invite a student sees.
+   The form reuses the composer (composer.css): numbered steps on one surface, the action on a drenched band. */
+
+/* ---------- how it works: three plain steps ---------- */
+.t-how { list-style: none; margin: -6px 0 26px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.t-how li {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr); grid-template-rows: auto auto; gap: 2px 12px; align-items: start;
+  padding: 16px 18px; border: 1px solid var(--stroke); border-radius: 16px; background: var(--surface);
+}
+.t-how-n {
+  grid-row: 1 / 3; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+  background: color-mix(in srgb, var(--amber) 12%, var(--surface)); color: var(--amber); font: 600 16px/1 var(--font-display);
+}
+.t-how strong { font: 600 15px/1.3 var(--font-ui); color: var(--text); }
+.t-how li > span:last-child { font: 400 13.5px/1.45 var(--font-ui); color: var(--muted); }
+
+/* ---------- the form ---------- */
+.t-form .c-head { margin-bottom: 14px; }
+.t-field { margin: 0 0 14px; display: flex; flex-direction: column; gap: 6px; }
+.t-field > span:first-child { font: 500 12.5px var(--font-ui); color: var(--muted); }
+.t-field input, .t-field select {
+  width: 100%; min-height: 50px; padding: 0 16px; border: 1px solid var(--stroke); border-radius: 14px;
+  background-color: var(--c-field); color: var(--text); font: 500 15px var(--font-ui);
+}
+.t-field input::placeholder { color: var(--muted); opacity: 1; font-weight: 400; }
+.t-field input:focus, .t-field select:focus, .t-words:focus {
+  outline: none; border-color: var(--amber); background-color: var(--surface); box-shadow: 0 0 0 4px color-mix(in srgb, var(--amber) 15%, transparent);
+}
+.t-langs { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 0 12px; max-width: 720px; }
+.t-arrow { padding-bottom: 27px; color: var(--muted); font: 500 20px var(--font-ui); }
+.t-form .c-body > .t-field:first-of-type { max-width: 720px; }
+.t-meta { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 0 12px; max-width: 720px; }
+.t-form .c-body > .t-field:last-child { max-width: 720px; margin-bottom: 0; }
+.t-optional {
+  display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 999px; vertical-align: 2px;
+  background: color-mix(in srgb, var(--muted) 12%, transparent); color: var(--muted); font: 500 11.5px/1.5 var(--font-ui);
+}
+.t-words {
+  display: block; width: 100%; min-height: 200px; padding: 16px 20px; border: 1px solid var(--stroke); border-radius: 16px;
+  background: var(--c-field); color: var(--text); font: 400 15.5px/1.7 var(--font-mono); resize: vertical;
+}
+.t-words::placeholder { color: var(--muted); opacity: 1; font: 400 15px/1.7 var(--font-mono); }
+.t-count { margin: 10px 0 0; min-height: 1.2em; font-family: var(--font-mono); }
+.t-form .c-head-row #tExample { margin-top: 2px; }
+
+/* the step marks light up as the teacher fills them in */
+.t-form .c-step:has(#tTitle:not(:placeholder-shown)) .c-mark,
+.t-form.has-words .c-step:has(#tWords) .c-mark { background: var(--amber); border-color: var(--amber); color: var(--surface); box-shadow: none; }
+
+.t-error:empty { display: none; }
+.c-step-go .t-error { margin: 0 0 12px; color: var(--gold); font-weight: 600; }
+.c-step-go .t-go.btn.primary.big {
+  min-height: 58px; padding: 0 30px; border-radius: 16px; border: 0; display: inline-flex; align-items: center; gap: 10px;
+  background: var(--gold); color: #17203a; font: 700 16px var(--font-ui);
+  box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--gold) 80%, transparent), 0 1px 0 #ffffff66 inset;
+  transition: transform .2s var(--ease-out), box-shadow .25s var(--ease-out);
+}
+.c-step-go .t-go.btn.primary.big:hover { transform: translateY(-1px); }
+.c-step-go .t-go.ready { box-shadow: 0 0 0 4px color-mix(in srgb, var(--gold) 30%, transparent), 0 14px 34px -10px color-mix(in srgb, var(--gold) 90%, transparent); }
+
+/* ---------- check the translations ---------- */
+.t-review, .t-done { border-radius: var(--c-radius, 24px); padding: 30px 32px; box-shadow: var(--c-shadow); outline: none; }
+.t-review h2, .t-done h2 { font: 500 clamp(26px, 2.4vw, 32px)/1.15 var(--font-display); letter-spacing: -.02em; margin: 0 0 6px; }
+.t-review .eyebrow, .t-done .eyebrow { margin-bottom: 8px; }
+.t-busy { display: flex; align-items: center; gap: 10px; margin: 14px 0 0; font: 500 14px var(--font-ui); color: var(--amber); }
+.t-spinner { width: 16px; height: 16px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--amber) 25%, transparent); border-top-color: var(--amber); animation: t-spin .8s linear infinite; }
+@keyframes t-spin { to { transform: rotate(360deg); } }
+.t-table-wrap { margin: 18px 0 22px; max-height: 56vh; overflow: auto; border: 1px solid var(--stroke); border-radius: 16px; }
+.t-table { width: 100%; border-collapse: collapse; }
+.t-table th { position: sticky; top: 0; z-index: 1; padding: 10px 14px; background: var(--c-field); text-align: left; font: 600 12px var(--font-ui); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--stroke); }
+.t-table th:last-child { width: 48px; }
+.t-table td { padding: 6px 8px; border-bottom: 1px solid var(--stroke-soft); vertical-align: middle; }
+.t-table tr:last-child td { border-bottom: 0; }
+.t-table input {
+  width: 100%; min-height: 42px; padding: 0 10px; border: 1px solid transparent; border-radius: 10px;
+  background: transparent; color: var(--text); font: 400 15px var(--font-ui);
+}
+.t-table input.t-orig { font-weight: 600; }
+.t-table input:hover { border-color: var(--stroke); }
+.t-table input:focus { outline: none; border-color: var(--amber); background: var(--surface); box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 15%, transparent); }
+.t-table input.t-tr:placeholder-shown { border-color: color-mix(in srgb, var(--amber) 35%, var(--stroke)); border-style: dashed; }
+.t-table input.t-tr::placeholder { color: var(--muted); font-style: italic; }
+.t-table input.bad { border-color: var(--rose, #b4483c); border-style: solid; background: color-mix(in srgb, var(--rose, #b4483c) 7%, transparent); }
+.t-table input.filled { animation: t-fill .6s var(--ease-out); }
+@keyframes t-fill { from { background: color-mix(in srgb, var(--amber) 16%, transparent); } to { background: transparent; } }
+.t-del { width: 34px; height: 34px; font-size: 18px; line-height: 1; color: var(--muted); }
+.t-del:hover { color: var(--rose, #b4483c); }
+.t-review-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.t-review-actions .btn.primary.big { min-height: 54px; padding: 0 26px; font-size: 15.5px; }
+
+/* ---------- ready: link, QR, show the class ---------- */
+.t-done-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px; }
+.t-done-check { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--amber); color: var(--surface); }
+.t-done-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 32px; align-items: start; }
+.t-done-main { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.t-label { margin: 6px 0 0; font: 600 14px var(--font-ui); color: var(--text); }
+.t-label:first-child { margin-top: 0; }
+.t-done .share-link input { min-height: 48px; border-radius: 12px; font-size: 13px; }
+.t-done .share-link .btn { min-height: 48px; padding: 0 22px; }
+.t-done .btn.block { width: 100%; min-height: 48px; justify-content: center; display: inline-flex; align-items: center; gap: 8px; }
+.t-done-more { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 10px; padding-top: 14px; border-top: 1px solid var(--stroke-soft); }
+.t-qr { margin: 0; padding: 14px; border: 1px solid var(--stroke); border-radius: 18px; background: #fff; }
+.t-qr .qr-svg { width: 210px; }
+.t-qr figcaption { max-width: 210px; color: #4a4a44; }
+
+/* ---------- my homework ---------- */
+.t-mine { margin-top: 34px; }
+.t-mine > .mini { margin: -6px 0 14px; }
+.t-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.t-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px 18px; flex-wrap: wrap;
+  padding: 16px 18px; border: 1px solid var(--stroke); border-radius: 16px; background: var(--surface);
+}
+.t-item-copy { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.t-item-copy strong { font: 500 19px/1.2 var(--font-display); overflow-wrap: anywhere; }
+.t-item-copy .mini { margin: 0; }
+.t-due { align-self: flex-start; margin-top: 4px; padding: 2px 10px; border-radius: 999px; font: 600 12px/1.6 var(--font-ui); background: color-mix(in srgb, var(--amber) 11%, transparent); color: var(--amber); }
+.t-due.soon { background: color-mix(in srgb, var(--gold) 30%, transparent); color: var(--text); }
+.t-due.past { background: color-mix(in srgb, var(--muted) 12%, transparent); color: var(--muted); }
+.t-item-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.t-item-actions .chip-btn { min-height: 38px; border-radius: 999px; padding: 0 14px; }
+.t-item-actions .t-del-hw { color: var(--muted); }
+
+/* ---------- the class screen: one big QR ---------- */
+.overlay.t-class { background: var(--bg); backdrop-filter: none; z-index: 120; }
+.t-class-card { width: min(920px, 100%); max-height: 100vh; overflow: auto; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 24px; text-align: center; }
+.t-class-kicker { margin: 0; font: 600 clamp(15px, 1.6vw, 20px) var(--font-ui); color: var(--amber); }
+.t-class-card h2 { margin: 0; font: 500 clamp(30px, 4vw, 56px)/1.05 var(--font-display); letter-spacing: -.02em; }
+.t-class-qr { margin: 6px 0; padding: 18px; border-radius: 24px; background: #fff; box-shadow: 0 20px 60px -30px #0006; }
+.t-class-qr .qr-svg { display: block; width: min(62vh, 78vw); height: auto; border-radius: 0; }
+.t-class-sub { margin: 0; font: 500 clamp(14px, 1.4vw, 18px) var(--font-ui); color: var(--muted); }
+
+/* ---------- a student opens the link ---------- */
+.hw-card { gap: 10px; padding: 30px; }
+.hw-badge {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px 6px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--amber) 12%, var(--surface)); color: var(--amber); font: 600 12.5px var(--font-ui); letter-spacing: .02em;
+}
+.hw-card h2 { margin: 4px 0 0; font: 500 clamp(28px, 3vw, 36px)/1.1 var(--font-display); letter-spacing: -.02em; overflow-wrap: anywhere; }
+.hw-from { margin: 0; font: 500 15px var(--font-ui); color: var(--muted); }
+.hw-note {
+  margin: 4px 0; padding: 12px 16px; border-radius: 14px; background: var(--c-field, var(--bg)); border: 1px solid var(--stroke-soft);
+  font: italic 16px/1.45 var(--font-display); color: var(--text); overflow-wrap: anywhere;
+}
+.hw-facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 4px; }
+.hw-facts span { padding: 4px 11px; border-radius: 999px; border: 1px solid var(--stroke); font: 500 13px var(--font-ui); color: var(--text); }
+.hw-facts .hw-due { border-color: transparent; background: color-mix(in srgb, var(--gold) 34%, transparent); font-weight: 600; }
+.hw-facts .hw-due.past { background: color-mix(in srgb, var(--muted) 14%, transparent); color: var(--muted); }
+.hw-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.hw-actions .btn { width: 100%; justify-content: center; }
+.hw-actions .btn.primary.big { min-height: 56px; font-size: 16.5px; }
+.hw-howto { margin: 0; text-align: center; }
+.hw-card > .link { align-self: center; }
+
+/* ---------- smaller screens ---------- */
+@media (max-width: 860px) {
+  .t-done-grid { grid-template-columns: 1fr; }
+  .t-qr { justify-self: center; }
+}
+@media (max-width: 720px) {
+  .t-how { grid-template-columns: 1fr; gap: 8px; margin-bottom: 20px; }
+  .t-how li { padding: 12px 14px; }
+  .t-langs { grid-template-columns: 1fr; }
+  .t-arrow { display: none; }
+  .t-meta { grid-template-columns: 1fr; }
+  .t-words { min-height: 170px; font-size: 15px; }
+  .c-step-go .t-go.btn.primary.big { width: 100%; justify-content: center; }
+  .t-review, .t-done { padding: 22px 18px; border-radius: 20px; }
+  .t-review-actions .btn { width: 100%; justify-content: center; }
+  .t-done-head { gap: 12px; }
+  .t-done-check { width: 40px; height: 40px; }
+  .t-item-actions { width: 100%; }
+  .t-item-actions .chip-btn { flex: 1 1 auto; }
+  .hw-card { padding: 24px 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .t-spinner, .t-table input.filled { animation: none; } }

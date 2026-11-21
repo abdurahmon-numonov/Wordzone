@@ -9,3 +9,51 @@
 .screen.game-on > .game-stage { margin-top:4px; }
 .game-stage { scroll-margin-top:88px; }
 
+
+/* ---------- v2.54: the games hub — two game cards; a card opens its game, «← Все игры» comes back ---------- */
+.arcade-hub { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
+.arcade-hub[hidden] { display:none; }
+.arcade-soon-tile, .arcade-game { position:relative; isolation:isolate; overflow:hidden; min-height:340px; width:100%; display:flex; align-items:flex-end; padding:0; border:0;
+  border-radius:24px; text-align:left; color:#f6f1e7; background:#1c1a3a; cursor:pointer; box-shadow:0 22px 50px -24px #1c1640aa;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
+.arcade-game:hover { transform:translateY(-4px); box-shadow:0 30px 60px -22px #1c1640cc; }
+.arcade-game:active { transform:translateY(-1px) scale(.995); }
+.arcade-game:focus-visible { outline:3px solid #ffcf5a; outline-offset:4px; }
+.arcade-art { position:absolute; inset:0 0 34% 0; z-index:-2; overflow:hidden; border-radius:inherit; border-bottom-left-radius:0; border-bottom-right-radius:0; }
+.arcade-art svg { display:block; width:100%; height:100%; transition:transform 1.2s var(--ease); }
+.arcade-game:hover .arcade-art svg { transform:scale(1.04); }
+.arcade-game { background:#16142f; }
+.arcade-game::before { content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; background:linear-gradient(0deg,#16142f 0%,#16142f 36%,#16142fcc 50%,#16142f00 70%); }
+.arcade-copy { display:flex; flex-direction:column; gap:7px; padding:24px 26px 24px; }
+.arcade-kicker { align-self:flex-start; padding:5px 11px; border-radius:999px; background:#ffcf5a; color:#1a1530; font:700 11px var(--font-mono); letter-spacing:.16em; }
+.arcade-copy strong { font:600 clamp(30px,3.2vw,40px)/1 var(--font-display); letter-spacing:-.02em; color:#fff6e2; }
+.arcade-sub { max-width:42ch; font:400 15px/1.5 var(--font-ui); color:#e4def0; }
+.arcade-meta { min-height:1.4em; font:600 12px/1.4 var(--font-mono); color:#ffdca0; }
+.arcade-cta { align-self:flex-start; margin-top:4px; padding:11px 20px; border-radius:999px; background:#ffcf5a; color:#1a1530; font:700 14px var(--font-ui);
+  box-shadow:0 8px 24px -8px #ffcf5acc; transition:transform .25s var(--ease); }
+.arcade-game:hover .arcade-cta { transform:translateX(4px); }
+.arcade-back { margin-top:18px; }
+.arcade-back .link { display:inline-flex; align-items:center; min-height:40px; padding:8px 16px; border:1px solid var(--stroke); border-radius:999px; background:var(--surface); color:var(--text); font:600 14px var(--font-ui); text-decoration:none; }
+.arcade-back .link:hover { border-color:var(--text); }
+.arcade-back[hidden] { display:none; }
+.screen.arcade-on > :not(.so-stage):not(.arcade-back) { display:none; }
+.screen.arcade-on > .arcade-back + .so-stage, .screen.arcade-on > .so-stage { margin-top:12px; }
+@media (max-width:720px) {
+  .arcade-hub { grid-template-columns:1fr; gap:14px; margin-top:12px; }
+  .arcade-game { min-height:270px; border-radius:20px; }
+  .arcade-copy { padding:20px; }
+}
+/* the card art moves a little: the plane glides, the blade flashes, the tiles float */
+.as-plane { animation:asGlide 3.2s ease-in-out infinite; }
+@keyframes asGlide { 50% { transform:translate(6px,-6px); } }
+.as-cloud { animation:asCloud 9s linear infinite alternate; }
+@keyframes asCloud { to { transform:translateX(-14px); } }
+.al-blade { stroke-dasharray:180; animation:alBlade 2.4s ease-in-out infinite; }
+@keyframes alBlade { 0% { stroke-dashoffset:180; opacity:0; } 15% { opacity:1; } 40% { stroke-dashoffset:0; opacity:1; } 70%,100% { stroke-dashoffset:0; opacity:0; } }
+.al-spark { animation:alSpark 2.4s ease-in-out infinite; }
+@keyframes alSpark { 0%,30% { opacity:0; } 45% { opacity:1; } 80%,100% { opacity:0; } }
+.al-tile { animation:alFloat 3s ease-in-out infinite; }
+.al-tile.t2 { animation-delay:-1.5s; }
+@keyframes alFloat { 50% { translate:0 -5px; } }
+@media (prefers-reduced-motion:reduce) { .as-plane, .as-cloud, .al-blade, .al-spark, .al-tile { animation:none; } .al-blade { stroke-dashoffset:0; } .al-spark { opacity:1; } .arcade-game, .arcade-art svg, .arcade-cta { transition:none; } }
+html[data-motion="off"] .as-plane, html[data-motion="off"] .as-cloud, html[data-motion="off"] .al-blade, html[data-motion="off"] .al-spark, html[data-motion="off"] .al-tile { animation:none; }

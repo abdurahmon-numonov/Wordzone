@@ -7,5 +7,3 @@
 .sl-canvas { cursor:crosshair; touch-action:none; }
 .sl-stage { touch-action:none; }
 .sl-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
-.arcade-tabs { margin:18px 0 0; }
-.arcade-tabs ~ .so-stage { margin-top:14px; }

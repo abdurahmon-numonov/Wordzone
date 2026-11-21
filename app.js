@@ -2192,8 +2192,8 @@
      arcade.min.js once the page is idle, or at once when the Games screen opens; a click on a game before then
      waits for the file and goes through. Everything else in the app starts without them. */
   var arcadeMounted = false, arcadeLoading = null, soar = null, slicer = null;
-  // v2.54: two games on the Games screen; the last one played opens next time
-  var arcadePick = (function () { try { return localStorage.getItem('vm.arcade') === 'slice' ? 'slice' : 'soar'; } catch (e) { return 'soar'; } })();
+  // v2.54: the Games screen shows two game cards; a card opens its game, «← Все игры» goes back to the cards
+  var arcadeOpen = null;
   function mountArcade() {
     if (arcadeMounted || !window.VMSoar) return;
     arcadeMounted = true;
@@ -2230,21 +2230,39 @@
   function renderArcade() {
     var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
-    var on = $('screen-games').classList.contains('active'), pick = slicer ? arcadePick : 'soar';
-    [['soar', 'tabSoar', 'soarStage', soar], ['slice', 'tabSlice', 'sliceStage', slicer]].forEach(function (x) {
-      var sel = x[0] === pick, tab = $(x[1]), stage = $(x[2]);
-      if (tab) { tab.classList.toggle('on', sel); tab.setAttribute('aria-selected', String(sel)); tab.tabIndex = sel ? 0 : -1; }
-      if (stage) stage.hidden = !sel;
-      if (x[3]) { if (on && sel) x[3].show(); else x[3].hide(); }
+    var on = $('screen-games').classList.contains('active'), open = arcadeOpen === 'slice' && !slicer ? null : arcadeOpen;
+    if (!soar) open = null;
+    $('screen-games').classList.toggle('arcade-on', !!open);
+    $('arcadeHub').hidden = !!open; $('arcadeBack').hidden = !open;
+    [['soar', 'soarStage', soar], ['slice', 'sliceStage', slicer]].forEach(function (x) {
+      var sel = x[0] === open;
+      $(x[1]).hidden = !sel;
+      if (x[2]) { if (on && sel) x[2].show(); else x[2].hide(); }
+    });
+    document.querySelectorAll('[data-arcade-meta]').forEach(function (m) { // each card shows its best score
+      var best = 0;
+      try { best = (JSON.parse(localStorage.getItem(m.dataset.arcadeMeta === 'slice' ? 'vm.slice' : 'vm.soar') || '{}') || {}).best || 0; } catch (e) {}
+      m.textContent = best ? tr('arcade.best', { n: best }) : tr('arcade.fresh');
+    });
+    document.querySelectorAll('[data-arcade-open]').forEach(function (b) { b.disabled = !ready; });
+  }
+  function openArcade(id) {
+    if (!ready4()) return;
+    arcadeOpen = id;
+    loadArcade().then(function () {
+      renderArcade();
+      var stage = $(id === 'slice' ? 'sliceStage' : 'soarStage'), play = stage.querySelector('.so-panel:not([hidden]) .so-btn.primary');
+      if (play) play.focus({ preventScroll: true });
+      $('btnArcadeBack').scrollIntoView({ block: 'start', behavior: 'instant' });
     });
   }
-  function pickArcade(id, focus) {
-    if (id === arcadePick) return;
-    arcadePick = id;
-    try { localStorage.setItem('vm.arcade', id); } catch (e) {}
-    renderArcade();
-    if (focus) $(id === 'slice' ? 'tabSlice' : 'tabSoar').focus();
+  function closeArcade() {
+    var was = arcadeOpen;
+    arcadeOpen = null; renderArcade();
+    var card = document.querySelector('[data-arcade-open="' + was + '"]');
+    if (card) card.focus({ preventScroll: true });
   }
+  function ready4() { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; return !!(d && d.cards.length >= 4); }
   function renderDeckBars() {
     var d = activeDeck();
     document.querySelectorAll('[data-deck-bar]').forEach(function (bar) {
@@ -2826,7 +2844,7 @@
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
-    if (id !== 'screen-games') { if (soar) soar.hide(); if (slicer) slicer.hide(); } // the flight pauses and stops drawing off its screen
+    if (id !== 'screen-games') { if (soar) soar.hide(); if (slicer) slicer.hide(); if (arcadeOpen) { arcadeOpen = null; $('screen-games').classList.remove('arcade-on'); $('arcadeHub').hidden = false; $('arcadeBack').hidden = true; $('soarStage').hidden = true; $('sliceStage').hidden = true; } } // the flight pauses and stops drawing off its screen
     show(id); renderDaily();
     if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
@@ -2865,11 +2883,8 @@
       celebrate: function () { burstConfetti(40); }
     });
     try { grammarTab = localStorage.getItem('vm.grammar-tab') === 'words' ? 'words' : 'course'; } catch (e) {}
-    $('tabSoar').onclick = function () { pickArcade('soar'); };
-    $('tabSlice').onclick = function () { pickArcade('slice'); };
-    $('arcadeTabs').addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); pickArcade(arcadePick === 'soar' ? 'slice' : 'soar', true); }
-    });
+    document.querySelectorAll('[data-arcade-open]').forEach(function (b) { b.onclick = function () { openArcade(b.dataset.arcadeOpen); }; });
+    $('btnArcadeBack').onclick = closeArcade;
     $('tabCourse').onclick = function () { setGrammarTab('course'); };
     $('tabWords').onclick = function () { setGrammarTab('words'); };
     $('tabCourse').parentNode.addEventListener('keydown', function (e) {

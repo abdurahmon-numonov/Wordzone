@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.4'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.7'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -181,6 +181,7 @@
     'tab.aria': ['Разделы', 'Sections', "Bo'limlar"],
     'tab.study': ['Учить', 'Study', "O'rganish"],
     'tab.library': ['Мои слова', 'My words', "So'zlarim"],
+    'prefs.backup': ['Резервная копия слов', 'Backup of your words', "So'zlaringiz zaxira nusxasi"],
     'prefs.title': ['Настройки', 'Settings', 'Sozlamalar'],
     'prefs.motion': ['Анимации', 'Animations', 'Animatsiyalar'],
     'prefs.sound': ['Звук', 'Sound', 'Ovoz'],

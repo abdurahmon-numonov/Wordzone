@@ -2848,12 +2848,10 @@
     renderSteps();
     var h = library.history[L.day()] || { answers: 0 };
     $('streakCount').textContent = trn('streak.days', library.streak.count || 0);
-    $('dailyTitle').textContent = tr(h.answers >= library.goal ? 'daily.done' : 'daily.almost');
     $('dailyText').textContent = tr('daily.text', { a: h.answers, g: library.goal });
     $('dailyBar').style.width = Math.min(100, h.answers / library.goal * 100) + '%';
     $('freezeEnabled').checked = library.streak.enabled;
     $('freezeBalance').textContent = tr('freeze.left', { n: library.streak.freezes });
-    $('dailyGoal').value = library.goal;
     $('batchSize').value = String(library.batch || 0);
     renderHomeDeck();
     // v2.56.3: the invitation to set a goal lives in the library; home shows the goal only once it is set
@@ -3117,9 +3115,9 @@
     try { noteSeen = localStorage.getItem('vm.legacy-notice') === '1'; } catch (e) {}
     $('archivedNote').hidden = noteSeen || !allKeys.some(function (k) { return LANGUAGES.isArchivedPair(library.decks[k].source, library.decks[k].target); });
     $('btnArchivedOk').onclick = function () { try { localStorage.setItem('vm.legacy-notice', '1'); } catch (e) {} $('archivedNote').hidden = true; };
-    var lang = $('filterLang').value, status = $('filterStatus').value;
+    var lang = '', status = ''; // v2.56.5: the library shows every deck (the language/status filters are no longer shown)
     var keys = allKeys.filter(function (k) { return deckMatches(library.decks[k], lang, status); });
-    $('libraryFilters').hidden = !allKeys.length;
+    $('libraryFilters').hidden = true;
     $('btnClearFilters').hidden = !lang && !status;
     $('filterEmpty').hidden = !allKeys.length || keys.length > 0;
     $('deckCount').textContent = allKeys.length ? trn('lib.decks', keys.length) : '';
@@ -3648,7 +3646,6 @@
     $('btnHint').onclick = showHint;
     $('btnHintTyping').onclick = showHint;
     $('freezeEnabled').onchange =function () { library.streak.enabled = this.checked; persistLibrary(); renderDaily(); };
-    $('dailyGoal').onchange = function () { library.goal = Math.max(1, Math.min(200, Number(this.value) || 10)); persistLibrary(); renderDaily(); };
     $('btnExportLibrary').onclick = function () {
       // Library exports never include API keys or provider configuration.
       var blob = new Blob([JSON.stringify(L.backupFile(library), null, 2)], { type: 'application/json' });

@@ -1,0 +1,11 @@
+/* v2.54 — «Разрежь слово». Shares the stage, HUD, prompt and panels of «Взлёт» (soar.css); only the scene differs:
+   a deep evening sky so the light word tiles and the white blade stand out. */
+.sl-stage { background:linear-gradient(#1b2147,#3a2f6b); }
+.sl-stage .so-score { color:#fff; text-shadow:0 2px 0 #0006; }
+.sl-stage .so-hearts i { background:#ffffff40; }
+.sl-stage .so-hearts i.on { background:#ff5d73; }
+.sl-canvas { cursor:crosshair; touch-action:none; }
+.sl-stage { touch-action:none; }
+.sl-sr { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.arcade-tabs { margin:18px 0 0; }
+.arcade-tabs ~ .so-stage { margin-top:14px; }

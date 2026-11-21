@@ -64,7 +64,7 @@
 @media (hover:none) { .so-keys { display:none; } }
 
 @media (max-width:720px) {
-  .so-stage { height:calc(100svh - 230px); min-height:430px; margin-top:12px; border-radius:18px; }
+  .so-stage { height:calc(100svh - 260px); min-height:430px; margin-top:12px; border-radius:18px; }
   .so-prompt { top:62px; }
   .so-title { font-size:26px; }
 }

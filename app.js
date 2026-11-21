@@ -2191,18 +2191,27 @@
   /* v2.46: the three big games (Fishing, Café, Defense, ~200 KB) are not part of the first load. They arrive in
      arcade.min.js once the page is idle, or at once when the Games screen opens; a click on a game before then
      waits for the file and goes through. Everything else in the app starts without them. */
-  var arcadeMounted = false, arcadeLoading = null, soar = null;
+  var arcadeMounted = false, arcadeLoading = null, soar = null, slicer = null;
+  // v2.54: two games on the Games screen; the last one played opens next time
+  var arcadePick = (function () { try { return localStorage.getItem('vm.arcade') === 'slice' ? 'slice' : 'soar'; } catch (e) { return 'soar'; } })();
   function mountArcade() {
     if (arcadeMounted || !window.VMSoar) return;
     arcadeMounted = true;
     // v2.53: «Взлёт», the one fast game of the Games screen (replaces Fishing, Café and Defense)
-    soar = window.VMSoar.mount({
+    var gameApi = {
       deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
       tr: tr, fx: playArcadeFx,
       answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
       complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-    });
+    };
+    soar = window.VMSoar.mount(gameApi);
     $('soarStage').removeAttribute('aria-busy');
+    // v2.54: «Разрежь слово», the second game
+    if (window.VMSlice) {
+      slicer = window.VMSlice.mount(gameApi);
+      $('sliceStage').removeAttribute('aria-busy');
+      window.sliceState = slicer && slicer._state; window.sliceAnswer = slicer && slicer._answer;
+    }
     window.soarState = soar && soar._state; window.soarAnswer = soar && soar._answer; // test hooks, like the trainers'
     if ($('screen-games').classList.contains('active')) renderArcade();
   }
@@ -2221,7 +2230,20 @@
   function renderArcade() {
     var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
-    if (soar) { if ($('screen-games').classList.contains('active')) soar.show(); else soar.hide(); }
+    var on = $('screen-games').classList.contains('active'), pick = slicer ? arcadePick : 'soar';
+    [['soar', 'tabSoar', 'soarStage', soar], ['slice', 'tabSlice', 'sliceStage', slicer]].forEach(function (x) {
+      var sel = x[0] === pick, tab = $(x[1]), stage = $(x[2]);
+      if (tab) { tab.classList.toggle('on', sel); tab.setAttribute('aria-selected', String(sel)); tab.tabIndex = sel ? 0 : -1; }
+      if (stage) stage.hidden = !sel;
+      if (x[3]) { if (on && sel) x[3].show(); else x[3].hide(); }
+    });
+  }
+  function pickArcade(id, focus) {
+    if (id === arcadePick) return;
+    arcadePick = id;
+    try { localStorage.setItem('vm.arcade', id); } catch (e) {}
+    renderArcade();
+    if (focus) $(id === 'slice' ? 'tabSlice' : 'tabSoar').focus();
   }
   function renderDeckBars() {
     var d = activeDeck();
@@ -2804,7 +2826,7 @@
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
-    if (soar && id !== 'screen-games') soar.hide(); // the flight pauses and stops drawing off its screen
+    if (id !== 'screen-games') { if (soar) soar.hide(); if (slicer) slicer.hide(); } // the flight pauses and stops drawing off its screen
     show(id); renderDaily();
     if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
@@ -2843,6 +2865,11 @@
       celebrate: function () { burstConfetti(40); }
     });
     try { grammarTab = localStorage.getItem('vm.grammar-tab') === 'words' ? 'words' : 'course'; } catch (e) {}
+    $('tabSoar').onclick = function () { pickArcade('soar'); };
+    $('tabSlice').onclick = function () { pickArcade('slice'); };
+    $('arcadeTabs').addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); pickArcade(arcadePick === 'soar' ? 'slice' : 'soar', true); }
+    });
     $('tabCourse').onclick = function () { setGrammarTab('course'); };
     $('tabWords').onclick = function () { setGrammarTab('words'); };
     $('tabCourse').parentNode.addEventListener('keydown', function (e) {

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.53'; // the one place the shown version lives (footer)
+  var VERSION = '2.54'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -35,7 +35,7 @@
     'tips.gram2.h': ['Грамматика из твоих слов', 'Grammar from your words', 'So\'zlaringizdan grammatika'],
     'tips.gram2': ['ИИ находит правила в примерах из твоих колод и делает из них упражнения.', 'AI finds the rules in the examples from your decks and turns them into exercises.', 'Sun\'iy intellekt to\'plamlaringizdagi misollardan qoidalarni topib, mashqlar yasaydi.'],
     'tips.games1.h': ['Игры на твоих словах', 'Games with your words', 'So\'zlaringiz bilan o\'yinlar'],
-    'tips.games1': ['«Взлёт»: лети через ворота с правильным словом. Слова берутся из колоды, выбранной сверху.', '“Soar”: fly through the gate with the right word. The words come from the deck chosen above.', "«Parvoz»: to'g'ri so'zli darvozadan uching. So'zlar yuqorida tanlangan to'plamdan olinadi."],
+    'tips.games1': ['Две игры: «Взлёт» — лети через ворота с правильным словом, «Разрежь слово» — разрежь нужное. Слова берутся из колоды, выбранной сверху.', 'Two games: “Soar” — fly through the gate with the right word, “Slice the word” — slice the right one. The words come from the deck chosen above.', "Ikki o'yin: «Parvoz» — to'g'ri so'zli darvozadan uching, «So'zni kes» — keraklisini kesing. So'zlar yuqorida tanlangan to'plamdan olinadi."],
     'tips.test1.h': ['Проверь себя', 'Check yourself', 'O\'zingizni sinang'],
     'tips.test1': ['Мини-тест и «Найди пару» быстро покажут, какие слова уже запомнились.', 'The mini test and “Find the pair” quickly show which words have stuck.', 'Mini test va «Juftini top» qaysi so\'zlar yodda qolganini tez ko\'rsatadi.'],
     'tips.test2.h': ['Тренажёры', 'Trainers', 'Trenajyorlar'],
@@ -44,7 +44,7 @@
     'tips.train1': ['Вспомни перевод, переверни карточку и честно оцени себя. Трудные слова вернутся раньше, лёгкие — позже.', 'Recall the meaning, flip the card and rate yourself honestly. Hard words come back sooner, easy ones later.', 'Tarjimani eslang, kartani aylantiring va o\'zingizni halol baholang. Qiyin so\'zlar tezroq, osonlari kechroq qaytadi.'],
     'tips.train1Keys': ['Вспомни перевод, переверни карточку и честно оцени себя. Без мыши: пробел — перевернуть, 1–4 — оценить.', 'Recall the meaning, flip the card and rate yourself honestly. No mouse needed: Space flips, 1–4 rates.', 'Tarjimani eslang, kartani aylantiring va o\'zingizni halol baholang. Sichqonchasiz: probel — aylantirish, 1–4 — baholash.'],
     'tips.unlock.progress': ['Первая тренировка позади. Здесь видно, как растёт твой словарь.', 'First practice done. See how your vocabulary grows here.', 'Birinchi mashg\'ulot tugadi. Bu yerda lug\'atingiz qanday o\'sayotgani ko\'rinadi.'],
-    'tips.unlock.games': ['Повторяй те же слова в игре «Взлёт»: тап — взлёт, лети через правильное слово.', 'Practise the same words in “Soar”: tap to climb, fly through the right word.', "Xuddi shu so'zlarni «Parvoz» o'yinida takrorlang: bosing — ko'tariling, to'g'ri so'zdan uching."],
+    'tips.unlock.games': ['Повторяй те же слова в играх «Взлёт» и «Разрежь слово».', 'Practise the same words in “Soar” and “Slice the word”.', "Xuddi shu so'zlarni «Parvoz» va «So'zni kes» o'yinlarida takrorlang."],
     'tips.unlock.grammar': ['Короткие уроки A1–B2 — удобно между тренировками.', 'Short A1–B2 lessons, handy between practices.', 'Qisqa A1–B2 darslar — mashg\'ulotlar orasida qulay.'],
     'tips.unlock.test': ['Мини-тест и тренажёры проверят, что ты запомнил.', 'A mini test and trainers check what you remember.', 'Mini test va trenajyorlar nimani eslab qolganingizni tekshiradi.'],
     'nudge.title': ['Сохрани свой прогресс', 'Keep your progress safe', 'Natijangizni saqlang'],
@@ -165,9 +165,16 @@
     'soar.wrong': ['«{a}» — это {b}', '“{a}” is {b}', '«{a}» — bu {b}'],
     'soar.ground': ['Не касайся земли!', 'Don\'t touch the ground!', 'Yerga tegmang!'],
     'soar.canvas': ['Игровое поле: бумажный самолётик и ворота со словами', 'Game field: a paper plane and gates with words', "O'yin maydoni: qog'oz samolyot va so'zli darvozalar"],
+    'slice.title': ['Разрежь слово', 'Slice the word', "So'zni kes"],
+    'slice.how': ['Наверху перевод, снизу взлетают слова. Проведи пальцем по нужному и разрежь его. Можно кликнуть по слову или нажать его цифру.', 'A translation is shown at the top, words fly up from below. Swipe through the right one to slice it. You can also click a word or press its number.', "Tepada tarjima, pastdan so'zlar uchib chiqadi. To'g'risini barmog'ingiz bilan kesing. So'zni bosish yoki uning raqamini bosish ham mumkin."],
+    'slice.find': ['Разрежь перевод:', 'Slice the word for:', 'Tarjimasini kesing:'],
+    'slice.tap': ['Проведи по нужному слову', 'Swipe through the right word', "To'g'ri so'z ustidan suring"],
+    'slice.end': ['Закончить игру', 'End game', "O'yinni tugatish"],
+    'slice.over': ['Игра окончена', 'Game over', "O'yin tugadi"],
+    'slice.canvas': ['Игровое поле: взлетающие плитки со словами', 'Game field: word tiles tossed into the air', "O'yin maydoni: havoga otilgan so'zli plitkalar"],
     'games.eyebrow': ['ИГРАЙ СО СВОИМИ СЛОВАМИ', 'PLAY WITH YOUR OWN WORDS', "O'Z SO'ZLARING BILAN O'YNA"],
     'games.h1': ['Игры', 'Games', "O'yinlar"],
-    'games.sub': ['Быстрая игра на твоих словах. Каждый ответ идёт в дневную цель и в повторения.', 'A fast game with your own words. Every answer counts toward your daily goal and reviews.', "So'zlaringiz bilan tezkor o'yin. Har bir javob kunlik maqsad va takrorlashga qo'shiladi."],
+    'games.sub': ['Две быстрые игры на твоих словах. Каждый ответ идёт в дневную цель и в повторения.', 'Two fast games with your own words. Every answer counts toward your daily goal and reviews.', "So'zlaringiz bilan ikkita tezkor o'yin. Har bir javob kunlik maqsad va takrorlashga qo'shiladi."],
     'game.context': ['Слово в контексте', 'Word in context', "Kontekstdagi so'z"],
     'game.contextSub': ['Вставь пропущенное слово в предложение', 'Fill the missing word into the sentence', "Gapdagi tushib qolgan so'zni qo'ying"],
     'game.scramble': ['Собери слово', 'Build the word', "So'zni yig'"],

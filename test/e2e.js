@@ -1072,6 +1072,33 @@ run.server(server);
   assert(await onb.locator('#soarStage .so-missed li').count() >= 1, 'the missed words are listed for review');
   assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз', 'play again is focused');
   assert.equal(await onb.evaluate(() => JSON.parse(localStorage.getItem('vm.soar')).best), 10, 'the best score is kept');
+  // v2.54: «Разрежь слово» — the second game, behind the switcher; a real swipe cuts a tile
+  await onb.click('#tabSlice');
+  assert(await onb.locator('#soarStage').isHidden(), 'one game at a time');
+  await onb.locator('#sliceStage .so-panel:not([hidden]) .so-btn.primary').waitFor();
+  assert.equal(await onb.locator('#sliceStage .so-title').innerText(), 'Разрежь слово');
+  const sliceBefore = await answersOf();
+  await onb.click('#sliceStage .so-panel .so-btn.primary');
+  await onb.waitForFunction(() => window.sliceState && window.sliceState().inAir >= 3 && window.sliceState().tiles.every(t => t.y > 140 && t.y < 600), null, { timeout: 15000 });
+  // the tiles are moving, so the swipe is read and sent in one go, through the real pointer handlers
+  await onb.evaluate(() => {
+    const t = window.sliceState().tiles.find(x => x.right), host = document.getElementById('sliceStage'), r = host.querySelector('canvas').getBoundingClientRect();
+    const ev = (type, dx) => host.dispatchEvent(new PointerEvent(type, { bubbles: true, cancelable: true, pointerId: 7, pointerType: 'mouse', clientX: r.left + t.x + dx, clientY: r.top + t.y }));
+    ev('pointerdown', -80); for (let dx = -60; dx <= 80; dx += 20) ev('pointermove', dx); ev('pointerup', 80);
+  });
+  let sl = await onb.evaluate(() => window.sliceState());
+  assert.equal(sl.right, 1, 'a swipe through the right word cuts it'); assert.equal(sl.score, 10);
+  await onb.evaluate(() => window.sliceAnswer(false));
+  sl = await onb.evaluate(() => window.sliceState());
+  assert.equal(sl.hearts, 2, 'a wrong cut costs a heart');
+  assert.match(await onb.locator('#sliceStage .so-banner').innerText(), /это/, 'a wrong cut shows the right word');
+  assert.equal(await answersOf() - sliceBefore, 2, 'slice answers count toward the daily goal');
+  await onb.evaluate(() => { window.sliceAnswer(false); window.sliceAnswer(false); });
+  await onb.locator('#sliceStage .so-panel.over:not([hidden])').waitFor();
+  assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз');
+  assert.equal(await onb.evaluate(() => localStorage.getItem('vm.arcade')), 'slice', 'the last game played opens next time');
+  await onb.click('#tabSoar');
+  assert(await onb.locator('#sliceStage').isHidden() && await onb.locator('#soarStage').isVisible(), 'the switcher goes back');
   await onb.click('#navTest');
   await onb.locator('#gamesHub:not([hidden])').waitFor();
   const answersBefore = await onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));

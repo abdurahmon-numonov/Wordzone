@@ -18,7 +18,7 @@
     'screen-library': [{ el: ['#libraryGrid .actions', '#libraryGrid > :first-child'], k: 'lib1' }, { el: ['#tabVault'], k: 'lib2' }],
     'screen-progress': [{ el: ['#progTiles'], k: 'prog1' }],
     'screen-grammar': [{ el: ['#tabCourse'], k: 'gram1' }, { el: ['#tabWords'], k: 'gram2' }],
-    'screen-games': [{ el: ['#screen-games .deck-bar', '#soarStage'], k: 'games1' }],
+    'screen-games': [{ el: ['#screen-games .deck-bar', '#arcadeHub'], k: 'games1' }],
     'screen-test': [{ el: ['#btnQuizStart', '#btnMatchStart'], k: 'test1' }, { el: ['#trainers'], k: 'test2' }],
     'screen-train': [{ el: ['#card'], k: 'train1' }]
   };

@@ -1046,7 +1046,13 @@ run.server(server);
   // v2.53: the Games screen holds «Взлёт» — fly through the gate with the right word; the trainers live on the Lexical test screen
   const answersOf = () => onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));
   await onb.locator('#arcadeEmpty').waitFor({ state: 'hidden' });
+  // v2.54: two game cards; a card opens its game
+  assert.equal(await onb.locator('#arcadeHub [data-arcade-open]').count(), 2, 'two game cards');
+  assert(await onb.locator('#soarStage').isHidden() && await onb.locator('#sliceStage').isHidden(), 'no game runs before a card is chosen');
+  assert.match(await onb.locator('[data-arcade-meta="soar"]').innerText(), /Ещё не играл/);
+  await onb.click('[data-arcade-open="soar"]');
   await onb.locator('#soarStage .so-panel:not([hidden]) .so-btn.primary').waitFor({ timeout: 30000 });
+  assert(await onb.locator('#arcadeHub').isHidden() && await onb.locator('#btnArcadeBack').isVisible(), 'the open game hides the cards and offers the way back');
   assert.equal(await onb.locator('#soarStage .so-title').innerText(), 'Взлёт');
   assert.equal(await onb.locator('#soarStage canvas[role="img"]').count(), 1, 'the flight is a labelled picture');
   const soarBefore = await answersOf();
@@ -1072,6 +1078,36 @@ run.server(server);
   assert(await onb.locator('#soarStage .so-missed li').count() >= 1, 'the missed words are listed for review');
   assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз', 'play again is focused');
   assert.equal(await onb.evaluate(() => JSON.parse(localStorage.getItem('vm.soar')).best), 10, 'the best score is kept');
+  // v2.54: «Разрежь слово» — the second card; a real swipe cuts a tile
+  await onb.click('#btnArcadeBack');
+  await onb.locator('#arcadeHub:not([hidden])').waitFor();
+  assert(await onb.locator('#soarStage').isHidden(), 'back to the cards stops the game view');
+  assert.match(await onb.locator('[data-arcade-meta="soar"]').innerText(), /Рекорд: 10/, 'the card shows the best score');
+  assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.dataset.arcadeOpen), 'soar', 'focus returns to the card');
+  await onb.click('[data-arcade-open="slice"]');
+  await onb.locator('#sliceStage .so-panel:not([hidden]) .so-btn.primary').waitFor();
+  assert.equal(await onb.locator('#sliceStage .so-title').innerText(), 'Разрежь слово');
+  const sliceBefore = await answersOf();
+  await onb.click('#sliceStage .so-panel .so-btn.primary');
+  await onb.waitForFunction(() => window.sliceState && window.sliceState().inAir >= 3 && window.sliceState().tiles.every(t => t.y > 140 && t.y < 600), null, { timeout: 15000 });
+  // the tiles are moving, so the swipe is read and sent in one go, through the real pointer handlers
+  await onb.evaluate(() => {
+    const t = window.sliceState().tiles.find(x => x.right), host = document.getElementById('sliceStage'), r = host.querySelector('canvas').getBoundingClientRect();
+    const ev = (type, dx) => host.dispatchEvent(new PointerEvent(type, { bubbles: true, cancelable: true, pointerId: 7, pointerType: 'mouse', clientX: r.left + t.x + dx, clientY: r.top + t.y }));
+    ev('pointerdown', -80); for (let dx = -60; dx <= 80; dx += 20) ev('pointermove', dx); ev('pointerup', 80);
+  });
+  let sl = await onb.evaluate(() => window.sliceState());
+  assert.equal(sl.right, 1, 'a swipe through the right word cuts it'); assert.equal(sl.score, 10);
+  await onb.evaluate(() => window.sliceAnswer(false));
+  sl = await onb.evaluate(() => window.sliceState());
+  assert.equal(sl.hearts, 2, 'a wrong cut costs a heart');
+  assert.match(await onb.locator('#sliceStage .so-banner').innerText(), /это/, 'a wrong cut shows the right word');
+  assert.equal(await answersOf() - sliceBefore, 2, 'slice answers count toward the daily goal');
+  await onb.evaluate(() => { window.sliceAnswer(false); window.sliceAnswer(false); });
+  await onb.locator('#sliceStage .so-panel.over:not([hidden])').waitFor();
+  assert.equal(await onb.evaluate(() => document.activeElement && document.activeElement.textContent), 'Ещё раз');
+  await onb.click('#btnArcadeBack');
+  assert(await onb.locator('#sliceStage').isHidden() && await onb.locator('#arcadeHub').isVisible(), 'back to the cards');
   await onb.click('#navTest');
   await onb.locator('#gamesHub:not([hidden])').waitFor();
   const answersBefore = await onb.evaluate(() => Object.values(JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).history).reduce((n, h) => n + h.answers, 0));

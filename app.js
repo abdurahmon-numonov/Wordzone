@@ -2191,18 +2191,27 @@
   /* v2.46: the three big games (Fishing, Café, Defense, ~200 KB) are not part of the first load. They arrive in
      arcade.min.js once the page is idle, or at once when the Games screen opens; a click on a game before then
      waits for the file and goes through. Everything else in the app starts without them. */
-  var arcadeMounted = false, arcadeLoading = null, soar = null;
+  var arcadeMounted = false, arcadeLoading = null, soar = null, slicer = null;
+  // v2.54: the Games screen shows two game cards; a card opens its game, «← Все игры» goes back to the cards
+  var arcadeOpen = null;
   function mountArcade() {
     if (arcadeMounted || !window.VMSoar) return;
     arcadeMounted = true;
     // v2.53: «Взлёт», the one fast game of the Games screen (replaces Fishing, Café and Defense)
-    soar = window.VMSoar.mount({
+    var gameApi = {
       deck: function () { return hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; },
       tr: tr, fx: playArcadeFx,
       answer: function (card, ok, grade) { if (grade) L.grade(card, ok); recordAnswer(ok); },
       complete: function () { L.complete(library.streak, L.day()); persistLibrary(); renderDaily(); }
-    });
+    };
+    soar = window.VMSoar.mount(gameApi);
     $('soarStage').removeAttribute('aria-busy');
+    // v2.54: «Разрежь слово», the second game
+    if (window.VMSlice) {
+      slicer = window.VMSlice.mount(gameApi);
+      $('sliceStage').removeAttribute('aria-busy');
+      window.sliceState = slicer && slicer._state; window.sliceAnswer = slicer && slicer._answer;
+    }
     window.soarState = soar && soar._state; window.soarAnswer = soar && soar._answer; // test hooks, like the trainers'
     if ($('screen-games').classList.contains('active')) renderArcade();
   }
@@ -2221,8 +2230,39 @@
   function renderArcade() {
     var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null, ready = !!(d && d.cards.length >= 4);
     if ($('arcadeEmpty')) $('arcadeEmpty').hidden = ready;
-    if (soar) { if ($('screen-games').classList.contains('active')) soar.show(); else soar.hide(); }
+    var on = $('screen-games').classList.contains('active'), open = arcadeOpen === 'slice' && !slicer ? null : arcadeOpen;
+    if (!soar) open = null;
+    $('screen-games').classList.toggle('arcade-on', !!open);
+    $('arcadeHub').hidden = !!open; $('arcadeBack').hidden = !open;
+    [['soar', 'soarStage', soar], ['slice', 'sliceStage', slicer]].forEach(function (x) {
+      var sel = x[0] === open;
+      $(x[1]).hidden = !sel;
+      if (x[2]) { if (on && sel) x[2].show(); else x[2].hide(); }
+    });
+    document.querySelectorAll('[data-arcade-meta]').forEach(function (m) { // each card shows its best score
+      var best = 0;
+      try { best = (JSON.parse(localStorage.getItem(m.dataset.arcadeMeta === 'slice' ? 'vm.slice' : 'vm.soar') || '{}') || {}).best || 0; } catch (e) {}
+      m.textContent = best ? tr('arcade.best', { n: best }) : tr('arcade.fresh');
+    });
+    document.querySelectorAll('[data-arcade-open]').forEach(function (b) { b.disabled = !ready; });
   }
+  function openArcade(id) {
+    if (!ready4()) return;
+    arcadeOpen = id;
+    loadArcade().then(function () {
+      renderArcade();
+      var stage = $(id === 'slice' ? 'sliceStage' : 'soarStage'), play = stage.querySelector('.so-panel:not([hidden]) .so-btn.primary');
+      if (play) play.focus({ preventScroll: true });
+      $('btnArcadeBack').scrollIntoView({ block: 'start', behavior: 'instant' });
+    });
+  }
+  function closeArcade() {
+    var was = arcadeOpen;
+    arcadeOpen = null; renderArcade();
+    var card = document.querySelector('[data-arcade-open="' + was + '"]');
+    if (card) card.focus({ preventScroll: true });
+  }
+  function ready4() { var d = hasDeck(state.cfg.deck) ? library.decks[state.cfg.deck] : null; return !!(d && d.cards.length >= 4); }
   function renderDeckBars() {
     var d = activeDeck();
     document.querySelectorAll('[data-deck-bar]').forEach(function (bar) {
@@ -2804,7 +2844,7 @@
     hideSummary();
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     if (games && id !== 'screen-test') games.leave();
-    if (soar && id !== 'screen-games') soar.hide(); // the flight pauses and stops drawing off its screen
+    if (id !== 'screen-games') { if (soar) soar.hide(); if (slicer) slicer.hide(); if (arcadeOpen) { arcadeOpen = null; $('screen-games').classList.remove('arcade-on'); $('arcadeHub').hidden = false; $('arcadeBack').hidden = true; $('soarStage').hidden = true; $('sliceStage').hidden = true; } } // the flight pauses and stops drawing off its screen
     show(id); renderDaily();
     if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
@@ -2843,6 +2883,8 @@
       celebrate: function () { burstConfetti(40); }
     });
     try { grammarTab = localStorage.getItem('vm.grammar-tab') === 'words' ? 'words' : 'course'; } catch (e) {}
+    document.querySelectorAll('[data-arcade-open]').forEach(function (b) { b.onclick = function () { openArcade(b.dataset.arcadeOpen); }; });
+    $('btnArcadeBack').onclick = closeArcade;
     $('tabCourse').onclick = function () { setGrammarTab('course'); };
     $('tabWords').onclick = function () { setGrammarTab('words'); };
     $('tabCourse').parentNode.addEventListener('keydown', function (e) {

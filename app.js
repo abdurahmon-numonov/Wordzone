@@ -2856,7 +2856,9 @@
     $('dailyGoal').value = library.goal;
     $('batchSize').value = String(library.batch || 0);
     renderHomeDeck();
-    renderGoal($('goalStrip'), L.librarySize(library).words > 0 || !!library.target);
+    // v2.56.3: the invitation to set a goal lives in the library; home shows the goal only once it is set
+    renderGoal($('goalStrip'), !!library.target);
+    renderGoal($('goalStripLib'), L.librarySize(library).words > 0 || !!library.target);
   }
   /* ===== personal goal with a deadline: days left, words learned, the daily pace that gets there ===== */
   function renderGoal(host, show) {

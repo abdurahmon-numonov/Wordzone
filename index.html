@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.56.2" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.2" />
-  <link rel="stylesheet" href="app.min.css?v=2.56.2" />
+  <link rel="preload" href="core.min.js?v=2.56.4" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.4" />
+  <link rel="stylesheet" href="app.min.css?v=2.56.4" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -54,7 +54,7 @@
   <div class="app-main">
   <header class="topbar">
     <button type="button" class="icon-btn menu-btn" id="btnMenu" aria-controls="sidebar" aria-expanded="false" title="Меню" aria-label="Меню" data-i18n-attr="title:side.menu,aria-label:side.menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    <div class="crumbs"><span class="crumb-root" data-i18n="crumb.root">Учебная зона</span><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-here" id="crumbHere">Учить слова</span></div>
+    <div class="crumbs"><span class="crumb-here" id="crumbHere">Учить слова</span></div>
     <div class="topbar-right">
       <span class="streak-indicator" title="Дни с завершённой тренировкой" data-i18n-attr="title:top.streak"><svg width="16" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3c1 5-4 6-4 10a4 4 0 0 0 8 0c0-1-1-3-1-3 5 3 6 10 0 12C3 25 1 12 12 3Z"/></svg><span id="streakCount">0 дней</span></span>
       <div class="lang-pills top-lang" id="topLang" data-ui-lang role="group" aria-label="Язык интерфейса" data-i18n-attr="aria-label:top.uiLang"><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="uz" lang="uz" aria-pressed="false">UZ</button><button type="button" data-lang="ru" lang="ru" aria-pressed="true">RU</button></div>
@@ -112,7 +112,7 @@
         </div>
       </div>
       <section class="goal-strip" id="goalStrip" hidden aria-label="Цель" data-i18n-attr="aria-label:goal.aria"></section>
-      <div class="workspace-heading composer-heading"><h2 id="composerTitle" data-i18n="composer.title">Добавить слова</h2><p data-i18n="composer.sub">Вставь слова или текст — ИИ сделает карточки с переводом и примерами.</p></div>
+      <div class="workspace-heading composer-heading"><h2 id="composerTitle" data-i18n="composer.title">Добавить слова</h2></div>
       <div class="composer" id="composer">
         <section class="c-step c-step-deck" aria-labelledby="cStep1">
           <span class="c-mark" aria-hidden="true"><span class="c-num">1</span><svg class="c-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
@@ -142,7 +142,7 @@
           <span class="c-mark" aria-hidden="true"><span class="c-num">2</span><svg class="c-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
           <div class="c-body">
             <header class="c-head c-head-row">
-              <div><h3 id="cStep2" data-i18n="composer.s2">Слова</h3><p class="c-hint" id="cStep2Hint" data-i18n="composer.s2h">Слова, фразы или целый текст. Можно сразу с переводом: apple — яблоко.</p></div>
+              <div><h3 class="sr-only" id="cStep2" data-i18n="composer.s2">Слова</h3></div>
               <div class="row-gap c-tools">
                 <button class="chip-btn" id="btnPaste" type="button">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /></svg>
@@ -151,7 +151,7 @@
                 <button class="chip-btn" id="btnClear" type="button" data-i18n="words.clear">Очистить</button>
               </div>
             </header>
-            <textarea id="input" aria-labelledby="cStep2" aria-describedby="cStep2Hint inputStat" spellcheck="false" data-i18n-attr="placeholder:words.placeholder" placeholder="Введи или вставь слова (например: resilient, give up, depend on)…&#10;или готовые пары: apple — яблоко"></textarea>
+            <textarea id="input" aria-labelledby="cStep2" aria-describedby="inputStat" spellcheck="false" data-i18n-attr="placeholder:words.placeholder" placeholder="Введи или вставь слова (например: resilient, give up, depend on)…&#10;или готовые пары: apple — яблоко"></textarea>
             <div class="c-words-foot">
               <div class="input-meta">
             <span class="count-chip" id="inputStat">0 слов</span>
@@ -330,6 +330,7 @@
     </section>
     <section class="screen" id="screen-library">
       <div class="library-intro"><div><span class="eyebrow" data-i18n="lib.eyebrow">ТВОЯ КОЛЛЕКЦИЯ ЗНАНИЙ</span><h1 data-i18n="lib.h1">Моя библиотека</h1><p data-i18n="lib.sub">Всё, что ты уже знаешь. И то, что скоро запомнишь.</p></div><button class="btn primary" id="btnAddDeck" type="button" data-i18n="lib.newDeck">+ Новая колода</button></div>
+      <section class="goal-strip goal-strip-lib" id="goalStripLib" hidden aria-label="Цель" data-i18n-attr="aria-label:goal.aria"></section>
       <div class="daily-panel"><div><strong id="dailyTitle" data-i18n="daily.title0">Сегодня — новый шаг</strong><p id="dailyText">0 из 10 ответов</p><div class="daily-track"><i id="dailyBar"></i></div></div><label class="freeze-control"><input type="checkbox" id="freezeEnabled" checked> Streak Freeze <span id="freezeBalance">· 2 защиты</span></label><label class="freeze-control"><span data-i18n="daily.goal">Цель</span> <input id="dailyGoal" type="number" min="1" max="200" value="10" aria-label="Дневная цель" data-i18n-attr="aria-label:daily.goalAria" class="goal-input"></label><label class="freeze-control"><span data-i18n="daily.batch">За подход</span> <select id="batchSize" class="mini-select" aria-label="Слов за подход" data-i18n-attr="aria-label:daily.batchAria"><option value="0" data-i18n="daily.batchAll">все</option><option value="10">10</option><option value="20">20</option><option value="30">30</option></select></label></div>
       <div class="activity-panel">
         <div class="activity-head"><strong data-i18n="act.title">Активность</strong><span id="activityStats"></span></div>
@@ -929,7 +930,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.56.2"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.56.4"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

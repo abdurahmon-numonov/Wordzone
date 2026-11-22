@@ -10,21 +10,21 @@
   'use strict';
 
   var LIST = [
-    { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧', voice: 'en-US', script: 'latin', role: 'learn', reading: null,
+    { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧', voice: 'en-US', script: 'latin', role: 'learn', alsoNative: true, reading: null,
       grammarFeatures: ['prepositions', 'phrasal verbs', 'irregular verbs', 'irregular plurals', 'articles'] },
-    { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸', voice: 'es-ES', script: 'latin', role: 'learn', reading: null,
+    { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸', voice: 'es-ES', script: 'latin', role: 'legacy', reading: null,
       grammarFeatures: ['conjugation', 'gender and articles', 'prepositions after verbs', 'ser / estar'] },
     { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷', voice: 'fr-FR', script: 'latin', role: 'learn', reading: null,
       grammarFeatures: ['conjugation', 'gender and articles', 'prepositions after verbs', 'irregular plurals'] },
     { code: 'de', name: 'German', nativeName: 'Deutsch', flag: '🇩🇪', voice: 'de-DE', script: 'latin', role: 'learn', reading: null,
       grammarFeatures: ['cases and case government', 'gender and articles', 'separable verbs', 'verb-second word order', 'plural forms'] },
-    { code: 'ja', name: 'Japanese', nativeName: '日本語', flag: '🇯🇵', voice: 'ja-JP', script: 'kana-kanji', role: 'learn', reading: 'kana',
+    { code: 'ja', name: 'Japanese', nativeName: '日本語', flag: '🇯🇵', voice: 'ja-JP', script: 'kana-kanji', role: 'legacy', reading: 'kana',
       grammarFeatures: ['particles', 'politeness levels', 'verb groups', 'counters'] },
     { code: 'ko', name: 'Korean', nativeName: '한국어', flag: '🇰🇷', voice: 'ko-KR', script: 'hangul', role: 'learn', reading: null,
       grammarFeatures: ['particles', 'speech levels', 'verb endings'] },
-    { code: 'zh', name: 'Chinese', nativeName: '中文', flag: '🇨🇳', voice: 'zh-CN', script: 'hanzi', role: 'learn', reading: 'pinyin',
+    { code: 'zh', name: 'Chinese', nativeName: '中文', flag: '🇨🇳', voice: 'zh-CN', script: 'hanzi', role: 'legacy', reading: 'pinyin',
       grammarFeatures: ['measure words', 'aspect particles', 'tones'] },
-    { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹', voice: 'it-IT', script: 'latin', role: 'learn', reading: null,
+    { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹', voice: 'it-IT', script: 'latin', role: 'legacy', reading: null,
       grammarFeatures: ['conjugation', 'gender and articles', 'prepositions after verbs', 'essere / avere'] },
     { code: 'uz', name: 'Uzbek', nativeName: "O'zbekcha", flag: '🇺🇿', voice: 'uz-UZ', script: 'latin', role: 'native', reading: null,
       grammarFeatures: ['agglutinative suffix order', 'case suffixes', 'possessive suffixes', 'tense and aspect suffixes', 'postpositions', 'no grammatical gender'] },
@@ -49,7 +49,8 @@
   function get(code) { return BY[code] || null; }
   function isKnown(code) { return Boolean(BY[code]); }
   function canLearn(code) { var l = BY[code]; return Boolean(l && l.role === 'learn'); }
-  function canBeNative(code) { var l = BY[code]; return Boolean(l && (l.role === 'learn' || l.role === 'native')); }
+  // v2.56.14: the languages you already know are English, Russian and Uzbek only.
+  function canBeNative(code) { var l = BY[code]; return Boolean(l && (l.role === 'native' || l.alsoNative)); }
   function isLegacy(code) { var l = BY[code]; return Boolean(l && l.role === 'legacy'); }
   // A deck that could not be created today (learning Russian, or a legacy language on either side).
   function isArchivedPair(source, target) { return !(canLearn(source) && canBeNative(target)); }

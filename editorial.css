@@ -139,7 +139,7 @@ textarea#input::placeholder { color:var(--muted); opacity:.65; }
 .loop-spinner { width:35px; height:35px; border:2px solid var(--stroke); border-top-color:var(--amber); border-radius:50%; }
 .loop-spinner span,.loop-spinner::before { display:none; }
 .loader-card h2 { margin-top:25px; }
-.library-intro { display:flex; justify-content:space-between; align-items:end; margin:25px 0 28px; gap:15px; }
+.library-intro { display:flex; justify-content:space-between; align-items:end; margin:6px 0 28px; gap:15px; } /* v2.56.12: no caps label above the title any more */
 .library-intro h1 { font:500 42px var(--font-display); letter-spacing:-1.5px; }
 .library-intro p { font-size:13px; color:var(--muted); margin:10px 0 0; }
 .daily-panel { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:22px 25px; border:1px solid var(--stroke); border-radius:12px; margin-bottom:25px; background:var(--surface); }

@@ -38,7 +38,7 @@ function fakeWindow({ saved, languages } = {}) {
     return node;
   };
   const nav = el({ 'data-i18n': 'nav.study' }, 'Учить слова');
-  const hero = el({ 'data-i18n-html': 'hero.h1' }, '', 'Не просто слова.<br><em>Твои новые мысли.</em>');
+  const hero = el({ 'data-i18n-html': 'hero.h1' }, '', 'Карточки из любых слов<br><em>за секунды.</em>');
   const swap = el({ 'data-i18n-attr': 'title:lang.swap, aria-label:lang.swapAria', title: 'Поменять языки местами (Alt+X)', 'aria-label': 'Поменять языки местами' });
   const meta = el({ content: I.dict['meta.desc'][0] });
   const nodes = { '[data-i18n]': [nav], '[data-i18n-html]': [hero], '[data-i18n-attr]': [swap] };
@@ -66,7 +66,7 @@ inst.set('en');
 assert.equal(inst.lang(), 'en'); assert.equal(f.store['vm.ui-lang'], 'en');
 assert.deepEqual(seen, ['en', 'second:en']);
 assert.equal(f.nav.textContent, 'Study words');
-assert.equal(f.hero.innerHTML, 'Not just words.<br><em>Your new thoughts.</em>');
+assert.equal(f.hero.innerHTML, 'Flashcards from any words<br><em>in seconds.</em>');
 assert.equal(f.swap.getAttribute('title'), 'Swap languages (Alt+X)'); assert.equal(f.swap.getAttribute('aria-label'), 'Swap languages');
 assert.equal(f.win.document.documentElement.lang, 'en');
 assert.equal(f.win.document.title, 'Wordzone — words become knowledge');

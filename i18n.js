@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.11'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.12'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -533,18 +533,18 @@
     'top.uiLang': ['Язык интерфейса', 'Interface language', 'Interfeys tili'],
 
     'hero.eyebrow': ['МАЛЕНЬКАЯ ПРИВЫЧКА. БОЛЬШОЙ СЛОВАРЬ.', 'A SMALL HABIT. A BIG VOCABULARY.', "KICHIK ODAT. KATTA LUG'AT."],
-    'hero.h1': ['Не просто слова.<br><em>Твои новые мысли.</em>', 'Not just words.<br><em>Your new thoughts.</em>', "Shunchaki so'zlar emas.<br><em>Yangi fikrlaring.</em>"],
-    'hero.sub': ['Вставь слова или текст — ИИ сделает карточки, объяснит грамматику и напомнит повторить вовремя.', 'Paste words or text — AI builds flashcards, explains the grammar and reminds you to review at the right time.', "So'z yoki matnni joylang — AI kartalar tuzadi, grammatikani tushuntiradi va o'z vaqtida takrorlashni eslatadi."],
-    'hero.n1': ['Твой темп', 'Your pace', "O'z sur'ating"],
-    'hero.n2': ['Умные повторения', 'Smart reviews', 'Aqlli takrorlash'],
-    'hero.n3': ['Без регистрации', 'No sign-up', "Ro'yxatdan o'tmasdan"],
+    'hero.h1': ['Карточки из любых слов<br><em>за секунды.</em>', 'Flashcards from any words<br><em>in seconds.</em>', "Istalgan so'zlardan kartochkalar<br><em>bir zumda.</em>"],
+    'hero.sub': ['Вставь слова или текст — ИИ добавит перевод и примеры, а потом напомнит, когда повторить.', 'Paste words or a text — AI adds translations and examples, then reminds you when to review.', "So'z yoki matn qo'ying — sun'iy intellekt tarjima va misollar qo'shadi, keyin qachon takrorlashni eslatadi."],
+    'hero.n1': ['Бесплатно', 'Free', 'Bepul'],
+    'hero.n2': ['Без регистрации', 'No sign-up', "Ro'yxatdan o'tmasdan"],
+    'hero.n3': ['Работает без интернета', 'Works offline', 'Internetsiz ishlaydi'],
     'hero.frontDesc': ['Сначала вспомни. Потом переверни.', 'Recall first. Then flip.', 'Avval esla. Keyin aylantir.'],
     'hero.frontFoot': ['Нажми, чтобы узнать перевод ↗', 'Click to see the meaning ↗', "Tarjimani ko'rish uchun bos ↗"],
     'hero.backTop': ['Русский · перевод', 'English · meaning', "O'zbekcha · tarjima"],
     'hero.backWord': ['счастливая<br>случайность', 'a happy<br>accident', 'baxtli<br>tasodif'],
     'hero.backDesc': ['Найти прекрасное, когда не искал.', 'Finding something lovely without looking.', "Izlamay turib go'zal narsani topish."],
     'hero.backFoot': ['Так слово становится твоим.', 'That is how a word becomes yours.', "So'z shunday seniki bo'ladi."],
-    'hero.caption': ['Нажми. Переверни. Запомни.', 'Click. Flip. Remember.', 'Bos. Aylantir. Esla.'],
+    'hero.caption': ['Нажми на карточку — она перевернётся', 'Tap the card to flip it', 'Kartochkani bosing — u aylanadi'],
 
     'setup.heading': ['Начнём с твоих слов', "Let's start with your words", "Sening so'zlaringdan boshlaymiz"],
     'composer.title': ['Добавить слова', 'Add words', "So'z qo'shish"],
@@ -879,12 +879,15 @@
     'tools.exitTitle': ['Завершить сессию', 'Finish the session', 'Sessiyani yakunlash'],
 
     'lib.eyebrow': ['ТВОЯ КОЛЛЕКЦИЯ ЗНАНИЙ', 'YOUR KNOWLEDGE COLLECTION', "BILIMLAR TO'PLAMING"],
+    'lib.stats': ['{d} · {w} · на повторение сегодня: {n}', '{d} · {w} · due today: {n}', '{d} · {w} · bugun takrorlash: {n}'],
+    'lib.statsEmpty': ['Пока пусто — добавь первые слова на главной.', 'Nothing here yet — add your first words on the home screen.', "Hozircha bo'sh — birinchi so'zlarni bosh sahifada qo'shing."],
+    'lib.decksN': [['{n} колода', '{n} колоды', '{n} колод'], ['{n} deck', '{n} decks'], ["{n} ta to'plam"]],
     'lib.h1': ['Моя библиотека', 'My library', 'Mening kutubxonam'],
     'lib.sub': ['Всё, что ты уже знаешь. И то, что скоро запомнишь.', 'Everything you already know. And what you will soon remember.', 'Bilganlaring hammasi. Va tez orada eslab qoladiganlaring.'],
     'lib.newDeck': ['+ Новая колода', '+ New deck', '+ Yangi koloda'],
     'daily.title0': ['Сегодня — новый шаг', 'Today is a new step', 'Bugun — yangi qadam'],
-    'daily.done': ['На сегодня — отлично.', 'Great work for today.', "Bugun uchun — a'lo."],
-    'daily.almost': ['Ещё немного — и это привычка.', 'A little more and it becomes a habit.', "Yana ozgina — va bu odatga aylanadi."],
+    'daily.done': ['Цель на сегодня выполнена ✓', "Today's goal is done ✓", 'Bugungi maqsad bajarildi ✓'],
+    'daily.almost': [['До цели остался {n} ответ', 'До цели осталось {n} ответа', 'До цели осталось {n} ответов'], ['{n} answer to go today', '{n} answers to go today'], ['Maqsadgacha {n} ta javob qoldi']],
     'daily.text': ['{a} из {g} ответов сегодня', '{a} of {g} answers today', 'Bugun {g} tadan {a} ta javob'],
     'daily.goal': ['Цель', 'Goal', 'Maqsad'],
     'daily.goalAria': ['Дневная цель', 'Daily goal', 'Kunlik maqsad'],
@@ -971,7 +974,7 @@
     'quiz.saved': ['Ошибки сохранены: сложные слова вернутся в практику.', 'Mistakes are saved: hard words will come back to practice.', "Xatolar saqlandi: qiyin so'zlar mashqqa qaytadi."],
 
     'footer.tag': ['Меньше шума. Больше смысла.', 'Less noise. More meaning.', "Kamroq shovqin. Ko'proq ma'no."],
-    'footer.made': ['Сделано для ежедневной практики · v' + VERSION, 'Made for daily practice · v' + VERSION, 'Kundalik mashq uchun yaratilgan · v' + VERSION],
+    'footer.made': ['v' + VERSION, 'v' + VERSION, 'v' + VERSION],
     'sum.title': ['Сессия завершена', 'Session complete', 'Sessiya yakunlandi'],
     'sum.continue': ['Продолжить цикл', 'Keep looping', 'Siklni davom ettirish'],
     'sum.newSet': ['Новый набор слов', 'New word set', "Yangi so'zlar to'plami"],

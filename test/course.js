@@ -13,8 +13,8 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root, 'course/catalog.json'
 // Every course language is learnable; ready ones have a valid lesson file, the rest list their topics.
 // Japanese and Chinese are learnable for words but have no grammar course planned (v2.26).
 const codes = catalog.languages.map(l => l.code);
-assert(codes.every(c => Langs.LEARN_CODES.includes(c)), 'only learnable languages have a course');
-assert.deepEqual(Langs.LEARN_CODES.filter(c => !codes.includes(c)).sort(), ['ja', 'zh'], 'every other learnable language is planned');
+// v2.56.14: the Grammar section is switched off; the lesson files stay in the repo and must stay valid.
+assert(codes.every(c => Langs.isKnown(c)), 'every course language is a known language');
 for (const l of catalog.languages) {
   assert(l.glyph && l.native, l.code + ': glyph and native name');
   if (l.ready) {

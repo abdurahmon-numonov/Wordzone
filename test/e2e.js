@@ -844,7 +844,7 @@ run.server(server);
   assert.equal(JSON.parse(await page.evaluate(() => localStorage.getItem('vm.display'))).theme, 'light');
   await page.emulateMedia({ colorScheme: null });
 
-  step('goal with a deadline: set, validate, pace, persists, chart goal line, remove; grammar journey jumps to its level');
+  step('goal with a deadline: set, validate, pace, persists, chart goal line, remove; Grammar is switched off');
   const ymd = n => page.evaluate(k => { const d = new Date(); d.setDate(d.getDate() + k); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }, n);
   await page.click('#navStudy');
   assert(await page.locator('#goalStrip').isHidden(), 'v2.56.3: no goal yet — home does not show the invitation');
@@ -879,12 +879,10 @@ run.server(server);
   await page.locator('#goalStripProg:not(.is-set)').waitFor();
   assert(await page.locator('#goalStrip').isHidden(), 'goal removed: home is clean again');
   assert.equal(await page.locator('#growthChart .chart-goal-label').count(), 0, 'no goal, no goal line');
-  await page.click('#navGrammar');
-  await page.locator('.journey-btn').first().waitFor();
-  assert.equal(await page.locator('.journey-btn').count(), 4, 'four levels on the journey');
-  assert.equal(await page.locator('.journey-btn[aria-current="step"]').count(), 1, 'exactly one "you are here"');
-  await page.locator('.journey-btn').nth(1).click();
-  assert.equal(await page.evaluate(() => document.activeElement.id), 'chapter-A2', 'a stop jumps to its chapter');
+  // v2.56.14: the Grammar section is switched off — no menu item, and its screen can't be reached
+  assert(await page.locator('#navGrammar').isHidden(), 'no Grammar in the menu');
+  await page.evaluate(() => document.getElementById('navGrammar').click());
+  assert.equal(await page.locator('#screen-grammar.active').count(), 0, 'Grammar cannot be opened');
 
   step('3D: an "off" saved before v2.45 is cleared once, a new choice sticks');
   await page.emulateMedia({ reducedMotion: 'no-preference' }); // this suite runs with "reduce motion" on
@@ -947,10 +945,10 @@ run.server(server);
   await page.click('#btnNewDeck');
   await page.locator('#deckDialog:not([hidden])').waitFor();
   await page.fill('#deckName', '  Deutsch   A2 ');
-  await page.selectOption('#deckSource', 'de'); await page.selectOption('#deckTarget', 'de');
+  await page.selectOption('#deckSource', 'en'); await page.selectOption('#deckTarget', 'en');
   await page.click('#deckForm button[type="submit"]');
   assert.match(await page.locator('#deckError').innerText(), /разных языка/, 'the same language twice is refused');
-  await page.selectOption('#deckTarget', 'ru');
+  await page.selectOption('#deckSource', 'de'); await page.selectOption('#deckTarget', 'ru');
   await page.fill('#deckWords', 'Haus - дом\nBaum - дерево\nFluss - река\nBerg - гора');
   await page.click('#deckForm button[type="submit"]');
   await page.locator('#screen-train.active').waitFor(); // ready pairs start a training at once
@@ -1035,8 +1033,8 @@ run.server(server);
   await onb.selectOption('#onbNative', 'uz');
   assert.equal(await onb.locator('#navStudy').innerText(), "So'z o'rganish", 'choosing Uzbek switches the interface at once');
   assert.equal(await onb.inputValue('#onbLearn'), 'en');
-  await onb.selectOption('#onbNative', 'de');
-  assert(await onb.locator('#onbUiNote').isVisible(), 'a language without an interface explains what happens');
+  assert.deepEqual(await onb.$$eval('#onbNative option', os => os.map(o => o.value).sort()), ['en', 'ru', 'uz'], 'known languages: English, Russian, Uzbek only');
+  assert.deepEqual(await onb.$$eval('#onbLearn option', os => os.map(o => o.value).sort()), ['de', 'en', 'fr', 'ko'], 'learn languages: English, German, French, Korean only');
   await onb.selectOption('#onbNative', 'ru');
   await onb.selectOption('#onbLearn', 'de');
   assert(await onb.locator('#btnTourTry5').isHidden(), 'the 5-word deck is English only');
@@ -1409,7 +1407,7 @@ run.server(server);
     assert.equal(await pg.inputValue('#input'), 'Tisch', 'every deck keeps its own draft');
     await pg.reload(); await pg.locator('#screen-setup.active').waitFor();
     assert(await pg.locator('#deckPicker').isHidden(), 'a reload of the same tab does not ask again');
-    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck'], ['#navGrammar', '#gramDeck']]) {
+    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck']]) {
       await pg.click(nav);
       assert.equal(await pg.inputValue(id), 'de-ru:a2', nav + ' works with the working deck');
     }
@@ -1443,122 +1441,7 @@ run.server(server);
     await pg.context().close();
   }
 
-  step('grammar course: language plates, a path of topics, a lesson, 8 questions answered right, progress kept');
-  {
-    const lessons = JSON.parse(fs.readFileSync(path.join(root, 'course/en.json'), 'utf8'));
-    const toBe = lessons.topics.find(t => t.id === 'to-be');
-    const ctx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce', viewport: { width: 1280, height: 900 } });
-    await ctx.addInitScript(() => { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); });
-    const pg = await ctx.newPage(); watch(pg); pg.on('pageerror', e => errors.push(e.message));
-    await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
-    await pg.click('#navGrammar');
-    await pg.locator('.plate').first().waitFor();
-    assert.equal(await pg.locator('.plate:not(.plate-more)').count(), 6, 'one plate per ready course (English, Spanish, French, German, Italian, Korean)');
-    assert.equal(await pg.getAttribute('.plate.on', 'data-code'), 'en');
-    await pg.locator('.stop').first().waitFor();
-    assert.equal(await pg.locator('.stop:not(.checkpoint)').count(), lessons.topics.length, 'the English path lists every topic');
-    assert.equal(await pg.locator('.stop.checkpoint').count(), 4, 'and a checkpoint at the end of each level (A1–B2)');
-    await pg.click('.plate[data-code="de"]');
-    const deTopics = JSON.parse(fs.readFileSync(path.join(root, 'course/de.json'), 'utf8')).topics.length;
-    await pg.waitForFunction(n => document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === n && document.querySelector('.plate.on').dataset.code === 'de', deTopics);
-    assert.equal(await pg.locator('.stop.checkpoint').count(), 4, 'German has its own ready course with four levels');
-    // v2.28: Spanish and French are full 36-topic courses too.
-    for (const code of ['es', 'fr', 'it', 'ko']) {
-      const n = JSON.parse(fs.readFileSync(path.join(root, 'course/' + code + '.json'), 'utf8')).topics.length;
-      assert.equal(n, 46, code + ': 46 topics (v2.34)');
-      await pg.click('.plate[data-code="' + code + '"]');
-      await pg.waitForFunction(([c, k]) => document.querySelector('.plate.on').dataset.code === c && document.querySelectorAll('.stop:not(.checkpoint):not(.soon)').length === k, [code, n]);
-      assert.equal(await pg.locator('.stop.checkpoint').count(), 4, code + ': four level checkpoints');
-    }
-    assert.equal(await pg.locator('.plate[data-code="uz"]').count(), 0, 'languages without lessons are not plates');
-    assert.equal(await pg.locator('.plate-more').count(), 0, 'no "coming soon" tile once every planned course is ready (v2.32)');
-    assert.equal(await pg.locator('.plate[data-code="ja"], .plate[data-code="zh"]').count(), 0);
-    await pg.click('.plate[data-code="en"]');
-    await pg.click('.stop:has-text("to be")');
-    assert.equal(await pg.locator('#courseLessonTitle').innerText(), toBe.title.ru);
-    // v2.24: the lesson is taught step by step and can't just be scrolled past.
-    // v2.38: the full theory comes first, then notice · 3 checks · build · fix · write
-    assert.match(await pg.locator('#lessonStepLabel').innerText(), /^1 \/ 8 · ТЕОРИЯ/, 'the lesson opens with the theory');
-    assert(await pg.locator('.theory .theory-table').count() >= 1 && await pg.locator('.theory .theory-ex-row').count() >= 6, 'the theory has tables and examples with translations');
-    assert(!(await pg.locator('#btnStepNext').isDisabled()), 'the theory is read, not answered');
-    await pg.click('#btnStepNext');
-    assert.match(await pg.locator('#lessonStepLabel').innerText(), /^2 \/ 8/);
-    assert(await pg.locator('.mark-line mark').count() >= 3, 'the pattern is highlighted in the examples');
-    assert(await pg.locator('#btnStepNext').isDisabled(), 'the first question has to be answered before moving on');
-    // Options are shown shuffled, so pick one that is wrong by its text.
-    const discoverRight = toBe.discover.o[toBe.discover.a].ru;
-    const discoverOpts = await pg.locator('.lesson-q-opts .answer-opt').allInnerTexts();
-    await pg.locator('.lesson-q-opts .answer-opt').nth(discoverOpts.findIndex(o => o !== discoverRight)).click();
-    assert(await pg.locator('.lesson-q-opts .answer-opt.right').count() === 1 && await pg.locator('.fb-why').isVisible(), 'a wrong guess shows the right answer and why');
-    await pg.click('#btnStepNext');
-    for (let i = 0; i < toBe.checks.length; i++) {
-      const c = toBe.checks[i];
-      assert.equal(await pg.locator('.step-rule').innerText(), toBe.explain.ru[i], 'rule part ' + (i + 1));
-      await pg.locator('.lesson-q-opts .answer-opt', { hasText: new RegExp('^' + c.o[c.a].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$') }).click();
-      assert.equal(await pg.locator('.fb-why').innerText(), c.e.ru, 'each check explains itself');
-      await pg.click('#btnStepNext');
-    }
-    assert(await pg.locator('.formula-card').count() === toBe.formula.length, 'then how it is built');
-    await pg.click('#btnStepNext');
-    assert.equal(await pg.inputValue('.fix-input'), toBe.mistake.wrong, 'the common mistake is there to fix');
-    await pg.locator('.fix-actions .btn').first().click();
-    assert.match(await pg.locator('.step-card .fb-no').innerText(), /не изменено/);
-    await pg.fill('.fix-input', toBe.mistake.right);
-    await pg.locator('.fix-actions .btn').first().click();
-    assert(await pg.locator('.step-card.is-ok').count(), 'the fixed sentence is accepted');
-    await pg.click('#btnStepNext');
-    assert(await pg.locator('.write-input').isVisible(), 'and finally your own sentences');
-    await pg.click('#btnStepNext'); // skip writing → practice
-    for (let i = 0; i < toBe.ex.length; i++) {
-      const prompt = await pg.locator('.practice-q').count() ? (await pg.locator('.practice-q').innerText()).replace(/\s+/g, ' ').trim() : '';
-      if (await pg.locator('.answer-opt').count()) {
-        const opts = await pg.locator('.answer-opt').allInnerTexts();
-        const fits = e => !e.q || e.q.split('___').every(part => prompt.includes(part.replace(/\s+/g, ' ').trim()));
-        const ex = toBe.ex.find(e => e.o && e.o.every(o => opts.includes(o)) && opts.length === e.o.length && fits(e));
-        await pg.locator('.answer-opt').nth(opts.indexOf(ex.o[ex.a])).click();
-      } else if (await pg.locator('.order-pool').count()) {
-        const tiles = await pg.locator('.order-pool .tile').allInnerTexts();
-        const ex = toBe.ex.find(e => e.k === 'order' && e.w.slice().sort().join('|') === tiles.slice().sort().join('|'));
-        const used = new Set();
-        for (const w of ex.w) { const n = tiles.findIndex((t, j) => t === w && !used.has(j)); used.add(n); await pg.locator('.order-pool .tile').nth(n).click(); }
-        await pg.click('#btnPracticeCheck');
-      } else {
-        const ex = toBe.ex.find(e => e.k === 'type');
-        await pg.fill('#practiceInput', ex.a[0]); await pg.click('#btnPracticeCheck');
-      }
-      assert(await pg.locator('.practice-body.is-ok').count(), 'question ' + (i + 1) + ' (' + prompt + ') accepted');
-      await pg.click('#btnPracticeNext');
-    }
-    assert.match(await pg.locator('.result-num').innerText(), /8 из 8/);
-    assert.equal(await pg.locator('.practice-result .stars i.on').count(), 3, '8 of 8 gives three stars');
-    const course = await pg.evaluate(() => JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).course);
-    assert.equal(course['en.to-be'].best, 8, 'the score is saved with the library');
-    assert(course['en.to-be'].done, 'and the topic counts as done');
-    assert(course['en.to-be'].lesson, 'the step-by-step lesson is remembered');
-    assert(course['en.to-be'].due > Date.now(), 'a review is scheduled');
-    await pg.evaluate(() => { const l = JSON.parse(localStorage.getItem('vocabulary-master.library.v2')); l.course['en.to-be'].due = 1; localStorage.setItem('vocabulary-master.library.v2', JSON.stringify(l)); });
-    await pg.reload(); await pg.click('#navGrammar'); await pg.click('#tabCourse');
-    await pg.locator('.course-resume.is-review').waitFor();
-    assert.equal(await pg.locator('.stop.due').count(), 1, 'a due topic asks for a review');
-    await pg.click('.course-resume .btn');
-    assert.match(await pg.locator('#practiceCount').innerText(), /1 \/ 5/, 'a review is 5 questions');
-    await pg.click('#btnPracticeQuit');
-    await pg.locator('#courseHome:not([hidden])').waitFor();
-    assert.match(await pg.locator('.plate.on .plate-meta').innerText(), new RegExp('^1/' + lessons.topics.length), 'the plate shows progress');
-    assert.equal(await pg.locator('.stop.done').count(), 1);
-    // The level checkpoint: grammar + listening + reading + writing (writing skipped here: no AI in the test).
-    await pg.click('.stop.checkpoint >> nth=0');
-    assert.match(await pg.locator('#practiceTitle').innerText(), /Контрольная A1/);
-    assert(await pg.locator('.cp-section').isVisible(), 'the checkpoint shows which part it is in');
-    assert(await pg.locator('#practiceCount').innerText() !== '', 'and how far along');
-    await pg.click('#btnPracticeQuit');
-    await pg.click('#tabWords');
-    assert(await pg.locator('#gramBuild').isVisible() && await pg.locator('#courseView').isHidden(), '"From my words" keeps the rules found in the decks');
-    await pg.reload(); await pg.click('#navGrammar');
-    assert(await pg.locator('#wordsGrammar').isVisible(), 'the chosen tab is remembered');
-    await pg.click('#tabCourse'); await pg.locator('.stop.done').waitFor();
-    await ctx.close();
-  }
+  // v2.56.14: the grammar course step was removed together with the Grammar section (its code and lessons stay in the repo; test/course.js still checks the lesson files)
 
   step('interface language: RU → EN → UZ, choice survives a reload');
   await page.click('#navStudy');

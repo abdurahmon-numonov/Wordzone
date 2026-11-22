@@ -354,7 +354,7 @@
 
   function langByCode(code) { return LANGUAGES.get(code) || LANGS[0]; }
   // A learnable language other than `code`, for "the two sides must differ" fixes.
-  function otherLearnable(code) { return code === 'en' ? 'es' : 'en'; }
+  function otherLearnable(code) { return code === 'en' ? 'de' : 'en'; }
   // Fills a language <select> with the allowed codes; a current value outside them (a legacy deck,
   // learning Russian) stays visible as one extra "archived" option so an existing deck keeps working.
   function fillLangSelect(sel, codes, current) {
@@ -3610,7 +3610,7 @@
     $('navLibrary').onclick = function () { navigateLearning('screen-library'); };
     $('navTest').onclick = function () { navigateLearning('screen-test'); };
     $('navProgress').onclick = function () { navigateLearning('screen-progress'); };
-    $('navGrammar').onclick = function () { navigateLearning('screen-grammar'); };
+    $('navGrammar').onclick = function () { if (!GRAMMAR_OFF) navigateLearning('screen-grammar'); };
     initGrammar();
     $('navGames').onclick = function () { navigateLearning('screen-games'); };
     $('navTeacher').onclick = function () { navigateLearning('screen-teacher'); };
@@ -4010,6 +4010,8 @@
   /* ---------------- Grammar Lab: rules extracted from the learner's own words (grammar.js) ---------------- */
   var GR = window.VMGrammar, grammarBusy = false, GRAM_AUTO_KEY = 'vm.grammar-auto';
   function aiAvailable() { return Boolean(state.serverHasKey || state.cfg.apiKey); }
+  // v2.56.14: the Grammar section is switched off (no menu item, no background analysis); the code stays for later.
+  var GRAMMAR_OFF = true;
   function gramAutoOn() { try { return localStorage.getItem(GRAM_AUTO_KEY) !== '0'; } catch (e) { return true; } }
   function catLabel(c) { return tr('gcat.' + String(c).replace(/-(\w)/g, function (m, x) { return x.toUpperCase(); })); }
   function gramStatus(text, retryKey) {
@@ -4059,7 +4061,7 @@
   }
   // After a new session: analyse the active deck quietly in the background (setting, on by default).
   function autoGrammar() {
-    if (!GR || !gramAutoOn() || !aiAvailable() || !LANGUAGES.canLearn(state.cfg.source)) return;
+    if (GRAMMAR_OFF || !GR || !gramAutoOn() || !aiAvailable() || !LANGUAGES.canLearn(state.cfg.source)) return;
     var key = activeDeckKey();
     setTimeout(function () { buildGrammarFor(key, true); }, 1500);
   }

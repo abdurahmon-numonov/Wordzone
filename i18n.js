@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.13'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.14'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -49,7 +49,7 @@
     'tips.unlock.grammar': ['Короткие уроки A1–B2 — удобно между тренировками.', 'Short A1–B2 lessons, handy between practices.', 'Qisqa A1–B2 darslar — mashg\'ulotlar orasida qulay.'],
     'tips.unlock.test': ['Мини-тест и тренажёры проверят, что ты запомнил.', 'A mini test and trainers check what you remember.', 'Mini test va trenajyorlar nimani eslab qolganingizni tekshiradi.'],
     'nudge.title': ['Сохрани свой прогресс', 'Keep your progress safe', 'Natijangizni saqlang'],
-    'nudge.text': [["Твоё {n} слово и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере.", "Твои {n} слова и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере.", "Твои {n} слов и грамматика пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере."], ["Your {n} word and grammar progress live only in this browser for now. A free account keeps them on the server, on any phone or computer.", "Your {n} words and grammar progress live only in this browser for now. A free account keeps them on the server, on any phone or computer."], ["{n} ta so'zingiz va grammatika hozircha faqat shu brauzerda. Bepul akkaunt ularni serverda saqlaydi — istalgan telefon yoki kompyuterda bo'ladi."]],
+    'nudge.text': [["Твоё {n} слово пока хранится только в этом браузере. Бесплатный аккаунт сохранит его на сервере — оно будет на любом телефоне и компьютере.", "Твои {n} слова пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере.", "Твои {n} слов пока хранятся только в этом браузере. Бесплатный аккаунт сохранит их на сервере — они будут на любом телефоне и компьютере."], ["Your {n} word lives only in this browser for now. A free account keeps it on the server, on any phone or computer.", "Your {n} words live only in this browser for now. A free account keeps them on the server, on any phone or computer."], ["{n} ta so'zingiz hozircha faqat shu brauzerda. Bepul akkaunt ularni serverda saqlaydi — istalgan telefon yoki kompyuterda bo'ladi."]],
     'nudge.signUp': ['Создать аккаунт', 'Create account', 'Akkaunt yaratish'],
     'nudge.later': ['Не сейчас', 'Not now', 'Hozir emas'],
     'nudge.signIn': ['У меня уже есть аккаунт', 'I already have an account', 'Menda akkaunt bor'],
@@ -217,7 +217,7 @@
     'set.title': ['Настройки тренировки', 'Practice settings', "Mashg'ulot sozlamalari"],
     'set.done': ['Готово', 'Done', 'Tayyor'],
     'onb.title': ['Какой язык <em>учим?</em>', 'Which language <em>are you learning?</em>', "Qaysi tilni <em>o'rganamiz?</em>"],
-    'onb.sub': ['Внутри: карточки, грамматика A1–B2 на 6 языках и 2 игры. Поменять можно в любой момент.', 'Inside: flashcards, A1–B2 grammar in 6 languages and 2 games. You can change this any time.', "Ichida: kartalar, 6 tilda A1–B2 grammatika va 2 ta o'yin. Istalgan vaqtda o'zgartirish mumkin."],
+    'onb.sub': ['Внутри: карточки, тест слов и 2 игры. Поменять можно в любой момент.', 'Inside: flashcards, a vocabulary test and 2 games. You can change this any time.', "Ichida: kartalar, so'z testi va 2 ta o'yin. Istalgan vaqtda o'zgartirish mumkin."],
     'onb.native': ['Мой родной язык', 'My native language', 'Ona tilim'],
     'onb.learn': ['Я хочу выучить', 'I want to learn', "O'rganmoqchiman"],
     'onb.go': ['Начать', 'Start', 'Boshlash'],
@@ -404,7 +404,7 @@
     'decks.quickName': ['Первые 5 слов', 'First 5 words', "Birinchi 5 so'z"],
     'picker.eyebrow': ['НАЧАЛО СЕССИИ', 'NEW SESSION', 'YANGI SESSIYA'],
     'picker.title': ['С какой колодой работаем?', 'Which deck are we working on?', "Qaysi to'plam bilan ishlaymiz?"],
-    'picker.sub': ['Новые слова, тренировка, тест, игры, грамматика и прогресс — всё будет по этой колоде.', 'New words, practice, tests, games, grammar and progress all follow this deck.', "Yangi so'zlar, mashq, test, o'yinlar, grammatika va natijalar — hammasi shu to'plam bo'yicha."],
+    'picker.sub': ['Новые слова, тренировка, тест, игры и прогресс — всё будет по этой колоде.', 'New words, practice, tests, games and progress all follow this deck.', "Yangi so'zlar, mashq, test, o'yinlar va natijalar — hammasi shu to'plam bo'yicha."],
     'picker.go': ['Продолжить', 'Continue', 'Davom etish'],
     'picker.first': ['Создай первую колоду — в неё попадут твои слова.', 'Create your first deck — your words will go into it.', "Birinchi to'plamni yarating — so'zlaringiz unga tushadi."],
     'deck.newTitle': ['Новая колода', 'New deck', "Yangi to'plam"],
@@ -801,7 +801,7 @@
     'setup.resumeLink': ['открыть сохранённую колоду', 'open the saved deck', 'saqlangan kolodani ochish'],
     'setup.foot': ['Прогресс хранится на этом устройстве. Слова для перевода отправляются выбранному сервису.', 'Progress is stored on this device. Words to translate are sent to the selected service.', "Natijalar shu qurilmada saqlanadi. Tarjima uchun so'zlar tanlangan xizmatga yuboriladi."],
     'welcome.h': ['Добро пожаловать в Wordzone!', 'Welcome to Wordzone!', 'Wordzone ga xush kelibsiz!'],
-    'welcome.p': ['Вставь слова — ИИ сделает карточки и объяснит грамматику, а умные повторения вернут трудные слова вовремя.', 'Paste your words — AI turns them into flashcards and explains the grammar, and smart reviews bring tricky words back at the right time.', "So'zlarni joylang — AI ulardan kartalar tuzadi va grammatikani tushuntiradi, aqlli takrorlash esa qiyin so'zlarni o'z vaqtida qaytaradi."],
+    'welcome.p': ['Вставь слова — ИИ сделает карточки, а умные повторения вернут трудные слова вовремя.', 'Paste your words — AI turns them into flashcards, and smart reviews bring tricky words back at the right time.', "So'zlarni joylang — AI ulardan kartalar tuzadi, aqlli takrorlash esa qiyin so'zlarni o'z vaqtida qaytaradi."],
 
     'load.title': ['ИИ разбирает твой список…', 'AI is reading your list…', "AI ro'yxatingni tahlil qilmoqda…"],
     'load.step': ['Фильтрую мусор и дубликаты', 'Filtering junk and duplicates', 'Keraksiz va takrorlarni filtrlayapman'],

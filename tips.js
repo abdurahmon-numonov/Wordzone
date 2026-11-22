@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   var KEY = 'vm.tips';
-  var STAGES = [{ at: 1, items: ['progress', 'games'] }, { at: 2, items: ['grammar', 'test'] }];
+  var STAGES = [{ at: 1, items: ['progress', 'games'] }, { at: 2, items: ['test'] }, { at: Infinity, items: ['grammar'] }]; // v2.56.14: Grammar is switched off — never unlocked, no dot
   var ITEMS = {
     progress: { nav: 'navProgress', tab: 'tabProgress', screen: 'screen-progress' },
     games: { nav: 'navGames', tab: 'tabMore', screen: 'screen-games' },

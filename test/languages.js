@@ -7,8 +7,10 @@ const S = require('../share.js');
 const G = require('../games.js');
 
 // --- registry ---
-assert.deepEqual(Lg.LEARN_CODES.slice().sort(), ['de', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'zh']);
-assert.deepEqual(Lg.NATIVE_CODES.slice().sort(), ['de', 'en', 'es', 'fr', 'it', 'ja', 'ko', 'ru', 'uz', 'zh']);
+assert.deepEqual(Lg.LEARN_CODES.slice().sort(), ['de', 'en', 'fr', 'ko'], 'v2.56.14: learn English, German, French, Korean');
+assert.deepEqual(Lg.NATIVE_CODES.slice().sort(), ['en', 'ru', 'uz'], 'v2.56.14: you already know English, Russian or Uzbek');
+for (const c of ['es', 'it', 'ja', 'zh']) assert(Lg.isLegacy(c) && Lg.isKnown(c) && !Lg.canLearn(c) && !Lg.canBeNative(c), c + ': kept only for old decks');
+assert(Lg.isArchivedPair('es', 'ru') && Lg.isArchivedPair('en', 'de'), 'old Spanish decks and "I know German" decks are archived, not lost');
 assert.equal(Lg.KNOWN_CODES.length, 20, 'all 20 historic codes stay known');
 assert.equal(new Set(Lg.KNOWN_CODES).size, 20, 'no duplicate codes');
 assert(!Lg.canLearn('uz') && Lg.canBeNative('uz'), 'Uzbek is a native and interface language, not one to learn (v2.32)');

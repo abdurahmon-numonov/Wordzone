@@ -1319,3 +1319,10 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
   /* messages during practice appear at the top, so they never cover the answer buttons */
   body[data-screen="screen-train"] .toast { top:calc(12px + env(safe-area-inset-top)); bottom:auto; }
 }
+
+/* v2.56.11 — review fixes */
+.streak-indicator[hidden], .motion-details[hidden], .prog-fresh[hidden] { display:none !important; }
+.prog-fresh { display:flex; align-items:center; justify-content:space-between; gap:14px 24px; flex-wrap:wrap; padding:26px 28px; margin-bottom:18px; }
+.prog-fresh p { margin:0; max-width:56ch; font-size:15px; line-height:1.55; color:var(--text); }
+.onb-teacher { display:block; margin:14px auto 0; font-size:13.5px; }
+@media (max-width:720px) { .prog-fresh { padding:20px; } .prog-fresh .btn { width:100%; justify-content:center; } }

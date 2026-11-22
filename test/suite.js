@@ -273,8 +273,19 @@ function mockRes() {
   assert.strictEqual(mockElements['cardWord'].textContent, '—', 'cardWord must remain cleared');
   console.log('✓ Race condition immunity verified: answering card followed by new set properly aborts pending transition without state corruption');
 
+  // Test 16a (v2.56.11): leaving before the first answer goes straight back — no empty "0%" summary
+  domListeners['btnDemo:click']();
+  const cancelBeforeEmptyExit = speechCancelCount;
+  domListeners['btnExit:click']();
+  assert.notStrictEqual(mockElements['summary'].hidden, false, 'no summary when nothing was answered');
+  assert.strictEqual(classStore['screen-setup'].has('active'), true, 'back to the setup screen');
+  assert(speechCancelCount > cancelBeforeEmptyExit, 'leaving also silences speech');
+  console.log('✓ Exit with no answers returns to setup without an empty summary');
+
   // Test 16: showSummary cancels active speech playback
   domListeners['btnDemo:click']();
+  domListeners['btnKnew:click']();
+  await new Promise(r => setTimeout(r, 220));
   const cancelCountBeforeExit = speechCancelCount;
   domListeners['btnExit:click']();
   assert.strictEqual(mockElements['summary'].hidden, false, 'summary overlay must be shown on exit');

@@ -1894,7 +1894,11 @@
     var translated = cards.filter(function (c) { return c.translation && c.translation !== '—'; });
     $('progEmpty').hidden = translated.length > 0;
     $('progBody').hidden = !translated.length;
-    if (!translated.length) return;
+    if (!translated.length) { $('progFresh').hidden = true; return; }
+    var practised = Object.keys(library.history || {}).some(function (k) { return library.history[k] && library.history[k].answers > 0; });
+    $('progFresh').hidden = practised; // words, but no practice yet: one friendly line instead of empty charts
+    $('progBody').hidden = !practised;
+    if (!practised) return;
     var fc = L.forecast(cards, progressDays, now), mat = L.maturity(cards), acc = L.accuracy(library.history, 30, today);
     var best = Math.max(L.longestStreak(library.history), library.streak.count);
 
@@ -2876,6 +2880,7 @@
     renderSteps();
     var h = library.history[L.day()] || { answers: 0 };
     $('streakCount').textContent = trn('streak.days', library.streak.count || 0);
+    $('streakChip').hidden = !(library.streak.count > 0); // a streak shows up from its first day, not as "0 days"
     $('dailyTitle').textContent = tr(h.answers >= library.goal ? 'daily.done' : 'daily.almost');
     $('dailyText').textContent = tr('daily.text', { a: h.answers, g: library.goal });
     $('dailyBar').style.width = Math.min(100, h.answers / library.goal * 100) + '%';
@@ -3643,6 +3648,7 @@
     // fetch the game quietly once the page has settled, so it opens instantly later
     (window.requestIdleCallback || function (f) { return setTimeout(f, 1) })(function () { setTimeout(loadArcade, 2500); });
     $('btnProgEmpty').onclick = function () { navigateLearning('screen-setup'); $('input').focus(); };
+    $('btnProgFresh').onclick = function () { var d = activeDeck(); if (d) practiceDeck(d, 'due'); else { navigateLearning('screen-setup'); $('input').focus(); } };
     var progressResize = null;
     window.addEventListener('resize', function () { clearTimeout(progressResize); progressResize = setTimeout(function () { if ($('screen-progress').classList.contains('active')) renderProgress(); }, 150); });
     $('progRange').onclick = function (e) {
@@ -3828,6 +3834,7 @@
       toast(tr('onb.done', { l: langByCode(learn.value).label }), 'ok', 3000);
       $('input').focus({ preventScroll: true });
     };
+    $('btnTourTeacher').onclick = function () { finish(); navigateLearning('screen-teacher'); }; // teachers go straight to their section
     $('btnTourTry5').onclick = function () {
       if (!(learn.value === 'en' && QUICK5[nat.value])) { $('onboardForm').requestSubmit ? $('onboardForm').requestSubmit() : $('onboardForm').onsubmit(new Event('submit')); return; }
       finish();
@@ -4587,7 +4594,7 @@
         cardEl.addEventListener('pointerleave', function () { cardEl.style.transform = ''; });
       }
     } catch (e) {}
-    $('btnExit').addEventListener('click', showSummary);
+    $('btnExit').addEventListener('click', function () { if (state.answers > 0) showSummary(); else startNewSet(); }); // no answers: just leave, no empty "0%" summary
 
     /* Practice tools: Undo, Hint and Exit stay in sight; the rarer ones live under "More". */
     var toolsMenu = $('toolsMenu'), toolsBtn = $('btnToolsMore');

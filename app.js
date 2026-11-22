@@ -2445,6 +2445,14 @@
      "review the words that are due", or, when nothing is due, "add new words". */
   var todayKey = '';
   // v2.56.8, phones only (CSS shows it at ≤720px): the decks as cards right under "Today" — one tap starts a deck
+  // v2.56.12: the library's line under the title is live numbers, not a slogan
+  function renderLibStats() {
+    var el = $('libStats'); if (!el) return;
+    var keys = Object.keys(library.decks).filter(function (k) { return library.decks[k].cards.length; });
+    var words = 0, due = 0;
+    keys.forEach(function (k) { var c = library.decks[k].cards; words += c.length; due += L.pick(c, 'due').length; });
+    el.textContent = keys.length ? tr('lib.stats', { d: trn('lib.decksN', keys.length), w: trn('words.count', words), n: due }) : tr('lib.statsEmpty');
+  }
   function renderPhoneDecks(keys) {
     var box = $('phoneDecks'), list = $('phoneDeckList'); if (!box || !list) return;
     list.textContent = '';
@@ -2877,11 +2885,12 @@
     persistLibrary(); renderDaily();
   }
   function renderDaily() {
+    renderLibStats();
     renderSteps();
     var h = library.history[L.day()] || { answers: 0 };
     $('streakCount').textContent = trn('streak.days', library.streak.count || 0);
     $('streakChip').hidden = !(library.streak.count > 0); // a streak shows up from its first day, not as "0 days"
-    $('dailyTitle').textContent = tr(h.answers >= library.goal ? 'daily.done' : 'daily.almost');
+    $('dailyTitle').textContent = h.answers >= library.goal ? tr('daily.done') : trn('daily.almost', library.goal - h.answers); // v2.56.12: a number, not a slogan
     $('dailyText').textContent = tr('daily.text', { a: h.answers, g: library.goal });
     $('dailyBar').style.width = Math.min(100, h.answers / library.goal * 100) + '%';
     $('freezeEnabled').checked = library.streak.enabled;

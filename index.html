@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.56.11" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.11" />
-  <link rel="stylesheet" href="app.min.css?v=2.56.11" />
+  <link rel="preload" href="core.min.js?v=2.56.12" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.12" />
+  <link rel="stylesheet" href="app.min.css?v=2.56.12" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -30,7 +30,6 @@
       </span>
       <span class="logo-text">Word<em>zone</em></span>
     </a>
-    <p class="side-slogan" data-i18n="footer.tag">Меньше шума. Больше смысла.</p>
     <nav class="side-nav" aria-label="Основная навигация" data-i18n-attr="aria-label:nav.aria">
       <p class="side-group" data-i18n="side.learning">Обучение</p>
       <button type="button" class="nav-link active" id="navStudy"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span data-i18n="nav.study">Учить слова</span></button>
@@ -102,8 +101,7 @@
       </aside>
       <div class="hero hero-banner" id="heroBanner">
         <div class="hero-copy">
-          <span class="eyebrow"><span class="edition-dot"></span><span data-i18n="hero.eyebrow">МАЛЕНЬКАЯ ПРИВЫЧКА. БОЛЬШОЙ СЛОВАРЬ.</span></span>
-          <h1 data-i18n-html="hero.h1">Не просто слова.<br><em>Твои новые мысли.</em></h1>
+          <h1 data-i18n-html="hero.h1">Карточки из любых слов<br><em>за секунды.</em></h1>
           <p class="sub" data-i18n="hero.sub">Вставь слова или текст — ИИ сделает карточки, объяснит грамматику и напомнит повторить вовремя.</p>
           <div class="hero-phone-actions"><button class="btn primary" id="btnHeroWrite" type="button" data-i18n="hero.write">Вписать свои слова ↓</button><button class="btn hero-demo" id="btnHeroDemo" type="button" data-i18n="hero.demo">Попробовать на демо-колоде</button></div>
           <div class="hero-note"><span data-i18n="hero.n1">Твой темп</span><span data-i18n="hero.n2">Умные повторения</span><span data-i18n="hero.n3">Без регистрации</span></div>
@@ -335,7 +333,7 @@
       </div>
     </section>
     <section class="screen" id="screen-library">
-      <div class="library-intro"><div><span class="eyebrow" data-i18n="lib.eyebrow">ТВОЯ КОЛЛЕКЦИЯ ЗНАНИЙ</span><h1 data-i18n="lib.h1">Моя библиотека</h1><p data-i18n="lib.sub">Всё, что ты уже знаешь. И то, что скоро запомнишь.</p></div><button class="btn primary" id="btnAddDeck" type="button" data-i18n="lib.newDeck">+ Новая колода</button></div>
+      <div class="library-intro"><div><h1 data-i18n="lib.h1">Моя библиотека</h1><p id="libStats" aria-live="polite"></p></div><button class="btn primary" id="btnAddDeck" type="button" data-i18n="lib.newDeck">+ Новая колода</button></div>
       <section class="goal-strip goal-strip-lib" id="goalStripLib" hidden aria-label="Цель" data-i18n-attr="aria-label:goal.aria"></section>
       <div class="daily-panel"><div><strong id="dailyTitle" data-i18n="daily.title0">Сегодня — новый шаг</strong><p id="dailyText">0 из 10 ответов</p><div class="daily-track"><i id="dailyBar"></i></div></div><label class="freeze-control"><input type="checkbox" id="freezeEnabled" checked> Streak Freeze <span id="freezeBalance">· 2 защиты</span></label><label class="freeze-control"><span data-i18n="daily.goal">Цель</span> <input id="dailyGoal" type="number" min="1" max="200" value="10" aria-label="Дневная цель" data-i18n-attr="aria-label:daily.goalAria" class="goal-input"></label><label class="freeze-control"><span data-i18n="daily.batch">За подход</span> <select id="batchSize" class="mini-select" aria-label="Слов за подход" data-i18n-attr="aria-label:daily.batchAria"><option value="0" data-i18n="daily.batchAll">все</option><option value="10">10</option><option value="20">20</option><option value="30">30</option></select></label></div>
       <div class="activity-panel">
@@ -364,8 +362,8 @@
       </div>
       <details class="motion-details" hidden><summary data-i18n="motion.summary">За кулисами: Native motion / EffectCraft</summary><p data-i18n="motion.p">Спокойное движение интерфейса — CSS. Ниже — сохранённый рендер композиции из EffectCraft CLI; это отдельный motion-этюд, не стиль приложения.</p><div class="motion-comparison"><div class="motion-native"><b data-i18n="motion.native">Слово за словом.</b></div><video src="motion/streak-celebration.mp4" controls preload="none" playsinline aria-label="Композиция EffectCraft" data-i18n-attr="aria-label:motion.video"></video></div></details>
     </section>
-    <section class="screen" id="screen-test"><div class="library-intro"><div><span class="eyebrow" data-i18n="test.eyebrow">ЛЕКСИЧЕСКИЙ ЗАПАС</span><h1 data-i18n="test.h1">Проверь глубину словаря</h1><p data-i18n="test.sub">Контекстные вопросы и точное значение. Четыре варианта, один ответ.</p></div></div><div class="panel quiz-panel"><p class="quiz-empty" id="quizEmpty" hidden><span data-i18n="test.empty">Для теста и игры нужна колода хотя бы из 4 слов.</span> <button class="link" type="button" id="btnQuizEmpty" data-i18n="lib.emptyBtn">Добавить слова →</button></p><div class="deck-bar" data-deck-bar="test"></div><label class="field deck-synced"><span data-i18n="test.deck">Выбери колоду</span><span class="select-wrap"><select id="quizDeck" tabindex="-1"></select></span></label><button class="btn primary" id="btnQuizStart" type="button" data-i18n="test.start">Начать мини-тест →</button><p class="mini" data-i18n="test.note">Нужно минимум 4 разных слова. Если есть примеры — используем пропуски в предложениях, иначе проверим значение.</p><div id="quizBody" hidden><span class="eyebrow" id="quizProgress"></span><h2 id="quizQuestion"></h2><div class="quiz-options" id="quizOptions"></div><div class="quiz-answer" id="quizAnswer" role="status"></div><button class="btn" id="btnQuizNext" type="button" hidden data-i18n="btn.next">Дальше →</button></div></div><div class="panel match-panel"><div class="match-head"><div><span class="eyebrow" data-i18n="match.eyebrow">МИНИ-ИГРА</span><h2 data-i18n="match.title">Найди пару</h2><p class="mini" data-i18n="match.sub">Соедини слово с переводом как можно быстрее. Колода — та же, что выбрана выше.</p></div><button class="btn primary" id="btnMatchStart" type="button" data-i18n="match.start">Играть →</button></div><div class="match-stats" id="matchStats" hidden><span id="matchTime">0:00</span><span id="matchMistakes"></span><span id="matchBest"></span></div><div class="match-grid" id="matchGrid"></div></div>
-      <div class="trainers" id="trainers"><div class="trainers-head"><span class="eyebrow" data-i18n="trainers.eyebrow">ТРЕНАЖЁРЫ</span><h2 data-i18n="trainers.h2">Тренажёры по твоим словам</h2><p class="mini" data-i18n="trainers.sub">Короткие упражнения: контекст, буквы, скорость, сундуки и босс. Каждый ответ идёт в интервальные повторения.</p></div>
+    <section class="screen" id="screen-test"><div class="library-intro"><div><h1 data-i18n="test.h1">Проверь глубину словаря</h1><p data-i18n="test.sub">Контекстные вопросы и точное значение. Четыре варианта, один ответ.</p></div></div><div class="panel quiz-panel"><p class="quiz-empty" id="quizEmpty" hidden><span data-i18n="test.empty">Для теста и игры нужна колода хотя бы из 4 слов.</span> <button class="link" type="button" id="btnQuizEmpty" data-i18n="lib.emptyBtn">Добавить слова →</button></p><div class="deck-bar" data-deck-bar="test"></div><label class="field deck-synced"><span data-i18n="test.deck">Выбери колоду</span><span class="select-wrap"><select id="quizDeck" tabindex="-1"></select></span></label><button class="btn primary" id="btnQuizStart" type="button" data-i18n="test.start">Начать мини-тест →</button><p class="mini" data-i18n="test.note">Нужно минимум 4 разных слова. Если есть примеры — используем пропуски в предложениях, иначе проверим значение.</p><div id="quizBody" hidden><span class="eyebrow" id="quizProgress"></span><h2 id="quizQuestion"></h2><div class="quiz-options" id="quizOptions"></div><div class="quiz-answer" id="quizAnswer" role="status"></div><button class="btn" id="btnQuizNext" type="button" hidden data-i18n="btn.next">Дальше →</button></div></div><div class="panel match-panel"><div class="match-head"><div><span class="eyebrow" data-i18n="match.eyebrow">МИНИ-ИГРА</span><h2 data-i18n="match.title">Найди пару</h2><p class="mini" data-i18n="match.sub">Соедини слово с переводом как можно быстрее. Колода — та же, что выбрана выше.</p></div><button class="btn primary" id="btnMatchStart" type="button" data-i18n="match.start">Играть →</button></div><div class="match-stats" id="matchStats" hidden><span id="matchTime">0:00</span><span id="matchMistakes"></span><span id="matchBest"></span></div><div class="match-grid" id="matchGrid"></div></div>
+      <div class="trainers" id="trainers"><div class="trainers-head"><h2 data-i18n="trainers.h2">Тренажёры по твоим словам</h2><p class="mini" data-i18n="trainers.sub">Короткие упражнения: контекст, буквы, скорость, сундуки и босс. Каждый ответ идёт в интервальные повторения.</p></div>
       <select id="gameDeck" class="deck-shadow" tabindex="-1" aria-hidden="true" aria-label="deck" hidden></select>
       <div class="games-hub" id="gamesHub">
         <button type="button" class="game-tile tile-context" data-game="context"><span class="game-icon" aria-hidden="true">“_”</span><strong data-i18n="game.context">Слово в контексте</strong><span data-i18n="game.contextSub">Вставь пропущенное слово в предложение</span><span class="game-best"></span></button>
@@ -386,7 +384,7 @@
       </div>
     </section>
     <section class="screen" id="screen-games">
-      <div class="library-intro"><div><span class="eyebrow" data-i18n="games.eyebrow">ИГРАЙ СО СВОИМИ СЛОВАМИ</span><h1 data-i18n="games.h1">Игры</h1><p data-i18n="games.sub">Большие игры на твоих словах. Каждый ответ идёт в дневную цель и в повторения.</p></div></div>
+      <div class="library-intro"><div><h1 data-i18n="games.h1">Игры</h1><p data-i18n="games.sub">Большие игры на твоих словах. Каждый ответ идёт в дневную цель и в повторения.</p></div></div>
       <p class="quiz-empty" id="arcadeEmpty" hidden><span data-i18n="test.empty">Для теста и игры нужна колода хотя бы из 4 слов.</span> <button class="link" type="button" id="btnGamesDemo" data-i18n="hero.demo">Попробовать демо-колоду</button></p>
       <div class="deck-bar" data-deck-bar="games"></div>
       <div class="arcade-hub arcade-two" id="arcadeHub">
@@ -398,7 +396,7 @@
       <div class="so-stage sl-stage" id="sliceStage" role="region" aria-label="Разрежь слово" data-i18n-attr="aria-label:slice.title" aria-busy="true" hidden></div>
     </section>
     <section class="screen" id="screen-grammar">
-      <div class="library-intro"><div><span class="eyebrow" data-i18n="course.eyebrow">ГРАММАТИКА ПО ШАГАМ</span><h1 data-i18n="gram.h1">Грамматика</h1><p data-i18n="course.sub">Выбери язык и иди по темам: короткое правило, живые примеры и тренировка — минут на пять.</p></div></div>
+      <div class="library-intro"><div><h1 data-i18n="gram.h1">Грамматика</h1><p data-i18n="course.sub">Выбери язык и иди по темам: короткое правило, живые примеры и тренировка — минут на пять.</p></div></div>
       <div class="gram-tabs" role="tablist" aria-label="Грамматика" data-i18n-attr="aria-label:gram.h1">
         <button class="gram-tab on" type="button" role="tab" id="tabCourse" aria-selected="true" aria-controls="courseView" data-i18n="course.tab">Курс</button>
         <button class="gram-tab" type="button" role="tab" id="tabWords" aria-selected="false" aria-controls="wordsGrammar" tabindex="-1" data-i18n="course.tabWords">Из моих слов</button>
@@ -563,7 +561,7 @@
       </section>
     </section>
     <section class="screen" id="screen-progress">
-      <div class="library-intro"><div><span class="eyebrow" data-i18n="prog.eyebrow">ПРОГРЕСС</span><h1 data-i18n="prog.h1">Как идёт обучение</h1><p data-i18n="prog.sub">Что ждёт впереди, насколько прочно держатся слова и где нужна помощь.</p></div><div class="deck-bar prog-deck" data-deck-bar="progress"></div><label class="filter-field prog-deck deck-synced"><span data-i18n="home.deck">Колода</span><span class="select-wrap"><select id="progDeck" tabindex="-1"></select></span></label></div>
+      <div class="library-intro"><div><h1 data-i18n="prog.h1">Как идёт обучение</h1><p data-i18n="prog.sub">Что ждёт впереди, насколько прочно держатся слова и где нужна помощь.</p></div><div class="deck-bar prog-deck" data-deck-bar="progress"></div><label class="filter-field prog-deck deck-synced"><span data-i18n="home.deck">Колода</span><span class="select-wrap"><select id="progDeck" tabindex="-1"></select></span></label></div>
       <p class="quiz-empty" id="progEmpty" hidden><span data-i18n="prog.empty">Статистика появится после первых ответов.</span> <button class="link" type="button" id="btnProgEmpty" data-i18n="lib.emptyBtn">Добавить слова →</button></p>
       <div class="panel prog-fresh" id="progFresh" hidden><p data-i18n="prog.fresh">Графики появятся после первой тренировки: здесь будет видно, сколько слов ты выучил и какие даются труднее всего.</p><button class="btn primary" type="button" id="btnProgFresh" data-i18n="prog.freshBtn">Начать тренировку →</button></div>
       <div id="progBody">
@@ -599,7 +597,7 @@
     <button type="button" class="tab" id="tabProgress" data-nav="navProgress"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span data-i18n="nav.progress">Прогресс</span></button>
     <button type="button" class="tab" id="tabMore" aria-controls="sidebar" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg><span data-i18n="side.more">Ещё</span></button>
   </nav>
-  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.tag">Меньше шума. Больше смысла.</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.47</span><span class="foot-gh">GitHub: <a href="https://github.com/abdurahmon-numonov" target="_blank" rel="noopener noreferrer">abdurahmon-numonov</a> · <a href="https://github.com/saloshka12" target="_blank" rel="noopener noreferrer">saloshka12</a></span></footer>
+  <footer class="app-footer"><span>Wordzone</span><span data-i18n="footer.made">Сделано для ежедневной практики · v2.47</span><span class="foot-gh">GitHub: <a href="https://github.com/abdurahmon-numonov" target="_blank" rel="noopener noreferrer">abdurahmon-numonov</a> · <a href="https://github.com/saloshka12" target="_blank" rel="noopener noreferrer">saloshka12</a></span></footer>
   </div>
   </div>
 
@@ -925,7 +923,7 @@
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.56.11"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.56.12"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

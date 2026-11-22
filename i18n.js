@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.9'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.10'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -55,7 +55,7 @@
     'nudge.signIn': ['У меня уже есть аккаунт', 'I already have an account', 'Menda akkaunt bor'],
     'side.more': ['Ещё', 'More', 'Yana'],
 
-    // v2.55 — for teachers: homework decks by link / QR
+    // v2.55 — for teachers: homework decks by link
     "side.teacher": ["Для учителя", "For teachers", "O'qituvchi uchun"],
     "nav.teacher": ["Домашка ученикам", "Homework for students", "O'quvchilarga uy vazifasi"],
     "teach.eyebrow": ["ДЛЯ УЧИТЕЛЯ", "FOR TEACHERS", "O'QITUVCHI UCHUN"],
@@ -63,8 +63,8 @@
     "teach.sub": ["Впишите слова — ученики получат ссылку и выучат их здесь, карточками и играми. Ученикам не нужна регистрация.", "Type the words — your students get a link and learn them here with flashcards and games. Students don’t need to sign up.", "So'zlarni yozing — o'quvchilar havola oladi va ularni shu yerda kartochkalar va o'yinlar bilan yodlaydi. O'quvchilarga ro'yxatdan o'tish shart emas."],
     "teach.how1": ["Впишите слова", "Type the words", "So'zlarni yozing"],
     "teach.how1s": ["Можно сразу с переводом или без — переведёт ИИ.", "With translations or without — AI will translate them.", "Tarjimasi bilan yoki tarjimasiz — sun'iy intellekt tarjima qiladi."],
-    "teach.how2": ["Получите ссылку и QR-код", "Get a link and a QR code", "Havola va QR-kod oling"],
-    "teach.how2s": ["Отправьте в чат класса или покажите QR на доске.", "Send it to the class chat or show the QR on the board.", "Sinf chatiga yuboring yoki QR-kodni doskada ko'rsating."],
+    "teach.how2": ["Получите ссылку", "Get a link", "Havola oling"],
+    "teach.how2s": ["Отправьте её в чат класса.", "Send it to the class chat.", "Uni sinf chatiga yuboring."],
     "teach.how3": ["Ученики учат", "Students learn", "O'quvchilar yodlaydi"],
     "teach.how3s": ["Открывают ссылку — и сразу начинают тренировку.", "They open the link and start practising right away.", "Havolani ochishadi va darhol mashg'ulotni boshlashadi."],
     "teach.s1": ["Название и языки", "Title and languages", "Nomi va tillar"],
@@ -76,15 +76,12 @@
     "teach.s2": ["Слова", "Words", "So'zlar"],
     "teach.s2h": ["Одно слово на строку. С переводом — через тире: apple — яблоко. Без перевода ИИ переведёт сам, а вы проверите.", "One word per line. With a translation, use a dash: apple — яблоко. Without one, AI translates it and you check.", "Har qatorda bitta so'z. Tarjima bilan — tire orqali: apple — olma. Tarjimasiz yozsangiz, sun'iy intellekt tarjima qiladi, siz tekshirasiz."],
     "teach.example": ["Вставить пример", "Insert an example", "Namuna qo'yish"],
-    "teach.wordsPh": ["travel — путешествие\nluggage — багаж\npassport\nboarding pass", "travel — путешествие\nluggage — багаж\npassport\nboarding pass", "travel — sayohat\nluggage — yuk\npassport\nboarding pass"],
     "teach.s3": ["Для учеников", "For students", "O'quvchilar uchun"],
     "teach.optional": ["необязательно", "optional", "ixtiyoriy"],
     "teach.s3h": ["Ученики увидят это, когда откроют ссылку.", "Students will see this when they open the link.", "Havolani ochganda o'quvchilar buni ko'radi."],
     "teach.by": ["Ваше имя", "Your name", "Ismingiz"],
-    "teach.byPh": ["Ms. Karimova", "Ms. Karimova", "Karimova opa"],
     "teach.due": ["Выучить до", "Learn by", "Qaysi sanagacha"],
     "teach.note": ["Сообщение ученикам", "Message to students", "O'quvchilarga xabar"],
-    "teach.notePh": ["Выучите к пятнице, будет словарный диктант.", "Learn these by Friday — there will be a vocabulary quiz.", "Jumagacha yodlang — lug'at diktanti bo'ladi."],
     "teach.s4": ["Готово? Получите ссылку", "Done? Get the link", "Tayyormi? Havolani oling"],
     "teach.s4h": ["Сначала покажем перевод — его можно поправить.", "First we show the translations — you can fix them.", "Avval tarjimani ko'rsatamiz — uni tuzatish mumkin."],
     "teach.make": ["Создать домашку", "Create homework", "Uy vazifasini yaratish"],
@@ -104,13 +101,10 @@
     "teach.back": ["← Изменить слова", "← Edit words", "← So'zlarni o'zgartirish"],
     "teach.doneTitle": ["Домашка готова! Отправьте её ученикам", "Homework is ready! Send it to your students", "Uy vazifasi tayyor! Uni o'quvchilarga yuboring"],
     "teach.way1": ["Отправьте ссылку в чат класса", "Send the link to the class chat", "Havolani sinf chatiga yuboring"],
-    "teach.way2": ["…или покажите QR-код на доске", "…or show the QR code on the board", "…yoki QR-kodni doskada ko'rsating"],
-    "teach.showClass": ["Показать классу на весь экран", "Show the class full screen", "Sinfga to'liq ekranda ko'rsatish"],
     "teach.try": ["Посмотреть, что увидит ученик", "See what a student will see", "O'quvchi nimani ko'rishini ko'rish"],
     "teach.another": ["+ Создать ещё одну домашку", "+ Create another homework", "+ Yana bitta uy vazifasi yaratish"],
     "teach.mine": ["Мои домашки", "My homework", "Mening uy vazifalarim"],
     "teach.mineNote": ["Хранятся только на этом устройстве. Ссылку можно скопировать снова в любой момент.", "Kept on this device only. You can copy a link again at any time.", "Faqat shu qurilmada saqlanadi. Havolani istalgan payt qayta nusxalash mumkin."],
-    "teach.classKicker": ["Наведите камеру телефона на код", "Point your phone camera at the code", "Telefon kamerasini kodga qarating"],
     "teach.errStore": ["Не получилось сохранить список домашек на этом устройстве.", "Could not save the homework list on this device.", "Uy vazifalari ro'yxatini bu qurilmada saqlab bo'lmadi."],
     "teach.countAuto": ["без перевода: {n} — переведёт ИИ", "no translation: {n} — AI will translate", "tarjimasiz: {n} — sun'iy intellekt tarjima qiladi"],
     "teach.errNoWords": ["Впишите хотя бы одно слово.", "Type at least one word.", "Kamida bitta so'z yozing."],
@@ -123,11 +117,8 @@
     "teach.duePast": ["срок прошёл", "deadline passed", "muddat o'tdi"],
     "teach.dueToday": ["сдать сегодня", "due today", "bugun topshiriladi"],
     "teach.dueTomorrow": ["сдать завтра", "due tomorrow", "ertaga topshiriladi"],
-    "teach.qrTooLong": ["Для QR-кода слишком много слов — отправьте ссылку.", "Too many words for a QR code — send the link instead.", "QR-kod uchun so'zlar juda ko'p — havolani yuboring."],
-    "teach.qrHint": ["Ученики наводят камеру телефона на код", "Students point their phone camera at the code", "O'quvchilar telefon kamerasini kodga qaratadi"],
     "teach.copied": ["Ссылка скопирована — вставьте её в чат класса.", "Link copied — paste it into the class chat.", "Havola nusxalandi — uni sinf chatiga qo'ying."],
     "teach.copyLink": ["Копировать ссылку", "Copy link", "Havolani nusxalash"],
-    "teach.qr": ["QR на экран", "QR on screen", "QR ekranga"],
     "teach.delete": ["Удалить", "Delete", "O'chirish"],
     "teach.deleted": ["Домашка удалена из списка. Ссылка у учеников продолжит работать.", "Removed from the list. The link your students have keeps working.", "Ro'yxatdan o'chirildi. O'quvchilardagi havola ishlashda davom etadi."],
     "teach.shareText": ["Домашка: {t}", "Homework: {t}", "Uy vazifasi: {t}"],

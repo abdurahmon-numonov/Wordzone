@@ -11,9 +11,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%81%3C/text%3E%3C/svg%3E" />
   <!-- Self-hosted fonts (tools/fetch-fonts.js): no third-party requests, works offline and under a strict CSP. -->
   <!-- the app script first: fonts must not take the bandwidth it needs on a slow connection -->
-  <link rel="preload" href="core.min.js?v=2.56.9" as="script" fetchpriority="high" />
-  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.9" />
-  <link rel="stylesheet" href="app.min.css?v=2.56.9" />
+  <link rel="preload" href="core.min.js?v=2.56.10" as="script" fetchpriority="high" />
+  <link rel="stylesheet" href="vendor/fonts/fonts.css?v=2.56.10" />
+  <link rel="stylesheet" href="app.min.css?v=2.56.10" />
   <script>try{var r=document.documentElement,s=JSON.parse(localStorage.getItem('vm.display')||'null')||{},m=/^(system|light|dark|mint|midnight|dusk)$/.test(s.theme),t=m?s.theme:localStorage.getItem('vm.theme'),p=m&&{mint:'light',midnight:'dark',dusk:'dark'}[t];if(p){r.dataset.palette=t;t=p}if(t==='system')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';r.dataset.theme=t==='dark'?'dark':'light';if(/^(s|l|xl)$/.test(s.size))r.dataset.size=s.size;if(s.contrast===true)r.dataset.contrast='high';if(s.spacing===true)r.dataset.spacing='wide'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
@@ -460,12 +460,12 @@
       </div>
     </section>
 
-    <!-- ============ FOR TEACHERS (v2.55): homework decks shared by link / QR ============ -->
+    <!-- ============ FOR TEACHERS (v2.55): homework decks shared by link ============ -->
     <section class="screen" id="screen-teacher">
       <div class="library-intro"><div><span class="eyebrow" data-i18n="teach.eyebrow">ДЛЯ УЧИТЕЛЯ</span><h1 data-i18n="teach.h1">Задайте слова на дом</h1><p data-i18n="teach.sub">Впишите слова — ученики получат ссылку и выучат их здесь, карточками и играми. Ученикам не нужна регистрация.</p></div></div>
       <ol class="t-how" aria-label="Как это работает" data-i18n-attr="aria-label:steps.aria">
         <li><span class="t-how-n" aria-hidden="true">1</span><strong data-i18n="teach.how1">Впишите слова</strong><span data-i18n="teach.how1s">Можно сразу с переводом или без — переведёт ИИ.</span></li>
-        <li><span class="t-how-n" aria-hidden="true">2</span><strong data-i18n="teach.how2">Получите ссылку и QR-код</strong><span data-i18n="teach.how2s">Отправьте в чат класса или покажите QR на доске.</span></li>
+        <li><span class="t-how-n" aria-hidden="true">2</span><strong data-i18n="teach.how2">Получите ссылку</strong><span data-i18n="teach.how2s">Отправьте её в чат класса.</span></li>
         <li><span class="t-how-n" aria-hidden="true">3</span><strong data-i18n="teach.how3">Ученики учат</strong><span data-i18n="teach.how3s">Открывают ссылку — и сразу начинают тренировку.</span></li>
       </ol>
 
@@ -486,7 +486,7 @@
           <span class="c-mark" aria-hidden="true"><span class="c-num">2</span></span>
           <div class="c-body">
             <div class="c-head c-head-row"><div><h3 id="tStep2" data-i18n="teach.s2">Слова</h3><p class="c-hint" data-i18n="teach.s2h">Одно слово на строку. С переводом — через тире: apple — яблоко. Без перевода ИИ переведёт сам, а вы проверите.</p></div><button class="chip-btn" type="button" id="tExample" data-i18n="teach.example">Вставить пример</button></div>
-            <textarea id="tWords" class="t-words" rows="8" spellcheck="false" aria-labelledby="tStep2" placeholder="travel — путешествие&#10;luggage — багаж&#10;passport&#10;boarding pass" data-i18n-attr="placeholder:teach.wordsPh"></textarea>
+            <textarea id="tWords" class="t-words" rows="8" spellcheck="false" aria-labelledby="tStep2"></textarea>
             <p class="mini t-count" id="tCount" aria-live="polite"></p>
           </div>
         </section>
@@ -495,10 +495,10 @@
           <div class="c-body">
             <div class="c-head"><h3 id="tStep3"><span data-i18n="teach.s3">Для учеников</span> <span class="t-optional" data-i18n="teach.optional">необязательно</span></h3><p class="c-hint" data-i18n="teach.s3h">Ученики увидят это, когда откроют ссылку.</p></div>
             <div class="t-meta">
-              <label class="field t-field"><span data-i18n="teach.by">Ваше имя</span><input id="tBy" type="text" maxlength="40" autocomplete="name" placeholder="Ms. Karimova" data-i18n-attr="placeholder:teach.byPh" /></label>
+              <label class="field t-field"><span data-i18n="teach.by">Ваше имя</span><input id="tBy" type="text" maxlength="40" autocomplete="name" /></label>
               <label class="field t-field"><span data-i18n="teach.due">Выучить до</span><input id="tDue" type="date" /></label>
             </div>
-            <label class="field t-field"><span data-i18n="teach.note">Сообщение ученикам</span><input id="tNote" type="text" maxlength="200" autocomplete="off" placeholder="Выучите к пятнице, будет словарный диктант." data-i18n-attr="placeholder:teach.notePh" /></label>
+            <label class="field t-field"><span data-i18n="teach.note">Сообщение ученикам</span><input id="tNote" type="text" maxlength="200" autocomplete="off" /></label>
             <div class="t-track" id="tTrack" hidden>
               <p class="t-track-on" id="tTrackOn" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> <span data-i18n="teach.trackOn">Вы вошли в аккаунт: вы увидите, кто из учеников учил слова и как точно отвечал.</span></p>
               <div class="t-track-off" id="tTrackOff" hidden><p data-i18n="teach.trackOff">Хотите видеть результаты учеников? Войдите в бесплатный аккаунт — ученики по-прежнему без регистрации, они только вводят имя.</p><button class="chip-btn" type="button" id="tTrackSignIn" data-i18n="acc.signIn">Войти</button></div>
@@ -531,12 +531,9 @@
             <p class="t-label" data-i18n="teach.way1">Отправьте ссылку в чат класса</p>
             <div class="share-link"><input id="tLink" type="text" readonly aria-label="Ссылка на колоду" data-i18n-attr="aria-label:share.linkLabel" /><button class="btn primary" type="button" id="tCopy" data-i18n="share.copy">Копировать</button></div>
             <button class="btn block" type="button" id="tShareNative" hidden data-i18n="share.native">Поделиться…</button>
-            <p class="t-label" data-i18n="teach.way2">…или покажите QR-код на доске</p>
-            <button class="btn block" type="button" id="tShowClass"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> <span data-i18n="teach.showClass">Показать классу на весь экран</span></button>
             <p class="mini t-done-track" id="tDoneTrack"></p>
             <div class="t-done-more"><button class="link" type="button" id="tTry" data-i18n="teach.try">Посмотреть, что увидит ученик</button><button class="link" type="button" id="tAnother" data-i18n="teach.another">+ Создать ещё одну домашку</button></div>
           </div>
-          <figure class="share-qr t-qr" id="tQr"></figure>
         </div>
       </section>
 
@@ -922,22 +919,11 @@
     </div>
   </div>
 
-  <!-- a teacher shows the homework QR to the class -->
-  <div class="overlay t-class" id="tClass" hidden role="dialog" aria-modal="true" aria-labelledby="tClassTitle">
-    <div class="t-class-card">
-      <p class="t-class-kicker" data-i18n="teach.classKicker">Наведите камеру телефона на код</p>
-      <h2 id="tClassTitle"></h2>
-      <figure class="t-class-qr" id="tClassQr"></figure>
-      <p class="t-class-sub" id="tClassSub"></p>
-      <button class="btn" type="button" id="tClassClose" data-i18n="share.close">Закрыть</button>
-    </div>
-  </div>
-
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   <div class="goal-celebration" id="goalCelebration" hidden role="status"><div class="goal-motion" id="goalMotion" aria-hidden="true"></div><div><strong data-i18n="goal.title">Ещё один шаг вперёд.</strong><p data-i18n="goal.text">Дневная цель достигнута. Хорошая работа!</p></div><button id="closeGoalMotion" type="button" aria-label="Закрыть уведомление" data-i18n-attr="aria-label:goal.close">×</button></div>
 
   <!-- lottie + the achievement animation are loaded on demand by motion.js -->
-  <script defer fetchpriority="high" src="core.min.js?v=2.56.9"></script>
+  <script defer fetchpriority="high" src="core.min.js?v=2.56.10"></script>
   <!-- fishing.js, cafe.js and defense.js arrive in arcade.min.js, loaded by app.js when idle or when Games opens -->
 </body>
 </html>

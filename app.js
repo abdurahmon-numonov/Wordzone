@@ -1266,6 +1266,8 @@
       return;
     }
     answerLocked = true;
+    // v2.56.9: a short buzz on phones (Android) — one tick for "knew", a double tap for "again"
+    if (navigator.vibrate && window.matchMedia && window.matchMedia('(pointer:coarse)').matches && document.documentElement.dataset.motion !== 'off') { try { navigator.vibrate(knew ? 12 : [16, 60, 16]); } catch (e) {} }
     undoSnap = { card: c, fields: { streak: c.streak, fails: c.fails, box: c.box, due: c.due, ease: c.ease, interval: c.interval, reps: c.reps, lapses: c.lapses }, queue: state.roundQueue.slice(), side: state.curSide,
       known: state.known, forgot: state.forgot, answers: state.answers, combo: combo, round: state.round, roundTotal: state.roundTotal,
       nextRoundQueue: state.nextRoundQueue ? state.nextRoundQueue.slice() : null, day: L ? L.day() : null, knew: knew };

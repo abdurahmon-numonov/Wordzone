@@ -3001,7 +3001,6 @@
       defaultTarget: function () { var d = activeDeck(); return d ? d.target : state.cfg.target; },
       parse: parseInput,
       translate: teacherTranslate,
-      qr: async function (text) { await loadQr(); return qrSvg(text); },
       linkBase: function () { return location.origin + location.pathname; },
       preview: function (deck) { showHomework(deck); },
       // The account (homework kept in it, the students' results). Null until the site's Supabase is known.
@@ -4659,7 +4658,6 @@
       if (!$('deckDialog').hidden) { if (e.key === 'Escape') { e.preventDefault(); closeDeckDialog(); } return; }
       if (!$('sessionDialog').hidden) { if (e.key === 'Escape') { e.preventDefault(); closeSessionSettings(); } return; }
       if (!$('hwInvite').hidden) { if (e.key === 'Escape') { e.preventDefault(); closeHomework(); } else if (e.key === 'Tab') trapIn($('hwInvite'), e); return; }
-      if (!$('tClass').hidden) return; // teacher.js closes it
       if (!$('shareDialog').hidden || !$('sharePreview').hidden || !$('displayDialog').hidden) {
         if (e.key === 'Escape') { e.preventDefault(); if (!$('displayDialog').hidden) closeDisplay(); else if (!$('shareDialog').hidden) closeShare(); else closePreview(); }
         return;

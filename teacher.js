@@ -1,7 +1,7 @@
-/* For teachers (v2.55): make a homework deck and hand it out as a link or a QR code, like Kahoot or Zoom.
+/* For teachers (v2.55): make a homework deck and hand it out as a link, like Kahoot or Zoom.
    1 · title & languages → 2 · words (with or without translations) → 3 · optional name, deadline, note.
    Words without a translation are translated (AI, else the free translator), the teacher checks them in a
-   table, then gets a #deck=… link (share.js, with homework meta) and a QR code to show the class.
+   table, then gets a #deck=… link (share.js, with homework meta) to send to the class.
    Nothing goes to a server: the words live in the link, the teacher's list of homework lives in localStorage.
    v2.56: a teacher who is signed in keeps homework in the account (supabase/teacher.sql) and sees each student's results;
    a student who opens such a link gives a name, and every practice on that deck adds to the totals the teacher sees.
@@ -15,7 +15,6 @@
   var KEY = 'vm.teacher';
   var MAX_LIST = 40;       // homework kept in "My homework"
   var MAX_WORDS = 300;     // more would not fit in one link anyway
-  var CLASS_QR = 2300;     // a projected QR can be denser than the one in the dialog
   var DAY = 86400000;
 
   /* ---------- pure helpers ---------- */
@@ -406,35 +405,11 @@
       $('tLink').value = it.link;
       $('tShareNative').hidden = typeof navigator.share !== 'function';
       $('tDoneTrack').textContent = it.cloud ? tr('teach.doneTracked') : cloud() && !signedIn() ? tr('teach.doneNotTracked') : '';
-      $('tShowClass').disabled = it.link.length > CLASS_QR;
-      $('tShowClass').title = it.link.length > CLASS_QR ? tr('teach.qrTooLong') : '';
       showOnly('done');
-      var host = $('tQr'); host.textContent = '';
-      if (it.link.length > CLASS_QR) { host.appendChild(h('figcaption', { class: 'mini', text: tr('teach.qrTooLong') })); return; }
-      try { host.appendChild(await d.qr(it.link)); host.appendChild(h('figcaption', { class: 'mini', text: tr('teach.qrHint') })); }
-      catch (e) { host.appendChild(h('figcaption', { class: 'mini', text: tr('share.qrFailed') })); }
     }
     async function copy(link) {
       try { await navigator.clipboard.writeText(link); d.toast(tr('teach.copied'), 'ok', 3000); }
       catch (e) { if (!$('tDone').hidden) $('tLink').select(); d.toast(tr('share.copyManual'), 'err', 4000); }
-    }
-    var classOpener = null;
-    async function showClass(it) {
-      if (it.link.length > CLASS_QR) { d.toast(tr('teach.qrTooLong'), 'err', 4000); return; }
-      classOpener = document.activeElement;
-      $('tClassTitle').textContent = it.title;
-      $('tClassSub').textContent = metaLine(it);
-      var host = $('tClassQr'); host.textContent = '';
-      $('tClass').hidden = false;
-      $('tClassClose').focus();
-      try { host.appendChild(await d.qr(it.link)); } catch (e) { host.appendChild(h('figcaption', { text: tr('share.qrFailed') })); }
-      try { if ($('tClass').requestFullscreen && !document.fullscreenElement) await $('tClass').requestFullscreen(); } catch (e) {}
-    }
-    function closeClass() {
-      if ($('tClass').hidden) return;
-      $('tClass').hidden = true;
-      try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {}
-      if (classOpener && classOpener.focus && document.contains(classOpener)) classOpener.focus();
     }
     async function tryIt(it) {
       try { d.preview(await d.share.decodeDeck(it.link.split('#deck=')[1], codes), true); }
@@ -443,6 +418,7 @@
     function another() {
       token++; setBusy(false); rows = [];
       ['tTitle', 'tWords', 'tNote', 'tDue'].forEach(function (id) { $(id).value = ''; });
+      $('tDue').classList.add('is-empty');
       updateCount(); showOnly('form'); $('tTitle').focus();
     }
 
@@ -456,12 +432,10 @@
         var left = daysLeft(it.due);
         var due = it.due ? h('span', { class: 't-due' + (left !== null && left < 0 ? ' past' : left !== null && left <= 1 ? ' soon' : ''), text: left < 0 ? tr('teach.duePast') : left === 0 ? tr('teach.dueToday') : left === 1 ? tr('teach.dueTomorrow') : tr('teach.until', { d: formatDay(it.due, locale()) }) }) : null;
         var bCopy = h('button', { type: 'button', class: 'chip-btn' }, [tr('teach.copyLink')]);
-        var bQr = h('button', { type: 'button', class: 'chip-btn' }, [tr('teach.qr')]);
         var bDel = h('button', { type: 'button', class: 'chip-btn t-del-hw', 'aria-label': tr('teach.delete') + ': ' + it.title }, [tr('teach.delete')]);
         var bRes = it.cloud ? h('button', { type: 'button', class: 'chip-btn t-res-btn' }, [tr('teach.results')]) : null;
         if (bRes) bRes.onclick = function () { openResults(it); };
         bCopy.onclick = function () { copy(it.link); };
-        bQr.onclick = function () { showClass(it); };
         bDel.onclick = async function () {
           if (it.cloud) { // tracked: the students' results go with it, so it cannot be undone
             if (!window.confirm(tr('teach.deleteConfirm', { t: it.title }))) return;
@@ -478,7 +452,7 @@
         };
         list.appendChild(h('li', { class: 't-item' }, [
           h('div', { class: 't-item-copy' }, [h('strong', { text: it.title }), h('span', { class: 'mini', text: metaLine(Object.assign({}, it, { due: '' })) }), due]),
-          h('div', { class: 't-item-actions' }, [bRes, bCopy, bQr, bDel])
+          h('div', { class: 't-item-actions' }, [bRes, bCopy, bDel])
         ]));
       });
     }
@@ -542,12 +516,13 @@
     };
     if (store.last.by) $('tBy').value = store.last.by;
     $('tDue').min = todayISO();
+    function syncDue() { $('tDue').classList.toggle('is-empty', !$('tDue').value); }
+    $('tDue').addEventListener('input', syncDue); $('tDue').addEventListener('change', syncDue); syncDue();
     $('tForm').onsubmit = submit;
     $('tBack').onclick = function () { token++; setBusy(false); showOnly('form'); $('tWords').focus(); };
     $('tPublish').onclick = publish;
     $('tCopy').onclick = function () { if (made) copy(made.link); };
     $('tShareNative').onclick = function () { if (made) navigator.share({ title: made.title, text: tr('teach.shareText', { t: made.title }), url: made.link }).catch(function () {}); };
-    $('tShowClass').onclick = function () { if (made) showClass(made); };
     $('tTry').onclick = function () { if (made) tryIt(made); };
     $('tAnother').onclick = another;
     $('tTrackSignIn').onclick = function () { var c = cloud(); if (c) c.signIn(); };
@@ -562,10 +537,6 @@
       if (!on) { if (viewing) closeResults(); loadCloud(); }
       else if ($('screen-teacher').classList.contains('active')) loadCloud();
     });
-    $('tClassClose').onclick = closeClass;
-    $('tClass').addEventListener('click', function (e) { if (e.target === this) closeClass(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('tClass').hidden) closeClass(); });
-    document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement && !$('tClass').hidden) closeClass(); });
     updateCount(); renderList(); renderTrack();
 
     return {
@@ -574,7 +545,7 @@
     };
   }
 
-  return { KEY: KEY, MAX_WORDS: MAX_WORDS, CLASS_QR: CLASS_QR, normalizeStore: normalizeStore, addToList: addToList, daysLeft: daysLeft, formatDay: formatDay, todayISO: todayISO, rowsFrom: rowsFrom, exampleWords: exampleWords, validDay: validDay, mount: mount,
+  return { KEY: KEY, MAX_WORDS: MAX_WORDS, normalizeStore: normalizeStore, addToList: addToList, daysLeft: daysLeft, formatDay: formatDay, todayISO: todayISO, rowsFrom: rowsFrom, exampleWords: exampleWords, validDay: validDay, mount: mount,
     MAX_LINK: MAX_LINK, MAX_SEND: MAX_SEND, STUDENT_KEY: STUDENT_KEY, LINKS_KEY: LINKS_KEY, PENDING_KEY: PENDING_KEY,
     isId: isId, newId: newId, normalizeStudent: normalizeStudent, normalizeLinks: normalizeLinks, rememberLink: rememberLink,
     normalizePending: normalizePending, addTally: addTally, takeTally: takeTally, giveBack: giveBack,

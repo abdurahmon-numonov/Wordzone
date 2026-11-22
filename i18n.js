@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.8'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.9'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -184,6 +184,8 @@
     'pd.go': ['Учить колоду «{n}»', 'Study the deck “{n}”', "«{n}» to'plamini o'rganish"],
     'hero.write': ['Вписать свои слова ↓', 'Type your own words ↓', "O'z so'zlaringizni yozing ↓"],
     'hero.demo': ['Попробовать на демо-колоде', 'Try the demo deck', "Demo to'plamda sinab ko'ring"],
+    'stamp.know': ['Знаю ✓', 'Know it ✓', 'Bilaman ✓'],
+    'stamp.again': ['↺ Повторить', '↺ Again', '↺ Takrorlash'],
     'tab.study': ['Учить', 'Study', "O'rganish"],
     'tab.library': ['Мои слова', 'My words', "So'zlarim"],
     'prefs.title': ['Настройки', 'Settings', 'Sozlamalar'],

@@ -263,6 +263,9 @@
         if (!lastPoint || reduced.matches || cardEl.dataset.phase === 'leaving') return;
         if (gesture && gesture.dragging) {
           cardEl.style.transform = 'translate3d(' + gesture.dx + 'px,' + Math.abs(gesture.dx)*.07 + 'px,0) rotate(' + gesture.dx/22 + 'deg)';
+          var k = Math.max(-1, Math.min(1, gesture.dx / Math.min(120, gesture.width*.23))); // v2.56.9: the stamp shows which way the card goes
+          cardEl.style.setProperty('--sw-know', Math.max(0, k).toFixed(3));
+          cardEl.style.setProperty('--sw-again', Math.max(0, -k).toFixed(3));
           return;
         }
         if (!rect || performance.now() < flipUntil) return;
@@ -296,6 +299,7 @@
         if (!g.dragging) return;
         suppressClickUntil=performance.now()+400;
         if (pointerFrame) { cancelAnimationFrame(pointerFrame); pointerFrame=0; }
+        cardEl.style.removeProperty('--sw-know'); cardEl.style.removeProperty('--sw-again');
         if (e.type!=='pointercancel' && Math.abs(g.dx)>Math.min(120,g.width*.23)) {
           cardEl.dispatchEvent(new CustomEvent('vm-swipe',{detail:{known:g.dx>0}}));
         } else {

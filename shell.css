@@ -1133,6 +1133,57 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
   .hero.hero-banner .paper-scene, .hero.hero-banner .hero-note { display:none; }
 }
 @media (max-width:1000px) { body:not([data-screen="screen-train"]):not([data-screen="screen-loading"]) .toast { bottom:calc(82px + env(safe-area-inset-bottom)); } }
+
+/* ---------- v2.56.8: phones only (≤720px) — one clear first step, the decks under it, a 5-tab bar ---------- */
+.tab-phone, .phone-decks, .hero-phone-actions { display:none; }
+@media (max-width:720px) {
+  /* the bottom bar: Study · My words · Games · Progress · More, the active tab marked by a pill behind its icon */
+  .tabbar { grid-template-columns:repeat(5,1fr); gap:0; padding:6px 4px calc(6px + env(safe-area-inset-bottom)); }
+  .tab-phone { display:flex; }
+  .tab { gap:4px; min-height:56px; border-radius:14px; font-size:11px; }
+  .tab svg { width:24px; height:24px; padding:3px 0; box-sizing:content-box; border-radius:999px; transition:background .2s var(--ease); }
+  .tab.active { background:none; font-weight:700; }
+  .tab.active svg { width:52px; background:color-mix(in srgb,var(--amber) 22%,transparent); }
+  .tab:active svg { background:color-mix(in srgb,var(--text) 8%,transparent); }
+
+  /* "Today": tighter, so the decks fit on the first screen */
+  .today { padding:20px 18px 18px; margin-bottom:18px; row-gap:16px; }
+  .today-kicker { margin-bottom:6px; }
+  .today-title { font-size:clamp(25px,7vw,30px); line-height:1.12; }
+  .today-sub { margin-top:6px; font-size:14px; line-height:1.45; }
+  .today-actions { margin-top:0; gap:8px; }
+  .today-actions .btn.primary { min-height:54px; font-size:17px; }
+  .today-actions .btn.today-add:not(.primary) { min-height:44px; font-size:15px; }
+
+  /* my decks as cards: swipe sideways, one tap starts the deck */
+  .phone-decks:not([hidden]) { display:block; margin:0 0 26px; }
+  .pd-title { margin:0 0 10px; font:700 15px var(--font-ui); color:var(--text); }
+  .pd-list { display:flex; gap:10px; margin:0 -16px; padding:2px 16px 6px; list-style:none; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; }
+  .pd-list::-webkit-scrollbar { display:none; }
+  .pd-list li { flex:none; scroll-snap-align:start; }
+  .pd-card { display:flex; flex-direction:column; align-items:flex-start; gap:4px; width:158px; min-height:112px; padding:14px 14px 12px; border:1px solid var(--stroke); border-radius:16px;
+    background:var(--surface); color:var(--text); text-align:left; cursor:pointer; }
+  .pd-card.active { border-color:var(--text); }
+  .pd-card:focus-visible { outline:2px solid var(--amber); outline-offset:2px; }
+  .pd-card:active { transform:scale(.98); }
+  .pd-name { font:700 15px/1.25 var(--font-ui); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .pd-meta { font:500 11.5px var(--font-mono); color:var(--muted); }
+  .pd-due { margin-top:auto; padding:3px 9px; border-radius:999px; background:var(--bg); color:var(--muted); font:700 12px var(--font-ui); }
+  .pd-card.has-due .pd-due { background:var(--gold); color:#1c2233; }
+  .pd-add { align-items:center; justify-content:center; width:112px; border-style:dashed; background:none; color:var(--muted); }
+  .pd-add .pd-name { font-weight:600; font-size:13.5px; text-align:center; }
+  .pd-plus { font:400 28px/1 var(--font-ui); color:var(--text); }
+
+  /* a newcomer: the welcome is short and offers the two ways to start */
+  .hero.hero-banner .eyebrow { display:none; }
+  .hero.hero-banner h1 { font-size:clamp(32px,9vw,40px); }
+  .hero.hero-banner .sub { margin-top:10px; font-size:15px; line-height:1.5; }
+  .hero-phone-actions { display:grid; gap:8px; margin-top:18px; }
+  .hero-phone-actions .btn { width:100%; min-height:52px; font-size:16px; }
+  .hero-phone-actions .btn.primary { background:var(--gold); border-color:var(--gold); color:#1c2233; }
+  .hero-phone-actions .hero-demo { background:transparent; color:inherit; border:1px solid color-mix(in srgb,currentColor 35%,transparent); }
+}
+@media (max-width:720px) and (prefers-reduced-motion:reduce) { .tab svg { transition:none; } .pd-card:active { transform:none; } }
 .today .btn { min-height:48px; padding:12px 22px; font-size:15px; font-weight:600; white-space:nowrap; }
 .today.is-clear .today-add { order:-1; }
 

@@ -270,7 +270,8 @@
       t.classList.toggle('active', on);
       if (on) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
     });
-    var more = $('tabMore'); if (more) more.classList.toggle('active', /^(navGames|navTest|navGrammar|navTeacher)$/.test(NAV_FOR[id] || ''));
+    var gamesTab = !!(window.matchMedia && window.matchMedia('(max-width:720px)').matches); // phones show Games as its own tab
+    var more = $('tabMore'); if (more) more.classList.toggle('active', (gamesTab ? /^(navTest|navGrammar|navTeacher)$/ : /^(navGames|navTest|navGrammar|navTeacher)$/).test(NAV_FOR[id] || ''));
     if (document.body) document.body.dataset.screen = id;
     if (window.VMTips) window.VMTips.screen(id);
     var crumb = $('crumbHere');
@@ -2328,6 +2329,7 @@
       };
       list.appendChild(h('li', { className: 'side-deck-row' }, [b, more]));
     });
+    renderPhoneDecks(keys);
     $('sideDecksEmpty').hidden = n > 0;
     if ($('sideDecksBlock')) $('sideDecksBlock').hidden = n === 0; // no decks yet: the words box on the home screen makes the first
     var count = $('sideDeckCount');
@@ -2436,6 +2438,30 @@
   /* Home, top: newcomers (no words yet) see the welcome banner; everyone else sees one clear next step,
      "review the words that are due", or, when nothing is due, "add new words". */
   var todayKey = '';
+  // v2.56.8, phones only (CSS shows it at ≤720px): the decks as cards right under "Today" — one tap starts a deck
+  function renderPhoneDecks(keys) {
+    var box = $('phoneDecks'), list = $('phoneDeckList'); if (!box || !list) return;
+    list.textContent = '';
+    keys.forEach(function (k) {
+      var d = library.decks[k], due = L.pick(d.cards, 'due').length, on = k === state.cfg.deck;
+      var b = h('button', { className: 'pd-card' + (on ? ' active' : '') + (due ? ' has-due' : ''), type: 'button', 'aria-label': tr('pd.go', { n: deckLabel(d) }) + ' · ' + trn('words.count', d.cards.length) + (due ? ' · ' + tr('decks.due', { n: due }) : '') }, [
+        h('span', { className: 'pd-name', text: deckLabel(d) }),
+        h('span', { className: 'pd-meta', text: d.source.toUpperCase() + ' → ' + d.target.toUpperCase() + ' · ' + trn('words.count', d.cards.length) }),
+        h('span', { className: 'pd-due', text: due ? tr('decks.due', { n: due }) : '✓' })
+      ]);
+      b.onclick = function () {
+        if (d.cards.length) { practiceDeck(d, 'due'); return; }
+        setActiveDeck(k); $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true });
+      };
+      list.appendChild(h('li', {}, [b]));
+    });
+    if (deckRoom()) {
+      var add = h('button', { className: 'pd-card pd-add', type: 'button' }, [h('span', { className: 'pd-plus', text: '+' }), h('span', { className: 'pd-name', text: tr('pd.new') })]);
+      add.onclick = function () { $('btnAddDeck').click(); };
+      list.appendChild(h('li', {}, [add]));
+    }
+    box.hidden = !keys.some(function (k) { return library.decks[k].cards.length; });
+  }
   function renderToday() {
     var card = $('todayCard'), hero = $('heroBanner'); if (!card || !hero) return;
     var keys = Object.keys(library.decks).filter(function (k) { return library.decks[k].cards.length; });
@@ -4477,6 +4503,8 @@
       var next = $('btnHomePractice'); if (next && !next.hidden) next.focus(); else $('btnTodayAdd').focus();
     });
     document.addEventListener('vm-account', renderSaveNudge);
+    $('btnHeroWrite').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
+    $('btnHeroDemo').addEventListener('click', function () { $('btnDemo').click(); });
     $('btnTodayAdd').addEventListener('click', function () { $('input').scrollIntoView({ behavior: 'smooth', block: 'center' }); $('input').focus({ preventScroll: true }); });
 
     $('btnOwnKey').addEventListener('click', function () { ownKeyOpen = !ownKeyOpen; updateApiStatus(); if (ownKeyOpen) $('cfgKey').focus(); });

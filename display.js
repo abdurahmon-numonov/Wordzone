@@ -10,7 +10,7 @@
   var THEMES = ['system', 'light', 'dark', 'mint', 'midnight', 'dusk'], SIZES = ['s', 'm', 'l', 'xl'];
   // Each extra palette sits on a light or dark base, so every rule written for light / dark still applies.
   var PALETTES = { mint: 'light', midnight: 'dark', dusk: 'dark' };
-  var DEFAULTS = { theme: 'light', size: 'm', contrast: false, spacing: false };
+  var DEFAULTS = { theme: 'dark', size: 'm', contrast: false, spacing: false };
 
   // Anything unknown falls back to a default; before v2.15 only "vm.theme" (light/dark) existed.
   function normalize(raw, legacyTheme) {

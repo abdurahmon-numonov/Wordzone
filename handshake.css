@@ -1,0 +1,141 @@
+/* v2.57 — "Handshake" look. A final override layer: dark page, lime buttons, condensed uppercase headlines,
+   8px corners, thin outlined cards. Only colors, type and shapes change — markup, ids and behaviour stay as they were.
+   It styles the plain Light and Dark themes; the optional palettes (Mint / Midnight / Dusk) keep their own look.
+   Loaded last. Fonts: Onest (text) and Oswald (headlines), self-hosted in vendor/fonts. */
+
+/* ---------- tokens ---------- */
+:root[data-theme]:not([data-palette]) {
+  --font-ui: "Onest", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Onest", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Oswald", "Arial Narrow", "Onest", system-ui, sans-serif;
+  --radius: 20px; --radius-sm: 8px; --c-radius: 20px;
+  --lime: #d3fb52; --lime-hover: #e0ff7e; --lime-ink: #14151c;
+  --ink: #14151c;
+}
+:root[data-theme="dark"]:not([data-palette]) {
+  color-scheme: dark;
+  --bg: #14151c; --surface: #1c1d27; --panel: #1c1d27;
+  --text: #f4f5f8; --muted: #aeb0bf; --stroke: #2f313f; --stroke-soft: #262835;
+  --amber: #d3fb52; --amber-2: #b9df3f; --amber-3: #d3fb52;
+  --navy: #252630; --navy-2: #2f313f; --on-navy: #f4f5f8; --gold: #d3fb52;
+  --emerald: #7ee2a8; --rose: #ff8f8f; --violet: #aeb0bf; --sky: #7fd6e0;
+  --c-go-bg: linear-gradient(160deg, #252630 0%, #1c1d27 100%);
+  --c-shadow: 0 0 0 1px #ffffff08 inset, 0 24px 60px -34px #000000cc;
+  --c-field: #14151c; --shadow: 0 24px 60px -30px #000000cc;
+  --gold-ink: #d3fb52;
+}
+:root[data-theme="light"]:not([data-palette]) {
+  color-scheme: light;
+  --bg: #f4f5f1; --surface: #ffffff; --panel: #ffffff;
+  --text: #14151c; --muted: #5c5f70; --stroke: #d9dbe3; --stroke-soft: #e8e9ee;
+  --amber: #3d5a00; --amber-2: #587d0a; --amber-3: #3d5a00;
+  --navy: #14151c; --navy-2: #252630; --on-navy: #ffffff; --gold: #d3fb52;
+  --emerald: #1f7a4d; --rose: #b3362f; --violet: #5c5f70; --sky: #2b7a86;
+  --c-go-bg: linear-gradient(160deg, #14151c 0%, #252630 100%);
+  --c-shadow: 0 1px 0 #ffffff inset, 0 24px 60px -34px #14151c40;
+  --c-field: #f4f5f1; --shadow: 0 18px 40px -28px #14151c40;
+  --gold-ink: #3d5a00;
+}
+:root[data-theme]:not([data-palette]) ::selection { background: #d3fb5266; color: inherit; }
+:root[data-theme]:not([data-palette]) body { background: var(--bg); font-family: var(--font-ui); }
+:root[data-theme]:not([data-palette]) :is(button, a, input, select, textarea):focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+
+/* ---------- headlines: condensed, uppercase ---------- */
+:root[data-theme]:not([data-palette]) :is(.hero h1, .today-title, #screen-setup .composer-heading h2, .library-intro h1, .workspace-heading h2, .grid-head h2) {
+  font-family: var(--font-head); font-weight: 700; text-transform: uppercase; letter-spacing: -.01em; line-height: 1.02;
+}
+:root[data-theme]:not([data-palette]) .hero h1 em,
+:root[data-theme]:not([data-palette]) .logo-text em { font-style: normal; font-family: inherit; }
+:root[data-theme]:not([data-palette]) .hero-banner h1 { font-size: clamp(40px, 5.2vw, 76px); letter-spacing: -.02em; color: #fff; }
+:root[data-theme]:not([data-palette]) .hero-banner h1 em { color: #ffffff8c; }
+:root[data-theme]:not([data-palette]) #screen-setup .hero-banner h1 { font-size: clamp(40px, 4.6vw, 68px); }
+:root[data-theme]:not([data-palette]) #screen-setup .composer-heading h2 { font-size: clamp(30px, 3vw, 44px); }
+:root[data-theme]:not([data-palette]) .library-intro h1 { font-size: clamp(34px, 4vw, 56px); }
+:root[data-theme]:not([data-palette]) :is(.workspace-heading h2, .grid-head h2) { font-size: clamp(24px, 2.4vw, 32px); font-weight: 600; letter-spacing: 0; }
+
+/* ---------- buttons: lime primary, dark secondary, 8px corners ---------- */
+:root[data-theme]:not([data-palette]) .btn { border-radius: 8px; font-family: var(--font-ui); font-weight: 600; }
+:root[data-theme]:not([data-palette]) .btn.primary,
+:root[data-theme]:not([data-palette]) .btn.primary:hover {
+  background: var(--lime); border-color: var(--lime); color: var(--lime-ink); font-weight: 700; box-shadow: none;
+}
+:root[data-theme]:not([data-palette]) .btn.primary:hover { background: var(--lime-hover); border-color: var(--lime-hover); }
+:root[data-theme]:not([data-palette]) .btn.primary:disabled { opacity: .4; }
+:root[data-theme="dark"]:not([data-palette]) .btn:not(.primary):not(.hero-ghost):not(.today-add):not(.today-again) { background: #252630; border-color: #252630; color: var(--text); }
+:root[data-theme="dark"]:not([data-palette]) .btn:not(.primary):not(.hero-ghost):hover { background: #2f313f; border-color: #2f313f; }
+:root[data-theme="light"]:not([data-palette]) .btn:not(.primary):not(.hero-ghost):not(.today-add):not(.today-again) { background: #fff; border-color: var(--stroke); color: var(--text); }
+:root[data-theme]:not([data-palette]) .icon-btn { border-radius: 8px; }
+
+/* ---------- sidebar and top bar ---------- */
+:root[data-theme]:not([data-palette]) .sidebar { background: var(--bg); border-right: 1px solid var(--stroke); }
+:root[data-theme]:not([data-palette]) .sidebar .logo { border-bottom-color: var(--stroke); }
+:root[data-theme]:not([data-palette]) .logo-mark { background: var(--lime); color: var(--lime-ink); border-radius: 8px; box-shadow: none; }
+:root[data-theme]:not([data-palette]) .sidebar .logo-mark { background: var(--lime); color: var(--lime-ink); }
+:root[data-theme]:not([data-palette]) .logo-text { font-family: var(--font-ui); font-weight: 800; letter-spacing: -.04em; color: var(--text); }
+:root[data-theme]:not([data-palette]) .logo-text em { color: inherit; }
+:root[data-theme]:not([data-palette]) .side-nav .nav-link { border-radius: 8px; font-weight: 500; color: var(--text); }
+:root[data-theme]:not([data-palette]) .side-nav .nav-link:hover { background: var(--surface); }
+:root[data-theme]:not([data-palette]) .side-nav .nav-link.active { background: var(--navy); color: var(--on-navy); box-shadow: none; font-weight: 700; }
+:root[data-theme]:not([data-palette]) .side-nav .nav-link.active svg { color: var(--lime); }
+:root[data-theme="light"]:not([data-palette]) .side-nav .nav-link.active svg { color: var(--lime); }
+:root[data-theme]:not([data-palette]) .app-main .topbar { background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--stroke); }
+:root[data-theme]:not([data-palette]) .lang-pills { border-radius: 8px; background: var(--surface); border-color: var(--stroke); }
+:root[data-theme]:not([data-palette]) .lang-pills button { border-radius: 6px; }
+:root[data-theme]:not([data-palette]) .lang-pills button[aria-pressed="true"] { background: var(--lime); color: var(--lime-ink); }
+:root[data-theme]:not([data-palette]) .streak-indicator { border-radius: 8px; background: var(--surface); }
+
+/* ---------- hero and "today" panel: dark with soft green/teal glows ---------- */
+:root[data-theme]:not([data-palette]) .hero.hero-banner,
+:root[data-theme]:not([data-palette]) .today {
+  color: #fff; border: 1px solid #ffffff14; border-radius: 20px;
+  background:
+    radial-gradient(60% 90% at 78% 8%, #2f8f7a66 0%, transparent 70%),
+    radial-gradient(55% 80% at 12% 100%, #8fd14a40 0%, transparent 72%),
+    radial-gradient(40% 60% at 55% 55%, #3f9f6a38 0%, transparent 75%),
+    #14151c;
+  box-shadow: none;
+}
+:root[data-theme]:not([data-palette]) .hero-banner :is(.eyebrow, .hero-note, .sub, .scene-caption) { color: #ffffffb8; }
+:root[data-theme]:not([data-palette]) .hero-banner .hero-note span::before { color: var(--lime); }
+:root[data-theme]:not([data-palette]) .hero-banner .edition-dot { background: var(--lime); }
+:root[data-theme]:not([data-palette]) .hero-banner .btn.hero-cta,
+:root[data-theme]:not([data-palette]) .hero-banner .btn.hero-cta:hover,
+:root[data-theme]:not([data-palette]) .today .btn.primary,
+:root[data-theme]:not([data-palette]) .today .btn.primary:hover { background: var(--lime); border-color: var(--lime); color: var(--lime-ink); box-shadow: none; }
+:root[data-theme]:not([data-palette]) .hero-banner .btn.hero-ghost,
+:root[data-theme]:not([data-palette]) .today .btn.today-add:not(.primary),
+:root[data-theme]:not([data-palette]) .today .btn.today-again { background: #252630; border-color: #252630; color: #fff; }
+:root[data-theme]:not([data-palette]) .hero-banner .btn.hero-ghost:hover,
+:root[data-theme]:not([data-palette]) .today .btn.today-add:not(.primary):hover,
+:root[data-theme]:not([data-palette]) .today .btn.today-again:hover { background: #2f313f; }
+:root[data-theme]:not([data-palette]) .today-kicker { color: var(--lime); }
+:root[data-theme]:not([data-palette]) .today-sub { color: #ffffffb8; }
+:root[data-theme]:not([data-palette]) .today.is-clear .today-title::before { color: var(--lime); }
+:root[data-theme]:not([data-palette]) .sample-card { background: #1c1d27; color: #f4f5f8; border: 1px solid #2f313f; border-radius: 16px; box-shadow: 0 24px 50px -24px #000000cc; }
+:root[data-theme]:not([data-palette]) .sample-card strong { font: 600 24px/1.1 var(--font-head); text-transform: uppercase; letter-spacing: .01em; margin: 22px 0 8px; overflow-wrap: anywhere; }
+:root[data-theme]:not([data-palette]) .scene-caption { font: 500 14px var(--font-ui); }
+
+/* ---------- cards, panels, composer, fields ---------- */
+:root[data-theme]:not([data-palette]) :is(.panel, .composer, .steps li) { border-color: var(--stroke); box-shadow: none; }
+:root[data-theme]:not([data-palette]) .composer { border-radius: 20px; background: var(--surface); box-shadow: var(--c-shadow); }
+:root[data-theme]:not([data-palette]) :is(textarea#input, .field select, .field input) { border-radius: 8px; background: var(--c-field); border-color: var(--stroke); color: var(--text); }
+:root[data-theme]:not([data-palette]) .steps li { border-radius: 8px; }
+:root[data-theme]:not([data-palette]) .steps li[aria-current="step"] { border-color: var(--lime); box-shadow: inset 0 0 0 1px var(--lime); }
+:root[data-theme]:not([data-palette]) .steps li[aria-current="step"] .step-n { border-color: var(--lime); color: var(--lime); }
+:root[data-theme="light"]:not([data-palette]) .steps li[aria-current="step"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+:root[data-theme="light"]:not([data-palette]) .steps li[aria-current="step"] .step-n { border-color: var(--ink); color: var(--ink); }
+:root[data-theme]:not([data-palette]) :is(.status-pill, .prov-chip, .chip, .tag) { border-radius: 8px; }
+:root[data-theme]:not([data-palette]) a:not(.btn):not(.nav-link):not(.logo) { text-decoration-color: color-mix(in srgb, var(--amber) 60%, transparent); }
+
+/* ---------- games hub, mobile tab bar ---------- */
+:root[data-theme]:not([data-palette]) .arcade-game { border-radius: 20px; border: 1px solid #ffffff14; }
+:root[data-theme]:not([data-palette]) .arcade-kicker { border-radius: 8px; background: var(--lime); color: var(--lime-ink); }
+:root[data-theme]:not([data-palette]) .arcade-cta { border-radius: 8px; background: var(--lime); color: var(--lime-ink); box-shadow: none; }
+:root[data-theme]:not([data-palette]) .arcade-meta { color: var(--lime); }
+:root[data-theme]:not([data-palette]) .arcade-copy strong { font-family: var(--font-head); font-weight: 700; text-transform: uppercase; letter-spacing: 0; color: #fff; }
+:root[data-theme]:not([data-palette]) .arcade-game:focus-visible { outline-color: var(--lime); }
+@media (max-width: 860px) {
+  :root[data-theme]:not([data-palette]) .tab { border-radius: 8px; }
+  :root[data-theme]:not([data-palette]) .tab.active { background: var(--navy); color: var(--on-navy); }
+  :root[data-theme]:not([data-palette]) .tab.active svg { color: var(--lime); }
+}

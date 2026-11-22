@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.4'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.8'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -179,6 +179,11 @@
     "hw.howto": ["Слова сохранятся в «Мои колоды». Возвращайся каждый день — повторения подстроятся под тебя.", "The words are saved in “My decks”. Come back every day — the reviews adapt to you.", "So'zlar «Mening to'plamlarim»ga saqlanadi. Har kuni qayting — takrorlashlar sizga moslashadi."],
     "hw.saved": ["Домашка сохранена в колоду «{n}».", "Homework saved to the deck “{n}”.", "Uy vazifasi «{n}» to'plamiga saqlandi."],
     'tab.aria': ['Разделы', 'Sections', "Bo'limlar"],
+    'pd.title': ['Мои колоды', 'My decks', "Mening to'plamlarim"],
+    'pd.new': ['Новая колода', 'New deck', "Yangi to'plam"],
+    'pd.go': ['Учить колоду «{n}»', 'Study the deck “{n}”', "«{n}» to'plamini o'rganish"],
+    'hero.write': ['Вписать свои слова ↓', 'Type your own words ↓', "O'z so'zlaringizni yozing ↓"],
+    'hero.demo': ['Попробовать на демо-колоде', 'Try the demo deck', "Demo to'plamda sinab ko'ring"],
     'tab.study': ['Учить', 'Study', "O'rganish"],
     'tab.library': ['Мои слова', 'My words', "So'zlarim"],
     'prefs.title': ['Настройки', 'Settings', 'Sozlamalar'],

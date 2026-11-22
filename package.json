@@ -1,6 +1,6 @@
 {
   "name": "wordex",
-  "version": "2.56.4",
+  "version": "2.56.8",
   "private": true,
   "description": "Bilingual AI flashcard loop: paste words → AI filters & translates → infinite recall loop.",
   "scripts": {

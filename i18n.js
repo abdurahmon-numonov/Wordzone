@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.12'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.13'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -70,7 +70,6 @@
     "teach.s1": ["Название и языки", "Title and languages", "Nomi va tillar"],
     "teach.s1h": ["Название увидят ученики. Например: «Unit 5 — Travel».", "Students will see the title. For example: “Unit 5 — Travel”.", "Nomini o'quvchilar ko'radi. Masalan: «Unit 5 — Travel»."],
     "teach.title": ["Название задания", "Homework title", "Vazifa nomi"],
-    "teach.titlePh": ["Unit 5 — Travel", "Unit 5 — Travel", "Unit 5 — Travel"],
     "teach.learn": ["Ученики учат", "Students learn", "O'quvchilar o'rganadi"],
     "teach.native": ["Перевод на", "Translate into", "Tarjima tili"],
     "teach.s2": ["Слова", "Words", "So'zlar"],
@@ -158,7 +157,6 @@
     "teach.resRemove": ["Убрать ученика «{n}» из результатов", "Remove “{n}” from the results", "«{n}» ni natijalardan olib tashlash"],
     "teach.resRemoveConfirm": ["Убрать «{n}» из результатов? Если ученик позанимается снова, он появится опять.", "Remove “{n}” from the results? If the student practises again, they will show up again.", "«{n}» ni natijalardan olib tashlaysizmi? O'quvchi yana mashq qilsa, qayta paydo bo'ladi."],
     "hw.name": ["Как тебя зовут?", "What is your name?", "Ismingiz nima?"],
-    "hw.namePh": ["Имя и фамилия", "First and last name", "Ism va familiya"],
     "hw.nameNote": ["Учитель увидит твоё имя и результаты тренировок по этим словам. Больше ничего не передаётся.", "Your teacher will see your name and your practice results for these words. Nothing else is shared.", "O'qituvchi ismingizni va shu so'zlar bo'yicha mashq natijalarini ko'radi. Boshqa hech narsa yuborilmaydi."],
     "hw.nameNeeded": ["Впиши имя — так учитель узнает, что это ты.", "Type your name so your teacher knows it is you.", "Ismingizni yozing — o'qituvchi sizni shunday taniydi."],
     "hw.eyebrow": ["Домашнее задание", "Homework", "Uy vazifasi"],

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.10'; // the one place the shown version lives (footer)
+  var VERSION = '2.56.11'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -219,7 +219,7 @@
     'set.title': ['Настройки тренировки', 'Practice settings', "Mashg'ulot sozlamalari"],
     'set.done': ['Готово', 'Done', 'Tayyor'],
     'onb.title': ['Какой язык <em>учим?</em>', 'Which language <em>are you learning?</em>', "Qaysi tilni <em>o'rganamiz?</em>"],
-    'onb.sub': ['Внутри: карточки, грамматика A1–B2 на 6 языках и 3 игры. Поменять можно в любой момент.', 'Inside: flashcards, A1–B2 grammar in 6 languages and 3 games. You can change this any time.', "Ichida: kartalar, 6 tilda A1–B2 grammatika va 3 ta o'yin. Istalgan vaqtda o'zgartirish mumkin."],
+    'onb.sub': ['Внутри: карточки, грамматика A1–B2 на 6 языках и 2 игры. Поменять можно в любой момент.', 'Inside: flashcards, A1–B2 grammar in 6 languages and 2 games. You can change this any time.', "Ichida: kartalar, 6 tilda A1–B2 grammatika va 2 ta o'yin. Istalgan vaqtda o'zgartirish mumkin."],
     'onb.native': ['Мой родной язык', 'My native language', 'Ona tilim'],
     'onb.learn': ['Я хочу выучить', 'I want to learn', "O'rganmoqchiman"],
     'onb.go': ['Начать', 'Start', 'Boshlash'],
@@ -872,7 +872,10 @@
     'tools.shuffle': ['⤨ Перемешать', '⤨ Shuffle', '⤨ Aralashtirish'],
     'tools.newSet': ['✦ Новый набор', '✦ New set', "✦ Yangi to'plam"],
     'tools.newSetTitle': ['Выбрать новый набор слов', 'Pick a new word set', "Yangi so'zlar to'plamini tanlash"],
-    'tools.exit': ['Ливнуть ✕', 'Leave ✕', 'Chiqish ✕'],
+    'onb.teacher': ['Я учитель — задать слова ученикам →', 'I’m a teacher — set words for my students →', "Men o'qituvchiman — o'quvchilarga so'z berish →"],
+    'prog.fresh': ['Графики появятся после первой тренировки: здесь будет видно, сколько слов ты выучил и какие даются труднее всего.', 'Your charts appear after your first practice: you will see how many words you have learned and which ones are hardest.', "Grafiklar birinchi mashg'ulotdan keyin paydo bo'ladi: qancha so'z yodlaganing va qaysilari qiyinligi ko'rinadi."],
+    'prog.freshBtn': ['Начать тренировку →', 'Start practising →', "Mashg'ulotni boshlash →"],
+    'tools.exit': ["Закончить ✕", "Finish ✕", "Tugatish ✕"],
     'tools.exitTitle': ['Завершить сессию', 'Finish the session', 'Sessiyani yakunlash'],
 
     'lib.eyebrow': ['ТВОЯ КОЛЛЕКЦИЯ ЗНАНИЙ', 'YOUR KNOWLEDGE COLLECTION', "BILIMLAR TO'PLAMING"],

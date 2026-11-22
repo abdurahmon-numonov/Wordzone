@@ -17,7 +17,7 @@ const root = path.join(__dirname, '..');
 const BUNDLES = {
   'core.min.js': ['display.js', 'i18n.js', 'motion.js', 'languages.js', 'grammar.js', 'learning.js', 'writing.js', 'ai-core.js', 'share.js', 'games.js', 'course.js', 'account.js', 'tips.js', 'teacher.js', 'app.js'],
   'arcade.min.js': ['soar.js', 'slice.js'],
-  'app.min.css': ['styles.css', 'editorial.css', 'shell.css', 'motion.css', 'composer.css', 'onboarding.css', 'arcade.css', 'soar.css', 'slice.css', 'teacher.css', 'themes.css']
+  'app.min.css': ['styles.css', 'editorial.css', 'shell.css', 'motion.css', 'composer.css', 'onboarding.css', 'arcade.css', 'soar.css', 'slice.css', 'teacher.css', 'themes.css', 'redesign.css']
 };
 
 function loadEsbuild() {

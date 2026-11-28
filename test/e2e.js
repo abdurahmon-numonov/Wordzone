@@ -10,6 +10,18 @@ async function leavePractice(pg) {
   if (await pg.locator('#btnNewSet').isVisible()) await pg.click('#btnNewSet');
   await pg.locator('#screen-setup.active').waitFor();
 }
+// v2.57: the site opens on Home (newcomers choose how to begin, learners with words start from review);
+// most steps below work on the words screen, so they go there first.
+async function toWords(pg) {
+  await pg.waitForFunction(() => document.body && document.body.dataset.screen);
+  if (!(await pg.locator('#screen-setup.active').count())) await pg.evaluate(() => document.getElementById('navStudy').click());
+  await pg.locator('#screen-setup.active').waitFor();
+}
+// v2.57: share / copy / reverse live in a deck card's "⋯" menu
+async function deckMenuItem(deck, act) {
+  await deck.locator('[data-act="menu"]').click();
+  return deck.page().locator('.deck-menu [data-act="' + act + '"]');
+}
 const assert = require('node:assert/strict');
 const http = require('node:http');
 const fs = require('node:fs');
@@ -194,7 +206,8 @@ run.server(server);
   const coverage = [];
   const reload = async () => {
     if (COVERAGE) { coverage.push(...await page.coverage.stopJSCoverage()); await page.coverage.startJSCoverage({ resetOnNavigation: false }); }
-    return page.reload();
+    await page.reload();
+    await toWords(page);
   };
   const errors = [], cspViolations = [];
   // Any CSP violation is a bug: the app must work under the production policy (no unsafe-inline / unsafe-eval).
@@ -207,7 +220,8 @@ run.server(server);
   console.log('E2E');
   step('app loads, service worker installs and takes control');
   await page.goto(origin);
-  await page.locator('#screen-setup.active').waitFor();
+  await page.locator('#screen-start.active').waitFor();
+  await toWords(page);
   assert.equal(await page.evaluate(() => window.isSecureContext), true);
   assert.equal(await page.evaluate(async () => !!(await navigator.serviceWorker.ready).active), true, 'service worker is active');
   await reload();
@@ -243,14 +257,12 @@ run.server(server);
   };
   await check('before reload');
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   const deckAfter = await check('after reload');
   assert.equal(deckAfter.cards.find(c => graded[c.original] === '4').due > Date.now() + 3.9 * 864e5, true, 'easy card is due in ~4 days');
 
   step('offline: app opens from cache, words wait for translation, then load when back online');
   await context.setOffline(true); serverDown = true; api.mode = 'down';
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   assert.match(await page.title(), /Wordzone/);
   await page.fill('#input', 'to whisper\npebble');
   await startWords(page);
@@ -326,7 +338,6 @@ run.server(server);
   process.env.OPENAI_API_KEY = 'sk-e2e-SECRET';
   await page.click('#btnContinue').catch(() => {});
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   await page.waitForFunction(() => document.getElementById('statusIndicator').textContent.includes('ИИ сайта'));
   await page.click('#btnSessionSettings'); await page.click('#apiBox summary');
   assert(await page.locator('#serverAiNote').isVisible(), 'with the site key the AI box says nothing needs to be entered');
@@ -450,7 +461,8 @@ run.server(server);
   await page.click('#navLibrary');
   const decksBefore = await page.locator('.deck-item').count();
   // v2.21: Russian is a native language only, so an English → Russian deck cannot be turned around.
-  assert(await page.locator('.deck-item').filter({ hasText: 'English' }).first().locator('[data-act="reverse"]').isDisabled(), 'en → ru cannot be reversed');
+  assert(await (await deckMenuItem(page.locator('.deck-item').filter({ hasText: 'English' }).first(), 'reverse')).isDisabled(), 'en → ru cannot be reversed');
+  await page.keyboard.press('Escape');
   assert.equal(await page.locator('.deck-item').count(), decksBefore);
 
   before = await library(page);
@@ -506,7 +518,7 @@ run.server(server);
   assert.match(await page.locator('#searchResults').innerText(), /Ничего не нашлось/);
   await page.fill('#librarySearch', '');
   await context.grantPermissions(['clipboard-read', 'clipboard-write'], { origin });
-  await page.locator('.deck-item').filter({ hasText: 'English' }).first().locator('[data-act="copy"]').click();
+  await (await deckMenuItem(page.locator('.deck-item').filter({ hasText: 'English' }).first(), 'copy')).click();
   await waitToast(page, 'Список скопирован');
   const copied = await page.evaluate(() => navigator.clipboard.readText());
   assert(copied.split('\n').every(line => / - /.test(line)), 'the deck is copied as "word - translation" lines');
@@ -534,14 +546,13 @@ run.server(server);
   watch(empty);
   empty.on('pageerror', e => errors.push(e.message));
   await empty.goto(origin);
+  await toWords(empty);
   await empty.click('#navLibrary');
   assert.equal(await empty.locator('.empty-steps li').count(), 3);
   await empty.click('#navTest');
   assert.equal(await empty.locator('#quizEmpty').isVisible(), true);
   assert.equal(await empty.locator('#btnQuizStart').isDisabled(), true); assert.equal(await empty.locator('#btnMatchStart').isDisabled(), true);
-  await empty.click('#navProgress');
-  assert.equal(await empty.locator('#progEmpty').isVisible(), true, 'progress explains that answers are needed first');
-  assert.equal(await empty.locator('#progBody').isHidden(), true);
+  assert(await empty.locator('#navProgress').isHidden() && await empty.locator('#tabProgress').isHidden(), 'v2.57: Progress is switched off');
   await empty.click('#navLibrary');
   await empty.click('.empty-library [data-action="demo"]');
   await empty.locator('#screen-train.active').waitFor();
@@ -555,6 +566,7 @@ run.server(server);
   watch(tp);
   tp.on('pageerror', e => errors.push(e.message));
   await tp.goto(origin);
+  await toWords(tp);
   const coach = tp.locator('.coach:not([hidden])');
   assert.equal(await tp.locator('.new-dot').count(), 0, 'a newcomer starts without "new" dots');
   await reveal(tp, '#btnDemo');
@@ -567,25 +579,23 @@ run.server(server);
   await coach.waitFor({ state: 'detached' }).catch(() => {}); assert.equal(await coach.count(), 0, 'Enter closes the bubble');
   await tp.click('#btnReveal'); await tp.locator('#btnKnew2').waitFor(); await tp.click('#btnKnew2'); // one real answer
   await tp.waitForFunction(() => document.getElementById('stKnown').textContent === '1');
+  await tp.locator('#btnReveal').waitFor(); // the next card is up: the answer animation no longer holds the keyboard
   await tp.keyboard.press('Escape');
   await tp.locator('#summary:not([hidden])').waitFor();
   await tp.keyboard.press('Escape');
   if (!(await tp.locator('#screen-setup.active').count())) await tp.click('#navStudy');
   await coach.waitFor();
-  assert.equal(await coach.locator('.coach-title').innerText(), 'Прогресс', 'after the first practice Progress is announced');
-  assert.equal(await tp.locator('#navProgress .new-dot').count(), 1); assert.equal(await tp.locator('#navGames .new-dot').count(), 1);
-  assert.equal(await tp.locator('#navGrammar .new-dot').count(), 0, 'grammar opens after the second practice');
-  await tp.click('.coach-next');
-  assert.equal(await coach.locator('.coach-title').innerText(), 'Игры');
+  assert.equal(await coach.locator('.coach-title').innerText(), 'Игры', 'after the first practice Games are announced');
+  assert.equal(await tp.locator('#navGames .new-dot').count(), 1);
+  assert.equal(await tp.locator('#navProgress .new-dot').count() + await tp.locator('#navGrammar .new-dot').count(), 0, 'switched-off sections never get a dot');
   await tp.click('.coach-next');
   assert.equal(await coach.count(), 0);
-  await tp.click('#navProgress');
+  await tp.click('#navGames');
   await coach.waitFor();
-  assert.match(await coach.locator('.coach-title').innerText(), /прогресс/i);
   await tp.keyboard.press('Escape');
   assert.equal(await coach.count(), 0, 'Escape closes the bubble');
-  assert.equal(await tp.locator('#navProgress .new-dot').count(), 0, 'visiting a section clears its dot');
-  await tp.click('#navStudy'); await tp.click('#navProgress'); await tp.waitForTimeout(1300);
+  assert.equal(await tp.locator('#navGames .new-dot').count(), 0, 'visiting a section clears its dot');
+  await tp.click('#navStudy'); await tp.click('#navGames'); await tp.waitForTimeout(1300);
   assert.equal(await coach.count(), 0, 'each tip is shown only once');
   await tp.click('#btnTheme'); await tp.click('#btnTips');
   assert.equal(await tp.getAttribute('#btnTips', 'aria-pressed'), 'false');
@@ -595,33 +605,10 @@ run.server(server);
   assert.equal(await tp.locator('.new-dot').count(), 0, 'switched off: no dots either');
   await tipsCtx.close();
 
-  step('progress screen: tiles and charts match the SM-2 data, screen-reader tables, 7/30-day forecast, practise weakest words');
-  await page.click('#navProgress');
-  await page.locator('#screen-progress.active').waitFor();
-  const expect = await page.evaluate(() => {
-    const lib = JSON.parse(localStorage.getItem('vocabulary-master.library.v2'));
-    const cards = Object.values(lib.decks).flatMap(d => d.cards);
-    const fc = VMLearning.forecast(cards, 7, Date.now()), acc = VMLearning.accuracy(lib.history, 30, VMLearning.day());
-    const translated = cards.filter(c => c.translation && c.translation !== '—').length;
-    return { today: String(fc.days[0]), words: String(translated), acc: acc.pct == null ? '—' : acc.pct + '%', forecast: fc.days.map(String), weakDecks: Object.values(lib.decks).filter(d => VMLearning.weakest(d.cards).length).length };
-  });
-  const progTiles = await page.locator('.prog-tile strong').allInnerTexts();
-  assert.equal(progTiles[0], expect.today); assert.equal(progTiles[2], expect.acc); assert.equal(progTiles[3], expect.words);
-  assert.equal(await page.locator('#forecastChart svg').getAttribute('aria-hidden'), 'true', 'the chart is decorative for screen readers');
-  assert.deepEqual(await page.locator('#forecastChart table tbody td').allInnerTexts(), expect.forecast, 'the screen-reader table carries the same numbers');
-  assert.equal(await page.locator('#forecastChart table tbody tr').count(), 7);
-  await page.click('#progRange [data-days="30"]');
-  assert.equal(await page.locator('#forecastChart table tbody tr').count(), 30);
-  assert.equal(await page.locator('#accuracyChart table tbody tr').count(), 30);
-  assert.equal(await page.locator('#accuracyChart table thead th').count(), 3, 'day + correct + wrong');
-  assert.equal(await page.locator('.weak-deck').count(), expect.weakDecks);
-  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-  const weakButton = page.locator('.weak-deck .btn').first();
-  const weakCount = Number((await weakButton.innerText()).match(/\d+/)[0]);
-  await weakButton.click();
-  await page.locator('#screen-train.active').waitFor();
-  assert.match(await page.locator('#topPill').innerText(), new RegExp('^' + weakCount + ' '), 'practice starts with exactly the weakest words');
-  await leavePractice(page);
+  step('progress: the section is switched off (no menu item, no tab); its code stays for later');
+  assert(await page.locator('#navProgress').isHidden() && await page.locator('#tabProgress').isHidden());
+  await page.evaluate(() => document.getElementById('navProgress').click());
+  assert.equal(await page.locator('#screen-progress.active').count(), 0, 'the hidden button does nothing');
 
   step('share a deck: link + QR + copy → open elsewhere → preview → add; malicious, broken, offline and too-big links');
   // Sender: a fresh profile with the 14-word demo deck.
@@ -630,10 +617,11 @@ run.server(server);
   await sendCtx.grantPermissions(['clipboard-read', 'clipboard-write'], { origin });
   const sender = await sendCtx.newPage(); watch(sender); sender.on('pageerror', e => errors.push(e.message)); sender.on('dialog', d => d.accept());
   await sender.goto(origin);
+  await toWords(sender);
   await reveal(sender, '#btnDemo');
   await sender.click('#btnDemo'); await leavePractice(sender);
   await sender.click('#navLibrary');
-  await sender.locator('.deck-item [data-act="share"]').first().click();
+  await (await deckMenuItem(sender.locator('.deck-item').first(), 'share')).click();
   await sender.locator('#shareDialog:not([hidden])').waitFor();
   const link = await sender.inputValue('#shareLink');
   assert.match(link, new RegExp('^' + origin.replace(/[.]/g, '\\.') + '/#deck=1\\.[A-Za-z0-9_-]+$'), 'the deck travels in the fragment only');
@@ -653,7 +641,7 @@ run.server(server);
   assert.equal(await sender.evaluate(() => navigator.clipboard.readText()), link, 'copy puts the link on the clipboard');
   await sender.keyboard.press('Escape');
   assert.equal(await sender.locator('#shareDialog').isHidden(), true);
-  assert.equal(await sender.evaluate(() => document.activeElement && document.activeElement.dataset.act), 'share', 'focus returns to the Share button');
+  assert.equal(await sender.evaluate(() => document.activeElement && document.activeElement.dataset.act), 'menu', 'focus returns to the deck "⋯" button that opened Share');
 
   // Receiver: another fresh profile opens the link.
   const recvCtx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce' });
@@ -708,7 +696,7 @@ run.server(server);
   });
   await sender.reload();
   await sender.click('#navLibrary');
-  await sender.locator('.deck-item', { hasText: 'Deutsch' }).locator('[data-act="share"]').click();
+  await (await deckMenuItem(sender.locator('.deck-item', { hasText: 'Deutsch' }), 'share')).click();
   await sender.locator('#shareTooBig:not([hidden])').waitFor();
   assert.match(await sender.locator('#shareTooBigText').innerText(), /слишком большая/);
   const fileDownload = sender.waitForEvent('download');
@@ -737,6 +725,7 @@ run.server(server);
   xpage.on('pageerror', e => errors.push(e.message));
   xpage.on('dialog', d => d.accept());
   await xpage.goto(origin);
+  await toWords(xpage);
   const payload = '<img src=x onerror="window.__xss=1">';
   const evil = { version: 2, library: { decks: { 'en-ru': { source: 'en', target: 'ru', created: 1, cards: [
     { original: payload, translation: '<svg onload="window.__xss=2"></svg>', hint: '<script>window.__xss=3</script>', definition: '" onmouseover="window.__xss=4', examples: ['<a href="javascript:window.__xss=5">x</a>'], streak: 0, fails: 1 },
@@ -871,14 +860,13 @@ run.server(server);
   assert.equal(JSON.parse(await page.evaluate(() => localStorage.getItem('vocabulary-master.library.v2'))).target.words, 200);
   await reload();
   await page.locator('#goalStrip.is-set').waitFor();
-  await page.click('#navProgress');
-  await page.locator('#goalStripProg.is-set').waitFor();
-  assert.equal(await page.locator('#growthChart .chart-goal-label').count(), 1, 'the learned-words chart shows the goal');
-  await page.click('#goalStripProg .goal-btn');
+  await page.click('#navLibrary');
+  await page.locator('#goalStripLib.is-set').waitFor();
+  await page.click('#goalStripLib .goal-btn');
   await page.click('#goalRemove');
-  await page.locator('#goalStripProg:not(.is-set)').waitFor();
+  await page.locator('#goalStripLib:not(.is-set)').waitFor();
+  await page.click('#navStudy');
   assert(await page.locator('#goalStrip').isHidden(), 'goal removed: home is clean again');
-  assert.equal(await page.locator('#growthChart .chart-goal-label').count(), 0, 'no goal, no goal line');
   // v2.56.14: the Grammar section is switched off — no menu item, and its screen can't be reached
   assert(await page.locator('#navGrammar').isHidden(), 'no Grammar in the menu');
   await page.evaluate(() => document.getElementById('navGrammar').click());
@@ -916,16 +904,8 @@ run.server(server);
   const decks = await page.locator('.deck-item').count();
   assert(decks > 0, 'there are decks to filter');
   assert.equal(await page.locator('.deck-item .cover-play').count(), decks, 'every deck card has a play button');
-  assert.equal(await page.locator('#filterLang option[value="zh"]').count(), 0, 'only languages of existing decks can be picked');
-  const lang = await page.locator('#filterLang option').nth(1).getAttribute('value');
-  await page.selectOption('#filterLang', lang);
-  assert(await page.locator('.deck-item').count() <= decks);
-  assert(await page.locator('#btnClearFilters').isVisible(), 'clear filters appears once a filter is set');
-  await page.selectOption('#filterStatus', 'mastered');
-  const shown = await page.locator('.deck-item').count();
-  assert.equal(await page.locator('#filterEmpty').isVisible(), shown === 0, 'an empty result explains itself');
-  await page.click('#btnClearFilters');
-  assert.equal(await page.locator('.deck-item').count(), decks, 'clearing the filters shows every deck again');
+  assert(await page.locator('#libraryFilters').isHidden(), 'v2.57: a simpler library — no filters, every deck is shown');
+  assert(await page.locator('#screen-library .daily-panel').isHidden() && await page.locator('#screen-library .activity-panel').isHidden(), 'no daily-goal or activity panels');
   await page.setViewportSize({ width: 375, height: 800 });
   assert(!(await page.locator('#navTest').isVisible()) || !(await page.locator('#navTest').evaluate(el => el.getBoundingClientRect().right > 0)), 'on a phone the menu starts closed');
   await page.click('#tabMore');
@@ -997,14 +977,13 @@ run.server(server);
   await page.click('#navLibrary');
   const names = await page.locator('.deck-item h2.deck-name').allInnerTexts();
   assert(names.includes('Deutsch A2') && names.includes('Deutsch B1'), 'library cards carry the deck names');
-  await page.click('#navProgress');
-  assert.equal(await page.inputValue('#progDeck'), a2d[0], 'progress shows the working deck');
-  assert.match(await page.locator('[data-deck-bar="progress"]').innerText(), /Deutsch A2/);
-  assert(await page.locator('#progBody').isVisible());
-  await page.click('[data-deck-bar="progress"] .deck-bar-btn');
+  await page.click('#navTest'); // v2.57: Progress is switched off; the test screen follows the working deck the same way
+  assert.equal(await page.inputValue('#quizDeck'), a2d[0], 'the test shows the working deck');
+  assert.match(await page.locator('[data-deck-bar="test"]').innerText(), /Deutsch A2/);
+  await page.click('[data-deck-bar="test"] .deck-bar-btn');
   assert(await page.locator('#deckPicker').isVisible(), '"change" opens the deck picker');
   await page.click('.picker-deck:has-text("Deutsch B1")');
-  assert.equal(await page.inputValue('#progDeck'), b1[0], 'the open section follows the new deck at once');
+  assert.equal(await page.inputValue('#quizDeck'), b1[0], 'the open section follows the new deck at once');
   // a backup keeps both decks of the pair
   const twoDecks = await page.evaluate(() => Object.values(VMLearning.restoreBackup(VMLearning.backupFile(JSON.parse(localStorage.getItem('vocabulary-master.library.v2'))), ['en', 'ru', 'de']).decks).filter(d => d.source === 'de').length);
   assert.equal(twoDecks, 2);
@@ -1015,21 +994,16 @@ run.server(server);
   await onbCtx.route(/api\.mymemory\.translated\.net/, route => route.abort());
   const onb = await onbCtx.newPage(); watch(onb); onb.on('pageerror', e => errors.push(e.message + ' @ ' + String(e.stack || '').split('\n').slice(0, 3).join(' | ')));
   await onb.goto(origin);
+  await onb.locator('#screen-start.active').waitFor();
+  assert(await onb.locator('#onboarding').isHidden(), 'the first screen is the choice, not the questions');
+  await onb.click('#btnStartOwn');
   await onb.locator('#onboarding:not([hidden])').waitFor();
   await onb.keyboard.press('Escape');
   assert(await onb.locator('#onboarding').isVisible(), 'the first-run questions cannot be skipped with Escape');
-  assert.match(await onb.locator('#tourH1').innerText(), /Вспомни/, 'the welcome starts with the one thing to do: recall and flip');
-  assert.equal(await onb.locator('#tourCount').innerText(), '1 / 2', 'the welcome is two short screens');
-  assert(await onb.locator('#tourGrade').isHidden(), 'grading waits for the flip');
-  await onb.click('#tourFlip');
-  assert.equal(await onb.getAttribute('#tourFlip', 'aria-pressed'), 'true');
-  await onb.click('.tour-grade-btn[data-g="known"]');
-  assert.match(await onb.locator('#tourCurveNote').innerText(), /4 дня/, 'grading shows when the card comes back');
-  await onb.keyboard.press('ArrowRight');
-  assert(await onb.locator('#onboardForm').isVisible(), 'arrow keys move on to the language questions');
-  await onb.click('#btnTourBack'); assert(await onb.locator('#tourH1').isVisible(), 'back returns to the first screen');
-  await onb.click('#btnTourSkip');
-  assert(await onb.locator('#onboardForm').isVisible(), 'skip goes to the language questions');
+  assert(await onb.locator('#onboardForm').isVisible(), 'v2.57: the window opens straight on the language questions');
+  assert(await onb.locator('#tourH1').isHidden() && await onb.locator('.tour-top').isHidden() && await onb.locator('#tourNav').isHidden(), 'no flip-card screen, no counter, no way back to it');
+  await onb.keyboard.press('ArrowLeft');
+  assert(await onb.locator('#onboardForm').isVisible(), 'the arrow keys cannot bring the card screen back');
   await onb.selectOption('#onbNative', 'uz');
   assert.equal(await onb.locator('#navStudy').innerText(), "So'z o'rganish", 'choosing Uzbek switches the interface at once');
   assert.equal(await onb.inputValue('#onbLearn'), 'en');
@@ -1046,7 +1020,7 @@ run.server(server);
   assert.equal(onbCfg.source, 'de'); assert.equal(onbCfg.target, 'ru');
   assert.equal(await onb.inputValue('#sourceLang'), 'de');
   await onb.fill('#input', 'Haus\nBaum');
-  await onb.reload(); await onb.locator('#screen-setup.active').waitFor();
+  await onb.reload(); await toWords(onb);
   assert(await onb.locator('#onboarding').isHidden(), 'asked only once');
   assert.equal(await onb.inputValue('#input'), 'Haus\nBaum', 'a typed word list survives a refresh');
   assert.equal(await onb.locator('.side-slogan').count(), 0, 'v2.56.12: no slogan under the logo');
@@ -1251,6 +1225,8 @@ run.server(server);
     await ctx.addInitScript(([l, k]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('vm.save-nudge', JSON.stringify({ n: k })); } } catch (e) {} }, [nudgeLib, n]);
     const np = await ctx.newPage(); watch(np); np.on('pageerror', e => errors.push(e.message));
     await np.goto(origin);
+    await toWords(np);
+  await toWords(np);
     await np.locator('#btnAccount:not([hidden])').waitFor();
     assert.equal(await np.locator('#saveNudge').isVisible(), expected, n + ' practices: card ' + (expected ? 'shown' : 'not yet'));
     if (expected) {
@@ -1274,6 +1250,8 @@ run.server(server);
     await ctx.addInitScript(([l]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('wordloop.cfg', JSON.stringify({ source: 'en', target: 'ru', deck: 'en-ru' })); } } catch (e) {} }, [nudgeLib]);
     const dp = await ctx.newPage(); watch(dp); dp.on('pageerror', e => errors.push(e.message));
     await dp.goto(origin);
+    await toWords(dp);
+  await toWords(dp);
     assert.equal(await dp.locator('#btnStartLabel').innerText(), 'Повторить колоду');
     assert.match(await dp.locator('#startDeckNote').innerText(), /English → Русский/);
     assert.equal(await dp.locator('#pairSummary').innerText(), 'English → Русский', 'a deck named after its pair is shown once');
@@ -1298,6 +1276,7 @@ run.server(server);
   }
   const a = await deviceA.newPage(); watch(a); a.on('pageerror', e => errors.push(e.message));
   await a.goto(origin);
+  await toWords(a);
   await a.locator('#btnAccount:not([hidden])').waitFor();
   assert.equal(await a.locator('#accountLabel').innerText(), 'Войти');
   await a.click('#btnAccount');
@@ -1321,6 +1300,7 @@ run.server(server);
 
   const b = await deviceB.newPage(); watch(b); b.on('pageerror', e => errors.push(e.message));
   await b.goto(origin);
+  await toWords(b);
   await b.locator('#btnAccount:not([hidden])').waitFor();
   await b.click('#btnAccount');
   await b.fill('#accEmail', 'learner@example.com');
@@ -1344,7 +1324,7 @@ run.server(server);
   await b.selectOption('#deckSource', 'de'); await b.selectOption('#deckTarget', 'ru'); await b.click('#deckForm [type="submit"]');
   for (let i = 0; i < 40 && !cloud().library.decks['de-ru']; i++) await b.waitForTimeout(250);
   assert(cloud().library.decks['de-ru'], 'a change on device B is uploaded a few seconds later');
-  await a.reload(); await a.locator('#screen-setup.active').waitFor();
+  await a.reload(); await toWords(a);
   await a.waitForFunction(() => !!JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).decks['de-ru']);
   assert.deepEqual(await words(a), ['lantern', 'meadow'], 'device A downloads what device B saved');
 
@@ -1379,7 +1359,7 @@ run.server(server);
       const ctx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce', viewport: { width: 1280, height: 900 } });
       await ctx.addInitScript(([lib, cfg, extra]) => { if (sessionStorage.getItem('seeded')) return; sessionStorage.setItem('seeded', '1'); localStorage.setItem('vm.onboarded', '1'); localStorage.setItem('vocabulary-master.library.v2', JSON.stringify(lib)); localStorage.setItem('wordloop.cfg', JSON.stringify(cfg)); for (const k in extra || {}) localStorage.setItem(k, extra[k]); }, [lib, cfg, extra]);
       const pg = await ctx.newPage(); watch(pg); pg.on('pageerror', e => errors.push(e.message)); pg.on('dialog', d => d.accept());
-      await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
+      await pg.goto(origin); await toWords(pg);
       return pg;
     };
     let pg = await open(Object.assign({ decks: {
@@ -1405,9 +1385,9 @@ run.server(server);
     assert.equal(await pg.inputValue('#input'), 'pear\nplum', 'the old single draft moved to the pair deck');
     await pg.click('.side-deck:not(.active)');
     assert.equal(await pg.inputValue('#input'), 'Tisch', 'every deck keeps its own draft');
-    await pg.reload(); await pg.locator('#screen-setup.active').waitFor();
+    await pg.reload(); await toWords(pg);
     assert(await pg.locator('#deckPicker').isHidden(), 'a reload of the same tab does not ask again');
-    for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck']]) {
+    for (const [nav, id] of [['#navTest', '#quizDeck']]) {
       await pg.click(nav);
       assert.equal(await pg.inputValue(id), 'de-ru:a2', nav + ' works with the working deck');
     }
@@ -1442,6 +1422,41 @@ run.server(server);
   }
 
   // v2.56.14: the grammar course step was removed together with the Grammar section (its code and lessons stay in the repo; test/course.js still checks the lesson files)
+
+  step('home: a newcomer chooses own words or ready decks, a learner with words lands on review (test, games, add words)');
+  {
+    const hc = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce', viewport: { width: 1280, height: 900 } });
+    await hc.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+    const hp = await hc.newPage(); watch(hp); hp.on('pageerror', e => errors.push(e.message));
+    await hp.goto(origin);
+    await hp.locator('#screen-start.active').waitFor();
+    assert.equal(await hp.locator('#screen-start .start-card').count(), 2, 'two ways to begin');
+    await hp.click('#btnStartReady');
+    await hp.locator('#screen-decks.active').waitFor();
+    assert.equal(await hp.evaluate(() => document.activeElement.id), 'readyH1', 'focus moves to the new screen');
+    await hp.click('#btnReadyBack');
+    await hp.locator('#screen-start.active').waitFor();
+    await hp.evaluate(() => {
+      const now = Date.now();
+      localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1');
+      localStorage.setItem('vocabulary-master.library.v2', JSON.stringify({ v: 2, goal: 10, streak: { count: 0, last: null, freezes: 2 }, history: {}, decks: {
+        'en-ru': { source: 'en', target: 'ru', created: now, cards: ['house', 'tree', 'river', 'hill'].map((w, i) => ({ original: w, translation: ['дом', 'дерево', 'река', 'холм'][i] })) } } }));
+      localStorage.setItem('wordloop.cfg', JSON.stringify({ source: 'en', target: 'ru', deck: 'en-ru' }));
+    });
+    await hp.reload();
+    await hp.locator('#screen-review.active').waitFor();
+    assert.equal(await hp.evaluate(() => document.documentElement.hasAttribute('data-land')), false, 'the early hint is cleared once the app runs');
+    assert.match(await hp.locator('#reviewTitle').innerText(), /4 слова ждут повторения/);
+    assert(await hp.locator('#navHome').getAttribute('aria-current'), 'Home is the current section');
+    await hp.click('#btnReviewTest'); await hp.locator('#screen-test.active').waitFor();
+    await hp.click('#navHome'); await hp.locator('#screen-review.active').waitFor();
+    await hp.click('#btnReviewGames'); await hp.locator('#screen-games.active').waitFor();
+    await hp.click('#logoHome'); await hp.locator('#screen-review.active').waitFor();
+    await hp.click('#btnReviewAdd'); await hp.locator('#screen-setup.active').waitFor();
+    await hp.click('#navHome'); await hp.click('#btnReviewCards');
+    await hp.locator('#screen-train.active').waitFor();
+    await hc.close();
+  }
 
   step('interface language: RU → EN → UZ, choice survives a reload');
   await page.click('#navStudy');

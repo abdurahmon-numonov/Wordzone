@@ -82,6 +82,9 @@ function layoutProblems() {
       await page.click(id);
     };
     await page.goto(origin);
+    await page.locator('#screen-start.active').waitFor(); // v2.57: the site opens on Home
+    await shot('0-home');
+    await page.evaluate(() => document.getElementById('navStudy').click());
     await page.locator('#screen-setup.active').waitFor();
     await shot('1-setup');
     if (await page.locator('#btnMenu').isVisible()) {

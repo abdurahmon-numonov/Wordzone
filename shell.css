@@ -1361,3 +1361,11 @@ html[data-land="review"] #screen-start { display:none; } /* learners never see t
   .start-t { font-size:24px; }
 }
 @media (prefers-reduced-motion:reduce) { .start-card, .start-go svg { transition:none; } .start-card:hover { transform:none; } }
+
+/* ---------- v2.57: Progress is switched off — the bottom bar spreads the remaining tabs evenly ---------- */
+@media (max-width:1000px) { .tabbar { grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); } }
+/* a simpler library: backup as a quiet row at the bottom; disabled items in the deck menu look disabled */
+.lib-backup { display:flex; flex-wrap:wrap; gap:8px; margin-top:36px; padding-top:18px; border-top:1px solid var(--stroke); }
+.deck-menu-item:disabled { opacity:.45; cursor:not-allowed; }
+/* deck card on phones: with no "Hard" button, "+ Words" takes the full row under "Review" */
+@media (max-width:720px) { .deck-item .actions .btn:nth-child(2):last-child { grid-column:1 / -1; } }

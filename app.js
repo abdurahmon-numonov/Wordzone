@@ -3198,9 +3198,9 @@
     try { noteSeen = localStorage.getItem('vm.legacy-notice') === '1'; } catch (e) {}
     $('archivedNote').hidden = noteSeen || !allKeys.some(function (k) { return LANGUAGES.isArchivedPair(library.decks[k].source, library.decks[k].target); });
     $('btnArchivedOk').onclick = function () { try { localStorage.setItem('vm.legacy-notice', '1'); } catch (e) {} $('archivedNote').hidden = true; };
-    var lang = $('filterLang').value, status = $('filterStatus').value;
+    var lang = '', status = ''; // v2.57: a simpler library — no language / status filters (all decks are shown)
     var keys = allKeys.filter(function (k) { return deckMatches(library.decks[k], lang, status); });
-    $('libraryFilters').hidden = !allKeys.length;
+    $('libraryFilters').hidden = true;
     $('btnClearFilters').hidden = !lang && !status;
     $('filterEmpty').hidden = !allKeys.length || keys.length > 0;
     $('deckCount').textContent = allKeys.length ? trn('lib.decks', keys.length) : '';
@@ -3227,8 +3227,7 @@
       ]);
       panel.innerHTML = '<span class="deck-kicker">' + escapeHTML(d.name ? pairLabel(d) : '→ ' + langByCode(d.target).label) + ' / ' + trn('words.count', d.cards.length) + (LANGUAGES.isArchivedPair(d.source, d.target) ? ' <span class="archived-badge" title="' + escapeHTML(tr('lang.archivedTitle')) + '">' + tr('lang.archived') + '</span>' : '') + '</span><h2 class="deck-name">' + escapeHTML(d.name || langByCode(d.source).label) + '</h2><p>' + tr('deck.stats', { m: mastered, d: due, h: trn('deck.hard', hard) }) + '</p><div class="daily-track deck-progress"><i></i></div>' +
         '<p class="deck-working">' + (key === state.cfg.deck ? '<span class="deck-working-on">● ' + tr('decks.workingNow') + '</span>' : '<button class="link" type="button" data-act="work">' + tr('decks.workHere') + '</button>') + '</p>' +
-        '<div class="actions"><button class="btn primary" type="button" data-act="practice" title="' + tr('deck.practiceTitle') + '">' + (due ? tr('deck.practiceDue', { n: due }) : tr('deck.practiceAll')) + '</button><button class="btn" type="button" data-act="hard"' + (hard ? '' : ' disabled') + ' title="' + tr('deck.hardTitle') + '">' + tr('deck.hardBtn', { n: hard }) + '</button><button class="btn" type="button" data-act="add">' + tr('deck.add') + '</button></div>' +
-        '<div class="deck-tools"><button class="link" type="button" data-act="reverse"' + (canSwapPair(d.source, d.target) ? '' : ' disabled') + ' title="' + escapeHTML(canSwapPair(d.source, d.target) ? tr('deck.reverseTitle', { p: langByCode(d.target).label + ' → ' + langByCode(d.source).label }) : tr('lang.swapOff', { l: langByCode(d.target).label })) + '">' + tr('deck.reverse') + '</button><button class="link" type="button" data-act="copy">' + tr('deck.copy') + '</button><button class="link" type="button" data-act="share">' + tr('share.button') + '</button></div>' +
+        '<div class="actions"><button class="btn primary" type="button" data-act="practice" title="' + tr('deck.practiceTitle') + '">' + (due ? tr('deck.practiceDue', { n: due }) : tr('deck.practiceAll')) + '</button>' + (hard ? '<button class="btn" type="button" data-act="hard" title="' + tr('deck.hardTitle') + '">' + tr('deck.hardBtn', { n: hard }) + '</button>' : '') + '<button class="btn" type="button" data-act="add">' + tr('deck.add') + '</button></div>' +
         '';
       panel.insertBefore(cover, panel.firstChild);
       cover.querySelector('.cover-play').onclick = function () {
@@ -3240,21 +3239,22 @@
         if (!d.cards.length) { toast(tr('toast.addWords'), 'err'); return; }
         practiceDeck(d, 'due');
       };
-      panel.querySelector('[data-act="hard"]').onclick = function () { practiceDeck(d, 'hard'); };
+      var hardBtn = panel.querySelector('[data-act="hard"]'); if (hardBtn) hardBtn.onclick = function () { practiceDeck(d, 'hard'); };
       var work = panel.querySelector('[data-act="work"]');
       if (work) work.onclick = function () { setActiveDeck(key); };
       if (key === state.cfg.deck) panel.classList.add('is-working');
-      panel.querySelector('[data-act="reverse"]').onclick = function () { reverseDeck(d); };
-      panel.querySelector('[data-act="copy"]').onclick = function () { copyDeck(d); };
-      panel.querySelector('[data-act="share"]').onclick = function () { openShare(d, this); };
       panel.querySelector('[data-act="add"]').onclick = function () {
         setActiveDeck(keyOf(d), true);
         navigateLearning('screen-setup'); $('input').focus(); updateInputStat(true);
       };
       panel.querySelector('[data-act="menu"]').onclick = function (e) {
         e.stopPropagation();
+        var opener = this, canRev = canSwapPair(d.source, d.target);
         openDeckMenu(this, [
-          { label: tr('deck.edit'), icon: '✎', run: function () { openDeckEditor(key); } }
+          { label: tr('deck.edit'), icon: '✎', run: function () { openDeckEditor(key); } },
+          { label: tr('share.button'), icon: '↗', act: 'share', run: function () { openShare(d, opener); } },
+          { label: tr('deck.copy'), icon: '⧉', act: 'copy', run: function () { copyDeck(d); } },
+          { label: tr('deck.reverse').replace(/^⇄\s*/, ''), icon: '⇄', act: 'reverse', disabled: !canRev, title: canRev ? tr('deck.reverseTitle', { p: langByCode(d.target).label + ' → ' + langByCode(d.source).label }) : tr('lang.swapOff', { l: langByCode(d.target).label }), run: function () { reverseDeck(d); } }
         ].concat(retranslateItem(key), [{ label: tr('deck.delete'), icon: '✕', danger: true, run: deleteThisDeck }]));
       };
       function deleteThisDeck() { confirmDeleteDeck(key); }
@@ -3306,11 +3306,14 @@
     var menu = h('div', { className: 'deck-menu', role: 'menu' });
     items.forEach(function (it) {
       var b = h('button', { className: 'deck-menu-item' + (it.danger ? ' danger' : ''), type: 'button', role: 'menuitem' }, [h('span', { className: 'deck-menu-icon', text: it.icon, 'aria-hidden': 'true' }), h('span', { text: it.label })]);
+      if (it.act) b.dataset.act = it.act;
+      if (it.title) b.title = it.title;
+      if (it.disabled) { b.disabled = true; b.setAttribute('aria-disabled', 'true'); }
       b.onclick = function () { closeDeckMenu(false); it.run(); };
       menu.appendChild(b);
     });
     menu.addEventListener('keydown', function (e) {
-      var all = Array.prototype.slice.call(menu.querySelectorAll('.deck-menu-item')), i = all.indexOf(document.activeElement);
+      var all = Array.prototype.slice.call(menu.querySelectorAll('.deck-menu-item:not(:disabled)')), i = all.indexOf(document.activeElement);
       if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closeDeckMenu(true); }
       else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); all[(i + (e.key === 'ArrowDown' ? 1 : -1) + all.length) % all.length].focus(); }
       else if (e.key === 'Tab') closeDeckMenu(false);
@@ -3324,7 +3327,7 @@
     setTimeout(function () { document.addEventListener('click', onMenuOutside, true); }, 0);
     window.addEventListener('resize', placeDeckMenu);
     document.addEventListener('scroll', placeDeckMenu, true);
-    menu.querySelector('.deck-menu-item').focus();
+    menu.querySelector('.deck-menu-item:not(:disabled)').focus();
   }
 
   /* Words the AI could not translate (free translator or "—") can be sent to the AI again, deck by deck. */
@@ -3649,7 +3652,9 @@
     $('navStudy').onclick = function () { navigateLearning('screen-setup'); };
     $('navLibrary').onclick = function () { navigateLearning('screen-library'); };
     $('navTest').onclick = function () { navigateLearning('screen-test'); };
-    $('navProgress').onclick = function () { navigateLearning('screen-progress'); };
+    // v2.57: the Progress section is switched off (no menu item, no tab); its code stays for later
+    var PROGRESS_OFF = true;
+    $('navProgress').onclick = function () { if (!PROGRESS_OFF) navigateLearning('screen-progress'); };
     $('navGrammar').onclick = function () { if (!GRAMMAR_OFF) navigateLearning('screen-grammar'); };
     initGrammar();
     $('navGames').onclick = function () { navigateLearning('screen-games'); };
@@ -3900,7 +3905,8 @@
   /* First-run welcome: two short screens. 1 — flip one real card and grade it (that is the whole method);
      2 — the two language questions. Moving on slides the next screen in. */
   var tour = (function () {
-    var TOTAL = 2, step = 1, running = [], swipeX = null, swipeY = null;
+    // v2.57: the window opens straight on the language questions; the flip-card screen (step 1) is skipped
+    var TOTAL = 2, FIRST = 2, step = 1, running = [], swipeX = null, swipeY = null;
     function card() { return $('tourCard'); }
     function steps() { return Array.prototype.slice.call(card().querySelectorAll('.tour-step')); }
     function stepEl(n) { return card().querySelector('.tour-step[data-step="' + n + '"]'); }
@@ -3943,7 +3949,7 @@
       if (out) out.finished.then(clean, clean); else clean();
     }
     function next() { show(step + 1, 1); }
-    function back() { show(step - 1, -1); }
+    function back() { if (step - 1 >= FIRST) show(step - 1, -1); }
     function onKey(e) {
       if ($('onboarding').hidden) return;
       if (e.key === 'Escape') { e.preventDefault(); return; } // the first-run questions cannot be skipped
@@ -3999,13 +4005,14 @@
         card().addEventListener('pointercancel', function () { swipeX = swipeY = null; });
       }
       document.addEventListener('keydown', onKey, true);
-      step = 1;
+      step = FIRST;
       demo = { flipped: false, grade: '' };
       renderDemo();
-      steps().forEach(function (s) { var n = Number(s.dataset.step); s.hidden = n !== 1; s.classList.toggle('is-current', n === 1); s.inert = false; });
+      steps().forEach(function (s) { var n = Number(s.dataset.step); s.hidden = n !== FIRST; s.classList.toggle('is-current', n === FIRST); s.inert = false; });
       sync();
+      if (FIRST === TOTAL) { card().querySelector('.tour-top').hidden = true; $('tourNav').hidden = true; } // one screen: no counter, no skip, no way back to the card
       $('onboarding').hidden = false;
-      heading(1).focus({ preventScroll: true });
+      heading(FIRST).focus({ preventScroll: true });
     }
     function close() { finishRunning(); $('onboarding').hidden = true; document.removeEventListener('keydown', onKey, true); }
     return { open: open, close: close, next: next, back: back, show: show };

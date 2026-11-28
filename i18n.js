@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.57.0'; // the one place the shown version lives (footer)
+  var VERSION = '2.57.1'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -421,7 +421,7 @@
     'decks.quickName': ['Первые 5 слов', 'First 5 words', "Birinchi 5 so'z"],
     'picker.eyebrow': ['НАЧАЛО СЕССИИ', 'NEW SESSION', 'YANGI SESSIYA'],
     'picker.title': ['С какой колодой работаем?', 'Which deck are we working on?', "Qaysi to'plam bilan ishlaymiz?"],
-    'picker.sub': ['Новые слова, тренировка, тест, игры и прогресс — всё будет по этой колоде.', 'New words, practice, tests, games and progress all follow this deck.', "Yangi so'zlar, mashq, test, o'yinlar va natijalar — hammasi shu to'plam bo'yicha."],
+    'picker.sub': ['Новые слова, тренировка, тест и игры — всё будет по этой колоде.', 'New words, practice, tests and games all follow this deck.', "Yangi so'zlar, mashq, test va o'yinlar — hammasi shu to'plam bo'yicha."], // v2.57: no Progress section
     'picker.go': ['Продолжить', 'Continue', 'Davom etish'],
     'picker.first': ['Создай первую колоду — в неё попадут твои слова.', 'Create your first deck — your words will go into it.', "Birinchi to'plamni yarating — so'zlaringiz unga tushadi."],
     'deck.newTitle': ['Новая колода', 'New deck', "Yangi to'plam"],

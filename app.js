@@ -257,8 +257,8 @@
 
   /* ---------------- utils ---------------- */
 
-  var NAV_FOR = { 'screen-setup': 'navStudy', 'screen-library': 'navLibrary', 'screen-games': 'navGames', 'screen-test': 'navTest', 'screen-progress': 'navProgress', 'screen-grammar': 'navGrammar', 'screen-teacher': 'navTeacher' };
-  var CRUMB_FOR = { 'screen-setup': 'nav.study', 'screen-library': 'nav.library', 'screen-games': 'nav.games', 'screen-test': 'nav.test', 'screen-progress': 'nav.progress', 'screen-grammar': 'nav.grammar', 'screen-teacher': 'nav.teacher', 'screen-train': 'crumb.train', 'screen-loading': 'crumb.loading' };
+  var NAV_FOR = { 'screen-start': 'navHome', 'screen-review': 'navHome', 'screen-decks': 'navHome', 'screen-setup': 'navStudy', 'screen-library': 'navLibrary', 'screen-games': 'navGames', 'screen-test': 'navTest', 'screen-progress': 'navProgress', 'screen-grammar': 'navGrammar', 'screen-teacher': 'navTeacher' };
+  var CRUMB_FOR = { 'screen-start': 'nav.home', 'screen-review': 'nav.home', 'screen-decks': 'ready.h1', 'screen-setup': 'nav.study', 'screen-library': 'nav.library', 'screen-games': 'nav.games', 'screen-test': 'nav.test', 'screen-progress': 'nav.progress', 'screen-grammar': 'nav.grammar', 'screen-teacher': 'nav.teacher', 'screen-train': 'crumb.train', 'screen-loading': 'crumb.loading' };
   function updateShell(id) {
     document.querySelectorAll('.nav-link').forEach(function (b) {
       var on = b.id === NAV_FOR[id];
@@ -2189,6 +2189,7 @@
     syncDeckSelects();
     var screen = document.querySelector('.screen.active'), id = screen && screen.id;
     if (id === 'screen-library') renderLibrary();
+    else if (id === 'screen-review') renderReview();
     else if (id === 'screen-test') { fillQuizDecks(); if (games) games.refresh(); }
     else if (id === 'screen-games') renderArcade();
     else if (id === 'screen-progress') renderProgress();
@@ -2499,6 +2500,44 @@
     btn.className = 'btn ' + (due ? 'primary' : 'today-again'); // nothing due: adding words is the main step
     add.className = 'btn today-add' + (due ? '' : ' primary');
     card.classList.toggle('is-clear', !due);
+  }
+  /* v2.57 home. Newcomers (no words yet) choose: their own words or ready-made decks. Learners with words
+     land on review: the cards that are due, the test and the games; adding words is one link away. */
+  function hasWords() { return Object.keys(library.decks).some(function (k) { return library.decks[k].cards.length > 0; }); }
+  function goHome() { navigateLearning(hasWords() ? 'screen-review' : 'screen-start'); }
+  function renderReview() {
+    renderToday(); // picks the deck to review (todayKey)
+    var d = todayKey && library.decks[todayKey], due = d ? L.pick(d.cards, 'due').length : 0, ready = d ? L.pick(d.cards, 'all').length : 0;
+    $('reviewTitle').textContent = due ? trn('today.due', due) : tr('today.clear');
+    $('reviewSub').textContent = d ? tr(due ? 'today.dueSub' : 'today.clearSub', { n: deckLabel(d) }) : '';
+    var b = $('btnReviewCards');
+    b.hidden = !ready;
+    b.textContent = tr(due ? 'today.go' : 'deck.practiceAll');
+    $('reviewToday').classList.toggle('is-clear', !due);
+  }
+  function startOwnWords() {
+    navigateLearning('screen-setup');
+    maybeOnboard(); // a first visit asks the two language questions here, once
+    if ($('onboarding').hidden) $('input').focus({ preventScroll: true });
+  }
+  function initHome() {
+    $('navHome').onclick = goHome;
+    $('btnStartOwn').onclick = startOwnWords;
+    $('readyH1').tabIndex = -1;
+    $('btnStartReady').onclick = function () { navigateLearning('screen-decks'); $('readyH1').focus({ preventScroll: true }); };
+    $('btnReadyBack').onclick = goHome;
+    $('btnReviewCards').onclick = function () { var d = todayKey && library.decks[todayKey]; if (d) practiceDeck(d, L.pick(d.cards, 'due').length ? 'due' : 'all'); };
+    $('btnReviewTest').onclick = function () { $('navTest').click(); };
+    $('btnReviewGames').onclick = function () { $('navGames').click(); };
+    $('btnReviewAdd').onclick = function () { navigateLearning('screen-setup'); $('input').focus({ preventScroll: true }); };
+  }
+  // The first screen. A shared deck or a homework link keeps its own flow on the words screen.
+  function land() {
+    var linked = (window.VMShare && window.VMShare.codeFromHash(location.hash) != null) || !$('sharePreview').hidden || !$('hwInvite').hidden;
+    if (linked) { show('screen-setup'); maybeOnboard(); }
+    else if (hasWords()) navigateLearning('screen-review');
+    else show('screen-start');
+    document.documentElement.removeAttribute('data-land');
   }
   /* "Save your progress": after a few practices, someone without an account sees one calm card on the home screen.
      Never before learning, never for signed-in people, "Not now" hides it; it comes back once, 5 practices later. */
@@ -2997,6 +3036,7 @@
     show(id); renderDaily();
     if (id === 'screen-games') { renderArcade(); loadArcade(); }
     if (id === 'screen-library') renderLibrary();
+    if (id === 'screen-review') renderReview();
     if (id === 'screen-test') { fillQuizDecks(); if (games) games.refresh(); }
     if (id === 'screen-progress') renderProgress();
     if (id === 'screen-grammar') { drill = null; renderGrammar(); if (grammarTab === 'course' && course) course.open(); }
@@ -4363,7 +4403,7 @@
     initGoalDialog();
     initDeckEditor();
     if (L) initCourse();
-    if (L) maybeOnboard();
+    if (L) { initHome(); land(); }
     if (L) { onActiveDeckChange(); maybePickDeck(); }
 
     var sel = $('targetLang');
@@ -4554,7 +4594,7 @@
         showSummary();
       } else {
         state.cancelled = true;
-        show('screen-setup');
+        if (L) goHome(); else show('screen-setup'); // v2.57: the logo leads home
       }
     });
 

@@ -10,6 +10,13 @@ async function leavePractice(pg) {
   if (await pg.locator('#btnNewSet').isVisible()) await pg.click('#btnNewSet');
   await pg.locator('#screen-setup.active').waitFor();
 }
+// v2.57: the site opens on Home (newcomers choose how to begin, learners with words start from review);
+// most steps below work on the words screen, so they go there first.
+async function toWords(pg) {
+  await pg.waitForFunction(() => document.body && document.body.dataset.screen);
+  if (!(await pg.locator('#screen-setup.active').count())) await pg.evaluate(() => document.getElementById('navStudy').click());
+  await pg.locator('#screen-setup.active').waitFor();
+}
 const assert = require('node:assert/strict');
 const http = require('node:http');
 const fs = require('node:fs');
@@ -194,7 +201,8 @@ run.server(server);
   const coverage = [];
   const reload = async () => {
     if (COVERAGE) { coverage.push(...await page.coverage.stopJSCoverage()); await page.coverage.startJSCoverage({ resetOnNavigation: false }); }
-    return page.reload();
+    await page.reload();
+    await toWords(page);
   };
   const errors = [], cspViolations = [];
   // Any CSP violation is a bug: the app must work under the production policy (no unsafe-inline / unsafe-eval).
@@ -207,7 +215,8 @@ run.server(server);
   console.log('E2E');
   step('app loads, service worker installs and takes control');
   await page.goto(origin);
-  await page.locator('#screen-setup.active').waitFor();
+  await page.locator('#screen-start.active').waitFor();
+  await toWords(page);
   assert.equal(await page.evaluate(() => window.isSecureContext), true);
   assert.equal(await page.evaluate(async () => !!(await navigator.serviceWorker.ready).active), true, 'service worker is active');
   await reload();
@@ -243,14 +252,12 @@ run.server(server);
   };
   await check('before reload');
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   const deckAfter = await check('after reload');
   assert.equal(deckAfter.cards.find(c => graded[c.original] === '4').due > Date.now() + 3.9 * 864e5, true, 'easy card is due in ~4 days');
 
   step('offline: app opens from cache, words wait for translation, then load when back online');
   await context.setOffline(true); serverDown = true; api.mode = 'down';
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   assert.match(await page.title(), /Wordzone/);
   await page.fill('#input', 'to whisper\npebble');
   await startWords(page);
@@ -326,7 +333,6 @@ run.server(server);
   process.env.OPENAI_API_KEY = 'sk-e2e-SECRET';
   await page.click('#btnContinue').catch(() => {});
   await reload();
-  await page.locator('#screen-setup.active').waitFor();
   await page.waitForFunction(() => document.getElementById('statusIndicator').textContent.includes('ИИ сайта'));
   await page.click('#btnSessionSettings'); await page.click('#apiBox summary');
   assert(await page.locator('#serverAiNote').isVisible(), 'with the site key the AI box says nothing needs to be entered');
@@ -534,6 +540,7 @@ run.server(server);
   watch(empty);
   empty.on('pageerror', e => errors.push(e.message));
   await empty.goto(origin);
+  await toWords(empty);
   await empty.click('#navLibrary');
   assert.equal(await empty.locator('.empty-steps li').count(), 3);
   await empty.click('#navTest');
@@ -555,6 +562,7 @@ run.server(server);
   watch(tp);
   tp.on('pageerror', e => errors.push(e.message));
   await tp.goto(origin);
+  await toWords(tp);
   const coach = tp.locator('.coach:not([hidden])');
   assert.equal(await tp.locator('.new-dot').count(), 0, 'a newcomer starts without "new" dots');
   await reveal(tp, '#btnDemo');
@@ -567,6 +575,7 @@ run.server(server);
   await coach.waitFor({ state: 'detached' }).catch(() => {}); assert.equal(await coach.count(), 0, 'Enter closes the bubble');
   await tp.click('#btnReveal'); await tp.locator('#btnKnew2').waitFor(); await tp.click('#btnKnew2'); // one real answer
   await tp.waitForFunction(() => document.getElementById('stKnown').textContent === '1');
+  await tp.locator('#btnReveal').waitFor(); // the next card is up: the answer animation no longer holds the keyboard
   await tp.keyboard.press('Escape');
   await tp.locator('#summary:not([hidden])').waitFor();
   await tp.keyboard.press('Escape');
@@ -630,6 +639,7 @@ run.server(server);
   await sendCtx.grantPermissions(['clipboard-read', 'clipboard-write'], { origin });
   const sender = await sendCtx.newPage(); watch(sender); sender.on('pageerror', e => errors.push(e.message)); sender.on('dialog', d => d.accept());
   await sender.goto(origin);
+  await toWords(sender);
   await reveal(sender, '#btnDemo');
   await sender.click('#btnDemo'); await leavePractice(sender);
   await sender.click('#navLibrary');
@@ -737,6 +747,7 @@ run.server(server);
   xpage.on('pageerror', e => errors.push(e.message));
   xpage.on('dialog', d => d.accept());
   await xpage.goto(origin);
+  await toWords(xpage);
   const payload = '<img src=x onerror="window.__xss=1">';
   const evil = { version: 2, library: { decks: { 'en-ru': { source: 'en', target: 'ru', created: 1, cards: [
     { original: payload, translation: '<svg onload="window.__xss=2"></svg>', hint: '<script>window.__xss=3</script>', definition: '" onmouseover="window.__xss=4', examples: ['<a href="javascript:window.__xss=5">x</a>'], streak: 0, fails: 1 },
@@ -1015,6 +1026,9 @@ run.server(server);
   await onbCtx.route(/api\.mymemory\.translated\.net/, route => route.abort());
   const onb = await onbCtx.newPage(); watch(onb); onb.on('pageerror', e => errors.push(e.message + ' @ ' + String(e.stack || '').split('\n').slice(0, 3).join(' | ')));
   await onb.goto(origin);
+  await onb.locator('#screen-start.active').waitFor();
+  assert(await onb.locator('#onboarding').isHidden(), 'the first screen is the choice, not the questions');
+  await onb.click('#btnStartOwn');
   await onb.locator('#onboarding:not([hidden])').waitFor();
   await onb.keyboard.press('Escape');
   assert(await onb.locator('#onboarding').isVisible(), 'the first-run questions cannot be skipped with Escape');
@@ -1046,7 +1060,7 @@ run.server(server);
   assert.equal(onbCfg.source, 'de'); assert.equal(onbCfg.target, 'ru');
   assert.equal(await onb.inputValue('#sourceLang'), 'de');
   await onb.fill('#input', 'Haus\nBaum');
-  await onb.reload(); await onb.locator('#screen-setup.active').waitFor();
+  await onb.reload(); await toWords(onb);
   assert(await onb.locator('#onboarding').isHidden(), 'asked only once');
   assert.equal(await onb.inputValue('#input'), 'Haus\nBaum', 'a typed word list survives a refresh');
   assert.equal(await onb.locator('.side-slogan').count(), 0, 'v2.56.12: no slogan under the logo');
@@ -1251,6 +1265,8 @@ run.server(server);
     await ctx.addInitScript(([l, k]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('vm.save-nudge', JSON.stringify({ n: k })); } } catch (e) {} }, [nudgeLib, n]);
     const np = await ctx.newPage(); watch(np); np.on('pageerror', e => errors.push(e.message));
     await np.goto(origin);
+    await toWords(np);
+  await toWords(np);
     await np.locator('#btnAccount:not([hidden])').waitFor();
     assert.equal(await np.locator('#saveNudge').isVisible(), expected, n + ' practices: card ' + (expected ? 'shown' : 'not yet'));
     if (expected) {
@@ -1274,6 +1290,8 @@ run.server(server);
     await ctx.addInitScript(([l]) => { try { if (!localStorage.getItem('vm.onboarded')) { localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1'); localStorage.setItem('vocabulary-master.library.v2', l); localStorage.setItem('wordloop.cfg', JSON.stringify({ source: 'en', target: 'ru', deck: 'en-ru' })); } } catch (e) {} }, [nudgeLib]);
     const dp = await ctx.newPage(); watch(dp); dp.on('pageerror', e => errors.push(e.message));
     await dp.goto(origin);
+    await toWords(dp);
+  await toWords(dp);
     assert.equal(await dp.locator('#btnStartLabel').innerText(), 'Повторить колоду');
     assert.match(await dp.locator('#startDeckNote').innerText(), /English → Русский/);
     assert.equal(await dp.locator('#pairSummary').innerText(), 'English → Русский', 'a deck named after its pair is shown once');
@@ -1298,6 +1316,7 @@ run.server(server);
   }
   const a = await deviceA.newPage(); watch(a); a.on('pageerror', e => errors.push(e.message));
   await a.goto(origin);
+  await toWords(a);
   await a.locator('#btnAccount:not([hidden])').waitFor();
   assert.equal(await a.locator('#accountLabel').innerText(), 'Войти');
   await a.click('#btnAccount');
@@ -1321,6 +1340,7 @@ run.server(server);
 
   const b = await deviceB.newPage(); watch(b); b.on('pageerror', e => errors.push(e.message));
   await b.goto(origin);
+  await toWords(b);
   await b.locator('#btnAccount:not([hidden])').waitFor();
   await b.click('#btnAccount');
   await b.fill('#accEmail', 'learner@example.com');
@@ -1344,7 +1364,7 @@ run.server(server);
   await b.selectOption('#deckSource', 'de'); await b.selectOption('#deckTarget', 'ru'); await b.click('#deckForm [type="submit"]');
   for (let i = 0; i < 40 && !cloud().library.decks['de-ru']; i++) await b.waitForTimeout(250);
   assert(cloud().library.decks['de-ru'], 'a change on device B is uploaded a few seconds later');
-  await a.reload(); await a.locator('#screen-setup.active').waitFor();
+  await a.reload(); await toWords(a);
   await a.waitForFunction(() => !!JSON.parse(localStorage.getItem('vocabulary-master.library.v2')).decks['de-ru']);
   assert.deepEqual(await words(a), ['lantern', 'meadow'], 'device A downloads what device B saved');
 
@@ -1379,7 +1399,7 @@ run.server(server);
       const ctx = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce', viewport: { width: 1280, height: 900 } });
       await ctx.addInitScript(([lib, cfg, extra]) => { if (sessionStorage.getItem('seeded')) return; sessionStorage.setItem('seeded', '1'); localStorage.setItem('vm.onboarded', '1'); localStorage.setItem('vocabulary-master.library.v2', JSON.stringify(lib)); localStorage.setItem('wordloop.cfg', JSON.stringify(cfg)); for (const k in extra || {}) localStorage.setItem(k, extra[k]); }, [lib, cfg, extra]);
       const pg = await ctx.newPage(); watch(pg); pg.on('pageerror', e => errors.push(e.message)); pg.on('dialog', d => d.accept());
-      await pg.goto(origin); await pg.locator('#screen-setup.active').waitFor();
+      await pg.goto(origin); await toWords(pg);
       return pg;
     };
     let pg = await open(Object.assign({ decks: {
@@ -1405,7 +1425,7 @@ run.server(server);
     assert.equal(await pg.inputValue('#input'), 'pear\nplum', 'the old single draft moved to the pair deck');
     await pg.click('.side-deck:not(.active)');
     assert.equal(await pg.inputValue('#input'), 'Tisch', 'every deck keeps its own draft');
-    await pg.reload(); await pg.locator('#screen-setup.active').waitFor();
+    await pg.reload(); await toWords(pg);
     assert(await pg.locator('#deckPicker').isHidden(), 'a reload of the same tab does not ask again');
     for (const [nav, id] of [['#navTest', '#quizDeck'], ['#navProgress', '#progDeck']]) {
       await pg.click(nav);
@@ -1442,6 +1462,41 @@ run.server(server);
   }
 
   // v2.56.14: the grammar course step was removed together with the Grammar section (its code and lessons stay in the repo; test/course.js still checks the lesson files)
+
+  step('home: a newcomer chooses own words or ready decks, a learner with words lands on review (test, games, add words)');
+  {
+    const hc = await browser.newContext({ locale: 'ru-RU', reducedMotion: 'reduce', viewport: { width: 1280, height: 900 } });
+    await hc.route(/fonts\.(googleapis|gstatic)\.com/, route => route.abort());
+    const hp = await hc.newPage(); watch(hp); hp.on('pageerror', e => errors.push(e.message));
+    await hp.goto(origin);
+    await hp.locator('#screen-start.active').waitFor();
+    assert.equal(await hp.locator('#screen-start .start-card').count(), 2, 'two ways to begin');
+    await hp.click('#btnStartReady');
+    await hp.locator('#screen-decks.active').waitFor();
+    assert.equal(await hp.evaluate(() => document.activeElement.id), 'readyH1', 'focus moves to the new screen');
+    await hp.click('#btnReadyBack');
+    await hp.locator('#screen-start.active').waitFor();
+    await hp.evaluate(() => {
+      const now = Date.now();
+      localStorage.setItem('vm.onboarded', '1'); sessionStorage.setItem('vm.deck-picked', '1');
+      localStorage.setItem('vocabulary-master.library.v2', JSON.stringify({ v: 2, goal: 10, streak: { count: 0, last: null, freezes: 2 }, history: {}, decks: {
+        'en-ru': { source: 'en', target: 'ru', created: now, cards: ['house', 'tree', 'river', 'hill'].map((w, i) => ({ original: w, translation: ['дом', 'дерево', 'река', 'холм'][i] })) } } }));
+      localStorage.setItem('wordloop.cfg', JSON.stringify({ source: 'en', target: 'ru', deck: 'en-ru' }));
+    });
+    await hp.reload();
+    await hp.locator('#screen-review.active').waitFor();
+    assert.equal(await hp.evaluate(() => document.documentElement.hasAttribute('data-land')), false, 'the early hint is cleared once the app runs');
+    assert.match(await hp.locator('#reviewTitle').innerText(), /4 слова ждут повторения/);
+    assert(await hp.locator('#navHome').getAttribute('aria-current'), 'Home is the current section');
+    await hp.click('#btnReviewTest'); await hp.locator('#screen-test.active').waitFor();
+    await hp.click('#navHome'); await hp.locator('#screen-review.active').waitFor();
+    await hp.click('#btnReviewGames'); await hp.locator('#screen-games.active').waitFor();
+    await hp.click('#logoHome'); await hp.locator('#screen-review.active').waitFor();
+    await hp.click('#btnReviewAdd'); await hp.locator('#screen-setup.active').waitFor();
+    await hp.click('#navHome'); await hp.click('#btnReviewCards');
+    await hp.locator('#screen-train.active').waitFor();
+    await hc.close();
+  }
 
   step('interface language: RU → EN → UZ, choice survives a reload');
   await page.click('#navStudy');

@@ -6,7 +6,7 @@
 })(typeof window !== 'undefined' ? window : this, function (win) {
   'use strict';
   var CODES = ['ru', 'en', 'uz'];
-  var VERSION = '2.56.14'; // the one place the shown version lives (footer)
+  var VERSION = '2.57.0'; // the one place the shown version lives (footer)
   var KEY = 'vm.ui-lang';
   var D = {
     'meta.title': ['Wordzone — слова становятся знаниями', 'Wordzone — words become knowledge', "Wordzone — so'zlar bilimga aylanadi"],
@@ -188,6 +188,23 @@
     'today.clear': ['На сегодня всё повторено', 'All caught up for today', 'Bugungi takrorlash tugadi'],
     'today.clearSub': ['Добавь новые слова или повтори колоду «{n}» ещё раз.', 'Add new words or go through “{n}” once more.', "Yangi so'z qo'shing yoki «{n}» to'plamini yana bir bor takrorlang."],
     'today.add': ['Добавить слова ↓', 'Add words ↓', "So'z qo'shish ↓"],
+    // v2.57: home — two ways to begin (newcomers), review first (learners with words)
+    'nav.home': ['Главная', 'Home', 'Bosh sahifa'],
+    'start.h1': ['С чего начнём?', 'Where do you want to start?', 'Nimadan boshlaymiz?'],
+    'start.ownT': ['Свои слова', 'My own words', "O'z so'zlarim"],
+    'start.ownP': ['Вставь слова с урока или из текста — перевод и примеры добавит ИИ.', 'Paste words from your lesson or any text — AI adds translations and examples.', "Darsdagi yoki matndagi so'zlarni qo'ying — tarjima va misollarni sun'iy intellekt qo'shadi."],
+    'start.ownGo': ['Добавить слова', 'Add words', "So'z qo'shish"],
+    'start.readyT': ['Готовые колоды', 'Ready-made decks', "Tayyor to'plamlar"],
+    'start.readyP': ['Выбери готовый набор слов и начни учить сразу.', 'Pick a ready word set and start learning right away.', "Tayyor so'zlar to'plamini tanlang va darhol o'rganishni boshlang."],
+    'start.readyGo': ['Смотреть колоды', 'Browse decks', "To'plamlarni ko'rish"],
+    'ready.h1': ['Готовые колоды', 'Ready-made decks', "Tayyor to'plamlar"],
+    'ready.soon': ['Скоро здесь появятся готовые наборы слов.', 'Ready-made word sets are coming here soon.', "Tez orada bu yerda tayyor so'z to'plamlari paydo bo'ladi."],
+    'ready.back': ['← Назад', '← Back', '← Orqaga'],
+    'review.testP': ['Проверь, какие слова ты знаешь точно.', 'Check which words you really know.', "Qaysi so'zlarni aniq bilishingizni tekshiring."],
+    'review.testGo': ['Пройти тест', 'Take the test', 'Testni boshlash'],
+    'review.gamesP': ['Повторяй свои слова в мини-играх.', 'Review your words in mini-games.', "So'zlaringizni mini-o'yinlarda takrorlang."],
+    'review.gamesGo': ['Играть', 'Play', "O'ynash"],
+    'review.add': ['+ Добавить новые слова', '+ Add new words', "+ Yangi so'z qo'shish"],
     'composer.change': ['Изменить', 'Change', "O'zgartirish"],
     'composer.done': ['Готово', 'Done', 'Tayyor'],
     'hero.demo': ['Попробовать демо-колоду', 'Try the demo deck', "Demo kolodani sinab ko'rish"],

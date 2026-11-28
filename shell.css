@@ -1325,3 +1325,39 @@ html:not([data-ready]) .app-shell { pointer-events:none; cursor:progress; }
 .prog-fresh p { margin:0; max-width:56ch; font-size:15px; line-height:1.55; color:var(--text); }
 .onb-teacher { display:block; margin:14px auto 0; font-size:13.5px; }
 @media (max-width:720px) { .prog-fresh { padding:20px; } .prog-fresh .btn { width:100%; justify-content:center; } }
+
+/* ---------- v2.57: home — newcomers pick how to begin, learners with words start from review ---------- */
+html[data-land="review"] #screen-start { display:none; } /* learners never see the newcomer screen flash before the script runs */
+.start-h1 { margin:clamp(4px,3vh,36px) 0 24px; font:500 clamp(34px,4.2vw,50px)/1.08 var(--font-display); letter-spacing:-.025em; color:var(--text); text-wrap:balance; }
+.start-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.start-card { display:flex; flex-direction:column; align-items:flex-start; gap:10px; min-height:236px; padding:28px; border:1px solid var(--stroke); border-radius:22px;
+  background:var(--surface); color:var(--text); text-align:left; font:inherit; cursor:pointer; transition:transform .2s var(--ease), border-color .2s, box-shadow .2s; }
+.start-card:hover { transform:translateY(-3px); border-color:var(--amber); box-shadow:0 24px 44px -32px #10183a; }
+.start-card:active { transform:translateY(-1px); }
+.start-card:focus-visible { outline:3px solid var(--amber); outline-offset:3px; }
+.start-icon { display:grid; place-items:center; width:50px; height:50px; border-radius:14px; background:color-mix(in srgb,var(--amber) 14%,transparent); color:var(--amber); }
+.start-t { font:500 clamp(24px,2.3vw,30px)/1.15 var(--font-display); letter-spacing:-.015em; }
+.start-p { max-width:40ch; font-size:15px; line-height:1.5; color:var(--muted); text-wrap:pretty; }
+.start-go { display:inline-flex; align-items:center; gap:8px; margin-top:auto; padding-top:8px; font:600 15px var(--font-ui); color:var(--amber); }
+.start-go svg { transition:transform .2s var(--ease); }
+.start-card:hover .start-go svg { transform:translateX(3px); }
+/* the main way in: navy, like the rest of the site's main actions */
+.start-card.start-own { background:linear-gradient(140deg,var(--navy),var(--navy-2)); border-color:transparent; color:var(--on-navy); }
+.start-card.start-own:hover { border-color:transparent; box-shadow:0 26px 50px -30px #10183a; }
+.start-own .start-icon { background:#ffffff1a; color:#e3c78f; }
+.start-own .start-p { color:#f6f1e7d9; }
+.start-own .start-go { color:#e3c78f; } /* lighter gold: 5.9:1 on the whole navy gradient */
+.start-card.start-own:focus-visible { outline-color:var(--gold); }
+.review-today { margin-bottom:18px; }
+.review-grid .start-card { min-height:188px; }
+.review-add { margin:20px 0 0; }
+.review-add .link { display:inline-flex; align-items:center; min-height:44px; font-size:15px; }
+#screen-decks .btn { min-height:44px; }
+@media (max-width:720px) {
+  .start-h1 { margin:6px 0 18px; font-size:clamp(28px,8vw,34px); }
+  .start-grid { grid-template-columns:1fr; gap:12px; }
+  .start-card, .review-grid .start-card { min-height:0; padding:22px 20px; gap:8px; }
+  .start-icon { width:44px; height:44px; }
+  .start-t { font-size:24px; }
+}
+@media (prefers-reduced-motion:reduce) { .start-card, .start-go svg { transition:none; } .start-card:hover { transform:none; } }
